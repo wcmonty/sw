@@ -1,0 +1,62 @@
+a = @(x) x^5 + x - 1
+
+a = 
+
+    @(x)x^5+x-1
+
+bisect(a, 0, 1, .00000001)
+
+ans =
+
+   0.754877664148808
+
+b = @(x) sin(x) - 6 * x - 5
+
+b = 
+
+    @(x)sin(x)-6*x-5
+
+bisect(a, 0, 1, .00000001)
+
+ans =
+
+   0.754877664148808
+
+bisect(b, 0, 1, .00000001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('bisect', '/home/wcmonty/Projects/471/bisect.m', 3)" style="font-weight:bold">bisect</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/bisect.m',3,0)">line 3</a>)
+f(a)f(b)<0 not satisfied!
+} 
+bisect(b, -1, 0, .00000001)
+
+ans =
+
+  -0.970898918807507
+
+c = @(x) ln(x) + x^2 -3
+
+c = 
+
+    @(x)ln(x)+x^2-3
+
+bisect(c, 1, 2, .00000001)
+{Undefined function 'ln' for input arguments of type 'double'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('@(x)ln(x)+x^2-3', '', 0)" style="font-weight:bold">@(x)ln(x)+x^2-3</a>
+
+
+Error in <a href="matlab:helpUtils.errorDocCallback('bisect', '/home/wcmonty/Projects/471/bisect.m', 2)" style="font-weight:bold">bisect</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/bisect.m',2,0)">line 2</a>)
+if sign(f(a)) * sign(f(b)) >= 0
+} 
+c = @(x) log(x) + x^2 -3
+
+c = 
+
+    @(x)log(x)+x^2-3
+
+bisect(c, 1, 2, .00000001)
+
+ans =
+
+   1.592142932116985
+
+diary off

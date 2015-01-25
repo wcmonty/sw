@@ -1,0 +1,128 @@
+[	Research and commercial use is prohibited.
+ [	Research and commercial use is prohibited.
+                                             |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+[ans, i, backwardError] = final_sor(A, b, 100, 1, .0005, solution)
+{Error using <a href="matlab:helpUtils.errorDocCallback('plus')" style="font-weight:bold"> + </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('final_sor', '/home/wcmonty/Projects/471/final_sor.m', 22)" style="font-weight:bold">final_sor</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/final_sor.m',22,0)">line 22</a>)
+	x = WLD * (omega * b + ((1-omega)*D*x - omega*U*x));
+} 
+[ans, i, backwardError] = final_sor(A, b', 100, 1, .0005, solution')
+
+ans =
+
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+    1.0001
+   -0.9998
+    1.0000
+   -1.0002
+    1.0000
+   -0.9999
+    1.0000
+   -1.0000
+    1.0000
+   -1.0000
+
+
+i =
+
+     6
+
+
+backwardError =
+
+    0.0015
+
+diary off

@@ -1,0 +1,19 @@
+orderSearcher by William Montgomery
+There is coprehensive HTML documentation in the docs/html folder.  You can access the index at docs/html/index.html .
+
+The code is in the orderSearcher directory.  A makefile is provided.  To build the project run:
+make clean
+make orderSearcher
+
+There is also a test script provided, that automates some tests.  You can run it via:
+make test
+
+You can run the program directly with:
+./orderSearcher [filename] [chunkSize] [nThreads] [polynomialOrder]
+
+filename is the name of the file to process.
+chunkSize is the number of bytes to process at a time.
+nThreads is the number of processing threads to execute.
+polynomialOrder is the order of the polynomial to fit to the data.
+
+Several sample files are included for your convenience.

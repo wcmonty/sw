@@ -1,0 +1,60 @@
+\hypertarget{board_8cpp}{\section{Scrabble/board.cpp File Reference}
+\label{board_8cpp}\index{Scrabble/board.\-cpp@{Scrabble/board.\-cpp}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}board.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$Q\-Layout$>$}\\*
+{\ttfamily \#include $<$Q\-Push\-Button$>$}\\*
+{\ttfamily \#include \char`\"{}assert.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{board_8cpp_ad799faa7c15b047d09f3fa52406c95d5}{operator$<$$<$} (ostream \&os, const \hyperlink{class_board}{Board} \&board)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloading the $<$$<$ operator for debugging information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{board_8cpp_ad799faa7c15b047d09f3fa52406c95d5}{\index{board.\-cpp@{board.\-cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!board.cpp@{board.\-cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Board} \&}]{board}
+\end{DoxyParamCaption}
+)}}\label{board_8cpp_ad799faa7c15b047d09f3fa52406c95d5}
+
+
+operator $<$$<$ Overloading the $<$$<$ operator for debugging information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+{\em board} & The board to be output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream 
+\end{DoxyReturn}
+
+
+Definition at line 804 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, and Board\-::spaces.
+
+
+\begin{DoxyCode}
+805 \{
+806     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++) \{
+807         cout << \textcolor{stringliteral}{"\{"} << setw(2) << i << \textcolor{stringliteral}{"\}"};
+808         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++) \{
+809             os << *(board.\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]);
+810         \}
+811         os << endl;
+812     \}
+813     cout << \textcolor{stringliteral}{"\{XX\}\{0 \}\{1 \}\{2 \}\{3 \}\{4 \}\{5 \}\{6 \}\{7 \}\{8 \}\{9 \}\{10\}\{11\}\{12\}\{13\}\{14\}"};
+814     \textcolor{keywordflow}{return} os;
+815 \}
+\end{DoxyCode}

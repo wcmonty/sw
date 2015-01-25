@@ -1,0 +1,629 @@
+\hypertarget{class_rack}{\section{Rack Class Reference}
+\label{class_rack}\index{Rack@{Rack}}
+}
+
+
+The \hyperlink{class_rack}{Rack} class Singleton class representing the current player on the \hyperlink{class_dialog}{Dialog}.  
+
+
+
+
+{\ttfamily \#include $<$rack.\-h$>$}
+
+Inheritance diagram for Rack\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rack}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_rack_a7c2b198bbb87eda22a2524781dc09da3}{on\-\_\-cancel\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a7c2b198bbb87eda22a2524781dc09da3}{Rack\-::on\-\_\-cancel\-Button\-\_\-clicked} Handles the cancel\-Button\-\_\-clicked events. \end{DoxyCompactList}\item 
+void \hyperlink{class_rack_a65c2e50299cb5ad7111ad56132b18c29}{on\-\_\-invalid\-Move} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a65c2e50299cb5ad7111ad56132b18c29}{Rack\-::on\-\_\-invalid\-Move} Handles invalide\-Move events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rack_aa18464e4a5e7048969a95526c70b3afb}{$\sim$\-Rack} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_aa18464e4a5e7048969a95526c70b3afb}{Rack\-::$\sim$\-Rack} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_rack_a3e38244d421dc2b984123b26698028e7}{set\-Space} (int, \hyperlink{class_space}{Space} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a3e38244d421dc2b984123b26698028e7}{Rack\-::set\-Space} Setter for a space. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{get\-Space} (int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{Rack\-::get\-Space} Gets the space at an index. \end{DoxyCompactList}\item 
+\hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}{refresh} (\hyperlink{class_game}{Game} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}{Rack\-::refresh} Refreshes the rack to show the rack of the current player. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rack_a5bd6dd499aecf9239831aafc1679a768}{is\-Active} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a5bd6dd499aecf9239831aafc1679a768}{Rack\-::is\-Active} Is the space active. \end{DoxyCompactList}\item 
+void \hyperlink{class_rack_afdf845eb458b07ed6029d29672ab120f}{inactivate\-By\-Letter} (\hyperlink{class_letter}{Letter} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_afdf845eb458b07ed6029d29672ab120f}{Rack\-::inactivate\-By\-Letter} Inactivates a space by the letter is points to. \end{DoxyCompactList}\item 
+\hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_rack_a93f23b989fbb09c0acfb42b24d071887}{delete\-Letter} (\hyperlink{class_letter}{Letter} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a93f23b989fbb09c0acfb42b24d071887}{Rack\-::delete\-Letter} Deletes a letter from the rack. \end{DoxyCompactList}\item 
+\hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_rack_a66591f08659676ac81eeec7f49f7e1ef}{inactivate\-Other\-Spaces} (int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_a66591f08659676ac81eeec7f49f7e1ef}{Rack\-::inactivate\-Other\-Spaces} Inactivates other spaces in the rack. \end{DoxyCompactList}\item 
+int \hyperlink{class_rack_adcaff679bc9261d773505a0bb132ab96}{get\-Active\-Index} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_adcaff679bc9261d773505a0bb132ab96}{Rack\-::get\-Active\-Index} Gets the index of the currently active space. \end{DoxyCompactList}\item 
+int \hyperlink{class_rack_aa350328de6aa50d65c63556b930de13b}{get\-Pos} (\hyperlink{class_letter}{Letter} $\ast$L)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_aa350328de6aa50d65c63556b930de13b}{Rack\-::get\-Pos} Gets the position of the \hyperlink{class_rack}{Rack} based on the letter address provided. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{get\-Rack} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack\-::get\-Rack} Gets the rack or creates a new one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rack_ae14b4c67c853471c6ea8a4813847a98c}{Rack} (Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rack_ae14b4c67c853471c6ea8a4813847a98c}{Rack\-::\-Rack} Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces} \mbox{[}\hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{R\-A\-C\-K\-S\-I\-Z\-E}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_rack_afcffaefc94d794ec29c52b5899f1d55f}{is\-Set} = false
+\item 
+static \hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_rack_afac5cd813452f1191075fcbc4413ffb3}{rack} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_rack}{Rack} class Singleton class representing the current player on the \hyperlink{class_dialog}{Dialog}. 
+
+Definition at line 16 of file rack.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_rack_aa18464e4a5e7048969a95526c70b3afb}{\index{Rack@{Rack}!$\sim$\-Rack@{$\sim$\-Rack}}
+\index{$\sim$\-Rack@{$\sim$\-Rack}!Rack@{Rack}}
+\subsubsection[{$\sim$\-Rack}]{\setlength{\rightskip}{0pt plus 5cm}Rack\-::$\sim$\-Rack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rack_aa18464e4a5e7048969a95526c70b3afb}
+
+
+\hyperlink{class_rack_aa18464e4a5e7048969a95526c70b3afb}{Rack\-::$\sim$\-Rack} Destructor. 
+
+
+
+Definition at line 35 of file rack.\-cpp.
+
+
+
+References R\-A\-C\-K\-S\-I\-Z\-E, and spaces.
+
+
+\begin{DoxyCode}
+36 \{
+37     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+38         \textcolor{keyword}{delete}(\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]);
+39     \}
+40 \}
+\end{DoxyCode}
+\hypertarget{class_rack_ae14b4c67c853471c6ea8a4813847a98c}{\index{Rack@{Rack}!Rack@{Rack}}
+\index{Rack@{Rack}!Rack@{Rack}}
+\subsubsection[{Rack}]{\setlength{\rightskip}{0pt plus 5cm}Rack\-::\-Rack (
+\begin{DoxyParamCaption}
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}}\label{class_rack_ae14b4c67c853471c6ea8a4813847a98c}
+
+
+\hyperlink{class_rack_ae14b4c67c853471c6ea8a4813847a98c}{Rack\-::\-Rack} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file rack.\-cpp.
+
+
+
+References R\-A\-C\-K\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by get\-Rack().
+
+
+\begin{DoxyCode}
+10                           :
+11     QObject(parent)
+12 \{
+13     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+14         \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(i);
+15     \}
+16 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rack_a93f23b989fbb09c0acfb42b24d071887}{\index{Rack@{Rack}!delete\-Letter@{delete\-Letter}}
+\index{delete\-Letter@{delete\-Letter}!Rack@{Rack}}
+\subsubsection[{delete\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack} $\ast$ Rack\-::delete\-Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_rack_a93f23b989fbb09c0acfb42b24d071887}
+
+
+\hyperlink{class_rack_a93f23b989fbb09c0acfb42b24d071887}{Rack\-::delete\-Letter} Deletes a letter from the rack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to conpare to the rack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file rack.\-cpp.
+
+
+
+References Space\-::clear(), R\-A\-C\-K\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by Board\-::$\sim$\-Board().
+
+
+\begin{DoxyCode}
+158 \{
+159     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+160         \textcolor{keywordflow}{if} (\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->getLetter() == letter)\{
+161             \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+162         \}
+163     \}
+164     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+165 \}
+\end{DoxyCode}
+\hypertarget{class_rack_adcaff679bc9261d773505a0bb132ab96}{\index{Rack@{Rack}!get\-Active\-Index@{get\-Active\-Index}}
+\index{get\-Active\-Index@{get\-Active\-Index}!Rack@{Rack}}
+\subsubsection[{get\-Active\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int Rack\-::get\-Active\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rack_adcaff679bc9261d773505a0bb132ab96}
+
+
+\hyperlink{class_rack_adcaff679bc9261d773505a0bb132ab96}{Rack\-::get\-Active\-Index} Gets the index of the currently active space. 
+
+\begin{DoxyReturn}{Returns}
+the index 
+\end{DoxyReturn}
+
+
+Definition at line 118 of file rack.\-cpp.
+
+
+
+References is\-Active(), R\-A\-C\-K\-S\-I\-Z\-E, and spaces.
+
+
+\begin{DoxyCode}
+119 \{
+120     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+121         \textcolor{keywordflow}{if} (\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_rack_a5bd6dd499aecf9239831aafc1679a768}{isActive}())\{
+122             \textcolor{keywordflow}{return} i;
+123         \}
+124     \}
+125     \textcolor{keywordflow}{return} -1;
+126 \}
+\end{DoxyCode}
+\hypertarget{class_rack_aa350328de6aa50d65c63556b930de13b}{\index{Rack@{Rack}!get\-Pos@{get\-Pos}}
+\index{get\-Pos@{get\-Pos}!Rack@{Rack}}
+\subsubsection[{get\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}int Rack\-::get\-Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{L}
+\end{DoxyParamCaption}
+)}}\label{class_rack_aa350328de6aa50d65c63556b930de13b}
+
+
+\hyperlink{class_rack_aa350328de6aa50d65c63556b930de13b}{Rack\-::get\-Pos} Gets the position of the \hyperlink{class_rack}{Rack} based on the letter address provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & The letter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the integer position on the rack. -\/1 if it doesn't exist. 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file rack.\-cpp.
+
+
+
+References spaces.
+
+
+\begin{DoxyCode}
+144 \{
+145     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 7; i++)
+146         \textcolor{keywordflow}{if}(this->\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->getLetter() == L)
+147             \textcolor{keywordflow}{return} i;
+148     \textcolor{keywordflow}{return} -1;
+149 \}
+\end{DoxyCode}
+\hypertarget{class_rack_aa48de650c15bda8267451d84caf6ea3f}{\index{Rack@{Rack}!get\-Rack@{get\-Rack}}
+\index{get\-Rack@{get\-Rack}!Rack@{Rack}}
+\subsubsection[{get\-Rack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack} $\ast$ Rack\-::get\-Rack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_rack_aa48de650c15bda8267451d84caf6ea3f}
+
+
+\hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack\-::get\-Rack} Gets the rack or creates a new one. 
+
+\begin{DoxyReturn}{Returns}
+The rack 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file rack.\-cpp.
+
+
+
+References is\-Set, rack, and Rack().
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search(), Move\-::apply(), Dialog\-::create\-Horizontal\-Group\-Box(), Dialog\-::\-Dialog(), Player\-::get\-New\-Letters(), Board\-::move\-Letter\-To\-Board(), Game\-::next\-Turn(), Space\-::on\-\_\-clicked(), A\-I\-Player\-::play(), Move\-::unapply(), and Board\-::$\sim$\-Board().
+
+
+\begin{DoxyCode}
+23 \{
+24     \textcolor{keywordflow}{if}(\hyperlink{class_rack_afcffaefc94d794ec29c52b5899f1d55f}{isSet})\{
+25         \textcolor{keywordflow}{return} \hyperlink{class_rack_afac5cd813452f1191075fcbc4413ffb3}{rack};
+26     \}
+27     \hyperlink{class_rack_afcffaefc94d794ec29c52b5899f1d55f}{isSet} = \textcolor{keyword}{true};
+28     \hyperlink{class_rack_afac5cd813452f1191075fcbc4413ffb3}{rack} = \textcolor{keyword}{new} \hyperlink{class_rack_ae14b4c67c853471c6ea8a4813847a98c}{Rack}();
+29     \textcolor{keywordflow}{return} \hyperlink{class_rack_afac5cd813452f1191075fcbc4413ffb3}{rack};
+30 \}
+\end{DoxyCode}
+\hypertarget{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{\index{Rack@{Rack}!get\-Space@{get\-Space}}
+\index{get\-Space@{get\-Space}!Rack@{Rack}}
+\subsubsection[{get\-Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Rack\-::get\-Space (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}
+
+
+\hyperlink{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{Rack\-::get\-Space} Gets the space at an index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The space at i 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file rack.\-cpp.
+
+
+
+References spaces.
+
+
+
+Referenced by Move\-::apply(), Dialog\-::create\-Horizontal\-Group\-Box(), and Move\-::unapply().
+
+
+\begin{DoxyCode}
+134 \{
+135     \textcolor{keywordflow}{return} \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i];
+136 \}
+\end{DoxyCode}
+\hypertarget{class_rack_afdf845eb458b07ed6029d29672ab120f}{\index{Rack@{Rack}!inactivate\-By\-Letter@{inactivate\-By\-Letter}}
+\index{inactivate\-By\-Letter@{inactivate\-By\-Letter}!Rack@{Rack}}
+\subsubsection[{inactivate\-By\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}void Rack\-::inactivate\-By\-Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_rack_afdf845eb458b07ed6029d29672ab120f}
+
+
+\hyperlink{class_rack_afdf845eb458b07ed6029d29672ab120f}{Rack\-::inactivate\-By\-Letter} Inactivates a space by the letter is points to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter used to compare \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file rack.\-cpp.
+
+
+
+References R\-A\-C\-K\-S\-I\-Z\-E, Space\-::set\-Inactive(), and spaces.
+
+
+
+Referenced by Space\-::on\-\_\-clicked(), and A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+76 \{
+77     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+78         \textcolor{keywordflow}{if} (\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->getLetter() == letter)\{
+79             \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+80         \}
+81     \}
+82 \}
+\end{DoxyCode}
+\hypertarget{class_rack_a66591f08659676ac81eeec7f49f7e1ef}{\index{Rack@{Rack}!inactivate\-Other\-Spaces@{inactivate\-Other\-Spaces}}
+\index{inactivate\-Other\-Spaces@{inactivate\-Other\-Spaces}!Rack@{Rack}}
+\subsubsection[{inactivate\-Other\-Spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack} $\ast$ Rack\-::inactivate\-Other\-Spaces (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_rack_a66591f08659676ac81eeec7f49f7e1ef}
+
+
+\hyperlink{class_rack_a66591f08659676ac81eeec7f49f7e1ef}{Rack\-::inactivate\-Other\-Spaces} Inactivates other spaces in the rack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The position not to inactivate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file rack.\-cpp.
+
+
+
+References is\-Active(), R\-A\-C\-K\-S\-I\-Z\-E, Space\-::set\-Inactive(), and spaces.
+
+
+
+Referenced by Space\-::on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+61 \{
+62     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+63         \textcolor{keywordflow}{if} (x != i && \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_rack_a5bd6dd499aecf9239831aafc1679a768}{isActive}())\{
+64             \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+65         \}
+66     \}
+67     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+68 \}
+\end{DoxyCode}
+\hypertarget{class_rack_a5bd6dd499aecf9239831aafc1679a768}{\index{Rack@{Rack}!is\-Active@{is\-Active}}
+\index{is\-Active@{is\-Active}!Rack@{Rack}}
+\subsubsection[{is\-Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Rack\-::is\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rack_a5bd6dd499aecf9239831aafc1679a768}
+
+
+\hyperlink{class_rack_a5bd6dd499aecf9239831aafc1679a768}{Rack\-::is\-Active} Is the space active. 
+
+\begin{DoxyReturn}{Returns}
+true if active 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file rack.\-cpp.
+
+
+
+References R\-A\-C\-K\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by get\-Active\-Index(), and inactivate\-Other\-Spaces().
+
+
+\begin{DoxyCode}
+104 \{
+105     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+106         \textcolor{keywordflow}{if} (\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_rack_a5bd6dd499aecf9239831aafc1679a768}{isActive}())\{
+107             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+108         \}
+109     \}
+110     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+111 \}
+\end{DoxyCode}
+\hypertarget{class_rack_a7c2b198bbb87eda22a2524781dc09da3}{\index{Rack@{Rack}!on\-\_\-cancel\-Button\-\_\-clicked@{on\-\_\-cancel\-Button\-\_\-clicked}}
+\index{on\-\_\-cancel\-Button\-\_\-clicked@{on\-\_\-cancel\-Button\-\_\-clicked}!Rack@{Rack}}
+\subsubsection[{on\-\_\-cancel\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Rack\-::on\-\_\-cancel\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_rack_a7c2b198bbb87eda22a2524781dc09da3}
+
+
+\hyperlink{class_rack_a7c2b198bbb87eda22a2524781dc09da3}{Rack\-::on\-\_\-cancel\-Button\-\_\-clicked} Handles the cancel\-Button\-\_\-clicked events. 
+
+
+
+Definition at line 171 of file rack.\-cpp.
+
+
+
+References R\-A\-C\-K\-S\-I\-Z\-E, Space\-::set\-Inactive(), and spaces.
+
+
+\begin{DoxyCode}
+172 \{
+173     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+174         \textcolor{keywordflow}{if} (\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->isPlaced()) \{
+175             \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+176         \}
+177     \}
+178 \}
+\end{DoxyCode}
+\hypertarget{class_rack_a65c2e50299cb5ad7111ad56132b18c29}{\index{Rack@{Rack}!on\-\_\-invalid\-Move@{on\-\_\-invalid\-Move}}
+\index{on\-\_\-invalid\-Move@{on\-\_\-invalid\-Move}!Rack@{Rack}}
+\subsubsection[{on\-\_\-invalid\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void Rack\-::on\-\_\-invalid\-Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_rack_a65c2e50299cb5ad7111ad56132b18c29}
+
+
+\hyperlink{class_rack_a65c2e50299cb5ad7111ad56132b18c29}{Rack\-::on\-\_\-invalid\-Move} Handles invalide\-Move events. 
+
+
+
+Definition at line 183 of file rack.\-cpp.
+
+
+
+References R\-A\-C\-K\-S\-I\-Z\-E, Space\-::set\-Inactive(), and spaces.
+
+
+\begin{DoxyCode}
+184 \{
+185     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+186         \textcolor{keywordflow}{if} (\hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->isPlaced()) \{
+187             \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+188         \}
+189     \}
+190 \}
+\end{DoxyCode}
+\hypertarget{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}{\index{Rack@{Rack}!refresh@{refresh}}
+\index{refresh@{refresh}!Rack@{Rack}}
+\subsubsection[{refresh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack} $\ast$ Rack\-::refresh (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game}
+\end{DoxyParamCaption}
+)}}\label{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}
+
+
+\hyperlink{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}{Rack\-::refresh} Refreshes the rack to show the rack of the current player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file rack.\-cpp.
+
+
+
+References Space\-::clear(), Game\-::current\-Player(), Player\-::get\-Letter(), R\-A\-C\-K\-S\-I\-Z\-E, Space\-::set\-Letter(), and spaces.
+
+
+
+Referenced by Game\-::next\-Turn(), and Dialog\-::setup\-Game().
+
+
+\begin{DoxyCode}
+91 \{
+92     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; i++)\{
+93         \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+94         \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i]->\hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{setLetter}(game->\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}()->
+      \hyperlink{class_player_aa6aabfbae536fec650fd466f65fb9743}{getLetter}(i));
+95     \}
+96     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+97 \}
+\end{DoxyCode}
+\hypertarget{class_rack_a3e38244d421dc2b984123b26698028e7}{\index{Rack@{Rack}!set\-Space@{set\-Space}}
+\index{set\-Space@{set\-Space}!Rack@{Rack}}
+\subsubsection[{set\-Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack} $\ast$ Rack\-::set\-Space (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}}\label{class_rack_a3e38244d421dc2b984123b26698028e7}
+
+
+\hyperlink{class_rack_a3e38244d421dc2b984123b26698028e7}{Rack\-::set\-Space} Setter for a space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The position to set \\
+\hline
+{\em space} & The space to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file rack.\-cpp.
+
+
+
+References spaces.
+
+
+\begin{DoxyCode}
+49 \{
+50     \hyperlink{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{spaces}[i] = space;
+51     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+52 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_rack_afcffaefc94d794ec29c52b5899f1d55f}{\index{Rack@{Rack}!is\-Set@{is\-Set}}
+\index{is\-Set@{is\-Set}!Rack@{Rack}}
+\subsubsection[{is\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool Rack\-::is\-Set = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_rack_afcffaefc94d794ec29c52b5899f1d55f}
+Flag if the \hyperlink{class_rack}{Rack} has been set 
+
+Definition at line 35 of file rack.\-h.
+
+
+
+Referenced by get\-Rack().
+
+\hypertarget{class_rack_afac5cd813452f1191075fcbc4413ffb3}{\index{Rack@{Rack}!rack@{rack}}
+\index{rack@{rack}!Rack@{Rack}}
+\subsubsection[{rack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack} $\ast$ Rack\-::rack = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_rack_afac5cd813452f1191075fcbc4413ffb3}
+The \hyperlink{class_rack}{Rack} 
+
+Definition at line 36 of file rack.\-h.
+
+
+
+Referenced by get\-Rack().
+
+\hypertarget{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}{\index{Rack@{Rack}!spaces@{spaces}}
+\index{spaces@{spaces}!Rack@{Rack}}
+\subsubsection[{spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space}$\ast$ Rack\-::spaces\mbox{[}{\bf R\-A\-C\-K\-S\-I\-Z\-E}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_rack_a05c2ab5154aed4dde5306f7847ffad4b}
+The container for the Spaces 
+
+Definition at line 37 of file rack.\-h.
+
+
+
+Referenced by delete\-Letter(), get\-Active\-Index(), get\-Pos(), get\-Space(), inactivate\-By\-Letter(), inactivate\-Other\-Spaces(), is\-Active(), on\-\_\-cancel\-Button\-\_\-clicked(), on\-\_\-invalid\-Move(), Rack(), refresh(), set\-Space(), and $\sim$\-Rack().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{rack_8h}{rack.\-h}\item 
+Scrabble/\hyperlink{rack_8cpp}{rack.\-cpp}\end{DoxyCompactItemize}

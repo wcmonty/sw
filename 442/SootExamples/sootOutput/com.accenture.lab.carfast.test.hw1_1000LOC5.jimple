@@ -1,0 +1,526 @@
+public class com.accenture.lab.carfast.test.hw1_1000LOC5 extends com.accenture.lab.carfast.test.hw1_1000LOC26 implements com.accenture.lab.carfast.test.hw1_1000LOCInterface3
+{
+    static short[] f0;
+    static int[] f1;
+    byte f2;
+    float f3;
+
+    static void <clinit>()
+    {
+        short[] temp$0;
+        int[] temp$1;
+
+        temp$0 = newarray (short)[36];
+        <com.accenture.lab.carfast.test.hw1_1000LOC5: short[] f0> = temp$0;
+        temp$1 = newarray (int)[5];
+        <com.accenture.lab.carfast.test.hw1_1000LOC5: int[] f1> = temp$1;
+        return;
+    }
+
+    public java.lang.String hw1_1000LOCInterface3Method0(char, short, long, float, double, char, byte, short)
+    {
+        com.accenture.lab.carfast.test.hw1_1000LOC5 this, classObj, temp$0;
+        char var0, var5;
+        short var1, var7;
+        long var2;
+        float var3, temp$30, temp$31, temp$32;
+        double var4;
+        byte var6;
+        int i, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27, temp$28, temp$29, temp$33, temp$34;
+        java.lang.String temp$35;
+
+        this := @this: com.accenture.lab.carfast.test.hw1_1000LOC5;
+        var0 := @parameter0: char;
+        var1 := @parameter1: short;
+        var2 := @parameter2: long;
+        var3 := @parameter3: float;
+        var4 := @parameter4: double;
+        var5 := @parameter5: char;
+        var6 := @parameter6: byte;
+        var7 := @parameter7: short;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 0 goto label1;
+
+        goto label9;
+
+     label1:
+        nop;
+        temp$1 = (int) var1;
+        temp$2 = temp$1 / 1248;
+        temp$3 = (int) var1;
+        temp$4 = temp$3 - 12492;
+        temp$5 = (int) var7;
+        temp$6 = (int) var1;
+        temp$7 = temp$5 - temp$6;
+        temp$8 = temp$4 * temp$7;
+        if temp$2 != temp$8 goto label2;
+
+        goto label8;
+
+     label2:
+        nop;
+        temp$9 = (int) var6;
+        temp$10 = temp$9 / -94;
+        temp$11 = (int) var6;
+        temp$12 = temp$11 + -94;
+        if temp$10 != temp$12 goto label3;
+
+        goto label7;
+
+     label3:
+        nop;
+        temp$13 = (int) var1;
+        temp$14 = (int) var7;
+        temp$15 = (int) var1;
+        temp$16 = temp$15 - 22957;
+        temp$17 = (int) var7;
+        temp$18 = (int) var1;
+        temp$19 = temp$17 - temp$18;
+        temp$20 = temp$16 - temp$19;
+        temp$21 = temp$13 + temp$14;
+        if temp$21 > temp$20 goto label5;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$22 = (int) var1;
+        temp$23 = (int) var7;
+        temp$24 = (int) var7;
+        temp$25 = temp$24 * 7560;
+        temp$26 = temp$22 + temp$23;
+        temp$27 = temp$26 * temp$25;
+        temp$28 = (int) var7;
+        temp$29 = temp$28 / 617;
+        if temp$27 < temp$29 goto label5;
+
+        goto label6;
+
+     label5:
+        nop;
+        temp$30 = var3 - 0.23098427F;
+        temp$31 = var3 * 0.19522178F;
+        temp$32 = temp$30 - temp$31;
+        this.<com.accenture.lab.carfast.test.hw1_1000LOC5: float f3> = temp$32;
+
+     label6:
+        nop;
+
+     label7:
+        nop;
+
+     label8:
+        nop;
+        nop;
+        temp$33 = i;
+        temp$34 = temp$33 + 1;
+        i = temp$34;
+        goto label0;
+
+     label9:
+        nop;
+        temp$35 = "vnimcmzbcglakxnc";
+        return temp$35;
+    }
+
+    public java.lang.Object hw1_1000LOC5method0(long, float, short)
+    {
+        com.accenture.lab.carfast.test.hw1_1000LOC5 this, classObj, temp$0;
+        long var0;
+        float var1;
+        short var2;
+        int i, temp$2, temp$3;
+        java.io.PrintStream temp$1;
+        java.lang.Object temp$4;
+
+        this := @this: com.accenture.lab.carfast.test.hw1_1000LOC5;
+        var0 := @parameter0: long;
+        var1 := @parameter1: float;
+        var2 := @parameter2: short;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 3 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000LOC5 - hw1_1000LOC5method0- LineInMethod: 3");
+        nop;
+        temp$2 = i;
+        temp$3 = temp$2 + 1;
+        i = temp$3;
+        goto label0;
+
+     label2:
+        nop;
+        temp$4 = null;
+        return temp$4;
+    }
+
+    public java.lang.String hw1_1000LOC5method1(double, com.accenture.lab.carfast.test.hw1_1000LOC0, float, float)
+    {
+        com.accenture.lab.carfast.test.hw1_1000LOC5 this, classObj, temp$0;
+        double var0;
+        com.accenture.lab.carfast.test.hw1_1000LOC0 var1;
+        float var2, var3, temp$1, temp$2, temp$3;
+        int temp$4;
+        java.io.PrintStream temp$5;
+        java.lang.String temp$6;
+
+        this := @this: com.accenture.lab.carfast.test.hw1_1000LOC5;
+        var0 := @parameter0: double;
+        var1 := @parameter1: com.accenture.lab.carfast.test.hw1_1000LOC0;
+        var2 := @parameter2: float;
+        var3 := @parameter3: float;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        classObj = temp$0;
+        temp$1 = this.<com.accenture.lab.carfast.test.hw1_1000LOC5: float f3>;
+        temp$2 = temp$1 - 0.9934159F;
+        temp$3 = var3 * 0.02502954F;
+        temp$4 = temp$2 cmpg temp$3;
+        if temp$4 > 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000LOC5 - hw1_1000LOC5method1- LineInMethod: 3");
+
+     label1:
+        nop;
+        temp$6 = "urixplcmxvtrgcririqjoqpnwxoktdaairxxtekzxxcgndnzlkwhcjaksiknwurkfziarpdrawtwfaj";
+        return temp$6;
+    }
+
+    public static short hw1_1000LOC26method0(short, float, com.accenture.lab.carfast.test.hw1_1000LOC8, long, int, com.accenture.lab.carfast.test.hw1_1000LOC25, short, float, float)
+    {
+        short var0, var6, temp$8, temp$20;
+        float var1, var7, var8;
+        com.accenture.lab.carfast.test.hw1_1000LOC8 var2, temp$12;
+        long var3;
+        int var4, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$11, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$23, temp$24, temp$25;
+        com.accenture.lab.carfast.test.hw1_1000LOC25 var5, temp$10;
+        com.accenture.lab.carfast.test.hw1_1000LOC5 classObj, temp$0;
+        short[] temp$1;
+        java.io.PrintStream temp$9, temp$21;
+        int[] temp$22;
+
+        var0 := @parameter0: short;
+        var1 := @parameter1: float;
+        var2 := @parameter2: com.accenture.lab.carfast.test.hw1_1000LOC8;
+        var3 := @parameter3: long;
+        var4 := @parameter4: int;
+        var5 := @parameter5: com.accenture.lab.carfast.test.hw1_1000LOC25;
+        var6 := @parameter6: short;
+        var7 := @parameter7: float;
+        var8 := @parameter8: float;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        classObj = temp$0;
+        goto label6;
+
+     label0:
+        nop;
+        temp$1 = <com.accenture.lab.carfast.test.hw1_1000LOC5: short[] f0>;
+        temp$2 = 23;
+        temp$3 = (int) var6;
+        temp$4 = temp$3 * 13980;
+        temp$5 = (int) var6;
+        temp$6 = temp$5 % 22985;
+        temp$7 = temp$4 - temp$6;
+        temp$8 = (short) temp$7;
+        temp$1[temp$2] = temp$8;
+        goto label7;
+
+     label1:
+        nop;
+        temp$9 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000LOC5 - hw1_1000LOC26method0- LineInMethod: 6");
+        goto label7;
+
+     label2:
+        nop;
+        temp$10 = new com.accenture.lab.carfast.test.hw1_1000LOC25;
+        specialinvoke temp$10.<com.accenture.lab.carfast.test.hw1_1000LOC25: void <init>()>();
+        var5 = temp$10;
+        temp$11 = virtualinvoke var5.<com.accenture.lab.carfast.test.hw1_1000LOC25: int hw1_1000LOC7method0(byte,double,int)>(75, 0.9301381540388752, var4);
+        var4 = temp$11;
+        goto label7;
+
+     label3:
+        nop;
+        temp$12 = new com.accenture.lab.carfast.test.hw1_1000LOC8;
+        specialinvoke temp$12.<com.accenture.lab.carfast.test.hw1_1000LOC8: void <init>()>();
+        var2 = temp$12;
+        goto label7;
+
+     label4:
+        nop;
+        temp$13 = (int) var0;
+        temp$14 = (int) var6;
+        temp$15 = temp$13 * temp$14;
+        temp$16 = temp$15;
+        temp$17 = (int) var0;
+        temp$18 = temp$17 - 22196;
+        temp$19 = temp$16 + temp$18;
+        temp$20 = (short) temp$19;
+        var0 = temp$20;
+        goto label7;
+
+     label5:
+        nop;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000LOC5 - hw1_1000LOC26method0- LineInMethod: 19");
+        goto label7;
+
+     label6:
+        nop;
+        temp$22 = <com.accenture.lab.carfast.test.hw1_1000LOC5: int[] f1>;
+        temp$23 = 3;
+        temp$24 = temp$22[temp$23];
+        temp$25 = var4 - temp$24;
+        nop;
+        tableswitch(temp$25)
+        {
+            case 0: goto label0;
+            case 1: goto label1;
+            case 2: goto label2;
+            case 3: goto label3;
+            case 4: goto label4;
+            default: goto label5;
+        };
+
+     label7:
+        nop;
+        return var0;
+    }
+
+    public char hw1_1000LOC5method3(float, java.lang.String, com.accenture.lab.carfast.test.hw1_1000LOC23)
+    {
+        com.accenture.lab.carfast.test.hw1_1000LOC5 this, classObj, temp$0;
+        float var0;
+        java.lang.String var1;
+        com.accenture.lab.carfast.test.hw1_1000LOC23 var2;
+        int i, temp$2, temp$3;
+        byte temp$1;
+        char temp$4;
+
+        this := @this: com.accenture.lab.carfast.test.hw1_1000LOC5;
+        var0 := @parameter0: float;
+        var1 := @parameter1: java.lang.String;
+        var2 := @parameter2: com.accenture.lab.carfast.test.hw1_1000LOC23;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 3 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$1 = -81;
+        this.<com.accenture.lab.carfast.test.hw1_1000LOC5: byte f2> = temp$1;
+        nop;
+        temp$2 = i;
+        temp$3 = temp$2 + 1;
+        i = temp$3;
+        goto label0;
+
+     label2:
+        nop;
+        temp$4 = 112;
+        return temp$4;
+    }
+
+    public static java.lang.String hw1_1000LOC26method5(int, char, float, float, double, java.lang.String, int)
+    {
+        int var0, var6, i, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$17, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23;
+        char var1;
+        float var2, var3;
+        double var4;
+        java.lang.String var5;
+        com.accenture.lab.carfast.test.hw1_1000LOC5 classObj, temp$0;
+        int[] temp$16;
+
+        var0 := @parameter0: int;
+        var1 := @parameter1: char;
+        var2 := @parameter2: float;
+        var3 := @parameter3: float;
+        var4 := @parameter4: double;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: int;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 4 goto label1;
+
+        goto label7;
+
+     label1:
+        nop;
+        temp$1 = (int) var1;
+        temp$2 = temp$1 * 122;
+        temp$3 = (int) var1;
+        temp$4 = temp$3 * 97;
+        if temp$2 < temp$4 goto label3;
+
+        goto label2;
+
+     label2:
+        nop;
+        temp$5 = (int) var1;
+        temp$6 = temp$5 * 120;
+        temp$7 = (int) var1;
+        temp$8 = temp$7 - 99;
+        if temp$6 == temp$8 goto label3;
+
+        goto label6;
+
+     label3:
+        nop;
+        temp$9 = (int) var1;
+        temp$10 = temp$9 / 120;
+        temp$11 = (int) var1;
+        temp$12 = temp$11 * 118;
+        temp$13 = (int) var1;
+        temp$14 = temp$13 - 107;
+        temp$15 = temp$12 * temp$14;
+        if temp$10 != temp$15 goto label4;
+
+        goto label5;
+
+     label4:
+        nop;
+        temp$16 = <com.accenture.lab.carfast.test.hw1_1000LOC5: int[] f1>;
+        temp$17 = 3;
+        temp$18 = var0;
+        temp$19 = var0 / 13;
+        temp$20 = temp$18 + var6;
+        temp$21 = temp$20 - temp$19;
+        temp$16[temp$17] = temp$21;
+
+     label5:
+        nop;
+
+     label6:
+        nop;
+        nop;
+        temp$22 = i;
+        temp$23 = temp$22 + 1;
+        i = temp$23;
+        goto label0;
+
+     label7:
+        nop;
+        return var5;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        com.accenture.lab.carfast.test.hw1_1000LOC5 obj, temp$0;
+        java.lang.String temp$1, temp$4, temp$10;
+        java.lang.Object temp$2;
+        com.accenture.lab.carfast.test.hw1_1000LOC0 temp$3;
+        com.accenture.lab.carfast.test.hw1_1000LOC8 temp$5;
+        com.accenture.lab.carfast.test.hw1_1000LOC25 temp$6;
+        short temp$7;
+        com.accenture.lab.carfast.test.hw1_1000LOC23 temp$8;
+        char temp$9;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        obj = temp$0;
+        temp$1 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.String hw1_1000LOCInterface3Method0(char,short,long,float,double,char,byte,short)>(98, 14965, 77L, 0.12943786F, 0.11814382864090656, 118, -8, 30001);
+        temp$2 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.Object hw1_1000LOC5method0(long,float,short)>(72L, 0.6812779F, 694);
+        temp$3 = new com.accenture.lab.carfast.test.hw1_1000LOC0;
+        specialinvoke temp$3.<com.accenture.lab.carfast.test.hw1_1000LOC0: void <init>()>();
+        temp$4 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.String hw1_1000LOC5method1(double,com.accenture.lab.carfast.test.hw1_1000LOC0,float,float)>(0.20029861569338403, temp$3, 0.6772628F, 0.91802186F);
+        temp$5 = new com.accenture.lab.carfast.test.hw1_1000LOC8;
+        specialinvoke temp$5.<com.accenture.lab.carfast.test.hw1_1000LOC8: void <init>()>();
+        temp$6 = new com.accenture.lab.carfast.test.hw1_1000LOC25;
+        specialinvoke temp$6.<com.accenture.lab.carfast.test.hw1_1000LOC25: void <init>()>();
+        temp$7 = staticinvoke <com.accenture.lab.carfast.test.hw1_1000LOC5: short hw1_1000LOC26method0(short,float,com.accenture.lab.carfast.test.hw1_1000LOC8,long,int,com.accenture.lab.carfast.test.hw1_1000LOC25,short,float,float)>(15489, 0.4635555F, temp$5, 57L, 21, temp$6, 5729, 0.11186677F, 0.7800127F);
+        temp$8 = new com.accenture.lab.carfast.test.hw1_1000LOC23;
+        specialinvoke temp$8.<com.accenture.lab.carfast.test.hw1_1000LOC23: void <init>()>();
+        temp$9 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: char hw1_1000LOC5method3(float,java.lang.String,com.accenture.lab.carfast.test.hw1_1000LOC23)>(0.46238267F, "nkxyaiyvsmjruecgybqctcjosgthm", temp$8);
+        temp$10 = staticinvoke <com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.String hw1_1000LOC26method5(int,char,float,float,double,java.lang.String,int)>(38, 99, 0.36447507F, 0.034772336F, 0.6031321718868842, "rhvcvjerbrkyztntmymlvaggwdmu", 65);
+        return;
+    }
+
+    public static void singleEntry(int, int, int, int, int, int, int, int, int, int)
+    {
+        int i0, i1, i2, i3, i4, i5, i6, i7, i8, i9;
+        com.accenture.lab.carfast.test.hw1_1000LOC5 obj, temp$0;
+        java.lang.String temp$1, temp$4, temp$10;
+        java.lang.Object temp$2;
+        com.accenture.lab.carfast.test.hw1_1000LOC0 temp$3;
+        com.accenture.lab.carfast.test.hw1_1000LOC8 temp$5;
+        com.accenture.lab.carfast.test.hw1_1000LOC25 temp$6;
+        short temp$7;
+        com.accenture.lab.carfast.test.hw1_1000LOC23 temp$8;
+        char temp$9;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        i3 := @parameter3: int;
+        i4 := @parameter4: int;
+        i5 := @parameter5: int;
+        i6 := @parameter6: int;
+        i7 := @parameter7: int;
+        i8 := @parameter8: int;
+        i9 := @parameter9: int;
+        temp$0 = new com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke temp$0.<com.accenture.lab.carfast.test.hw1_1000LOC5: void <init>()>();
+        obj = temp$0;
+        temp$1 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.String hw1_1000LOCInterface3Method0(char,short,long,float,double,char,byte,short)>(97, 14970, 50L, 0.4004795F, 0.5218729977901467, 98, -18, 15064);
+        temp$2 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.Object hw1_1000LOC5method0(long,float,short)>(72L, 0.46593666F, 25130);
+        temp$3 = new com.accenture.lab.carfast.test.hw1_1000LOC0;
+        specialinvoke temp$3.<com.accenture.lab.carfast.test.hw1_1000LOC0: void <init>()>();
+        temp$4 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.String hw1_1000LOC5method1(double,com.accenture.lab.carfast.test.hw1_1000LOC0,float,float)>(0.5312416755483578, temp$3, 0.39400202F, 0.59138167F);
+        temp$5 = new com.accenture.lab.carfast.test.hw1_1000LOC8;
+        specialinvoke temp$5.<com.accenture.lab.carfast.test.hw1_1000LOC8: void <init>()>();
+        temp$6 = new com.accenture.lab.carfast.test.hw1_1000LOC25;
+        specialinvoke temp$6.<com.accenture.lab.carfast.test.hw1_1000LOC25: void <init>()>();
+        temp$7 = staticinvoke <com.accenture.lab.carfast.test.hw1_1000LOC5: short hw1_1000LOC26method0(short,float,com.accenture.lab.carfast.test.hw1_1000LOC8,long,int,com.accenture.lab.carfast.test.hw1_1000LOC25,short,float,float)>(1086, 0.0065653324F, temp$5, 36L, i6, temp$6, 19169, 0.06309986F, 0.9035995F);
+        temp$8 = new com.accenture.lab.carfast.test.hw1_1000LOC23;
+        specialinvoke temp$8.<com.accenture.lab.carfast.test.hw1_1000LOC23: void <init>()>();
+        temp$9 = virtualinvoke obj.<com.accenture.lab.carfast.test.hw1_1000LOC5: char hw1_1000LOC5method3(float,java.lang.String,com.accenture.lab.carfast.test.hw1_1000LOC23)>(0.97972F, "phexykeez", temp$8);
+        temp$10 = staticinvoke <com.accenture.lab.carfast.test.hw1_1000LOC5: java.lang.String hw1_1000LOC26method5(int,char,float,float,double,java.lang.String,int)>(i1, 100, 0.8164651F, 0.35487145F, 0.10860192560823556, "xtmuuqcvdadntpagqqqsxty", i4);
+        return;
+    }
+
+    public void <init>()
+    {
+        com.accenture.lab.carfast.test.hw1_1000LOC5 this;
+
+        this := @this: com.accenture.lab.carfast.test.hw1_1000LOC5;
+        specialinvoke this.<com.accenture.lab.carfast.test.hw1_1000LOC26: void <init>()>();
+        return;
+    }
+}

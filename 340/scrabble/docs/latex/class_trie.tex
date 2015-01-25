@@ -1,0 +1,613 @@
+\hypertarget{class_trie}{\section{Trie Class Reference}
+\label{class_trie}\index{Trie@{Trie}}
+}
+
+
+The \hyperlink{class_trie}{Trie} class is a word dictionary system that guarantees uniqueness of its entries.  
+
+
+
+
+{\ttfamily \#include $<$trie.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trie_a6af57e9f25d0d0a2d59eea5a4a802908}{Trie} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_a6af57e9f25d0d0a2d59eea5a4a802908}{Trie\-::\-Trie()} Default constructor for a \hyperlink{class_trie}{Trie}. \end{DoxyCompactList}\item 
+\hyperlink{class_trie_abf9d6f48d556e09d1b292412df153a4b}{$\sim$\-Trie} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_abf9d6f48d556e09d1b292412df153a4b}{Trie\-::$\sim$\-Trie()} The default destructor for a \hyperlink{class_trie}{Trie} structure. \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_a68065bc13f6c49bb7f139290cceff091}{print\-Trie} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_a68065bc13f6c49bb7f139290cceff091}{Trie\-::print\-Trie} Public function that prints the entire \hyperlink{class_trie}{Trie}. \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_a6bad63197c025fd1d7dab898dc7193db}{add\-Word} (Q\-String s)
+\begin{DoxyCompactList}\small\item\em Trie\-::\-Add\-Word Adds a word into the \hyperlink{class_trie}{Trie}'s structure. \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_a0d142e459d38dead80a72de5152e76d9}{delete\-Word} (Q\-String s)
+\item 
+size\-\_\-t \hyperlink{class_trie_aa42c01330538b67e0aff76068f02a8f7}{anagrams} (Q\-String s, list$<$ Q\-String $>$ $\ast$Wordlist)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_aa42c01330538b67e0aff76068f02a8f7}{Trie\-::anagrams} returns a List of words in the dictionary which can be formed from the characters in 's' This function is not functional, as it alters Word\-List destructively in the case of non-\/unique entries. \end{DoxyCompactList}\item 
+bool \hyperlink{class_trie_a5dd39899df7410211d9d7294e548f5b0}{search\-Word} (Q\-String s)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_a5dd39899df7410211d9d7294e548f5b0}{Trie\-::search\-Word} Searches for a word in the \hyperlink{class_trie}{Trie}'s structure. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{class_trie_ac6a915f9483d03dc99872210b74bf435}{ai\-\_\-search} (Q\-String tiles, Q\-String positions, list$<$ Q\-String $>$ $\ast$Wordlist)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_ac6a915f9483d03dc99872210b74bf435}{Trie\-::ai\-\_\-search} allows the A\-I \hyperlink{class_player}{Player} to figure out what words it has available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_trie_a8fae6ad56c2bb54b80f898a43d183196}{\-\_\-print\-Trie} (\hyperlink{class_trie_node}{Trie\-Node} $\ast$, Q\-String s)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_a8fae6ad56c2bb54b80f898a43d183196}{Trie\-::\-\_\-print\-Trie} Private function facilitates printing the \hyperlink{class_trie}{Trie} from the node given. \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_aa61239097f40f1f36ea3b346e583ad01}{\-\_\-anagramgen} (\hyperlink{class_trie_node}{Trie\-Node} $\ast$node, Q\-String word, Q\-String chars, list$<$ Q\-String $>$ $\ast$Wordlist)
+\begin{DoxyCompactList}\small\item\em \-\_\-anagramgen Private function that generates Anagrams \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_af906dedaa7c21cfee69043230b453446}{\-\_\-assist\-\_\-ai\-\_\-search} (\hyperlink{class_trie_node}{Trie\-Node} $\ast$Node, Q\-String tiles, Q\-String positions, Q\-String word, list$<$ Q\-String $>$ $\ast$Wordlist)
+\begin{DoxyCompactList}\small\item\em \-\_\-assist\-\_\-ai\-\_\-search is a helper function for ai\-\_\-search. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trie_node}{Trie\-Node} $\ast$ \hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_trie_a2c11a076a909acd936d897cd2a81f931}{A\-I\-Player}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_trie}{Trie} class is a word dictionary system that guarantees uniqueness of its entries. 
+
+Definition at line 19 of file trie.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_trie_a6af57e9f25d0d0a2d59eea5a4a802908}{\index{Trie@{Trie}!Trie@{Trie}}
+\index{Trie@{Trie}!Trie@{Trie}}
+\subsubsection[{Trie}]{\setlength{\rightskip}{0pt plus 5cm}Trie\-::\-Trie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_a6af57e9f25d0d0a2d59eea5a4a802908}
+
+
+\hyperlink{class_trie_a6af57e9f25d0d0a2d59eea5a4a802908}{Trie\-::\-Trie()} Default constructor for a \hyperlink{class_trie}{Trie}. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file trie.\-cpp.
+
+
+
+References root.
+
+
+\begin{DoxyCode}
+9 \{
+10     \hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root} = \textcolor{keyword}{new} \hyperlink{class_trie_node}{TrieNode}();
+11 \}
+\end{DoxyCode}
+\hypertarget{class_trie_abf9d6f48d556e09d1b292412df153a4b}{\index{Trie@{Trie}!$\sim$\-Trie@{$\sim$\-Trie}}
+\index{$\sim$\-Trie@{$\sim$\-Trie}!Trie@{Trie}}
+\subsubsection[{$\sim$\-Trie}]{\setlength{\rightskip}{0pt plus 5cm}Trie\-::$\sim$\-Trie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_abf9d6f48d556e09d1b292412df153a4b}
+
+
+\hyperlink{class_trie_abf9d6f48d556e09d1b292412df153a4b}{Trie\-::$\sim$\-Trie()} The default destructor for a \hyperlink{class_trie}{Trie} structure. 
+
+
+
+Definition at line 17 of file trie.\-cpp.
+
+
+
+References root.
+
+
+\begin{DoxyCode}
+18 \{
+19     \textcolor{keyword}{delete} this->\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root};
+20 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_trie_aa61239097f40f1f36ea3b346e583ad01}{\index{Trie@{Trie}!\-\_\-anagramgen@{\-\_\-anagramgen}}
+\index{\-\_\-anagramgen@{\-\_\-anagramgen}!Trie@{Trie}}
+\subsubsection[{\-\_\-anagramgen}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-::\-\_\-anagramgen (
+\begin{DoxyParamCaption}
+\item[{{\bf Trie\-Node} $\ast$}]{node, }
+\item[{Q\-String}]{word, }
+\item[{Q\-String}]{chars, }
+\item[{list$<$ Q\-String $>$ $\ast$}]{Wordlist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_aa61239097f40f1f36ea3b346e583ad01}
+
+
+\-\_\-anagramgen Private function that generates Anagrams 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Current \hyperlink{class_trie_node}{Trie\-Node} \\
+\hline
+{\em word} & Current word in the recursive call. \\
+\hline
+{\em chars} & Current array of character representing the letters we have left to search through with. \\
+\hline
+{\em Wordlist} & The resulting list$<$\-Q\-String$>$ of items where 'is\-Word()' resolved to true on the nodes searched through. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file trie.\-cpp.
+
+
+
+References Trie\-Node\-::find\-Child(), and Trie\-Node\-::is\-Word().
+
+
+
+Referenced by anagrams().
+
+
+\begin{DoxyCode}
+60 \{
+61     \hyperlink{class_trie_node}{TrieNode} * tn;
+62     \textcolor{keywordflow}{if}( chars.length() )
+63         \textcolor{keywordflow}{if}( node->\hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{isWord}() )
+64             Wordlist->push\_front(word);
+65 
+66     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i = 0; i < chars.length(); i++)
+67     \{
+68         \textcolor{comment}{/* Chars: birdy}
+69 \textcolor{comment}{         * i:     0     1       2       3       4}
+70 \textcolor{comment}{         * Left:  NULL  b       bi      bir     bird}
+71 \textcolor{comment}{         * Char:  b     i       r       d       y}
+72 \textcolor{comment}{         * Right: irdy  rdy     dy      y       NULL}
+73 \textcolor{comment}{         */}
+74         QString left = chars.left(i);
+75         QString right = chars.right(chars.length() - i - 1);
+76 
+77         \textcolor{keywordflow}{if}((tn = node->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(chars[i])))
+78             \hyperlink{class_trie_aa61239097f40f1f36ea3b346e583ad01}{\_anagramgen}(tn,word+chars[i], left+right, Wordlist);
+79     \}
+80 \}
+\end{DoxyCode}
+\hypertarget{class_trie_af906dedaa7c21cfee69043230b453446}{\index{Trie@{Trie}!\-\_\-assist\-\_\-ai\-\_\-search@{\-\_\-assist\-\_\-ai\-\_\-search}}
+\index{\-\_\-assist\-\_\-ai\-\_\-search@{\-\_\-assist\-\_\-ai\-\_\-search}!Trie@{Trie}}
+\subsubsection[{\-\_\-assist\-\_\-ai\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-::\-\_\-assist\-\_\-ai\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{{\bf Trie\-Node} $\ast$}]{Node, }
+\item[{Q\-String}]{tiles, }
+\item[{Q\-String}]{positions, }
+\item[{Q\-String}]{word, }
+\item[{list$<$ Q\-String $>$ $\ast$}]{Wordlist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_af906dedaa7c21cfee69043230b453446}
+
+
+\-\_\-assist\-\_\-ai\-\_\-search is a helper function for ai\-\_\-search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Node} & Guaranteed not N\-U\-L\-L. \\
+\hline
+{\em tiles} & \\
+\hline
+{\em positions} & \\
+\hline
+{\em word} & current recursion's word being built. \\
+\hline
+{\em Wordlist} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 150 of file trie.\-cpp.
+
+
+
+References Trie\-Node\-::find\-Child(), and Trie\-Node\-::is\-Word().
+
+
+
+Referenced by ai\-\_\-search().
+
+
+\begin{DoxyCode}
+150                                                                                                            
+               \{
+151     \textcolor{keywordflow}{if}(!Node) \{
+152         \textcolor{comment}{// This should never happen!}
+153         cout << \textcolor{stringliteral}{"Big Error! Invalid control path!"};
+154         \textcolor{keywordflow}{return};
+155     \}
+156 
+157     \textcolor{comment}{/*}
+158 \textcolor{comment}{     * This is the mainstay of our logic. This is what decides if something should be added to the}
+159 \textcolor{comment}{     * word list or not.}
+160 \textcolor{comment}{     */}
+161     \textcolor{keywordflow}{if}( Node->\hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{isWord}() ) \{
+162         \textcolor{keywordflow}{if}(!positions.isEmpty()) \{
+163             \textcolor{keywordflow}{if}(positions[0] == QChar(\textcolor{charliteral}{'*'}) ) \textcolor{comment}{// We can't be sure it is valid if a non-empty space follows.}
+164                 Wordlist->push\_back(word);  \textcolor{comment}{// But we \_can\_ be sure it is valid if an empty space follows..}
+165         \}
+166         \textcolor{keywordflow}{else}
+167             Wordlist->push\_back(word); \textcolor{comment}{// We can be sure it is valid if this was the last required letter.}
+168     \}
+169 
+170     \textcolor{comment}{// exit condition 1: If we have no tiles, we can't place letters.}
+171     \textcolor{comment}{// exit condition 2: If we have no positions left to fill, we can't place letters.}
+172     \textcolor{keywordflow}{if}( tiles.isEmpty() || positions.isEmpty() )
+173         \textcolor{keywordflow}{return};
+174 
+175     \textcolor{comment}{// We are guaranteed to have a position letter, so we take it.}
+176     QChar mc = positions[0];
+177 
+178     \textcolor{comment}{// exit condition 3: if the position letter is not a wildcard,}
+179     \textcolor{comment}{// and we do not have that letter. Then we can not place a letter.}
+180     \textcolor{keywordflow}{if}(!tiles.contains(mc,Qt::CaseInsensitive) && mc != QChar(\textcolor{charliteral}{'*'}))
+181         \textcolor{keywordflow}{return};
+182 
+183     \textcolor{comment}{// We create a copy of the available tiles.}
+184     QString thesetiles = tiles;
+185     \textcolor{comment}{// We remove the first item from the positions list, as we have now handled it.}
+186     positions.remove(0,1);
+187 
+188     \textcolor{comment}{// We are, thanks to our exit conditions, guaranteed to have a tile we want in this position.}
+189     \textcolor{comment}{// First, we handle the case of this being a specific letter we have available in our tray.}
+190     \textcolor{keywordflow}{if}( mc != QChar(\textcolor{charliteral}{'*'}))
+191     \{
+192         \textcolor{keywordtype}{int} tileused\_index = tiles.indexOf(mc,0,Qt::CaseInsensitive);
+193         thesetiles.remove(tileused\_index,1);
+194         \hyperlink{class_trie_node}{TrieNode} * foundchild = Node->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(mc);
+195         \textcolor{keywordflow}{if}( foundchild )
+196             \hyperlink{class_trie_af906dedaa7c21cfee69043230b453446}{\_assist\_ai\_search}(foundchild,tiles,positions,word+mc,Wordlist);
+197     \}
+198     \textcolor{comment}{// If it wasn't a specific letter, we are forced to use the wildcard method.}
+199     \textcolor{keywordflow}{else}
+200     \{
+201         \textcolor{comment}{// We must now attempt this system for any character that is valid here.}
+202         \textcolor{comment}{// It's luckily not 26, it's only as many tiles as we have available!}
+203         \textcolor{comment}{// Still, in the WORST situation...}
+204         \textcolor{comment}{// This means 7*6*5*4*3*2*1, or 7! total calls of recursion. That's 5040.}
+205         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} tile = 0; tile < tiles.length(); tile++ )
+206         \{
+207             QString thesetiles = tiles;
+208             thesetiles = thesetiles.remove(tile,1);
+209             \hyperlink{class_trie_node}{TrieNode} * foundchild = Node->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(tiles[tile]);
+210             \textcolor{keywordflow}{if}( foundchild )
+211                 \hyperlink{class_trie_af906dedaa7c21cfee69043230b453446}{\_assist\_ai\_search}(foundchild,tiles,positions,word+tiles[tile],Wordlist);
+212         \}
+213     \}
+214 \}
+\end{DoxyCode}
+\hypertarget{class_trie_a8fae6ad56c2bb54b80f898a43d183196}{\index{Trie@{Trie}!\-\_\-print\-Trie@{\-\_\-print\-Trie}}
+\index{\-\_\-print\-Trie@{\-\_\-print\-Trie}!Trie@{Trie}}
+\subsubsection[{\-\_\-print\-Trie}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-::\-\_\-print\-Trie (
+\begin{DoxyParamCaption}
+\item[{{\bf Trie\-Node} $\ast$}]{n, }
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_a8fae6ad56c2bb54b80f898a43d183196}
+
+
+\hyperlink{class_trie_a8fae6ad56c2bb54b80f898a43d183196}{Trie\-::\-\_\-print\-Trie} Private function facilitates printing the \hyperlink{class_trie}{Trie} from the node given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The node at which we start to print this call. \\
+\hline
+{\em s} & Making this tail recursive, we build the string we are about to print in here. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 251 of file trie.\-cpp.
+
+
+
+References Trie\-Node\-::children(), Trie\-Node\-::content(), and Trie\-Node\-::is\-Word().
+
+
+
+Referenced by print\-Trie().
+
+
+\begin{DoxyCode}
+252 \{
+253     QChar c = n->\hyperlink{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}{content}();
+254     QString newstring = s;
+255     \textcolor{keywordflow}{if}( !isspace(c.toLatin1()) )
+256         newstring += c;
+257     \textcolor{keywordflow}{if}( n->\hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{isWord}() )
+258         cout << newstring.toStdString() << endl;
+259     \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{unsigned} i = 0; i < n->\hyperlink{class_trie_node_a1780ceae4ef4d8aeb87decadf3114027}{children}().size(); i++ )
+260         \hyperlink{class_trie_a8fae6ad56c2bb54b80f898a43d183196}{\_printTrie}(n->\hyperlink{class_trie_node_a1780ceae4ef4d8aeb87decadf3114027}{children}().at(i),newstring);
+261 \}
+\end{DoxyCode}
+\hypertarget{class_trie_a6bad63197c025fd1d7dab898dc7193db}{\index{Trie@{Trie}!add\-Word@{add\-Word}}
+\index{add\-Word@{add\-Word}!Trie@{Trie}}
+\subsubsection[{add\-Word}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-::add\-Word (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_trie_a6bad63197c025fd1d7dab898dc7193db}
+
+
+Trie\-::\-Add\-Word Adds a word into the \hyperlink{class_trie}{Trie}'s structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & A string representation of a word you wish to add. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file trie.\-cpp.
+
+
+
+References Trie\-Node\-::append\-Child(), Trie\-Node\-::find\-Child(), root, and Trie\-Node\-::set\-Word\-Marker().
+
+
+\begin{DoxyCode}
+28 \{
+29     \hyperlink{class_trie_node}{TrieNode}* current = \hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root};
+30     \textcolor{comment}{// This should not happen.}
+31     \textcolor{comment}{// But just in case, we stop if the entered 'addWord' is empty.}
+32     \textcolor{keywordflow}{if} ( s.length() == 0 )
+33         \textcolor{keywordflow}{return} current->\hyperlink{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}{setWordMarker}(); \textcolor{comment}{// an empty word is a word.}
+34 
+35     \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} i = 0; i < s.length(); i++ )
+36     \{
+37         \hyperlink{class_trie_node}{TrieNode}* child = current->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(s[i]);
+38         \textcolor{keywordflow}{if} ( child != NULL )
+39             current = child;
+40         \textcolor{keywordflow}{else}
+41         \{
+42             \hyperlink{class_trie_node}{TrieNode}* tmp = \textcolor{keyword}{new} \hyperlink{class_trie_node}{TrieNode}(s[i],\textcolor{keyword}{false});
+43             current->\hyperlink{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{appendChild}(tmp);
+44             current = tmp;
+45         \}
+46         \textcolor{keywordflow}{if} ( i == s.length() - 1 )
+47             current->\hyperlink{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}{setWordMarker}();
+48     \}
+49 \}
+\end{DoxyCode}
+\hypertarget{class_trie_ac6a915f9483d03dc99872210b74bf435}{\index{Trie@{Trie}!ai\-\_\-search@{ai\-\_\-search}}
+\index{ai\-\_\-search@{ai\-\_\-search}!Trie@{Trie}}
+\subsubsection[{ai\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Trie\-::ai\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{tiles, }
+\item[{Q\-String}]{positions, }
+\item[{list$<$ Q\-String $>$ $\ast$}]{Wordlist}
+\end{DoxyParamCaption}
+)}}\label{class_trie_ac6a915f9483d03dc99872210b74bf435}
+
+
+\hyperlink{class_trie_ac6a915f9483d03dc99872210b74bf435}{Trie\-::ai\-\_\-search} allows the A\-I \hyperlink{class_player}{Player} to figure out what words it has available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiles} & What tiles (letters) does the A\-I \hyperlink{class_player}{Player} have available to them on their rack? \\
+\hline
+{\em positions} & Representing the one-\/dimensional (line) state. '$\ast$' for open. Length represents where the barriers are. \\
+\hline
+{\em Wordlist} & Where we will store the available words. Destructive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 224 of file trie.\-cpp.
+
+
+
+References \-\_\-assist\-\_\-ai\-\_\-search(), and root.
+
+
+
+Referenced by Unit\-Test\-::dictionarytest().
+
+
+\begin{DoxyCode}
+225 \{
+226     QRegularExpression *re = \textcolor{keyword}{new} QRegularExpression(\textcolor{stringliteral}{"^[a-zA-Z*]+$"});
+227 
+228     \textcolor{keywordflow}{if}( !re->match(tiles,0,QRegularExpression::NormalMatch,QRegularExpression::NoMatchOption ).hasMatch() |
+      |
+229         !re->match(positions,0,QRegularExpression::NormalMatch,QRegularExpression::NoMatchOption ).hasMatch
+      () )
+230         \textcolor{keywordflow}{return} 0; \textcolor{comment}{// Invalid characters found in tiles or positions.}
+231 
+232     \textcolor{keywordflow}{if}(!\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root})
+233     \{
+234         \textcolor{comment}{// ERROR!!! No dictionary!}
+235         \textcolor{keywordflow}{return} 0;
+236     \}
+237 
+238     \hyperlink{class_trie_af906dedaa7c21cfee69043230b453446}{\_assist\_ai\_search}(this->\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root},tiles,positions,\textcolor{stringliteral}{""},Wordlist);
+239 
+240     Wordlist->sort();
+241     Wordlist->unique();
+242     \textcolor{keywordflow}{return} Wordlist->size();
+243 \}
+\end{DoxyCode}
+\hypertarget{class_trie_aa42c01330538b67e0aff76068f02a8f7}{\index{Trie@{Trie}!anagrams@{anagrams}}
+\index{anagrams@{anagrams}!Trie@{Trie}}
+\subsubsection[{anagrams}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Trie\-::anagrams (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s, }
+\item[{list$<$ Q\-String $>$ $\ast$}]{Wordlist}
+\end{DoxyParamCaption}
+)}}\label{class_trie_aa42c01330538b67e0aff76068f02a8f7}
+
+
+\hyperlink{class_trie_aa42c01330538b67e0aff76068f02a8f7}{Trie\-::anagrams} returns a List of words in the dictionary which can be formed from the characters in 's' This function is not functional, as it alters Word\-List destructively in the case of non-\/unique entries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The characters from which to build words. \\
+\hline
+{\em Wordlist} & A list$<$\-Q\-String$>$ that match the dictionary and the letters given. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The amount of items found and added to the Word\-List. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file trie.\-cpp.
+
+
+
+References \-\_\-anagramgen(), and root.
+
+
+
+Referenced by Unit\-Test\-::dictionarytest().
+
+
+\begin{DoxyCode}
+90                                                         \{
+91     QString news = s;
+92     \textcolor{keywordtype}{int} index = s.indexOf(\textcolor{charliteral}{'*'},0,Qt::CaseInsensitive);
+93     \textcolor{keywordflow}{if}( s.contains(\textcolor{charliteral}{'*'},Qt::CaseInsensitive) ) \{
+94         \textcolor{comment}{// We should be guaranteed no more than 2 wildcards. So at \_worst\_, we have 26^2 anagrams()
+       searches running.}
+95         \textcolor{comment}{// That's 676 anagrams(). This could probably be optimized further, but let's assume we don't need
+       to // won't.}
+96         \textcolor{comment}{// We replace the first * found in the string, and replace it by a-z.}
+97         \textcolor{comment}{// If there's more than one * in the string, it'll recursively make those into a-z as well.}
+98         \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j = 0; j < 26; j++) \{
+99             news.replace(index,1,QChar((\textcolor{keywordtype}{char})(j+97)));
+100             \hyperlink{class_trie_aa42c01330538b67e0aff76068f02a8f7}{anagrams}(news,Wordlist);
+101         \}
+102         \textcolor{keywordflow}{return} Wordlist->size();
+103     \}
+104     \textcolor{keywordflow}{else}
+105         \hyperlink{class_trie_aa61239097f40f1f36ea3b346e583ad01}{\_anagramgen}(this->\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{" "}+s, Wordlist);
+106 
+107     \textcolor{comment}{/*}
+108 \textcolor{comment}{     * We don't want duplicates. That would just waste processor time when performing the}
+109 \textcolor{comment}{     * far more expensive ai\_search.}
+110 \textcolor{comment}{     */}
+111     Wordlist->sort();
+112     Wordlist->unique();
+113     \textcolor{keywordflow}{return} Wordlist->size();
+114 \}
+\end{DoxyCode}
+\hypertarget{class_trie_a0d142e459d38dead80a72de5152e76d9}{\index{Trie@{Trie}!delete\-Word@{delete\-Word}}
+\index{delete\-Word@{delete\-Word}!Trie@{Trie}}
+\subsubsection[{delete\-Word}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-::delete\-Word (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_trie_a0d142e459d38dead80a72de5152e76d9}
+\hypertarget{class_trie_a68065bc13f6c49bb7f139290cceff091}{\index{Trie@{Trie}!print\-Trie@{print\-Trie}}
+\index{print\-Trie@{print\-Trie}!Trie@{Trie}}
+\subsubsection[{print\-Trie}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-::print\-Trie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_a68065bc13f6c49bb7f139290cceff091}
+
+
+\hyperlink{class_trie_a68065bc13f6c49bb7f139290cceff091}{Trie\-::print\-Trie} Public function that prints the entire \hyperlink{class_trie}{Trie}. 
+
+
+
+Definition at line 267 of file trie.\-cpp.
+
+
+
+References \-\_\-print\-Trie(), and root.
+
+
+\begin{DoxyCode}
+268 \{
+269     \hyperlink{class_trie_a8fae6ad56c2bb54b80f898a43d183196}{Trie::\_printTrie}(\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root},\textcolor{stringliteral}{""});
+270 \}
+\end{DoxyCode}
+\hypertarget{class_trie_a5dd39899df7410211d9d7294e548f5b0}{\index{Trie@{Trie}!search\-Word@{search\-Word}}
+\index{search\-Word@{search\-Word}!Trie@{Trie}}
+\subsubsection[{search\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool Trie\-::search\-Word (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_trie_a5dd39899df7410211d9d7294e548f5b0}
+
+
+\hyperlink{class_trie_a5dd39899df7410211d9d7294e548f5b0}{Trie\-::search\-Word} Searches for a word in the \hyperlink{class_trie}{Trie}'s structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & A string representation of a word you wish to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean representation of wether this is a word or not. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file trie.\-cpp.
+
+
+
+References Trie\-Node\-::find\-Child(), Trie\-Node\-::is\-Word(), and root.
+
+
+\begin{DoxyCode}
+123 \{
+124     \hyperlink{class_trie_node}{TrieNode}* current = \hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root};
+125 
+126     \textcolor{keywordflow}{while} ( current != NULL )
+127     \{
+128         \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} i = 0; i < s.length(); i++ )
+129         \{
+130             \hyperlink{class_trie_node}{TrieNode}* tmp = current->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(s[i]);
+131             \textcolor{keywordflow}{if} ( tmp == NULL )
+132                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+133             current = tmp;
+134         \}
+135         \textcolor{keywordflow}{return} current->\hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{isWord}();
+136     \}
+137 
+138     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+139 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_trie_a2c11a076a909acd936d897cd2a81f931}{\index{Trie@{Trie}!A\-I\-Player@{A\-I\-Player}}
+\index{A\-I\-Player@{A\-I\-Player}!Trie@{Trie}}
+\subsubsection[{A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf A\-I\-Player}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_trie_a2c11a076a909acd936d897cd2a81f931}
+
+
+Definition at line 30 of file trie.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_trie_a052cecab75ca88758778d340ed002d66}{\index{Trie@{Trie}!root@{root}}
+\index{root@{root}!Trie@{Trie}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trie\-Node}$\ast$ Trie\-::root\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_a052cecab75ca88758778d340ed002d66}
+The root of the \hyperlink{class_trie}{Trie} 
+
+Definition at line 33 of file trie.\-h.
+
+
+
+Referenced by add\-Word(), A\-I\-Player\-::ai\-\_\-search(), ai\-\_\-search(), anagrams(), print\-Trie(), search\-Word(), Trie(), and $\sim$\-Trie().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{trie_8h}{trie.\-h}\item 
+Scrabble/\hyperlink{trie_8cpp}{trie.\-cpp}\end{DoxyCompactItemize}

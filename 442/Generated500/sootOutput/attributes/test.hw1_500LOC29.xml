@@ -1,0 +1,4046 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="4" eline="335" spos="1" epos="1"/>
+<jmpPos sline="13" eline="13" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="13" eline="13" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="6" eline="6" spos="1" epos="31"/>
+<jmpPos sline="14" eline="14" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = newarray (char)[76]" jmpLink="13" srcLink="4" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="6" eline="6" spos="1" epos="31"/>
+<jmpPos sline="15" eline="15" spos="0" epos="0"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="15" eline="15" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="7" eline="7" spos="1" epos="30"/>
+<jmpPos sline="16" eline="16" spos="0" epos="0"/>
+<link label="temp$1 has reaching def: temp$1 = newarray (long)[6]" jmpLink="15" srcLink="6" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="20" eline="20" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="11" eline="11" spos="93" epos="109"/>
+<jmpPos sline="36" eline="36" spos="0" epos="0"/>
+<text info="Live Variable: var5" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="36" eline="36" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="11" eline="11" spos="112" epos="119"/>
+<jmpPos sline="37" eline="37" spos="0" epos="0"/>
+<text info="Live Variable: var5" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="11" eline="11" spos="122" epos="131"/>
+<jmpPos sline="38" eline="38" spos="0" epos="0"/>
+<text info="Live Variable: var5" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="11" eline="11" spos="134" epos="150"/>
+<jmpPos sline="39" eline="39" spos="0" epos="0"/>
+<text info="Live Variable: var5" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="12" eline="12" spos="2" epos="21"/>
+<jmpPos sline="40" eline="40" spos="0" epos="0"/>
+<link label="var5 has reaching def: var5 := @parameter5: test.hw1_500LOC14" jmpLink="36" srcLink="11" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="43" eline="43" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="16" eline="16" spos="53" epos="62"/>
+<jmpPos sline="51" eline="51" spos="0" epos="0"/>
+<text info="Live Variable: var1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="51" eline="51" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="16" eline="16" spos="65" epos="73"/>
+<jmpPos sline="52" eline="52" spos="0" epos="0"/>
+<text info="Live Variable: var1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="16" eline="16" spos="76" epos="92"/>
+<jmpPos sline="53" eline="53" spos="0" epos="0"/>
+<text info="Live Variable: var1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="17" eline="17" spos="2" epos="20"/>
+<jmpPos sline="54" eline="54" spos="0" epos="0"/>
+<link label="var1 has reaching def: var1 := @parameter1: short" jmpLink="51" srcLink="16" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="57" eline="57" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="21" eline="21" spos="111" epos="120"/>
+<jmpPos sline="72" eline="72" spos="0" epos="0"/>
+<text info="Live Variable: var6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="72" eline="72" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="21" eline="21" spos="123" epos="139"/>
+<jmpPos sline="73" eline="73" spos="0" epos="0"/>
+<text info="Live Variable: var6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="22" eline="22" spos="2" epos="20"/>
+<jmpPos sline="74" eline="74" spos="0" epos="0"/>
+<link label="var6 has reaching def: var6 := @parameter6: float" jmpLink="72" srcLink="21" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="77" eline="77" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="26" eline="26" spos="58" epos="68"/>
+<jmpPos sline="87" eline="87" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="87" eline="87" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="26" eline="26" spos="71" epos="81"/>
+<jmpPos sline="88" eline="88" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="27" eline="27" spos="2" epos="21"/>
+<jmpPos sline="89" eline="89" spos="0" epos="0"/>
+<link label="var2 has reaching def: var2 := @parameter2: java.lang.String" jmpLink="87" srcLink="26" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="92" eline="92" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="57" epos="65"/>
+<jmpPos sline="106" eline="106" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="106" eline="106" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="68" epos="84"/>
+<jmpPos sline="107" eline="107" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="87" epos="95"/>
+<jmpPos sline="108" eline="108" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="98" epos="107"/>
+<jmpPos sline="109" eline="109" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="110" epos="117"/>
+<jmpPos sline="110" eline="110" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="120" epos="128"/>
+<jmpPos sline="111" eline="111" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="31" eline="31" spos="131" epos="139"/>
+<jmpPos sline="112" eline="112" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="32" eline="32" spos="2" epos="19"/>
+<jmpPos sline="113" eline="113" spos="0" epos="0"/>
+<link label="var2 has reaching def: var2 := @parameter2: char" jmpLink="106" srcLink="31" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="116" eline="116" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="36" eline="36" spos="116" epos="126"/>
+<jmpPos sline="134" eline="134" spos="0" epos="0"/>
+<text info="Live Variable: var7" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="134" eline="134" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="37" eline="37" spos="2" epos="21"/>
+<jmpPos sline="135" eline="135" spos="0" epos="0"/>
+<link label="var7 has reaching def: var7 := @parameter7: java.lang.String" jmpLink="134" srcLink="36" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="138" eline="138" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="41" eline="41" spos="39" epos="46"/>
+<jmpPos sline="145" eline="145" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="145" eline="145" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="41" eline="41" spos="49" epos="58"/>
+<jmpPos sline="146" eline="146" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="41" eline="41" spos="61" epos="71"/>
+<jmpPos sline="147" eline="147" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="41" eline="41" spos="74" epos="81"/>
+<jmpPos sline="148" eline="148" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="41" eline="41" spos="84" epos="100"/>
+<jmpPos sline="149" eline="149" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="42" eline="42" spos="2" epos="18"/>
+<jmpPos sline="150" eline="150" spos="0" epos="0"/>
+<link label="var0 has reaching def: var0 := @parameter0: int" jmpLink="145" srcLink="41" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="153" eline="153" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="46" eline="46" spos="54" epos="62"/>
+<jmpPos sline="163" eline="163" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="163" eline="163" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="47" eline="47" spos="2" epos="22"/>
+<jmpPos sline="164" eline="164" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 8" jmpLink="163" srcLink="46" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="167" eline="167" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="60" epos="76"/>
+<jmpPos sline="179" eline="179" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="179" eline="179" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="52" eline="52" spos="2" epos="46"/>
+<jmpPos sline="180" eline="180" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 0.49427028891142266" jmpLink="179" srcLink="51" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="183" eline="183" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="56" eline="56" spos="59" epos="66"/>
+<jmpPos sline="194" eline="194" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="194" eline="194" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="57" eline="57" spos="2" epos="25"/>
+<jmpPos sline="195" eline="195" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 99L" jmpLink="194" srcLink="56" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="198" eline="198" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="61" eline="61" spos="103" epos="111"/>
+<jmpPos sline="216" eline="216" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="216" eline="216" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="62" eline="62" spos="2" epos="21"/>
+<jmpPos sline="217" eline="217" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = null" jmpLink="216" srcLink="61" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="220" eline="220" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="66" eline="66" spos="104" epos="112"/>
+<jmpPos sline="236" eline="236" spos="0" epos="0"/>
+<text info="Live Variable: var6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="236" eline="236" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="66" eline="66" spos="115" epos="125"/>
+<jmpPos sline="237" eline="237" spos="0" epos="0"/>
+<text info="Live Variable: var6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="66" eline="66" spos="128" epos="138"/>
+<jmpPos sline="238" eline="238" spos="0" epos="0"/>
+<text info="Live Variable: var6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="67" eline="67" spos="2" epos="19"/>
+<jmpPos sline="239" eline="239" spos="0" epos="0"/>
+<link label="var6 has reaching def: var6 := @parameter6: byte" jmpLink="236" srcLink="66" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="242" eline="242" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="71" eline="71" spos="72" epos="81"/>
+<jmpPos sline="252" eline="252" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="252" eline="252" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="72" eline="72" spos="2" epos="25"/>
+<jmpPos sline="253" eline="253" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 71L" jmpLink="252" srcLink="71" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="256" eline="256" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="76" eline="76" spos="86" epos="96"/>
+<jmpPos sline="269" eline="269" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="269" eline="269" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="77" eline="77" spos="2" epos="30"/>
+<jmpPos sline="270" eline="270" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 16353" jmpLink="269" srcLink="76" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="273" eline="273" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="81" eline="81" spos="82" epos="90"/>
+<jmpPos sline="287" eline="287" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="287" eline="287" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="82" eline="82" spos="2" epos="21"/>
+<jmpPos sline="288" eline="288" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = null" jmpLink="287" srcLink="81" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="291" eline="291" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="86" eline="86" spos="99" epos="108"/>
+<jmpPos sline="305" eline="305" spos="0" epos="0"/>
+<text info="Live Variable: var5" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="305" eline="305" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="87" eline="87" spos="2" epos="20"/>
+<jmpPos sline="306" eline="306" spos="0" epos="0"/>
+<link label="var5 has reaching def: var5 := @parameter5: short" jmpLink="305" srcLink="86" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="309" eline="309" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="91" eline="91" spos="74" epos="90"/>
+<jmpPos sline="321" eline="321" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="321" eline="321" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="91" eline="91" spos="93" epos="102"/>
+<jmpPos sline="322" eline="322" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="91" eline="91" spos="105" epos="114"/>
+<jmpPos sline="323" eline="323" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="91" eline="91" spos="117" epos="126"/>
+<jmpPos sline="324" eline="324" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="91" eline="91" spos="129" epos="139"/>
+<jmpPos sline="325" eline="325" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="91" eline="91" spos="142" epos="150"/>
+<jmpPos sline="326" eline="326" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="92" eline="92" spos="2" epos="21"/>
+<jmpPos sline="327" eline="327" spos="0" epos="0"/>
+<link label="var3 has reaching def: var3 := @parameter3: test.hw1_500LOC26" jmpLink="321" srcLink="91" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="330" eline="330" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="96" eline="96" spos="59" epos="74"/>
+<jmpPos sline="340" eline="340" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="340" eline="340" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="97" eline="97" spos="2" epos="21"/>
+<jmpPos sline="341" eline="341" spos="0" epos="0"/>
+<link label="var2 has reaching def: var2 := @parameter2: test.hw1_500LOC8" jmpLink="340" srcLink="96" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="344" eline="344" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="101" eline="101" spos="71" epos="79"/>
+<jmpPos sline="357" eline="357" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="357" eline="357" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="102" eline="102" spos="2" epos="34"/>
+<jmpPos sline="358" eline="358" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 0.5862664F" jmpLink="357" srcLink="101" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="361" eline="361" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="106" eline="106" spos="88" epos="96"/>
+<jmpPos sline="373" eline="373" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="373" eline="373" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="106" eline="106" spos="99" epos="107"/>
+<jmpPos sline="374" eline="374" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="106" eline="106" spos="110" epos="118"/>
+<jmpPos sline="375" eline="375" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="107" eline="107" spos="2" epos="19"/>
+<jmpPos sline="376" eline="376" spos="0" epos="0"/>
+<link label="var4 has reaching def: var4 := @parameter4: char" jmpLink="373" srcLink="106" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="379" eline="379" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="111" eline="111" spos="62" epos="72"/>
+<jmpPos sline="391" eline="391" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="391" eline="391" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="112" eline="112" spos="2" epos="23"/>
+<jmpPos sline="392" eline="392" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 17" jmpLink="391" srcLink="111" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="395" eline="395" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="116" eline="116" spos="113" epos="120"/>
+<jmpPos sline="412" eline="412" spos="0" epos="0"/>
+<text info="Live Variable: var6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="412" eline="412" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="117" eline="117" spos="2" epos="18"/>
+<jmpPos sline="413" eline="413" spos="0" epos="0"/>
+<link label="var6 has reaching def: var6 := @parameter6: int" jmpLink="412" srcLink="116" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="416" eline="416" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="121" eline="121" spos="120" epos="129"/>
+<jmpPos sline="433" eline="433" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="433" eline="433" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="122" eline="122" spos="2" epos="21"/>
+<jmpPos sline="434" eline="434" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = null" jmpLink="433" srcLink="121" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="437" eline="437" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="126" eline="126" spos="83" epos="91"/>
+<jmpPos sline="452" eline="452" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="452" eline="452" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="127" eline="127" spos="2" epos="45"/>
+<jmpPos sline="453" eline="453" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 0.5149115526319579" jmpLink="452" srcLink="126" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="456" eline="456" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="131" eline="131" spos="39" epos="47"/>
+<jmpPos sline="463" eline="463" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="463" eline="463" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="131" eline="131" spos="50" epos="58"/>
+<jmpPos sline="464" eline="464" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="131" eline="131" spos="61" epos="71"/>
+<jmpPos sline="465" eline="465" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="131" eline="131" spos="74" epos="82"/>
+<jmpPos sline="466" eline="466" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="131" eline="131" spos="85" epos="92"/>
+<jmpPos sline="467" eline="467" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="131" eline="131" spos="95" epos="105"/>
+<jmpPos sline="468" eline="468" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="132" eline="132" spos="2" epos="19"/>
+<jmpPos sline="469" eline="469" spos="0" epos="0"/>
+<link label="var0 has reaching def: var0 := @parameter0: char" jmpLink="463" srcLink="131" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="472" eline="472" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="136" eline="136" spos="43" epos="53"/>
+<jmpPos sline="478" eline="478" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="478" eline="478" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="136" eline="136" spos="56" epos="65"/>
+<jmpPos sline="479" eline="479" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="136" eline="136" spos="68" epos="75"/>
+<jmpPos sline="480" eline="480" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="137" eline="137" spos="2" epos="21"/>
+<jmpPos sline="481" eline="481" spos="0" epos="0"/>
+<link label="var0 has reaching def: var0 := @parameter0: double" jmpLink="478" srcLink="136" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="484" eline="484" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="141" eline="141" spos="69" epos="79"/>
+<jmpPos sline="491" eline="491" spos="0" epos="0"/>
+<text info="Live Variable: var2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="491" eline="491" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="142" eline="142" spos="2" epos="21"/>
+<jmpPos sline="492" eline="492" spos="0" epos="0"/>
+<link label="var2 has reaching def: var2 := @parameter2: double" jmpLink="491" srcLink="141" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="495" eline="495" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="146" eline="146" spos="64" epos="73"/>
+<jmpPos sline="505" eline="505" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="505" eline="505" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="147" eline="147" spos="2" epos="18"/>
+<jmpPos sline="506" eline="506" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 104" jmpLink="505" srcLink="146" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="509" eline="509" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="151" eline="151" spos="120" epos="129"/>
+<jmpPos sline="526" eline="526" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="526" eline="526" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="152" eline="152" spos="2" epos="18"/>
+<jmpPos sline="527" eline="527" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 102" jmpLink="526" srcLink="151" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="530" eline="530" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="156" eline="156" spos="57" epos="73"/>
+<jmpPos sline="542" eline="542" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="542" eline="542" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="157" eline="157" spos="2" epos="25"/>
+<jmpPos sline="543" eline="543" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 86" jmpLink="542" srcLink="156" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="546" eline="546" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="161" eline="161" spos="66" epos="74"/>
+<jmpPos sline="556" eline="556" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="556" eline="556" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="162" eline="162" spos="2" epos="35"/>
+<jmpPos sline="557" eline="557" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 0.08231598F" jmpLink="556" srcLink="161" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="560" eline="560" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="166" eline="166" spos="89" epos="99"/>
+<jmpPos sline="576" eline="576" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="576" eline="576" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="166" eline="166" spos="102" epos="110"/>
+<jmpPos sline="577" eline="577" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="166" eline="166" spos="113" epos="123"/>
+<jmpPos sline="578" eline="578" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="166" eline="166" spos="126" epos="133"/>
+<jmpPos sline="579" eline="579" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="167" eline="167" spos="2" epos="21"/>
+<jmpPos sline="580" eline="580" spos="0" epos="0"/>
+<link label="var4 has reaching def: var4 := @parameter4: double" jmpLink="576" srcLink="166" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="583" eline="583" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="171" eline="171" spos="127" epos="137"/>
+<jmpPos sline="601" eline="601" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="601" eline="601" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="172" eline="172" spos="2" epos="23"/>
+<jmpPos sline="602" eline="602" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 38" jmpLink="601" srcLink="171" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="605" eline="605" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="176" eline="176" spos="62" epos="78"/>
+<jmpPos sline="614" eline="614" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="614" eline="614" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="177" eline="177" spos="2" epos="30"/>
+<jmpPos sline="615" eline="615" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 17185" jmpLink="614" srcLink="176" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="618" eline="618" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="181" eline="181" spos="69" epos="77"/>
+<jmpPos sline="632" eline="632" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="632" eline="632" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="181" eline="181" spos="80" epos="88"/>
+<jmpPos sline="633" eline="633" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="181" eline="181" spos="91" epos="100"/>
+<jmpPos sline="634" eline="634" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="181" eline="181" spos="103" epos="110"/>
+<jmpPos sline="635" eline="635" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="181" eline="181" spos="113" epos="121"/>
+<jmpPos sline="636" eline="636" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="181" eline="181" spos="124" epos="131"/>
+<jmpPos sline="637" eline="637" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="182" eline="182" spos="2" epos="19"/>
+<jmpPos sline="638" eline="638" spos="0" epos="0"/>
+<link label="var3 has reaching def: var3 := @parameter3: long" jmpLink="632" srcLink="181" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="641" eline="641" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="186" eline="186" spos="91" epos="100"/>
+<jmpPos sline="653" eline="653" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="653" eline="653" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="186" eline="186" spos="103" epos="113"/>
+<jmpPos sline="654" eline="654" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="187" eline="187" spos="2" epos="20"/>
+<jmpPos sline="655" eline="655" spos="0" epos="0"/>
+<link label="var4 has reaching def: var4 := @parameter4: float" jmpLink="653" srcLink="186" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="658" eline="658" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="191" eline="191" spos="66" epos="76"/>
+<jmpPos sline="668" eline="668" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="668" eline="668" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="192" eline="192" spos="2" epos="34"/>
+<jmpPos sline="669" eline="669" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 0.3893112F" jmpLink="668" srcLink="191" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="672" eline="672" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="196" eline="196" spos="43" epos="59"/>
+<jmpPos sline="678" eline="678" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="678" eline="678" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="196" eline="196" spos="62" epos="70"/>
+<jmpPos sline="679" eline="679" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="196" eline="196" spos="73" epos="81"/>
+<jmpPos sline="680" eline="680" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="197" eline="197" spos="2" epos="21"/>
+<jmpPos sline="681" eline="681" spos="0" epos="0"/>
+<link label="var0 has reaching def: var0 := @parameter0: test.hw1_500LOC22" jmpLink="678" srcLink="196" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="684" eline="684" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="201" eline="201" spos="88" epos="97"/>
+<jmpPos sline="696" eline="696" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="696" eline="696" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="201" eline="201" spos="100" epos="110"/>
+<jmpPos sline="697" eline="697" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="201" eline="201" spos="113" epos="121"/>
+<jmpPos sline="698" eline="698" spos="0" epos="0"/>
+<text info="Live Variable: var4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="202" eline="202" spos="2" epos="20"/>
+<jmpPos sline="699" eline="699" spos="0" epos="0"/>
+<link label="var4 has reaching def: var4 := @parameter4: float" jmpLink="696" srcLink="201" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="702" eline="702" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="206" eline="206" spos="75" epos="82"/>
+<jmpPos sline="715" eline="715" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="715" eline="715" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="207" eline="207" spos="2" epos="26"/>
+<jmpPos sline="716" eline="716" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = -90" jmpLink="715" srcLink="206" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="719" eline="719" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="43" epos="59"/>
+<jmpPos sline="728" eline="728" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="728" eline="728" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="62" epos="70"/>
+<jmpPos sline="729" eline="729" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="73" epos="83"/>
+<jmpPos sline="730" eline="730" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="86" epos="96"/>
+<jmpPos sline="731" eline="731" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="99" epos="107"/>
+<jmpPos sline="732" eline="732" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="110" epos="119"/>
+<jmpPos sline="733" eline="733" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="122" epos="131"/>
+<jmpPos sline="734" eline="734" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="134" epos="142"/>
+<jmpPos sline="735" eline="735" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="211" eline="211" spos="145" epos="153"/>
+<jmpPos sline="736" eline="736" spos="0" epos="0"/>
+<text info="Live Variable: var0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="212" eline="212" spos="2" epos="21"/>
+<jmpPos sline="737" eline="737" spos="0" epos="0"/>
+<link label="var0 has reaching def: var0 := @parameter0: test.hw1_500LOC34" jmpLink="728" srcLink="211" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="740" eline="740" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3, var4, var5, var6, var7, var8]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="216" eline="216" spos="76" epos="84"/>
+<jmpPos sline="752" eline="752" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="752" eline="752" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="216" eline="216" spos="87" epos="102"/>
+<jmpPos sline="753" eline="753" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="216" eline="216" spos="105" epos="121"/>
+<jmpPos sline="754" eline="754" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="216" eline="216" spos="124" epos="132"/>
+<jmpPos sline="755" eline="755" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="216" eline="216" spos="135" epos="143"/>
+<jmpPos sline="756" eline="756" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="216" eline="216" spos="146" epos="155"/>
+<jmpPos sline="757" eline="757" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="217" eline="217" spos="2" epos="19"/>
+<jmpPos sline="758" eline="758" spos="0" epos="0"/>
+<link label="var3 has reaching def: var3 := @parameter3: long" jmpLink="752" srcLink="216" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="761" eline="761" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="221" eline="221" spos="76" epos="85"/>
+<jmpPos sline="773" eline="773" spos="0" epos="0"/>
+<text info="Live Variable: var3" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="773" eline="773" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="222" eline="222" spos="2" epos="20"/>
+<jmpPos sline="774" eline="774" spos="0" epos="0"/>
+<link label="var3 has reaching def: var3 := @parameter3: short" jmpLink="773" srcLink="221" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="777" eline="777" spos="0" epos="0"/>
+<text info="[var0, var1, var2, var3]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="226" eline="226" spos="85" epos="93"/>
+<jmpPos sline="789" eline="789" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="789" eline="789" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="227" eline="227" spos="2" epos="25"/>
+<jmpPos sline="790" eline="790" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 66L" jmpLink="789" srcLink="226" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="793" eline="793" spos="0" epos="0"/>
+<text info="[var0, var1, var2]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="231" eline="231" spos="59" epos="68"/>
+<jmpPos sline="805" eline="805" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="805" eline="805" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="232" eline="232" spos="2" epos="25"/>
+<jmpPos sline="806" eline="806" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = 68L" jmpLink="805" srcLink="231" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="809" eline="809" spos="0" epos="0"/>
+<text info="[args]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="238" eline="238" spos="1" epos="38"/>
+<jmpPos sline="840" eline="840" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="840" eline="840" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="238" eline="238" spos="20" epos="37"/>
+<jmpPos sline="841" eline="841" spos="0" epos="0"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+<link label="temp$0 has reaching def: temp$0 = new test.hw1_500LOC29" jmpLink="840" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="841" eline="841" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="238" eline="238" spos="20" epos="37"/>
+<jmpPos sline="842" eline="842" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$0 has reaching def: temp$0 = new test.hw1_500LOC29" jmpLink="840" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="842" eline="842" spos="8" epos="11"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="239" eline="239" spos="1" epos="241"/>
+<jmpPos sline="843" eline="843" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="843" eline="843" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="239" eline="239" spos="178" epos="195"/>
+<jmpPos sline="844" eline="844" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+<link label="temp$1 has reaching def: temp$1 = new test.hw1_500LOC14" jmpLink="843" srcLink="239" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="844" eline="844" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="239" eline="239" spos="178" epos="195"/>
+<jmpPos sline="845" eline="845" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+<text info="Live Variable: temp$2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="845" eline="845" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="239" eline="239" spos="222" epos="239"/>
+<jmpPos sline="846" eline="846" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+<text info="Live Variable: temp$2" aType="Live Variable"/>
+<link label="temp$2 has reaching def: temp$2 = new test.hw1_500LOC14" jmpLink="845" srcLink="239" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="846" eline="846" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="239" eline="239" spos="222" epos="239"/>
+<jmpPos sline="847" eline="847" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$1 has reaching def: temp$1 = new test.hw1_500LOC14" jmpLink="843" srcLink="239" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$2 has reaching def: temp$2 = new test.hw1_500LOC14" jmpLink="845" srcLink="239" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="847" eline="847" spos="31" epos="34"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="240" eline="240" spos="1" epos="86"/>
+<jmpPos sline="848" eline="848" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="848" eline="848" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="240" eline="240" spos="67" epos="84"/>
+<jmpPos sline="849" eline="849" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$4" aType="Live Variable"/>
+<link label="temp$4 has reaching def: temp$4 = new test.hw1_500LOC25" jmpLink="848" srcLink="240" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="849" eline="849" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="240" eline="240" spos="67" epos="84"/>
+<jmpPos sline="850" eline="850" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$4 has reaching def: temp$4 = new test.hw1_500LOC25" jmpLink="848" srcLink="240" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="241" eline="241" spos="1" epos="152"/>
+<jmpPos sline="851" eline="851" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="851" eline="851" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="241" eline="241" spos="133" epos="150"/>
+<jmpPos sline="852" eline="852" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$6" aType="Live Variable"/>
+<link label="temp$6 has reaching def: temp$6 = new test.hw1_500LOC18" jmpLink="851" srcLink="241" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="852" eline="852" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="241" eline="241" spos="133" epos="150"/>
+<jmpPos sline="853" eline="853" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$6 has reaching def: temp$6 = new test.hw1_500LOC18" jmpLink="851" srcLink="241" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="242" eline="242" spos="1" epos="138"/>
+<jmpPos sline="854" eline="854" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="854" eline="854" spos="31" epos="34"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="243" eline="243" spos="1" epos="148"/>
+<jmpPos sline="855" eline="855" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$9" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="855" eline="855" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="243" eline="243" spos="71" epos="88"/>
+<jmpPos sline="856" eline="856" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$9" aType="Live Variable"/>
+<link label="temp$9 has reaching def: temp$9 = new test.hw1_500LOC13" jmpLink="855" srcLink="243" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="856" eline="856" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="243" eline="243" spos="71" epos="88"/>
+<jmpPos sline="857" eline="857" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$9 has reaching def: temp$9 = new test.hw1_500LOC13" jmpLink="855" srcLink="243" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="857" eline="857" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="244" eline="244" spos="1" epos="210"/>
+<jmpPos sline="858" eline="858" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="858" eline="858" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="245" eline="245" spos="1" epos="108"/>
+<jmpPos sline="859" eline="859" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$12" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="859" eline="859" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="245" eline="245" spos="89" epos="106"/>
+<jmpPos sline="860" eline="860" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$12" aType="Live Variable"/>
+<link label="temp$12 has reaching def: temp$12 = new test.hw1_500LOC34" jmpLink="859" srcLink="245" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="860" eline="860" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="245" eline="245" spos="89" epos="106"/>
+<jmpPos sline="861" eline="861" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$12 has reaching def: temp$12 = new test.hw1_500LOC34" jmpLink="859" srcLink="245" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="246" eline="246" spos="1" epos="37"/>
+<jmpPos sline="862" eline="862" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="862" eline="862" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="247" eline="247" spos="1" epos="166"/>
+<jmpPos sline="863" eline="863" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$15" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="863" eline="863" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="247" eline="247" spos="147" epos="164"/>
+<jmpPos sline="864" eline="864" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$15" aType="Live Variable"/>
+<link label="temp$15 has reaching def: temp$15 = new test.hw1_500LOC14" jmpLink="863" srcLink="247" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="864" eline="864" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="247" eline="247" spos="147" epos="164"/>
+<jmpPos sline="865" eline="865" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$15 has reaching def: temp$15 = new test.hw1_500LOC14" jmpLink="863" srcLink="247" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="865" eline="865" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="248" eline="248" spos="1" epos="94"/>
+<jmpPos sline="866" eline="866" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="866" eline="866" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="249" eline="249" spos="1" epos="191"/>
+<jmpPos sline="867" eline="867" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="867" eline="867" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="250" eline="250" spos="1" epos="283"/>
+<jmpPos sline="868" eline="868" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="868" eline="868" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="251" eline="251" spos="1" epos="76"/>
+<jmpPos sline="869" eline="869" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$20" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="869" eline="869" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="251" eline="251" spos="42" epos="59"/>
+<jmpPos sline="870" eline="870" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$20" aType="Live Variable"/>
+<link label="temp$20 has reaching def: temp$20 = new test.hw1_500LOC30" jmpLink="869" srcLink="251" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="870" eline="870" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="251" eline="251" spos="42" epos="59"/>
+<jmpPos sline="871" eline="871" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$20 has reaching def: temp$20 = new test.hw1_500LOC30" jmpLink="869" srcLink="251" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="252" eline="252" spos="1" epos="127"/>
+<jmpPos sline="872" eline="872" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="253" eline="253" spos="1" epos="90"/>
+<jmpPos sline="873" eline="873" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="873" eline="873" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="254" eline="254" spos="1" epos="114"/>
+<jmpPos sline="874" eline="874" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$24" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="874" eline="874" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="254" eline="254" spos="62" epos="79"/>
+<jmpPos sline="875" eline="875" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$24" aType="Live Variable"/>
+<link label="temp$24 has reaching def: temp$24 = new test.hw1_500LOC27" jmpLink="874" srcLink="254" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="875" eline="875" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="254" eline="254" spos="62" epos="79"/>
+<jmpPos sline="876" eline="876" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$24 has reaching def: temp$24 = new test.hw1_500LOC27" jmpLink="874" srcLink="254" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="876" eline="876" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="255" eline="255" spos="1" epos="163"/>
+<jmpPos sline="877" eline="877" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$26" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="877" eline="877" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="255" eline="255" spos="46" epos="63"/>
+<jmpPos sline="878" eline="878" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$26" aType="Live Variable"/>
+<link label="temp$26 has reaching def: temp$26 = new test.hw1_500LOC26" jmpLink="877" srcLink="255" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="878" eline="878" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="255" eline="255" spos="46" epos="63"/>
+<jmpPos sline="879" eline="879" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$26 has reaching def: temp$26 = new test.hw1_500LOC26" jmpLink="877" srcLink="255" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="256" eline="256" spos="1" epos="147"/>
+<jmpPos sline="880" eline="880" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$28" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="880" eline="880" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="256" eline="256" spos="129" epos="145"/>
+<jmpPos sline="881" eline="881" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$28" aType="Live Variable"/>
+<link label="temp$28 has reaching def: temp$28 = new test.hw1_500LOC8" jmpLink="880" srcLink="256" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="881" eline="881" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="256" eline="256" spos="129" epos="145"/>
+<jmpPos sline="882" eline="882" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$28 has reaching def: temp$28 = new test.hw1_500LOC8" jmpLink="880" srcLink="256" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="882" eline="882" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="257" eline="257" spos="1" epos="99"/>
+<jmpPos sline="883" eline="883" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="883" eline="883" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="258" eline="258" spos="1" epos="106"/>
+<jmpPos sline="884" eline="884" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="259" eline="259" spos="1" epos="84"/>
+<jmpPos sline="885" eline="885" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$32" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="885" eline="885" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="259" eline="259" spos="26" epos="42"/>
+<jmpPos sline="886" eline="886" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$32" aType="Live Variable"/>
+<link label="temp$32 has reaching def: temp$32 = new test.hw1_500LOC9" jmpLink="885" srcLink="259" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="886" eline="886" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="259" eline="259" spos="26" epos="42"/>
+<jmpPos sline="887" eline="887" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$32 has reaching def: temp$32 = new test.hw1_500LOC9" jmpLink="885" srcLink="259" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="887" eline="887" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="260" eline="260" spos="1" epos="190"/>
+<jmpPos sline="888" eline="888" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$34" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="888" eline="888" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="260" eline="260" spos="161" epos="178"/>
+<jmpPos sline="889" eline="889" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$34" aType="Live Variable"/>
+<link label="temp$34 has reaching def: temp$34 = new test.hw1_500LOC15" jmpLink="888" srcLink="260" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="889" eline="889" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="260" eline="260" spos="161" epos="178"/>
+<jmpPos sline="890" eline="890" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$34 has reaching def: temp$34 = new test.hw1_500LOC15" jmpLink="888" srcLink="260" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="890" eline="890" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="261" eline="261" spos="1" epos="99"/>
+<jmpPos sline="891" eline="891" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="262" eline="262" spos="1" epos="73"/>
+<jmpPos sline="892" eline="892" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="892" eline="892" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="263" eline="263" spos="1" epos="126"/>
+<jmpPos sline="893" eline="893" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="264" eline="264" spos="1" epos="80"/>
+<jmpPos sline="894" eline="894" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="265" eline="265" spos="1" epos="159"/>
+<jmpPos sline="895" eline="895" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="266" eline="266" spos="1" epos="80"/>
+<jmpPos sline="896" eline="896" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="267" eline="267" spos="1" epos="146"/>
+<jmpPos sline="897" eline="897" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="268" eline="268" spos="1" epos="85"/>
+<jmpPos sline="898" eline="898" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$43" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="898" eline="898" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="268" eline="268" spos="66" epos="83"/>
+<jmpPos sline="899" eline="899" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$43" aType="Live Variable"/>
+<link label="temp$43 has reaching def: temp$43 = new test.hw1_500LOC15" jmpLink="898" srcLink="268" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="899" eline="899" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="268" eline="268" spos="66" epos="83"/>
+<jmpPos sline="900" eline="900" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$43 has reaching def: temp$43 = new test.hw1_500LOC15" jmpLink="898" srcLink="268" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="900" eline="900" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="269" eline="269" spos="1" epos="66"/>
+<jmpPos sline="901" eline="901" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="270" eline="270" spos="1" epos="159"/>
+<jmpPos sline="902" eline="902" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$46" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="902" eline="902" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="270" eline="270" spos="86" epos="102"/>
+<jmpPos sline="903" eline="903" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$46" aType="Live Variable"/>
+<link label="temp$46 has reaching def: temp$46 = new test.hw1_500LOC3" jmpLink="902" srcLink="270" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="903" eline="903" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="270" eline="270" spos="86" epos="102"/>
+<jmpPos sline="904" eline="904" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$46 has reaching def: temp$46 = new test.hw1_500LOC3" jmpLink="902" srcLink="270" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="904" eline="904" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="271" eline="271" spos="1" epos="143"/>
+<jmpPos sline="905" eline="905" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$48" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="905" eline="905" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="271" eline="271" spos="29" epos="46"/>
+<jmpPos sline="906" eline="906" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$48" aType="Live Variable"/>
+<link label="temp$48 has reaching def: temp$48 = new test.hw1_500LOC29" jmpLink="905" srcLink="271" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="906" eline="906" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="271" eline="271" spos="29" epos="46"/>
+<jmpPos sline="907" eline="907" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$48 has reaching def: temp$48 = new test.hw1_500LOC29" jmpLink="905" srcLink="271" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="272" eline="272" spos="1" epos="61"/>
+<jmpPos sline="908" eline="908" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$50" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="908" eline="908" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="272" eline="272" spos="42" epos="59"/>
+<jmpPos sline="909" eline="909" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$50" aType="Live Variable"/>
+<link label="temp$50 has reaching def: temp$50 = new test.hw1_500LOC27" jmpLink="908" srcLink="272" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="909" eline="909" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="272" eline="272" spos="42" epos="59"/>
+<jmpPos sline="910" eline="910" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$50 has reaching def: temp$50 = new test.hw1_500LOC27" jmpLink="908" srcLink="272" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="273" eline="273" spos="1" epos="152"/>
+<jmpPos sline="911" eline="911" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="911" eline="911" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="274" eline="274" spos="1" epos="209"/>
+<jmpPos sline="912" eline="912" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="275" eline="275" spos="1" epos="93"/>
+<jmpPos sline="913" eline="913" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="276" eline="276" spos="1" epos="64"/>
+<jmpPos sline="914" eline="914" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$55" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="914" eline="914" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="276" eline="276" spos="22" epos="39"/>
+<jmpPos sline="915" eline="915" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$55" aType="Live Variable"/>
+<link label="temp$55 has reaching def: temp$55 = new test.hw1_500LOC22" jmpLink="914" srcLink="276" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="915" eline="915" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="276" eline="276" spos="22" epos="39"/>
+<jmpPos sline="916" eline="916" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$55 has reaching def: temp$55 = new test.hw1_500LOC22" jmpLink="914" srcLink="276" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="277" eline="277" spos="1" epos="121"/>
+<jmpPos sline="917" eline="917" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="278" eline="278" spos="1" epos="159"/>
+<jmpPos sline="918" eline="918" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$58" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="918" eline="918" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="278" eline="278" spos="122" epos="138"/>
+<jmpPos sline="919" eline="919" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$58" aType="Live Variable"/>
+<link label="temp$58 has reaching def: temp$58 = new test.hw1_500LOC0" jmpLink="918" srcLink="278" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="919" eline="919" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="278" eline="278" spos="122" epos="138"/>
+<jmpPos sline="920" eline="920" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$58 has reaching def: temp$58 = new test.hw1_500LOC0" jmpLink="918" srcLink="278" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="920" eline="920" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="279" eline="279" spos="1" epos="196"/>
+<jmpPos sline="921" eline="921" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$60" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="921" eline="921" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="279" eline="279" spos="22" epos="39"/>
+<jmpPos sline="922" eline="922" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$60" aType="Live Variable"/>
+<link label="temp$60 has reaching def: temp$60 = new test.hw1_500LOC34" jmpLink="921" srcLink="279" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="922" eline="922" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="279" eline="279" spos="22" epos="39"/>
+<jmpPos sline="923" eline="923" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$60 has reaching def: temp$60 = new test.hw1_500LOC34" jmpLink="921" srcLink="279" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="280" eline="280" spos="1" epos="135"/>
+<jmpPos sline="924" eline="924" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="924" eline="924" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="280" eline="280" spos="67" epos="83"/>
+<jmpPos sline="925" eline="925" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+<link label="temp$62 has reaching def: temp$62 = new test.hw1_500LOC0" jmpLink="924" srcLink="280" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="925" eline="925" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="280" eline="280" spos="67" epos="83"/>
+<jmpPos sline="926" eline="926" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+<text info="Live Variable: temp$63" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="926" eline="926" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="280" eline="280" spos="85" epos="102"/>
+<jmpPos sline="927" eline="927" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+<text info="Live Variable: temp$63" aType="Live Variable"/>
+<link label="temp$63 has reaching def: temp$63 = new test.hw1_500LOC32" jmpLink="926" srcLink="280" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="927" eline="927" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="280" eline="280" spos="85" epos="102"/>
+<jmpPos sline="928" eline="928" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$62 has reaching def: temp$62 = new test.hw1_500LOC0" jmpLink="924" srcLink="280" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$63 has reaching def: temp$63 = new test.hw1_500LOC32" jmpLink="926" srcLink="280" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="281" eline="281" spos="1" epos="73"/>
+<jmpPos sline="929" eline="929" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$65" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="929" eline="929" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="281" eline="281" spos="41" epos="58"/>
+<jmpPos sline="930" eline="930" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$65" aType="Live Variable"/>
+<link label="temp$65 has reaching def: temp$65 = new test.hw1_500LOC33" jmpLink="929" srcLink="281" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="930" eline="930" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="281" eline="281" spos="41" epos="58"/>
+<jmpPos sline="931" eline="931" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$65 has reaching def: temp$65 = new test.hw1_500LOC33" jmpLink="929" srcLink="281" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="931" eline="931" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="282" eline="282" spos="1" epos="96"/>
+<jmpPos sline="932" eline="932" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$67" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="932" eline="932" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="282" eline="282" spos="65" epos="82"/>
+<jmpPos sline="933" eline="933" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$67" aType="Live Variable"/>
+<link label="temp$67 has reaching def: temp$67 = new test.hw1_500LOC34" jmpLink="932" srcLink="282" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="933" eline="933" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="282" eline="282" spos="65" epos="82"/>
+<jmpPos sline="934" eline="934" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$67 has reaching def: temp$67 = new test.hw1_500LOC34" jmpLink="932" srcLink="282" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="283" eline="283" spos="1" epos="103"/>
+<jmpPos sline="935" eline="935" spos="0" epos="0"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="842" srcLink="238" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="939" eline="939" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="32" epos="37"/>
+<jmpPos sline="968" eline="968" spos="0" epos="0"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="968" eline="968" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="39" epos="44"/>
+<jmpPos sline="969" eline="969" spos="0" epos="0"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="969" eline="969" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="46" epos="51"/>
+<jmpPos sline="970" eline="970" spos="0" epos="0"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="970" eline="970" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="53" epos="58"/>
+<jmpPos sline="971" eline="971" spos="0" epos="0"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="971" eline="971" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="60" epos="65"/>
+<jmpPos sline="972" eline="972" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="972" eline="972" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="67" epos="72"/>
+<jmpPos sline="973" eline="973" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="973" eline="973" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="74" epos="79"/>
+<jmpPos sline="974" eline="974" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="974" eline="974" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="81" epos="86"/>
+<jmpPos sline="975" eline="975" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="975" eline="975" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="88" epos="93"/>
+<jmpPos sline="976" eline="976" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="976" eline="976" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="286" eline="286" spos="95" epos="100"/>
+<jmpPos sline="977" eline="977" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="977" eline="977" spos="8" epos="10"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="287" eline="287" spos="1" epos="38"/>
+<jmpPos sline="978" eline="978" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="978" eline="978" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="287" eline="287" spos="20" epos="37"/>
+<jmpPos sline="979" eline="979" spos="0" epos="0"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$0" aType="Live Variable"/>
+<link label="temp$0 has reaching def: temp$0 = new test.hw1_500LOC29" jmpLink="978" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="979" eline="979" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="287" eline="287" spos="20" epos="37"/>
+<jmpPos sline="980" eline="980" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="temp$0 has reaching def: temp$0 = new test.hw1_500LOC29" jmpLink="978" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="980" eline="980" spos="8" epos="11"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="288" eline="288" spos="1" epos="146"/>
+<jmpPos sline="981" eline="981" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="981" eline="981" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="288" eline="288" spos="90" epos="107"/>
+<jmpPos sline="982" eline="982" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+<link label="temp$1 has reaching def: temp$1 = new test.hw1_500LOC14" jmpLink="981" srcLink="288" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="982" eline="982" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="288" eline="288" spos="90" epos="107"/>
+<jmpPos sline="983" eline="983" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+<text info="Live Variable: temp$2" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="983" eline="983" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="288" eline="288" spos="127" epos="144"/>
+<jmpPos sline="984" eline="984" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$1" aType="Live Variable"/>
+<text info="Live Variable: temp$2" aType="Live Variable"/>
+<link label="temp$2 has reaching def: temp$2 = new test.hw1_500LOC14" jmpLink="983" srcLink="288" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="984" eline="984" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="288" eline="288" spos="127" epos="144"/>
+<jmpPos sline="985" eline="985" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$1 has reaching def: temp$1 = new test.hw1_500LOC14" jmpLink="981" srcLink="288" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i4 has reaching def: i4 := @parameter4: int" jmpLink="972" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$2 has reaching def: temp$2 = new test.hw1_500LOC14" jmpLink="983" srcLink="288" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="985" eline="985" spos="31" epos="34"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="985" eline="985" spos="227" epos="229"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="289" eline="289" spos="1" epos="86"/>
+<jmpPos sline="986" eline="986" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$4" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="986" eline="986" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="289" eline="289" spos="67" epos="84"/>
+<jmpPos sline="987" eline="987" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$4" aType="Live Variable"/>
+<link label="temp$4 has reaching def: temp$4 = new test.hw1_500LOC25" jmpLink="986" srcLink="289" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="987" eline="987" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="289" eline="289" spos="67" epos="84"/>
+<jmpPos sline="988" eline="988" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="temp$4 has reaching def: temp$4 = new test.hw1_500LOC25" jmpLink="986" srcLink="289" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="290" eline="290" spos="1" epos="150"/>
+<jmpPos sline="989" eline="989" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="989" eline="989" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="290" eline="290" spos="131" epos="148"/>
+<jmpPos sline="990" eline="990" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$6" aType="Live Variable"/>
+<link label="temp$6 has reaching def: temp$6 = new test.hw1_500LOC18" jmpLink="989" srcLink="290" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="990" eline="990" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="290" eline="290" spos="131" epos="148"/>
+<jmpPos sline="991" eline="991" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="temp$6 has reaching def: temp$6 = new test.hw1_500LOC18" jmpLink="989" srcLink="290" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="291" eline="291" spos="1" epos="115"/>
+<jmpPos sline="992" eline="992" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="992" eline="992" spos="31" epos="34"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="292" eline="292" spos="1" epos="138"/>
+<jmpPos sline="993" eline="993" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$9" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="993" eline="993" spos="8" epos="14"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="292" eline="292" spos="69" epos="86"/>
+<jmpPos sline="994" eline="994" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$9" aType="Live Variable"/>
+<link label="temp$9 has reaching def: temp$9 = new test.hw1_500LOC13" jmpLink="993" srcLink="292" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="994" eline="994" spos="22" epos="28"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="292" eline="292" spos="69" epos="86"/>
+<jmpPos sline="995" eline="995" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$9 has reaching def: temp$9 = new test.hw1_500LOC13" jmpLink="993" srcLink="292" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i1 has reaching def: i1 := @parameter1: int" jmpLink="969" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="995" eline="995" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="995" eline="995" spos="196" epos="198"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="293" eline="293" spos="1" epos="243"/>
+<jmpPos sline="996" eline="996" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i6 has reaching def: i6 := @parameter6: int" jmpLink="974" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="996" eline="996" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="996" eline="996" spos="272" epos="274"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="294" eline="294" spos="1" epos="94"/>
+<jmpPos sline="997" eline="997" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$12" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="997" eline="997" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="294" eline="294" spos="75" epos="92"/>
+<jmpPos sline="998" eline="998" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$12" aType="Live Variable"/>
+<link label="temp$12 has reaching def: temp$12 = new test.hw1_500LOC34" jmpLink="997" srcLink="294" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="998" eline="998" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="294" eline="294" spos="75" epos="92"/>
+<jmpPos sline="999" eline="999" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="i4 has reaching def: i4 := @parameter4: int" jmpLink="972" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i1 has reaching def: i1 := @parameter1: int" jmpLink="969" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$12 has reaching def: temp$12 = new test.hw1_500LOC34" jmpLink="997" srcLink="294" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="999" eline="999" spos="116" epos="118"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="999" eline="999" spos="152" epos="154"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="295" eline="295" spos="1" epos="37"/>
+<jmpPos sline="1000" eline="1000" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1000" eline="1000" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="296" eline="296" spos="1" epos="140"/>
+<jmpPos sline="1001" eline="1001" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$15" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1001" eline="1001" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="296" eline="296" spos="121" epos="138"/>
+<jmpPos sline="1002" eline="1002" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<text info="Live Variable: temp$15" aType="Live Variable"/>
+<link label="temp$15 has reaching def: temp$15 = new test.hw1_500LOC14" jmpLink="1001" srcLink="296" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1002" eline="1002" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="296" eline="296" spos="121" epos="138"/>
+<jmpPos sline="1003" eline="1003" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$15 has reaching def: temp$15 = new test.hw1_500LOC14" jmpLink="1001" srcLink="296" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1003" eline="1003" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="297" eline="297" spos="1" epos="86"/>
+<jmpPos sline="1004" eline="1004" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: i2" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i6 has reaching def: i6 := @parameter6: int" jmpLink="974" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1004" eline="1004" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1004" eline="1004" spos="141" epos="143"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="298" eline="298" spos="1" epos="116"/>
+<jmpPos sline="1005" eline="1005" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i2 has reaching def: i2 := @parameter2: int" jmpLink="970" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i8 has reaching def: i8 := @parameter8: int" jmpLink="976" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1005" eline="1005" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1005" eline="1005" spos="214" epos="216"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="299" eline="299" spos="1" epos="244"/>
+<jmpPos sline="1006" eline="1006" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1006" eline="1006" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="300" eline="300" spos="1" epos="76"/>
+<jmpPos sline="1007" eline="1007" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$20" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1007" eline="1007" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="300" eline="300" spos="42" epos="59"/>
+<jmpPos sline="1008" eline="1008" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$20" aType="Live Variable"/>
+<link label="temp$20 has reaching def: temp$20 = new test.hw1_500LOC30" jmpLink="1007" srcLink="300" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1008" eline="1008" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="300" eline="300" spos="42" epos="59"/>
+<jmpPos sline="1009" eline="1009" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="temp$20 has reaching def: temp$20 = new test.hw1_500LOC30" jmpLink="1007" srcLink="300" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="301" eline="301" spos="1" epos="152"/>
+<jmpPos sline="1010" eline="1010" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="i1 has reaching def: i1 := @parameter1: int" jmpLink="969" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i0 has reaching def: i0 := @parameter0: int" jmpLink="968" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1010" eline="1010" spos="122" epos="124"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1010" eline="1010" spos="210" epos="212"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="302" eline="302" spos="1" epos="91"/>
+<jmpPos sline="1011" eline="1011" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1011" eline="1011" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="303" eline="303" spos="1" epos="116"/>
+<jmpPos sline="1012" eline="1012" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$24" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1012" eline="1012" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="303" eline="303" spos="62" epos="79"/>
+<jmpPos sline="1013" eline="1013" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$24" aType="Live Variable"/>
+<link label="temp$24 has reaching def: temp$24 = new test.hw1_500LOC27" jmpLink="1012" srcLink="303" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1013" eline="1013" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="303" eline="303" spos="62" epos="79"/>
+<jmpPos sline="1014" eline="1014" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$24 has reaching def: temp$24 = new test.hw1_500LOC27" jmpLink="1012" srcLink="303" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1014" eline="1014" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="304" eline="304" spos="1" epos="170"/>
+<jmpPos sline="1015" eline="1015" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$26" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1015" eline="1015" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="304" eline="304" spos="39" epos="56"/>
+<jmpPos sline="1016" eline="1016" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$26" aType="Live Variable"/>
+<link label="temp$26 has reaching def: temp$26 = new test.hw1_500LOC26" jmpLink="1015" srcLink="304" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1016" eline="1016" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="304" eline="304" spos="39" epos="56"/>
+<jmpPos sline="1017" eline="1017" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="i6 has reaching def: i6 := @parameter6: int" jmpLink="974" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$26 has reaching def: temp$26 = new test.hw1_500LOC26" jmpLink="1015" srcLink="304" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1017" eline="1017" spos="172" epos="174"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="305" eline="305" spos="1" epos="100"/>
+<jmpPos sline="1018" eline="1018" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$28" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1018" eline="1018" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="305" eline="305" spos="82" epos="98"/>
+<jmpPos sline="1019" eline="1019" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$28" aType="Live Variable"/>
+<link label="temp$28 has reaching def: temp$28 = new test.hw1_500LOC8" jmpLink="1018" srcLink="305" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1019" eline="1019" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="305" eline="305" spos="82" epos="98"/>
+<jmpPos sline="1020" eline="1020" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$28 has reaching def: temp$28 = new test.hw1_500LOC8" jmpLink="1018" srcLink="305" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1020" eline="1020" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="306" eline="306" spos="1" epos="99"/>
+<jmpPos sline="1021" eline="1021" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1021" eline="1021" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="307" eline="307" spos="1" epos="138"/>
+<jmpPos sline="1022" eline="1022" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="308" eline="308" spos="1" epos="84"/>
+<jmpPos sline="1023" eline="1023" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$32" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1023" eline="1023" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="308" eline="308" spos="26" epos="42"/>
+<jmpPos sline="1024" eline="1024" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<text info="Live Variable: temp$32" aType="Live Variable"/>
+<link label="temp$32 has reaching def: temp$32 = new test.hw1_500LOC9" jmpLink="1023" srcLink="308" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1024" eline="1024" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="308" eline="308" spos="26" epos="42"/>
+<jmpPos sline="1025" eline="1025" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$32 has reaching def: temp$32 = new test.hw1_500LOC9" jmpLink="1023" srcLink="308" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1025" eline="1025" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="309" eline="309" spos="1" epos="210"/>
+<jmpPos sline="1026" eline="1026" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: temp$34" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1026" eline="1026" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="309" eline="309" spos="188" epos="205"/>
+<jmpPos sline="1027" eline="1027" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<text info="Live Variable: temp$34" aType="Live Variable"/>
+<text info="Live Variable: i6" aType="Live Variable"/>
+<link label="temp$34 has reaching def: temp$34 = new test.hw1_500LOC15" jmpLink="1026" srcLink="309" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1027" eline="1027" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="309" eline="309" spos="188" epos="205"/>
+<jmpPos sline="1028" eline="1028" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$34 has reaching def: temp$34 = new test.hw1_500LOC15" jmpLink="1026" srcLink="309" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i6 has reaching def: i6 := @parameter6: int" jmpLink="974" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1028" eline="1028" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="310" eline="310" spos="1" epos="92"/>
+<jmpPos sline="1029" eline="1029" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<link label="i1 has reaching def: i1 := @parameter1: int" jmpLink="969" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1029" eline="1029" spos="148" epos="150"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="311" eline="311" spos="1" epos="110"/>
+<jmpPos sline="1030" eline="1030" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1030" eline="1030" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="312" eline="312" spos="1" epos="149"/>
+<jmpPos sline="1031" eline="1031" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<text info="Live Variable: i3" aType="Live Variable"/>
+<link label="i7 has reaching def: i7 := @parameter7: int" jmpLink="975" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1031" eline="1031" spos="219" epos="221"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="313" eline="313" spos="1" epos="74"/>
+<jmpPos sline="1032" eline="1032" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+<link label="i3 has reaching def: i3 := @parameter3: int" jmpLink="971" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="314" eline="314" spos="1" epos="92"/>
+<jmpPos sline="1033" eline="1033" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: i5" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="315" eline="315" spos="1" epos="73"/>
+<jmpPos sline="1034" eline="1034" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<link label="i5 has reaching def: i5 := @parameter5: int" jmpLink="973" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="316" eline="316" spos="1" epos="149"/>
+<jmpPos sline="1035" eline="1035" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="317" eline="317" spos="1" epos="77"/>
+<jmpPos sline="1036" eline="1036" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: temp$43" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1036" eline="1036" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="317" eline="317" spos="58" epos="75"/>
+<jmpPos sline="1037" eline="1037" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<text info="Live Variable: temp$43" aType="Live Variable"/>
+<link label="temp$43 has reaching def: temp$43 = new test.hw1_500LOC15" jmpLink="1036" srcLink="317" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1037" eline="1037" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="317" eline="317" spos="58" epos="75"/>
+<jmpPos sline="1038" eline="1038" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i1 has reaching def: i1 := @parameter1: int" jmpLink="969" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$43 has reaching def: temp$43 = new test.hw1_500LOC15" jmpLink="1036" srcLink="317" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1038" eline="1038" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1038" eline="1038" spos="133" epos="135"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="318" eline="318" spos="1" epos="66"/>
+<jmpPos sline="1039" eline="1039" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="319" eline="319" spos="1" epos="171"/>
+<jmpPos sline="1040" eline="1040" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: temp$46" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1040" eline="1040" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="319" eline="319" spos="85" epos="101"/>
+<jmpPos sline="1041" eline="1041" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: temp$46" aType="Live Variable"/>
+<text info="Live Variable: i9" aType="Live Variable"/>
+<link label="temp$46 has reaching def: temp$46 = new test.hw1_500LOC3" jmpLink="1040" srcLink="319" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1041" eline="1041" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="319" eline="319" spos="85" epos="101"/>
+<jmpPos sline="1042" eline="1042" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$46 has reaching def: temp$46 = new test.hw1_500LOC3" jmpLink="1040" srcLink="319" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i9 has reaching def: i9 := @parameter9: int" jmpLink="977" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1042" eline="1042" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="320" eline="320" spos="1" epos="144"/>
+<jmpPos sline="1043" eline="1043" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: temp$48" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1043" eline="1043" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="320" eline="320" spos="29" epos="46"/>
+<jmpPos sline="1044" eline="1044" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: temp$48" aType="Live Variable"/>
+<link label="temp$48 has reaching def: temp$48 = new test.hw1_500LOC29" jmpLink="1043" srcLink="320" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1044" eline="1044" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="320" eline="320" spos="29" epos="46"/>
+<jmpPos sline="1045" eline="1045" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<link label="temp$48 has reaching def: temp$48 = new test.hw1_500LOC29" jmpLink="1043" srcLink="320" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="321" eline="321" spos="1" epos="47"/>
+<jmpPos sline="1046" eline="1046" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: temp$50" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1046" eline="1046" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="321" eline="321" spos="28" epos="45"/>
+<jmpPos sline="1047" eline="1047" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<text info="Live Variable: i7" aType="Live Variable"/>
+<text info="Live Variable: temp$50" aType="Live Variable"/>
+<link label="temp$50 has reaching def: temp$50 = new test.hw1_500LOC27" jmpLink="1046" srcLink="321" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1047" eline="1047" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="321" eline="321" spos="28" epos="45"/>
+<jmpPos sline="1048" eline="1048" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: i0" aType="Live Variable"/>
+<text info="Live Variable: i8" aType="Live Variable"/>
+<link label="i7 has reaching def: i7 := @parameter7: int" jmpLink="975" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i8 has reaching def: i8 := @parameter8: int" jmpLink="976" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$50 has reaching def: temp$50 = new test.hw1_500LOC27" jmpLink="1046" srcLink="321" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1048" eline="1048" spos="110" epos="112"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="322" eline="322" spos="1" epos="139"/>
+<jmpPos sline="1049" eline="1049" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i0 has reaching def: i0 := @parameter0: int" jmpLink="968" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i8 has reaching def: i8 := @parameter8: int" jmpLink="976" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1049" eline="1049" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="323" eline="323" spos="1" epos="204"/>
+<jmpPos sline="1050" eline="1050" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="324" eline="324" spos="1" epos="67"/>
+<jmpPos sline="1051" eline="1051" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="325" eline="325" spos="1" epos="64"/>
+<jmpPos sline="1052" eline="1052" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: temp$55" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1052" eline="1052" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="325" eline="325" spos="22" epos="39"/>
+<jmpPos sline="1053" eline="1053" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<text info="Live Variable: temp$55" aType="Live Variable"/>
+<link label="temp$55 has reaching def: temp$55 = new test.hw1_500LOC22" jmpLink="1052" srcLink="325" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1053" eline="1053" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="325" eline="325" spos="22" epos="39"/>
+<jmpPos sline="1054" eline="1054" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<link label="temp$55 has reaching def: temp$55 = new test.hw1_500LOC22" jmpLink="1052" srcLink="325" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="326" eline="326" spos="1" epos="141"/>
+<jmpPos sline="1055" eline="1055" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="327" eline="327" spos="1" epos="91"/>
+<jmpPos sline="1056" eline="1056" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$58" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1056" eline="1056" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="327" eline="327" spos="67" epos="83"/>
+<jmpPos sline="1057" eline="1057" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$58" aType="Live Variable"/>
+<text info="Live Variable: i4" aType="Live Variable"/>
+<text info="Live Variable: i1" aType="Live Variable"/>
+<link label="temp$58 has reaching def: temp$58 = new test.hw1_500LOC0" jmpLink="1056" srcLink="327" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1057" eline="1057" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="327" eline="327" spos="67" epos="83"/>
+<jmpPos sline="1058" eline="1058" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$58 has reaching def: temp$58 = new test.hw1_500LOC0" jmpLink="1056" srcLink="327" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i4 has reaching def: i4 := @parameter4: int" jmpLink="972" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="i1 has reaching def: i1 := @parameter1: int" jmpLink="969" srcLink="286" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1058" eline="1058" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="328" eline="328" spos="1" epos="138"/>
+<jmpPos sline="1059" eline="1059" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$60" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1059" eline="1059" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="328" eline="328" spos="22" epos="39"/>
+<jmpPos sline="1060" eline="1060" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$60" aType="Live Variable"/>
+<link label="temp$60 has reaching def: temp$60 = new test.hw1_500LOC34" jmpLink="1059" srcLink="328" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1060" eline="1060" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="328" eline="328" spos="22" epos="39"/>
+<jmpPos sline="1061" eline="1061" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$60 has reaching def: temp$60 = new test.hw1_500LOC34" jmpLink="1059" srcLink="328" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="329" eline="329" spos="1" epos="134"/>
+<jmpPos sline="1062" eline="1062" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1062" eline="1062" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="329" eline="329" spos="67" epos="83"/>
+<jmpPos sline="1063" eline="1063" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+<link label="temp$62 has reaching def: temp$62 = new test.hw1_500LOC0" jmpLink="1062" srcLink="329" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1063" eline="1063" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="329" eline="329" spos="67" epos="83"/>
+<jmpPos sline="1064" eline="1064" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+<text info="Live Variable: temp$63" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1064" eline="1064" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="329" eline="329" spos="85" epos="102"/>
+<jmpPos sline="1065" eline="1065" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$62" aType="Live Variable"/>
+<text info="Live Variable: temp$63" aType="Live Variable"/>
+<link label="temp$63 has reaching def: temp$63 = new test.hw1_500LOC32" jmpLink="1064" srcLink="329" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1065" eline="1065" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="329" eline="329" spos="85" epos="102"/>
+<jmpPos sline="1066" eline="1066" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$62 has reaching def: temp$62 = new test.hw1_500LOC0" jmpLink="1062" srcLink="329" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$63 has reaching def: temp$63 = new test.hw1_500LOC32" jmpLink="1064" srcLink="329" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="330" eline="330" spos="1" epos="75"/>
+<jmpPos sline="1067" eline="1067" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$65" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1067" eline="1067" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="330" eline="330" spos="41" epos="58"/>
+<jmpPos sline="1068" eline="1068" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$65" aType="Live Variable"/>
+<link label="temp$65 has reaching def: temp$65 = new test.hw1_500LOC33" jmpLink="1067" srcLink="330" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1068" eline="1068" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="330" eline="330" spos="41" epos="58"/>
+<jmpPos sline="1069" eline="1069" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+<link label="temp$65 has reaching def: temp$65 = new test.hw1_500LOC33" jmpLink="1067" srcLink="330" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1069" eline="1069" spos="32" epos="35"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="331" eline="331" spos="1" epos="98"/>
+<jmpPos sline="1070" eline="1070" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$67" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1070" eline="1070" spos="8" epos="15"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="331" eline="331" spos="66" epos="83"/>
+<jmpPos sline="1071" eline="1071" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<text info="Live Variable: temp$67" aType="Live Variable"/>
+<link label="temp$67 has reaching def: temp$67 = new test.hw1_500LOC34" jmpLink="1070" srcLink="331" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1071" eline="1071" spos="22" epos="29"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="331" eline="331" spos="66" epos="83"/>
+<jmpPos sline="1072" eline="1072" spos="0" epos="0"/>
+<text info="Live Variable: obj" aType="Live Variable"/>
+<link label="temp$67 has reaching def: temp$67 = new test.hw1_500LOC34" jmpLink="1070" srcLink="331" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="332" eline="332" spos="1" epos="67"/>
+<jmpPos sline="1073" eline="1073" spos="0" epos="0"/>
+<link label="obj has reaching def: obj = temp$0" jmpLink="980" srcLink="287" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1077" eline="1077" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="4" eline="4" spos="0" epos="0"/>
+<jmpPos sline="1081" eline="1081" spos="0" epos="0"/>
+<text info="Live Variable: this" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1081" eline="1081" spos="8" epos="12"/>
+<color r="45" g="255" b="84" fg="0" aType="Live Variable"/>
+</attribute>
+<attribute>
+<srcPos sline="4" eline="4" spos="0" epos="0"/>
+<jmpPos sline="1082" eline="1082" spos="0" epos="0"/>
+<link label="this has reaching def: this := @this: test.hw1_500LOC29" jmpLink="1081" srcLink="4" clssNm="test.hw1_500LOC29" aType="Reaching Defs"/>
+</attribute>
+</attributes>

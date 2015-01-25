@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['inactivatebyletter',['inactivateByLetter',['../class_rack.html#afdf845eb458b07ed6029d29672ab120f',1,'Rack']]],
+  ['inactivateotherspaces',['inactivateOtherSpaces',['../class_board.html#a61a3bf8888e7969e3b34d7df279b495d',1,'Board::inactivateOtherSpaces()'],['../class_rack.html#a66591f08659676ac81eeec7f49f7e1ef',1,'Rack::inactivateOtherSpaces()']]],
+  ['inactive',['INACTIVE',['../space_8h.html#a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6',1,'space.h']]],
+  ['invalidmove',['invalidMove',['../class_board.html#a8333b50e98ce792ebd3afe551751ce56',1,'Board']]],
+  ['isactive',['isActive',['../class_rack.html#a5bd6dd499aecf9239831aafc1679a768',1,'Rack::isActive()'],['../class_space.html#a7aec01e1b32d70af2cdc25d298517d6c',1,'Space::isActive()']]],
+  ['isaiplayer',['isAIPlayer',['../class_a_i_player.html#a2a71a31297386f4d69f12a43187954a6',1,'AIPlayer::isAIPlayer()'],['../class_player.html#afcd43a9498dc70a71ba17484699446bb',1,'Player::isAIPlayer()']]],
+  ['isamatch',['isAMatch',['../class_letter.html#a7e6053ff071263d8bc876d31101ea235',1,'Letter']]],
+  ['isblank',['isBlank',['../class_space.html#a308f0ef400183df78df69717ca50cfee',1,'Space']]],
+  ['isempty',['isEmpty',['../class_letter_pool.html#a47817d0343b330f2c6f3413288de69b2',1,'LetterPool::isEmpty()'],['../class_play.html#af3ee40c18a0e3fbf6e16f645b8de248b',1,'Play::isEmpty()']]],
+  ['ishumanplayer',['isHumanPlayer',['../class_human_player.html#aff784db8904c5f8c13bd88847f631188',1,'HumanPlayer::isHumanPlayer()'],['../class_player.html#adeb8d6fe962f9bf002281f7fe1321cff',1,'Player::isHumanPlayer()']]],
+  ['isinactive',['isInactive',['../class_space.html#a83819948ab0508299c66829ca8335034',1,'Space']]],
+  ['isnew',['isNew',['../class_space.html#aa24aa1c8ac8b6033fc041d79345bac71',1,'Space']]],
+  ['isonboard',['isOnBoard',['../class_space.html#a5af5885e0b62f4d13ed32c86e50f3cfe',1,'Space']]],
+  ['isplaced',['isPlaced',['../class_space.html#a6aa96af44b69e725c4891ad83be05dbd',1,'Space']]],
+  ['isset',['isSet',['../class_board.html#a6862f6207a47592cd5807f08e8d6564b',1,'Board::isSet()'],['../class_rack.html#afcffaefc94d794ec29c52b5899f1d55f',1,'Rack::isSet()']]],
+  ['isstartspace',['isStartSpace',['../class_space.html#aaa6f84cc3a3877b7fb32e5b2363adb10',1,'Space']]],
+  ['istouchingonboard',['isTouchingOnBoard',['../class_board.html#a4b992bdcd23d8b04b6719ebdffe61567',1,'Board']]],
+  ['iswildcard',['isWildcard',['../class_letter.html#aa0c05656947c35b032b20b7260f463ba',1,'Letter']]],
+  ['isword',['isWord',['../class_dictionary.html#afe2588ce04f6ad733c51df58a8d0d96b',1,'Dictionary::isWord()'],['../class_trie_node.html#a3fa48afcb9376feaf24c9d8acac7c076',1,'TrieNode::isWord()']]]
+];

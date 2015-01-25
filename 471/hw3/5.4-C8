@@ -1,0 +1,30 @@
+f = @(x) (exp(-(x^2)/2) / sqrt(2*pi)
+ f = @(x) (exp(-(x^2)/2) / sqrt(2*pi)
+                                     |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+f = @(x) (exp(-(x^2)/2)) / sqrt(2*pi)
+
+f = 
+
+    @(x)(exp(-(x^2)/2))/sqrt(2*pi)
+
+adapquad(f, -1, 1, .000000005)
+
+ans =
+
+   0.682689489122745
+
+adapquad(f, -2, 2, .000000005)
+
+ans =
+
+   0.954499736418089
+
+adapquad(f, -3, 3, .000000005)
+
+ans =
+
+   0.997300204868865
+
+diary off

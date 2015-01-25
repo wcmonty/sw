@@ -1,0 +1,9 @@
+The documentation contains full source code documentation, as well as analysis and documentation.  For convenience, the HTML main page has been converted to PDF and included in the main directory.  I would recommend that you use the HTML documentation though. I am including a Zip file with all of the documentation, minus the PDF file.
+
+To build, you should be able to run:
+make all
+
+Which will build 2 files, myClient and myServer.  Both take only the command arguments as specified in homework 1.
+
+Please note that in order for the server to run correctly, there must be a folder named "files" in the directory that the server is run from.  The server must also have permission to access this directory.  This folder is where the server saves all files that are sent to it.  Running `make all` should create the directory if it is not created.  I have tested this locally and on my EC2 server, however, it might not work.  In this case, a directory should be created manually.
+

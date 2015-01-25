@@ -1,0 +1,233 @@
+\hypertarget{class_ui___main_window}{\section{Ui\-\_\-\-Main\-Window Class Reference}
+\label{class_ui___main_window}\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}}
+}
+
+
+{\ttfamily \#include $<$ui\-\_\-mainwindow.\-h$>$}
+
+Inheritance diagram for Ui\-\_\-\-Main\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ui___main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ui___main_window_acf4a0872c4c77d8f43a2ec66ed849b58}{setup\-Ui} (Q\-Main\-Window $\ast$Main\-Window)
+\item 
+void \hyperlink{class_ui___main_window_a097dd160c3534a204904cb374412c618}{retranslate\-Ui} (Q\-Main\-Window $\ast$Main\-Window)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Widget $\ast$ \hyperlink{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{central\-Widget}
+\item 
+Q\-Widget $\ast$ \hyperlink{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}{vertical\-Layout\-Widget}
+\item 
+Q\-V\-Box\-Layout $\ast$ \hyperlink{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{vertical\-Layout}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}{push\-Button}
+\item 
+Q\-Menu\-Bar $\ast$ \hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menu\-Bar}
+\item 
+Q\-Menu $\ast$ \hyperlink{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}{menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students}
+\item 
+Q\-Tool\-Bar $\ast$ \hyperlink{class_ui___main_window_a5172877001c8c7b4e0f6de50421867d1}{main\-Tool\-Bar}
+\item 
+Q\-Status\-Bar $\ast$ \hyperlink{class_ui___main_window_a50fa481337604bcc8bf68de18ab16ecd}{status\-Bar}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file ui\-\_\-mainwindow.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ui___main_window_a097dd160c3534a204904cb374412c618}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!retranslate\-Ui@{retranslate\-Ui}}
+\index{retranslate\-Ui@{retranslate\-Ui}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{retranslate\-Ui}]{\setlength{\rightskip}{0pt plus 5cm}void Ui\-\_\-\-Main\-Window\-::retranslate\-Ui (
+\begin{DoxyParamCaption}
+\item[{Q\-Main\-Window $\ast$}]{Main\-Window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ui___main_window_a097dd160c3534a204904cb374412c618}
+
+
+Definition at line 81 of file ui\-\_\-mainwindow.\-h.
+
+
+
+References menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students, and push\-Button.
+
+
+
+Referenced by setup\-Ui().
+
+
+\begin{DoxyCode}
+82     \{
+83         MainWindow->setWindowTitle(QApplication::translate(\textcolor{stringliteral}{"MainWindow"}, \textcolor{stringliteral}{"MainWindow"}, 0));
+84         \hyperlink{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}{pushButton}->setText(QApplication::translate(\textcolor{stringliteral}{"MainWindow"}, \textcolor{stringliteral}{"Start Game"}, 0));
+85         \hyperlink{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}{menuWords\_for\_CS\_340\_Students}->setTitle(QApplication::translate(\textcolor{stringliteral}{"
+      MainWindow"}, \textcolor{stringliteral}{"Words for CS 340 Students"}, 0));
+86     \} \textcolor{comment}{// retranslateUi}
+\end{DoxyCode}
+\hypertarget{class_ui___main_window_acf4a0872c4c77d8f43a2ec66ed849b58}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!setup\-Ui@{setup\-Ui}}
+\index{setup\-Ui@{setup\-Ui}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{setup\-Ui}]{\setlength{\rightskip}{0pt plus 5cm}void Ui\-\_\-\-Main\-Window\-::setup\-Ui (
+\begin{DoxyParamCaption}
+\item[{Q\-Main\-Window $\ast$}]{Main\-Window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ui___main_window_acf4a0872c4c77d8f43a2ec66ed849b58}
+
+
+Definition at line 40 of file ui\-\_\-mainwindow.\-h.
+
+
+
+References central\-Widget, main\-Tool\-Bar, menu\-Bar, menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students, push\-Button, retranslate\-Ui(), status\-Bar, vertical\-Layout, and vertical\-Layout\-Widget.
+
+
+\begin{DoxyCode}
+41     \{
+42         \textcolor{keywordflow}{if} (MainWindow->objectName().isEmpty())
+43             MainWindow->setObjectName(QStringLiteral(\textcolor{stringliteral}{"MainWindow"}));
+44         MainWindow->resize(826, 469);
+45         MainWindow->setMinimumSize(QSize(826, 0));
+46         MainWindow->setMaximumSize(QSize(826, 16777215));
+47         \hyperlink{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{centralWidget} = \textcolor{keyword}{new} QWidget(MainWindow);
+48         \hyperlink{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{centralWidget}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"centralWidget"}));
+49         \hyperlink{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}{verticalLayoutWidget} = \textcolor{keyword}{new} QWidget(\hyperlink{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{centralWidget});
+50         \hyperlink{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}{verticalLayoutWidget}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"verticalLayoutWidget"}));
+51         \hyperlink{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}{verticalLayoutWidget}->setGeometry(QRect(10, 0, 381, 221));
+52         \hyperlink{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{verticalLayout} = \textcolor{keyword}{new} QVBoxLayout(\hyperlink{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}{verticalLayoutWidget});
+53         \hyperlink{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{verticalLayout}->setSpacing(6);
+54         \hyperlink{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{verticalLayout}->setContentsMargins(11, 11, 11, 11);
+55         \hyperlink{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{verticalLayout}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"verticalLayout"}));
+56         \hyperlink{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{verticalLayout}->setContentsMargins(0, 0, 0, 0);
+57         \hyperlink{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}{pushButton} = \textcolor{keyword}{new} QPushButton(\hyperlink{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{centralWidget});
+58         \hyperlink{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}{pushButton}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"pushButton"}));
+59         \hyperlink{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}{pushButton}->setGeometry(QRect(350, 390, 99, 27));
+60         MainWindow->setCentralWidget(\hyperlink{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{centralWidget});
+61         \hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menuBar} = \textcolor{keyword}{new} QMenuBar(MainWindow);
+62         \hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menuBar}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"menuBar"}));
+63         \hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menuBar}->setGeometry(QRect(0, 0, 826, 25));
+64         \hyperlink{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}{menuWords\_for\_CS\_340\_Students} = \textcolor{keyword}{new} QMenu(
+      \hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menuBar});
+65         \hyperlink{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}{menuWords\_for\_CS\_340\_Students}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"
+      menuWords\_for\_CS\_340\_Students"}));
+66         MainWindow->setMenuBar(\hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menuBar});
+67         \hyperlink{class_ui___main_window_a5172877001c8c7b4e0f6de50421867d1}{mainToolBar} = \textcolor{keyword}{new} QToolBar(MainWindow);
+68         \hyperlink{class_ui___main_window_a5172877001c8c7b4e0f6de50421867d1}{mainToolBar}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"mainToolBar"}));
+69         MainWindow->addToolBar(Qt::TopToolBarArea, \hyperlink{class_ui___main_window_a5172877001c8c7b4e0f6de50421867d1}{mainToolBar});
+70         \hyperlink{class_ui___main_window_a50fa481337604bcc8bf68de18ab16ecd}{statusBar} = \textcolor{keyword}{new} QStatusBar(MainWindow);
+71         \hyperlink{class_ui___main_window_a50fa481337604bcc8bf68de18ab16ecd}{statusBar}->setObjectName(QStringLiteral(\textcolor{stringliteral}{"statusBar"}));
+72         MainWindow->setStatusBar(\hyperlink{class_ui___main_window_a50fa481337604bcc8bf68de18ab16ecd}{statusBar});
+73 
+74         \hyperlink{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{menuBar}->addAction(\hyperlink{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}{menuWords\_for\_CS\_340\_Students}->menuAction())
+      ;
+75 
+76         \hyperlink{class_ui___main_window_a097dd160c3534a204904cb374412c618}{retranslateUi}(MainWindow);
+77 
+78         QMetaObject::connectSlotsByName(MainWindow);
+79     \} \textcolor{comment}{// setupUi}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!central\-Widget@{central\-Widget}}
+\index{central\-Widget@{central\-Widget}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{central\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Widget$\ast$ Ui\-\_\-\-Main\-Window\-::central\-Widget}}\label{class_ui___main_window_a30075506c2116c3ed4ff25e07ae75f81}
+
+
+Definition at line 31 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by setup\-Ui().
+
+\hypertarget{class_ui___main_window_a5172877001c8c7b4e0f6de50421867d1}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!main\-Tool\-Bar@{main\-Tool\-Bar}}
+\index{main\-Tool\-Bar@{main\-Tool\-Bar}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{main\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Ui\-\_\-\-Main\-Window\-::main\-Tool\-Bar}}\label{class_ui___main_window_a5172877001c8c7b4e0f6de50421867d1}
+
+
+Definition at line 37 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by setup\-Ui().
+
+\hypertarget{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!menu\-Bar@{menu\-Bar}}
+\index{menu\-Bar@{menu\-Bar}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{menu\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu\-Bar$\ast$ Ui\-\_\-\-Main\-Window\-::menu\-Bar}}\label{class_ui___main_window_a2be1c24ec9adfca18e1dcc951931457f}
+
+
+Definition at line 35 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by setup\-Ui().
+
+\hypertarget{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students@{menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students}}
+\index{menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students@{menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Ui\-\_\-\-Main\-Window\-::menu\-Words\-\_\-for\-\_\-\-C\-S\-\_\-340\-\_\-\-Students}}\label{class_ui___main_window_a7f4ea012695a9e61eb752b30df4caa38}
+
+
+Definition at line 36 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by retranslate\-Ui(), and setup\-Ui().
+
+\hypertarget{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!push\-Button@{push\-Button}}
+\index{push\-Button@{push\-Button}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{push\-Button}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Ui\-\_\-\-Main\-Window\-::push\-Button}}\label{class_ui___main_window_ad332d93084584930878f1daf5f84cdbf}
+
+
+Definition at line 34 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by retranslate\-Ui(), and setup\-Ui().
+
+\hypertarget{class_ui___main_window_a50fa481337604bcc8bf68de18ab16ecd}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!status\-Bar@{status\-Bar}}
+\index{status\-Bar@{status\-Bar}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{status\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Status\-Bar$\ast$ Ui\-\_\-\-Main\-Window\-::status\-Bar}}\label{class_ui___main_window_a50fa481337604bcc8bf68de18ab16ecd}
+
+
+Definition at line 38 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by setup\-Ui().
+
+\hypertarget{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!vertical\-Layout@{vertical\-Layout}}
+\index{vertical\-Layout@{vertical\-Layout}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{vertical\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-V\-Box\-Layout$\ast$ Ui\-\_\-\-Main\-Window\-::vertical\-Layout}}\label{class_ui___main_window_aecd96a04789fcfec3f98d80390ad8184}
+
+
+Definition at line 33 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by setup\-Ui().
+
+\hypertarget{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}{\index{Ui\-\_\-\-Main\-Window@{Ui\-\_\-\-Main\-Window}!vertical\-Layout\-Widget@{vertical\-Layout\-Widget}}
+\index{vertical\-Layout\-Widget@{vertical\-Layout\-Widget}!Ui_MainWindow@{Ui\-\_\-\-Main\-Window}}
+\subsubsection[{vertical\-Layout\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Widget$\ast$ Ui\-\_\-\-Main\-Window\-::vertical\-Layout\-Widget}}\label{class_ui___main_window_a805d415fff07a22a85219e1f22f2da28}
+
+
+Definition at line 32 of file ui\-\_\-mainwindow.\-h.
+
+
+
+Referenced by setup\-Ui().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{ui__mainwindow_8h}{ui\-\_\-mainwindow.\-h}\end{DoxyCompactItemize}

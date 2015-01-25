@@ -1,0 +1,50 @@
+\hypertarget{letter_8cpp}{\section{Scrabble/letter.cpp File Reference}
+\label{letter_8cpp}\index{Scrabble/letter.\-cpp@{Scrabble/letter.\-cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}letter.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{letter_8cpp_a90f2b9e82cfd5e6c60087fb6c1f92937}{operator$<$$<$} (ostream \&os, const \hyperlink{class_letter}{Letter} \&letter)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloaded ostream operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{letter_8cpp_a90f2b9e82cfd5e6c60087fb6c1f92937}{\index{letter.\-cpp@{letter.\-cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!letter.cpp@{letter.\-cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Letter} \&}]{letter}
+\end{DoxyParamCaption}
+)}}\label{letter_8cpp_a90f2b9e82cfd5e6c60087fb6c1f92937}
+
+
+operator $<$$<$ Overloaded ostream operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The ostream \\
+\hline
+{\em letter} & The letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified ostream 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file letter.\-cpp.
+
+
+
+References Letter\-::letter.
+
+
+\begin{DoxyCode}
+104                                                        \{
+105     os << letter.\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter}.toLatin1();
+106     \textcolor{keywordflow}{return} os;
+107 \}
+\end{DoxyCode}

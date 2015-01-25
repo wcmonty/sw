@@ -1,0 +1,49 @@
+gw_build
+It does not look like this function will work at all.  There are numerous problems with it.  
+
+It does look like you set up your grid right.  But from there, you then set each head to NULL and then immediately try to dereference it:
+g->grid[nrows][ncols].head = NULL;
+g->grid[nrows][ncols].head->id = rand() %10000;
+
+If head is null, how can you dereference it with head->id?
+
+gw_members
+Your logic is off here.  *n should be the number of people, but you are setting it to an id.  You are also returning it, but you should be returning a pointer to an array.  You never create the array which should be malloc'ed at some point.
+
+gw_total_pop
+This looks fine.
+
+gw_find
+This looks alright, except you don't seem to check to see if the person is alive or not.
+
+gw_kill
+If the person is found, you don't return anything but the function should return an int.
+
+Why are you increasing the population with this:
+g->grid[r][c].districtPopulation++;
+
+You should be killing a person, which should decrease the population.
+
+Your logic for killing a person is off.  It looks like you are trying to add a person instead of killing them.
+
+gw_move
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+Your logic doesn't make much sense.  Why are there two variables temp and temp1, when all you do is assign temp1 to temp?
+
+
+gw_create
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+This line is incorrect:
+newID = g->worldPopulation + 1;
+
+You are setting a pointer to an integer, which is not what you want to do.  Most likely, you should be doing something like:
+newID->id = g->worldPopulation + 1;
+
+This will dereference the pointer and set the id field.
+
+Using this method, you are also not reusing old unused IDs.  Also, you are setting the head of a linked list to newID, but not doing any of the other linked list "hosuekeeping".  So if there is anything else in the list, it is now lost (a memory leak).
+
+gw_free
+This just frees the gw_struct, but does not free the districts or people structs.

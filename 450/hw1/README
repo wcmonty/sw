@@ -1,0 +1,33 @@
+Author
+William Montgomery
+Copyright
+None
+University of Illinois at Chicago
+CS 450 - Introduction to Networking
+Spring 2014
+About the project
+
+The file transfer project is composed of two programs, myClient and myServer. The general idea is to allow the client to transer files and headers over TCP/IP, and the server to process those messages.
+Documentation
+
+The project is documented with Doxygen tags. These tags allow HTML and RTF documentation to be generated. The HTML documentation can be found in the docs/html/index.html document. It is recommended that a web browser be used to view the documentation if possible.
+Building the project
+
+A makefile is included. The user can run 'make clean' and then 'make' to build both the client and server applications (myClient and myServer respectively).
+Running the server
+
+The server can be run after building with './myServer'. It takes the following command line arguments:
+port - This argument specifies the port to connect to. The default is 54321.
+The server will run multiple connections at a time. This is implemented by accepting new connections and then forking off a process to handle messages. This allows mulitple messages to be processesd at the same time and any error in a child process should not bring down the server. There is no mechanism to limit the number of children however. This is obviously undesirable for the real world. Additionally, there is no mechanism to time out dormant connections.
+The server will save files to the local filesystem if the correct flag is set in the header. The files are stored in the ./files/ subdirectory.
+There is no built in method to gracefully exit from the server. The user is directed to use [control] + C to exit the program.
+Running the client
+
+The client can be run after building with './myClient'. It takes the following command line arguments:
+server - This is the IP address of the final destination that the packet is headed to. The default is 127.0.0.1.
+server port - This is the port of the final destination that the packet is headed to. The default is 54321.
+relay - This is the IP address of an intermediate relay. The default is 127.0.0.1.
+relay port - This is the port of an intermediaate relay. The defaul is 54320.
+Please note that the parsing of these inputs is brittle at best. Any incorrect value will cause the program to exit.
+The client is generally interactive, looping through and asking the user to enter information interactively using basic menus. Menu items can be selected by entering the number next to the desired option. When files are transmitted the user can choose whether the connection should be torn down after every connection or left open. If the connection is left open, the client will send a message with a header but no payload indicating that the connection should be torn down.
+The client records basic statistics regarding time and number of bytes sent, on a per message and on a per session basis. A session is a batch of messages, where the connections are left open or closed and reopened after every message. This allows two sessions to be tracked against each other. It limited testing for small files, leaving the connection open has a significant effect on the time needed to send messages.

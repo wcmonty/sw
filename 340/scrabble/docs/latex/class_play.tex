@@ -1,0 +1,820 @@
+\hypertarget{class_play}{\section{Play Class Reference}
+\label{class_play}\index{Play@{Play}}
+}
+
+
+The \hyperlink{class_play}{Play} class Wrapper for a set of Moves that make up a \hyperlink{class_play}{Play}.  
+
+
+
+
+{\ttfamily \#include $<$play.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_play_a2dc24501b99a45769193fcb270505f0f}{Play} (Q\-List$<$ \hyperlink{class_move}{Move} $\ast$ $>$ $\ast$, \hyperlink{class_player}{Player} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a2dc24501b99a45769193fcb270505f0f}{Play\-::\-Play} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_play_a0088438837d29378e35a2beed04e64df}{Play} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play}{Play} class constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_play_aa0a6845d214673a3dc64d661027046b2}{Play} (const \hyperlink{class_play}{Play} \&other)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a2dc24501b99a45769193fcb270505f0f}{Play\-::\-Play} Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_play_a6f7dd4d097454caef2e81fa94fe739d5}{$\sim$\-Play} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play}{Play} destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_play_af3ee40c18a0e3fbf6e16f645b8de248b}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_af3ee40c18a0e3fbf6e16f645b8de248b}{Play\-::is\-Empty}, checks whether the move vector has any elements. \end{DoxyCompactList}\item 
+bool \hyperlink{class_play_a498e6c1b124296872e22151e8ee965fb}{validate} (\hyperlink{class_dictionary}{Dictionary} \&dict)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a498e6c1b124296872e22151e8ee965fb}{Play\-::validate} will return whether or not this is a valid play on the board. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_play_ad70d9b77395e7b30506d1c38ace45bf0}{add\-Move} (\hyperlink{class_player}{Player} $\ast$, \hyperlink{class_move}{Move} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_ad70d9b77395e7b30506d1c38ace45bf0}{Play\-::add\-Move}, adds a single move to the list of plays. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_play_a5b6d4e2fafc15310485d4770ae36e46e}{apply\-Moves} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a5b6d4e2fafc15310485d4770ae36e46e}{Play\-::apply\-Moves} temporarily applies each move of the play to the board. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_play_a56788c5adf1bdc5230bf226f6a97dd04}{unapply\-Moves} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a56788c5adf1bdc5230bf226f6a97dd04}{Play\-::unapply\-Moves} does the opposite of the temporary placement, and inactivates the spaces. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_play_a02fbcafed804466c41fd78e8eef8ca16}{finalize\-Moves} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a02fbcafed804466c41fd78e8eef8ca16}{Play\-::finalize\-Moves} Permanently adds each move of the play to the board. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_play_af9f4b1daff13026dd4f38f93375f576f}{clear\-Moves} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_af9f4b1daff13026dd4f38f93375f576f}{Play\-::clear\-Moves} removes all elements from the play list. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{clear\-Letter} (\hyperlink{class_letter}{Letter} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{Play\-::clear\-Letter} Clears a move by the Letter$\ast$ it contains. \end{DoxyCompactList}\item 
+int \hyperlink{class_play_a2311eaa432738b08a75d7ca35af46ba6}{size} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a2311eaa432738b08a75d7ca35af46ba6}{Play\-::size}, checks the number of moves in a play. \end{DoxyCompactList}\item 
+class \hyperlink{class_player}{Player} $\ast$ \hyperlink{class_play_aebe81c706ee1005b63fad43f2eaff0c0}{get\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_aebe81c706ee1005b63fad43f2eaff0c0}{Play\-::get\-Player}. \end{DoxyCompactList}\item 
+int \hyperlink{class_play_af2599835f6eba8136770a4f773a9f9ef}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_af2599835f6eba8136770a4f773a9f9ef}{Play\-::get\-Value}, checks the value of the current play. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_play_a609ee8aa7d127a27ace83fa47b1478a9}{get\-Char\-Array} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a609ee8aa7d127a27ace83fa47b1478a9}{Play\-::get\-Char\-Array} gets the \hyperlink{class_play}{Play}'s moves in the form of a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_play_a6699a989cb202ffc8db61093fea15d1f}{validate\-\_\-right} (int x\-\_\-start, int y, \hyperlink{class_dictionary}{Dictionary} \&dict, \hyperlink{class_board}{Board} $\ast$myboard)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_a6699a989cb202ffc8db61093fea15d1f}{Play\-::validate\-\_\-right} Validates a \hyperlink{class_play}{Play} to the right. \end{DoxyCompactList}\item 
+bool \hyperlink{class_play_ae7096a77ed85b5251f2faccfb092616b}{validate\-\_\-down} (int y\-\_\-start, int x, \hyperlink{class_dictionary}{Dictionary} \&dict, \hyperlink{class_board}{Board} $\ast$myboard)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_play_ae7096a77ed85b5251f2faccfb092616b}{Play\-::validate\-\_\-down} Validates a \hyperlink{class_play}{Play} downward. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-List$<$ \hyperlink{class_move}{Move} $\ast$ $>$ $\ast$ \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}
+\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player}
+\item 
+int \hyperlink{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{value}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_play_a2c11a076a909acd936d897cd2a81f931}{A\-I\-Player}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_play}{Play} class Wrapper for a set of Moves that make up a \hyperlink{class_play}{Play}. 
+
+Definition at line 16 of file play.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_play_a2dc24501b99a45769193fcb270505f0f}{\index{Play@{Play}!Play@{Play}}
+\index{Play@{Play}!Play@{Play}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}Play\-::\-Play (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Move} $\ast$ $>$ $\ast$}]{moves, }
+\item[{{\bf Player} $\ast$}]{player}
+\end{DoxyParamCaption}
+)}}\label{class_play_a2dc24501b99a45769193fcb270505f0f}
+
+
+\hyperlink{class_play_a2dc24501b99a45769193fcb270505f0f}{Play\-::\-Play} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em moves} & A list of moves \\
+\hline
+{\em player} & The player \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file play.\-cpp.
+
+
+
+References player, and value.
+
+
+\begin{DoxyCode}
+19 \{
+20     this->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves} = \textcolor{keyword}{new} QList<Move*>();
+21     this->\hyperlink{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{value} = 0;
+22     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->size(); i++) \{
+23         this->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->insert(i,\textcolor{keyword}{new} \hyperlink{class_move}{Move}(*\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i)));
+24         this->value += this->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i)->getLetter()->getValue();
+25     \}
+26     \textcolor{comment}{// this->moves = moves;}
+27     this->player = \hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player};
+28 \}
+\end{DoxyCode}
+\hypertarget{class_play_a0088438837d29378e35a2beed04e64df}{\index{Play@{Play}!Play@{Play}}
+\index{Play@{Play}!Play@{Play}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}Play\-::\-Play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a0088438837d29378e35a2beed04e64df}
+
+
+\hyperlink{class_play}{Play} class constructor. 
+
+
+
+Definition at line 6 of file play.\-cpp.
+
+
+
+References moves, player, and value.
+
+
+\begin{DoxyCode}
+7 \{
+8     this->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves} = \textcolor{keyword}{new} QList<Move*>();
+9     this->\hyperlink{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{value} = 0;
+10     this->\hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player} = 0;
+11 \}
+\end{DoxyCode}
+\hypertarget{class_play_aa0a6845d214673a3dc64d661027046b2}{\index{Play@{Play}!Play@{Play}}
+\index{Play@{Play}!Play@{Play}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}Play\-::\-Play (
+\begin{DoxyParamCaption}
+\item[{const {\bf Play} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_play_aa0a6845d214673a3dc64d661027046b2}
+
+
+\hyperlink{class_play_a2dc24501b99a45769193fcb270505f0f}{Play\-::\-Play} Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other \hyperlink{class_play}{Play} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 239 of file play.\-cpp.
+
+
+
+References moves, player, and value.
+
+
+\begin{DoxyCode}
+239                             \{
+240     this->\hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player} = other.\hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player};
+241     this->\hyperlink{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{value} = other.\hyperlink{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{value};
+242     this->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves} = \textcolor{keyword}{new} QList<Move*>();
+243     \textcolor{keywordtype}{int} i = 0;
+244     \textcolor{keywordflow}{for}(QList<Move*>::ConstIterator it = other.\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->cbegin(); it != other.
+      \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->cend(); it++)
+245     \{
+246         \hyperlink{class_move}{Move} * curmove = *it;
+247         this->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->insert(i,curmove);
+248         i++;
+249     \}
+250 \}
+\end{DoxyCode}
+\hypertarget{class_play_a6f7dd4d097454caef2e81fa94fe739d5}{\index{Play@{Play}!$\sim$\-Play@{$\sim$\-Play}}
+\index{$\sim$\-Play@{$\sim$\-Play}!Play@{Play}}
+\subsubsection[{$\sim$\-Play}]{\setlength{\rightskip}{0pt plus 5cm}Play\-::$\sim$\-Play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a6f7dd4d097454caef2e81fa94fe739d5}
+
+
+\hyperlink{class_play}{Play} destructor. 
+
+
+
+Definition at line 33 of file play.\-cpp.
+
+
+
+References clear\-Moves().
+
+
+\begin{DoxyCode}
+34 \{
+35     \hyperlink{class_play_af9f4b1daff13026dd4f38f93375f576f}{clearMoves}();
+36 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_play_ad70d9b77395e7b30506d1c38ace45bf0}{\index{Play@{Play}!add\-Move@{add\-Move}}
+\index{add\-Move@{add\-Move}!Play@{Play}}
+\subsubsection[{add\-Move}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Play\-::add\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{player, }
+\item[{{\bf Move} $\ast$}]{move}
+\end{DoxyParamCaption}
+)}}\label{class_play_ad70d9b77395e7b30506d1c38ace45bf0}
+
+
+\hyperlink{class_play_ad70d9b77395e7b30506d1c38ace45bf0}{Play\-::add\-Move}, adds a single move to the list of plays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & reference to the player that made the move \\
+\hline
+{\em move} & reference to the object of type \hyperlink{class_move}{Move} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file play.\-cpp.
+
+
+
+References moves, and player.
+
+
+
+Referenced by Board\-::move\-Letter\-To\-Board().
+
+
+\begin{DoxyCode}
+73                                              \{
+74     this->player = \hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player};
+75     \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->push\_back(move);
+76     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+77 \}
+\end{DoxyCode}
+\hypertarget{class_play_a5b6d4e2fafc15310485d4770ae36e46e}{\index{Play@{Play}!apply\-Moves@{apply\-Moves}}
+\index{apply\-Moves@{apply\-Moves}!Play@{Play}}
+\subsubsection[{apply\-Moves}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Play\-::apply\-Moves (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a5b6d4e2fafc15310485d4770ae36e46e}
+
+
+\hyperlink{class_play_a5b6d4e2fafc15310485d4770ae36e46e}{Play\-::apply\-Moves} temporarily applies each move of the play to the board. 
+
+
+
+Definition at line 96 of file play.\-cpp.
+
+
+
+References moves.
+
+
+\begin{DoxyCode}
+97 \{
+98     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->size(); i++)\{
+99         \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i)->unapply();
+100     \}
+101 
+102     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+103 \}
+\end{DoxyCode}
+\hypertarget{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{\index{Play@{Play}!clear\-Letter@{clear\-Letter}}
+\index{clear\-Letter@{clear\-Letter}!Play@{Play}}
+\subsubsection[{clear\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Play\-::clear\-Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}
+
+
+\hyperlink{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{Play\-::clear\-Letter} Clears a move by the Letter$\ast$ it contains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to find by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file play.\-cpp.
+
+
+
+References Move\-::get\-Letter(), and moves.
+
+
+
+Referenced by Space\-::on\-\_\-clicked(), and A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+56 \{
+57    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->size(); i++)\{
+58         \hyperlink{class_move}{Move} *move = \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i);
+59         \textcolor{keywordflow}{if} (letter == move->\hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{getLetter}())\{
+60             \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->removeAt(i);
+61         \}
+62     \}
+63     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+64 \}
+\end{DoxyCode}
+\hypertarget{class_play_af9f4b1daff13026dd4f38f93375f576f}{\index{Play@{Play}!clear\-Moves@{clear\-Moves}}
+\index{clear\-Moves@{clear\-Moves}!Play@{Play}}
+\subsubsection[{clear\-Moves}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Play\-::clear\-Moves (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_af9f4b1daff13026dd4f38f93375f576f}
+
+
+\hyperlink{class_play_af9f4b1daff13026dd4f38f93375f576f}{Play\-::clear\-Moves} removes all elements from the play list. 
+
+
+
+Definition at line 41 of file play.\-cpp.
+
+
+
+References moves.
+
+
+
+Referenced by Board\-::on\-\_\-cancel\-Button\-\_\-clicked(), and $\sim$\-Play().
+
+
+\begin{DoxyCode}
+42 \{
+43     \textcolor{keywordflow}{while} (!\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->empty())\{
+44         \textcolor{keyword}{delete} (\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->back());
+45         \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->pop\_back();
+46     \}
+47     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+48 \}
+\end{DoxyCode}
+\hypertarget{class_play_a02fbcafed804466c41fd78e8eef8ca16}{\index{Play@{Play}!finalize\-Moves@{finalize\-Moves}}
+\index{finalize\-Moves@{finalize\-Moves}!Play@{Play}}
+\subsubsection[{finalize\-Moves}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Play\-::finalize\-Moves (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a02fbcafed804466c41fd78e8eef8ca16}
+
+
+\hyperlink{class_play_a02fbcafed804466c41fd78e8eef8ca16}{Play\-::finalize\-Moves} Permanently adds each move of the play to the board. 
+
+
+
+Definition at line 83 of file play.\-cpp.
+
+
+
+References moves.
+
+
+
+Referenced by Game\-::next\-Turn().
+
+
+\begin{DoxyCode}
+84 \{
+85     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->size(); i++)\{
+86         \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i)->finalize();
+87     \}
+88 
+89     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+90 \}
+\end{DoxyCode}
+\hypertarget{class_play_a609ee8aa7d127a27ace83fa47b1478a9}{\index{Play@{Play}!get\-Char\-Array@{get\-Char\-Array}}
+\index{get\-Char\-Array@{get\-Char\-Array}!Play@{Play}}
+\subsubsection[{get\-Char\-Array}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Play\-::get\-Char\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a609ee8aa7d127a27ace83fa47b1478a9}
+
+
+\hyperlink{class_play_a609ee8aa7d127a27ace83fa47b1478a9}{Play\-::get\-Char\-Array} gets the \hyperlink{class_play}{Play}'s moves in the form of a string. 
+
+\begin{DoxyReturn}{Returns}
+a Q\-String representing this play's {\itshape moves}. 
+\end{DoxyReturn}
+
+
+Definition at line 265 of file play.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), Move\-::get\-Letter(), and moves.
+
+
+\begin{DoxyCode}
+266 \{
+267     QString result = \textcolor{stringliteral}{""};
+268     \textcolor{keywordflow}{for}(QList<Move*>::Iterator moveit = \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->begin(); moveit != \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->end(); moveit++)
+269     \{
+270         \hyperlink{class_move}{Move} * curmove = *moveit;
+271         result += curmove->\hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{getLetter}()->\hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()->toLatin1();
+272     \}
+273     \textcolor{keywordflow}{return} result;
+274 \}
+\end{DoxyCode}
+\hypertarget{class_play_aebe81c706ee1005b63fad43f2eaff0c0}{\index{Play@{Play}!get\-Player@{get\-Player}}
+\index{get\-Player@{get\-Player}!Play@{Play}}
+\subsubsection[{get\-Player}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Player} $\ast$ Play\-::get\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_aebe81c706ee1005b63fad43f2eaff0c0}
+
+
+\hyperlink{class_play_aebe81c706ee1005b63fad43f2eaff0c0}{Play\-::get\-Player}. 
+
+\begin{DoxyReturn}{Returns}
+Player$\ast$ of the player making a play 
+\end{DoxyReturn}
+
+
+Definition at line 280 of file play.\-cpp.
+
+
+
+References player.
+
+
+\begin{DoxyCode}
+281 \{
+282     \textcolor{keywordflow}{return} \hyperlink{class_play_a8a7094a8a0186212896fe7daf71617a3}{player};
+283 \}
+\end{DoxyCode}
+\hypertarget{class_play_af2599835f6eba8136770a4f773a9f9ef}{\index{Play@{Play}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!Play@{Play}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int Play\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_af2599835f6eba8136770a4f773a9f9ef}
+
+
+\hyperlink{class_play_af2599835f6eba8136770a4f773a9f9ef}{Play\-::get\-Value}, checks the value of the current play. 
+
+\begin{DoxyReturn}{Returns}
+int with the value of the play 
+\end{DoxyReturn}
+
+
+Definition at line 256 of file play.\-cpp.
+
+
+
+References value.
+
+
+
+Referenced by \-\_\-pred\-\_\-value\-\_\-sort().
+
+
+\begin{DoxyCode}
+257 \{
+258     \textcolor{keywordflow}{return} \hyperlink{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{value};
+259 \}
+\end{DoxyCode}
+\hypertarget{class_play_af3ee40c18a0e3fbf6e16f645b8de248b}{\index{Play@{Play}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Play@{Play}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Play\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_af3ee40c18a0e3fbf6e16f645b8de248b}
+
+
+\hyperlink{class_play_af3ee40c18a0e3fbf6e16f645b8de248b}{Play\-::is\-Empty}, checks whether the move vector has any elements. 
+
+\begin{DoxyReturn}{Returns}
+true if the move vector is empty 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file play.\-cpp.
+
+
+
+References moves.
+
+
+
+Referenced by validate().
+
+
+\begin{DoxyCode}
+123                   \{
+124     \textcolor{keywordflow}{return} \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->isEmpty();
+125 \}
+\end{DoxyCode}
+\hypertarget{class_play_a2311eaa432738b08a75d7ca35af46ba6}{\index{Play@{Play}!size@{size}}
+\index{size@{size}!Play@{Play}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Play\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a2311eaa432738b08a75d7ca35af46ba6}
+
+
+\hyperlink{class_play_a2311eaa432738b08a75d7ca35af46ba6}{Play\-::size}, checks the number of moves in a play. 
+
+\begin{DoxyReturn}{Returns}
+number of elements in a move vector 
+\end{DoxyReturn}
+
+
+Definition at line 131 of file play.\-cpp.
+
+
+
+References moves.
+
+
+
+Referenced by Board\-::score().
+
+
+\begin{DoxyCode}
+132 \{
+133     \textcolor{keywordflow}{return} \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->size();
+134 \}
+\end{DoxyCode}
+\hypertarget{class_play_a56788c5adf1bdc5230bf226f6a97dd04}{\index{Play@{Play}!unapply\-Moves@{unapply\-Moves}}
+\index{unapply\-Moves@{unapply\-Moves}!Play@{Play}}
+\subsubsection[{unapply\-Moves}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Play\-::unapply\-Moves (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_play_a56788c5adf1bdc5230bf226f6a97dd04}
+
+
+\hyperlink{class_play_a56788c5adf1bdc5230bf226f6a97dd04}{Play\-::unapply\-Moves} does the opposite of the temporary placement, and inactivates the spaces. 
+
+
+
+Definition at line 109 of file play.\-cpp.
+
+
+
+References moves.
+
+
+\begin{DoxyCode}
+110 \{
+111     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->size(); i++)\{
+112         \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i)->getX();
+113         \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(i)->getY();
+114     \}
+115 
+116     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+117 \}
+\end{DoxyCode}
+\hypertarget{class_play_a498e6c1b124296872e22151e8ee965fb}{\index{Play@{Play}!validate@{validate}}
+\index{validate@{validate}!Play@{Play}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}bool Play\-::validate (
+\begin{DoxyParamCaption}
+\item[{{\bf Dictionary} \&}]{dict}
+\end{DoxyParamCaption}
+)}}\label{class_play_a498e6c1b124296872e22151e8ee965fb}
+
+
+\hyperlink{class_play_a498e6c1b124296872e22151e8ee965fb}{Play\-::validate} will return whether or not this is a valid play on the board. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file play.\-cpp.
+
+
+
+References Board\-::get\-Board(), Move\-::get\-X(), Move\-::get\-Y(), Space\-::is\-Blank(), is\-Empty(), moves, Board\-::spaces, validate\-\_\-down(), and validate\-\_\-right().
+
+
+\begin{DoxyCode}
+176 \{
+177     \textcolor{comment}{// We assume moves are unique!}
+178     \hyperlink{class_board}{Board} * myboard = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}();
+179     \textcolor{keywordtype}{bool} xmove = \textcolor{keyword}{true};
+180     \textcolor{keywordtype}{bool} ymove = \textcolor{keyword}{true};
+181 
+182     \textcolor{keywordflow}{if}(this->\hyperlink{class_play_af3ee40c18a0e3fbf6e16f645b8de248b}{isEmpty}())
+183         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+184 
+185     \textcolor{keywordtype}{int} anchorposx = \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(0)->getX();
+186     \textcolor{keywordtype}{int} anchorposy = \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->at(0)->getY();
+187     \textcolor{keywordtype}{int} lowx = anchorposx;
+188     \textcolor{keywordtype}{int} lowy = anchorposy;
+189     \textcolor{keywordtype}{int} highx = anchorposx;
+190     \textcolor{keywordtype}{int} highy = anchorposy;
+191 
+192     \textcolor{keywordflow}{for}(QList<Move*>::Iterator it = (\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->begin()+1); it < \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->end(); it++)
+193     \{
+194         \textcolor{comment}{// It want to move it move it...}
+195         \hyperlink{class_move}{Move} * move = *it;
+196 
+197         \textcolor{keywordflow}{if}(myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[move->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}()][move->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}()]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() == \textcolor{keyword}{false})
+198             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+199 
+200         xmove = (move->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}() == anchorposx);
+201         ymove = (move->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}() == anchorposy);
+202 
+203         \textcolor{comment}{// If you didn't move along either x or y, you're doing it wrong.}
+204         \textcolor{comment}{// If you did move along both x \_and\_ y, you're doing it wrong as well.}
+205         \textcolor{keywordflow}{if}(xmove == ymove)
+206             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+207 
+208         \textcolor{keywordflow}{if}( move->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}() > highx)
+209             highx = move->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}();
+210         \textcolor{keywordflow}{if}( move->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}() < lowx)
+211             lowx = move->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}();
+212 
+213         \textcolor{keywordflow}{if}( move->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}() > highy)
+214             highy = move->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}();
+215         \textcolor{keywordflow}{if}( move->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}() < lowy)
+216             lowy = move->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}();
+217     \}
+218 
+219     \textcolor{comment}{// Now, first we check wether or not the word in the direction we put the tiles, is a word.}
+220     \textcolor{comment}{// Doing it this way makes it easier to do sideways checks.}
+221     \textcolor{keywordflow}{if}(xmove) \{
+222         \hyperlink{class_play_a6699a989cb202ffc8db61093fea15d1f}{validate\_right}(highx, highy, dict, myboard);
+223         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} x = lowx; x < highx; x++)
+224             \hyperlink{class_play_ae7096a77ed85b5251f2faccfb092616b}{validate\_down}(x,highy,dict,myboard);
+225     \}
+226     \textcolor{keywordflow}{if}(ymove) \{
+227         \hyperlink{class_play_ae7096a77ed85b5251f2faccfb092616b}{validate\_down}(highy, highx, dict, myboard);
+228         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} y = lowy; y < highy; y++)
+229             \hyperlink{class_play_a6699a989cb202ffc8db61093fea15d1f}{validate\_right}(highx,y,dict,myboard);
+230     \}
+231 
+232     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+233 \}
+\end{DoxyCode}
+\hypertarget{class_play_ae7096a77ed85b5251f2faccfb092616b}{\index{Play@{Play}!validate\-\_\-down@{validate\-\_\-down}}
+\index{validate\-\_\-down@{validate\-\_\-down}!Play@{Play}}
+\subsubsection[{validate\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}bool Play\-::validate\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{int}]{y\-\_\-start, }
+\item[{int}]{x, }
+\item[{{\bf Dictionary} \&}]{dict, }
+\item[{{\bf Board} $\ast$}]{myboard}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_play_ae7096a77ed85b5251f2faccfb092616b}
+
+
+\hyperlink{class_play_ae7096a77ed85b5251f2faccfb092616b}{Play\-::validate\-\_\-down} Validates a \hyperlink{class_play}{Play} downward. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y\-\_\-start} & The start of the y position \\
+\hline
+{\em x} & The x position \\
+\hline
+{\em dict} & The dictionary \\
+\hline
+{\em myboard} & The board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 162 of file play.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), Space\-::get\-Letter(), Space\-::is\-Blank(), Dictionary\-::is\-Word(), and Board\-::spaces.
+
+
+
+Referenced by validate().
+
+
+\begin{DoxyCode}
+163 \{
+164     QString downcheck = \textcolor{stringliteral}{""};
+165     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} firstposy=y\_start ; firstposy >= 0 && !myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[x][firstposy]->
+      \hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}(); firstposy--) \{
+166         downcheck  += *(myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[x][firstposy]->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}());
+167     \}
+168     \textcolor{keywordflow}{return} dict.\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(downcheck);
+169 \}
+\end{DoxyCode}
+\hypertarget{class_play_a6699a989cb202ffc8db61093fea15d1f}{\index{Play@{Play}!validate\-\_\-right@{validate\-\_\-right}}
+\index{validate\-\_\-right@{validate\-\_\-right}!Play@{Play}}
+\subsubsection[{validate\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}bool Play\-::validate\-\_\-right (
+\begin{DoxyParamCaption}
+\item[{int}]{x\-\_\-start, }
+\item[{int}]{y, }
+\item[{{\bf Dictionary} \&}]{dict, }
+\item[{{\bf Board} $\ast$}]{myboard}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_play_a6699a989cb202ffc8db61093fea15d1f}
+
+
+\hyperlink{class_play_a6699a989cb202ffc8db61093fea15d1f}{Play\-::validate\-\_\-right} Validates a \hyperlink{class_play}{Play} to the right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\-\_\-start} & The start of the x position \\
+\hline
+{\em y} & The y position \\
+\hline
+{\em dict} & The dictionary \\
+\hline
+{\em myboard} & The board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 144 of file play.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), Space\-::get\-Letter(), Space\-::is\-Blank(), Dictionary\-::is\-Word(), and Board\-::spaces.
+
+
+
+Referenced by validate().
+
+
+\begin{DoxyCode}
+145 \{
+146     QString rightcheck = \textcolor{stringliteral}{""};
+147     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} firstposx=x\_start ; firstposx >= 0 && !myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstposx][y]->
+      \hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}(); firstposx--) \{
+148         rightcheck += *(myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstposx][y]->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}());
+149     \}
+150     \textcolor{keywordflow}{return} dict.\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(rightcheck);
+151 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_play_a2c11a076a909acd936d897cd2a81f931}{\index{Play@{Play}!A\-I\-Player@{A\-I\-Player}}
+\index{A\-I\-Player@{A\-I\-Player}!Play@{Play}}
+\subsubsection[{A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf A\-I\-Player}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_play_a2c11a076a909acd936d897cd2a81f931}
+
+
+Definition at line 46 of file play.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_play_ade35ae53bff24e1755a935899ee018ed}{\index{Play@{Play}!moves@{moves}}
+\index{moves@{moves}!Play@{Play}}
+\subsubsection[{moves}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<${\bf Move}$\ast$$>$$\ast$ Play\-::moves\hspace{0.3cm}{\ttfamily [private]}}}\label{class_play_ade35ae53bff24e1755a935899ee018ed}
+Container for the moves 
+
+Definition at line 19 of file play.\-h.
+
+
+
+Referenced by add\-Move(), apply\-Moves(), clear\-Letter(), clear\-Moves(), finalize\-Moves(), get\-Char\-Array(), is\-Empty(), A\-I\-Player\-::play(), Play(), size(), unapply\-Moves(), and validate().
+
+\hypertarget{class_play_a8a7094a8a0186212896fe7daf71617a3}{\index{Play@{Play}!player@{player}}
+\index{player@{player}!Play@{Play}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ Play\-::player\hspace{0.3cm}{\ttfamily [private]}}}\label{class_play_a8a7094a8a0186212896fe7daf71617a3}
+The \hyperlink{class_player}{Player} that made the moves 
+
+Definition at line 20 of file play.\-h.
+
+
+
+Referenced by add\-Move(), get\-Player(), and Play().
+
+\hypertarget{class_play_abc8cb0f8fb660091fee8563b5a917ad7}{\index{Play@{Play}!value@{value}}
+\index{value@{value}!Play@{Play}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}int Play\-::value\hspace{0.3cm}{\ttfamily [private]}}}\label{class_play_abc8cb0f8fb660091fee8563b5a917ad7}
+The value of the play 
+
+Definition at line 21 of file play.\-h.
+
+
+
+Referenced by get\-Value(), and Play().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{play_8h}{play.\-h}\item 
+Scrabble/\hyperlink{play_8cpp}{play.\-cpp}\end{DoxyCompactItemize}

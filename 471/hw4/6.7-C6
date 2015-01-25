@@ -1,0 +1,56 @@
+f = @(t, y) 1 - y^2;
+[t, w] = exmultistep([0 1], 0, 1/0.1, 3, f); 
+sol = @(t, y) tanh(t);
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+[t, w] = exmultistep([0 1], 0, 1/0.05, 3, f);
+sol = @(t, y) tanh(t);
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+c = .5 * (ln(3) - 1)
+{Undefined function 'ln' for input arguments of type 'double'.
+} 
+c = .5 * (log(3) - 1)
+
+c =
+
+    0.0493
+
+sol = @(t, y) tanh(t + c);
+[t, w] = exmultistep([0 1], -.5, 1/0.1, 3, f);
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+c = .5 * log(3)
+
+c =
+
+    0.5493
+
+[t, w] = exmultistep([0 1], -.5, 1/0.1, 3, f);
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+plot(t, y, '-', t, w, 'o')
+c = .5 * log(1/3);
+
+c
+
+c =
+
+   -0.5493
+
+[t, w] = exmultistep([0 1], -.5, 1/0.1, 3, f);
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+plot(t, y, '-', t, w, 'o')
+sol = @(t, y) tanh(t + c);
+y = sol(t);
+MATLAB has lost its connection to the license server.
+MATLAB will make 9 more reconnection attempt(s) and then exit. Any unsaved changes will be lost.
+
+
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+[t, w] = exmultistep([0 1], -.5, 1/0.05, 3, f);
+y = sol(t);
+plot(t, y, '-', t, w, 'o')
+diary off

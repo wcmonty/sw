@@ -1,0 +1,434 @@
+\hypertarget{class_move}{\section{Move Class Reference}
+\label{class_move}\index{Move@{Move}}
+}
+
+
+The \hyperlink{class_move}{Move} class Contains a single move from a \hyperlink{class_rack}{Rack} to the \hyperlink{class_board}{Board}.  
+
+
+
+
+{\ttfamily \#include $<$move.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_move_a6bf1a65d4c0e23849cedfb56ed27046a}{Move} (\hyperlink{class_player}{Player} $\ast$, \hyperlink{class_letter}{Letter} $\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_a6bf1a65d4c0e23849cedfb56ed27046a}{Move\-::\-Move} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_move_a4b3a579f0516de5a8eda9cc6dfe88eab}{get\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_a4b3a579f0516de5a8eda9cc6dfe88eab}{Move\-::get\-Player} Getter for player. \end{DoxyCompactList}\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{get\-Letter} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{Move\-::get\-Letter} Getter for \hyperlink{class_letter}{Letter}. \end{DoxyCompactList}\item 
+int \hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{get\-X} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{Move\-::get\-X} Getter for board\-X. \end{DoxyCompactList}\item 
+int \hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{get\-Y} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{Move\-::get\-Y} Getter for bord\-Y. \end{DoxyCompactList}\item 
+int \hyperlink{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}{get\-Rack\-Position} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}{Move\-::get\-Rack\-Position} Gets the position this letter draws from, from the rack. \end{DoxyCompactList}\item 
+\hyperlink{class_move}{Move} $\ast$ \hyperlink{class_move_af3c01fad2f5724f497a2d9eb165be470}{apply} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_af3c01fad2f5724f497a2d9eb165be470}{Move\-::apply} Applies to the board. \end{DoxyCompactList}\item 
+\hyperlink{class_move}{Move} $\ast$ \hyperlink{class_move_a2ca5c1f8be73c0e6c0ec4b359061a1e2}{unapply} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_a2ca5c1f8be73c0e6c0ec4b359061a1e2}{Move\-::unapply} Unapplies from the board. \end{DoxyCompactList}\item 
+\hyperlink{class_move}{Move} $\ast$ \hyperlink{class_move_a315c3ce190a5a9ef24cf6cc5916e81b1}{finalize} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_move_a315c3ce190a5a9ef24cf6cc5916e81b1}{Move\-::finalize} Finalizes the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_move_a1fbc388e091cd5639b755ebca2a8f90b}{player}
+\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_move_a80fe73cecfae0270265a8d5a50a9739f}{letter}
+\item 
+int \hyperlink{class_move_a8a1c46caedcac551e4a6714b7b729a41}{rack\-Position}
+\item 
+int \hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{board\-X}
+\item 
+int \hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{board\-Y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_move}{Move} class Contains a single move from a \hyperlink{class_rack}{Rack} to the \hyperlink{class_board}{Board}. 
+
+Definition at line 12 of file move.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_move_a6bf1a65d4c0e23849cedfb56ed27046a}{\index{Move@{Move}!Move@{Move}}
+\index{Move@{Move}!Move@{Move}}
+\subsubsection[{Move}]{\setlength{\rightskip}{0pt plus 5cm}Move\-::\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{player, }
+\item[{{\bf Letter} $\ast$}]{letter, }
+\item[{int}]{rack\-Position, }
+\item[{int}]{board\-X, }
+\item[{int}]{board\-Y}
+\end{DoxyParamCaption}
+)}}\label{class_move_a6bf1a65d4c0e23849cedfb56ed27046a}
+
+
+\hyperlink{class_move_a6bf1a65d4c0e23849cedfb56ed27046a}{Move\-::\-Move} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player \\
+\hline
+{\em letter} & The letter \\
+\hline
+{\em rack\-Position} & The position in the rack \\
+\hline
+{\em board\-X} & The x position on the board \\
+\hline
+{\em board\-Y} & The y position on the board \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file move.\-cpp.
+
+
+
+References board\-X, board\-Y, letter, player, and rack\-Position.
+
+
+\begin{DoxyCode}
+11                                                                                   \{
+12     this->player = \hyperlink{class_move_a1fbc388e091cd5639b755ebca2a8f90b}{player};
+13     this->letter = \hyperlink{class_move_a80fe73cecfae0270265a8d5a50a9739f}{letter};
+14     this->\hyperlink{class_move_a8a1c46caedcac551e4a6714b7b729a41}{rackPosition} = \hyperlink{class_move_a8a1c46caedcac551e4a6714b7b729a41}{rackPosition};
+15     this->\hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{boardX} = \hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{boardX};
+16     this->\hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{boardY} = \hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{boardY};
+17 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_move_af3c01fad2f5724f497a2d9eb165be470}{\index{Move@{Move}!apply@{apply}}
+\index{apply@{apply}!Move@{Move}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Move} $\ast$ Move\-::apply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_af3c01fad2f5724f497a2d9eb165be470}
+
+
+\hyperlink{class_move_af3c01fad2f5724f497a2d9eb165be470}{Move\-::apply} Applies to the board. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file move.\-cpp.
+
+
+
+References board\-X, board\-Y, Board\-::get\-Board(), Space\-::get\-Letter(), Rack\-::get\-Rack(), Rack\-::get\-Space(), Space\-::is\-Inactive(), rack\-Position, Space\-::set\-Letter(), Space\-::set\-New(), Space\-::set\-Placed(), and Board\-::spaces.
+
+
+
+Referenced by Board\-::move\-Letter\-To\-Board().
+
+
+\begin{DoxyCode}
+69 \{
+70     \hyperlink{class_space}{Space} *boardSpace = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[
+      \hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{boardX}][\hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{boardY}];
+71     \textcolor{keywordflow}{if}(boardSpace->\hyperlink{class_space_a83819948ab0508299c66829ca8335034}{isInactive}())\{
+72         \hyperlink{class_space}{Space} *rackSpace = \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{getSpace}(
+      \hyperlink{class_move_a8a1c46caedcac551e4a6714b7b729a41}{rackPosition});
+73         boardSpace->\hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{setLetter}(rackSpace->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}());
+74         rackSpace->\hyperlink{class_space_a092351d8c32b8f89a78fc475a49b3b21}{setPlaced}();
+75         boardSpace->\hyperlink{class_space_a3afac453f54e569a94164c41a9721643}{setNew}();
+76     \}
+77     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+78 \}
+\end{DoxyCode}
+\hypertarget{class_move_a315c3ce190a5a9ef24cf6cc5916e81b1}{\index{Move@{Move}!finalize@{finalize}}
+\index{finalize@{finalize}!Move@{Move}}
+\subsubsection[{finalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Move} $\ast$ Move\-::finalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_a315c3ce190a5a9ef24cf6cc5916e81b1}
+
+
+\hyperlink{class_move_a315c3ce190a5a9ef24cf6cc5916e81b1}{Move\-::finalize} Finalizes the board. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file move.\-cpp.
+
+
+
+References board\-X, board\-Y, Board\-::get\-Board(), Space\-::set\-On\-Board(), and Board\-::spaces.
+
+
+\begin{DoxyCode}
+101 \{
+102     \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[\hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{boardX}][\hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{boardY}]->
+      \hyperlink{class_space_ae565aeac581e7ac3ab35b1f900140e3f}{setOnBoard}();
+103 
+104     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+105 \}
+\end{DoxyCode}
+\hypertarget{class_move_a0c29654c98269d65c6af694eb441d382}{\index{Move@{Move}!get\-Letter@{get\-Letter}}
+\index{get\-Letter@{get\-Letter}!Move@{Move}}
+\subsubsection[{get\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter} $\ast$ Move\-::get\-Letter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_a0c29654c98269d65c6af694eb441d382}
+
+
+\hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{Move\-::get\-Letter} Getter for \hyperlink{class_letter}{Letter}. 
+
+\begin{DoxyReturn}{Returns}
+letter 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file move.\-cpp.
+
+
+
+References letter.
+
+
+
+Referenced by Play\-::clear\-Letter(), Play\-::get\-Char\-Array(), and A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+60 \{
+61     \textcolor{keywordflow}{return} \hyperlink{class_move_a80fe73cecfae0270265a8d5a50a9739f}{letter};
+62 \}
+\end{DoxyCode}
+\hypertarget{class_move_a4b3a579f0516de5a8eda9cc6dfe88eab}{\index{Move@{Move}!get\-Player@{get\-Player}}
+\index{get\-Player@{get\-Player}!Move@{Move}}
+\subsubsection[{get\-Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} $\ast$ Move\-::get\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_a4b3a579f0516de5a8eda9cc6dfe88eab}
+
+
+\hyperlink{class_move_a4b3a579f0516de5a8eda9cc6dfe88eab}{Move\-::get\-Player} Getter for player. 
+
+\begin{DoxyReturn}{Returns}
+player 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file move.\-cpp.
+
+
+
+References player.
+
+
+\begin{DoxyCode}
+51 \{
+52     \textcolor{keywordflow}{return} \hyperlink{class_move_a1fbc388e091cd5639b755ebca2a8f90b}{player};
+53 \}
+\end{DoxyCode}
+\hypertarget{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}{\index{Move@{Move}!get\-Rack\-Position@{get\-Rack\-Position}}
+\index{get\-Rack\-Position@{get\-Rack\-Position}!Move@{Move}}
+\subsubsection[{get\-Rack\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int Move\-::get\-Rack\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}
+
+
+\hyperlink{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}{Move\-::get\-Rack\-Position} Gets the position this letter draws from, from the rack. 
+
+\begin{DoxyReturn}{Returns}
+rackposition. 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file move.\-cpp.
+
+
+
+References rack\-Position.
+
+
+
+Referenced by A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+42 \{
+43     \textcolor{keywordflow}{return} \hyperlink{class_move_a8a1c46caedcac551e4a6714b7b729a41}{rackPosition};
+44 \}
+\end{DoxyCode}
+\hypertarget{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{\index{Move@{Move}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Move@{Move}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Move\-::get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}
+
+
+\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{Move\-::get\-X} Getter for board\-X. 
+
+\begin{DoxyReturn}{Returns}
+board\-X 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file move.\-cpp.
+
+
+
+References board\-X.
+
+
+
+Referenced by A\-I\-Player\-::play(), and Play\-::validate().
+
+
+\begin{DoxyCode}
+24 \{
+25     \textcolor{keywordflow}{return} \hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{boardX};
+26 \}
+\end{DoxyCode}
+\hypertarget{class_move_af388d15d91f61a1f909998f50988ac1a}{\index{Move@{Move}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!Move@{Move}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Move\-::get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_af388d15d91f61a1f909998f50988ac1a}
+
+
+\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{Move\-::get\-Y} Getter for bord\-Y. 
+
+\begin{DoxyReturn}{Returns}
+board\-Y 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file move.\-cpp.
+
+
+
+References board\-Y.
+
+
+
+Referenced by A\-I\-Player\-::play(), and Play\-::validate().
+
+
+\begin{DoxyCode}
+33 \{
+34     \textcolor{keywordflow}{return} \hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{boardY};
+35 \}
+\end{DoxyCode}
+\hypertarget{class_move_a2ca5c1f8be73c0e6c0ec4b359061a1e2}{\index{Move@{Move}!unapply@{unapply}}
+\index{unapply@{unapply}!Move@{Move}}
+\subsubsection[{unapply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Move} $\ast$ Move\-::unapply (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_move_a2ca5c1f8be73c0e6c0ec4b359061a1e2}
+
+
+\hyperlink{class_move_a2ca5c1f8be73c0e6c0ec4b359061a1e2}{Move\-::unapply} Unapplies from the board. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file move.\-cpp.
+
+
+
+References board\-X, board\-Y, Board\-::get\-Board(), Rack\-::get\-Rack(), Rack\-::get\-Space(), Space\-::is\-Inactive(), rack\-Position, Space\-::set\-Inactive(), Space\-::set\-Letter(), and Board\-::spaces.
+
+
+\begin{DoxyCode}
+85 \{
+86     \hyperlink{class_space}{Space} *boardSpace = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[
+      \hyperlink{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{boardX}][\hyperlink{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{boardY}];
+87     \textcolor{keywordflow}{if}(!boardSpace->\hyperlink{class_space_a83819948ab0508299c66829ca8335034}{isInactive}())\{
+88         \hyperlink{class_space}{Space} *rackSpace = \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{getSpace}(
+      \hyperlink{class_move_a8a1c46caedcac551e4a6714b7b729a41}{rackPosition});
+89         boardSpace->\hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{setLetter}(NULL);
+90         rackSpace->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+91         boardSpace->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+92     \}
+93     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+94 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}{\index{Move@{Move}!board\-X@{board\-X}}
+\index{board\-X@{board\-X}!Move@{Move}}
+\subsubsection[{board\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Move\-::board\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{class_move_ad3fa58a6db17896f2a83cbcc77ceb998}
+The x position on the board 
+
+Definition at line 31 of file move.\-h.
+
+
+
+Referenced by apply(), finalize(), get\-X(), Move(), and unapply().
+
+\hypertarget{class_move_ac953ac3b9b8ca529d1be967c7712ae05}{\index{Move@{Move}!board\-Y@{board\-Y}}
+\index{board\-Y@{board\-Y}!Move@{Move}}
+\subsubsection[{board\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Move\-::board\-Y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_move_ac953ac3b9b8ca529d1be967c7712ae05}
+The y position on the board 
+
+Definition at line 32 of file move.\-h.
+
+
+
+Referenced by apply(), finalize(), get\-Y(), Move(), and unapply().
+
+\hypertarget{class_move_a80fe73cecfae0270265a8d5a50a9739f}{\index{Move@{Move}!letter@{letter}}
+\index{letter@{letter}!Move@{Move}}
+\subsubsection[{letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter}$\ast$ Move\-::letter\hspace{0.3cm}{\ttfamily [private]}}}\label{class_move_a80fe73cecfae0270265a8d5a50a9739f}
+The \hyperlink{class_letter}{Letter} 
+
+Definition at line 29 of file move.\-h.
+
+
+
+Referenced by get\-Letter(), and Move().
+
+\hypertarget{class_move_a1fbc388e091cd5639b755ebca2a8f90b}{\index{Move@{Move}!player@{player}}
+\index{player@{player}!Move@{Move}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ Move\-::player\hspace{0.3cm}{\ttfamily [private]}}}\label{class_move_a1fbc388e091cd5639b755ebca2a8f90b}
+The \hyperlink{class_player}{Player} who made the move 
+
+Definition at line 28 of file move.\-h.
+
+
+
+Referenced by get\-Player(), and Move().
+
+\hypertarget{class_move_a8a1c46caedcac551e4a6714b7b729a41}{\index{Move@{Move}!rack\-Position@{rack\-Position}}
+\index{rack\-Position@{rack\-Position}!Move@{Move}}
+\subsubsection[{rack\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int Move\-::rack\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_move_a8a1c46caedcac551e4a6714b7b729a41}
+The position on the rack it came from 
+
+Definition at line 30 of file move.\-h.
+
+
+
+Referenced by apply(), get\-Rack\-Position(), Move(), and unapply().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{move_8h}{move.\-h}\item 
+Scrabble/\hyperlink{move_8cpp}{move.\-cpp}\end{DoxyCompactItemize}

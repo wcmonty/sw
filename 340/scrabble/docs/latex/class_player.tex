@@ -1,0 +1,685 @@
+\hypertarget{class_player}{\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+}
+
+
+The \hyperlink{class_player}{Player} class Abstract class representing a \hyperlink{class_player}{Player}.  
+
+
+
+
+{\ttfamily \#include $<$player.\-h$>$}
+
+Inheritance diagram for Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_ad079d0b82440f180a6698ff62f1dc1be}{Player} (Q\-String)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_ad079d0b82440f180a6698ff62f1dc1be}{Player\-::\-Player} Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{Player\-::$\sim$\-Player} Deconstructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_player_adeb8d6fe962f9bf002281f7fe1321cff}{is\-Human\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_adeb8d6fe962f9bf002281f7fe1321cff}{Player\-::is\-Human\-Player}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_player_afcd43a9498dc70a71ba17484699446bb}{is\-A\-I\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_afcd43a9498dc70a71ba17484699446bb}{Player\-::is\-A\-I\-Player}. \end{DoxyCompactList}\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_player_a720be779010f05b9af198db3e3181369}{remove\-Letter} (\hyperlink{class_letter}{Letter} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a720be779010f05b9af198db3e3181369}{Player\-::remove\-Letter} Removes the first letter that matches. \end{DoxyCompactList}\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_player_afd0aad702c6ce04bed93c3349f10596f}{clear\-Letters} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_afd0aad702c6ce04bed93c3349f10596f}{Player\-::clear\-Letters} Clears the player's letters. \end{DoxyCompactList}\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_player_a78086401345079616a422c25cb780ecb}{get\-New\-Letters} (\hyperlink{class_letter_pool}{Letter\-Pool} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a78086401345079616a422c25cb780ecb}{Player\-::get\-New\-Letters} Fills the letters after a play. \end{DoxyCompactList}\item 
+Q\-String $\ast$ \hyperlink{class_player_a2ca0e35ef05a2a14efab866f6cb32a76}{get\-Letters\-As\-Qstring} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a2ca0e35ef05a2a14efab866f6cb32a76}{Player\-::get\-Letters\-As\-Qstring} Gets the letters held as a string. \end{DoxyCompactList}\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_player_aa6aabfbae536fec650fd466f65fb9743}{get\-Letter} (int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_aa6aabfbae536fec650fd466f65fb9743}{Player\-::get\-Letter} Getter for letter. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a71fa8ceb20420f2c592b2fe7c50c3728}{fill\-Letters} (\hyperlink{class_letter_pool}{Letter\-Pool} $\ast$)
+\begin{DoxyCompactList}\small\item\em Player\-::\-Requests for his letters to be filled out. \end{DoxyCompactList}\item 
+int \hyperlink{class_player_a9def90c7578d965a506fe36d274b2403}{get\-Letter\-Count} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a9def90c7578d965a506fe36d274b2403}{Player\-::get\-Letter\-Count}. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{class_player_a03398b3f33c323f4ad1eea16863e9a05}{add\-Letter} (\hyperlink{class_letter}{Letter} $\ast$letter)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a03398b3f33c323f4ad1eea16863e9a05}{Player\-::add\-Letter} Adds a letter to a players set of letters. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_player_ade0334ac0e87ac1c5e09ce78f2cafd83}{get\-Name} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_ade0334ac0e87ac1c5e09ce78f2cafd83}{Player\-::get\-Name} Getter for name. \end{DoxyCompactList}\item 
+int \hyperlink{class_player_aa5bead96a6eb9cc33fbc086662621caf}{add\-Score} (int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_aa5bead96a6eb9cc33fbc086662621caf}{Player\-::add\-Score} Adds to a player's score. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a6e2f0837237f65c67948585ed2be56f9}{clear\-Score} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a6e2f0837237f65c67948585ed2be56f9}{Player\-::clear\-Score} Clears the \hyperlink{class_player}{Player}'s score. \end{DoxyCompactList}\item 
+int \hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{get\-Score} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{Player\-::get\-Score} Gets a player's score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{class_player_ac41b72814d9c41222dac999bc874280b}{name}
+\item 
+vector$<$ \hyperlink{class_letter}{Letter} $\ast$ $>$ \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}
+\item 
+unsigned int \hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_player_a79571356003607b80edc6440c851e503}{operator$<$$<$} (ostream \&os, const \hyperlink{class_player}{Player} \&player)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloaded operator for \hyperlink{class_player}{Player}\& \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_player}{Player} class Abstract class representing a \hyperlink{class_player}{Player}. 
+
+Definition at line 19 of file player.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_ad079d0b82440f180a6698ff62f1dc1be}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_player_ad079d0b82440f180a6698ff62f1dc1be}
+
+
+\hyperlink{class_player_ad079d0b82440f180a6698ff62f1dc1be}{Player\-::\-Player} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file player.\-cpp.
+
+
+
+References letters, name, and score.
+
+
+\begin{DoxyCode}
+9 \{
+10     this->\hyperlink{class_player_ac41b72814d9c41222dac999bc874280b}{name} = \hyperlink{class_player_ac41b72814d9c41222dac999bc874280b}{name};
+11     this->\hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score} = 0;
+12     this->\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.reserve(7);
+13 \}
+\end{DoxyCode}
+\hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{\index{Player@{Player}!$\sim$\-Player@{$\sim$\-Player}}
+\index{$\sim$\-Player@{$\sim$\-Player}!Player@{Player}}
+\subsubsection[{$\sim$\-Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::$\sim$\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}
+
+
+\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{Player\-::$\sim$\-Player} Deconstructor. 
+
+
+
+Definition at line 18 of file player.\-cpp.
+
+
+\begin{DoxyCode}
+19 \{
+20 
+21 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a03398b3f33c323f4ad1eea16863e9a05}{\index{Player@{Player}!add\-Letter@{add\-Letter}}
+\index{add\-Letter@{add\-Letter}!Player@{Player}}
+\subsubsection[{add\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Player\-::add\-Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_player_a03398b3f33c323f4ad1eea16863e9a05}
+
+
+\hyperlink{class_player_a03398b3f33c323f4ad1eea16863e9a05}{Player\-::add\-Letter} Adds a letter to a players set of letters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+On sucess a positive integer of the number of tiles held, on failure -\/1 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file player.\-cpp.
+
+
+
+References letters, and M\-A\-X\-T\-I\-L\-E\-S\-I\-N\-H\-A\-N\-D.
+
+
+\begin{DoxyCode}
+55                                        \{
+56     \textcolor{keywordflow}{if} (\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size() < (\hyperlink{player_8h_a65437be5d7abb586fe7338331e988e01}{MAXTILESINHAND} - 1))\{
+57         \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.push\_back(letter);
+58         \textcolor{keywordflow}{return} \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size();
+59     \}
+60 
+61     \textcolor{keywordflow}{return} -1;
+62 \}
+\end{DoxyCode}
+\hypertarget{class_player_aa5bead96a6eb9cc33fbc086662621caf}{\index{Player@{Player}!add\-Score@{add\-Score}}
+\index{add\-Score@{add\-Score}!Player@{Player}}
+\subsubsection[{add\-Score}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::add\-Score (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Score}
+\end{DoxyParamCaption}
+)}}\label{class_player_aa5bead96a6eb9cc33fbc086662621caf}
+
+
+\hyperlink{class_player_aa5bead96a6eb9cc33fbc086662621caf}{Player\-::add\-Score} Adds to a player's score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Score} & The amount to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified score 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file player.\-cpp.
+
+
+
+References score.
+
+
+
+Referenced by Game\-::next\-Turn().
+
+
+\begin{DoxyCode}
+136                                  \{
+137     this->\hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score} += newScore;
+138 
+139     \textcolor{keywordflow}{return} this->\hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score};
+140 \}
+\end{DoxyCode}
+\hypertarget{class_player_afd0aad702c6ce04bed93c3349f10596f}{\index{Player@{Player}!clear\-Letters@{clear\-Letters}}
+\index{clear\-Letters@{clear\-Letters}!Player@{Player}}
+\subsubsection[{clear\-Letters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} $\ast$ Player\-::clear\-Letters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_afd0aad702c6ce04bed93c3349f10596f}
+
+
+\hyperlink{class_player_afd0aad702c6ce04bed93c3349f10596f}{Player\-::clear\-Letters} Clears the player's letters. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 174 of file player.\-cpp.
+
+
+
+References letters.
+
+
+\begin{DoxyCode}
+174                             \{
+175     \textcolor{keywordflow}{while}(!\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.empty())\{
+176         \textcolor{keyword}{delete} \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.back();
+177         \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.pop\_back();
+178     \}
+179     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+180 \}
+\end{DoxyCode}
+\hypertarget{class_player_a6e2f0837237f65c67948585ed2be56f9}{\index{Player@{Player}!clear\-Score@{clear\-Score}}
+\index{clear\-Score@{clear\-Score}!Player@{Player}}
+\subsubsection[{clear\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::clear\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a6e2f0837237f65c67948585ed2be56f9}
+
+
+\hyperlink{class_player_a6e2f0837237f65c67948585ed2be56f9}{Player\-::clear\-Score} Clears the \hyperlink{class_player}{Player}'s score. 
+
+
+
+Definition at line 145 of file player.\-cpp.
+
+
+
+References score.
+
+
+\begin{DoxyCode}
+146 \{
+147     this->\hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score} = 0;
+148 \}
+\end{DoxyCode}
+\hypertarget{class_player_a71fa8ceb20420f2c592b2fe7c50c3728}{\index{Player@{Player}!fill\-Letters@{fill\-Letters}}
+\index{fill\-Letters@{fill\-Letters}!Player@{Player}}
+\subsubsection[{fill\-Letters}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::fill\-Letters (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter\-Pool} $\ast$}]{pool}
+\end{DoxyParamCaption}
+)}}\label{class_player_a71fa8ceb20420f2c592b2fe7c50c3728}
+
+
+Player\-::\-Requests for his letters to be filled out. 
+
+
+
+Definition at line 162 of file player.\-cpp.
+
+
+
+References Letter\-Pool\-::get\-Random\-Letter(), Letter\-Pool\-::is\-Empty(), letters, and M\-A\-X\-T\-I\-L\-E\-S\-I\-N\-H\-A\-N\-D.
+
+
+
+Referenced by get\-New\-Letters().
+
+
+\begin{DoxyCode}
+162                                         \{
+163 
+164     \textcolor{keywordflow}{while}(!pool->\hyperlink{class_letter_pool_a47817d0343b330f2c6f3413288de69b2}{isEmpty}() && \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size() < \hyperlink{player_8h_a65437be5d7abb586fe7338331e988e01}{MAXTILESINHAND})
+165     \{
+166            \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.push\_back(pool->\hyperlink{class_letter_pool_acf36848e6c23f40de9b98f43755d586c}{getRandomLetter}());
+167     \}
+168 \}
+\end{DoxyCode}
+\hypertarget{class_player_aa6aabfbae536fec650fd466f65fb9743}{\index{Player@{Player}!get\-Letter@{get\-Letter}}
+\index{get\-Letter@{get\-Letter}!Player@{Player}}
+\subsubsection[{get\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter} $\ast$ Player\-::get\-Letter (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_player_aa6aabfbae536fec650fd466f65fb9743}
+
+
+\hyperlink{class_player_aa6aabfbae536fec650fd466f65fb9743}{Player\-::get\-Letter} Getter for letter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the letter or N\-U\-L\-L if it doesn't exist 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file player.\-cpp.
+
+
+
+References letters.
+
+
+
+Referenced by Rack\-::refresh().
+
+
+\begin{DoxyCode}
+111                               \{
+112     \textcolor{keywordflow}{if} (i >= 0 && (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})i < \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size())\{
+113         \textcolor{keywordflow}{return} \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.at(i);
+114     \}
+115     \textcolor{keywordflow}{return} NULL;
+116 \}
+\end{DoxyCode}
+\hypertarget{class_player_a9def90c7578d965a506fe36d274b2403}{\index{Player@{Player}!get\-Letter\-Count@{get\-Letter\-Count}}
+\index{get\-Letter\-Count@{get\-Letter\-Count}!Player@{Player}}
+\subsubsection[{get\-Letter\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Letter\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a9def90c7578d965a506fe36d274b2403}
+
+
+\hyperlink{class_player_a9def90c7578d965a506fe36d274b2403}{Player\-::get\-Letter\-Count}. 
+
+\begin{DoxyReturn}{Returns}
+Returns the number of letter in players hand for debugging purposes mostly 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file player.\-cpp.
+
+
+
+References letters.
+
+
+\begin{DoxyCode}
+28                           \{
+29     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size();
+30 \}
+\end{DoxyCode}
+\hypertarget{class_player_a2ca0e35ef05a2a14efab866f6cb32a76}{\index{Player@{Player}!get\-Letters\-As\-Qstring@{get\-Letters\-As\-Qstring}}
+\index{get\-Letters\-As\-Qstring@{get\-Letters\-As\-Qstring}!Player@{Player}}
+\subsubsection[{get\-Letters\-As\-Qstring}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Player\-::get\-Letters\-As\-Qstring (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a2ca0e35ef05a2a14efab866f6cb32a76}
+
+
+\hyperlink{class_player_a2ca0e35ef05a2a14efab866f6cb32a76}{Player\-::get\-Letters\-As\-Qstring} Gets the letters held as a string. 
+
+\begin{DoxyReturn}{Returns}
+A Q\-String representing the letters held 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file player.\-cpp.
+
+
+
+References letters.
+
+
+\begin{DoxyCode}
+122                                     \{
+123     \textcolor{keywordtype}{size\_t} numLetters = \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size();
+124     QString *qstring = \textcolor{keyword}{new} QString;
+125     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < numLetters; i++)\{
+126         qstring->push\_back(*(\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}[i]->asQCharPtr()));
+127     \}
+128     \textcolor{keywordflow}{return} qstring;
+129 \}
+\end{DoxyCode}
+\hypertarget{class_player_ade0334ac0e87ac1c5e09ce78f2cafd83}{\index{Player@{Player}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!Player@{Player}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Player\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_ade0334ac0e87ac1c5e09ce78f2cafd83}
+
+
+\hyperlink{class_player_ade0334ac0e87ac1c5e09ce78f2cafd83}{Player\-::get\-Name} Getter for name. 
+
+\begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file player.\-cpp.
+
+
+
+References name.
+
+
+
+Referenced by Player\-Label\-::update\-Text().
+
+
+\begin{DoxyCode}
+101 \{
+102     \textcolor{keywordflow}{return} \hyperlink{class_player_ac41b72814d9c41222dac999bc874280b}{name};
+103 \}
+\end{DoxyCode}
+\hypertarget{class_player_a78086401345079616a422c25cb780ecb}{\index{Player@{Player}!get\-New\-Letters@{get\-New\-Letters}}
+\index{get\-New\-Letters@{get\-New\-Letters}!Player@{Player}}
+\subsubsection[{get\-New\-Letters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} $\ast$ Player\-::get\-New\-Letters (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter\-Pool} $\ast$}]{pool}
+\end{DoxyParamCaption}
+)}}\label{class_player_a78086401345079616a422c25cb780ecb}
+
+
+\hyperlink{class_player_a78086401345079616a422c25cb780ecb}{Player\-::get\-New\-Letters} Fills the letters after a play. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pool} & The letter pool \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]this is a bug , it removes the first letter regardless \end{DoxyRefDesc}
+
+
+Definition at line 84 of file player.\-cpp.
+
+
+
+References fill\-Letters(), Rack\-::get\-Rack(), letters, and R\-A\-C\-K\-S\-I\-Z\-E.
+
+
+
+Referenced by Game\-::next\-Turn().
+
+
+\begin{DoxyCode}
+85 \{
+86     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE} - 1; i >= 0; i--)\{
+87         \textcolor{keywordflow}{if} (\hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->getSpace(i)->isPlaced())\{
+89             \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.erase(\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.begin() + i);
+90         \}
+91     \}
+92     \hyperlink{class_player_a71fa8ceb20420f2c592b2fe7c50c3728}{fillLetters}(pool);
+93     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+94 \}
+\end{DoxyCode}
+\hypertarget{class_player_a97e5447778ae6c384eedc532dcd8431d}{\index{Player@{Player}!get\-Score@{get\-Score}}
+\index{get\-Score@{get\-Score}!Player@{Player}}
+\subsubsection[{get\-Score}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_a97e5447778ae6c384eedc532dcd8431d}
+
+
+\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{Player\-::get\-Score} Gets a player's score. 
+
+\begin{DoxyReturn}{Returns}
+The player's score 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file player.\-cpp.
+
+
+
+References score.
+
+
+
+Referenced by Player\-Label\-::update\-Text().
+
+
+\begin{DoxyCode}
+154                      \{
+155     \textcolor{keywordflow}{return} this->\hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score};
+156 \}
+\end{DoxyCode}
+\hypertarget{class_player_afcd43a9498dc70a71ba17484699446bb}{\index{Player@{Player}!is\-A\-I\-Player@{is\-A\-I\-Player}}
+\index{is\-A\-I\-Player@{is\-A\-I\-Player}!Player@{Player}}
+\subsubsection[{is\-A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::is\-A\-I\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_afcd43a9498dc70a71ba17484699446bb}
+
+
+\hyperlink{class_player_afcd43a9498dc70a71ba17484699446bb}{Player\-::is\-A\-I\-Player}. 
+
+\begin{DoxyReturn}{Returns}
+True if an A\-I player, false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_a_i_player_a2a71a31297386f4d69f12a43187954a6}{A\-I\-Player}.
+
+
+
+Definition at line 45 of file player.\-cpp.
+
+
+\begin{DoxyCode}
+45                        \{
+46     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+47 \}
+\end{DoxyCode}
+\hypertarget{class_player_adeb8d6fe962f9bf002281f7fe1321cff}{\index{Player@{Player}!is\-Human\-Player@{is\-Human\-Player}}
+\index{is\-Human\-Player@{is\-Human\-Player}!Player@{Player}}
+\subsubsection[{is\-Human\-Player}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::is\-Human\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_adeb8d6fe962f9bf002281f7fe1321cff}
+
+
+\hyperlink{class_player_adeb8d6fe962f9bf002281f7fe1321cff}{Player\-::is\-Human\-Player}. 
+
+\begin{DoxyReturn}{Returns}
+True if a human player, false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_human_player_aff784db8904c5f8c13bd88847f631188}{Human\-Player}.
+
+
+
+Definition at line 36 of file player.\-cpp.
+
+
+\begin{DoxyCode}
+37 \{
+38     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+39 \}
+\end{DoxyCode}
+\hypertarget{class_player_a720be779010f05b9af198db3e3181369}{\index{Player@{Player}!remove\-Letter@{remove\-Letter}}
+\index{remove\-Letter@{remove\-Letter}!Player@{Player}}
+\subsubsection[{remove\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} $\ast$ Player\-::remove\-Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_player_a720be779010f05b9af198db3e3181369}
+
+
+\hyperlink{class_player_a720be779010f05b9af198db3e3181369}{Player\-::remove\-Letter} Removes the first letter that matches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the letter object, or N\-U\-L\-L if not found 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file player.\-cpp.
+
+
+
+References letters.
+
+
+\begin{DoxyCode}
+69                                            \{
+70     \textcolor{keywordtype}{size\_t} numLetters = \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size();
+71     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < numLetters; i++)\{
+72         \textcolor{keywordflow}{if} (\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}[i] == letter)\{
+73             \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.erase(\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.begin() + i);
+74         \}
+75     \}
+76     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+77 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_player_a79571356003607b80edc6440c851e503}{\index{Player@{Player}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Player@{Player}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_player_a79571356003607b80edc6440c851e503}
+
+
+operator $<$$<$ Overloaded operator for \hyperlink{class_player}{Player}\& 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The ostream \\
+\hline
+{\em player} & The player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified ostream 
+\end{DoxyReturn}
+
+
+Definition at line 188 of file player.\-cpp.
+
+
+\begin{DoxyCode}
+188                                                        \{
+189     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < player.\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size(); i++) \{
+190         os << *(player.\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}[i]);
+191     \}
+192     \textcolor{keywordflow}{return} os;
+193 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{\index{Player@{Player}!letters@{letters}}
+\index{letters@{letters}!Player@{Player}}
+\subsubsection[{letters}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Letter}$\ast$$>$ Player\-::letters\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_player_abd40dc8f6d524bd1331a8133e9bb8902}
+The Letters the \hyperlink{class_player}{Player} has 
+
+Definition at line 23 of file player.\-h.
+
+
+
+Referenced by add\-Letter(), clear\-Letters(), fill\-Letters(), get\-Letter(), get\-Letter\-Count(), get\-Letters\-As\-Qstring(), get\-New\-Letters(), operator$<$$<$(), A\-I\-Player\-::play(), Player(), remove\-Letter(), and Human\-Player\-::$\sim$\-Human\-Player().
+
+\hypertarget{class_player_ac41b72814d9c41222dac999bc874280b}{\index{Player@{Player}!name@{name}}
+\index{name@{name}!Player@{Player}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Player\-::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_player_ac41b72814d9c41222dac999bc874280b}
+The \hyperlink{class_player}{Player}'s name 
+
+Definition at line 22 of file player.\-h.
+
+
+
+Referenced by get\-Name(), and Player().
+
+\hypertarget{class_player_a38a6dafe988a768a435cc0a9fde38e46}{\index{Player@{Player}!score@{score}}
+\index{score@{score}!Player@{Player}}
+\subsubsection[{score}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Player\-::score\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_player_a38a6dafe988a768a435cc0a9fde38e46}
+The \hyperlink{class_player}{Player}'s score 
+
+Definition at line 24 of file player.\-h.
+
+
+
+Referenced by add\-Score(), clear\-Score(), get\-Score(), and Player().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{player_8h}{player.\-h}\item 
+Scrabble/\hyperlink{player_8cpp}{player.\-cpp}\end{DoxyCompactItemize}

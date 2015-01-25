@@ -1,0 +1,19 @@
+% Inputs: full or sparse matrix A
+% Output: solution Cholesky factorization of A
+function [R, err] = pregcg (A, M, x, k)
+r = b - A * x
+m = inv(M)
+z = m * r
+d = z
+
+for k = 0:n-1
+	if r = 0, break, end
+	alpha = (r' * z)/(d' * A * d);
+	x = x + alpha * d;
+	oldr = r;
+	r = r - alpha * A * d;
+	oldz = z;
+	z = m * r;
+	beta = (r' * z) / (rold' * oldz)
+	d = z + beta * d;
+end

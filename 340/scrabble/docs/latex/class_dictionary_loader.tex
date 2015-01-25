@@ -1,0 +1,142 @@
+\hypertarget{class_dictionary_loader}{\section{Dictionary\-Loader Class Reference}
+\label{class_dictionary_loader}\index{Dictionary\-Loader@{Dictionary\-Loader}}
+}
+
+
+The \hyperlink{class_dictionary_loader}{Dictionary\-Loader} class Loads a file of words into the dictionary.  
+
+
+
+
+{\ttfamily \#include $<$dictionaryloader.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dictionary_loader_a8724e13c20ebe2afb2ee5584aa92d436}{Dictionary\-Loader} (\hyperlink{class_dictionary}{Dictionary} $\ast$, Q\-String)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_loader_a8724e13c20ebe2afb2ee5584aa92d436}{Dictionary\-Loader\-::\-Dictionary\-Loader} Constructor for dictionary loader. \end{DoxyCompactList}\item 
+\hyperlink{class_dictionary_loader}{Dictionary\-Loader} $\ast$ \hyperlink{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{load} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{Dictionary\-Loader\-::load} Loads the dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{class_dictionary_loader_ae586d429ac12873cc443f0fa68fd81e7}{file\-Name}
+\item 
+\hyperlink{class_dictionary}{Dictionary} $\ast$ \hyperlink{class_dictionary_loader_a8c072c045354452eb8a5d34f5936518a}{dictionary}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_dictionary_loader}{Dictionary\-Loader} class Loads a file of words into the dictionary. 
+
+Definition at line 9 of file dictionaryloader.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dictionary_loader_a8724e13c20ebe2afb2ee5584aa92d436}{\index{Dictionary\-Loader@{Dictionary\-Loader}!Dictionary\-Loader@{Dictionary\-Loader}}
+\index{Dictionary\-Loader@{Dictionary\-Loader}!DictionaryLoader@{Dictionary\-Loader}}
+\subsubsection[{Dictionary\-Loader}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary\-Loader\-::\-Dictionary\-Loader (
+\begin{DoxyParamCaption}
+\item[{{\bf Dictionary} $\ast$}]{dictionary, }
+\item[{Q\-String}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_loader_a8724e13c20ebe2afb2ee5584aa92d436}
+
+
+\hyperlink{class_dictionary_loader_a8724e13c20ebe2afb2ee5584aa92d436}{Dictionary\-Loader\-::\-Dictionary\-Loader} Constructor for dictionary loader. 
+
+
+
+Definition at line 9 of file dictionaryloader.\-cpp.
+
+
+
+References dictionary, and file\-Name.
+
+
+\begin{DoxyCode}
+9                                                                           \{
+10     this->dictionary = \hyperlink{class_dictionary_loader_a8c072c045354452eb8a5d34f5936518a}{dictionary};
+11     this->\hyperlink{class_dictionary_loader_ae586d429ac12873cc443f0fa68fd81e7}{fileName} = \hyperlink{class_dictionary_loader_ae586d429ac12873cc443f0fa68fd81e7}{fileName};
+12 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{\index{Dictionary\-Loader@{Dictionary\-Loader}!load@{load}}
+\index{load@{load}!DictionaryLoader@{Dictionary\-Loader}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary\-Loader} $\ast$ Dictionary\-Loader\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}
+
+
+\hyperlink{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{Dictionary\-Loader\-::load} Loads the dictionary. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file dictionaryloader.\-cpp.
+
+
+
+References Dictionary\-::add\-Word(), dictionary, and file\-Name.
+
+
+
+Referenced by Unit\-Test\-::dictionarytest(), and Dialog\-::load\-Dictionary().
+
+
+\begin{DoxyCode}
+18                                         \{
+19     QFile file(\hyperlink{class_dictionary_loader_ae586d429ac12873cc443f0fa68fd81e7}{fileName});
+20     \textcolor{keywordflow}{if} (!file.open(QIODevice::ReadOnly | QIODevice::Text))\{
+21         cout << \textcolor{stringliteral}{"Could not open dictionary file!"} << endl;
+22         \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+23     \}
+24 
+25     QTextStream in(&file);
+26     QString line = in.readLine();
+27     \textcolor{keywordflow}{while} (!line.isNull()) \{
+28         \hyperlink{class_dictionary_loader_a8c072c045354452eb8a5d34f5936518a}{dictionary}->\hyperlink{class_dictionary_a6bf35992b5b44b610b830c2361c67c3e}{addWord}(line, \textcolor{keyword}{false});
+29         line = in.readLine();
+30     \}
+31 
+32     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+33 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_dictionary_loader_a8c072c045354452eb8a5d34f5936518a}{\index{Dictionary\-Loader@{Dictionary\-Loader}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!DictionaryLoader@{Dictionary\-Loader}}
+\subsubsection[{dictionary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary}$\ast$ Dictionary\-Loader\-::dictionary\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dictionary_loader_a8c072c045354452eb8a5d34f5936518a}
+The dictionary to load 
+
+Definition at line 13 of file dictionaryloader.\-h.
+
+
+
+Referenced by Dictionary\-Loader(), and load().
+
+\hypertarget{class_dictionary_loader_ae586d429ac12873cc443f0fa68fd81e7}{\index{Dictionary\-Loader@{Dictionary\-Loader}!file\-Name@{file\-Name}}
+\index{file\-Name@{file\-Name}!DictionaryLoader@{Dictionary\-Loader}}
+\subsubsection[{file\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Dictionary\-Loader\-::file\-Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dictionary_loader_ae586d429ac12873cc443f0fa68fd81e7}
+The name of the file holding the dictionary 
+
+Definition at line 12 of file dictionaryloader.\-h.
+
+
+
+Referenced by Dictionary\-Loader(), and load().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{dictionaryloader_8h}{dictionaryloader.\-h}\item 
+Scrabble/\hyperlink{dictionaryloader_8cpp}{dictionaryloader.\-cpp}\end{DoxyCompactItemize}

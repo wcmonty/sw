@@ -1,0 +1,249 @@
+\hypertarget{class_unit_test}{\section{Unit\-Test Class Reference}
+\label{class_unit_test}\index{Unit\-Test@{Unit\-Test}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_unit_test_adab1694e1b8220401e0e8de84146c00c}{dictionarytest} ()
+\item 
+void \hyperlink{class_unit_test_a72c0f15a7dcecdec8eb882f861e784e2}{runalltests} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dictionary}{Dictionary} $\ast$ \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}
+\item 
+\hyperlink{class_dictionary}{Dictionary} $\ast$ \hyperlink{class_unit_test_a81579d68baa8575bdf1625a0642eadf8}{a\-\_\-dictionary}
+\item 
+\hyperlink{class_dictionary_loader}{Dictionary\-Loader} $\ast$ \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionary\-Loader}
+\item 
+list$<$ Q\-String $>$ $\ast$ \hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist}
+\item 
+list$<$ Q\-String $>$ $\ast$ \hyperlink{class_unit_test_aeb6e626c75d7caa5100aa605831a439f}{anagramlist}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int \hyperlink{class_unit_test_a9e7b7ee73cb31ffb5b98bbb69a0aa999}{anagramcount} = 168
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Unit\-Test.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_unit_test_adab1694e1b8220401e0e8de84146c00c}{\index{Unit\-Test@{Unit\-Test}!dictionarytest@{dictionarytest}}
+\index{dictionarytest@{dictionarytest}!UnitTest@{Unit\-Test}}
+\subsubsection[{dictionarytest}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\-Test\-::dictionarytest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_unit_test_adab1694e1b8220401e0e8de84146c00c}
+
+
+Definition at line 22 of file Unit\-Test.\-cpp.
+
+
+
+References a\-\_\-dictionary, Trie\-::ai\-\_\-search(), anagramcount, anagramlist, Trie\-::anagrams(), dictionary, dictionary\-Loader, Dictionary\-::is\-Word(), Dictionary\-Loader\-::load(), Dictionary\-::wordcount(), wordlist, and Dictionary\-::words.
+
+
+
+Referenced by runalltests().
+
+
+\begin{DoxyCode}
+23     \{
+24         \textcolor{comment}{/*}
+25 \textcolor{comment}{         *  Basic Dictionary checks. Can we load it, and does it contain some very basic words?}
+26 \textcolor{comment}{         */}
+27         \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary} = \textcolor{keyword}{new} \hyperlink{class_dictionary}{Dictionary}();
+28         \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionaryLoader} = \textcolor{keyword}{new} \hyperlink{class_dictionary_loader}{DictionaryLoader}(
+      \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}, \textcolor{stringliteral}{":/resources/dictionary.txt"});
+29         \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionaryLoader}->\hyperlink{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{load}();
+30 
+31         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_a327b99a18977f2b898adfd496426cf27}{wordcount}());
+32         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(\textcolor{stringliteral}{"a"}));
+33         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(\textcolor{stringliteral}{"aa"}));
+34         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(\textcolor{stringliteral}{"aardvark"}));
+35         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(\textcolor{stringliteral}{"blue"}));
+36         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(\textcolor{stringliteral}{"cow"}));
+37         assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(\textcolor{stringliteral}{"pie"}));
+38 
+39 
+40         \textcolor{comment}{/*                      ANAGRAM TESTS}
+41 \textcolor{comment}{         *}
+42 \textcolor{comment}{         *  The word 'nameless' has a lot of anagrams. Let's see if we have all of them.}
+43 \textcolor{comment}{         *  The anagram file inserted is \_required\_ to contain only unique anagrams.}
+44 \textcolor{comment}{         *}
+45 \textcolor{comment}{         */}
+46 
+47         \hyperlink{class_unit_test_a81579d68baa8575bdf1625a0642eadf8}{a\_dictionary} = \textcolor{keyword}{new} \hyperlink{class_dictionary}{Dictionary}();
+48         \textcolor{keyword}{delete} \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionaryLoader};
+49         \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionaryLoader} = \textcolor{keyword}{new} \hyperlink{class_dictionary_loader}{DictionaryLoader}(a\_dictionary, \textcolor{stringliteral}{"
+      :/resources/nameless\_anagrams.txt"});
+50         \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionaryLoader}->\hyperlink{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{load}();
+51 
+52         \hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist} = \textcolor{keyword}{new} list<QString>();
+53         \hyperlink{class_unit_test_aeb6e626c75d7caa5100aa605831a439f}{anagramlist} = \textcolor{keyword}{new} list<QString>();
+54         \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_aa42c01330538b67e0aff76068f02a8f7}{anagrams}(\textcolor{stringliteral}{"nameless"},\hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist});
+55 
+56         \textcolor{comment}{// This should return equal to the wordcount found in the anagram file.}
+57         a\_dictionary->words->anagrams(\textcolor{stringliteral}{"nameless"},anagramlist);
+58         assert(anagramlist->size() == \hyperlink{class_unit_test_a9e7b7ee73cb31ffb5b98bbb69a0aa999}{anagramcount});
+59 
+60         cout << \textcolor{stringliteral}{"wordlist: "} << \hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist}->size() << endl;
+61         cout << \textcolor{stringliteral}{"anaglist: "} << anagramlist->size() << endl;
+62 
+63         list<QString> * wildanagramlist = \textcolor{keyword}{new} list<QString>();
+64         \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_aa42c01330538b67e0aff76068f02a8f7}{anagrams}(\textcolor{stringliteral}{"hel**"},wildanagramlist);
+65         \textcolor{keywordflow}{for} (std::list<QString>::iterator it = wildanagramlist->begin(); it != wildanagramlist->end(); it++
+      )
+66         \{
+67             assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(*it));
+68             cout << QString(*it).toStdString() << endl;
+69         \}
+70 
+71         \textcolor{comment}{/*}
+72 \textcolor{comment}{         *}
+73 \textcolor{comment}{         * We now have a vector of words containing all the anagrams for the word}
+74 \textcolor{comment}{         * 'nameless' that are found in our dictionary. Let's assure that we have them}
+75 \textcolor{comment}{         * all. And more importantly, that we don't have false positives.}
+76 \textcolor{comment}{         *}
+77 \textcolor{comment}{         *}
+78 \textcolor{comment}{         * Let's compare sizes first! This is a very basic test.}
+79 \textcolor{comment}{         * nameless\_anagrams.txt is not a \_complete\_ list.}
+80 \textcolor{comment}{         * However, we do assume that the dictionary is big enough that it should contain most of these.}
+81 \textcolor{comment}{         *}
+82 \textcolor{comment}{         */}
+83 
+84         assert( \hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist}->size() >= anagramlist->size() && \hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist}->size() <= 2 * 
+      anagramlist->size() );
+85 
+86         \textcolor{keywordflow}{for} (std::list<QString>::iterator it = anagramlist->begin(); it != anagramlist->end(); it++)
+87             assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(*it));
+88 
+89         \textcolor{comment}{// We have now confirmed that all the words in the anagramlist are in the anagrams found}
+90         \textcolor{comment}{// in the dictionary.}
+91 
+92         QRegularExpression *re = \textcolor{keyword}{new} QRegularExpression(\textcolor{stringliteral}{"^[a-zA-Z*]+$"});
+93         assert(re->match(QString(\textcolor{stringliteral}{"abcdefghijklmnopqrstuvwxyz*"}),0,QRegularExpression::NormalMatch,
+      QRegularExpression::NoMatchOption ).hasMatch());
+94 
+95         \textcolor{comment}{// A confirmation that our basic PCRE regexp works. Also used as a reference.}
+96 
+97         \textcolor{comment}{// Standard anchored ai search. The first position is the anchor.}
+98         list<QString> * newwordlist = \textcolor{keyword}{new} list<QString>();
+99         \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_ac6a915f9483d03dc99872210b74bf435}{ai\_search}(\textcolor{stringliteral}{"nameless"},\textcolor{stringliteral}{"*a*e*ess*"},newwordlist);
+100         \textcolor{keywordflow}{for} (std::list<QString>::iterator it = newwordlist->begin(); it != newwordlist->end(); it++)
+101             assert(\hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(*it));
+102 
+103         \textcolor{comment}{/* Can we do all of these deletions succesfully? */}
+104         \textcolor{keyword}{delete} \hyperlink{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{wordlist};
+105         \textcolor{keyword}{delete} \hyperlink{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{dictionaryLoader};
+106         \textcolor{keyword}{delete} \hyperlink{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{dictionary};
+107     \}
+\end{DoxyCode}
+\hypertarget{class_unit_test_a72c0f15a7dcecdec8eb882f861e784e2}{\index{Unit\-Test@{Unit\-Test}!runalltests@{runalltests}}
+\index{runalltests@{runalltests}!UnitTest@{Unit\-Test}}
+\subsubsection[{runalltests}]{\setlength{\rightskip}{0pt plus 5cm}void Unit\-Test\-::runalltests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_unit_test_a72c0f15a7dcecdec8eb882f861e784e2}
+
+
+Definition at line 109 of file Unit\-Test.\-cpp.
+
+
+
+References dictionarytest().
+
+
+
+Referenced by main().
+
+
+\begin{DoxyCode}
+110     \{
+111         \hyperlink{class_unit_test_adab1694e1b8220401e0e8de84146c00c}{dictionarytest}();
+112     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_unit_test_a81579d68baa8575bdf1625a0642eadf8}{\index{Unit\-Test@{Unit\-Test}!a\-\_\-dictionary@{a\-\_\-dictionary}}
+\index{a\-\_\-dictionary@{a\-\_\-dictionary}!UnitTest@{Unit\-Test}}
+\subsubsection[{a\-\_\-dictionary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary}$\ast$ Unit\-Test\-::a\-\_\-dictionary\hspace{0.3cm}{\ttfamily [private]}}}\label{class_unit_test_a81579d68baa8575bdf1625a0642eadf8}
+
+
+Definition at line 15 of file Unit\-Test.\-cpp.
+
+
+
+Referenced by dictionarytest().
+
+\hypertarget{class_unit_test_a9e7b7ee73cb31ffb5b98bbb69a0aa999}{\index{Unit\-Test@{Unit\-Test}!anagramcount@{anagramcount}}
+\index{anagramcount@{anagramcount}!UnitTest@{Unit\-Test}}
+\subsubsection[{anagramcount}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Unit\-Test\-::anagramcount = 168\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_unit_test_a9e7b7ee73cb31ffb5b98bbb69a0aa999}
+
+
+Definition at line 19 of file Unit\-Test.\-cpp.
+
+
+
+Referenced by dictionarytest().
+
+\hypertarget{class_unit_test_aeb6e626c75d7caa5100aa605831a439f}{\index{Unit\-Test@{Unit\-Test}!anagramlist@{anagramlist}}
+\index{anagramlist@{anagramlist}!UnitTest@{Unit\-Test}}
+\subsubsection[{anagramlist}]{\setlength{\rightskip}{0pt plus 5cm}list$<$Q\-String$>$$\ast$ Unit\-Test\-::anagramlist\hspace{0.3cm}{\ttfamily [private]}}}\label{class_unit_test_aeb6e626c75d7caa5100aa605831a439f}
+
+
+Definition at line 18 of file Unit\-Test.\-cpp.
+
+
+
+Referenced by dictionarytest().
+
+\hypertarget{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}{\index{Unit\-Test@{Unit\-Test}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!UnitTest@{Unit\-Test}}
+\subsubsection[{dictionary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary}$\ast$ Unit\-Test\-::dictionary\hspace{0.3cm}{\ttfamily [private]}}}\label{class_unit_test_a09902f0cb75bf2c03c56912ecd4682aa}
+
+
+Definition at line 14 of file Unit\-Test.\-cpp.
+
+
+
+Referenced by dictionarytest().
+
+\hypertarget{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}{\index{Unit\-Test@{Unit\-Test}!dictionary\-Loader@{dictionary\-Loader}}
+\index{dictionary\-Loader@{dictionary\-Loader}!UnitTest@{Unit\-Test}}
+\subsubsection[{dictionary\-Loader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary\-Loader}$\ast$ Unit\-Test\-::dictionary\-Loader\hspace{0.3cm}{\ttfamily [private]}}}\label{class_unit_test_a9cf46138e9006b18b978f6a3126c8c50}
+
+
+Definition at line 16 of file Unit\-Test.\-cpp.
+
+
+
+Referenced by dictionarytest().
+
+\hypertarget{class_unit_test_aeb6acd51a206123112b000f6520ac25b}{\index{Unit\-Test@{Unit\-Test}!wordlist@{wordlist}}
+\index{wordlist@{wordlist}!UnitTest@{Unit\-Test}}
+\subsubsection[{wordlist}]{\setlength{\rightskip}{0pt plus 5cm}list$<$Q\-String$>$$\ast$ Unit\-Test\-::wordlist\hspace{0.3cm}{\ttfamily [private]}}}\label{class_unit_test_aeb6acd51a206123112b000f6520ac25b}
+
+
+Definition at line 17 of file Unit\-Test.\-cpp.
+
+
+
+Referenced by dictionarytest().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{_unit_test_8cpp}{Unit\-Test.\-cpp}\end{DoxyCompactItemize}

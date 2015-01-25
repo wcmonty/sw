@@ -1,0 +1,72 @@
+# William Montgomery
+# wmontg2
+/* $begin code-yso */
+/* $begin code-ysa */
+# Execution begins at address 0 
+		.pos 0 
+init:	irmovl Stack, %esp  	# Set up stack pointer  
+		irmovl Stack, %ebp  	# Set up base pointer   
+		call Main		# Execute main program
+		halt			# Terminate program 
+
+.align 4
+# Source block
+src:	.long 0x00a
+        .long 0x0b0
+        .long 0xc00
+# Destination block
+dest:	.long 0x111
+        .long 0x222
+        .long 0x333
+
+Main:	pushl %ebp 
+		rrmovl %esp,%ebp
+		irmovl $4,%eax	
+		pushl %eax		# Push 4
+		irmovl $3, %edx
+		pushl %edx
+		irmovl dest, %edx
+		pushl %edx
+		irmovl src, %edx
+		pushl %edx
+		call copy_b	
+		rrmovl %ebp, %esp
+		popl %ebp
+		ret 
+
+copy_b: pushl	%ebp
+	rrmovl	%esp, %ebp
+	pushl	%edi
+	pushl	%esi
+	pushl	%ebx
+	mrmovl	16(%ebp), %ecx
+	irmovl	$0, %ebx
+	addl	%ebx, %ecx
+	jg	LBB3_2
+	xorl	%eax, %eax
+	jmp	LBB3_4
+LBB3_2: mrmovl	12(%ebp), %edx
+	mrmovl	8(%ebp), %esi
+	xorl	%eax, %eax
+	.align	4, 0x90
+LBB3_3: mrmovl	(%esi), %edi
+	rmmovl	%edi, (%edx)
+	xorl	%edi, %eax
+	irmovl	$4, %ebx
+	addl	%ebx, %esi
+	addl	%ebx, %edx
+	irmovl	$1, %ebx
+	subl	%ebx, %ecx
+	jne	LBB3_3
+LBB3_4: popl	%ebx
+	popl	%esi
+	popl	%edi
+	popl	%ebp
+	ret
+
+# The stack starts here and grows to lower addresses
+	.pos 0x100		
+Stack:	 
+/* $end code-ysa */
+/* $end code-yso */
+	

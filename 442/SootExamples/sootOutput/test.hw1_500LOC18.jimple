@@ -1,0 +1,813 @@
+public class test.hw1_500LOC18 extends java.lang.Object
+{
+    static double[] f0;
+    int f1;
+
+    static void <clinit>()
+    {
+        double[] temp$0;
+
+        temp$0 = newarray (double)[21];
+        <test.hw1_500LOC18: double[] f0> = temp$0;
+        return;
+    }
+
+    public double hw1_500LOC18method0(float, java.lang.String, short, long, short, byte)
+    {
+        test.hw1_500LOC18 this;
+        float var0;
+        java.lang.String var1;
+        short var2, var4;
+        long var3;
+        byte var5;
+        double temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: float;
+        var1 := @parameter1: java.lang.String;
+        var2 := @parameter2: short;
+        var3 := @parameter3: long;
+        var4 := @parameter4: short;
+        var5 := @parameter5: byte;
+        temp$0 = 0.20972477725769822;
+        return temp$0;
+    }
+
+    public long hw1_500LOC18method1(short, test.hw1_500LOC13, float)
+    {
+        test.hw1_500LOC18 this;
+        short var0;
+        test.hw1_500LOC13 var1;
+        float var2;
+        long temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: short;
+        var1 := @parameter1: test.hw1_500LOC13;
+        var2 := @parameter2: float;
+        temp$0 = 10L;
+        return temp$0;
+    }
+
+    public static int hw1_500LOC18method2(float, java.lang.String, double)
+    {
+        float var0;
+        java.lang.String var1;
+        double var2;
+        int temp$0;
+
+        var0 := @parameter0: float;
+        var1 := @parameter1: java.lang.String;
+        var2 := @parameter2: double;
+        temp$0 = 16;
+        return temp$0;
+    }
+
+    public static long hw1_500LOC18method3(test.hw1_500LOC10, java.lang.String, long, java.lang.String)
+    {
+        test.hw1_500LOC10 var0;
+        java.lang.String var1, var3;
+        long var2;
+
+        var0 := @parameter0: test.hw1_500LOC10;
+        var1 := @parameter1: java.lang.String;
+        var2 := @parameter2: long;
+        var3 := @parameter3: java.lang.String;
+        return var2;
+    }
+
+    public long hw1_500LOC18method4(double, int, double)
+    {
+        test.hw1_500LOC18 this;
+        double var0, var2;
+        int var1;
+        long temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: double;
+        var1 := @parameter1: int;
+        var2 := @parameter2: double;
+        temp$0 = 72L;
+        return temp$0;
+    }
+
+    public float hw1_500LOC18method5(char, int, java.lang.String, float)
+    {
+        test.hw1_500LOC18 this;
+        char var0;
+        int var1;
+        java.lang.String var2;
+        float var3;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: char;
+        var1 := @parameter1: int;
+        var2 := @parameter2: java.lang.String;
+        var3 := @parameter3: float;
+        return var3;
+    }
+
+    public static byte hw1_500LOC18method6(java.lang.String, float, char)
+    {
+        java.lang.String var0;
+        float var1;
+        char var2;
+        byte temp$0;
+
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: float;
+        var2 := @parameter2: char;
+        temp$0 = -3;
+        return temp$0;
+    }
+
+    public long hw1_500LOC18method7(double, float, long, test.hw1_500LOC21, double, byte)
+    {
+        test.hw1_500LOC18 this;
+        double var0, var4;
+        float var1;
+        long var2;
+        test.hw1_500LOC21 var3;
+        byte var5;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: double;
+        var1 := @parameter1: float;
+        var2 := @parameter2: long;
+        var3 := @parameter3: test.hw1_500LOC21;
+        var4 := @parameter4: double;
+        var5 := @parameter5: byte;
+        return var2;
+    }
+
+    public static java.lang.String hw1_500LOC18method8(short, int, java.lang.String)
+    {
+        short var0;
+        int var1;
+        java.lang.String var2;
+
+        var0 := @parameter0: short;
+        var1 := @parameter1: int;
+        var2 := @parameter2: java.lang.String;
+        return var2;
+    }
+
+    public java.lang.String hw1_500LOC18method9(char, short, test.hw1_500LOC34)
+    {
+        test.hw1_500LOC18 this;
+        char var0;
+        short var1;
+        test.hw1_500LOC34 var2;
+        java.lang.String temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: char;
+        var1 := @parameter1: short;
+        var2 := @parameter2: test.hw1_500LOC34;
+        temp$0 = "iupoysfdzvkl";
+        return temp$0;
+    }
+
+    public static java.lang.Object hw1_500LOC18method10(int, char, java.lang.String)
+    {
+        int var0;
+        char var1;
+        java.lang.String var2;
+        java.lang.Object temp$0;
+
+        var0 := @parameter0: int;
+        var1 := @parameter1: char;
+        var2 := @parameter2: java.lang.String;
+        temp$0 = null;
+        return temp$0;
+    }
+
+    public static byte hw1_500LOC18method11(long, test.hw1_500LOC31, java.lang.String, long)
+    {
+        long var0, var3;
+        test.hw1_500LOC31 var1;
+        java.lang.String var2;
+        byte temp$0;
+
+        var0 := @parameter0: long;
+        var1 := @parameter1: test.hw1_500LOC31;
+        var2 := @parameter2: java.lang.String;
+        var3 := @parameter3: long;
+        temp$0 = 66;
+        return temp$0;
+    }
+
+    public int hw1_500LOC18method12(float, double, char)
+    {
+        test.hw1_500LOC18 this;
+        float var0;
+        double var1;
+        char var2;
+        int temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: float;
+        var1 := @parameter1: double;
+        var2 := @parameter2: char;
+        temp$0 = 30;
+        return temp$0;
+    }
+
+    public static java.lang.String hw1_500LOC18method13(short, float, float, float, test.hw1_500LOC26, float)
+    {
+        short var0;
+        float var1, var2, var3, var5;
+        test.hw1_500LOC26 var4;
+        java.lang.String temp$0;
+
+        var0 := @parameter0: short;
+        var1 := @parameter1: float;
+        var2 := @parameter2: float;
+        var3 := @parameter3: float;
+        var4 := @parameter4: test.hw1_500LOC26;
+        var5 := @parameter5: float;
+        temp$0 = "lobdpyfrcohkwlpgtqeawrxsnynlml";
+        return temp$0;
+    }
+
+    public byte hw1_500LOC18method14(double, float, long)
+    {
+        test.hw1_500LOC18 this;
+        double var0;
+        float var1;
+        long var2;
+        byte temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: double;
+        var1 := @parameter1: float;
+        var2 := @parameter2: long;
+        temp$0 = 19;
+        return temp$0;
+    }
+
+    public int hw1_500LOC18method15(java.lang.String, test.hw1_500LOC13, int)
+    {
+        test.hw1_500LOC18 this;
+        java.lang.String var0;
+        test.hw1_500LOC13 var1;
+        int var2;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: test.hw1_500LOC13;
+        var2 := @parameter2: int;
+        return var2;
+    }
+
+    public static long hw1_500LOC18method16(double, char, java.lang.String, long, double)
+    {
+        double var0, var4;
+        char var1;
+        java.lang.String var2;
+        long var3;
+
+        var0 := @parameter0: double;
+        var1 := @parameter1: char;
+        var2 := @parameter2: java.lang.String;
+        var3 := @parameter3: long;
+        var4 := @parameter4: double;
+        return var3;
+    }
+
+    public static int hw1_500LOC18method17(int, short, int, test.hw1_500LOC24, long)
+    {
+        int var0, var2;
+        short var1;
+        test.hw1_500LOC24 var3;
+        long var4;
+
+        var0 := @parameter0: int;
+        var1 := @parameter1: short;
+        var2 := @parameter2: int;
+        var3 := @parameter3: test.hw1_500LOC24;
+        var4 := @parameter4: long;
+        return var2;
+    }
+
+    public static int hw1_500LOC18method18(byte, long, test.hw1_500LOC30)
+    {
+        byte var0;
+        long var1;
+        test.hw1_500LOC30 var2;
+        int temp$0;
+
+        var0 := @parameter0: byte;
+        var1 := @parameter1: long;
+        var2 := @parameter2: test.hw1_500LOC30;
+        temp$0 = 95;
+        return temp$0;
+    }
+
+    public long hw1_500LOC18method19(char, char, long, short, char, java.lang.String, float, test.hw1_500LOC10)
+    {
+        test.hw1_500LOC18 this;
+        char var0, var1, var4;
+        long var2;
+        short var3;
+        java.lang.String var5;
+        float var6;
+        test.hw1_500LOC10 var7;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: char;
+        var1 := @parameter1: char;
+        var2 := @parameter2: long;
+        var3 := @parameter3: short;
+        var4 := @parameter4: char;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: float;
+        var7 := @parameter7: test.hw1_500LOC10;
+        return var2;
+    }
+
+    public static java.lang.String hw1_500LOC18method20(double, char, int)
+    {
+        double var0;
+        char var1;
+        int var2;
+        java.lang.String temp$0;
+
+        var0 := @parameter0: double;
+        var1 := @parameter1: char;
+        var2 := @parameter2: int;
+        temp$0 = "ndbqeuqnefipneduhujiynentdknztcqnaqumsulbnpibxdxzuvel";
+        return temp$0;
+    }
+
+    public float hw1_500LOC18method21(char, float, char, char, java.lang.String, java.lang.String, long, char, int)
+    {
+        test.hw1_500LOC18 this;
+        char var0, var2, var3, var7;
+        float var1;
+        java.lang.String var4, var5;
+        long var6;
+        int var8;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: char;
+        var1 := @parameter1: float;
+        var2 := @parameter2: char;
+        var3 := @parameter3: char;
+        var4 := @parameter4: java.lang.String;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: long;
+        var7 := @parameter7: char;
+        var8 := @parameter8: int;
+        return var1;
+    }
+
+    public static short hw1_500LOC18method22(test.hw1_500LOC6, int, double, long, char, short, char, short, int)
+    {
+        test.hw1_500LOC6 var0;
+        int var1, var8;
+        double var2;
+        long var3;
+        char var4, var6;
+        short var5, var7;
+
+        var0 := @parameter0: test.hw1_500LOC6;
+        var1 := @parameter1: int;
+        var2 := @parameter2: double;
+        var3 := @parameter3: long;
+        var4 := @parameter4: char;
+        var5 := @parameter5: short;
+        var6 := @parameter6: char;
+        var7 := @parameter7: short;
+        var8 := @parameter8: int;
+        return var5;
+    }
+
+    public static java.lang.String hw1_500LOC18method23(java.lang.String, char, long, byte, float, test.hw1_500LOC4, long, float)
+    {
+        java.lang.String var0;
+        char var1;
+        long var2, var6;
+        byte var3;
+        float var4, var7;
+        test.hw1_500LOC4 var5;
+
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: char;
+        var2 := @parameter2: long;
+        var3 := @parameter3: byte;
+        var4 := @parameter4: float;
+        var5 := @parameter5: test.hw1_500LOC4;
+        var6 := @parameter6: long;
+        var7 := @parameter7: float;
+        return var0;
+    }
+
+    public static char hw1_500LOC18method24(long, test.hw1_500LOC15, char, byte)
+    {
+        long var0;
+        test.hw1_500LOC15 var1;
+        char var2;
+        byte var3;
+
+        var0 := @parameter0: long;
+        var1 := @parameter1: test.hw1_500LOC15;
+        var2 := @parameter2: char;
+        var3 := @parameter3: byte;
+        return var2;
+    }
+
+    public static java.lang.String hw1_500LOC18method25(short, long, float)
+    {
+        short var0;
+        long var1;
+        float var2;
+        java.lang.String temp$0;
+
+        var0 := @parameter0: short;
+        var1 := @parameter1: long;
+        var2 := @parameter2: float;
+        temp$0 = "gktoltvnkqzxgoaxjwvmujmhvdkwkjjjffnydjfvvfjkixwwhntysxqtdpixdgtv";
+        return temp$0;
+    }
+
+    public static long hw1_500LOC18method26(double, double, char, float, short, java.lang.String, long, float)
+    {
+        double var0, var1;
+        char var2;
+        float var3, var7;
+        short var4;
+        java.lang.String var5;
+        long var6;
+
+        var0 := @parameter0: double;
+        var1 := @parameter1: double;
+        var2 := @parameter2: char;
+        var3 := @parameter3: float;
+        var4 := @parameter4: short;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: long;
+        var7 := @parameter7: float;
+        return var6;
+    }
+
+    public static java.lang.Object hw1_500LOC18method27(double, int, java.lang.String)
+    {
+        double var0;
+        int var1;
+        java.lang.String var2;
+        java.lang.Object temp$0;
+
+        var0 := @parameter0: double;
+        var1 := @parameter1: int;
+        var2 := @parameter2: java.lang.String;
+        temp$0 = null;
+        return temp$0;
+    }
+
+    public char hw1_500LOC18method28(java.lang.String, java.lang.String, int, test.hw1_500LOC31, short, short, test.hw1_500LOC34, long, byte)
+    {
+        test.hw1_500LOC18 this;
+        java.lang.String var0, var1;
+        int var2;
+        test.hw1_500LOC31 var3;
+        short var4, var5;
+        test.hw1_500LOC34 var6;
+        long var7;
+        byte var8;
+        char temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: java.lang.String;
+        var2 := @parameter2: int;
+        var3 := @parameter3: test.hw1_500LOC31;
+        var4 := @parameter4: short;
+        var5 := @parameter5: short;
+        var6 := @parameter6: test.hw1_500LOC34;
+        var7 := @parameter7: long;
+        var8 := @parameter8: byte;
+        temp$0 = 108;
+        return temp$0;
+    }
+
+    public static long hw1_500LOC18method29(int, double, byte)
+    {
+        int var0;
+        double var1;
+        byte var2;
+        long temp$0;
+
+        var0 := @parameter0: int;
+        var1 := @parameter1: double;
+        var2 := @parameter2: byte;
+        temp$0 = 89L;
+        return temp$0;
+    }
+
+    public short hw1_500LOC18method30(char, float, char)
+    {
+        test.hw1_500LOC18 this;
+        char var0, var2;
+        float var1;
+        short temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: char;
+        var1 := @parameter1: float;
+        var2 := @parameter2: char;
+        temp$0 = 27409;
+        return temp$0;
+    }
+
+    public static byte hw1_500LOC18method31(java.lang.String, float, long)
+    {
+        java.lang.String var0;
+        float var1;
+        long var2;
+        byte temp$0;
+
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: float;
+        var2 := @parameter2: long;
+        temp$0 = 54;
+        return temp$0;
+    }
+
+    public int hw1_500LOC18method32(int, byte, byte, byte, int, double, double)
+    {
+        test.hw1_500LOC18 this;
+        int var0, var4;
+        byte var1, var2, var3;
+        double var5, var6;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: int;
+        var1 := @parameter1: byte;
+        var2 := @parameter2: byte;
+        var3 := @parameter3: byte;
+        var4 := @parameter4: int;
+        var5 := @parameter5: double;
+        var6 := @parameter6: double;
+        return var4;
+    }
+
+    public short hw1_500LOC18method33(double, short, test.hw1_500LOC18, short, short)
+    {
+        test.hw1_500LOC18 this, var2;
+        double var0;
+        short var1, var3, var4;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: double;
+        var1 := @parameter1: short;
+        var2 := @parameter2: test.hw1_500LOC18;
+        var3 := @parameter3: short;
+        var4 := @parameter4: short;
+        return var4;
+    }
+
+    public long hw1_500LOC18method34(int, short, java.lang.String, float, double, java.lang.String, test.hw1_500LOC12)
+    {
+        test.hw1_500LOC18 this;
+        int var0;
+        short var1;
+        java.lang.String var2, var5;
+        float var3;
+        double var4;
+        test.hw1_500LOC12 var6;
+        long temp$0;
+
+        this := @this: test.hw1_500LOC18;
+        var0 := @parameter0: int;
+        var1 := @parameter1: short;
+        var2 := @parameter2: java.lang.String;
+        var3 := @parameter3: float;
+        var4 := @parameter4: double;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: test.hw1_500LOC12;
+        temp$0 = 39L;
+        return temp$0;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        test.hw1_500LOC18 obj, temp$0, temp$49;
+        double temp$1;
+        test.hw1_500LOC13 temp$2, temp$22;
+        long temp$3, temp$6, temp$7, temp$11, temp$24, temp$30, temp$40, temp$45, temp$52;
+        int temp$4, temp$18, temp$23, temp$26, temp$28, temp$48;
+        test.hw1_500LOC10 temp$5, temp$29;
+        float temp$8, temp$32;
+        byte temp$9, temp$17, temp$21, temp$47;
+        test.hw1_500LOC21 temp$10;
+        java.lang.String temp$12, temp$14, temp$20, temp$31, temp$36, temp$39;
+        test.hw1_500LOC34 temp$13, temp$43;
+        java.lang.Object temp$15, temp$41;
+        test.hw1_500LOC31 temp$16, temp$42;
+        test.hw1_500LOC26 temp$19;
+        test.hw1_500LOC24 temp$25;
+        test.hw1_500LOC30 temp$27;
+        test.hw1_500LOC6 temp$33;
+        short temp$34, temp$46, temp$50;
+        test.hw1_500LOC4 temp$35;
+        test.hw1_500LOC15 temp$37;
+        char temp$38, temp$44;
+        test.hw1_500LOC12 temp$51;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = new test.hw1_500LOC18;
+        specialinvoke temp$0.<test.hw1_500LOC18: void <init>()>();
+        obj = temp$0;
+        temp$1 = virtualinvoke obj.<test.hw1_500LOC18: double hw1_500LOC18method0(float,java.lang.String,short,long,short,byte)>(0.9970596F, "rnrpqaejbrnm", 31839, 73L, 4998, -78);
+        temp$2 = new test.hw1_500LOC13;
+        specialinvoke temp$2.<test.hw1_500LOC13: void <init>()>();
+        temp$3 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method1(short,test.hw1_500LOC13,float)>(28187, temp$2, 0.76174104F);
+        temp$4 = staticinvoke <test.hw1_500LOC18: int hw1_500LOC18method2(float,java.lang.String,double)>(0.88573164F, "poppyagadzursxbafgpqujoatwbscuyokwlowjhdjgbudslkvchccxtpiivngmbvwqwwh", 0.16308541339874982);
+        temp$5 = new test.hw1_500LOC10;
+        specialinvoke temp$5.<test.hw1_500LOC10: void <init>()>();
+        temp$6 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method3(test.hw1_500LOC10,java.lang.String,long,java.lang.String)>(temp$5, "gdjumsme", 43L, "gtltfbeupdrxxnwup");
+        temp$7 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method4(double,int,double)>(0.5726115504530157, 74, 0.01833735793629665);
+        temp$8 = virtualinvoke obj.<test.hw1_500LOC18: float hw1_500LOC18method5(char,int,java.lang.String,float)>(110, 22, "mneoavrguiiiggtnmmsgtcukjzhodjdvsbwrvkqxttubanpsbznwiaiddzblitmzqzsdqngjfiqfxsufcllqjs", 0.055093348F);
+        temp$9 = staticinvoke <test.hw1_500LOC18: byte hw1_500LOC18method6(java.lang.String,float,char)>("vveggancjssyqjyqpdsdgbzlxzoprberv", 0.45479977F, 101);
+        temp$10 = new test.hw1_500LOC21;
+        specialinvoke temp$10.<test.hw1_500LOC21: void <init>()>();
+        temp$11 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method7(double,float,long,test.hw1_500LOC21,double,byte)>(0.8096681896884037, 0.4917276F, 74L, temp$10, 0.7902461691871878, -10);
+        temp$12 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method8(short,int,java.lang.String)>(6359, 76, "mnolktjjopmdkceinjqvndqulzqtcrvfuvamfyxufxqtsdtgqomhrvqtgqxdmbtlqgpxayqylnfhlip");
+        temp$13 = new test.hw1_500LOC34;
+        specialinvoke temp$13.<test.hw1_500LOC34: void <init>()>();
+        temp$14 = virtualinvoke obj.<test.hw1_500LOC18: java.lang.String hw1_500LOC18method9(char,short,test.hw1_500LOC34)>(119, 26833, temp$13);
+        temp$15 = staticinvoke <test.hw1_500LOC18: java.lang.Object hw1_500LOC18method10(int,char,java.lang.String)>(10, 122, "pvcjvwrdbxkimoqmedhfbovehjohbjtxxe");
+        temp$16 = new test.hw1_500LOC31;
+        specialinvoke temp$16.<test.hw1_500LOC31: void <init>()>();
+        temp$17 = staticinvoke <test.hw1_500LOC18: byte hw1_500LOC18method11(long,test.hw1_500LOC31,java.lang.String,long)>(85L, temp$16, "qicolvurnmpkryossmxpgyicntvhphwqkfeadbsslmrmcph", 54L);
+        temp$18 = virtualinvoke obj.<test.hw1_500LOC18: int hw1_500LOC18method12(float,double,char)>(0.009804487F, 0.2624394332332297, 109);
+        temp$19 = new test.hw1_500LOC26;
+        specialinvoke temp$19.<test.hw1_500LOC26: void <init>()>();
+        temp$20 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method13(short,float,float,float,test.hw1_500LOC26,float)>(11688, 0.31582385F, 0.5709525F, 0.010189354F, temp$19, 0.89775336F);
+        temp$21 = virtualinvoke obj.<test.hw1_500LOC18: byte hw1_500LOC18method14(double,float,long)>(0.8477524510078694, 0.9733135F, 38L);
+        temp$22 = new test.hw1_500LOC13;
+        specialinvoke temp$22.<test.hw1_500LOC13: void <init>()>();
+        temp$23 = virtualinvoke obj.<test.hw1_500LOC18: int hw1_500LOC18method15(java.lang.String,test.hw1_500LOC13,int)>("hnwtzspvxhguczatthfgjybvrvqxmvqznlvayljtp", temp$22, 23);
+        temp$24 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method16(double,char,java.lang.String,long,double)>(0.27069112445764254, 115, "etqajzfwjzexajbczoqhenuopnwesbznsianwbhmtrlgmqankiqlitvlscpqfxuclqayriglnaezyayyamdasrcqideoedfsniup", 75L, 0.6461995596092336);
+        temp$25 = new test.hw1_500LOC24;
+        specialinvoke temp$25.<test.hw1_500LOC24: void <init>()>();
+        temp$26 = staticinvoke <test.hw1_500LOC18: int hw1_500LOC18method17(int,short,int,test.hw1_500LOC24,long)>(46, 15350, 72, temp$25, 93L);
+        temp$27 = new test.hw1_500LOC30;
+        specialinvoke temp$27.<test.hw1_500LOC30: void <init>()>();
+        temp$28 = staticinvoke <test.hw1_500LOC18: int hw1_500LOC18method18(byte,long,test.hw1_500LOC30)>(42, 4L, temp$27);
+        temp$29 = new test.hw1_500LOC10;
+        specialinvoke temp$29.<test.hw1_500LOC10: void <init>()>();
+        temp$30 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method19(char,char,long,short,char,java.lang.String,float,test.hw1_500LOC10)>(108, 100, 83L, 31827, 112, "wgmimscbupydtvurhbaweucekanlqvypywakzayvir", 0.58284473F, temp$29);
+        temp$31 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method20(double,char,int)>(0.5077956954245544, 107, 70);
+        temp$32 = virtualinvoke obj.<test.hw1_500LOC18: float hw1_500LOC18method21(char,float,char,char,java.lang.String,java.lang.String,long,char,int)>(116, 0.96573263F, 119, 117, "fgttpchpfyglxrqtoskdiuiiwkzypslfkscultpwcdcacwgiujesybhshirksobpbzyb", "bxkvjpzxwsdkwhcodxbrgcseayyhooneqrvrnxuiiwrupuvurexqgdjyzssev", 97L, 108, 14);
+        temp$33 = new test.hw1_500LOC6;
+        specialinvoke temp$33.<test.hw1_500LOC6: void <init>()>();
+        temp$34 = staticinvoke <test.hw1_500LOC18: short hw1_500LOC18method22(test.hw1_500LOC6,int,double,long,char,short,char,short,int)>(temp$33, 83, 0.08851642423845019, 62L, 115, 19239, 107, 25836, 78);
+        temp$35 = new test.hw1_500LOC4;
+        specialinvoke temp$35.<test.hw1_500LOC4: void <init>()>();
+        temp$36 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method23(java.lang.String,char,long,byte,float,test.hw1_500LOC4,long,float)>("eoznjviy", 107, 13L, -45, 0.3117336F, temp$35, 77L, 0.85804164F);
+        temp$37 = new test.hw1_500LOC15;
+        specialinvoke temp$37.<test.hw1_500LOC15: void <init>()>();
+        temp$38 = staticinvoke <test.hw1_500LOC18: char hw1_500LOC18method24(long,test.hw1_500LOC15,char,byte)>(3L, temp$37, 108, 106);
+        temp$39 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method25(short,long,float)>(26248, 16L, 0.24100989F);
+        temp$40 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method26(double,double,char,float,short,java.lang.String,long,float)>(0.2323872948105511, 0.8779798558856887, 112, 0.13682365F, 3149, "htwpdhafbiurbfzhnqanhlpzzukwemmwnvdjqgedupttban", 38L, 0.5897955F);
+        temp$41 = staticinvoke <test.hw1_500LOC18: java.lang.Object hw1_500LOC18method27(double,int,java.lang.String)>(0.013285800241228496, 70, "mvhkdftlfasvcxs");
+        temp$42 = new test.hw1_500LOC31;
+        specialinvoke temp$42.<test.hw1_500LOC31: void <init>()>();
+        temp$43 = new test.hw1_500LOC34;
+        specialinvoke temp$43.<test.hw1_500LOC34: void <init>()>();
+        temp$44 = virtualinvoke obj.<test.hw1_500LOC18: char hw1_500LOC18method28(java.lang.String,java.lang.String,int,test.hw1_500LOC31,short,short,test.hw1_500LOC34,long,byte)>("swyzrxmrhyygfahnaozubblngblkhffrkdmirvpgkxqstfvu", "mqvwtvnbpwpohfdsmauvhzjofpynqxlpbbxmbgrlsnpftbpcqtipfuargeifvnvbgusgtpityv", 85, temp$42, 25412, 5167, temp$43, 56L, 91);
+        temp$45 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method29(int,double,byte)>(72, 0.9413648214997326, -87);
+        temp$46 = virtualinvoke obj.<test.hw1_500LOC18: short hw1_500LOC18method30(char,float,char)>(109, 0.73580617F, 108);
+        temp$47 = staticinvoke <test.hw1_500LOC18: byte hw1_500LOC18method31(java.lang.String,float,long)>("syyznnuswkhibydxghyrmj", 0.5713587F, 43L);
+        temp$48 = virtualinvoke obj.<test.hw1_500LOC18: int hw1_500LOC18method32(int,byte,byte,byte,int,double,double)>(4, -3, -28, 4, 26, 0.06092853632822737, 0.06155577150174274);
+        temp$49 = new test.hw1_500LOC18;
+        specialinvoke temp$49.<test.hw1_500LOC18: void <init>()>();
+        temp$50 = virtualinvoke obj.<test.hw1_500LOC18: short hw1_500LOC18method33(double,short,test.hw1_500LOC18,short,short)>(0.7946975696363514, 30760, temp$49, 1754, 14168);
+        temp$51 = new test.hw1_500LOC12;
+        specialinvoke temp$51.<test.hw1_500LOC12: void <init>()>();
+        temp$52 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method34(int,short,java.lang.String,float,double,java.lang.String,test.hw1_500LOC12)>(87, 28546, "ocyxvjtzcnakldpexokbewqumdbfmpodxxyqoazexguuozxkagdkyjlojnuvrlsmwrguyovzjmjkm", 0.76401407F, 0.6780094668308938, "vkegejvdxqgodrizvfxaqiokbclkfdrulagtdewoajsmnvxgufdcvmrwqazfvudxihbbesjdsujkpdaytjvi", temp$51);
+        return;
+    }
+
+    public static void singleEntry(int, int, int, int, int, int, int, int, int, int)
+    {
+        int i0, i1, i2, i3, i4, i5, i6, i7, i8, i9, temp$4, temp$18, temp$23, temp$26, temp$28, temp$48;
+        test.hw1_500LOC18 obj, temp$0, temp$49;
+        double temp$1;
+        test.hw1_500LOC13 temp$2, temp$22;
+        long temp$3, temp$6, temp$7, temp$11, temp$24, temp$30, temp$40, temp$45, temp$52;
+        test.hw1_500LOC10 temp$5, temp$29;
+        float temp$8, temp$32;
+        byte temp$9, temp$17, temp$21, temp$47;
+        test.hw1_500LOC21 temp$10;
+        java.lang.String temp$12, temp$14, temp$20, temp$31, temp$36, temp$39;
+        test.hw1_500LOC34 temp$13, temp$43;
+        java.lang.Object temp$15, temp$41;
+        test.hw1_500LOC31 temp$16, temp$42;
+        test.hw1_500LOC26 temp$19;
+        test.hw1_500LOC24 temp$25;
+        test.hw1_500LOC30 temp$27;
+        test.hw1_500LOC6 temp$33;
+        short temp$34, temp$46, temp$50;
+        test.hw1_500LOC4 temp$35;
+        test.hw1_500LOC15 temp$37;
+        char temp$38, temp$44;
+        test.hw1_500LOC12 temp$51;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        i3 := @parameter3: int;
+        i4 := @parameter4: int;
+        i5 := @parameter5: int;
+        i6 := @parameter6: int;
+        i7 := @parameter7: int;
+        i8 := @parameter8: int;
+        i9 := @parameter9: int;
+        temp$0 = new test.hw1_500LOC18;
+        specialinvoke temp$0.<test.hw1_500LOC18: void <init>()>();
+        obj = temp$0;
+        temp$1 = virtualinvoke obj.<test.hw1_500LOC18: double hw1_500LOC18method0(float,java.lang.String,short,long,short,byte)>(0.5247964F, "mfibcyhctxnk", 24406, 43L, 31268, 96);
+        temp$2 = new test.hw1_500LOC13;
+        specialinvoke temp$2.<test.hw1_500LOC13: void <init>()>();
+        temp$3 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method1(short,test.hw1_500LOC13,float)>(30217, temp$2, 0.24844939F);
+        temp$4 = staticinvoke <test.hw1_500LOC18: int hw1_500LOC18method2(float,java.lang.String,double)>(0.95286316F, "hfqkwcwdjdbkhafkvkjfxusmppgbhrbrfsrdtilzgxgadvhoagthdspkasghecrjlqxvaxdycbwxuuizrxlepgpoubppqbiqutc", 0.4894347011353887);
+        temp$5 = new test.hw1_500LOC10;
+        specialinvoke temp$5.<test.hw1_500LOC10: void <init>()>();
+        temp$6 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method3(test.hw1_500LOC10,java.lang.String,long,java.lang.String)>(temp$5, "hszlptnneioibwusvdfwwzvirfenlcuoildlcxezlqaqtmo", 60L, "aksfywqzfyfydnzcozvlhosiqupwiqlekbhwijedqbgjzjorrrqvwuqwyisbqr");
+        temp$7 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method4(double,int,double)>(0.3386836452959816, i7, 0.5138370604502662);
+        temp$8 = virtualinvoke obj.<test.hw1_500LOC18: float hw1_500LOC18method5(char,int,java.lang.String,float)>(99, i8, "ildggmjfgpvtcenegwewaiekptobocfekcemibsevpuidm", 0.8981471F);
+        temp$9 = staticinvoke <test.hw1_500LOC18: byte hw1_500LOC18method6(java.lang.String,float,char)>("sonraldbmepwjnytntyelsgbixjzopiyzcnctehvdeowklnpyji", 0.5662013F, 115);
+        temp$10 = new test.hw1_500LOC21;
+        specialinvoke temp$10.<test.hw1_500LOC21: void <init>()>();
+        temp$11 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method7(double,float,long,test.hw1_500LOC21,double,byte)>(0.12107073491660747, 0.3369794F, 99L, temp$10, 0.6946785827984683, 67);
+        temp$12 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method8(short,int,java.lang.String)>(8893, i0, "mqxfcahfhdsyoallwdcsakxlmydrnokjkuzvnpvkdfjvknlmguhkrytstmpeje");
+        temp$13 = new test.hw1_500LOC34;
+        specialinvoke temp$13.<test.hw1_500LOC34: void <init>()>();
+        temp$14 = virtualinvoke obj.<test.hw1_500LOC18: java.lang.String hw1_500LOC18method9(char,short,test.hw1_500LOC34)>(120, 9355, temp$13);
+        temp$15 = staticinvoke <test.hw1_500LOC18: java.lang.Object hw1_500LOC18method10(int,char,java.lang.String)>(i0, 113, "cucdhpvdtgiglawvbuchirimxpxirosinljgepticcufmydlrk");
+        temp$16 = new test.hw1_500LOC31;
+        specialinvoke temp$16.<test.hw1_500LOC31: void <init>()>();
+        temp$17 = staticinvoke <test.hw1_500LOC18: byte hw1_500LOC18method11(long,test.hw1_500LOC31,java.lang.String,long)>(94L, temp$16, "mocbzdeqkmnkawfmjfncwhsenqkvanwcmbjizcukkqjqrno", 5L);
+        temp$18 = virtualinvoke obj.<test.hw1_500LOC18: int hw1_500LOC18method12(float,double,char)>(0.6675019F, 0.5191434905691005, 107);
+        temp$19 = new test.hw1_500LOC26;
+        specialinvoke temp$19.<test.hw1_500LOC26: void <init>()>();
+        temp$20 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method13(short,float,float,float,test.hw1_500LOC26,float)>(6804, 0.2401157F, 0.77154505F, 0.94034386F, temp$19, 0.35822868F);
+        temp$21 = virtualinvoke obj.<test.hw1_500LOC18: byte hw1_500LOC18method14(double,float,long)>(0.13199365010380482, 0.17651415F, 90L);
+        temp$22 = new test.hw1_500LOC13;
+        specialinvoke temp$22.<test.hw1_500LOC13: void <init>()>();
+        temp$23 = virtualinvoke obj.<test.hw1_500LOC18: int hw1_500LOC18method15(java.lang.String,test.hw1_500LOC13,int)>("cmzjvujwdwqjfkxiunlvbpdujqnhwbawqzvwvmzfdvshnqhochqpmjvmbnsdzufexezyfmnqwxshjqoqz", temp$22, i4);
+        temp$24 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method16(double,char,java.lang.String,long,double)>(0.24602314039852602, 109, "phaagatypg", 62L, 0.6307724201139973);
+        temp$25 = new test.hw1_500LOC24;
+        specialinvoke temp$25.<test.hw1_500LOC24: void <init>()>();
+        temp$26 = staticinvoke <test.hw1_500LOC18: int hw1_500LOC18method17(int,short,int,test.hw1_500LOC24,long)>(i0, 4100, i3, temp$25, 45L);
+        temp$27 = new test.hw1_500LOC30;
+        specialinvoke temp$27.<test.hw1_500LOC30: void <init>()>();
+        temp$28 = staticinvoke <test.hw1_500LOC18: int hw1_500LOC18method18(byte,long,test.hw1_500LOC30)>(90, 31L, temp$27);
+        temp$29 = new test.hw1_500LOC10;
+        specialinvoke temp$29.<test.hw1_500LOC10: void <init>()>();
+        temp$30 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method19(char,char,long,short,char,java.lang.String,float,test.hw1_500LOC10)>(117, 97, 63L, 16203, 109, "ktqfecxhbayaqayhbnlhgfwdenzfztvomgwdxwezywanxmyhrhhfcwmbxjfcpfxzcpumrymhzgkekvztkvcpzxvitoohm", 0.78447723F, temp$29);
+        temp$31 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method20(double,char,int)>(0.915258743805585, 106, i2);
+        temp$32 = virtualinvoke obj.<test.hw1_500LOC18: float hw1_500LOC18method21(char,float,char,char,java.lang.String,java.lang.String,long,char,int)>(106, 0.96202976F, 100, 104, "mpwttzfh", "sqryscowvbxxm", 72L, 108, i0);
+        temp$33 = new test.hw1_500LOC6;
+        specialinvoke temp$33.<test.hw1_500LOC6: void <init>()>();
+        temp$34 = staticinvoke <test.hw1_500LOC18: short hw1_500LOC18method22(test.hw1_500LOC6,int,double,long,char,short,char,short,int)>(temp$33, i1, 0.03325997381622903, 47L, 120, 25342, 118, 20397, i0);
+        temp$35 = new test.hw1_500LOC4;
+        specialinvoke temp$35.<test.hw1_500LOC4: void <init>()>();
+        temp$36 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method23(java.lang.String,char,long,byte,float,test.hw1_500LOC4,long,float)>("opdxzazzuxnrbcpqkfpxrutdvedfsodszkefmhxdqcytggftlyqgpfxzmpghdq", 121, 51L, 108, 0.86562806F, temp$35, 5L, 0.6851891F);
+        temp$37 = new test.hw1_500LOC15;
+        specialinvoke temp$37.<test.hw1_500LOC15: void <init>()>();
+        temp$38 = staticinvoke <test.hw1_500LOC18: char hw1_500LOC18method24(long,test.hw1_500LOC15,char,byte)>(71L, temp$37, 120, 75);
+        temp$39 = staticinvoke <test.hw1_500LOC18: java.lang.String hw1_500LOC18method25(short,long,float)>(21606, 44L, 0.9586577F);
+        temp$40 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method26(double,double,char,float,short,java.lang.String,long,float)>(0.2203236361074805, 0.47025845039153236, 122, 0.7858396F, 23409, "knzrcdxhruzdwqawronkwjbqjzvf", 80L, 0.96952814F);
+        temp$41 = staticinvoke <test.hw1_500LOC18: java.lang.Object hw1_500LOC18method27(double,int,java.lang.String)>(0.41930486630122565, i8, "yxdnchwdpxauddugt");
+        temp$42 = new test.hw1_500LOC31;
+        specialinvoke temp$42.<test.hw1_500LOC31: void <init>()>();
+        temp$43 = new test.hw1_500LOC34;
+        specialinvoke temp$43.<test.hw1_500LOC34: void <init>()>();
+        temp$44 = virtualinvoke obj.<test.hw1_500LOC18: char hw1_500LOC18method28(java.lang.String,java.lang.String,int,test.hw1_500LOC31,short,short,test.hw1_500LOC34,long,byte)>("scvclemgijllgiqzenqiecahfumhlqrbmovblnspvjtbtojgqlhdwksklqwdku", "mbigzaejvahnhtrakjrosspscaklxzqahjsosqvgbuqvoxnwrtmfohkpupbbtdewfni", i6, temp$42, 17129, 9561, temp$43, 68L, 14);
+        temp$45 = staticinvoke <test.hw1_500LOC18: long hw1_500LOC18method29(int,double,byte)>(i6, 0.24479220568025095, 38);
+        temp$46 = virtualinvoke obj.<test.hw1_500LOC18: short hw1_500LOC18method30(char,float,char)>(118, 0.85210997F, 106);
+        temp$47 = staticinvoke <test.hw1_500LOC18: byte hw1_500LOC18method31(java.lang.String,float,long)>("workwhqpyvmiyioedzialvmqpeefmzzdlfnr", 0.21892464F, 31L);
+        temp$48 = virtualinvoke obj.<test.hw1_500LOC18: int hw1_500LOC18method32(int,byte,byte,byte,int,double,double)>(i3, -21, -62, 126, i8, 0.3830484422104917, 0.18795750620833818);
+        temp$49 = new test.hw1_500LOC18;
+        specialinvoke temp$49.<test.hw1_500LOC18: void <init>()>();
+        temp$50 = virtualinvoke obj.<test.hw1_500LOC18: short hw1_500LOC18method33(double,short,test.hw1_500LOC18,short,short)>(0.7017761690718232, 25874, temp$49, 7890, 31807);
+        temp$51 = new test.hw1_500LOC12;
+        specialinvoke temp$51.<test.hw1_500LOC12: void <init>()>();
+        temp$52 = virtualinvoke obj.<test.hw1_500LOC18: long hw1_500LOC18method34(int,short,java.lang.String,float,double,java.lang.String,test.hw1_500LOC12)>(i6, 24489, "leidechdbvilwnduzfmbaiszpgpxmoyufxzqsxjqdxbjhvvzlrewxglvcxmfjhlcye", 0.47527874F, 0.5101307117664519, "ilosuihgqxzsm", temp$51);
+        return;
+    }
+
+    public void <init>()
+    {
+        test.hw1_500LOC18 this;
+
+        this := @this: test.hw1_500LOC18;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

@@ -1,0 +1,20 @@
+t = 0:.01:1;
+f = @(ti, j) (j-1) * (j-2) * ti^(j-3) + (pi^2/4) * ti^(j-1);
+coeffs = final_collocation([0 1], -1, 2, f, 8);
+w8 = nest(7, coeffs, t);
+coeffs = final_collocation([0 1], -1, 2, f, 16);
+w16 = nest(15, coeffs, t);
+y = -cos(pi/2 .* t) + 2 * sin(pi/2 .* t);
+plot(t, y, '-', t, w8, 'x', t, w16, '+')
+semilogx(t, abs(y - w8), 'x', t, abs(y - w16), '+');
+semilogy(t, abs(y - w8), 'x', t, abs(y - w16), '+');
+f = @(ti, j) (j-1) * (j-2) * ti^(j-3) - (j-1) * ti^(j-2) - 2 * ti^(j-1);
+coeffs = final_collocation([0 2], -1, 3*exp(4) - 4*exp(-2), f, 8);
+w8 = nest(7, coeffs, t);
+coeffs = final_collocation([0 2], -1, 3*exp(4) - 4*exp(-2), f, 16);
+w16 = nest(15, coeffs, t);
+plot(t, y, '-', t, w8, 'x', t, w16, '+')
+y = 3 * exp(2 .* t) - 4 * exp(-t);
+plot(t, y, '-', t, w8, 'x', t, w16, '+')
+semilogy(t, abs(y - w8), 'x', t, abs(y - w16), '+');
+diary off

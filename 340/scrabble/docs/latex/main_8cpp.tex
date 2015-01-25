@@ -1,0 +1,111 @@
+\hypertarget{main_8cpp}{\section{Scrabble/main.cpp File Reference}
+\label{main_8cpp}\index{Scrabble/main.\-cpp@{Scrabble/main.\-cpp}}
+}
+{\ttfamily \#include $<$Q\-Application$>$}\\*
+{\ttfamily \#include $<$Q\-Debug$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$qscreen.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}dictionaryloader.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}humanplayer.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$Q\-Layout$>$}\\*
+{\ttfamily \#include $<$Q\-Push\-Button$>$}\\*
+{\ttfamily \#include $<$Q\-String$>$}\\*
+{\ttfamily \#include $<$Q\-Splitter$>$}\\*
+{\ttfamily \#include $<$Q\-Dock\-Widget$>$}\\*
+{\ttfamily \#include \char`\"{}dialog.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Unit\-Test.\-cpp\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em main Main \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \hyperlink{main_8cpp_a94b2b3683b77a25673da9c79a6e00160}{U\-N\-I\-T\-T\-E\-S\-T} = false
+\item 
+static const int \hyperlink{main_8cpp_ace32d8fe826ab9598e69afbf5ba01605}{X\-S\-I\-Z\-E} = 700
+\item 
+static const int \hyperlink{main_8cpp_ad232391ce8fa869d9df10a8faff06c49}{Y\-S\-I\-Z\-E} = 700
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{main.\-cpp@{main.\-cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+main Main 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The argument count \\
+\hline
+{\em argv} & The argument values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if no errors 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file main.\-cpp.
+
+
+
+References Unit\-Test\-::runalltests(), and U\-N\-I\-T\-T\-E\-S\-T.
+
+
+\begin{DoxyCode}
+30 \{
+31     \textcolor{comment}{// Run unit tests}
+32     \textcolor{keywordflow}{if}( \hyperlink{main_8cpp_a94b2b3683b77a25673da9c79a6e00160}{UNITTEST} == \textcolor{keyword}{true} )
+33     \{
+34         \hyperlink{class_unit_test}{UnitTest} * tester = \textcolor{keyword}{new} \hyperlink{class_unit_test}{UnitTest}();
+35         tester->\hyperlink{class_unit_test_a72c0f15a7dcecdec8eb882f861e784e2}{runalltests}();
+36         \textcolor{keyword}{delete} tester;
+37     \}
+38 
+39     \textcolor{comment}{// Run the application}
+40     QApplication a(argc, argv);
+41     \hyperlink{class_dialog}{Dialog} *dialog = \textcolor{keyword}{new} \hyperlink{class_dialog}{Dialog};
+42     dialog->show();
+43 
+44     \textcolor{keywordflow}{return} a.exec();
+45 \}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_a94b2b3683b77a25673da9c79a6e00160}{\index{main.\-cpp@{main.\-cpp}!U\-N\-I\-T\-T\-E\-S\-T@{U\-N\-I\-T\-T\-E\-S\-T}}
+\index{U\-N\-I\-T\-T\-E\-S\-T@{U\-N\-I\-T\-T\-E\-S\-T}!main.cpp@{main.\-cpp}}
+\subsubsection[{U\-N\-I\-T\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}const bool U\-N\-I\-T\-T\-E\-S\-T = false\hspace{0.3cm}{\ttfamily [static]}}}\label{main_8cpp_a94b2b3683b77a25673da9c79a6e00160}
+
+
+Definition at line 16 of file main.\-cpp.
+
+
+
+Referenced by main().
+
+\hypertarget{main_8cpp_ace32d8fe826ab9598e69afbf5ba01605}{\index{main.\-cpp@{main.\-cpp}!X\-S\-I\-Z\-E@{X\-S\-I\-Z\-E}}
+\index{X\-S\-I\-Z\-E@{X\-S\-I\-Z\-E}!main.cpp@{main.\-cpp}}
+\subsubsection[{X\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int X\-S\-I\-Z\-E = 700\hspace{0.3cm}{\ttfamily [static]}}}\label{main_8cpp_ace32d8fe826ab9598e69afbf5ba01605}
+
+
+Definition at line 20 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ad232391ce8fa869d9df10a8faff06c49}{\index{main.\-cpp@{main.\-cpp}!Y\-S\-I\-Z\-E@{Y\-S\-I\-Z\-E}}
+\index{Y\-S\-I\-Z\-E@{Y\-S\-I\-Z\-E}!main.cpp@{main.\-cpp}}
+\subsubsection[{Y\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int Y\-S\-I\-Z\-E = 700\hspace{0.3cm}{\ttfamily [static]}}}\label{main_8cpp_ad232391ce8fa869d9df10a8faff06c49}
+
+
+Definition at line 21 of file main.\-cpp.
+

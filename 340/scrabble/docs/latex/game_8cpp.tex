@@ -1,0 +1,52 @@
+\hypertarget{game_8cpp}{\section{Scrabble/game.cpp File Reference}
+\label{game_8cpp}\index{Scrabble/game.\-cpp@{Scrabble/game.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}game.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}aiplayer.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{game_8cpp_a41c0344e76853337b335ed0cb6df12ec}{operator$<$$<$} (ostream \&os, const \hyperlink{class_game}{Game} \&game)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloading the $<$$<$ operator for debugging information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{game_8cpp_a41c0344e76853337b335ed0cb6df12ec}{\index{game.\-cpp@{game.\-cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!game.cpp@{game.\-cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Game} \&}]{game}
+\end{DoxyParamCaption}
+)}}\label{game_8cpp_a41c0344e76853337b335ed0cb6df12ec}
+
+
+operator $<$$<$ Overloading the $<$$<$ operator for debugging information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+{\em game} & The game object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file game.\-cpp.
+
+
+
+References Board\-::get\-Board(), and Game\-::num\-Players.
+
+
+\begin{DoxyCode}
+90                                                    \{
+91     os << \textcolor{stringliteral}{"This is a "} << game.\hyperlink{class_game_a7c03c2f209dfde4ef01c739b050159f6}{numPlayers} << \textcolor{stringliteral}{" player game."} << endl;
+92     os << *(\hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}());
+93     \textcolor{keywordflow}{return} os;
+94 \}
+\end{DoxyCode}

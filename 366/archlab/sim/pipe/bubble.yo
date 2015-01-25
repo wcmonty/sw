@@ -1,0 +1,108 @@
+                      | /* $begin bubble-solve-ys */
+                      | # Execution begins at address 0
+  0x000:              | 	.pos 0			#
+  0x000: 30f400100000 | init:	irmovl Stack, %esp  	# Set up Stack pointer  
+  0x006: 30f500100000 | 	irmovl Stack, %ebp  	# Set up base pointer   
+  0x00c: 70b8000000   | 	jmp Main		# Execute main program
+                      | 
+                      | # Array of 6 elements
+  0x014:              | 	.align 4 	
+  0x014: dddd0000     | array:	.long 0xdddd		# These values should get sorted
+  0x018: eeee0000     | 		.long 0xeeee
+  0x01c: bbbb0000     | 		.long 0xbbbb
+  0x020: aaaa0000     | 		.long 0xaaaa
+  0x024: ffff0000     | 		.long 0xffff
+  0x028: cccc0000     | 		.long 0xcccc
+  0x02c: d0dd0000     | 		.long 0xddd0		
+  0x030: e0ee0000     | 		.long 0xeee0
+  0x034: b0bb0000     | 		.long 0xbbb0
+  0x038: a0aa0000     | 		.long 0xaaa0
+  0x03c: d1dd0000     | 		.long 0xddd1		# These values should get sorted
+  0x040: e1ee0000     | 		.long 0xeee1
+  0x044: b1bb0000     | 		.long 0xbbb1
+  0x048: a1aa0000     | 		.long 0xaaa1
+  0x04c: f1ff0000     | 		.long 0xfff1
+  0x050: c1cc0000     | 		.long 0xccc1
+  0x054: d2dd0000     | 		.long 0xddd2		
+  0x058: e2ee0000     | 		.long 0xeee2
+  0x05c: b2bb0000     | 		.long 0xbbb2
+  0x060: a2aa0000     | 		.long 0xaaa2
+  0x064: d3dd0000     | 		.long 0xddd3		# These values should get sorted
+  0x068: e3ee0000     | 		.long 0xeee3
+  0x06c: b3bb0000     | 		.long 0xbbb3
+  0x070: a3aa0000     | 		.long 0xaaa3
+  0x074: f3ff0000     | 		.long 0xfff3
+  0x078: c3cc0000     | 		.long 0xccc3
+  0x07c: d4dd0000     | 		.long 0xddd4		
+  0x080: e4ee0000     | 		.long 0xeee4
+  0x084: b4bb0000     | 		.long 0xbbb4
+  0x088: a4aa0000     | 		.long 0xaaa4
+  0x08c: d5dd0000     | 		.long 0xddd5		# These values should get sorted
+  0x090: e5ee0000     | 		.long 0xeee5
+  0x094: b5bb0000     | 		.long 0xbbb5
+  0x098: a5aa0000     | 		.long 0xaaa5
+  0x09c: f5ff0000     | 		.long 0xfff5
+  0x0a0: c5cc0000     | 		.long 0xccc5
+  0x0a4: d6dd0000     | 		.long 0xddd6		
+  0x0a8: e6ee0000     | 		.long 0xeee6
+  0x0ac: b6bb0000     | 		.long 0xbbb6
+  0x0b0: a6aa0000     | 		.long 0xaaa6
+  0x0b4: 01010000     | 		.long 0x0101		# This value should not change
+                      | 
+  0x0b8: 30f028000000 | Main:	irmovl $40,%eax	
+  0x0be: a00f         | 	pushl %eax		# Push 6
+  0x0c0: 30f214000000 | 	irmovl array,%edx
+  0x0c6: a02f         | 	pushl %edx      	# Push array
+  0x0c8: 80ce000000   | 	call Bubble		# Bubble(array, 6)
+  0x0cd: 00           | 	halt		
+                      | 
+                      | # void Bubble(int *data, int count)
+  0x0ce: a05f         | Bubble:	pushl %ebp
+  0x0d0: 2045         | 	rrmovl %esp,%ebp
+  0x0d2: a03f         | 	pushl %ebx		# Save registers
+  0x0d4: a06f         | 	pushl %esi
+  0x0d6: a07f         | 	pushl %edi
+  0x0d8: 501508000000 | 	mrmovl 8(%ebp),%ecx 	# ecx = data
+  0x0de: 50250c000000 | 	mrmovl 12(%ebp),%edx	# edx = count
+  0x0e4: 6022         | 	addl %edx,%edx
+  0x0e6: 6022         | 	addl %edx,%edx		# count *= 4;
+  0x0e8: 30f004000000 | 	irmovl $4,%eax		
+  0x0ee: 6102         | 	subl %eax,%edx		# count -= 4;
+  0x0f0: 6012         | 	addl %ecx,%edx		# edx = p_end
+  0x0f2: 2010         | 	rrmovl %ecx,%eax	
+  0x0f4: 6120         | 	subl %edx,%eax		# data - p_end
+  0x0f6: 7540010000   | 	jge Done
+  0x0fb: 2013         | Loop1:	rrmovl %ecx,%ebx	# p = data
+  0x0fd: 507300000000 | Loop2:	mrmovl (%ebx),%edi	# r = *p
+  0x103: 506304000000 | 	mrmovl 4(%ebx),%esi	# s = *(p+1)
+  0x109: 2060         | 	rrmovl %esi,%eax
+                      | /* $begin bubble-swap-ys */
+  0x10b: 6170         | 	subl %edi,%eax		# s-r
+  0x10d: 751e010000   | 	jge Skip		# Skip if s >= r
+  0x112: 406300000000 | 	rmmovl %esi,(%ebx)	# *p = s
+  0x118: 407304000000 | 	rmmovl %edi,4(%ebx)	# *(p+1) = r
+  0x11e:              | Skip:
+                      | /* $end bubble-swap-ys */
+  0x11e: 30f004000000 | 	irmovl $4,%eax
+  0x124: 6003         | 	addl %eax,%ebx		# p++
+  0x126: 2030         | 	rrmovl %ebx,%eax
+  0x128: 6120         | 	subl %edx,%eax		# p - p_end
+  0x12a: 72fd000000   | 	jl Loop2
+  0x12f: 30f004000000 | 	irmovl $4,%eax
+  0x135: 6102         | 	subl %eax,%edx		# p_end--
+  0x137: 2010         | 	rrmovl %ecx,%eax
+  0x139: 6120         | 	subl %edx,%eax		# data - p_end
+  0x13b: 72fb000000   | 	jl Loop1
+  0x140:              | Done:
+  0x140: b07f         | 	popl %edi		# Restore registers
+  0x142: b06f         | 	popl %esi
+  0x144: b03f         | 	popl %ebx
+  0x146: 2054         | 	rrmovl %ebp,%esp
+  0x148: b05f         | 	popl %ebp
+  0x14a: 90           | 	ret
+                      | 
+  0x000:              | 	.pos 0x1000		
+  0x000:              | Stack:	# The stack goes here and grows to lower addresses
+                      | /* $end bubble-solve-ys */
+                      | 
+                      | 

@@ -1,0 +1,27 @@
+fun71c2b(-100)
+
+ans =
+
+  -26.5179
+
+fun71c2b(-50)
+
+ans =
+
+    6.8395
+
+sstar = fzero(@fun71c2b, [-100, -50])
+
+sstar =
+
+  -60.2507
+
+fun71c2b(sstar)
+
+ans =
+
+  -7.9936e-15
+
+[ts, ys] = ode45(@(t, y) ([y(2); 3*y(1) - 2*y(2)]) , [0, 1], [exp(3), sstar]);
+plot(ts, ys(:,1))
+diary off

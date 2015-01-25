@@ -1,0 +1,15 @@
+/**
+\mainpage Homework 2 Documentation
+
+\author William Montgomery
+\copyright None
+\par University of Illinois at Chicago
+\par  CS 385 - Operating Systems
+\par Fall 2013
+\section Information
+\par IPC & Synchronization are two inter-related programs that mimic concurrent access to shared resources.
+\par The first program, master, first creates a list of floating point numbers.  These numbers are piped to the sort program and read back into a buffer.  Master created a message queue, shared memory location, and a set of semaphores, if applicable.  For each of the sorted numbers a separate program, worker, is forked and exec'ed, passing along ids to the shared resources. 
+\par The workers then read and write to the shared memory, sleeping in between successive reads or read/writes.  In this way, the workers simulate conflicts that arise while reading and writing to shared memory.  On each read error, a message is sent in the message queue.
+\par After the workers complete, the master prints out all of the error messages sent by then workers and then reads the shared memory location.  If errors are detected, the error is output to standard out.
+\par A makefile is included.  The programs can be built by entering `make` at the command line.   
+*/

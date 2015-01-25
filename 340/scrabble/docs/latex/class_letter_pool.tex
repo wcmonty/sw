@@ -1,0 +1,304 @@
+\hypertarget{class_letter_pool}{\section{Letter\-Pool Class Reference}
+\label{class_letter_pool}\index{Letter\-Pool@{Letter\-Pool}}
+}
+
+
+The \hyperlink{class_letter_pool}{Letter\-Pool} class Holds the letters not already in play.  
+
+
+
+
+{\ttfamily \#include $<$letterpool.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_letter_pool_a23cf1ae898b12849f662851da3ea2b87}{Letter\-Pool} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_pool}{Letter\-Pool} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_letter_pool_a5299eb1a1857df503273ad34f8667a05}{$\sim$\-Letter\-Pool} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_pool}{Letter\-Pool} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_letter_pool_acf36848e6c23f40de9b98f43755d586c}{get\-Random\-Letter} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_pool_acf36848e6c23f40de9b98f43755d586c}{Letter\-Pool\-::get\-Random\-Letter()} returns a random letter from the pool, removing it from the pool. \end{DoxyCompactList}\item 
+bool \hyperlink{class_letter_pool_a47817d0343b330f2c6f3413288de69b2}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_pool_a47817d0343b330f2c6f3413288de69b2}{Letter\-Pool\-::is\-Empty}, checks if the letter pool has letters left. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_letter_pool_af309778440b4a1a3dd55e152b581a191}{remove\-From\-Pool} (int)
+\begin{DoxyCompactList}\small\item\em Letter\-::remove\-From\-Pool, removes a single letter from the letter vector. \end{DoxyCompactList}\item 
+bool \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{add\-Letters} (char, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{Letter\-Pool\-::add\-Letters()} adds characters to the letter pool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Vector$<$ \hyperlink{class_letter}{Letter} $\ast$ $>$ \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\-\_\-vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_letter_pool}{Letter\-Pool} class Holds the letters not already in play. 
+
+Definition at line 14 of file letterpool.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_letter_pool_a23cf1ae898b12849f662851da3ea2b87}{\index{Letter\-Pool@{Letter\-Pool}!Letter\-Pool@{Letter\-Pool}}
+\index{Letter\-Pool@{Letter\-Pool}!LetterPool@{Letter\-Pool}}
+\subsubsection[{Letter\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}Letter\-Pool\-::\-Letter\-Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_pool_a23cf1ae898b12849f662851da3ea2b87}
+
+
+\hyperlink{class_letter_pool}{Letter\-Pool} Constructor. 
+
+
+
+Definition at line 7 of file letterpool.\-cpp.
+
+
+
+References add\-Letters(), and letter\-\_\-vector.
+
+
+\begin{DoxyCode}
+8 \{
+9     srand (time(NULL));
+10 
+11     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'a'},9);
+12     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'b'},2);
+13     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'c'},2);
+14     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'d'},4);
+15     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'e'},12);
+16     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'f'},2);
+17     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'g'},3);
+18     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'h'},2);
+19     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'i'},9);
+20     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'j'},1);
+21     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'k'},1);
+22     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'l'},4);
+23     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'m'},2);
+24     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'n'},6);
+25     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'o'},8);
+26     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'p'},2);
+27     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'q'},1);
+28     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'r'},6);
+29     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'s'},4);
+30     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'t'},6);
+31     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'u'},4);
+32     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'v'},2);
+33     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'w'},2);
+34     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'x'},1);
+35     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'y'},2);
+36     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{'z'},1);
+37     \hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{addLetters}(\textcolor{charliteral}{' '},2);
+38 
+39     \textcolor{keywordflow}{if} (\hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.size() != 100)\{
+40         cout << \textcolor{stringliteral}{"Invalid Letter Pool Construction. Letter count: "}
+41              << \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.size() << endl;
+42     \}
+43 \}
+\end{DoxyCode}
+\hypertarget{class_letter_pool_a5299eb1a1857df503273ad34f8667a05}{\index{Letter\-Pool@{Letter\-Pool}!$\sim$\-Letter\-Pool@{$\sim$\-Letter\-Pool}}
+\index{$\sim$\-Letter\-Pool@{$\sim$\-Letter\-Pool}!LetterPool@{Letter\-Pool}}
+\subsubsection[{$\sim$\-Letter\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}Letter\-Pool\-::$\sim$\-Letter\-Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_pool_a5299eb1a1857df503273ad34f8667a05}
+
+
+\hyperlink{class_letter_pool}{Letter\-Pool} Destructor. 
+
+
+
+Definition at line 48 of file letterpool.\-cpp.
+
+
+
+References letter\-\_\-vector.
+
+
+\begin{DoxyCode}
+49 \{
+50     \textcolor{keywordflow}{while}(!\hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.empty())\{
+51         \textcolor{keyword}{delete} \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.back();
+52         \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.pop\_back();
+53     \}
+54 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{\index{Letter\-Pool@{Letter\-Pool}!add\-Letters@{add\-Letters}}
+\index{add\-Letters@{add\-Letters}!LetterPool@{Letter\-Pool}}
+\subsubsection[{add\-Letters}]{\setlength{\rightskip}{0pt plus 5cm}bool Letter\-Pool\-::add\-Letters (
+\begin{DoxyParamCaption}
+\item[{char}]{letter, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}
+
+
+\hyperlink{class_letter_pool_ab5f70f2d9c591f3a804f655ef5ba18de}{Letter\-Pool\-::add\-Letters()} adds characters to the letter pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & what letter to add \\
+\hline
+{\em count} & The count of letters to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if addition was succesful 
+\end{DoxyReturn}
+
+
+Definition at line 71 of file letterpool.\-cpp.
+
+
+
+References letter\-\_\-vector.
+
+
+
+Referenced by Letter\-Pool().
+
+
+\begin{DoxyCode}
+72 \{
+73     \hyperlink{class_letter}{Letter} *temp;
+74 
+75     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < count; i++)\{
+76         temp = \textcolor{keyword}{new} \hyperlink{class_letter}{Letter}(letter);
+77         \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.push\_back(temp);
+78     \}
+79     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+80 \}
+\end{DoxyCode}
+\hypertarget{class_letter_pool_acf36848e6c23f40de9b98f43755d586c}{\index{Letter\-Pool@{Letter\-Pool}!get\-Random\-Letter@{get\-Random\-Letter}}
+\index{get\-Random\-Letter@{get\-Random\-Letter}!LetterPool@{Letter\-Pool}}
+\subsubsection[{get\-Random\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter} $\ast$ Letter\-Pool\-::get\-Random\-Letter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_pool_acf36848e6c23f40de9b98f43755d586c}
+
+
+\hyperlink{class_letter_pool_acf36848e6c23f40de9b98f43755d586c}{Letter\-Pool\-::get\-Random\-Letter()} returns a random letter from the pool, removing it from the pool. 
+
+\begin{DoxyReturn}{Returns}
+Letter$\ast$ to the random letter 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file letterpool.\-cpp.
+
+
+
+References letter\-\_\-vector, and remove\-From\-Pool().
+
+
+
+Referenced by Player\-::fill\-Letters().
+
+
+\begin{DoxyCode}
+88 \{
+89     \textcolor{keywordflow}{return} \hyperlink{class_letter_pool_af309778440b4a1a3dd55e152b581a191}{removeFromPool}( rand() % \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.size());
+90 \}
+\end{DoxyCode}
+\hypertarget{class_letter_pool_a47817d0343b330f2c6f3413288de69b2}{\index{Letter\-Pool@{Letter\-Pool}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!LetterPool@{Letter\-Pool}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Letter\-Pool\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_pool_a47817d0343b330f2c6f3413288de69b2}
+
+
+\hyperlink{class_letter_pool_a47817d0343b330f2c6f3413288de69b2}{Letter\-Pool\-::is\-Empty}, checks if the letter pool has letters left. 
+
+\begin{DoxyReturn}{Returns}
+True if the letter pool is empty 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file letterpool.\-cpp.
+
+
+
+References letter\-\_\-vector.
+
+
+
+Referenced by Player\-::fill\-Letters().
+
+
+\begin{DoxyCode}
+61 \{
+62     \textcolor{keywordflow}{return} \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.isEmpty();
+63 \}
+\end{DoxyCode}
+\hypertarget{class_letter_pool_af309778440b4a1a3dd55e152b581a191}{\index{Letter\-Pool@{Letter\-Pool}!remove\-From\-Pool@{remove\-From\-Pool}}
+\index{remove\-From\-Pool@{remove\-From\-Pool}!LetterPool@{Letter\-Pool}}
+\subsubsection[{remove\-From\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter} $\ast$ Letter\-Pool\-::remove\-From\-Pool (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_letter_pool_af309778440b4a1a3dd55e152b581a191}
+
+
+Letter\-::remove\-From\-Pool, removes a single letter from the letter vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of the letter to be removed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Letter$\ast$ to the removed letter 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file letterpool.\-cpp.
+
+
+
+References letter\-\_\-vector.
+
+
+
+Referenced by get\-Random\-Letter().
+
+
+\begin{DoxyCode}
+98 \{
+99     \hyperlink{class_letter}{Letter}* temp = \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}[i];
+100     \hyperlink{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{letter\_vector}.remove(i);
+101 
+102     \textcolor{keywordflow}{return} temp;
+103 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_letter_pool_adf2e3694f252f16776acad92c95834c7}{\index{Letter\-Pool@{Letter\-Pool}!letter\-\_\-vector@{letter\-\_\-vector}}
+\index{letter\-\_\-vector@{letter\-\_\-vector}!LetterPool@{Letter\-Pool}}
+\subsubsection[{letter\-\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<${\bf Letter}$\ast$$>$ Letter\-Pool\-::letter\-\_\-vector\hspace{0.3cm}{\ttfamily [private]}}}\label{class_letter_pool_adf2e3694f252f16776acad92c95834c7}
+The holder for the Letters 
+
+Definition at line 18 of file letterpool.\-h.
+
+
+
+Referenced by add\-Letters(), get\-Random\-Letter(), is\-Empty(), Letter\-Pool(), remove\-From\-Pool(), and $\sim$\-Letter\-Pool().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{letterpool_8h}{letterpool.\-h}\item 
+Scrabble/\hyperlink{letterpool_8cpp}{letterpool.\-cpp}\end{DoxyCompactItemize}

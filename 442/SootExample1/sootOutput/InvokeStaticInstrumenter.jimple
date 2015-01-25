@@ -1,0 +1,188 @@
+public class InvokeStaticInstrumenter extends soot.BodyTransformer
+{
+    static soot.SootClass counterClass;
+    static soot.SootMethod increaseCounter;
+    static soot.SootMethod reportCounter;
+
+    static void <clinit>()
+    {
+        soot.Scene temp$0;
+        soot.SootClass temp$1, temp$2, temp$4;
+        soot.SootMethod temp$3, temp$5;
+
+        temp$0 = staticinvoke <soot.Scene: soot.Scene v()>();
+        temp$1 = virtualinvoke temp$0.<soot.Scene: soot.SootClass loadClassAndSupport(java.lang.String)>("MyCounter");
+        <InvokeStaticInstrumenter: soot.SootClass counterClass> = temp$1;
+        temp$2 = <InvokeStaticInstrumenter: soot.SootClass counterClass>;
+        temp$3 = virtualinvoke temp$2.<soot.SootClass: soot.SootMethod getMethod(java.lang.String)>("void increase(int)");
+        <InvokeStaticInstrumenter: soot.SootMethod increaseCounter> = temp$3;
+        temp$4 = <InvokeStaticInstrumenter: soot.SootClass counterClass>;
+        temp$5 = virtualinvoke temp$4.<soot.SootClass: soot.SootMethod getMethod(java.lang.String)>("void report()");
+        <InvokeStaticInstrumenter: soot.SootMethod reportCounter> = temp$5;
+        return;
+    }
+
+    protected void internalTransform(soot.Body, java.lang.String, java.util.Map)
+    {
+        InvokeStaticInstrumenter this;
+        soot.Body body;
+        java.lang.String phase, temp$3, temp$4, signature, temp$20;
+        java.util.Map options;
+        soot.SootMethod method, temp$0, temp$13, temp$28;
+        java.io.PrintStream temp$1;
+        java.lang.StringBuffer temp$2;
+        soot.util.Chain units;
+        soot.PatchingChain temp$5;
+        java.util.Iterator stmtIt, temp$6, temp$22;
+        boolean temp$7, temp$9, temp$11, isMain, temp$21, temp$23, temp$25, temp$26;
+        soot.jimple.Stmt stmt, incStmt, stmt, reportStmt;
+        java.lang.Object temp$8, temp$24;
+        soot.jimple.InvokeExpr expr, temp$10, incExpr, reportExpr;
+        soot.jimple.Jimple temp$12, temp$18, temp$27, temp$31;
+        soot.SootMethodRef temp$14, temp$29;
+        soot.Value[] temp$15;
+        soot.jimple.IntConstant temp$16;
+        soot.jimple.StaticInvokeExpr temp$17, temp$30;
+        soot.jimple.InvokeStmt temp$19, temp$32;
+
+        this := @this: InvokeStaticInstrumenter;
+        body := @parameter0: soot.Body;
+        phase := @parameter1: java.lang.String;
+        options := @parameter2: java.util.Map;
+        temp$0 = virtualinvoke body.<soot.Body: soot.SootMethod getMethod()>();
+        method = temp$0;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        temp$2 = new java.lang.StringBuffer;
+        specialinvoke temp$2.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("instrumenting method : ");
+        temp$3 = virtualinvoke method.<soot.SootMethod: java.lang.String getSignature()>();
+        virtualinvoke temp$2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$3);
+        temp$4 = virtualinvoke temp$2.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>(temp$4);
+        temp$5 = virtualinvoke body.<soot.Body: soot.PatchingChain getUnits()>();
+        units = temp$5;
+        temp$6 = interfaceinvoke units.<soot.util.Chain: java.util.Iterator snapshotIterator()>();
+        stmtIt = temp$6;
+
+     label0:
+        nop;
+        temp$7 = interfaceinvoke stmtIt.<java.util.Iterator: boolean hasNext()>();
+        if temp$7 == 0 goto label6;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$8 = interfaceinvoke stmtIt.<java.util.Iterator: java.lang.Object next()>();
+        stmt = (soot.jimple.Stmt) temp$8;
+        temp$9 = interfaceinvoke stmt.<soot.jimple.Stmt: boolean containsInvokeExpr()>();
+        if temp$9 == 0 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        goto label0;
+
+     label3:
+        nop;
+        temp$10 = interfaceinvoke stmt.<soot.jimple.Stmt: soot.jimple.InvokeExpr getInvokeExpr()>();
+        expr = temp$10;
+        temp$11 = expr instanceof soot.jimple.StaticInvokeExpr;
+        if temp$11 == 0 goto label4;
+
+        goto label5;
+
+     label4:
+        nop;
+        goto label0;
+
+     label5:
+        nop;
+        temp$12 = staticinvoke <soot.jimple.Jimple: soot.jimple.Jimple v()>();
+        temp$13 = <InvokeStaticInstrumenter: soot.SootMethod increaseCounter>;
+        temp$14 = virtualinvoke temp$13.<soot.SootMethod: soot.SootMethodRef makeRef()>();
+        temp$15 = newarray (soot.Value)[1];
+        temp$16 = staticinvoke <soot.jimple.IntConstant: soot.jimple.IntConstant v(int)>(1);
+        temp$15[0] = temp$16;
+        temp$17 = virtualinvoke temp$12.<soot.jimple.Jimple: soot.jimple.StaticInvokeExpr newStaticInvokeExpr(soot.SootMethodRef,soot.Value[])>(temp$14, temp$15);
+        incExpr = temp$17;
+        temp$18 = staticinvoke <soot.jimple.Jimple: soot.jimple.Jimple v()>();
+        temp$19 = virtualinvoke temp$18.<soot.jimple.Jimple: soot.jimple.InvokeStmt newInvokeStmt(soot.Value)>(incExpr);
+        incStmt = temp$19;
+        interfaceinvoke units.<soot.util.Chain: void insertBefore(java.lang.Object,java.lang.Object)>(incStmt, stmt);
+        goto label0;
+
+     label6:
+        nop;
+        temp$20 = virtualinvoke method.<soot.SootMethod: java.lang.String getSubSignature()>();
+        signature = temp$20;
+        temp$21 = virtualinvoke signature.<java.lang.String: boolean equals(java.lang.Object)>("void main(java.lang.String[])");
+        isMain = temp$21;
+        if isMain == 0 goto label14;
+
+        goto label7;
+
+     label7:
+        nop;
+        temp$22 = interfaceinvoke units.<soot.util.Chain: java.util.Iterator snapshotIterator()>();
+        stmtIt = temp$22;
+
+     label8:
+        nop;
+        temp$23 = interfaceinvoke stmtIt.<java.util.Iterator: boolean hasNext()>();
+        if temp$23 == 0 goto label13;
+
+        goto label9;
+
+     label9:
+        nop;
+        temp$24 = interfaceinvoke stmtIt.<java.util.Iterator: java.lang.Object next()>();
+        stmt = (soot.jimple.Stmt) temp$24;
+        temp$25 = stmt instanceof soot.jimple.ReturnStmt;
+        if temp$25 == 0 goto label10;
+
+        goto label11;
+
+     label10:
+        nop;
+        temp$26 = stmt instanceof soot.jimple.ReturnVoidStmt;
+        if temp$26 == 0 goto label12;
+
+        goto label11;
+
+        goto label12;
+
+     label11:
+        nop;
+        temp$27 = staticinvoke <soot.jimple.Jimple: soot.jimple.Jimple v()>();
+        temp$28 = <InvokeStaticInstrumenter: soot.SootMethod reportCounter>;
+        temp$29 = virtualinvoke temp$28.<soot.SootMethod: soot.SootMethodRef makeRef()>();
+        temp$30 = virtualinvoke temp$27.<soot.jimple.Jimple: soot.jimple.StaticInvokeExpr newStaticInvokeExpr(soot.SootMethodRef)>(temp$29);
+        reportExpr = temp$30;
+        temp$31 = staticinvoke <soot.jimple.Jimple: soot.jimple.Jimple v()>();
+        temp$32 = virtualinvoke temp$31.<soot.jimple.Jimple: soot.jimple.InvokeStmt newInvokeStmt(soot.Value)>(reportExpr);
+        reportStmt = temp$32;
+        interfaceinvoke units.<soot.util.Chain: void insertBefore(java.lang.Object,java.lang.Object)>(reportStmt, stmt);
+
+     label12:
+        nop;
+        goto label8;
+
+     label13:
+        nop;
+
+     label14:
+        nop;
+        return;
+    }
+
+    public void <init>()
+    {
+        InvokeStaticInstrumenter this;
+
+        this := @this: InvokeStaticInstrumenter;
+        specialinvoke this.<soot.BodyTransformer: void <init>()>();
+        return;
+    }
+}

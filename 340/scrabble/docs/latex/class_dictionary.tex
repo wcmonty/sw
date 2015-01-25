@@ -1,0 +1,241 @@
+\hypertarget{class_dictionary}{\section{Dictionary Class Reference}
+\label{class_dictionary}\index{Dictionary@{Dictionary}}
+}
+
+
+The \hyperlink{class_dictionary}{Dictionary} class Encapsulates dicitonary operations.  
+
+
+
+
+{\ttfamily \#include $<$dictionary.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dictionary_aee8d612bc9d323c38faba045ba384b8b}{Dictionary} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_aee8d612bc9d323c38faba045ba384b8b}{Dictionary\-::\-Dictionary} Constructor for dictionary. \end{DoxyCompactList}\item 
+\hyperlink{class_dictionary_aa36f24073d9c9001768517aa2322cb82}{$\sim$\-Dictionary} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_aa36f24073d9c9001768517aa2322cb82}{Dictionary\-::$\sim$\-Dictionary} Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{is\-Word} (Q\-String)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{Dictionary\-::is\-Word} Returns boolean true if is a word. \end{DoxyCompactList}\item 
+bool \hyperlink{class_dictionary_a6bf35992b5b44b610b830c2361c67c3e}{add\-Word} (Q\-String, bool)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_a6bf35992b5b44b610b830c2361c67c3e}{Dictionary\-::add\-Word} Adds a word to the dictionary. \end{DoxyCompactList}\item 
+unsigned \hyperlink{class_dictionary_a327b99a18977f2b898adfd496426cf27}{wordcount} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dictionary_a327b99a18977f2b898adfd496426cf27}{Dictionary\-::wordcount} Getter for word count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trie}{Trie} $\ast$ \hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}
+\item 
+unsigned \hyperlink{class_dictionary_aef2de3d2a839832ecc35eb6e08cc9395}{\-\_\-wcount}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_dictionary_a832b4d233efee1a32feb0f4190b30d39}{Unit\-Test}
+\item 
+class \hyperlink{class_dictionary_a2c11a076a909acd936d897cd2a81f931}{A\-I\-Player}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_dictionary}{Dictionary} class Encapsulates dicitonary operations. 
+
+Definition at line 12 of file dictionary.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dictionary_aee8d612bc9d323c38faba045ba384b8b}{\index{Dictionary@{Dictionary}!Dictionary@{Dictionary}}
+\index{Dictionary@{Dictionary}!Dictionary@{Dictionary}}
+\subsubsection[{Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary\-::\-Dictionary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_aee8d612bc9d323c38faba045ba384b8b}
+
+
+\hyperlink{class_dictionary_aee8d612bc9d323c38faba045ba384b8b}{Dictionary\-::\-Dictionary} Constructor for dictionary. 
+
+
+
+Definition at line 8 of file dictionary.\-cpp.
+
+
+\begin{DoxyCode}
+9 \{
+10     \hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words} = \textcolor{keyword}{new} \hyperlink{class_trie}{Trie}();
+11     \hyperlink{class_dictionary_aef2de3d2a839832ecc35eb6e08cc9395}{\_wcount} = 0;
+12 \}
+\end{DoxyCode}
+\hypertarget{class_dictionary_aa36f24073d9c9001768517aa2322cb82}{\index{Dictionary@{Dictionary}!$\sim$\-Dictionary@{$\sim$\-Dictionary}}
+\index{$\sim$\-Dictionary@{$\sim$\-Dictionary}!Dictionary@{Dictionary}}
+\subsubsection[{$\sim$\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary\-::$\sim$\-Dictionary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_aa36f24073d9c9001768517aa2322cb82}
+
+
+\hyperlink{class_dictionary_aa36f24073d9c9001768517aa2322cb82}{Dictionary\-::$\sim$\-Dictionary} Destructor. 
+
+
+
+Definition at line 17 of file dictionary.\-cpp.
+
+
+\begin{DoxyCode}
+18 \{
+19     \textcolor{keyword}{delete} \hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words};
+20 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dictionary_a6bf35992b5b44b610b830c2361c67c3e}{\index{Dictionary@{Dictionary}!add\-Word@{add\-Word}}
+\index{add\-Word@{add\-Word}!Dictionary@{Dictionary}}
+\subsubsection[{add\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool Dictionary\-::add\-Word (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{word, }
+\item[{bool}]{check\-Word}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_a6bf35992b5b44b610b830c2361c67c3e}
+
+
+\hyperlink{class_dictionary_a6bf35992b5b44b610b830c2361c67c3e}{Dictionary\-::add\-Word} Adds a word to the dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & The word to add \\
+\hline
+{\em check\-Word} & Set to true if the word should be checked against the database prior to insertion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file dictionary.\-cpp.
+
+
+
+Referenced by Dictionary\-Loader\-::load().
+
+
+\begin{DoxyCode}
+40 \{
+41     \textcolor{keywordflow}{if} (checkWord && \hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_a5dd39899df7410211d9d7294e548f5b0}{searchWord}(word))\{
+42         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+43     \}
+44     \hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_a6bad63197c025fd1d7dab898dc7193db}{addWord}(word);
+45     \hyperlink{class_dictionary_aef2de3d2a839832ecc35eb6e08cc9395}{\_wcount}++;
+46     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+47 \}
+\end{DoxyCode}
+\hypertarget{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{\index{Dictionary@{Dictionary}!is\-Word@{is\-Word}}
+\index{is\-Word@{is\-Word}!Dictionary@{Dictionary}}
+\subsubsection[{is\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool Dictionary\-::is\-Word (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{word}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}
+
+
+\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{Dictionary\-::is\-Word} Returns boolean true if is a word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & The word to match \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if in dictionary, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file dictionary.\-cpp.
+
+
+
+Referenced by Unit\-Test\-::dictionarytest(), Play\-::validate\-\_\-down(), Play\-::validate\-\_\-right(), Board\-::validate\-Word\-Horizontal(), and Board\-::validate\-Word\-Vertical().
+
+
+\begin{DoxyCode}
+28 \{
+29     \textcolor{keywordflow}{return} \hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_a5dd39899df7410211d9d7294e548f5b0}{searchWord}(word);
+30 \}
+\end{DoxyCode}
+\hypertarget{class_dictionary_a327b99a18977f2b898adfd496426cf27}{\index{Dictionary@{Dictionary}!wordcount@{wordcount}}
+\index{wordcount@{wordcount}!Dictionary@{Dictionary}}
+\subsubsection[{wordcount}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Dictionary\-::wordcount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dictionary_a327b99a18977f2b898adfd496426cf27}
+
+
+\hyperlink{class_dictionary_a327b99a18977f2b898adfd496426cf27}{Dictionary\-::wordcount} Getter for word count. 
+
+\begin{DoxyReturn}{Returns}
+The word count 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file dictionary.\-cpp.
+
+
+
+Referenced by Unit\-Test\-::dictionarytest().
+
+
+\begin{DoxyCode}
+54 \{
+55     \textcolor{keywordflow}{return} \hyperlink{class_dictionary_aef2de3d2a839832ecc35eb6e08cc9395}{\_wcount};
+56 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_dictionary_a2c11a076a909acd936d897cd2a81f931}{\index{Dictionary@{Dictionary}!A\-I\-Player@{A\-I\-Player}}
+\index{A\-I\-Player@{A\-I\-Player}!Dictionary@{Dictionary}}
+\subsubsection[{A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf A\-I\-Player}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_dictionary_a2c11a076a909acd936d897cd2a81f931}
+
+
+Definition at line 19 of file dictionary.\-h.
+
+\hypertarget{class_dictionary_a832b4d233efee1a32feb0f4190b30d39}{\index{Dictionary@{Dictionary}!Unit\-Test@{Unit\-Test}}
+\index{Unit\-Test@{Unit\-Test}!Dictionary@{Dictionary}}
+\subsubsection[{Unit\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Unit\-Test}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_dictionary_a832b4d233efee1a32feb0f4190b30d39}
+
+
+Definition at line 18 of file dictionary.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_dictionary_aef2de3d2a839832ecc35eb6e08cc9395}{\index{Dictionary@{Dictionary}!\-\_\-wcount@{\-\_\-wcount}}
+\index{\-\_\-wcount@{\-\_\-wcount}!Dictionary@{Dictionary}}
+\subsubsection[{\-\_\-wcount}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Dictionary\-::\-\_\-wcount\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dictionary_aef2de3d2a839832ecc35eb6e08cc9395}
+The count of the words 
+
+Definition at line 16 of file dictionary.\-h.
+
+\hypertarget{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{\index{Dictionary@{Dictionary}!words@{words}}
+\index{words@{words}!Dictionary@{Dictionary}}
+\subsubsection[{words}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trie}$\ast$ Dictionary\-::words\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}
+The container for the words 
+
+Definition at line 15 of file dictionary.\-h.
+
+
+
+Referenced by A\-I\-Player\-::ai\-\_\-search(), and Unit\-Test\-::dictionarytest().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{dictionary_8h}{dictionary.\-h}\item 
+Scrabble/\hyperlink{dictionary_8cpp}{dictionary.\-cpp}\end{DoxyCompactItemize}

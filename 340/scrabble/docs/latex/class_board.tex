@@ -1,0 +1,2012 @@
+\hypertarget{class_board}{\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+}
+
+
+The \hyperlink{class_board}{Board} class Singleton that represents a playing board.  
+
+
+
+
+{\ttfamily \#include $<$board.\-h$>$}
+
+Inheritance diagram for Board\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_board}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_board_a9811fc5a0ae0953a45ff7e576af9411d}{on\-\_\-cancel\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a9811fc5a0ae0953a45ff7e576af9411d}{Board\-::on\-\_\-cancel\-Button\-\_\-clicked} Cancels a play. Removes all letters from the board and resets the rack. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a6aed1991c2174d60b320545db8ea015d}{on\-\_\-pass\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a6aed1991c2174d60b320545db8ea015d}{Board\-::on\-\_\-pass\-Button\-\_\-clicked} Passes a players turn. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_afacf11c194d187ece00a84aa2504ca31}{on\-\_\-play\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_afacf11c194d187ece00a84aa2504ca31}{Board\-::on\-\_\-play\-Button\-\_\-clicked} Commits a play to the board if valid, or removes all pieces if not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_board_a4149ab29681bf6745ef51e18a389aad3}{board\-Clicked} (int, int)
+\item 
+void \hyperlink{class_board_a8333b50e98ce792ebd3afe551751ce56}{invalid\-Move} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{$\sim$\-Board} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{Board\-::$\sim$\-Board} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a13c88b0bc7d2a85f7e53790e71bdd403}{reset} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a13c88b0bc7d2a85f7e53790e71bdd403}{Board\-::reset} Resets the board by clearing out all the spaces. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_ae08098fe478e2832e7e7403140314164}{set\-Game} (\hyperlink{class_game}{Game} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ae08098fe478e2832e7e7403140314164}{Board\-::set\-Game} Setter for game. \end{DoxyCompactList}\item 
+\hyperlink{class_game}{Game} $\ast$ \hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{get\-Game} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{Board\-::get\-Game} Gets a game. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a43514bd0ab816eaed9affaace84686fe}{setup} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a43514bd0ab816eaed9affaace84686fe}{Board\-::setup} Sets up the board. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a61a3bf8888e7969e3b34d7df279b495d}{inactivate\-Other\-Spaces} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a61a3bf8888e7969e3b34d7df279b495d}{Board\-::inactivate\-Other\-Spaces} Inactivates other spaces on the board. \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score} (\hyperlink{class_play}{Play} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{Board\-::score} Scores a board. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_ac19eb0e5a0936b89d6070d1cb96d107a}{set\-Space} (int, int, \hyperlink{class_letter}{Letter} $\ast$)
+\begin{DoxyCompactList}\small\item\em set\-Space Setter for a space \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_board_a5220c9a416ea7217a6fa21b6b25e7c35}{get\-Color} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a5220c9a416ea7217a6fa21b6b25e7c35}{Board\-::get\-Color} Gets the color of the space. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a8ed329bcdb775a910a575161ee5221ac}{move\-Letter\-To\-Board} (int i, int x, int y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a8ed329bcdb775a910a575161ee5221ac}{Board\-::move\-Letter\-To\-Board} Moves a letter to the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{get\-Board} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board\-::get\-Board} Gets the board or creates a new one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces} \mbox{[}\hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{B\-O\-A\-R\-D\-S\-I\-Z\-E}\mbox{]}\mbox{[}\hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{B\-O\-A\-R\-D\-S\-I\-Z\-E}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board\-::\-Board} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_af09b7eb32a7b1bee3aa0b8e9702262a8}{setup\-Special\-Spaces} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_af09b7eb32a7b1bee3aa0b8e9702262a8}{Board\-::setup\-Special\-Spaces} Sets up special spaces on the board. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a04c1b8a27cb98af441adf28c860801a9}{setup3\-W} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a04c1b8a27cb98af441adf28c860801a9}{Board\-::setup3\-W} Sets up spaces with 3 $\ast$ word multiplier. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_ab2c7d1364979e2296aaee238dec0ed41}{setup2\-W} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ab2c7d1364979e2296aaee238dec0ed41}{Board\-::setup2\-W} Sets up spaces with 2 $\ast$ word multiplier. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a3a6d2d854db811443f469237b3c8dbf5}{setup3\-L} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a3a6d2d854db811443f469237b3c8dbf5}{Board\-::setup3\-L} Sets up spaces with 3 $\ast$ letter multipler. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a716521053c43060f4ec4b8ce59ab6972}{setup2\-L} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a716521053c43060f4ec4b8ce59ab6972}{Board\-::setup2\-L} Sets up spaces with 2 $\ast$ letter multiplier. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_ab75ded04c7d5b09314fe888ece2fba4f}{setup\-Start} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ab75ded04c7d5b09314fe888ece2fba4f}{Board\-::setup\-Start} Sets up the start space. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a040fc6830a98b0ff7e6549a07acd65fa}{setup\-Plain\-Spaces} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a040fc6830a98b0ff7e6549a07acd65fa}{Board\-::setup\-Plain\-Spaces} Sets up the rest of the board, should be called only after all the special spaces are set up. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a29d7c4407f2b3d3052ac7e9d4104f5e6}{connect\-Spaces} ()
+\item 
+bool \hyperlink{class_board_a6f71df81a77438867e79f956afedb141}{validate} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a6f71df81a77438867e79f956afedb141}{Board\-::validate} Validates a board. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a4a04a6fc41d20c9836b23826dc7f6026}{start\-Covered} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a4a04a6fc41d20c9836b23826dc7f6026}{Board\-::start\-Covered} Evaluates whether the start space has been played. This should only fail on the first play. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a2b0673132c5b8885a10790d9e505bf40}{has\-New} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a2b0673132c5b8885a10790d9e505bf40}{Board\-::has\-New} Decides whether there is a new letter on the board. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a55a3b8ed8db758006476f8649cd4e86d}{same\-Row\-Or\-Column} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a55a3b8ed8db758006476f8649cd4e86d}{Board\-::same\-Row\-Or\-Column} Validates whether all of the new letters are in the same row or column. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a581529380e6d774493cac106b4175713}{are\-Valid\-Words} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a581529380e6d774493cac106b4175713}{Board\-::are\-Valid\-Words} Validates all words on the board to make sure they are valid. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_ac10ff5523509663aeeb2981b34b49876}{no\-Row\-Blanks} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ac10ff5523509663aeeb2981b34b49876}{Board\-::no\-Row\-Blanks} Searches in a row to make sure there are no spaces between letters. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a250ab5327ae12589735081acf27151b1}{no\-Column\-Blanks} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a250ab5327ae12589735081acf27151b1}{Board\-::no\-Column\-Blanks} Searches in a column to make sure there are no spaces between letters. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_abe67f0d5f2ba801487546ce4751c5318}{must\-Touch\-Row} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_abe67f0d5f2ba801487546ce4751c5318}{Board\-::must\-Touch\-Row} Evaluates whether a word touches a word currently on the board. Looks in the horiontal direction. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_ad0067becfa518afbba904a6d5d35e200}{must\-Touch\-Column} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ad0067becfa518afbba904a6d5d35e200}{Board\-::must\-Touch\-Column} Evaluates whether a word touches a word currently on the board. Looks in the horiontal direction. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{is\-Touching\-On\-Board} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{Board\-::is\-Touching\-On\-Board} Evaluates whether a space is adjacent to a space that has a permanent letter affixed to it. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a080fd46791ef19789fb414457bd416e4}{validate\-Word\-Horizontal} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a080fd46791ef19789fb414457bd416e4}{Board\-::validate\-Word\-Horizontal} Validates a word against the dictionary in a horizontal direction. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_adac7ae1684cc12ae8baa48cbae467285}{validate\-Word\-Vertical} (int, int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_adac7ae1684cc12ae8baa48cbae467285}{Board\-::validate\-Word\-Vertical} Validates a word against the dictionary in a vertical direction. \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a8bad7e1e83fcff71f3bb842d6bc72579}{score\-Vertical} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a8bad7e1e83fcff71f3bb842d6bc72579}{Board\-::score\-Vertical} Scores all vertical words. \end{DoxyCompactList}\item 
+int \hyperlink{class_board_ab8c08852d5e3fcc2f8b923071742aae1}{score\-Horizontal} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ab8c08852d5e3fcc2f8b923071742aae1}{Board\-::score\-Horizontal} Scores all horizontal words. \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a434ba8c6b08da0602f0c56c5b4d02b4f}{score\-Horizontal\-Word} (int row, int column)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_a434ba8c6b08da0602f0c56c5b4d02b4f}{Board\-::score\-Horizontal\-Word} Score a single horizontal word. \end{DoxyCompactList}\item 
+int \hyperlink{class_board_ab4af62ad2cf8b8569af713b939237b10}{score\-Vertical\-Word} (int row, int column)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board_ab4af62ad2cf8b8569af713b939237b10}{Board\-::score\-Vertical\-Word} Scores a single vertical word. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game}{Game} $\ast$ \hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game}
+\item 
+bool \hyperlink{class_board_a4dde45cdfd5aac960628f55106179ba4}{active}
+\item 
+bool \hyperlink{class_board_aa360f3725c638c933beb5d3e3cd881d7}{first\-Played}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_board}{Board} $\ast$ \hyperlink{class_board_a0a25d2a46017652371e29fa8c8dd4544}{board} = N\-U\-L\-L
+\item 
+static bool \hyperlink{class_board_a6862f6207a47592cd5807f08e8d6564b}{is\-Set} = false
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_board_a2c11a076a909acd936d897cd2a81f931}{A\-I\-Player}
+\item 
+ostream \& \hyperlink{class_board_ad799faa7c15b047d09f3fa52406c95d5}{operator$<$$<$} (ostream \&os, const \hyperlink{class_board}{Board} \&\hyperlink{class_board_a0a25d2a46017652371e29fa8c8dd4544}{board})
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloading the $<$$<$ operator for debugging information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_board}{Board} class Singleton that represents a playing board. 
+
+Definition at line 26 of file board.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb}
+
+
+\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board\-::\-Board} Constructor. 
+
+
+
+Definition at line 15 of file board.\-cpp.
+
+
+
+References active, B\-O\-A\-R\-D\-S\-I\-Z\-E, first\-Played, game, setup(), and spaces.
+
+
+
+Referenced by get\-Board().
+
+
+\begin{DoxyCode}
+16 \{
+17     this->\hyperlink{class_board_a4dde45cdfd5aac960628f55106179ba4}{active} = \textcolor{keyword}{false};
+18     this->\hyperlink{class_board_aa360f3725c638c933beb5d3e3cd881d7}{firstPlayed} = \textcolor{keyword}{false};
+19     this->\hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game} = NULL;
+20     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+21         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++)\{
+22             \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j] = NULL;
+23         \}
+24     \}
+25     \hyperlink{class_board_a43514bd0ab816eaed9affaace84686fe}{setup}();
+26 
+27 \}
+\end{DoxyCode}
+\hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}{\index{Board@{Board}!$\sim$\-Board@{$\sim$\-Board}}
+\index{$\sim$\-Board@{$\sim$\-Board}!Board@{Board}}
+\subsubsection[{$\sim$\-Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::$\sim$\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_board_af73f45730119a1fd8f6670f53f959e68}
+
+
+\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{Board\-::$\sim$\-Board} Destructor. 
+
+
+
+Definition at line 47 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, Rack\-::delete\-Letter(), Rack\-::get\-Rack(), and spaces.
+
+
+\begin{DoxyCode}
+48 \{
+49     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+50         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++)\{
+51             \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j] != NULL) \{
+52                 \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_a93f23b989fbb09c0acfb42b24d071887}{deleteLetter}(\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->getLetter());
+53                 \textcolor{keyword}{delete}(\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]);
+54             \}
+55         \}
+56     \}
+57 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_board_a581529380e6d774493cac106b4175713}{\index{Board@{Board}!are\-Valid\-Words@{are\-Valid\-Words}}
+\index{are\-Valid\-Words@{are\-Valid\-Words}!Board@{Board}}
+\subsubsection[{are\-Valid\-Words}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::are\-Valid\-Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a581529380e6d774493cac106b4175713}
+
+
+\hyperlink{class_board_a581529380e6d774493cac106b4175713}{Board\-::are\-Valid\-Words} Validates all words on the board to make sure they are valid. 
+
+\begin{DoxyReturn}{Returns}
+true if all are valid, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 321 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, spaces, validate\-Word\-Horizontal(), and validate\-Word\-Vertical().
+
+
+
+Referenced by validate().
+
+
+\begin{DoxyCode}
+322 \{
+323     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = 0; row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; row++)\{
+324         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} column = 0; column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; column++)\{
+325             \textcolor{keywordflow}{if} ( !\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column]->isBlank() &&  (row == 0 || \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row - 1][column]->
+      isBlank())) \{
+326                 \textcolor{keywordflow}{if} (!\hyperlink{class_board_adac7ae1684cc12ae8baa48cbae467285}{validateWordVertical}(row, column))\{
+327                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+328                 \}
+329             \}
+330             \textcolor{keywordflow}{if} ( !\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column]->isBlank() &&  (column == 0 || 
+      \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column - 1]->isBlank())) \{
+331                 \textcolor{keywordflow}{if} (!\hyperlink{class_board_a080fd46791ef19789fb414457bd416e4}{validateWordHorizontal}(row, column))\{
+332                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+333                 \}
+334             \}
+335         \}
+336     \}
+337     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+338 \}
+\end{DoxyCode}
+\hypertarget{class_board_a4149ab29681bf6745ef51e18a389aad3}{\index{Board@{Board}!board\-Clicked@{board\-Clicked}}
+\index{board\-Clicked@{board\-Clicked}!Board@{Board}}
+\subsubsection[{board\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::board\-Clicked (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_board_a4149ab29681bf6745ef51e18a389aad3}
+\hypertarget{class_board_a29d7c4407f2b3d3052ac7e9d4104f5e6}{\index{Board@{Board}!connect\-Spaces@{connect\-Spaces}}
+\index{connect\-Spaces@{connect\-Spaces}!Board@{Board}}
+\subsubsection[{connect\-Spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board}$\ast$ Board\-::connect\-Spaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a29d7c4407f2b3d3052ac7e9d4104f5e6}
+\hypertarget{class_board_ae30e802b1d83309fc95e695b5b3df338}{\index{Board@{Board}!get\-Board@{get\-Board}}
+\index{get\-Board@{get\-Board}!Board@{Board}}
+\subsubsection[{get\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::get\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_board_ae30e802b1d83309fc95e695b5b3df338}
+
+
+\hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board\-::get\-Board} Gets the board or creates a new one. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the board 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file board.\-cpp.
+
+
+
+References board, Board(), and is\-Set.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-touches\-\_\-2(), A\-I\-Player\-::\-\_\-touches\-\_\-4(), Move\-::apply(), Dialog\-::create\-Horizontal\-Group\-Box(), Dialog\-::\-Dialog(), Move\-::finalize(), move\-Letter\-To\-Board(), Game\-::next\-Turn(), Space\-::on\-\_\-clicked(), on\-\_\-play\-Button\-\_\-clicked(), Player\-Label\-::on\-\_\-player\-Changed(), operator$<$$<$(), A\-I\-Player\-::play(), Move\-::unapply(), and Play\-::validate().
+
+
+\begin{DoxyCode}
+34 \{
+35     \textcolor{keywordflow}{if} (\hyperlink{class_board_a6862f6207a47592cd5807f08e8d6564b}{isSet})\{
+36         \textcolor{keywordflow}{return} \hyperlink{class_board_a0a25d2a46017652371e29fa8c8dd4544}{board};
+37     \}
+38     \hyperlink{class_board_a6862f6207a47592cd5807f08e8d6564b}{isSet} = \textcolor{keyword}{true};
+39     \hyperlink{class_board_a0a25d2a46017652371e29fa8c8dd4544}{board} = \textcolor{keyword}{new} \hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}();
+40     \textcolor{keywordflow}{return} \hyperlink{class_board_a0a25d2a46017652371e29fa8c8dd4544}{board};
+41 \}
+\end{DoxyCode}
+\hypertarget{class_board_a5220c9a416ea7217a6fa21b6b25e7c35}{\index{Board@{Board}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!Board@{Board}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Board\-::get\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_board_a5220c9a416ea7217a6fa21b6b25e7c35}
+
+
+\hyperlink{class_board_a5220c9a416ea7217a6fa21b6b25e7c35}{Board\-::get\-Color} Gets the color of the space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the space \\
+\hline
+{\em y} & The y position of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Q\-String representing the color 
+\end{DoxyReturn}
+
+
+Definition at line 280 of file board.\-cpp.
+
+
+
+References Space\-::get\-Color(), and spaces.
+
+
+\begin{DoxyCode}
+281 \{
+282     \textcolor{keywordflow}{return} this->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[x][y]->\hyperlink{class_space_a32d88c2b9a0f1671ed3ebbd51ec9db09}{getColor}();
+283 \}
+\end{DoxyCode}
+\hypertarget{class_board_af09f0761a753008aa12021986ad6bc52}{\index{Board@{Board}!get\-Game@{get\-Game}}
+\index{get\-Game@{get\-Game}!Board@{Board}}
+\subsubsection[{get\-Game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} $\ast$ Board\-::get\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_board_af09f0761a753008aa12021986ad6bc52}
+
+
+\hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{Board\-::get\-Game} Gets a game. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the game 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file board.\-cpp.
+
+
+
+References game.
+
+
+
+Referenced by move\-Letter\-To\-Board(), Space\-::on\-\_\-clicked(), and on\-\_\-play\-Button\-\_\-clicked().
+
+
+\begin{DoxyCode}
+103 \{
+104     \textcolor{keywordflow}{return} \hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game};
+105 \}
+\end{DoxyCode}
+\hypertarget{class_board_a2b0673132c5b8885a10790d9e505bf40}{\index{Board@{Board}!has\-New@{has\-New}}
+\index{has\-New@{has\-New}!Board@{Board}}
+\subsubsection[{has\-New}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::has\-New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a2b0673132c5b8885a10790d9e505bf40}
+
+
+\hyperlink{class_board_a2b0673132c5b8885a10790d9e505bf40}{Board\-::has\-New} Decides whether there is a new letter on the board. 
+
+\begin{DoxyReturn}{Returns}
+true if there is a new letter, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 399 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by validate().
+
+
+\begin{DoxyCode}
+400 \{
+401     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+402         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++) \{
+403             \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->isNew())\{
+404                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+405             \}
+406         \}
+407     \}
+408     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+409 \}
+\end{DoxyCode}
+\hypertarget{class_board_a61a3bf8888e7969e3b34d7df279b495d}{\index{Board@{Board}!inactivate\-Other\-Spaces@{inactivate\-Other\-Spaces}}
+\index{inactivate\-Other\-Spaces@{inactivate\-Other\-Spaces}!Board@{Board}}
+\subsubsection[{inactivate\-Other\-Spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::inactivate\-Other\-Spaces (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_board_a61a3bf8888e7969e3b34d7df279b495d}
+
+
+\hyperlink{class_board_a61a3bf8888e7969e3b34d7df279b495d}{Board\-::inactivate\-Other\-Spaces} Inactivates other spaces on the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+{\em y} & The y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 291 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, Space\-::set\-Inactive(), and spaces.
+
+
+\begin{DoxyCode}
+292 \{
+293     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+294         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++)\{
+295             \textcolor{keywordflow}{if} (!(x == i && y == j))\{
+296                 \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+297             \}
+298         \}
+299     \}
+300     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+301 \}
+\end{DoxyCode}
+\hypertarget{class_board_a8333b50e98ce792ebd3afe551751ce56}{\index{Board@{Board}!invalid\-Move@{invalid\-Move}}
+\index{invalid\-Move@{invalid\-Move}!Board@{Board}}
+\subsubsection[{invalid\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::invalid\-Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_board_a8333b50e98ce792ebd3afe551751ce56}
+
+
+Referenced by on\-\_\-play\-Button\-\_\-clicked().
+
+\hypertarget{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{\index{Board@{Board}!is\-Touching\-On\-Board@{is\-Touching\-On\-Board}}
+\index{is\-Touching\-On\-Board@{is\-Touching\-On\-Board}!Board@{Board}}
+\subsubsection[{is\-Touching\-On\-Board}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::is\-Touching\-On\-Board (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a4b992bdcd23d8b04b6719ebdffe61567}
+
+
+\hyperlink{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{Board\-::is\-Touching\-On\-Board} Evaluates whether a space is adjacent to a space that has a permanent letter affixed to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row of the space \\
+\hline
+{\em column} & The column of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if adjacent, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 575 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by must\-Touch\-Column(), must\-Touch\-Row(), and same\-Row\-Or\-Column().
+
+
+\begin{DoxyCode}
+576 \{
+577     \textcolor{keywordflow}{if} ((row > 0) && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row - 1][column]->isOnBoard())\{
+578         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+579     \}
+580     \textcolor{keywordflow}{if} ((column > 0) && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column - 1]->isOnBoard())\{
+581         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+582     \}
+583     \textcolor{keywordflow}{if} ((row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} - 1) && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row + 1][column]->isOnBoard())\{
+584         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+585     \}
+586     \textcolor{keywordflow}{if} ((column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} - 1) && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column + 1]->isOnBoard())\{
+587         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+588     \}
+589     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+590 \}
+\end{DoxyCode}
+\hypertarget{class_board_a8ed329bcdb775a910a575161ee5221ac}{\index{Board@{Board}!move\-Letter\-To\-Board@{move\-Letter\-To\-Board}}
+\index{move\-Letter\-To\-Board@{move\-Letter\-To\-Board}!Board@{Board}}
+\subsubsection[{move\-Letter\-To\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::move\-Letter\-To\-Board (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_board_a8ed329bcdb775a910a575161ee5221ac}
+
+
+\hyperlink{class_board_a8ed329bcdb775a910a575161ee5221ac}{Board\-::move\-Letter\-To\-Board} Moves a letter to the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The position in the rack \\
+\hline
+{\em x} & The x position on the board \\
+\hline
+{\em y} & The y position on the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 599 of file board.\-cpp.
+
+
+
+References Play\-::add\-Move(), Move\-::apply(), Game\-::current\-Play(), Game\-::current\-Player(), game, get\-Board(), get\-Game(), and Rack\-::get\-Rack().
+
+
+
+Referenced by Space\-::on\-\_\-clicked(), and A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+600 \{
+601     \hyperlink{class_move}{Move} *move = \textcolor{keyword}{new} \hyperlink{class_move}{Move}(\hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{getGame}()->currentPlayer(),
+602                           \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->getSpace(i)->getLetter(),
+603                           i, x, y);
+604     move->\hyperlink{class_move_af3c01fad2f5724f497a2d9eb165be470}{apply}();
+605     \hyperlink{class_game}{Game} *\hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game} = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{getGame}();
+606     game->\hyperlink{class_game_acba299674208d186660ed4a88e58d967}{currentPlay}()->\hyperlink{class_play_ad70d9b77395e7b30506d1c38ace45bf0}{addMove}(game->\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}(), move);
+607 
+608     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+609 \}
+\end{DoxyCode}
+\hypertarget{class_board_ad0067becfa518afbba904a6d5d35e200}{\index{Board@{Board}!must\-Touch\-Column@{must\-Touch\-Column}}
+\index{must\-Touch\-Column@{must\-Touch\-Column}!Board@{Board}}
+\subsubsection[{must\-Touch\-Column}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::must\-Touch\-Column (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ad0067becfa518afbba904a6d5d35e200}
+
+
+\hyperlink{class_board_ad0067becfa518afbba904a6d5d35e200}{Board\-::must\-Touch\-Column} Evaluates whether a word touches a word currently on the board. Looks in the horiontal direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The row of the first letter \\
+\hline
+{\em first\-Column} & The column of the first letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it touches, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 552 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, is\-Touching\-On\-Board(), and spaces.
+
+
+
+Referenced by same\-Row\-Or\-Column().
+
+
+\begin{DoxyCode}
+553 \{
+554     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = firstRow; row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; row++)\{
+555         \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn]->isBlank())\{
+556             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+557         \}
+558         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (row == 7 && firstColumn == 7)\{
+559             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+560         \}
+561         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{isTouchingOnBoard}(row, firstColumn))\{
+562             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+563         \}
+564     \}
+565     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+566 \}
+\end{DoxyCode}
+\hypertarget{class_board_abe67f0d5f2ba801487546ce4751c5318}{\index{Board@{Board}!must\-Touch\-Row@{must\-Touch\-Row}}
+\index{must\-Touch\-Row@{must\-Touch\-Row}!Board@{Board}}
+\subsubsection[{must\-Touch\-Row}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::must\-Touch\-Row (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_abe67f0d5f2ba801487546ce4751c5318}
+
+
+\hyperlink{class_board_abe67f0d5f2ba801487546ce4751c5318}{Board\-::must\-Touch\-Row} Evaluates whether a word touches a word currently on the board. Looks in the horiontal direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The row of the first letter. \\
+\hline
+{\em first\-Column} & The column of the first letter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it touches, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 529 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, is\-Touching\-On\-Board(), and spaces.
+
+
+
+Referenced by same\-Row\-Or\-Column().
+
+
+\begin{DoxyCode}
+530 \{
+531     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} column = firstColumn; column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; column++)\{
+532         \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column]->isBlank())\{
+533             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+534         \}
+535         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (firstRow == 7 && column == 7)\{
+536             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+537         \}
+538         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{isTouchingOnBoard}(firstRow, column))\{
+539             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+540         \}
+541     \}
+542     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+543 \}
+\end{DoxyCode}
+\hypertarget{class_board_a250ab5327ae12589735081acf27151b1}{\index{Board@{Board}!no\-Column\-Blanks@{no\-Column\-Blanks}}
+\index{no\-Column\-Blanks@{no\-Column\-Blanks}!Board@{Board}}
+\subsubsection[{no\-Column\-Blanks}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::no\-Column\-Blanks (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a250ab5327ae12589735081acf27151b1}
+
+
+\hyperlink{class_board_a250ab5327ae12589735081acf27151b1}{Board\-::no\-Column\-Blanks} Searches in a column to make sure there are no spaces between letters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The row of the first letter. \\
+\hline
+{\em first\-Column} & The column of the first letter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if no spaces found, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 508 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by same\-Row\-Or\-Column().
+
+
+\begin{DoxyCode}
+509 \{
+510     \textcolor{keywordtype}{bool} spaceSeen = \textcolor{keyword}{false};
+511     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = firstRow + 1; row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; row++)\{
+512         \textcolor{keywordflow}{if} (!spaceSeen && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn]->isBlank())\{
+513              spaceSeen = \textcolor{keyword}{true};
+514         \}
+515         \textcolor{keywordflow}{if} (spaceSeen && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn]->isNew())\{
+516             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+517         \}
+518     \}
+519     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+520 \}
+\end{DoxyCode}
+\hypertarget{class_board_ac10ff5523509663aeeb2981b34b49876}{\index{Board@{Board}!no\-Row\-Blanks@{no\-Row\-Blanks}}
+\index{no\-Row\-Blanks@{no\-Row\-Blanks}!Board@{Board}}
+\subsubsection[{no\-Row\-Blanks}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::no\-Row\-Blanks (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ac10ff5523509663aeeb2981b34b49876}
+
+
+\hyperlink{class_board_ac10ff5523509663aeeb2981b34b49876}{Board\-::no\-Row\-Blanks} Searches in a row to make sure there are no spaces between letters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The row of the first letter \\
+\hline
+{\em first\-Column} & The column of the first letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if no spaces found, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 487 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by same\-Row\-Or\-Column().
+
+
+\begin{DoxyCode}
+488 \{
+489     \textcolor{keywordtype}{bool} spaceSeen = \textcolor{keyword}{false};
+490     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} column = firstColumn + 1; column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; column++)\{
+491         \textcolor{keywordflow}{if} (!spaceSeen && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column]->isBlank())\{
+492              spaceSeen = \textcolor{keyword}{true};
+493         \}
+494         \textcolor{keywordflow}{if} (spaceSeen && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column]->isNew())\{
+495             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+496         \}
+497     \}
+498     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+499 \}
+\end{DoxyCode}
+\hypertarget{class_board_a9811fc5a0ae0953a45ff7e576af9411d}{\index{Board@{Board}!on\-\_\-cancel\-Button\-\_\-clicked@{on\-\_\-cancel\-Button\-\_\-clicked}}
+\index{on\-\_\-cancel\-Button\-\_\-clicked@{on\-\_\-cancel\-Button\-\_\-clicked}!Board@{Board}}
+\subsubsection[{on\-\_\-cancel\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::on\-\_\-cancel\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_board_a9811fc5a0ae0953a45ff7e576af9411d}
+
+
+\hyperlink{class_board_a9811fc5a0ae0953a45ff7e576af9411d}{Board\-::on\-\_\-cancel\-Button\-\_\-clicked} Cancels a play. Removes all letters from the board and resets the rack. 
+
+
+
+Definition at line 761 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, Space\-::clear(), Play\-::clear\-Moves(), Game\-::current\-Play(), game, and spaces.
+
+
+
+Referenced by on\-\_\-pass\-Button\-\_\-clicked(), and on\-\_\-play\-Button\-\_\-clicked().
+
+
+\begin{DoxyCode}
+762 \{
+763     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+764         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++) \{
+765             \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->isNew() || \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->isActive()) \{
+766                 \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->\hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+767             \}
+768         \}
+769     \}
+770     \hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game}->\hyperlink{class_game_acba299674208d186660ed4a88e58d967}{currentPlay}()->\hyperlink{class_play_af9f4b1daff13026dd4f38f93375f576f}{clearMoves}();
+771 \}
+\end{DoxyCode}
+\hypertarget{class_board_a6aed1991c2174d60b320545db8ea015d}{\index{Board@{Board}!on\-\_\-pass\-Button\-\_\-clicked@{on\-\_\-pass\-Button\-\_\-clicked}}
+\index{on\-\_\-pass\-Button\-\_\-clicked@{on\-\_\-pass\-Button\-\_\-clicked}!Board@{Board}}
+\subsubsection[{on\-\_\-pass\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::on\-\_\-pass\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_board_a6aed1991c2174d60b320545db8ea015d}
+
+
+\hyperlink{class_board_a6aed1991c2174d60b320545db8ea015d}{Board\-::on\-\_\-pass\-Button\-\_\-clicked} Passes a players turn. 
+
+
+
+Definition at line 776 of file board.\-cpp.
+
+
+
+References game, Game\-::next\-Turn(), and on\-\_\-cancel\-Button\-\_\-clicked().
+
+
+\begin{DoxyCode}
+777 \{
+778     \hyperlink{class_board_a9811fc5a0ae0953a45ff7e576af9411d}{on\_cancelButton\_clicked}();
+779     \hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game}->\hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{nextTurn}();
+780 \}
+\end{DoxyCode}
+\hypertarget{class_board_afacf11c194d187ece00a84aa2504ca31}{\index{Board@{Board}!on\-\_\-play\-Button\-\_\-clicked@{on\-\_\-play\-Button\-\_\-clicked}}
+\index{on\-\_\-play\-Button\-\_\-clicked@{on\-\_\-play\-Button\-\_\-clicked}!Board@{Board}}
+\subsubsection[{on\-\_\-play\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::on\-\_\-play\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_board_afacf11c194d187ece00a84aa2504ca31}
+
+
+\hyperlink{class_board_afacf11c194d187ece00a84aa2504ca31}{Board\-::on\-\_\-play\-Button\-\_\-clicked} Commits a play to the board if valid, or removes all pieces if not. 
+
+
+
+Definition at line 786 of file board.\-cpp.
+
+
+
+References game, get\-Board(), get\-Game(), invalid\-Move(), Game\-::next\-Turn(), on\-\_\-cancel\-Button\-\_\-clicked(), and validate().
+
+
+\begin{DoxyCode}
+787 \{
+788     \textcolor{keywordflow}{if} (\hyperlink{class_board_a6f71df81a77438867e79f956afedb141}{validate}()) \{
+789         \hyperlink{class_game}{Game} *\hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game} = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{getGame}();
+790         game->\hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{nextTurn}();
+791     \}
+792     \textcolor{keywordflow}{else} \{
+793         \hyperlink{class_board_a9811fc5a0ae0953a45ff7e576af9411d}{on\_cancelButton\_clicked}();
+794         emit(\hyperlink{class_board_a8333b50e98ce792ebd3afe551751ce56}{invalidMove}());
+795     \}
+796 \}
+\end{DoxyCode}
+\hypertarget{class_board_a13c88b0bc7d2a85f7e53790e71bdd403}{\index{Board@{Board}!reset@{reset}}
+\index{reset@{reset}!Board@{Board}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_board_a13c88b0bc7d2a85f7e53790e71bdd403}
+
+
+\hyperlink{class_board_a13c88b0bc7d2a85f7e53790e71bdd403}{Board\-::reset} Resets the board by clearing out all the spaces. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file board.\-cpp.
+
+
+
+References active, B\-O\-A\-R\-D\-S\-I\-Z\-E, Space\-::clear(), and spaces.
+
+
+
+Referenced by Dialog\-::on\-\_\-new\-Game\-\_\-selected().
+
+
+\begin{DoxyCode}
+64 \{
+65     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+66         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++)\{
+67             \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j] != NULL) \{
+68                 \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->\hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+69             \}
+70         \}
+71     \}
+72     this->\hyperlink{class_board_a4dde45cdfd5aac960628f55106179ba4}{active} = \textcolor{keyword}{false};
+73     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+74 \}
+\end{DoxyCode}
+\hypertarget{class_board_a55a3b8ed8db758006476f8649cd4e86d}{\index{Board@{Board}!same\-Row\-Or\-Column@{same\-Row\-Or\-Column}}
+\index{same\-Row\-Or\-Column@{same\-Row\-Or\-Column}!Board@{Board}}
+\subsubsection[{same\-Row\-Or\-Column}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::same\-Row\-Or\-Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a55a3b8ed8db758006476f8649cd4e86d}
+
+
+\hyperlink{class_board_a55a3b8ed8db758006476f8649cd4e86d}{Board\-::same\-Row\-Or\-Column} Validates whether all of the new letters are in the same row or column. 
+
+\begin{DoxyReturn}{Returns}
+true if they are, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 416 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, is\-Touching\-On\-Board(), must\-Touch\-Column(), must\-Touch\-Row(), no\-Column\-Blanks(), no\-Row\-Blanks(), and spaces.
+
+
+
+Referenced by validate().
+
+
+\begin{DoxyCode}
+417 \{
+418     \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};
+419     \textcolor{keywordtype}{bool} secondFound = \textcolor{keyword}{false};
+420     \textcolor{keywordtype}{bool} row = \textcolor{keyword}{false};
+421     \textcolor{keywordtype}{bool} column = \textcolor{keyword}{false};
+422     \textcolor{keywordtype}{int} firstRow = -1;
+423     \textcolor{keywordtype}{int} firstColumn = -1;
+424 
+425     \textcolor{comment}{// Figure out whether the pieces are in a row or column}
+426     \textcolor{comment}{// We need two new spaces to do this.}
+427     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+428         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++) \{
+429 
+430             \textcolor{comment}{// Finds the first space on the board}
+431             \textcolor{comment}{// It doesn't really matter which we choose as the first space}
+432             \textcolor{comment}{// As long it is the first we encounter}
+433             \textcolor{keywordflow}{if} (!found && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->isNew())\{
+434                 found = \textcolor{keyword}{true};
+435                 firstRow = i;
+436                 firstColumn = j;
+437             \}
+438 
+439             \textcolor{comment}{// Finds the second space and figures out whether it is in}
+440             \textcolor{comment}{// the same row or column as the first}
+441             \textcolor{comment}{// If not it returns false}
+442             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!secondFound && \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->isNew())\{
+443                 secondFound = \textcolor{keyword}{true};
+444                 \textcolor{keywordflow}{if} (firstRow == i) \{
+445                     row = \textcolor{keyword}{true};
+446                 \}
+447                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (firstColumn == j)\{
+448                     column = \textcolor{keyword}{true};
+449                 \}
+450                 \textcolor{keywordflow}{else} \{
+451                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+452                 \}
+453             \}
+454 
+455             \textcolor{comment}{// Makes sure all other spaces are either}
+456             \textcolor{comment}{// in the same row or same column}
+457             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->isNew())\{
+458                 \textcolor{keywordflow}{if} ((row && firstRow != i) ||
+459                         (column && firstColumn != j))\{
+460                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+461                 \}
+462             \}
+463         \}
+464     \}
+465 
+466     \textcolor{comment}{// Checks to make sure it meets other criteria}
+467     \textcolor{keywordflow}{if} (row) \{
+468         \textcolor{keywordflow}{return} \hyperlink{class_board_ac10ff5523509663aeeb2981b34b49876}{noRowBlanks}(firstRow, firstColumn)
+469                 && \hyperlink{class_board_abe67f0d5f2ba801487546ce4751c5318}{mustTouchRow}(firstRow, firstColumn);
+470     \}
+471     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (column)\{
+472         \textcolor{keywordflow}{return} \hyperlink{class_board_a250ab5327ae12589735081acf27151b1}{noColumnBlanks}(firstRow, firstColumn)
+473                 && \hyperlink{class_board_ad0067becfa518afbba904a6d5d35e200}{mustTouchColumn}(firstRow, firstColumn);
+474     \}
+475     \textcolor{keywordflow}{else} \{  \textcolor{comment}{// there is just one new letter on the board}
+476         \textcolor{keywordflow}{return} \hyperlink{class_board_a4b992bdcd23d8b04b6719ebdffe61567}{isTouchingOnBoard}(firstRow, firstColumn);
+477     \}
+478 \}
+\end{DoxyCode}
+\hypertarget{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{\index{Board@{Board}!score@{score}}
+\index{score@{score}!Board@{Board}}
+\subsubsection[{score}]{\setlength{\rightskip}{0pt plus 5cm}int Board\-::score (
+\begin{DoxyParamCaption}
+\item[{{\bf Play} $\ast$}]{play}
+\end{DoxyParamCaption}
+)}}\label{class_board_a48c3a272cb4a47509ddd88edaec2bb59}
+
+
+\hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{Board\-::score} Scores a board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em play} & The current play \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 616 of file board.\-cpp.
+
+
+
+References score\-Horizontal(), score\-Vertical(), and Play\-::size().
+
+
+
+Referenced by score\-Horizontal(), score\-Horizontal\-Word(), score\-Vertical(), and score\-Vertical\-Word().
+
+
+\begin{DoxyCode}
+617 \{
+618     \textcolor{keywordtype}{int} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score} = 0;
+619 
+620     \textcolor{comment}{// If the play uses all 7 letters a bonus of 50 points is applied}
+621     \textcolor{keywordflow}{if}(play->\hyperlink{class_play_a2311eaa432738b08a75d7ca35af46ba6}{size}() == 7)\{
+622         score += 50;
+623     \}
+624     score += \hyperlink{class_board_ab8c08852d5e3fcc2f8b923071742aae1}{scoreHorizontal}();
+625     score += \hyperlink{class_board_a8bad7e1e83fcff71f3bb842d6bc72579}{scoreVertical}();
+626     cout << \textcolor{stringliteral}{"The score is "} << score << \textcolor{stringliteral}{"."}<< endl;
+627     \textcolor{keywordflow}{return} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score};
+628 \}
+\end{DoxyCode}
+\hypertarget{class_board_ab8c08852d5e3fcc2f8b923071742aae1}{\index{Board@{Board}!score\-Horizontal@{score\-Horizontal}}
+\index{score\-Horizontal@{score\-Horizontal}!Board@{Board}}
+\subsubsection[{score\-Horizontal}]{\setlength{\rightskip}{0pt plus 5cm}int Board\-::score\-Horizontal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ab8c08852d5e3fcc2f8b923071742aae1}
+
+
+\hyperlink{class_board_ab8c08852d5e3fcc2f8b923071742aae1}{Board\-::score\-Horizontal} Scores all horizontal words. 
+
+\begin{DoxyReturn}{Returns}
+The score 
+\end{DoxyReturn}
+
+
+Definition at line 634 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, score(), score\-Horizontal\-Word(), and spaces.
+
+
+
+Referenced by score().
+
+
+\begin{DoxyCode}
+635 \{
+636     \textcolor{keywordtype}{int} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score} = 0;
+637     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = 0; row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; row++)\{
+638         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} column = 0; column < BOARDSIZE - 1; column++)\{
+639                                                    \textcolor{comment}{// A horizontal word must be at least 2 letters}
+640                                                    \textcolor{comment}{// So we don't have to check the last row}
+641             \textcolor{keywordflow}{if} ((column == 0 || \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column - 1]->isBlank()) &&
+642                     !\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column]->isBlank())\{
+643                 score += \hyperlink{class_board_a434ba8c6b08da0602f0c56c5b4d02b4f}{scoreHorizontalWord}(row, column);
+644             \}
+645         \}
+646     \}
+647     \textcolor{keywordflow}{return} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score};
+648 \}
+\end{DoxyCode}
+\hypertarget{class_board_a434ba8c6b08da0602f0c56c5b4d02b4f}{\index{Board@{Board}!score\-Horizontal\-Word@{score\-Horizontal\-Word}}
+\index{score\-Horizontal\-Word@{score\-Horizontal\-Word}!Board@{Board}}
+\subsubsection[{score\-Horizontal\-Word}]{\setlength{\rightskip}{0pt plus 5cm}int Board\-::score\-Horizontal\-Word (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a434ba8c6b08da0602f0c56c5b4d02b4f}
+
+
+\hyperlink{class_board_a434ba8c6b08da0602f0c56c5b4d02b4f}{Board\-::score\-Horizontal\-Word} Score a single horizontal word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The x position of the first letter \\
+\hline
+{\em first\-Column} & The y position of the first letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The score 
+\end{DoxyReturn}
+
+
+Definition at line 675 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, Space\-::get\-Letter(), Space\-::get\-Letter\-Multiplier(), Letter\-::get\-Value(), Space\-::get\-Word\-Multiplier(), Space\-::is\-Blank(), Space\-::is\-New(), score(), and spaces.
+
+
+
+Referenced by score\-Horizontal().
+
+
+\begin{DoxyCode}
+676 \{
+677     \textcolor{keywordtype}{int} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score} = 0;
+678     \textcolor{keywordtype}{int} length = 0;
+679     \textcolor{keywordtype}{int} isNew = \textcolor{keyword}{false};
+680     \textcolor{keywordtype}{int} wordMultiplier = 1;
+681     \textcolor{keywordtype}{int} column = firstColumn;
+682 
+683     \textcolor{comment}{// figures out the length of the word}
+684     \hyperlink{class_space}{Space}* space = \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column];
+685     \textcolor{keywordflow}{while}(column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} &&
+686           (space = \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column]) &&
+687           !space->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}())\{
+688         length++;
+689         \textcolor{keywordflow}{if} (space->\hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{isNew}())\{
+690             isNew = \textcolor{keyword}{true};
+691         \}
+692         column++;
+693     \}
+694 
+695     \textcolor{comment}{// calculates the score for the word}
+696     \textcolor{keywordflow}{if} (length > 1 && isNew)\{
+697         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < length; i++)\{
+698             space = \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][firstColumn + i];
+699             \textcolor{keywordflow}{if} (space->\hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{isNew}())\{
+700                 score += space->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{getValue}() * space->
+      \hyperlink{class_space_af35759deb33db2b7b7c77a40716c179f}{getLetterMultiplier}();
+701                 wordMultiplier *= space->\hyperlink{class_space_a6a26a281a90288d56c83cc76b53cb6fb}{getWordMultiplier}();
+702             \}
+703             \textcolor{keywordflow}{else} \{
+704                 score += space->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{getValue}();
+705             \}
+706         \}
+707     \}
+708     score = score * wordMultiplier;
+709 
+710     \textcolor{keywordflow}{return} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score};
+711 \}
+\end{DoxyCode}
+\hypertarget{class_board_a8bad7e1e83fcff71f3bb842d6bc72579}{\index{Board@{Board}!score\-Vertical@{score\-Vertical}}
+\index{score\-Vertical@{score\-Vertical}!Board@{Board}}
+\subsubsection[{score\-Vertical}]{\setlength{\rightskip}{0pt plus 5cm}int Board\-::score\-Vertical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a8bad7e1e83fcff71f3bb842d6bc72579}
+
+
+\hyperlink{class_board_a8bad7e1e83fcff71f3bb842d6bc72579}{Board\-::score\-Vertical} Scores all vertical words. 
+
+\begin{DoxyReturn}{Returns}
+The score 
+\end{DoxyReturn}
+
+
+Definition at line 654 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, score(), score\-Vertical\-Word(), and spaces.
+
+
+
+Referenced by score().
+
+
+\begin{DoxyCode}
+655 \{
+656     \textcolor{keywordtype}{int} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score} = 0;
+657     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} row = 0; row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} - 1; row++)\{ \textcolor{comment}{// A vertical word must be at least 2 letters}
+658                                                    \textcolor{comment}{// So we don't have to check the last row}
+659         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} column = 0; column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; column++)\{
+660             \textcolor{keywordflow}{if} ((row == 0 || \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row -1][column]->isBlank()) &&
+661                     !\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][column]->isBlank())\{
+662                 score += \hyperlink{class_board_ab4af62ad2cf8b8569af713b939237b10}{scoreVerticalWord}(row, column);
+663             \}
+664         \}
+665     \}
+666     \textcolor{keywordflow}{return} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score};
+667 \}
+\end{DoxyCode}
+\hypertarget{class_board_ab4af62ad2cf8b8569af713b939237b10}{\index{Board@{Board}!score\-Vertical\-Word@{score\-Vertical\-Word}}
+\index{score\-Vertical\-Word@{score\-Vertical\-Word}!Board@{Board}}
+\subsubsection[{score\-Vertical\-Word}]{\setlength{\rightskip}{0pt plus 5cm}int Board\-::score\-Vertical\-Word (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ab4af62ad2cf8b8569af713b939237b10}
+
+
+\hyperlink{class_board_ab4af62ad2cf8b8569af713b939237b10}{Board\-::score\-Vertical\-Word} Scores a single vertical word. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The x position of the first new letter \\
+\hline
+{\em first\-Column} & The y position of the first new letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the word 
+\end{DoxyReturn}
+
+
+Definition at line 719 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, Space\-::get\-Letter(), Space\-::get\-Letter\-Multiplier(), Letter\-::get\-Value(), Space\-::get\-Word\-Multiplier(), Space\-::is\-Blank(), Space\-::is\-New(), score(), and spaces.
+
+
+
+Referenced by score\-Vertical().
+
+
+\begin{DoxyCode}
+720 \{
+721     \textcolor{keywordtype}{int} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score} = 0;
+722     \textcolor{keywordtype}{int} length = 0;
+723     \textcolor{keywordtype}{int} isNew = \textcolor{keyword}{false};
+724     \textcolor{keywordtype}{int} wordMultiplier = 1;
+725     \textcolor{keywordtype}{int} row = firstRow;
+726 
+727     \textcolor{comment}{// figures out the length of the word}
+728     \hyperlink{class_space}{Space}* space = \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn];
+729     \textcolor{keywordflow}{while}(row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} &&
+730           (space = \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn]) &&
+731           !space->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}())\{
+732         length++;
+733         \textcolor{keywordflow}{if} (space->\hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{isNew}())\{
+734             isNew = \textcolor{keyword}{true};
+735         \}
+736         row++;
+737     \}
+738 
+739     \textcolor{comment}{// figures out the vaue of the word}
+740     \textcolor{keywordflow}{if} (length > 1 && isNew)\{
+741         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < length; i++)\{
+742             space = \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow + i][firstColumn];
+743             \textcolor{keywordflow}{if} (space->\hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{isNew}())\{  \textcolor{comment}{// Mulltipliers only apply for new letters}
+744                 score += space->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{getValue}() * space->
+      \hyperlink{class_space_af35759deb33db2b7b7c77a40716c179f}{getLetterMultiplier}();
+745                 wordMultiplier *= space->\hyperlink{class_space_a6a26a281a90288d56c83cc76b53cb6fb}{getWordMultiplier}();
+746             \}
+747             \textcolor{keywordflow}{else} \{
+748                 score += space->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{getValue}();
+749             \}
+750         \}
+751     \}
+752     score = score * wordMultiplier;
+753 
+754     \textcolor{keywordflow}{return} \hyperlink{class_board_a48c3a272cb4a47509ddd88edaec2bb59}{score};
+755 \}
+\end{DoxyCode}
+\hypertarget{class_board_ae08098fe478e2832e7e7403140314164}{\index{Board@{Board}!set\-Game@{set\-Game}}
+\index{set\-Game@{set\-Game}!Board@{Board}}
+\subsubsection[{set\-Game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::set\-Game (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game}
+\end{DoxyParamCaption}
+)}}\label{class_board_ae08098fe478e2832e7e7403140314164}
+
+
+\hyperlink{class_board_ae08098fe478e2832e7e7403140314164}{Board\-::set\-Game} Setter for game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file board.\-cpp.
+
+
+
+References game.
+
+
+
+Referenced by Dialog\-::setup\-Game().
+
+
+\begin{DoxyCode}
+93 \{
+94     this->game = \hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game};
+95     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+96 \}
+\end{DoxyCode}
+\hypertarget{class_board_ac19eb0e5a0936b89d6070d1cb96d107a}{\index{Board@{Board}!set\-Space@{set\-Space}}
+\index{set\-Space@{set\-Space}!Board@{Board}}
+\subsubsection[{set\-Space}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::set\-Space (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf Letter} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{class_board_ac19eb0e5a0936b89d6070d1cb96d107a}
+
+
+set\-Space Setter for a space 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position to set \\
+\hline
+{\em y} & The y position to set \\
+\hline
+{\em l} & The pointer to the letter which we will insert in the spot \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 266 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, Space\-::set\-Letter(), and spaces.
+
+
+\begin{DoxyCode}
+267 \{
+268     assert(x >=0 && x < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE});
+269     assert(y >=0 && y < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE});
+270 
+271     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[x][y]->\hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{setLetter}(l);
+272 \}
+\end{DoxyCode}
+\hypertarget{class_board_a43514bd0ab816eaed9affaace84686fe}{\index{Board@{Board}!setup@{setup}}
+\index{setup@{setup}!Board@{Board}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_board_a43514bd0ab816eaed9affaace84686fe}
+
+
+\hyperlink{class_board_a43514bd0ab816eaed9affaace84686fe}{Board\-::setup} Sets up the board. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file board.\-cpp.
+
+
+
+References setup\-Plain\-Spaces(), and setup\-Special\-Spaces().
+
+
+
+Referenced by Board().
+
+
+\begin{DoxyCode}
+81 \{
+82     \hyperlink{class_board_af09b7eb32a7b1bee3aa0b8e9702262a8}{setupSpecialSpaces}();
+83     \hyperlink{class_board_a040fc6830a98b0ff7e6549a07acd65fa}{setupPlainSpaces}();
+84     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+85 \}
+\end{DoxyCode}
+\hypertarget{class_board_a716521053c43060f4ec4b8ce59ab6972}{\index{Board@{Board}!setup2\-L@{setup2\-L}}
+\index{setup2\-L@{setup2\-L}!Board@{Board}}
+\subsubsection[{setup2\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup2\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a716521053c43060f4ec4b8ce59ab6972}
+
+
+\hyperlink{class_board_a716521053c43060f4ec4b8ce59ab6972}{Board\-::setup2\-L} Sets up spaces with 2 $\ast$ letter multiplier. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 210 of file board.\-cpp.
+
+
+
+References D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R, and spaces.
+
+
+
+Referenced by setup\-Special\-Spaces().
+
+
+\begin{DoxyCode}
+211 \{
+212     \textcolor{keywordtype}{int} lm = 2, wm = 1;
+213     QString label = \textcolor{stringliteral}{"2l"}, color = \hyperlink{board_8h_ae1643176725e430fda174728d157a635}{DOUBLELETTERCOLOR};
+214     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[0][3] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(0, 3, lm, wm, label, color);
+215     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[0][11] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(0, 11, lm, wm, label, color);
+216     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[2][6] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(2, 6, lm, wm, label, color);
+217     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[2][8] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(2, 8, lm, wm, label, color);
+218     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[3][0] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(3, 0, lm, wm, label, color);
+219     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[3][7] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(3, 7, lm, wm, label, color);
+220     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[3][14] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(3, 14, lm, wm, label, color);
+221     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[6][2] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(6, 2, lm, wm, label, color);
+222     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[6][6] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(6, 6, lm, wm, label, color);
+223     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[6][8] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(6, 8, lm, wm, label, color);
+224     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[6][12] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(6, 12, lm, wm, label, color);
+225     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][3] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(7, 3, lm, wm, label, color);
+226     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][11] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(7, 11, lm, wm, label, color);
+227     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[8][2] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(8, 2, lm, wm, label, color);
+228     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[8][6] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(8, 6, lm, wm, label, color);
+229     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[8][8] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(8, 8, lm, wm, label, color);
+230     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[8][12] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(8, 12, lm, wm, label, color);
+231     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[11][0] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(11, 0, lm, wm, label, color);
+232     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[11][7] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(11, 7, lm, wm, label, color);
+233     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[11][14] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(11, 14, lm, wm, label, color);
+234     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[12][6] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(12, 6, lm, wm, label, color);
+235     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[12][8] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(12, 8, lm, wm, label, color);
+236     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[14][3] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(14, 3, lm, wm, label, color);
+237     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[14][11] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(14, 11, lm, wm, label, color);
+238 
+239     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+240 \}
+\end{DoxyCode}
+\hypertarget{class_board_ab2c7d1364979e2296aaee238dec0ed41}{\index{Board@{Board}!setup2\-W@{setup2\-W}}
+\index{setup2\-W@{setup2\-W}!Board@{Board}}
+\subsubsection[{setup2\-W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup2\-W (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ab2c7d1364979e2296aaee238dec0ed41}
+
+
+\hyperlink{class_board_ab2c7d1364979e2296aaee238dec0ed41}{Board\-::setup2\-W} Sets up spaces with 2 $\ast$ word multiplier. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file board.\-cpp.
+
+
+
+References D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R, and spaces.
+
+
+
+Referenced by setup\-Special\-Spaces().
+
+
+\begin{DoxyCode}
+159 \{
+160     \textcolor{keywordtype}{int} lm = 1, wm = 2;
+161     QString label = \textcolor{stringliteral}{"2w"}, color = \hyperlink{board_8h_a10e5d0be9a98901f142735d07e5537f6}{DOUBLEWORDCOLOR};
+162     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[1][1] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(1, 1, lm, wm, label, color);
+163     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[2][2] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(2, 2, lm, wm, label, color);
+164     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[3][3] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(3, 3, lm, wm, label, color);
+165     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[4][4] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(4, 4, lm, wm, label, color);
+166     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[1][13] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(1, 13, lm, wm, label, color);
+167     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[2][12] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(2, 12, lm, wm, label, color);
+168     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[3][11] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(3, 11, lm, wm, label, color);
+169     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[4][10] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(4, 10, lm, wm, label, color);
+170     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[10][4] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(10, 4, lm, wm, label, color);
+171     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[11][3] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(11, 3, lm, wm, label, color);
+172     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[12][2] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(12, 2, lm, wm, label, color);
+173     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[13][1] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(13, 1, lm, wm, label, color);
+174     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[10][10] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(10, 10, lm, wm, label, color);
+175     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[11][11] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(11, 11, lm, wm, label, color);
+176     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[12][12] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(12, 12, lm, wm, label, color);
+177     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[13][13] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(13, 13, lm, wm, label, color);
+178 
+179     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+180 \}
+\end{DoxyCode}
+\hypertarget{class_board_a3a6d2d854db811443f469237b3c8dbf5}{\index{Board@{Board}!setup3\-L@{setup3\-L}}
+\index{setup3\-L@{setup3\-L}!Board@{Board}}
+\subsubsection[{setup3\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup3\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a3a6d2d854db811443f469237b3c8dbf5}
+
+
+\hyperlink{class_board_a3a6d2d854db811443f469237b3c8dbf5}{Board\-::setup3\-L} Sets up spaces with 3 $\ast$ letter multipler. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 186 of file board.\-cpp.
+
+
+
+References spaces, and T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R.
+
+
+
+Referenced by setup\-Special\-Spaces().
+
+
+\begin{DoxyCode}
+187 \{
+188     \textcolor{keywordtype}{int} lm = 3, wm = 1;
+189     QString label = \textcolor{stringliteral}{"3l"}, color = \hyperlink{board_8h_a52e9b32f92467d14351e5a500f48638f}{TRIPLELETTERCOLOR};
+190     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[1][5] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(1, 5, lm, wm, label, color);
+191     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[1][9] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(1, 9, lm, wm, label, color);
+192     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[5][1] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(5, 1, lm, wm, label, color);
+193     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[5][5] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(5, 5, lm, wm, label, color);
+194     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[5][9] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(5, 9, lm, wm, label, color);
+195     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[5][13] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(5, 13, lm, wm, label, color);
+196     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[9][1] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(9, 1, lm, wm, label, color);
+197     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[9][5] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(9, 5, lm, wm, label, color);
+198     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[9][9] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(9, 9, lm, wm, label, color);
+199     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[9][13] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(9, 13, lm, wm, label, color);
+200     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[13][5] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(13, 5, lm, wm, label, color);
+201     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[13][9] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(13, 9, lm, wm, label, color);
+202 
+203     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+204 \}
+\end{DoxyCode}
+\hypertarget{class_board_a04c1b8a27cb98af441adf28c860801a9}{\index{Board@{Board}!setup3\-W@{setup3\-W}}
+\index{setup3\-W@{setup3\-W}!Board@{Board}}
+\subsubsection[{setup3\-W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup3\-W (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a04c1b8a27cb98af441adf28c860801a9}
+
+
+\hyperlink{class_board_a04c1b8a27cb98af441adf28c860801a9}{Board\-::setup3\-W} Sets up spaces with 3 $\ast$ word multiplier. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file board.\-cpp.
+
+
+
+References spaces, and T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R.
+
+
+
+Referenced by setup\-Special\-Spaces().
+
+
+\begin{DoxyCode}
+139 \{
+140     \textcolor{keywordtype}{int} lm = 1, wm = 3;
+141     QString label = \textcolor{stringliteral}{"3w"}, color = \hyperlink{board_8h_a55a5e2b160827afd2651003878573e48}{TRIPLEWORDCOLOR};
+142     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[0][0] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(0, 0, lm, wm, label, color);
+143     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[0][7] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(0, 7, lm, wm, label, color);
+144     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[0][14] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(0, 14, lm, wm, label, color);
+145     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][0] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(7, 0, lm, wm, label, color);
+146     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][14] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(7, 14, lm, wm, label, color);
+147     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[14][0] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(14, 0, lm, wm, label, color);
+148     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[14][7] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(14, 7, lm, wm, label, color);
+149     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[14][14] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(14, 14, lm, wm, label, color);
+150 
+151     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+152 \}
+\end{DoxyCode}
+\hypertarget{class_board_a040fc6830a98b0ff7e6549a07acd65fa}{\index{Board@{Board}!setup\-Plain\-Spaces@{setup\-Plain\-Spaces}}
+\index{setup\-Plain\-Spaces@{setup\-Plain\-Spaces}!Board@{Board}}
+\subsubsection[{setup\-Plain\-Spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup\-Plain\-Spaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a040fc6830a98b0ff7e6549a07acd65fa}
+
+
+\hyperlink{class_board_a040fc6830a98b0ff7e6549a07acd65fa}{Board\-::setup\-Plain\-Spaces} Sets up the rest of the board, should be called only after all the special spaces are set up. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 247 of file board.\-cpp.
+
+
+
+References B\-O\-A\-R\-D\-S\-I\-Z\-E, and spaces.
+
+
+
+Referenced by setup().
+
+
+\begin{DoxyCode}
+248 \{
+249     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++)\{
+250         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++)\{
+251             \textcolor{keywordflow}{if} (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j] == NULL)\{
+252                 \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(i, j, 1, 1, \textcolor{stringliteral}{" "}, \textcolor{stringliteral}{"white"});
+253             \}
+254         \}
+255     \}
+256 
+257     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+258 \}
+\end{DoxyCode}
+\hypertarget{class_board_af09b7eb32a7b1bee3aa0b8e9702262a8}{\index{Board@{Board}!setup\-Special\-Spaces@{setup\-Special\-Spaces}}
+\index{setup\-Special\-Spaces@{setup\-Special\-Spaces}!Board@{Board}}
+\subsubsection[{setup\-Special\-Spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup\-Special\-Spaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_af09b7eb32a7b1bee3aa0b8e9702262a8}
+
+
+\hyperlink{class_board_af09b7eb32a7b1bee3aa0b8e9702262a8}{Board\-::setup\-Special\-Spaces} Sets up special spaces on the board. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file board.\-cpp.
+
+
+
+References setup2\-L(), setup2\-W(), setup3\-L(), setup3\-W(), and setup\-Start().
+
+
+
+Referenced by setup().
+
+
+\begin{DoxyCode}
+112 \{
+113     \hyperlink{class_board_a04c1b8a27cb98af441adf28c860801a9}{setup3W}();
+114     \hyperlink{class_board_ab2c7d1364979e2296aaee238dec0ed41}{setup2W}();
+115     \hyperlink{class_board_a3a6d2d854db811443f469237b3c8dbf5}{setup3L}();
+116     \hyperlink{class_board_a716521053c43060f4ec4b8ce59ab6972}{setup2L}();
+117     \hyperlink{class_board_ab75ded04c7d5b09314fe888ece2fba4f}{setupStart}();
+118 
+119     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+120 \}
+\end{DoxyCode}
+\hypertarget{class_board_ab75ded04c7d5b09314fe888ece2fba4f}{\index{Board@{Board}!setup\-Start@{setup\-Start}}
+\index{setup\-Start@{setup\-Start}!Board@{Board}}
+\subsubsection[{setup\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::setup\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ab75ded04c7d5b09314fe888ece2fba4f}
+
+
+\hyperlink{class_board_ab75ded04c7d5b09314fe888ece2fba4f}{Board\-::setup\-Start} Sets up the start space. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file board.\-cpp.
+
+
+
+References D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R, Space\-::set\-Start\-Space(), and spaces.
+
+
+
+Referenced by setup\-Special\-Spaces().
+
+
+\begin{DoxyCode}
+127 \{
+128     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][7] = \textcolor{keyword}{new} \hyperlink{class_space}{Space}(7, 7, 1, 2, \textcolor{stringliteral}{"*"}, \hyperlink{board_8h_a10e5d0be9a98901f142735d07e5537f6}{DOUBLEWORDCOLOR});
+129     \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][7]->\hyperlink{class_space_a504f4eb0ec7193df72b161745aa8086e}{setStartSpace}(\textcolor{keyword}{true});
+130 
+131     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+132 \}
+\end{DoxyCode}
+\hypertarget{class_board_a4a04a6fc41d20c9836b23826dc7f6026}{\index{Board@{Board}!start\-Covered@{start\-Covered}}
+\index{start\-Covered@{start\-Covered}!Board@{Board}}
+\subsubsection[{start\-Covered}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::start\-Covered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a4a04a6fc41d20c9836b23826dc7f6026}
+
+
+\hyperlink{class_board_a4a04a6fc41d20c9836b23826dc7f6026}{Board\-::start\-Covered} Evaluates whether the start space has been played. This should only fail on the first play. 
+
+\begin{DoxyReturn}{Returns}
+true if it is covered, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 389 of file board.\-cpp.
+
+
+
+References first\-Played, Space\-::get\-Letter(), and spaces.
+
+
+
+Referenced by A\-I\-Player\-::play(), and validate().
+
+
+\begin{DoxyCode}
+390 \{
+391     \textcolor{keywordflow}{return} \hyperlink{class_board_aa360f3725c638c933beb5d3e3cd881d7}{firstPlayed} || (\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[7][7]->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}() != NULL);
+392 \}
+\end{DoxyCode}
+\hypertarget{class_board_a6f71df81a77438867e79f956afedb141}{\index{Board@{Board}!validate@{validate}}
+\index{validate@{validate}!Board@{Board}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::validate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a6f71df81a77438867e79f956afedb141}
+
+
+\hyperlink{class_board_a6f71df81a77438867e79f956afedb141}{Board\-::validate} Validates a board. 
+
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+The start space should be covered There should be at least one new letter on the board The letters should all be in one row or column 
+
+Definition at line 307 of file board.\-cpp.
+
+
+
+References are\-Valid\-Words(), has\-New(), same\-Row\-Or\-Column(), and start\-Covered().
+
+
+
+Referenced by on\-\_\-play\-Button\-\_\-clicked(), and A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+308 \{
+312     \textcolor{keywordtype}{bool} isValidPosition = \hyperlink{class_board_a4a04a6fc41d20c9836b23826dc7f6026}{startCovered}() && \hyperlink{class_board_a2b0673132c5b8885a10790d9e505bf40}{hasNew}() && 
+      \hyperlink{class_board_a55a3b8ed8db758006476f8649cd4e86d}{sameRowOrColumn}();
+313 
+314     \textcolor{keywordflow}{return} isValidPosition && \hyperlink{class_board_a581529380e6d774493cac106b4175713}{areValidWords}();
+315 \}
+\end{DoxyCode}
+\hypertarget{class_board_a080fd46791ef19789fb414457bd416e4}{\index{Board@{Board}!validate\-Word\-Horizontal@{validate\-Word\-Horizontal}}
+\index{validate\-Word\-Horizontal@{validate\-Word\-Horizontal}!Board@{Board}}
+\subsubsection[{validate\-Word\-Horizontal}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::validate\-Word\-Horizontal (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a080fd46791ef19789fb414457bd416e4}
+
+
+\hyperlink{class_board_a080fd46791ef19789fb414457bd416e4}{Board\-::validate\-Word\-Horizontal} Validates a word against the dictionary in a horizontal direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The first row of the word \\
+\hline
+{\em first\-Column} & The first column of the word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a valid word, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 346 of file board.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), B\-O\-A\-R\-D\-S\-I\-Z\-E, Game\-::dictionary, game, Space\-::get\-Letter(), Dictionary\-::is\-Word(), and spaces.
+
+
+
+Referenced by are\-Valid\-Words().
+
+
+\begin{DoxyCode}
+347 \{
+348     QString word = \textcolor{stringliteral}{""};
+349     \textcolor{keywordtype}{int} column = firstColumn;
+350     \textcolor{keywordflow}{while} (column < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} && !\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column]->isBlank())\{
+351         word = word + \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[firstRow][column]->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()->toLatin1();
+352         column++;
+353     \}
+354     \textcolor{keywordflow}{if} (column > (firstColumn + 1) && !\hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game}->\hyperlink{class_game_ac02ac16d33949edb2c83b9c6ce48e596}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(word))\{
+355         cout << word.toStdString() << \textcolor{stringliteral}{" is not a word."} << endl;
+356         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+357     \}
+358     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+359 \}
+\end{DoxyCode}
+\hypertarget{class_board_adac7ae1684cc12ae8baa48cbae467285}{\index{Board@{Board}!validate\-Word\-Vertical@{validate\-Word\-Vertical}}
+\index{validate\-Word\-Vertical@{validate\-Word\-Vertical}!Board@{Board}}
+\subsubsection[{validate\-Word\-Vertical}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::validate\-Word\-Vertical (
+\begin{DoxyParamCaption}
+\item[{int}]{first\-Row, }
+\item[{int}]{first\-Column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_adac7ae1684cc12ae8baa48cbae467285}
+
+
+\hyperlink{class_board_adac7ae1684cc12ae8baa48cbae467285}{Board\-::validate\-Word\-Vertical} Validates a word against the dictionary in a vertical direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\-Row} & The first row of the word \\
+\hline
+{\em first\-Column} & The first column of the word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 367 of file board.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), B\-O\-A\-R\-D\-S\-I\-Z\-E, Game\-::dictionary, game, Space\-::get\-Letter(), Dictionary\-::is\-Word(), and spaces.
+
+
+
+Referenced by are\-Valid\-Words().
+
+
+\begin{DoxyCode}
+368 \{
+369     QString word = \textcolor{stringliteral}{""};
+370     word = \textcolor{stringliteral}{""};
+371     \textcolor{keywordtype}{int} row = firstRow;
+372     \textcolor{keywordflow}{while} (row < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE} && !\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn]->isBlank())\{
+373         word = word + \hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[row][firstColumn]->\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{getLetter}()->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()->toLatin1();
+374         row++;
+375     \}
+376     \textcolor{keywordflow}{if} (row > (firstRow + 1) && !\hyperlink{class_board_ac846e6a4ffe6621894ff8738ea59549e}{game}->\hyperlink{class_game_ac02ac16d33949edb2c83b9c6ce48e596}{dictionary}->\hyperlink{class_dictionary_afe2588ce04f6ad733c51df58a8d0d96b}{isWord}(word))\{
+377         cout << word.toStdString() << \textcolor{stringliteral}{" is not a word."} << endl;
+378         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+379     \}
+380     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+381 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_board_a2c11a076a909acd936d897cd2a81f931}{\index{Board@{Board}!A\-I\-Player@{A\-I\-Player}}
+\index{A\-I\-Player@{A\-I\-Player}!Board@{Board}}
+\subsubsection[{A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf A\-I\-Player}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_board_a2c11a076a909acd936d897cd2a81f931}
+
+
+Definition at line 80 of file board.\-h.
+
+\hypertarget{class_board_ad799faa7c15b047d09f3fa52406c95d5}{\index{Board@{Board}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Board@{Board}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Board} \&}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_board_ad799faa7c15b047d09f3fa52406c95d5}
+
+
+operator $<$$<$ Overloading the $<$$<$ operator for debugging information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+{\em board} & The board to be output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream 
+\end{DoxyReturn}
+
+
+Definition at line 804 of file board.\-cpp.
+
+
+\begin{DoxyCode}
+805 \{
+806     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; i++) \{
+807         cout << \textcolor{stringliteral}{"\{"} << setw(2) << i << \textcolor{stringliteral}{"\}"};
+808         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{BOARDSIZE}; j++) \{
+809             os << *(board.\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]);
+810         \}
+811         os << endl;
+812     \}
+813     cout << \textcolor{stringliteral}{"\{XX\}\{0 \}\{1 \}\{2 \}\{3 \}\{4 \}\{5 \}\{6 \}\{7 \}\{8 \}\{9 \}\{10\}\{11\}\{12\}\{13\}\{14\}"};
+814     \textcolor{keywordflow}{return} os;
+815 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_board_a4dde45cdfd5aac960628f55106179ba4}{\index{Board@{Board}!active@{active}}
+\index{active@{active}!Board@{Board}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::active\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a4dde45cdfd5aac960628f55106179ba4}
+Indicator that the board has an active space 
+
+Definition at line 34 of file board.\-h.
+
+
+
+Referenced by Board(), and reset().
+
+\hypertarget{class_board_a0a25d2a46017652371e29fa8c8dd4544}{\index{Board@{Board}!board@{board}}
+\index{board@{board}!Board@{Board}}
+\subsubsection[{board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} $\ast$ Board\-::board = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_board_a0a25d2a46017652371e29fa8c8dd4544}
+The playing board 
+
+Definition at line 30 of file board.\-h.
+
+
+
+Referenced by get\-Board().
+
+\hypertarget{class_board_aa360f3725c638c933beb5d3e3cd881d7}{\index{Board@{Board}!first\-Played@{first\-Played}}
+\index{first\-Played@{first\-Played}!Board@{Board}}
+\subsubsection[{first\-Played}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::first\-Played\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_aa360f3725c638c933beb5d3e3cd881d7}
+Indicator that the first play has been made 
+
+Definition at line 35 of file board.\-h.
+
+
+
+Referenced by Board(), and start\-Covered().
+
+\hypertarget{class_board_ac846e6a4ffe6621894ff8738ea59549e}{\index{Board@{Board}!game@{game}}
+\index{game@{game}!Board@{Board}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Board\-::game\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_ac846e6a4ffe6621894ff8738ea59549e}
+The game 
+
+Definition at line 33 of file board.\-h.
+
+
+
+Referenced by Board(), get\-Game(), move\-Letter\-To\-Board(), on\-\_\-cancel\-Button\-\_\-clicked(), on\-\_\-pass\-Button\-\_\-clicked(), on\-\_\-play\-Button\-\_\-clicked(), set\-Game(), validate\-Word\-Horizontal(), and validate\-Word\-Vertical().
+
+\hypertarget{class_board_a6862f6207a47592cd5807f08e8d6564b}{\index{Board@{Board}!is\-Set@{is\-Set}}
+\index{is\-Set@{is\-Set}!Board@{Board}}
+\subsubsection[{is\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::is\-Set = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_board_a6862f6207a47592cd5807f08e8d6564b}
+True if the board has been set 
+
+Definition at line 31 of file board.\-h.
+
+
+
+Referenced by get\-Board().
+
+\hypertarget{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{\index{Board@{Board}!spaces@{spaces}}
+\index{spaces@{spaces}!Board@{Board}}
+\subsubsection[{spaces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space}$\ast$ Board\-::spaces\mbox{[}{\bf B\-O\-A\-R\-D\-S\-I\-Z\-E}\mbox{]}\mbox{[}{\bf B\-O\-A\-R\-D\-S\-I\-Z\-E}\mbox{]}}}\label{class_board_a73b12248ddb6ee3adc24f4458d8661c2}
+Container for spaces 
+
+Definition at line 66 of file board.\-h.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-touches\-\_\-2(), Move\-::apply(), are\-Valid\-Words(), Board(), Dialog\-::create\-Grid\-Group\-Box(), Move\-::finalize(), get\-Color(), has\-New(), inactivate\-Other\-Spaces(), is\-Touching\-On\-Board(), must\-Touch\-Column(), must\-Touch\-Row(), no\-Column\-Blanks(), no\-Row\-Blanks(), on\-\_\-cancel\-Button\-\_\-clicked(), operator$<$$<$(), A\-I\-Player\-::play(), reset(), same\-Row\-Or\-Column(), score\-Horizontal(), score\-Horizontal\-Word(), score\-Vertical(), score\-Vertical\-Word(), set\-Space(), setup2\-L(), setup2\-W(), setup3\-L(), setup3\-W(), setup\-Plain\-Spaces(), setup\-Start(), start\-Covered(), Move\-::unapply(), Play\-::validate(), Play\-::validate\-\_\-down(), Play\-::validate\-\_\-right(), validate\-Word\-Horizontal(), validate\-Word\-Vertical(), and $\sim$\-Board().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{board_8h}{board.\-h}\item 
+Scrabble/\hyperlink{board_8cpp}{board.\-cpp}\end{DoxyCompactItemize}

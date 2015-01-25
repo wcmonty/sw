@@ -1,0 +1,71 @@
+# Execution begins at address 0
+		.pos 0
+init:	irmovl Stack, %esp
+		irmovl Stack, %ebp
+		call Main
+		halt
+		
+# Array of 4 elements
+		.align 4
+array:	.long 0xd
+		.long 0xc
+		.long 0xe
+		.long 0xa
+
+Main:	pushl %ebp
+		rrmovl %esp, %ebp
+		irmovl $4, %eax
+		pushl %eax
+		irmovl array, %edx
+		pushl %edx
+		call Bubble_p
+		rrmovl %ebp, %esp
+		popl %ebp
+		ret
+		
+		#void Bubble_p(int *data, int count)
+Bubble_p:
+		pushl %ebp
+		rrmovl %esp, %ebp
+		pushl %ebx
+		pushl %edi
+		pushl %esi
+		mrmovl 12(%ebp), %eax
+		irmov $-1, $ebx
+		addl %ebx, %eax
+		andl %eax, %eax
+		jle END_OUTER
+		mrmovl 8(%epb), %ecx
+		irmov $4, %ebx
+		addl %ebx, %ecx
+OUTER:	andl %eax, %eax
+		jle END_INNER
+		rrmovl %ecx, %edx
+		rrmovl %eax, %esi
+INNER:	mrmovl -4(%edx), %edi
+		mrmovl (%edx), %ebx
+		pushl %ebx
+		subl %edi, %ebx
+		popl %ebx
+		jge NOSWAP
+		rmmovl %edi, (%edx)
+		rmmovl %ebx, -4(%edx)
+NOSWAP:	pushl %ebx
+		irmovl %4, %ebx
+		addl %ebx, %edx
+		irmovl %1, %ebx
+		subl %ebx, %esi
+		popl %ebx
+		jne INNER
+END_INNER:
+		push %ebx
+		irmovl %1, %ebx
+		sub %ebx, %eax
+		pop %ebx
+		jne OUTER
+END_OUTER:
+		popl %esi
+		popl %edi
+		popl %ebx
+		popl %ebp
+		ret

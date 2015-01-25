@@ -1,0 +1,104 @@
+William Montgomery
+wmontg2@uic.edu
+
+CS 385 - Homework 4
+Fall 2013
+University of Illinois at Chicago
+
+findIt Documentation
+
+findIt is based on the Linux program find.  findIt takes a list of directories followed by an optional list of expressions and evaluates each file against the list of expressions"
+
+**************************************************************************************************
+To compile:
+A makefile is include. You should be able to compile with:
+make clean
+make
+
+To run:
+The makefile generates an executable named findIt.
+
+Testing:
+A test script is included (test.sh).  There is no guarantee the script runs correctly on bert, but should give a starting point for what is implemented.
+
+**************************************************************************************************
+findIt has implemented the following operators (listed in the order of precedence):
+-not
+-and
+-or
+
+I believe all are working, but the implementation is brittle.
+
+**************************************************************************************************
+findIt has implemented the following expressions from find:
+-help
+When -help is specified, no files are processed and the program just outputs some helpful information about running the pprogram.
+
+-depth 
+Performs a -depth first search.  This means that directories are processed before files in a director.  If this option is not specified, then the program processes files before directories (unlike find, which processes in whatever order is returned by readdir).
+
+-maxdepth 
+The maxdepth of the search.  I chose not to evaluate this on a node basis, due to efficiency.  Instead, when program reached the maxdepth it immediately returns without processing deeper files.
+
+-amin, -atime 
+Access time.  This was implemented, but there are differences in my implementation from find's implementation, due to rounding differences.  If you specify "-atime +1", find will only find files that are at least 2 days old.  I tried to match this behavior as best as I could,  but results were inconsistent.
+
+-cmin, -ctime 
+Changed time.  See notes on rounding for -amin and -atime.
+
+-mmin, -mtime 
+Modified tie.  See notes on rounding for -amin and -atime.
+
+-links
+Number of hard links. This works identically to find's implementation, at least in my testing.
+
+-uid, -gid 
+User ID and group ID. This works identically to find's implementation, at least in my testing.
+
+-size 
+The size of the file.  I chose to implement the various sizes of files.  These include:
+`b'    for 512-byte blocks (this is the default if no suffix is used)
+`c'    for bytes
+`w'    for two-byte words
+`k'    for Kilobytes (units of 1024 bytes)
+`M'    for Megabytes (units of 1048576 bytes)
+`G'    for Gigabytes (units of 1073741824 bytes)
+
+-type
+The type of the file.  I implement all of these:
+'b' block (buffered) special
+'c' character (unbuffered) special
+'d' directory
+'p' named pipe (FIFO)
+'l' symbolic  link
+'s' socket
+'f' regular file
+
+-print
+Prints out the file name. Always returns true.
+
+**************************************************************************************
+findIt improvements
+-summarize
+Summarizes the files.  This is implemented as a treenode and it works as specified. To get the results, findIt walks the evalNode tree printing out the results.
+
+
+-access type
+Returns true if the program has access to the file.  This works as specified.
+
+-largest type 
+-smallest type
+Finds the largest and smallest of the type.  Returns true.  To get the results, findIt walks the evalNode tree printing out the results.
+
+-treedir
+This is only partially implemented.  The tree is printed out with correct depths, but the statistics are not being reported.  Some work has been done, as I a passing a struct to aggregate that information, but do not have time to implement it.
+
+-sparse 
+Finds sparse files.  This works as intended.  To test it, I used the Gnu version of find to print out the sparseness of each file.  Any file in the range 0 < number < 1, were considered sparse.
+
+**************************************************************************************
+The following functions were not implemented:
+-fprint
+-exec
+-ok
+

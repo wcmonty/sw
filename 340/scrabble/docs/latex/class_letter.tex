@@ -1,0 +1,373 @@
+\hypertarget{class_letter}{\section{Letter Class Reference}
+\label{class_letter}\index{Letter@{Letter}}
+}
+
+
+The \hyperlink{class_letter}{Letter} class Encapsulates a \hyperlink{class_letter}{Letter} (or Tile)  
+
+
+
+
+{\ttfamily \#include $<$letter.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_letter_aeaf51ffac3bafca1b1cc504381a6152f}{Letter} (Q\-Char)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_aeaf51ffac3bafca1b1cc504381a6152f}{Letter\-::\-Letter} Constructor. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{Letter\-::get\-Value} Getter for value. \end{DoxyCompactList}\item 
+void \hyperlink{class_letter_a9f2f4067a9fd386366273af73fac70e5}{set\-Letter} (Q\-Char)
+\begin{DoxyCompactList}\small\item\em Letter\-::set\-Value Setter for value, only for wildcards. \end{DoxyCompactList}\item 
+bool \hyperlink{class_letter_a7e6053ff071263d8bc876d31101ea235}{is\-A\-Match} (Q\-Char)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_a7e6053ff071263d8bc876d31101ea235}{Letter\-::is\-A\-Match} Tests if a character is a match to this letter. \end{DoxyCompactList}\item 
+bool \hyperlink{class_letter_aa0c05656947c35b032b20b7260f463ba}{is\-Wildcard} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_letter_aa0c05656947c35b032b20b7260f463ba}{Letter\-::is\-Wildcard}. \end{DoxyCompactList}\item 
+Q\-Char $\ast$ \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{as\-Q\-Char\-Ptr} ()
+\begin{DoxyCompactList}\small\item\em Letter\-::get\-Letter Getter for this letter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Char \hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter}
+\item 
+unsigned int \hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value}
+\item 
+bool \hyperlink{class_letter_a6c34169c5f139924fb14154391bf1925}{wildcard}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_letter_a90f2b9e82cfd5e6c60087fb6c1f92937}{operator$<$$<$} (ostream \&os, const \hyperlink{class_letter}{Letter} \&\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter})
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloaded ostream operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_letter}{Letter} class Encapsulates a \hyperlink{class_letter}{Letter} (or Tile) 
+
+Definition at line 11 of file letter.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_letter_aeaf51ffac3bafca1b1cc504381a6152f}{\index{Letter@{Letter}!Letter@{Letter}}
+\index{Letter@{Letter}!Letter@{Letter}}
+\subsubsection[{Letter}]{\setlength{\rightskip}{0pt plus 5cm}Letter\-::\-Letter (
+\begin{DoxyParamCaption}
+\item[{Q\-Char}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_letter_aeaf51ffac3bafca1b1cc504381a6152f}
+
+
+\hyperlink{class_letter_aeaf51ffac3bafca1b1cc504381a6152f}{Letter\-::\-Letter} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file letter.\-cpp.
+
+
+
+References value, and wildcard.
+
+
+\begin{DoxyCode}
+8                           \{
+9 
+10     \hyperlink{class_letter_a6c34169c5f139924fb14154391bf1925}{wildcard} = \textcolor{keyword}{false};
+11     this->\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter} = \hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter}.toLower();
+12     \textcolor{keywordflow}{switch} (this->\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter}.toLatin1()) \{
+13     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'d'}):
+14     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'g'}):
+15         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 2;
+16         \textcolor{keywordflow}{break};
+17     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'b'}):
+18     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'c'}):
+19     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'m'}):
+20     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'p'}):
+21         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 3;
+22         \textcolor{keywordflow}{break};
+23     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'f'}):
+24     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'h'}):
+25     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'v'}):
+26     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'w'}):
+27     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'y'}):
+28        this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 4;
+29        \textcolor{keywordflow}{break};
+30     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'k'}):
+31         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 5;
+32         \textcolor{keywordflow}{break};
+33     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'j'}):
+34     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'x'}):
+35         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 8;
+36         \textcolor{keywordflow}{break};
+37     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'q'}):
+38     \textcolor{keywordflow}{case}(\textcolor{charliteral}{'z'}):
+39         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 10;
+40         \textcolor{keywordflow}{break};
+41     \textcolor{keywordflow}{case}(\textcolor{charliteral}{' '}):
+42         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 0;
+43         \hyperlink{class_letter_a6c34169c5f139924fb14154391bf1925}{wildcard} = \textcolor{keyword}{true};
+44         \textcolor{keywordflow}{break};
+45     \textcolor{keywordflow}{default}:
+46         this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value} = 1;
+47         \textcolor{keywordflow}{break};
+48     \}
+49 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{\index{Letter@{Letter}!as\-Q\-Char\-Ptr@{as\-Q\-Char\-Ptr}}
+\index{as\-Q\-Char\-Ptr@{as\-Q\-Char\-Ptr}!Letter@{Letter}}
+\subsubsection[{as\-Q\-Char\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Char $\ast$ Letter\-::as\-Q\-Char\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}
+
+
+Letter\-::get\-Letter Getter for this letter. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file letter.\-cpp.
+
+
+
+References letter.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search(), Play\-::get\-Char\-Array(), Space\-::on\-\_\-clicked(), operator$<$$<$(), Space\-::set\-Letter(), Play\-::validate\-\_\-down(), Play\-::validate\-\_\-right(), Board\-::validate\-Word\-Horizontal(), and Board\-::validate\-Word\-Vertical().
+
+
+\begin{DoxyCode}
+94                          \{
+95     \textcolor{keywordflow}{return} &(this->\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter});
+96 \}
+\end{DoxyCode}
+\hypertarget{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{\index{Letter@{Letter}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!Letter@{Letter}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Letter\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}
+
+
+\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{Letter\-::get\-Value} Getter for value. 
+
+\begin{DoxyReturn}{Returns}
+value 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file letter.\-cpp.
+
+
+
+References value.
+
+
+
+Referenced by Space\-::get\-Value(), Board\-::score\-Horizontal\-Word(), Board\-::score\-Vertical\-Word(), and Space\-::set\-Letter().
+
+
+\begin{DoxyCode}
+55                              \{
+56     \textcolor{keywordflow}{return} (this->\hyperlink{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{value});
+57 \}
+\end{DoxyCode}
+\hypertarget{class_letter_a7e6053ff071263d8bc876d31101ea235}{\index{Letter@{Letter}!is\-A\-Match@{is\-A\-Match}}
+\index{is\-A\-Match@{is\-A\-Match}!Letter@{Letter}}
+\subsubsection[{is\-A\-Match}]{\setlength{\rightskip}{0pt plus 5cm}bool Letter\-::is\-A\-Match (
+\begin{DoxyParamCaption}
+\item[{Q\-Char}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_letter_a7e6053ff071263d8bc876d31101ea235}
+
+
+\hyperlink{class_letter_a7e6053ff071263d8bc876d31101ea235}{Letter\-::is\-A\-Match} Tests if a character is a match to this letter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The char to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the character is a match, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file letter.\-cpp.
+
+
+
+References letter.
+
+
+
+Referenced by Space\-::on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+86                             \{
+87     \textcolor{keywordflow}{return} this->\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter} == c;
+88 \}
+\end{DoxyCode}
+\hypertarget{class_letter_aa0c05656947c35b032b20b7260f463ba}{\index{Letter@{Letter}!is\-Wildcard@{is\-Wildcard}}
+\index{is\-Wildcard@{is\-Wildcard}!Letter@{Letter}}
+\subsubsection[{is\-Wildcard}]{\setlength{\rightskip}{0pt plus 5cm}bool Letter\-::is\-Wildcard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_letter_aa0c05656947c35b032b20b7260f463ba}
+
+
+\hyperlink{class_letter_aa0c05656947c35b032b20b7260f463ba}{Letter\-::is\-Wildcard}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 75 of file letter.\-cpp.
+
+
+
+References wildcard.
+
+
+
+Referenced by Space\-::on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+76 \{
+77     \textcolor{keywordflow}{return} \hyperlink{class_letter_a6c34169c5f139924fb14154391bf1925}{wildcard};
+78 \}
+\end{DoxyCode}
+\hypertarget{class_letter_a9f2f4067a9fd386366273af73fac70e5}{\index{Letter@{Letter}!set\-Letter@{set\-Letter}}
+\index{set\-Letter@{set\-Letter}!Letter@{Letter}}
+\subsubsection[{set\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}void Letter\-::set\-Letter (
+\begin{DoxyParamCaption}
+\item[{Q\-Char}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_letter_a9f2f4067a9fd386366273af73fac70e5}
+
+
+Letter\-::set\-Value Setter for value, only for wildcards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The value to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file letter.\-cpp.
+
+
+
+References letter, and wildcard.
+
+
+
+Referenced by Space\-::on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+65 \{
+66     \textcolor{keywordflow}{if} (\hyperlink{class_letter_a6c34169c5f139924fb14154391bf1925}{wildcard})\{
+67         \hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter} = c;
+68     \}
+69 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_letter_a90f2b9e82cfd5e6c60087fb6c1f92937}{\index{Letter@{Letter}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Letter@{Letter}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Letter} \&}]{letter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_letter_a90f2b9e82cfd5e6c60087fb6c1f92937}
+
+
+operator $<$$<$ Overloaded ostream operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The ostream \\
+\hline
+{\em letter} & The letter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified ostream 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file letter.\-cpp.
+
+
+\begin{DoxyCode}
+104                                                        \{
+105     os << letter.\hyperlink{class_letter_a430f7ba15c252da3874f641422090fbd}{letter}.toLatin1();
+106     \textcolor{keywordflow}{return} os;
+107 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_letter_a430f7ba15c252da3874f641422090fbd}{\index{Letter@{Letter}!letter@{letter}}
+\index{letter@{letter}!Letter@{Letter}}
+\subsubsection[{letter}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Char Letter\-::letter\hspace{0.3cm}{\ttfamily [private]}}}\label{class_letter_a430f7ba15c252da3874f641422090fbd}
+The letter assigned to this tile 
+
+Definition at line 13 of file letter.\-h.
+
+
+
+Referenced by as\-Q\-Char\-Ptr(), is\-A\-Match(), operator$<$$<$(), and set\-Letter().
+
+\hypertarget{class_letter_a5c6b1982acd4967eec202c562be7bc8f}{\index{Letter@{Letter}!value@{value}}
+\index{value@{value}!Letter@{Letter}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Letter\-::value\hspace{0.3cm}{\ttfamily [private]}}}\label{class_letter_a5c6b1982acd4967eec202c562be7bc8f}
+The numerical value of the tile 
+
+Definition at line 14 of file letter.\-h.
+
+
+
+Referenced by get\-Value(), and Letter().
+
+\hypertarget{class_letter_a6c34169c5f139924fb14154391bf1925}{\index{Letter@{Letter}!wildcard@{wildcard}}
+\index{wildcard@{wildcard}!Letter@{Letter}}
+\subsubsection[{wildcard}]{\setlength{\rightskip}{0pt plus 5cm}bool Letter\-::wildcard\hspace{0.3cm}{\ttfamily [private]}}}\label{class_letter_a6c34169c5f139924fb14154391bf1925}
+True if the tile can represent any letter 
+
+Definition at line 15 of file letter.\-h.
+
+
+
+Referenced by is\-Wildcard(), Letter(), and set\-Letter().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{letter_8h}{letter.\-h}\item 
+Scrabble/\hyperlink{letter_8cpp}{letter.\-cpp}\end{DoxyCompactItemize}

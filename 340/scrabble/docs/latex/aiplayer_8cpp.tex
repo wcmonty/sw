@@ -1,0 +1,40 @@
+\hypertarget{aiplayer_8cpp}{\section{Scrabble/aiplayer.cpp File Reference}
+\label{aiplayer_8cpp}\index{Scrabble/aiplayer.\-cpp@{Scrabble/aiplayer.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}aiplayer.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}assert.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cctype$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{aiplayer_8cpp_a5ec041e0f53c78a5b4267c3df32ee188}{\-\_\-pred\-\_\-value\-\_\-sort} (\hyperlink{class_play}{Play} $\ast$a, \hyperlink{class_play}{Play} $\ast$b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{aiplayer_8cpp_a5ec041e0f53c78a5b4267c3df32ee188}{\index{aiplayer.\-cpp@{aiplayer.\-cpp}!\-\_\-pred\-\_\-value\-\_\-sort@{\-\_\-pred\-\_\-value\-\_\-sort}}
+\index{\-\_\-pred\-\_\-value\-\_\-sort@{\-\_\-pred\-\_\-value\-\_\-sort}!aiplayer.cpp@{aiplayer.\-cpp}}
+\subsubsection[{\-\_\-pred\-\_\-value\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}bool \-\_\-pred\-\_\-value\-\_\-sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Play} $\ast$}]{a, }
+\item[{{\bf Play} $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}\label{aiplayer_8cpp_a5ec041e0f53c78a5b4267c3df32ee188}
+
+
+Definition at line 42 of file aiplayer.\-cpp.
+
+
+
+References Play\-::get\-Value().
+
+
+
+Referenced by A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+43 \{
+44     \textcolor{keywordflow}{return} a->\hyperlink{class_play_af2599835f6eba8136770a4f773a9f9ef}{getValue}() > b->\hyperlink{class_play_af2599835f6eba8136770a4f773a9f9ef}{getValue}();
+45 \}
+\end{DoxyCode}

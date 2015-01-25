@@ -1,0 +1,128 @@
+tol = 1e-8
+
+tol =
+
+   1.0000e-08
+
+int = [0 1]
+
+int =
+
+     0     1
+
+f = @(t, y) t
+
+f = 
+
+    @(t,y)t
+
+[t, y, e, maxsteps, numsteps] = rk23(int, 1, tol, f);
+plot(t, y)
+y
+
+y =
+
+    1.0000    1.5000
+
+numsteps
+
+numsteps =
+
+     2
+
+[t, y, e, maxsteps, numsteps] = rk23(int, 1, tol, f);
+plot(t,y)
+[t, y, e, maxstep, numsteps] = rk23(int, 1, tol, f);
+maxstep
+
+maxstep =
+
+     1
+
+numsteps
+
+numsteps =
+
+     1
+
+f = @(t, y) t ^ 2 * y;
+[t, y, e, maxstep, numsteps] = rk23(int, 1, tol, f);
+plot(t, y)
+maxstep
+
+maxstep =
+
+    0.0078
+
+numsteps
+
+numsteps =
+
+   396
+
+f = @(t, y) 2 * (t + 1) * y
+
+f = 
+
+    @(t,y)2*(t+1)*y
+
+[t, y, e, maxstep, numsteps] = rk23(int, 1, tol, f);
+plot(t,y)
+maxstep
+
+maxstep =
+
+    0.0020
+
+numsteps
+
+numsteps =
+
+        1959
+
+f = @(t, y) 5*t^4*y;
+[t, y, e, maxstep, numsteps] = rk23(int, 1, tol, f);
+plot(t, y)
+maxstep
+
+maxstep =
+
+    0.0156
+
+numsteps
+
+numsteps =
+
+   754
+
+f = @(t, y) 1 / y^2;
+[t, y, e, maxstep, numsteps] = rk23(int, 1, tol, f);
+plot(t, y)
+maxstep
+
+maxstep =
+
+    0.0078
+
+numsteps
+
+numsteps =
+
+   187
+
+f = @(t, y) t^3 / y ^ 2;
+[t, y, e, maxstep, numsteps] = rk23(int, 1, tol, f);
+plot(t, y)
+maxstep
+
+maxstep =
+
+    0.0078
+
+numsteps
+
+numsteps =
+
+   421
+
+diary off

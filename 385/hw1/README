@@ -1,0 +1,25 @@
+statsh Documentation
+You can build this project using the Makefile by running:
+make statsh
+
+To run:
+statsh
+
+The code is commented with Doxygen tags.  It is recommended that you read the HTML documentation at docs/html/ndex.html .  You can also view the comments within the source code.
+
+Author - William Montgomery
+Copyright - None
+University of Illinois at Chicago
+CS 385 - Operating Systems
+Fall 2013
+
+Information
+
+statsh is a shell replacement that echoes runtime statistics after every executed command.
+It is written is C++, mostly for the object oriented features that C++ offers. Currently the shell will accept commands of 1023 characters or less. Each command can have up to 1023 arguments and ech command can be piped up to 1023 times. These limits were imposed to make the shell easier to code and to write a more secure shell.
+The shell has been tested with Valgrind, and no memory leaks were present during testing. This does not mean that there are no leaks possible, but that every effort has been made to identify possible leaks.
+The general format for the code is as follows. main() simply creates a Runner object and calls the run method. Runner::run is a simple read, eval, print loop (REPL). If the command is a built in function (such as stats), Runner performs the function. Otherwise, it creates a Command object and calls run on that object. Command parses the user input for pipes and the '&' symbol. For each subcommand that Command finds, it creats a Child object and then calls createFork on it. Statistics are recorded into the rusage structs within the Child object. To maintain a history of the commands, Runner maintains an ArrayList of all the user commands that have been issued.
+All of the required features have been implemented. In addition, several optional features have been implemented.
+History - The user can execute any previous command with the '!' command. Commands are numbered starting from 1. The number of the command is printed in the brackets prior to every output of the stats. So to execute the second command, the user could enter "! 2".
+cd - A basic implementation is furnished. Relative and absolute directories are supported, but special characters, such as "cd -" or "cd ~" are not.
+Additional Statistics - When statistics are printed, the user time, system time, involuntary context switches, voluntary context switches, number of swaps, and page faults are printed out. For piped commands, the statitics are broken down by each piped command.

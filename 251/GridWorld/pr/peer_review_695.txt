@@ -1,0 +1,39 @@
+structs
+The structs do not seem to be able to support all of the operations in the specified runtime requirements.
+
+It also looks like you were attempting to use a global variable for the Dead Pool and Universal ID.  These should have been defined as part of the gw_struct.
+
+gw_build
+This does not seem to perform as intended.
+
+The following is baffling.  First a block is allocated and then immediately set to null, thus a memory leak.
+g->dist[i][j].person = malloc( sizeof(ID));
+g->dist[i][j].person = NULL;  // each distict point has null double link lists 
+       
+It doesn't look like the adding of people to random districts works.  The population count is just incremented, but no person is added.
+
+gw_members
+This function does not perform as intended.
+
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+gw_district_pop
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+gw_total_pop
+This appears to function correctly.
+
+gw_move
+This is not implemented.
+
+gw_find
+This is not implemented.
+
+gw_kill
+This is not implemented.
+
+gw_create
+This is not implemented.
+
+gw_free
+This just frees the gw_struct, but does not free the districts or people structs.

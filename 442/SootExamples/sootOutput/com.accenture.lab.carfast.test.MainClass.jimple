@@ -1,0 +1,59 @@
+public class com.accenture.lab.carfast.test.MainClass extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int x, y, temp$0, temp$1, temp$2, temp$3, temp$4, temp$5;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = 1;
+        x = temp$0;
+        temp$1 = 2;
+        y = temp$1;
+        if x > y goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$2 = 4;
+        x = temp$2;
+        goto label2;
+
+     label1:
+        nop;
+        temp$3 = 5;
+        y = temp$3;
+
+     label2:
+        nop;
+
+     label3:
+        nop;
+        if x > 0 goto label4;
+
+        goto label5;
+
+     label4:
+        nop;
+        temp$4 = x - 1;
+        x = temp$4;
+        goto label3;
+
+     label5:
+        nop;
+        temp$5 = 6;
+        y = temp$5;
+        return;
+    }
+
+    public void <init>()
+    {
+        com.accenture.lab.carfast.test.MainClass this;
+
+        this := @this: com.accenture.lab.carfast.test.MainClass;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

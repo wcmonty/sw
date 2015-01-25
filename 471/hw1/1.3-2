@@ -1,0 +1,80 @@
+syms x
+diff(sin(x^3) - x^3)
+ 
+ans =
+ 
+3*x^2*cos(x^3) - 3*x^2
+ 
+ans(0)
+{Error using <a href="matlab:helpUtils.errorDocCallback('sym>checkindex', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 2429)" style="font-weight:bold">sym>checkindex</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',2429,0)">line 2429</a>)
+Index must be a positive integer or logical.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym>privformatscalar', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 2376)" style="font-weight:bold">sym>privformatscalar</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',2376,0)">line 2376</a>)
+    checkindex(x);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym>privformat', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 2360)" style="font-weight:bold">sym>privformat</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',2360,0)">line 2360</a>)
+    s = privformatscalar(x);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym/subsref', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 1578)" style="font-weight:bold">sym/subsref</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',1578,0)">line 1578</a>)
+            [inds{k},refs{k}] = privformat(inds{k});
+} 
+sin(0)
+
+ans =
+
+     0
+
+diff(
+ diff(
+      |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+diff(3*x^2*cos(x^3) - 3*x^2)
+ 
+ans =
+ 
+6*x*cos(x^3) - 6*x - 9*x^4*sin(x^3)
+ 
+diff(6*x*cos(x^3) - 6*x - 9*x^4*sin(x^3))
+ 
+ans =
+ 
+6*cos(x^3) - 27*x^6*cos(x^3) - 54*x^3*sin(x^3) - 6
+ 
+cos(0)
+
+ans =
+
+     1
+
+fzero(sin(x^3) - x^3, 0.1)
+{Error using <a href="matlab:helpUtils.errorDocCallback('fzero', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/fzero.m', 169)" style="font-weight:bold">fzero</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/fzero.m',169,0)">line 169</a>)
+If FUN is a MATLAB object, it must have an feval method.
+} 
+fzero('sin(x^3) - x^3', 0.1)
+
+ans =
+
+   -0.0014
+
+fzero('sin(x^3) - x^3 + .0014)
+ fzero('sin(x^3) - x^3 + .0014)
+       |
+{Error: A MATLAB string constant is not terminated properly.
+} 
+fzero('sin(x^3) - x^3 + .0014', 0)
+
+ans =
+
+    0.5881
+
+y = 0.5881
+
+y =
+
+    0.5881
+
+ls
+0.4-2-a  0.4-2-b  1.1-2-a  1.2-2  1.3-2  bisect.m  fpi.m  nest.m
+
+diary off

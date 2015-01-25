@@ -1,0 +1,24 @@
+
+32 float
+Float Sum inner1: original loop no unrolling:
+6.93 cycles/element
+Float Sum inner4: unroll 2x and 2 accumulators:
+4.68 cycles/element
+
+32 int
+Integer Sum inner1: original loop no unrolling:
+5.40 cycles/element
+Integer Sum inner4: unroll 2x and 2 accumulators:
+4.22 cycles/element
+
+64 float
+Float Sum inner1: original loop no unrolling:
+6.44 cycles/element
+Float Sum inner4: unroll 2x and 2 accumulators:
+4.36 cycles/element
+
+64 int
+Integer Sum inner1: original loop no unrolling:
+5.37 cycles/element
+Integer Sum inner4: unroll 2x and 2 accumulators:
+4.60 cycles/element

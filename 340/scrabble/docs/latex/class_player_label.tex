@@ -1,0 +1,243 @@
+\hypertarget{class_player_label}{\section{Player\-Label Class Reference}
+\label{class_player_label}\index{Player\-Label@{Player\-Label}}
+}
+
+
+The \hyperlink{class_player_label}{Player\-Label} class Represents the \hyperlink{class_player}{Player} within the \hyperlink{class_dialog}{Dialog}.  
+
+
+
+
+{\ttfamily \#include $<$playerlabel.\-h$>$}
+
+Inheritance diagram for Player\-Label\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_label}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_label_a4e79270b2cc5ae00ff3ea5e648d48e0a}{on\-\_\-player\-Changed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_label_a4e79270b2cc5ae00ff3ea5e648d48e0a}{Player\-Label\-::on\-\_\-player\-Changed} Handes player\-Changed events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_label_a01014b0be21549ebd1fcec81fa8d6d58}{Player\-Label} (\hyperlink{class_player}{Player} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_label_a01014b0be21549ebd1fcec81fa8d6d58}{Player\-Label\-::\-Player\-Label} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_player_label}{Player\-Label} $\ast$ \hyperlink{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}{set\-Active} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}{Player\-Label\-::set\-Active} Sets the player as active. \end{DoxyCompactList}\item 
+\hyperlink{class_player_label}{Player\-Label} $\ast$ \hyperlink{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}{set\-Inactive} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}{Player\-Label\-::set\-Inactive} Set the player as inactive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_label}{Player\-Label} $\ast$ \hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{update\-Text} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{Player\-Label\-::update\-Text} Updates the text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{player}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_player_label}{Player\-Label} class Represents the \hyperlink{class_player}{Player} within the \hyperlink{class_dialog}{Dialog}. 
+
+Definition at line 10 of file playerlabel.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_label_a01014b0be21549ebd1fcec81fa8d6d58}{\index{Player\-Label@{Player\-Label}!Player\-Label@{Player\-Label}}
+\index{Player\-Label@{Player\-Label}!PlayerLabel@{Player\-Label}}
+\subsubsection[{Player\-Label}]{\setlength{\rightskip}{0pt plus 5cm}Player\-Label\-::\-Player\-Label (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_player_label_a01014b0be21549ebd1fcec81fa8d6d58}
+
+
+\hyperlink{class_player_label_a01014b0be21549ebd1fcec81fa8d6d58}{Player\-Label\-::\-Player\-Label} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file playerlabel.\-cpp.
+
+
+
+References player.
+
+
+\begin{DoxyCode}
+7                                        :
+8     QLabel()
+9 \{
+10     this->player = \hyperlink{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{player};
+11 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_label_a4e79270b2cc5ae00ff3ea5e648d48e0a}{\index{Player\-Label@{Player\-Label}!on\-\_\-player\-Changed@{on\-\_\-player\-Changed}}
+\index{on\-\_\-player\-Changed@{on\-\_\-player\-Changed}!PlayerLabel@{Player\-Label}}
+\subsubsection[{on\-\_\-player\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-Label\-::on\-\_\-player\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_player_label_a4e79270b2cc5ae00ff3ea5e648d48e0a}
+
+
+\hyperlink{class_player_label_a4e79270b2cc5ae00ff3ea5e648d48e0a}{Player\-Label\-::on\-\_\-player\-Changed} Handes player\-Changed events. 
+
+
+
+Definition at line 16 of file playerlabel.\-cpp.
+
+
+
+References Board\-::get\-Board(), player, set\-Active(), set\-Inactive(), and update\-Text().
+
+
+\begin{DoxyCode}
+17 \{
+18     \textcolor{keywordflow}{if} (\hyperlink{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{player} == \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->getGame()->currentPlayer())\{
+19         \hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{updateText}();
+20         \hyperlink{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}{setActive}();
+21     \}
+22     \textcolor{keywordflow}{else} \{
+23         \hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{updateText}();
+24         \hyperlink{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}{setInactive}();
+25     \}
+26 \}
+\end{DoxyCode}
+\hypertarget{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}{\index{Player\-Label@{Player\-Label}!set\-Active@{set\-Active}}
+\index{set\-Active@{set\-Active}!PlayerLabel@{Player\-Label}}
+\subsubsection[{set\-Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player\-Label} $\ast$ Player\-Label\-::set\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}
+
+
+\hyperlink{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}{Player\-Label\-::set\-Active} Sets the player as active. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file playerlabel.\-cpp.
+
+
+
+References update\-Text().
+
+
+
+Referenced by Dialog\-::create\-Label\-Group\-Box(), and on\-\_\-player\-Changed().
+
+
+\begin{DoxyCode}
+33 \{
+34     \hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{updateText}();
+35     this->setStyleSheet(\textcolor{stringliteral}{"QLabel \{ color : red; \}"});
+36     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+37 \}
+\end{DoxyCode}
+\hypertarget{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}{\index{Player\-Label@{Player\-Label}!set\-Inactive@{set\-Inactive}}
+\index{set\-Inactive@{set\-Inactive}!PlayerLabel@{Player\-Label}}
+\subsubsection[{set\-Inactive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player\-Label} $\ast$ Player\-Label\-::set\-Inactive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}
+
+
+\hyperlink{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}{Player\-Label\-::set\-Inactive} Set the player as inactive. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file playerlabel.\-cpp.
+
+
+
+References update\-Text().
+
+
+
+Referenced by Dialog\-::create\-Label\-Group\-Box(), and on\-\_\-player\-Changed().
+
+
+\begin{DoxyCode}
+44 \{
+45     \hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{updateText}();
+46     this->setStyleSheet(\textcolor{stringliteral}{"QLabel \{ color : back; \}"});
+47     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+48 \}
+\end{DoxyCode}
+\hypertarget{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{\index{Player\-Label@{Player\-Label}!update\-Text@{update\-Text}}
+\index{update\-Text@{update\-Text}!PlayerLabel@{Player\-Label}}
+\subsubsection[{update\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player\-Label} $\ast$ Player\-Label\-::update\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}
+
+
+\hyperlink{class_player_label_a32738e0f6917a3942dd12569bb32ddd3}{Player\-Label\-::update\-Text} Updates the text. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file playerlabel.\-cpp.
+
+
+
+References Player\-::get\-Name(), Player\-::get\-Score(), and player.
+
+
+
+Referenced by on\-\_\-player\-Changed(), set\-Active(), and set\-Inactive().
+
+
+\begin{DoxyCode}
+55 \{
+56     \textcolor{keywordflow}{if} (\hyperlink{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{player} != NULL) \{
+57         setText(\hyperlink{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{player}->\hyperlink{class_player_ade0334ac0e87ac1c5e09ce78f2cafd83}{getName}() + \textcolor{stringliteral}{"               "} + QString::number(
+      \hyperlink{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{player}->\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{getScore}()));
+58     \}
+59     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+60 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}{\index{Player\-Label@{Player\-Label}!player@{player}}
+\index{player@{player}!PlayerLabel@{Player\-Label}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ Player\-Label\-::player\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_label_a3d7bf640f27b4539cb6886e53900b5b2}
+The \hyperlink{class_player}{Player} 
+
+Definition at line 19 of file playerlabel.\-h.
+
+
+
+Referenced by on\-\_\-player\-Changed(), Player\-Label(), and update\-Text().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{playerlabel_8h}{playerlabel.\-h}\item 
+Scrabble/\hyperlink{playerlabel_8cpp}{playerlabel.\-cpp}\end{DoxyCompactItemize}

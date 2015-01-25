@@ -1,0 +1,111 @@
+public class com.accenture.lab.carfast.test.hw1_1000LOCStart extends java.lang.Object
+{
+    private static int f0;
+    private static int f1;
+    private static int f2;
+    private static int f3;
+    private static int f4;
+    private static int f5;
+    private static int f6;
+    private static int f7;
+    private static int f8;
+    private static int f9;
+
+    public static void entryMethod(int, int, int, int, int, int, int, int, int, int)
+    {
+        int i0, i1, i2, i3, i4, i5, i6, i7, i8, i9, temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        i3 := @parameter3: int;
+        i4 := @parameter4: int;
+        i5 := @parameter5: int;
+        i6 := @parameter6: int;
+        i7 := @parameter7: int;
+        i8 := @parameter8: int;
+        i9 := @parameter9: int;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f0> = i0;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f1> = i1;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f2> = i2;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f3> = i3;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f4> = i4;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f5> = i5;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f6> = i6;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f7> = i7;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f8> = i8;
+        <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f9> = i9;
+        temp$0 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f0>;
+        temp$1 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f1>;
+        temp$2 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f2>;
+        temp$3 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f3>;
+        temp$4 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f4>;
+        temp$5 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f5>;
+        temp$6 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f6>;
+        temp$7 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f7>;
+        temp$8 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f8>;
+        temp$9 = <com.accenture.lab.carfast.test.hw1_1000LOCStart: int f9>;
+        staticinvoke <com.accenture.lab.carfast.test.TStart_L0_0: void entryMethod(int,int,int,int,int,int,int,int,int,int)>(temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9);
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args, temp$0, temp$4, temp$8, temp$12, temp$16, temp$20, temp$24, temp$28, temp$32, temp$36;
+        int temp$1, temp$3, temp$5, temp$7, temp$9, temp$11, temp$13, temp$15, temp$17, temp$19, temp$21, temp$23, temp$25, temp$27, temp$29, temp$31, temp$33, temp$35, temp$37, temp$39;
+        java.lang.String temp$2, temp$6, temp$10, temp$14, temp$18, temp$22, temp$26, temp$30, temp$34, temp$38;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = args;
+        temp$1 = 0;
+        temp$2 = temp$0[temp$1];
+        temp$3 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$2);
+        temp$4 = args;
+        temp$5 = 1;
+        temp$6 = temp$4[temp$5];
+        temp$7 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$6);
+        temp$8 = args;
+        temp$9 = 2;
+        temp$10 = temp$8[temp$9];
+        temp$11 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$10);
+        temp$12 = args;
+        temp$13 = 3;
+        temp$14 = temp$12[temp$13];
+        temp$15 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$14);
+        temp$16 = args;
+        temp$17 = 4;
+        temp$18 = temp$16[temp$17];
+        temp$19 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$18);
+        temp$20 = args;
+        temp$21 = 5;
+        temp$22 = temp$20[temp$21];
+        temp$23 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$22);
+        temp$24 = args;
+        temp$25 = 6;
+        temp$26 = temp$24[temp$25];
+        temp$27 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$26);
+        temp$28 = args;
+        temp$29 = 7;
+        temp$30 = temp$28[temp$29];
+        temp$31 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$30);
+        temp$32 = args;
+        temp$33 = 8;
+        temp$34 = temp$32[temp$33];
+        temp$35 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$34);
+        temp$36 = args;
+        temp$37 = 9;
+        temp$38 = temp$36[temp$37];
+        temp$39 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$38);
+        staticinvoke <com.accenture.lab.carfast.test.hw1_1000LOCStart: void entryMethod(int,int,int,int,int,int,int,int,int,int)>(temp$3, temp$7, temp$11, temp$15, temp$19, temp$23, temp$27, temp$31, temp$35, temp$39);
+        return;
+    }
+
+    public void <init>()
+    {
+        com.accenture.lab.carfast.test.hw1_1000LOCStart this;
+
+        this := @this: com.accenture.lab.carfast.test.hw1_1000LOCStart;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

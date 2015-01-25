@@ -1,0 +1,127 @@
+\hypertarget{class_human_player}{\section{Human\-Player Class Reference}
+\label{class_human_player}\index{Human\-Player@{Human\-Player}}
+}
+
+
+The \hyperlink{class_human_player}{Human\-Player} class Human playable \hyperlink{class_player}{Player}.  
+
+
+
+
+{\ttfamily \#include $<$humanplayer.\-h$>$}
+
+Inheritance diagram for Human\-Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_human_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_human_player_aca695b2fb575e41bf7f015387c6eb52a}{Human\-Player} (Q\-String s)
+\item 
+\hyperlink{class_human_player_abdeb9d120fc74c8d82ec0c688883f16f}{$\sim$\-Human\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_human_player_abdeb9d120fc74c8d82ec0c688883f16f}{Human\-Player\-::$\sim$\-Human\-Player} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_human_player_acd62878a6a3612685aca20853bbca3e2}{play} (\hyperlink{class_board}{Board} $\ast$board)
+\item 
+virtual bool \hyperlink{class_human_player_aff784db8904c5f8c13bd88847f631188}{is\-Human\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_human_player_aff784db8904c5f8c13bd88847f631188}{Human\-Player\-::is\-Human\-Player}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_human_player}{Human\-Player} class Human playable \hyperlink{class_player}{Player}. 
+
+Definition at line 8 of file humanplayer.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_human_player_aca695b2fb575e41bf7f015387c6eb52a}{\index{Human\-Player@{Human\-Player}!Human\-Player@{Human\-Player}}
+\index{Human\-Player@{Human\-Player}!HumanPlayer@{Human\-Player}}
+\subsubsection[{Human\-Player}]{\setlength{\rightskip}{0pt plus 5cm}Human\-Player\-::\-Human\-Player (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_human_player_aca695b2fb575e41bf7f015387c6eb52a}
+
+
+Definition at line 10 of file humanplayer.\-h.
+
+
+\begin{DoxyCode}
+10 : \hyperlink{class_player_ad079d0b82440f180a6698ff62f1dc1be}{Player}(s) \{\}
+\end{DoxyCode}
+\hypertarget{class_human_player_abdeb9d120fc74c8d82ec0c688883f16f}{\index{Human\-Player@{Human\-Player}!$\sim$\-Human\-Player@{$\sim$\-Human\-Player}}
+\index{$\sim$\-Human\-Player@{$\sim$\-Human\-Player}!HumanPlayer@{Human\-Player}}
+\subsubsection[{$\sim$\-Human\-Player}]{\setlength{\rightskip}{0pt plus 5cm}Human\-Player\-::$\sim$\-Human\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_human_player_abdeb9d120fc74c8d82ec0c688883f16f}
+
+
+\hyperlink{class_human_player_abdeb9d120fc74c8d82ec0c688883f16f}{Human\-Player\-::$\sim$\-Human\-Player} Destructor. 
+
+
+
+Definition at line 6 of file humanplayer.\-cpp.
+
+
+
+References Player\-::letters.
+
+
+\begin{DoxyCode}
+6                           \{
+7     \textcolor{keywordflow}{while} (!\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.empty())\{
+8         \textcolor{keyword}{delete} \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.back();
+9         \hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.pop\_back();
+10     \}
+11 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_human_player_aff784db8904c5f8c13bd88847f631188}{\index{Human\-Player@{Human\-Player}!is\-Human\-Player@{is\-Human\-Player}}
+\index{is\-Human\-Player@{is\-Human\-Player}!HumanPlayer@{Human\-Player}}
+\subsubsection[{is\-Human\-Player}]{\setlength{\rightskip}{0pt plus 5cm}bool Human\-Player\-::is\-Human\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_human_player_aff784db8904c5f8c13bd88847f631188}
+
+
+\hyperlink{class_human_player_aff784db8904c5f8c13bd88847f631188}{Human\-Player\-::is\-Human\-Player}. 
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \begin{DoxyReturn}{Returns}
+True if player is a human, false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_player_adeb8d6fe962f9bf002281f7fe1321cff}{Player}.
+
+
+
+Definition at line 18 of file humanplayer.\-cpp.
+
+
+\begin{DoxyCode}
+18                                \{
+19     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+20 \}
+\end{DoxyCode}
+\hypertarget{class_human_player_acd62878a6a3612685aca20853bbca3e2}{\index{Human\-Player@{Human\-Player}!play@{play}}
+\index{play@{play}!HumanPlayer@{Human\-Player}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play}$\ast$ Human\-Player\-::play (
+\begin{DoxyParamCaption}
+\item[{{\bf Board} $\ast$}]{board}
+\end{DoxyParamCaption}
+)}}\label{class_human_player_acd62878a6a3612685aca20853bbca3e2}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{humanplayer_8h}{humanplayer.\-h}\item 
+Scrabble/\hyperlink{humanplayer_8cpp}{humanplayer.\-cpp}\end{DoxyCompactItemize}

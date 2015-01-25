@@ -1,0 +1,803 @@
+\hypertarget{class_dialog}{\section{Dialog Class Reference}
+\label{class_dialog}\index{Dialog@{Dialog}}
+}
+
+
+The \hyperlink{class_dialog}{Dialog} class Main U\-I class.  
+
+
+
+
+{\ttfamily \#include $<$dialog.\-h$>$}
+
+Inheritance diagram for Dialog\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dialog}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}{player\-Changed} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dialog_a1f16fe034646a987e6de37396e40f674}{Dialog} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a1f16fe034646a987e6de37396e40f674}{Dialog\-::\-Dialog} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{$\sim$\-Dialog} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{Dialog\-::$\sim$\-Dialog} Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a4320f72d8354f94942348b74323a651e}{setup\-Game} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a4320f72d8354f94942348b74323a651e}{Dialog\-::setup\-Game} Sets up the game. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a0c2de1df5e1defe8e39bf30afbd63840}{setup\-Dialog} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a0c2de1df5e1defe8e39bf30afbd63840}{Dialog\-::setup\-Dialog} Sets up the dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{class_dialog_aa450168d087018adecfc85aad9dc0758ad9cc094540b183d393105bd9b90bfd2c}{Num\-Buttons} = 7
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dialog_a07edaf041e6001503c4ef6291ca557ea}{on\-\_\-new\-Game\-\_\-selected} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a07edaf041e6001503c4ef6291ca557ea}{Dialog\-::on\-\_\-new\-Game\-\_\-selected} Sets up a new game. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a87138e5c0a7a9fefab5549695686117a}{on\-\_\-player\-Changed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a87138e5c0a7a9fefab5549695686117a}{Dialog\-::on\-\_\-player\-Changed} Slot for when the player is changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dialog_a0d839dd1406b5bd21d1e87172d9ba280}{create\-Menu} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a0d839dd1406b5bd21d1e87172d9ba280}{Dialog\-::create\-Menu} Creates the menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_ab91c0d44d997ee5dc3c9f43866674ec1}{setup\-Players} (int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_ab91c0d44d997ee5dc3c9f43866674ec1}{Dialog\-::setup\-Players} Sets up the players. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a0815afc1d0d96fd6e1e3f92a8e017aeb}{create\-Horizontal\-Group\-Box} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a0815afc1d0d96fd6e1e3f92a8e017aeb}{Dialog\-::create\-Horizontal\-Group\-Box} Creates the rack and buttons. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a1801636f9eaba94d525a6d174608d4ca}{create\-Grid\-Group\-Box} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a1801636f9eaba94d525a6d174608d4ca}{Dialog\-::create\-Grid\-Group\-Box} Creates the playing board. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a5b7a947ae39abb184aca126baaf5b574}{create\-Form\-Group\-Box} ()
+\item 
+void \hyperlink{class_dialog_a3e7333b738c6b84b861dac7ea957244a}{create\-Label\-Group\-Box} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a3e7333b738c6b84b861dac7ea957244a}{Dialog\-::create\-Label\-Group\-Box} Creates the labels that represent the players. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_a40d6cd5ec81c87ff483fb399075963b3}{load\-Dictionary} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dialog_a40d6cd5ec81c87ff483fb399075963b3}{Dialog\-::load\-Dictionary} Loads the dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Menu\-Bar $\ast$ \hyperlink{class_dialog_a9712b5e90ad0a47d97d27bb2648e753b}{menu\-Bar}
+\item 
+Q\-Group\-Box $\ast$ \hyperlink{class_dialog_a382454f1112e8cf8823979456823e9fc}{horizontal\-Group\-Box}
+\item 
+Q\-Group\-Box $\ast$ \hyperlink{class_dialog_a93c838af40eaab2aecbc11f4ec2f3680}{grid\-Group\-Box}
+\item 
+Q\-Group\-Box $\ast$ \hyperlink{class_dialog_a93ffff453dba285f896156d073d58220}{label\-Group\-Box}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}{cancel}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_dialog_afda3b2243f835037bfeb1322289e4f5a}{play}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_dialog_a1296240f36b4a11c4cf70a709aced623}{pass}
+\item 
+Q\-Menu $\ast$ \hyperlink{class_dialog_a266ec552501a452ce6925589823e8484}{file\-Menu}
+\item 
+Q\-Action $\ast$ \hyperlink{class_dialog_a8b086eb4a5d1ec32a4ddfc3abe705505}{new\-Game\-Action}
+\item 
+Q\-Action $\ast$ \hyperlink{class_dialog_abf163ec5a4490e0019241f39e3e81b48}{exit\-Action}
+\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{board}
+\item 
+\hyperlink{class_rack}{Rack} $\ast$ \hyperlink{class_dialog_a717eee5215d28c0f10bde1444cb959ed}{rack}
+\item 
+\hyperlink{class_game}{Game} $\ast$ \hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game}
+\item 
+\hyperlink{class_dictionary}{Dictionary} $\ast$ \hyperlink{class_dialog_a465c936ff76ad97698bde2a9b065ab65}{dictionary}
+\item 
+vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}
+\item 
+short int \hyperlink{class_dialog_a5130628f920537a9359fbdc4058af7b7}{player\-\_\-cnt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_dialog}{Dialog} class Main U\-I class. 
+
+Definition at line 20 of file dialog.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_dialog_aa450168d087018adecfc85aad9dc0758}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_aa450168d087018adecfc85aad9dc0758}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Num\-Buttons@{Num\-Buttons}!Dialog@{Dialog}}\index{Dialog@{Dialog}!Num\-Buttons@{Num\-Buttons}}\item[{\em 
+\hypertarget{class_dialog_aa450168d087018adecfc85aad9dc0758ad9cc094540b183d393105bd9b90bfd2c}{Num\-Buttons}\label{class_dialog_aa450168d087018adecfc85aad9dc0758ad9cc094540b183d393105bd9b90bfd2c}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 30 of file dialog.\-h.
+
+
+\begin{DoxyCode}
+30 \{ \hyperlink{class_dialog_aa450168d087018adecfc85aad9dc0758ad9cc094540b183d393105bd9b90bfd2c}{NumButtons} = 7 \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dialog_a1f16fe034646a987e6de37396e40f674}{\index{Dialog@{Dialog}!Dialog@{Dialog}}
+\index{Dialog@{Dialog}!Dialog@{Dialog}}
+\subsubsection[{Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Dialog\-::\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dialog_a1f16fe034646a987e6de37396e40f674}
+
+
+\hyperlink{class_dialog_a1f16fe034646a987e6de37396e40f674}{Dialog\-::\-Dialog} Constructor. 
+
+
+
+Definition at line 12 of file dialog.\-cpp.
+
+
+
+References board, Board\-::get\-Board(), Rack\-::get\-Rack(), load\-Dictionary(), rack, setup\-Dialog(), setup\-Game(), and setup\-Players().
+
+
+\begin{DoxyCode}
+13 \{
+14     \hyperlink{class_dialog_a40d6cd5ec81c87ff483fb399075963b3}{loadDictionary}();
+15     \hyperlink{class_dialog_ab91c0d44d997ee5dc3c9f43866674ec1}{setupPlayers}(2);
+16 
+17     \hyperlink{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{board} = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}();
+18     \hyperlink{class_dialog_a717eee5215d28c0f10bde1444cb959ed}{rack} = \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}();
+19     \hyperlink{class_dialog_a4320f72d8354f94942348b74323a651e}{setupGame}();
+20     connect(\hyperlink{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{board}, SIGNAL(invalidMove()), \hyperlink{class_dialog_a717eee5215d28c0f10bde1444cb959ed}{rack}, SLOT(on\_invalidMove()));
+21 
+22     \hyperlink{class_dialog_a0c2de1df5e1defe8e39bf30afbd63840}{setupDialog}();
+23 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{\index{Dialog@{Dialog}!$\sim$\-Dialog@{$\sim$\-Dialog}}
+\index{$\sim$\-Dialog@{$\sim$\-Dialog}!Dialog@{Dialog}}
+\subsubsection[{$\sim$\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Dialog\-::$\sim$\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}
+
+
+\hyperlink{class_dialog_a2a1fe6ef28513eed13bfcd3a4da83ccb}{Dialog\-::$\sim$\-Dialog} Destructor. 
+
+
+
+Definition at line 28 of file dialog.\-cpp.
+
+
+
+References dictionary, game, and players.
+
+
+\begin{DoxyCode}
+28                 \{
+29     \textcolor{keywordflow}{while}(!\hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.empty())\{
+30         \textcolor{keyword}{delete} \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.back();
+31         \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.pop\_back();
+32     \}
+33     \textcolor{keyword}{delete} \hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game};
+34     \textcolor{keyword}{delete} \hyperlink{class_dialog_a465c936ff76ad97698bde2a9b065ab65}{dictionary};
+35 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dialog_a5b7a947ae39abb184aca126baaf5b574}{\index{Dialog@{Dialog}!create\-Form\-Group\-Box@{create\-Form\-Group\-Box}}
+\index{create\-Form\-Group\-Box@{create\-Form\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{create\-Form\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::create\-Form\-Group\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a5b7a947ae39abb184aca126baaf5b574}
+\hypertarget{class_dialog_a1801636f9eaba94d525a6d174608d4ca}{\index{Dialog@{Dialog}!create\-Grid\-Group\-Box@{create\-Grid\-Group\-Box}}
+\index{create\-Grid\-Group\-Box@{create\-Grid\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{create\-Grid\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::create\-Grid\-Group\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a1801636f9eaba94d525a6d174608d4ca}
+
+
+\hyperlink{class_dialog_a1801636f9eaba94d525a6d174608d4ca}{Dialog\-::create\-Grid\-Group\-Box} Creates the playing board. 
+
+
+
+Definition at line 188 of file dialog.\-cpp.
+
+
+
+References board, grid\-Group\-Box, and Board\-::spaces.
+
+
+
+Referenced by setup\-Dialog().
+
+
+\begin{DoxyCode}
+189 \{
+190     \hyperlink{class_dialog_a93c838af40eaab2aecbc11f4ec2f3680}{gridGroupBox} = \textcolor{keyword}{new} QGroupBox();
+191     QGridLayout *layout = \textcolor{keyword}{new} QGridLayout;
+192     layout->setContentsMargins(0,0,0,0);
+193     layout->setSpacing(0);
+194     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 15; i++) \{
+195         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 15; j++) \{
+196             layout->addWidget(\hyperlink{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{board}->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j], i, j);
+197         \}
+198     \}
+199     \hyperlink{class_dialog_a93c838af40eaab2aecbc11f4ec2f3680}{gridGroupBox}->setLayout(layout);
+200 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a0815afc1d0d96fd6e1e3f92a8e017aeb}{\index{Dialog@{Dialog}!create\-Horizontal\-Group\-Box@{create\-Horizontal\-Group\-Box}}
+\index{create\-Horizontal\-Group\-Box@{create\-Horizontal\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{create\-Horizontal\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::create\-Horizontal\-Group\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a0815afc1d0d96fd6e1e3f92a8e017aeb}
+
+
+\hyperlink{class_dialog_a0815afc1d0d96fd6e1e3f92a8e017aeb}{Dialog\-::create\-Horizontal\-Group\-Box} Creates the rack and buttons. 
+
+
+
+Definition at line 122 of file dialog.\-cpp.
+
+
+
+References cancel, Board\-::get\-Board(), Rack\-::get\-Rack(), Rack\-::get\-Space(), horizontal\-Group\-Box, pass, play, rack, and R\-A\-C\-K\-S\-I\-Z\-E.
+
+
+
+Referenced by setup\-Dialog().
+
+
+\begin{DoxyCode}
+123 \{
+124     \hyperlink{class_dialog_a382454f1112e8cf8823979456823e9fc}{horizontalGroupBox} = \textcolor{keyword}{new} QGroupBox(tr(\textcolor{stringliteral}{"Player"}));
+125     QHBoxLayout *layout = \textcolor{keyword}{new} QHBoxLayout;
+126     layout->setContentsMargins(10,10,3,3);
+127     layout->setSpacing(0);
+128 
+129     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{rack_8h_ad52276b6cc76ff4be1f71000a9094f31}{RACKSIZE}; ++i) \{
+130         layout->addWidget(\hyperlink{class_dialog_a717eee5215d28c0f10bde1444cb959ed}{rack}->\hyperlink{class_rack_a2fdfa2264bb85c08ebf107e67cfc8657}{getSpace}(i));
+131     \}
+132     layout->insertStretch(7);
+133     \hyperlink{class_dialog_afda3b2243f835037bfeb1322289e4f5a}{play} = \textcolor{keyword}{new} QPushButton(tr(\textcolor{stringliteral}{"Play"}));
+134     layout->addWidget(\hyperlink{class_dialog_afda3b2243f835037bfeb1322289e4f5a}{play});
+135     \hyperlink{class_dialog_a1296240f36b4a11c4cf70a709aced623}{pass} = \textcolor{keyword}{new} QPushButton(tr(\textcolor{stringliteral}{"Pass"}));
+136     layout->addWidget(\hyperlink{class_dialog_a1296240f36b4a11c4cf70a709aced623}{pass});
+137     \hyperlink{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}{cancel} = \textcolor{keyword}{new} QPushButton(tr(\textcolor{stringliteral}{"Cancel"}));
+138     layout->addWidget(\hyperlink{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}{cancel});
+139 
+140     \hyperlink{class_dialog_a382454f1112e8cf8823979456823e9fc}{horizontalGroupBox}->setLayout(layout);
+141 
+142     connect(\hyperlink{class_dialog_afda3b2243f835037bfeb1322289e4f5a}{play}, SIGNAL(clicked()), \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}(), SLOT(on\_playButton\_clicked()));
+143     connect(\hyperlink{class_dialog_a1296240f36b4a11c4cf70a709aced623}{pass}, SIGNAL(clicked()), \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}(), SLOT(on\_passButton\_clicked()));
+144     connect(\hyperlink{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}{cancel}, SIGNAL(clicked()), \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}(), SLOT(on\_cancelButton\_clicked
+      ()));
+145     connect(\hyperlink{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}{cancel}, SIGNAL(clicked()), \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}(), SLOT(on\_cancelButton\_clicked()))
+      ;
+146 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a3e7333b738c6b84b861dac7ea957244a}{\index{Dialog@{Dialog}!create\-Label\-Group\-Box@{create\-Label\-Group\-Box}}
+\index{create\-Label\-Group\-Box@{create\-Label\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{create\-Label\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::create\-Label\-Group\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a3e7333b738c6b84b861dac7ea957244a}
+
+
+\hyperlink{class_dialog_a3e7333b738c6b84b861dac7ea957244a}{Dialog\-::create\-Label\-Group\-Box} Creates the labels that represent the players. 
+
+
+
+Definition at line 152 of file dialog.\-cpp.
+
+
+
+References label\-Group\-Box, on\-\_\-player\-Changed(), player\-Changed(), players, Player\-Label\-::set\-Active(), and Player\-Label\-::set\-Inactive().
+
+
+
+Referenced by setup\-Dialog().
+
+
+\begin{DoxyCode}
+153 \{
+154     \hyperlink{class_dialog_a93ffff453dba285f896156d073d58220}{labelGroupBox} = \textcolor{keyword}{new} QGroupBox();
+155     QGridLayout *layout = \textcolor{keyword}{new} QGridLayout;
+156     layout->setContentsMargins(0,0,0,0);
+157     layout->setSpacing(0);
+158     \hyperlink{class_player}{Player}* player;
+159 
+160     \textcolor{comment}{// create the labels and connect them for each player}
+161     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < 4; i++) \{
+162         \textcolor{keywordflow}{if} (i < \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.size())\{
+163              cout << \textcolor{stringliteral}{"setting player"} << endl;
+164             player = \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}[i];
+165         \}
+166         \textcolor{keywordflow}{else} \{
+167             cout << \textcolor{stringliteral}{"setting player to null"} << endl;
+168             player = NULL;
+169         \}
+170         \hyperlink{class_player_label}{PlayerLabel} *label = \textcolor{keyword}{new} \hyperlink{class_player_label}{PlayerLabel}(player);
+171         \textcolor{keywordflow}{if} (i == 0)\{
+172             label->\hyperlink{class_player_label_a2dfa25456fac3bd2f0a7bbaa4fac6678}{setActive}();
+173         \}
+174         \textcolor{keywordflow}{else} \{
+175             label->\hyperlink{class_player_label_aecd91b6a5f19cd8228869a23bdb7da02}{setInactive}();
+176         \}
+177         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}{playerChanged}()), label, SLOT(
+      \hyperlink{class_dialog_a87138e5c0a7a9fefab5549695686117a}{on\_playerChanged}()));
+178         layout->addWidget(label, i / 2, i % 2);
+179     \}
+180 
+181     \hyperlink{class_dialog_a93ffff453dba285f896156d073d58220}{labelGroupBox}->setLayout(layout);
+182 
+183 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a0d839dd1406b5bd21d1e87172d9ba280}{\index{Dialog@{Dialog}!create\-Menu@{create\-Menu}}
+\index{create\-Menu@{create\-Menu}!Dialog@{Dialog}}
+\subsubsection[{create\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::create\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a0d839dd1406b5bd21d1e87172d9ba280}
+
+
+\hyperlink{class_dialog_a0d839dd1406b5bd21d1e87172d9ba280}{Dialog\-::create\-Menu} Creates the menu. 
+
+
+
+Definition at line 105 of file dialog.\-cpp.
+
+
+
+References exit\-Action, file\-Menu, menu\-Bar, new\-Game\-Action, and on\-\_\-new\-Game\-\_\-selected().
+
+
+
+Referenced by setup\-Dialog().
+
+
+\begin{DoxyCode}
+106 \{
+107     \hyperlink{class_dialog_a9712b5e90ad0a47d97d27bb2648e753b}{menuBar} = \textcolor{keyword}{new} QMenuBar;
+108 
+109     \hyperlink{class_dialog_a266ec552501a452ce6925589823e8484}{fileMenu} = \textcolor{keyword}{new} QMenu(tr(\textcolor{stringliteral}{"&File"}), \textcolor{keyword}{this});
+110     \hyperlink{class_dialog_a8b086eb4a5d1ec32a4ddfc3abe705505}{newGameAction} = \hyperlink{class_dialog_a266ec552501a452ce6925589823e8484}{fileMenu}->addAction(tr(\textcolor{stringliteral}{"&New Game"}));
+111     \hyperlink{class_dialog_abf163ec5a4490e0019241f39e3e81b48}{exitAction} = \hyperlink{class_dialog_a266ec552501a452ce6925589823e8484}{fileMenu}->addAction(tr(\textcolor{stringliteral}{"E&xit"}));
+112     \hyperlink{class_dialog_a9712b5e90ad0a47d97d27bb2648e753b}{menuBar}->addMenu(\hyperlink{class_dialog_a266ec552501a452ce6925589823e8484}{fileMenu});
+113 
+114     connect(\hyperlink{class_dialog_a8b086eb4a5d1ec32a4ddfc3abe705505}{newGameAction}, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_dialog_a07edaf041e6001503c4ef6291ca557ea}{on\_newGame\_selected}()));
+115     connect(\hyperlink{class_dialog_abf163ec5a4490e0019241f39e3e81b48}{exitAction}, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(accept()));
+116 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a40d6cd5ec81c87ff483fb399075963b3}{\index{Dialog@{Dialog}!load\-Dictionary@{load\-Dictionary}}
+\index{load\-Dictionary@{load\-Dictionary}!Dialog@{Dialog}}
+\subsubsection[{load\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::load\-Dictionary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a40d6cd5ec81c87ff483fb399075963b3}
+
+
+\hyperlink{class_dialog_a40d6cd5ec81c87ff483fb399075963b3}{Dialog\-::load\-Dictionary} Loads the dictionary. 
+
+
+
+Definition at line 95 of file dialog.\-cpp.
+
+
+
+References dictionary, and Dictionary\-Loader\-::load().
+
+
+
+Referenced by Dialog().
+
+
+\begin{DoxyCode}
+95                            \{
+96     \hyperlink{class_dialog_a465c936ff76ad97698bde2a9b065ab65}{dictionary} = \textcolor{keyword}{new} \hyperlink{class_dictionary}{Dictionary}();
+97     \hyperlink{class_dictionary_loader}{DictionaryLoader} *dictionaryLoader = \textcolor{keyword}{new} \hyperlink{class_dictionary_loader}{DictionaryLoader}(
+      \hyperlink{class_dialog_a465c936ff76ad97698bde2a9b065ab65}{dictionary}, \textcolor{stringliteral}{":/resources/dictionary.txt"});
+98     dictionaryLoader->\hyperlink{class_dictionary_loader_a1441785d7f5a848be0d7b7f432e338f8}{load}();
+99     \textcolor{keyword}{delete} dictionaryLoader;
+100 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a07edaf041e6001503c4ef6291ca557ea}{\index{Dialog@{Dialog}!on\-\_\-new\-Game\-\_\-selected@{on\-\_\-new\-Game\-\_\-selected}}
+\index{on\-\_\-new\-Game\-\_\-selected@{on\-\_\-new\-Game\-\_\-selected}!Dialog@{Dialog}}
+\subsubsection[{on\-\_\-new\-Game\-\_\-selected}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::on\-\_\-new\-Game\-\_\-selected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_dialog_a07edaf041e6001503c4ef6291ca557ea}
+
+
+\hyperlink{class_dialog_a07edaf041e6001503c4ef6291ca557ea}{Dialog\-::on\-\_\-new\-Game\-\_\-selected} Sets up a new game. 
+
+
+
+Definition at line 205 of file dialog.\-cpp.
+
+
+
+References board, game, players, Board\-::reset(), and setup\-Game().
+
+
+
+Referenced by create\-Menu().
+
+
+\begin{DoxyCode}
+206 \{
+207     \textcolor{keywordflow}{if} (\hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game} != NULL)\{
+208         \textcolor{keyword}{delete}(\hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game});
+209         \hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game} = NULL;
+210     \}
+211     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.size(); i++)\{
+212         \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.at(i)->clearScore();
+213     \}
+214     \hyperlink{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{board}->\hyperlink{class_board_a13c88b0bc7d2a85f7e53790e71bdd403}{reset}();
+215     \hyperlink{class_dialog_a4320f72d8354f94942348b74323a651e}{setupGame}();
+216 
+217 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a87138e5c0a7a9fefab5549695686117a}{\index{Dialog@{Dialog}!on\-\_\-player\-Changed@{on\-\_\-player\-Changed}}
+\index{on\-\_\-player\-Changed@{on\-\_\-player\-Changed}!Dialog@{Dialog}}
+\subsubsection[{on\-\_\-player\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::on\-\_\-player\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_dialog_a87138e5c0a7a9fefab5549695686117a}
+
+
+\hyperlink{class_dialog_a87138e5c0a7a9fefab5549695686117a}{Dialog\-::on\-\_\-player\-Changed} Slot for when the player is changed. 
+
+
+
+Definition at line 222 of file dialog.\-cpp.
+
+
+
+References player\-Changed().
+
+
+
+Referenced by create\-Label\-Group\-Box(), and setup\-Game().
+
+
+\begin{DoxyCode}
+223 \{
+224     cout << \textcolor{stringliteral}{"Dialog is emitting an on\_playerChanged() signal."} << endl;
+225     emit (\hyperlink{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}{playerChanged}());
+226 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}{\index{Dialog@{Dialog}!player\-Changed@{player\-Changed}}
+\index{player\-Changed@{player\-Changed}!Dialog@{Dialog}}
+\subsubsection[{player\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::player\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}
+
+
+Referenced by create\-Label\-Group\-Box(), on\-\_\-player\-Changed(), and setup\-Game().
+
+\hypertarget{class_dialog_a0c2de1df5e1defe8e39bf30afbd63840}{\index{Dialog@{Dialog}!setup\-Dialog@{setup\-Dialog}}
+\index{setup\-Dialog@{setup\-Dialog}!Dialog@{Dialog}}
+\subsubsection[{setup\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::setup\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dialog_a0c2de1df5e1defe8e39bf30afbd63840}
+
+
+\hyperlink{class_dialog_a0c2de1df5e1defe8e39bf30afbd63840}{Dialog\-::setup\-Dialog} Sets up the dialog. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]this is not great, but the only way I could disable resizing on Linux \end{DoxyRefDesc}
+
+
+Definition at line 52 of file dialog.\-cpp.
+
+
+
+References create\-Grid\-Group\-Box(), create\-Horizontal\-Group\-Box(), create\-Label\-Group\-Box(), create\-Menu(), grid\-Group\-Box, horizontal\-Group\-Box, label\-Group\-Box, and menu\-Bar.
+
+
+
+Referenced by Dialog().
+
+
+\begin{DoxyCode}
+53 \{
+54     \hyperlink{class_dialog_a0d839dd1406b5bd21d1e87172d9ba280}{createMenu}();
+55     \hyperlink{class_dialog_a0815afc1d0d96fd6e1e3f92a8e017aeb}{createHorizontalGroupBox}();
+56     \hyperlink{class_dialog_a1801636f9eaba94d525a6d174608d4ca}{createGridGroupBox}();
+57     \hyperlink{class_dialog_a3e7333b738c6b84b861dac7ea957244a}{createLabelGroupBox}();
+58 
+59     QVBoxLayout *mainLayout = \textcolor{keyword}{new} QVBoxLayout;
+60     mainLayout->setMenuBar(\hyperlink{class_dialog_a9712b5e90ad0a47d97d27bb2648e753b}{menuBar});
+61     mainLayout->addWidget(\hyperlink{class_dialog_a93c838af40eaab2aecbc11f4ec2f3680}{gridGroupBox});
+62     mainLayout->addWidget(\hyperlink{class_dialog_a382454f1112e8cf8823979456823e9fc}{horizontalGroupBox});
+63     mainLayout->addWidget(\hyperlink{class_dialog_a93ffff453dba285f896156d073d58220}{labelGroupBox});
+64 
+65     setLayout(mainLayout);
+66     setWindowTitle(tr(\textcolor{stringliteral}{"Words for CS 340 Students"}));
+67 
+70     setFixedSize(580, 700);
+71 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_a4320f72d8354f94942348b74323a651e}{\index{Dialog@{Dialog}!setup\-Game@{setup\-Game}}
+\index{setup\-Game@{setup\-Game}!Dialog@{Dialog}}
+\subsubsection[{setup\-Game}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::setup\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_dialog_a4320f72d8354f94942348b74323a651e}
+
+
+\hyperlink{class_dialog_a4320f72d8354f94942348b74323a651e}{Dialog\-::setup\-Game} Sets up the game. 
+
+
+
+Definition at line 40 of file dialog.\-cpp.
+
+
+
+References board, dictionary, game, on\-\_\-player\-Changed(), player\-Changed(), players, rack, Rack\-::refresh(), and Board\-::set\-Game().
+
+
+
+Referenced by Dialog(), and on\-\_\-new\-Game\-\_\-selected().
+
+
+\begin{DoxyCode}
+41 \{
+42     \hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game} = \textcolor{keyword}{new} \hyperlink{class_game}{Game}(\hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}, \hyperlink{class_dialog_a465c936ff76ad97698bde2a9b065ab65}{dictionary});
+43     \hyperlink{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{board}->\hyperlink{class_board_ae08098fe478e2832e7e7403140314164}{setGame}(\hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game});
+44     \hyperlink{class_dialog_a717eee5215d28c0f10bde1444cb959ed}{rack}->\hyperlink{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}{refresh}(\hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game});
+45     connect(\hyperlink{class_dialog_a1b67d47768a815f0b2824957bd955c49}{game}, SIGNAL(\hyperlink{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}{playerChanged}()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_dialog_a87138e5c0a7a9fefab5549695686117a}{on\_playerChanged}()));
+46     emit(\hyperlink{class_dialog_a5f21e292b0ba87e64682cc7b7a53c7cc}{playerChanged}());
+47 \}
+\end{DoxyCode}
+\hypertarget{class_dialog_ab91c0d44d997ee5dc3c9f43866674ec1}{\index{Dialog@{Dialog}!setup\-Players@{setup\-Players}}
+\index{setup\-Players@{setup\-Players}!Dialog@{Dialog}}
+\subsubsection[{setup\-Players}]{\setlength{\rightskip}{0pt plus 5cm}void Dialog\-::setup\-Players (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_ab91c0d44d997ee5dc3c9f43866674ec1}
+
+
+\hyperlink{class_dialog_ab91c0d44d997ee5dc3c9f43866674ec1}{Dialog\-::setup\-Players} Sets up the players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The number of players to set up \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file dialog.\-cpp.
+
+
+
+References A\-I\-Player\-::\-A\-I\-Player(), and players.
+
+
+
+Referenced by Dialog().
+
+
+\begin{DoxyCode}
+78 \{
+79     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < num; i++)\{
+80         QString *playerName = \textcolor{keyword}{new} QString(\textcolor{stringliteral}{"Player "} + QString::number(i + 1));
+81         \textcolor{keywordflow}{if} (i == 0)\{
+82             \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.push\_back(\textcolor{keyword}{new} \hyperlink{class_human_player}{HumanPlayer}(*playerName));
+83         \}
+84         \textcolor{keywordflow}{else} \{
+85             \textcolor{comment}{// players.push\_back(new HumanPlayer(*playerName));}
+86             \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.push\_back(\textcolor{keyword}{new} \hyperlink{class_a_i_player}{AIPlayer}(*playerName));
+87         \}
+88         cout << \hyperlink{class_dialog_a93e79b9554adff375010cc56a29c82b0}{players}.back()->getName().toStdString();
+89     \};
+90 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}{\index{Dialog@{Dialog}!board@{board}}
+\index{board@{board}!Dialog@{Dialog}}
+\subsubsection[{board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board}$\ast$ Dialog\-::board\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a0a45509f1cb59a221eb09f16e1ca4923}
+The \hyperlink{class_board}{Board} 
+
+Definition at line 45 of file dialog.\-h.
+
+
+
+Referenced by create\-Grid\-Group\-Box(), Dialog(), on\-\_\-new\-Game\-\_\-selected(), and setup\-Game().
+
+\hypertarget{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}{\index{Dialog@{Dialog}!cancel@{cancel}}
+\index{cancel@{cancel}!Dialog@{Dialog}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Dialog\-::cancel\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_aa353f9ab09ea36fb2fdc5e5964b9b2b4}
+The cancel button 
+
+Definition at line 37 of file dialog.\-h.
+
+
+
+Referenced by create\-Horizontal\-Group\-Box().
+
+\hypertarget{class_dialog_a465c936ff76ad97698bde2a9b065ab65}{\index{Dialog@{Dialog}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!Dialog@{Dialog}}
+\subsubsection[{dictionary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary}$\ast$ Dialog\-::dictionary\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a465c936ff76ad97698bde2a9b065ab65}
+The \hyperlink{class_dictionary}{Dictionary} 
+
+Definition at line 48 of file dialog.\-h.
+
+
+
+Referenced by load\-Dictionary(), setup\-Game(), and $\sim$\-Dialog().
+
+\hypertarget{class_dialog_abf163ec5a4490e0019241f39e3e81b48}{\index{Dialog@{Dialog}!exit\-Action@{exit\-Action}}
+\index{exit\-Action@{exit\-Action}!Dialog@{Dialog}}
+\subsubsection[{exit\-Action}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Dialog\-::exit\-Action\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_abf163ec5a4490e0019241f39e3e81b48}
+Action when the user chooses to exit 
+
+Definition at line 43 of file dialog.\-h.
+
+
+
+Referenced by create\-Menu().
+
+\hypertarget{class_dialog_a266ec552501a452ce6925589823e8484}{\index{Dialog@{Dialog}!file\-Menu@{file\-Menu}}
+\index{file\-Menu@{file\-Menu}!Dialog@{Dialog}}
+\subsubsection[{file\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Dialog\-::file\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a266ec552501a452ce6925589823e8484}
+The file menu 
+
+Definition at line 41 of file dialog.\-h.
+
+
+
+Referenced by create\-Menu().
+
+\hypertarget{class_dialog_a1b67d47768a815f0b2824957bd955c49}{\index{Dialog@{Dialog}!game@{game}}
+\index{game@{game}!Dialog@{Dialog}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Dialog\-::game\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a1b67d47768a815f0b2824957bd955c49}
+The \hyperlink{class_game}{Game} 
+
+Definition at line 47 of file dialog.\-h.
+
+
+
+Referenced by on\-\_\-new\-Game\-\_\-selected(), setup\-Game(), and $\sim$\-Dialog().
+
+\hypertarget{class_dialog_a93c838af40eaab2aecbc11f4ec2f3680}{\index{Dialog@{Dialog}!grid\-Group\-Box@{grid\-Group\-Box}}
+\index{grid\-Group\-Box@{grid\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{grid\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Group\-Box$\ast$ Dialog\-::grid\-Group\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a93c838af40eaab2aecbc11f4ec2f3680}
+A grid group box 
+
+Definition at line 34 of file dialog.\-h.
+
+
+
+Referenced by create\-Grid\-Group\-Box(), and setup\-Dialog().
+
+\hypertarget{class_dialog_a382454f1112e8cf8823979456823e9fc}{\index{Dialog@{Dialog}!horizontal\-Group\-Box@{horizontal\-Group\-Box}}
+\index{horizontal\-Group\-Box@{horizontal\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{horizontal\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Group\-Box$\ast$ Dialog\-::horizontal\-Group\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a382454f1112e8cf8823979456823e9fc}
+A horizontal group box 
+
+Definition at line 33 of file dialog.\-h.
+
+
+
+Referenced by create\-Horizontal\-Group\-Box(), and setup\-Dialog().
+
+\hypertarget{class_dialog_a93ffff453dba285f896156d073d58220}{\index{Dialog@{Dialog}!label\-Group\-Box@{label\-Group\-Box}}
+\index{label\-Group\-Box@{label\-Group\-Box}!Dialog@{Dialog}}
+\subsubsection[{label\-Group\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Group\-Box$\ast$ Dialog\-::label\-Group\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a93ffff453dba285f896156d073d58220}
+A label group box 
+
+Definition at line 35 of file dialog.\-h.
+
+
+
+Referenced by create\-Label\-Group\-Box(), and setup\-Dialog().
+
+\hypertarget{class_dialog_a9712b5e90ad0a47d97d27bb2648e753b}{\index{Dialog@{Dialog}!menu\-Bar@{menu\-Bar}}
+\index{menu\-Bar@{menu\-Bar}!Dialog@{Dialog}}
+\subsubsection[{menu\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu\-Bar$\ast$ Dialog\-::menu\-Bar\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a9712b5e90ad0a47d97d27bb2648e753b}
+The menu bar 
+
+Definition at line 32 of file dialog.\-h.
+
+
+
+Referenced by create\-Menu(), and setup\-Dialog().
+
+\hypertarget{class_dialog_a8b086eb4a5d1ec32a4ddfc3abe705505}{\index{Dialog@{Dialog}!new\-Game\-Action@{new\-Game\-Action}}
+\index{new\-Game\-Action@{new\-Game\-Action}!Dialog@{Dialog}}
+\subsubsection[{new\-Game\-Action}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Dialog\-::new\-Game\-Action\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a8b086eb4a5d1ec32a4ddfc3abe705505}
+Action when the user chooses a new game 
+
+Definition at line 42 of file dialog.\-h.
+
+
+
+Referenced by create\-Menu().
+
+\hypertarget{class_dialog_a1296240f36b4a11c4cf70a709aced623}{\index{Dialog@{Dialog}!pass@{pass}}
+\index{pass@{pass}!Dialog@{Dialog}}
+\subsubsection[{pass}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Dialog\-::pass\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a1296240f36b4a11c4cf70a709aced623}
+The pass button 
+
+Definition at line 39 of file dialog.\-h.
+
+
+
+Referenced by create\-Horizontal\-Group\-Box().
+
+\hypertarget{class_dialog_afda3b2243f835037bfeb1322289e4f5a}{\index{Dialog@{Dialog}!play@{play}}
+\index{play@{play}!Dialog@{Dialog}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Dialog\-::play\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_afda3b2243f835037bfeb1322289e4f5a}
+The play button 
+
+Definition at line 38 of file dialog.\-h.
+
+
+
+Referenced by create\-Horizontal\-Group\-Box().
+
+\hypertarget{class_dialog_a5130628f920537a9359fbdc4058af7b7}{\index{Dialog@{Dialog}!player\-\_\-cnt@{player\-\_\-cnt}}
+\index{player\-\_\-cnt@{player\-\_\-cnt}!Dialog@{Dialog}}
+\subsubsection[{player\-\_\-cnt}]{\setlength{\rightskip}{0pt plus 5cm}short int Dialog\-::player\-\_\-cnt\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a5130628f920537a9359fbdc4058af7b7}
+The number of Players 
+
+Definition at line 50 of file dialog.\-h.
+
+\hypertarget{class_dialog_a93e79b9554adff375010cc56a29c82b0}{\index{Dialog@{Dialog}!players@{players}}
+\index{players@{players}!Dialog@{Dialog}}
+\subsubsection[{players}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Player}$\ast$$>$ Dialog\-::players\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a93e79b9554adff375010cc56a29c82b0}
+The Players 
+
+Definition at line 49 of file dialog.\-h.
+
+
+
+Referenced by create\-Label\-Group\-Box(), on\-\_\-new\-Game\-\_\-selected(), setup\-Game(), setup\-Players(), and $\sim$\-Dialog().
+
+\hypertarget{class_dialog_a717eee5215d28c0f10bde1444cb959ed}{\index{Dialog@{Dialog}!rack@{rack}}
+\index{rack@{rack}!Dialog@{Dialog}}
+\subsubsection[{rack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rack}$\ast$ Dialog\-::rack\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dialog_a717eee5215d28c0f10bde1444cb959ed}
+The \hyperlink{class_rack}{Rack} 
+
+Definition at line 46 of file dialog.\-h.
+
+
+
+Referenced by create\-Horizontal\-Group\-Box(), Dialog(), and setup\-Game().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{dialog_8h}{dialog.\-h}\item 
+Scrabble/\hyperlink{dialog_8cpp}{dialog.\-cpp}\end{DoxyCompactItemize}

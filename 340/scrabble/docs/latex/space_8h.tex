@@ -1,0 +1,144 @@
+\hypertarget{space_8h}{\section{Scrabble/space.h File Reference}
+\label{space_8h}\index{Scrabble/space.\-h@{Scrabble/space.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$Q\-String$>$}\\*
+{\ttfamily \#include $<$Q\-Object$>$}\\*
+{\ttfamily \#include $<$Q\-Push\-Button$>$}\\*
+{\ttfamily \#include \char`\"{}letter.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_space}{Space}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_space}{Space} class A visual representation of a space on the board that may or may not be filled with a \hyperlink{class_letter}{Letter}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647}{S\-T\-A\-T\-E} \{ \\*
+\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{I\-N\-A\-C\-T\-I\-V\-E}, 
+\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}{A\-C\-T\-I\-V\-E}, 
+\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647acb62afe71d71fd70c35d135c45713767}{P\-L\-A\-C\-E\-D}, 
+\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}{N\-E\-W}, 
+\\*
+\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647abd853c15b135bc71ddd77f67b791db29}{O\-N\-B\-O\-A\-R\-D}, 
+\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3bf2db814150c0d042a2be3c3ae8d8c9}{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{space_8h_a0930e9563a8ae9694238172d3c4db092}{B\-U\-T\-T\-O\-N\-S\-I\-Z\-E} = 35
+\item 
+static const Q\-String \hyperlink{space_8h_aa55a3024ac405580af480d91ea9f76b8}{A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R} = \char`\"{}gold\char`\"{}
+\item 
+static const Q\-String \hyperlink{space_8h_aa42bd2576844576800b7ba2ad14dd450}{N\-E\-W\-C\-O\-L\-O\-R} = \char`\"{}gold\char`\"{}
+\item 
+static const Q\-String \hyperlink{space_8h_a91ade0186625f04a11e0e94069f42949}{O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R} = \char`\"{}wheat\char`\"{}
+\item 
+static const Q\-String \hyperlink{space_8h_acd3b6d476f174ddb30a7f872cd92918a}{P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R} = \char`\"{}lightgrey\char`\"{}
+\item 
+static const Q\-String \hyperlink{space_8h_afa5d71e6778c27c97d05a2384a559c71}{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R} = \char`\"{}grey\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647}{\index{space.\-h@{space.\-h}!S\-T\-A\-T\-E@{S\-T\-A\-T\-E}}
+\index{S\-T\-A\-T\-E@{S\-T\-A\-T\-E}!space.h@{space.\-h}}
+\subsubsection[{S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\-T\-A\-T\-E}}}\label{space_8h_a275a67132f10277ada3a0ee3d616b647}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\-N\-A\-C\-T\-I\-V\-E@{I\-N\-A\-C\-T\-I\-V\-E}!space.\-h@{space.\-h}}\index{space.\-h@{space.\-h}!I\-N\-A\-C\-T\-I\-V\-E@{I\-N\-A\-C\-T\-I\-V\-E}}\item[{\em 
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{I\-N\-A\-C\-T\-I\-V\-E}\label{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}
+}]\index{A\-C\-T\-I\-V\-E@{A\-C\-T\-I\-V\-E}!space.\-h@{space.\-h}}\index{space.\-h@{space.\-h}!A\-C\-T\-I\-V\-E@{A\-C\-T\-I\-V\-E}}\item[{\em 
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}{A\-C\-T\-I\-V\-E}\label{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}
+}]\index{P\-L\-A\-C\-E\-D@{P\-L\-A\-C\-E\-D}!space.\-h@{space.\-h}}\index{space.\-h@{space.\-h}!P\-L\-A\-C\-E\-D@{P\-L\-A\-C\-E\-D}}\item[{\em 
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647acb62afe71d71fd70c35d135c45713767}{P\-L\-A\-C\-E\-D}\label{space_8h_a275a67132f10277ada3a0ee3d616b647acb62afe71d71fd70c35d135c45713767}
+}]\index{N\-E\-W@{N\-E\-W}!space.\-h@{space.\-h}}\index{space.\-h@{space.\-h}!N\-E\-W@{N\-E\-W}}\item[{\em 
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}{N\-E\-W}\label{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}
+}]\index{O\-N\-B\-O\-A\-R\-D@{O\-N\-B\-O\-A\-R\-D}!space.\-h@{space.\-h}}\index{space.\-h@{space.\-h}!O\-N\-B\-O\-A\-R\-D@{O\-N\-B\-O\-A\-R\-D}}\item[{\em 
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647abd853c15b135bc71ddd77f67b791db29}{O\-N\-B\-O\-A\-R\-D}\label{space_8h_a275a67132f10277ada3a0ee3d616b647abd853c15b135bc71ddd77f67b791db29}
+}]\index{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E@{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E}!space.\-h@{space.\-h}}\index{space.\-h@{space.\-h}!U\-N\-P\-L\-A\-Y\-A\-B\-L\-E@{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{space_8h_a275a67132f10277ada3a0ee3d616b647a3bf2db814150c0d042a2be3c3ae8d8c9}{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E}\label{space_8h_a275a67132f10277ada3a0ee3d616b647a3bf2db814150c0d042a2be3c3ae8d8c9}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 21 of file space.\-h.
+
+
+\begin{DoxyCode}
+21 \{\hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE}, \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}{ACTIVE}, \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647acb62afe71d71fd70c35d135c45713767}{PLACED}, \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}{NEW}, \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647abd853c15b135bc71ddd77f67b791db29}{ONBOARD}, 
+      \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3bf2db814150c0d042a2be3c3ae8d8c9}{UNPLAYABLE}\};
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{space_8h_aa55a3024ac405580af480d91ea9f76b8}{\index{space.\-h@{space.\-h}!A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R@{A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R}}
+\index{A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R@{A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R}!space.h@{space.\-h}}
+\subsubsection[{A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R = \char`\"{}gold\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{space_8h_aa55a3024ac405580af480d91ea9f76b8}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]Make these colors beautiful \end{DoxyRefDesc}
+The color of an active space 
+
+Definition at line 14 of file space.\-h.
+
+
+
+Referenced by Space\-::set\-Active().
+
+\hypertarget{space_8h_a0930e9563a8ae9694238172d3c4db092}{\index{space.\-h@{space.\-h}!B\-U\-T\-T\-O\-N\-S\-I\-Z\-E@{B\-U\-T\-T\-O\-N\-S\-I\-Z\-E}}
+\index{B\-U\-T\-T\-O\-N\-S\-I\-Z\-E@{B\-U\-T\-T\-O\-N\-S\-I\-Z\-E}!space.h@{space.\-h}}
+\subsubsection[{B\-U\-T\-T\-O\-N\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int B\-U\-T\-T\-O\-N\-S\-I\-Z\-E = 35\hspace{0.3cm}{\ttfamily [static]}}}\label{space_8h_a0930e9563a8ae9694238172d3c4db092}
+The size in pixels of the square Button 
+
+Definition at line 11 of file space.\-h.
+
+
+
+Referenced by Space\-::setup\-Defaults().
+
+\hypertarget{space_8h_aa42bd2576844576800b7ba2ad14dd450}{\index{space.\-h@{space.\-h}!N\-E\-W\-C\-O\-L\-O\-R@{N\-E\-W\-C\-O\-L\-O\-R}}
+\index{N\-E\-W\-C\-O\-L\-O\-R@{N\-E\-W\-C\-O\-L\-O\-R}!space.h@{space.\-h}}
+\subsubsection[{N\-E\-W\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String N\-E\-W\-C\-O\-L\-O\-R = \char`\"{}gold\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{space_8h_aa42bd2576844576800b7ba2ad14dd450}
+The color of a new space 
+
+Definition at line 15 of file space.\-h.
+
+
+
+Referenced by Space\-::set\-New().
+
+\hypertarget{space_8h_a91ade0186625f04a11e0e94069f42949}{\index{space.\-h@{space.\-h}!O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R@{O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R}}
+\index{O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R@{O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R}!space.h@{space.\-h}}
+\subsubsection[{O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R = \char`\"{}wheat\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{space_8h_a91ade0186625f04a11e0e94069f42949}
+The color of a space that has been put on the board permanently 
+
+Definition at line 16 of file space.\-h.
+
+
+
+Referenced by Space\-::set\-On\-Board().
+
+\hypertarget{space_8h_acd3b6d476f174ddb30a7f872cd92918a}{\index{space.\-h@{space.\-h}!P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R@{P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R}}
+\index{P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R@{P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R}!space.h@{space.\-h}}
+\subsubsection[{P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R = \char`\"{}lightgrey\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{space_8h_acd3b6d476f174ddb30a7f872cd92918a}
+The color of a space in the rack that has been placed on the board 
+
+Definition at line 17 of file space.\-h.
+
+
+
+Referenced by Space\-::set\-Placed().
+
+\hypertarget{space_8h_afa5d71e6778c27c97d05a2384a559c71}{\index{space.\-h@{space.\-h}!U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R@{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R}}
+\index{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R@{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R}!space.h@{space.\-h}}
+\subsubsection[{U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R = \char`\"{}grey\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{space_8h_afa5d71e6778c27c97d05a2384a559c71}
+The color of a space in the rack that is unplayable because it contains no \hyperlink{class_letter}{Letter} 
+
+Definition at line 18 of file space.\-h.
+
+
+
+Referenced by Space\-::set\-Letter().
+

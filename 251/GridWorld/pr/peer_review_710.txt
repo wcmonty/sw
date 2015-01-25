@@ -1,0 +1,75 @@
+In your declartion of your structs, you are referencing other structs wrong.  If you use typedef, you do not need to use the struct keyword in your declarations.  You are also using definitions that have not yet been defined.
+
+
+gw_build
+In gw_build, you allocated the array of DISTRICTS wrong.  g->districts is a pointer to a pointer to a gw_districts struct, and you allocated an int times the size of a DISTRICTS.  You did this again for the columns.
+
+When you are initially distributing the people, there is a lot of duplicate code to deal with the case when random is on and when random is off.  It would make sense to rewrite it so that there isn't a lot of duplicate code.
+
+gw_members
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+You are trying to allocate an array from an unitialized value, popl.  This is very bad.
+
+You never set *n to the number of people in the district.
+
+You should be returning a pointer to an array, but I don't see that the array ever is allocated.
+
+gw_district_pop
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+gw_move
+You don't do any bounds checking on the value of x.  If an invalid value is sent, it will immediately be dereferenced, possibly resulting in a segmentation fault.
+
+Some logic is missing when you remove the person from the linked list.  Specifically, if you try to remove the head or the tail, you try to dereference a null pointer.
+
+gw_find
+You don't do any bounds checking on the value of x.  If an invalid value is sent, it will immediately be dereferenced, possibly resulting in a segmentation fault.
+
+It looks like you are setting pointers to integer values, it should be:
+*r = g->directory[x]->i;
+*c = g->directory[x]->j;
+
+GW_kill
+You don't do any bounds checking on the value of x.  If an invalid value is sent, it will immediately be dereferenced, possibly resulting in a segmentation fault.
+
+The function name is using capital letters while it is defined in the header file with lower case.
+
+It looks like some logic is missing when you remove the person from the linked list, specifically in the case when the person was at the head or tail of the list.
+
+gw_create
+You don't do any bounds checking on the values of i and j.  They could be negative or greater than the number of rows or columns.
+
+x is defined within an if statement, and then used outside of it.  This will fail thwn g->recycle->next is null.
+
+If there is nothing to recycle, the function has no way to give another id.
+
+If the population grows too large, then the directory needs to be resized.  I see no way of doing this.
+
+gw_free
+This just frees the gw_struct, but does not free the districts or people structs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

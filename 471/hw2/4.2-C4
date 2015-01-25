@@ -1,0 +1,171 @@
+A = [1 0; 1 50; 1 100; 1 200]
+
+A =
+
+     1     0
+     1    50
+     1   100
+     1   200
+
+b = [280; 283; 291; 370]
+
+b =
+
+   280
+   283
+   291
+   370
+
+lnb = log(b)
+
+lnb =
+
+    5.6348
+    5.6454
+    5.6733
+    5.9135
+
+Anormal = A' * A
+
+Anormal =
+
+           4         350
+         350       52500
+
+lbnormal = A' * lnb
+
+lbnormal =
+
+   1.0e+03 *
+
+    0.0229
+    2.0323
+
+inv(Anormal) * b
+{Error using <a href="matlab:helpUtils.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+inv(Anormal) * lnbnormal
+{Undefined function or variable 'lnbnormal'.
+} 
+inv(Anormal) * lnbnormal
+{Undefined function or variable 'lnbnormal'.
+} 
+inv(Anormal) * lbnormal
+
+ans =
+
+    5.5910
+    0.0014
+
+result = inv(Anormal) * lbnormal
+
+result =
+
+    5.5910
+    0.0014
+
+c2 = result(1, 2)
+{Attempted to access result(1,2); index out of bounds because size(result)=[2,1].
+} 
+c2 = result(2, 1)
+
+c2 =
+
+    0.0014
+
+c1 = exp(result(2, 0))
+{Attempted to access result(2,0); index must be a positive integer or logical.
+} 
+c1 = exp(result(1, 1))
+
+c1 =
+
+  268.0079
+
+c1 + c2(150)
+{Index exceeds matrix dimensions.
+} 
+c1 + c2 *150
+
+ans =
+
+  268.2235
+
+c1*exp(c2*150)
+
+ans =
+
+  332.4823
+
+b = b - 279
+
+b =
+
+     1
+     4
+    12
+    91
+
+lnb = log(b)
+
+lnb =
+
+         0
+    1.3863
+    2.4849
+    4.5109
+
+lnbnormal = A' * lnb
+
+lnbnormal =
+
+   1.0e+03 *
+
+    0.0084
+    1.2200
+
+result = inv(Anormal) * lnbnormal
+
+result =
+
+    0.1493
+    0.0222
+
+c2 = result (2, 1)
+
+c2 =
+
+    0.0222
+
+c1 = exp(result(1, 1))
+
+c1 =
+
+    1.1611
+
+c1*exp(c2*150)
+
+ans =
+
+   32.6436
+
+310 - 269
+
+ans =
+
+    41
+
+310 - 279
+
+ans =
+
+    31
+
+(c1*exp(c2*150) - 31) / 31
+
+ans =
+
+    0.0530
+
+diary off

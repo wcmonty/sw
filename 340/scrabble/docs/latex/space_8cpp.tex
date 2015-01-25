@@ -1,0 +1,69 @@
+\hypertarget{space_8cpp}{\section{Scrabble/space.cpp File Reference}
+\label{space_8cpp}\index{Scrabble/space.\-cpp@{Scrabble/space.\-cpp}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}space.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rack.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{space_8cpp_a6b1299ccbc2e3aa35c1a3ce03f10407d}{operator$<$$<$} (ostream \&os, const \hyperlink{class_space}{Space} \&space)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloads the $<$$<$ operator for debugging information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{space_8cpp_a6b1299ccbc2e3aa35c1a3ce03f10407d}{\index{space.\-cpp@{space.\-cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!space.cpp@{space.\-cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Space} \&}]{space}
+\end{DoxyParamCaption}
+)}}\label{space_8cpp_a6b1299ccbc2e3aa35c1a3ce03f10407d}
+
+
+operator $<$$<$ Overloads the $<$$<$ operator for debugging information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+{\em space} & The space object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream 
+\end{DoxyReturn}
+
+
+Definition at line 373 of file space.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), Space\-::letter, Space\-::letter\-Multiplier, Space\-::start\-Space, and Space\-::word\-Multiplier.
+
+
+\begin{DoxyCode}
+373                                                      \{
+374     os << \textcolor{stringliteral}{"["};
+375     \textcolor{keywordflow}{if} (space.\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} == NULL)\{
+376         \textcolor{keywordflow}{if} (space.\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} != 1)\{
+377             os << space.\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} << \textcolor{charliteral}{'L'};
+378         \}
+379         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (space.\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier} != 1)\{
+380             os << space.\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier} << \textcolor{charliteral}{'W'};
+381         \}
+382         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (space.\hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace})\{
+383             os << \textcolor{stringliteral}{"**"};
+384         \}
+385         \textcolor{keywordflow}{else} \{
+386             os << \textcolor{stringliteral}{"  "};
+387         \}
+388     \}
+389     \textcolor{keywordflow}{else} \{
+390         os << \textcolor{stringliteral}{" "} << space.\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()->toLatin1();
+391     \}
+392     os << \textcolor{stringliteral}{"]"};
+393     \textcolor{keywordflow}{return} os;
+394 \}
+\end{DoxyCode}

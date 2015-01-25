@@ -1,0 +1,399 @@
+\hypertarget{class_trie_node}{\section{Trie\-Node Class Reference}
+\label{class_trie_node}\index{Trie\-Node@{Trie\-Node}}
+}
+
+
+The \hyperlink{class_trie_node}{Trie\-Node} class A node in a \hyperlink{class_trie}{Trie}.  
+
+
+
+
+{\ttfamily \#include $<$trienode.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}{Trie\-Node} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}{Trie\-Node\-::\-Trie\-Node} Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_trie_node_a6bd6d1a202d5e3eed86ddb6d2260348c}{Trie\-Node} (Q\-Char c, bool \hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{is\-Word})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}{Trie\-Node\-::\-Trie\-Node} Overloaded constructor for quicker building. \end{DoxyCompactList}\item 
+\hyperlink{class_trie_node_a2c338a9960c601bbe654668cbe4f18a5}{$\sim$\-Trie\-Node} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a2c338a9960c601bbe654668cbe4f18a5}{Trie\-Node\-::$\sim$\-Trie\-Node} Default Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}{set\-Word\-Marker} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}{Trie\-Node\-::set\-Word\-Marker} Set that this \hyperlink{class_trie_node}{Trie\-Node} marks a complete word. \end{DoxyCompactList}\item 
+void \hyperlink{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{append\-Child} (\hyperlink{class_trie_node}{Trie\-Node} $\ast$child)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{Trie\-Node\-::append\-Child} Add a child to the children defining vector$<$\-Trie\-Node$\ast$$>$ of this \hyperlink{class_trie_node}{Trie\-Node}. \end{DoxyCompactList}\item 
+Q\-Char \hyperlink{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}{content} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}{Trie\-Node\-::content} Getter for the character that defines this \hyperlink{class_trie_node}{Trie\-Node}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{is\-Word} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{Trie\-Node\-::is\-Word} Does this \hyperlink{class_trie_node}{Trie\-Node} mark a complete word? \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_trie_node}{Trie\-Node} $\ast$ $>$ \hyperlink{class_trie_node_a1780ceae4ef4d8aeb87decadf3114027}{children} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{Trie\-Node\-::append\-Child} Returns the vector encompassing this \hyperlink{class_trie_node}{Trie\-Node}'s children. \end{DoxyCompactList}\item 
+\hyperlink{class_trie_node}{Trie\-Node} $\ast$ \hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{find\-Child} (Q\-Char c)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{Trie\-Node\-::find\-Child} Finds the child that contains the alphabetic character we seek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Char \hyperlink{class_trie_node_a916f69076dcca89e4e7963cea715b730}{character}
+\item 
+bool \hyperlink{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}{wordmarker}
+\item 
+vector$<$ \hyperlink{class_trie_node}{Trie\-Node} $\ast$ $>$ \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_trie_node_ae2e1f78809fe1c494cec561704ad5efb}{Trie}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_trie_node}{Trie\-Node} class A node in a \hyperlink{class_trie}{Trie}. 
+
+Definition at line 12 of file trienode.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}{\index{Trie\-Node@{Trie\-Node}!Trie\-Node@{Trie\-Node}}
+\index{Trie\-Node@{Trie\-Node}!TrieNode@{Trie\-Node}}
+\subsubsection[{Trie\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Trie\-Node\-::\-Trie\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}
+
+
+\hyperlink{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}{Trie\-Node\-::\-Trie\-Node} Default constructor. 
+
+
+
+Definition at line 6 of file trienode.\-cpp.
+
+
+
+References character, triechildren, and wordmarker.
+
+
+\begin{DoxyCode}
+6                    \{
+7     \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.clear();
+8     \hyperlink{class_trie_node_a916f69076dcca89e4e7963cea715b730}{character} = \textcolor{charliteral}{' '};
+9     \hyperlink{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}{wordmarker} = \textcolor{keyword}{false};
+10 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_a6bd6d1a202d5e3eed86ddb6d2260348c}{\index{Trie\-Node@{Trie\-Node}!Trie\-Node@{Trie\-Node}}
+\index{Trie\-Node@{Trie\-Node}!TrieNode@{Trie\-Node}}
+\subsubsection[{Trie\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Trie\-Node\-::\-Trie\-Node (
+\begin{DoxyParamCaption}
+\item[{Q\-Char}]{c, }
+\item[{bool}]{is\-Word}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a6bd6d1a202d5e3eed86ddb6d2260348c}
+
+
+\hyperlink{class_trie_node_a3c44872f26b52fa29a38c91e69b22103}{Trie\-Node\-::\-Trie\-Node} Overloaded constructor for quicker building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & What is the character this node defines? \\
+\hline
+{\em is\-Word} & Does this indicate the final letter of a word? \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file trienode.\-cpp.
+
+
+
+References character, is\-Word(), triechildren, and wordmarker.
+
+
+\begin{DoxyCode}
+17                                        \{
+18     \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.clear();
+19     \hyperlink{class_trie_node_a916f69076dcca89e4e7963cea715b730}{character} = c;
+20     \hyperlink{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}{wordmarker} = \hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{isWord};
+21 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_a2c338a9960c601bbe654668cbe4f18a5}{\index{Trie\-Node@{Trie\-Node}!$\sim$\-Trie\-Node@{$\sim$\-Trie\-Node}}
+\index{$\sim$\-Trie\-Node@{$\sim$\-Trie\-Node}!TrieNode@{Trie\-Node}}
+\subsubsection[{$\sim$\-Trie\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Trie\-Node\-::$\sim$\-Trie\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a2c338a9960c601bbe654668cbe4f18a5}
+
+
+\hyperlink{class_trie_node_a2c338a9960c601bbe654668cbe4f18a5}{Trie\-Node\-::$\sim$\-Trie\-Node} Default Destructor. 
+
+
+
+Definition at line 26 of file trienode.\-cpp.
+
+
+
+References triechildren.
+
+
+\begin{DoxyCode}
+26                     \{
+27     \textcolor{keywordflow}{while}(!this->\hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.empty())\{
+28         \textcolor{keyword}{delete} this->\hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.back();
+29         this->\hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.pop\_back();
+30     \}
+31 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{\index{Trie\-Node@{Trie\-Node}!append\-Child@{append\-Child}}
+\index{append\-Child@{append\-Child}!TrieNode@{Trie\-Node}}
+\subsubsection[{append\-Child}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-Node\-::append\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Trie\-Node} $\ast$}]{child}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}
+
+
+\hyperlink{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{Trie\-Node\-::append\-Child} Add a child to the children defining vector$<$\-Trie\-Node$\ast$$>$ of this \hyperlink{class_trie_node}{Trie\-Node}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & The \hyperlink{class_trie_node}{Trie\-Node} you wish to append to the current \hyperlink{class_trie_node}{Trie\-Node}'s children. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file trienode.\-cpp.
+
+
+
+References triechildren.
+
+
+
+Referenced by Trie\-::add\-Word().
+
+
+\begin{DoxyCode}
+75                                           \{
+76     \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.push\_back(child);
+77 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_a1780ceae4ef4d8aeb87decadf3114027}{\index{Trie\-Node@{Trie\-Node}!children@{children}}
+\index{children@{children}!TrieNode@{Trie\-Node}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Trie\-Node} $\ast$ $>$ Trie\-Node\-::children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a1780ceae4ef4d8aeb87decadf3114027}
+
+
+\hyperlink{class_trie_node_a2f8882ec22f1388d00a0b0a4b23c3116}{Trie\-Node\-::append\-Child} Returns the vector encompassing this \hyperlink{class_trie_node}{Trie\-Node}'s children. 
+
+\begin{DoxyReturn}{Returns}
+The children for this \hyperlink{class_trie_node}{Trie\-Node}. 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file trienode.\-cpp.
+
+
+
+References triechildren.
+
+
+
+Referenced by Trie\-::\-\_\-print\-Trie().
+
+
+\begin{DoxyCode}
+83                                      \{
+84     \textcolor{keywordflow}{return} \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren};
+85 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}{\index{Trie\-Node@{Trie\-Node}!content@{content}}
+\index{content@{content}!TrieNode@{Trie\-Node}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Char Trie\-Node\-::content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}
+
+
+\hyperlink{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}{Trie\-Node\-::content} Getter for the character that defines this \hyperlink{class_trie_node}{Trie\-Node}. 
+
+\begin{DoxyReturn}{Returns}
+The character stored in this \hyperlink{class_trie_node}{Trie\-Node}. 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file trienode.\-cpp.
+
+
+
+References character.
+
+
+
+Referenced by Trie\-::\-\_\-print\-Trie(), and find\-Child().
+
+
+\begin{DoxyCode}
+52                         \{
+53     \textcolor{keywordflow}{return} \hyperlink{class_trie_node_a916f69076dcca89e4e7963cea715b730}{character};
+54 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{\index{Trie\-Node@{Trie\-Node}!find\-Child@{find\-Child}}
+\index{find\-Child@{find\-Child}!TrieNode@{Trie\-Node}}
+\subsubsection[{find\-Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trie\-Node} $\ast$ Trie\-Node\-::find\-Child (
+\begin{DoxyParamCaption}
+\item[{Q\-Char}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}
+
+
+\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{Trie\-Node\-::find\-Child} Finds the child that contains the alphabetic character we seek. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the Tritriechildrene\-Node where the alphabetic character was found. 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file trienode.\-cpp.
+
+
+
+References content(), and triechildren.
+
+
+
+Referenced by Trie\-::\-\_\-anagramgen(), A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search(), Trie\-::\-\_\-assist\-\_\-ai\-\_\-search(), Trie\-::add\-Word(), and Trie\-::search\-Word().
+
+
+\begin{DoxyCode}
+38 \{
+39     \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{unsigned} i = 0; i < \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.size(); i++ )
+40     \{
+41         \hyperlink{class_trie_node}{TrieNode}* tmp = \hyperlink{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{triechildren}.at(i);
+42         \textcolor{keywordflow}{if} ( tmp->\hyperlink{class_trie_node_afcd02716967aecb5b14a87e6bdd5ccae}{content}() == c )
+43             \textcolor{keywordflow}{return} tmp;
+44     \}
+45     \textcolor{keywordflow}{return} NULL;
+46 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{\index{Trie\-Node@{Trie\-Node}!is\-Word@{is\-Word}}
+\index{is\-Word@{is\-Word}!TrieNode@{Trie\-Node}}
+\subsubsection[{is\-Word}]{\setlength{\rightskip}{0pt plus 5cm}bool Trie\-Node\-::is\-Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}
+
+
+\hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{Trie\-Node\-::is\-Word} Does this \hyperlink{class_trie_node}{Trie\-Node} mark a complete word? 
+
+\begin{DoxyReturn}{Returns}
+The boolean representation of wether this is a word or not. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file trienode.\-cpp.
+
+
+
+References wordmarker.
+
+
+
+Referenced by Trie\-::\-\_\-anagramgen(), A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search(), Trie\-::\-\_\-assist\-\_\-ai\-\_\-search(), Trie\-::\-\_\-print\-Trie(), Trie\-::search\-Word(), and Trie\-Node().
+
+
+\begin{DoxyCode}
+60                       \{
+61     \textcolor{keywordflow}{return} \hyperlink{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}{wordmarker};
+62 \}
+\end{DoxyCode}
+\hypertarget{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}{\index{Trie\-Node@{Trie\-Node}!set\-Word\-Marker@{set\-Word\-Marker}}
+\index{set\-Word\-Marker@{set\-Word\-Marker}!TrieNode@{Trie\-Node}}
+\subsubsection[{set\-Word\-Marker}]{\setlength{\rightskip}{0pt plus 5cm}void Trie\-Node\-::set\-Word\-Marker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}
+
+
+\hyperlink{class_trie_node_a402a938aeaf7f2b4dcd573e1949c55d4}{Trie\-Node\-::set\-Word\-Marker} Set that this \hyperlink{class_trie_node}{Trie\-Node} marks a complete word. 
+
+
+
+Definition at line 67 of file trienode.\-cpp.
+
+
+
+References wordmarker.
+
+
+
+Referenced by Trie\-::add\-Word().
+
+
+\begin{DoxyCode}
+67                              \{
+68     \hyperlink{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}{wordmarker} = \textcolor{keyword}{true};
+69 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_trie_node_ae2e1f78809fe1c494cec561704ad5efb}{\index{Trie\-Node@{Trie\-Node}!Trie@{Trie}}
+\index{Trie@{Trie}!TrieNode@{Trie\-Node}}
+\subsubsection[{Trie}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Trie}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_trie_node_ae2e1f78809fe1c494cec561704ad5efb}
+
+
+Definition at line 14 of file trienode.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_trie_node_a916f69076dcca89e4e7963cea715b730}{\index{Trie\-Node@{Trie\-Node}!character@{character}}
+\index{character@{character}!TrieNode@{Trie\-Node}}
+\subsubsection[{character}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Char Trie\-Node\-::character\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_node_a916f69076dcca89e4e7963cea715b730}
+This node's defining 'character' 
+
+Definition at line 29 of file trienode.\-h.
+
+
+
+Referenced by content(), and Trie\-Node().
+
+\hypertarget{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}{\index{Trie\-Node@{Trie\-Node}!triechildren@{triechildren}}
+\index{triechildren@{triechildren}!TrieNode@{Trie\-Node}}
+\subsubsection[{triechildren}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Trie\-Node}$\ast$$>$ Trie\-Node\-::triechildren\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_node_ab3c2858f5075f4c36ec613592ab20cea}
+Container for Trie\-Nodes, order is not guaranteed 
+
+Definition at line 31 of file trienode.\-h.
+
+
+
+Referenced by append\-Child(), children(), find\-Child(), Trie\-Node(), and $\sim$\-Trie\-Node().
+
+\hypertarget{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}{\index{Trie\-Node@{Trie\-Node}!wordmarker@{wordmarker}}
+\index{wordmarker@{wordmarker}!TrieNode@{Trie\-Node}}
+\subsubsection[{wordmarker}]{\setlength{\rightskip}{0pt plus 5cm}bool Trie\-Node\-::wordmarker\hspace{0.3cm}{\ttfamily [private]}}}\label{class_trie_node_acbd36bc970f70dcbde62e63211daa8d7}
+Defines if this node indicates that this node completes a word 
+
+Definition at line 30 of file trienode.\-h.
+
+
+
+Referenced by is\-Word(), set\-Word\-Marker(), and Trie\-Node().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{trienode_8h}{trienode.\-h}\item 
+Scrabble/\hyperlink{trienode_8cpp}{trienode.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,630 @@
+\hypertarget{class_a_i_player}{\section{A\-I\-Player Class Reference}
+\label{class_a_i_player}\index{A\-I\-Player@{A\-I\-Player}}
+}
+
+
+{\ttfamily \#include $<$aiplayer.\-h$>$}
+
+Inheritance diagram for A\-I\-Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_i_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_i_player_af228dd97466ff5219f2e150935eb2565}{A\-I\-Player} (Q\-String s)
+\item 
+void \hyperlink{class_a_i_player_a6641fec98f51924a76ba00b4b3253325}{play} (\hyperlink{class_dictionary}{Dictionary} \&dict, \hyperlink{class_play}{Play} $\ast$$\ast$play)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_i_player_a6641fec98f51924a76ba00b4b3253325}{A\-I\-Player\-::play} Fills the Currentplay of the board with a valid A\-I play. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_a_i_player_a2a71a31297386f4d69f12a43187954a6}{is\-A\-I\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_i_player_a2a71a31297386f4d69f12a43187954a6}{A\-I\-Player\-::is\-A\-I\-Player}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\-\_\-t \hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{ai\-\_\-search} (Q\-List$<$ \hyperlink{class_letter}{Letter} $\ast$ $>$ $\ast$tiles, Q\-List$<$ \hyperlink{class_space}{Space} $\ast$ $>$ $\ast$positions, list$<$ \hyperlink{class_play}{Play} $\ast$ $>$ $\ast$playlist, \hyperlink{class_dictionary}{Dictionary} $\ast$dict)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{A\-I\-Player\-::ai\-\_\-search} High level assistant function that creates a new position list we can tamper with. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_i_player_a3bcac2df2a8f171dfedfa594855294af}{\-\_\-touches\-\_\-4} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_i_player_a3bcac2df2a8f171dfedfa594855294af}{A\-I\-Player\-::\-\_\-touches\-\_\-4} Returns whether or not there are spaces that contain Tiles around this location. \end{DoxyCompactList}\item 
+bool \hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{\-\_\-touches\-\_\-2} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{A\-I\-Player\-::\-\_\-touches\-\_\-2} Returns whether or not there are spaces that contain Tiles around this location. \end{DoxyCompactList}\item 
+void \hyperlink{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{\-\_\-assist\-\_\-ai\-\_\-search} (\hyperlink{class_trie_node}{Trie\-Node} $\ast$Node, Q\-List$<$ \hyperlink{class_letter}{Letter} $\ast$ $>$ $\ast$tiles, Q\-List$<$ \hyperlink{class_space}{Space} $\ast$ $>$ $\ast$positions, Q\-List$<$ \hyperlink{class_move}{Move} $\ast$ $>$ $\ast$playbuilder, list$<$ \hyperlink{class_play}{Play} $\ast$ $>$ $\ast$playlist)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search} This is the main function of the A\-I search, which tries to discover the various valid plays available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board}{Board} $\ast$ \hyperlink{class_a_i_player_a4262c0ef313e6ac9f3e5be3f2c4d6ade}{boardcopy}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file aiplayer.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_i_player_af228dd97466ff5219f2e150935eb2565}{\index{A\-I\-Player@{A\-I\-Player}!A\-I\-Player@{A\-I\-Player}}
+\index{A\-I\-Player@{A\-I\-Player}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}A\-I\-Player\-::\-A\-I\-Player (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_a_i_player_af228dd97466ff5219f2e150935eb2565}
+
+
+Definition at line 9 of file aiplayer.\-h.
+
+
+
+Referenced by Dialog\-::setup\-Players().
+
+
+\begin{DoxyCode}
+9 : \hyperlink{class_player_ad079d0b82440f180a6698ff62f1dc1be}{Player}(s) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{\index{A\-I\-Player@{A\-I\-Player}!\-\_\-assist\-\_\-ai\-\_\-search@{\-\_\-assist\-\_\-ai\-\_\-search}}
+\index{\-\_\-assist\-\_\-ai\-\_\-search@{\-\_\-assist\-\_\-ai\-\_\-search}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{\-\_\-assist\-\_\-ai\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{{\bf Trie\-Node} $\ast$}]{Node, }
+\item[{Q\-List$<$ {\bf Letter} $\ast$ $>$ $\ast$}]{tiles, }
+\item[{Q\-List$<$ {\bf Space} $\ast$ $>$ $\ast$}]{positions, }
+\item[{Q\-List$<$ {\bf Move} $\ast$ $>$ $\ast$}]{playbuilder, }
+\item[{list$<$ {\bf Play} $\ast$ $>$ $\ast$}]{playlist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_a_i_player_afdf893cf47209d106740f56c1d37c334}
+
+
+\hyperlink{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search} This is the main function of the A\-I search, which tries to discover the various valid plays available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Node} & The current \hyperlink{class_trie_node}{Trie\-Node} representing the letter we are on during this search. \\
+\hline
+{\em tiles} & The remaining tiles in our tray to complete words with. \\
+\hline
+{\em positions} & The positions remaining in our searchgrid in this particular direction, on this particular line. \\
+\hline
+{\em playbuilder} & The unit that represents the play being built at the moment. \\
+\hline
+{\em playlist} & A location we edit to fill with valid plays -\/ and thus the 'return value' in a ways. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Make it validate the full 'play' here before submitting it. If it doesn't validate, R\-E\-T\-U\-R\-N! Because we can't continue along this route to valid words anymore. It will never validate. We still have to do the position check after that either way. We can only do a sideways check however! Not a forwards, as that might invalidate a non-\/complete word that might complete later. \end{DoxyRefDesc}
+
+
+Definition at line 55 of file aiplayer.\-cpp.
+
+
+
+References \-\_\-touches\-\_\-4(), Letter\-::as\-Q\-Char\-Ptr(), Trie\-Node\-::find\-Child(), Rack\-::get\-Rack(), Space\-::get\-X(), Space\-::get\-Y(), Space\-::is\-Blank(), Trie\-Node\-::is\-Word(), and Space\-::letter.
+
+
+
+Referenced by ai\-\_\-search().
+
+
+\begin{DoxyCode}
+57                                                         \{
+58     \textcolor{keywordflow}{if}(!Node) \{
+59         \textcolor{comment}{// This should never happen!}
+60         cout << \textcolor{stringliteral}{"Big Error! Invalid control path!"};
+61         \textcolor{keywordflow}{return};
+62     \}
+63 
+64     \textcolor{keywordflow}{if}( Node->\hyperlink{class_trie_node_a3fa48afcb9376feaf24c9d8acac7c076}{isWord}() && !playbuilder->isEmpty() ) \{
+65         \textcolor{keywordtype}{int} somethingtrue = \textcolor{keyword}{false};
+66         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < playbuilder->size(); i++)
+67         \{
+68             \textcolor{keywordflow}{if}( \hyperlink{class_a_i_player_a3bcac2df2a8f171dfedfa594855294af}{\_touches\_4}(playbuilder->at(i)->getX(),
+69                            playbuilder->at(i)->getY()) )
+70                 somethingtrue = \textcolor{keyword}{true};
+71         \}
+72 
+73         \textcolor{keywordflow}{if}( somethingtrue ) \{
+82             \textcolor{keywordflow}{if}( !positions->isEmpty() ) \{
+83                 \textcolor{keywordflow}{if}( positions->first()->letter == NULL ) \{
+84                     \textcolor{comment}{// Add the play to the playlist}
+85                     playlist->push\_front(\textcolor{keyword}{new} \hyperlink{class_play}{Play}(playbuilder,\textcolor{keyword}{this}));
+86                 \}
+87             \}
+88             \textcolor{keywordflow}{else} \{
+89                 \textcolor{comment}{// Add the play to the playlist}
+90                 playlist->push\_front(\textcolor{keyword}{new} \hyperlink{class_play}{Play}(playbuilder,\textcolor{keyword}{this}));
+91             \}
+92         \}
+93     \}
+94 
+95     \textcolor{comment}{// exit condition 1: If we have no tiles, we can't place letters.}
+96     \textcolor{comment}{// exit condition 2: If we have no positions left to fill, we can't place letters.}
+97     \textcolor{keywordflow}{if}( tiles->isEmpty() || positions->isEmpty() )
+98         \textcolor{keywordflow}{return};
+99 
+100     \textcolor{comment}{// We are guaranteed to have a position letter, so we take it.}
+101     \textcolor{comment}{// We are never going to give this space back.}
+102     \textcolor{comment}{// (MC: Modification Character)}
+103     \hyperlink{class_space}{Space}* mc = positions->takeFirst();
+104     \textcolor{keywordtype}{int} tilepos = 0;
+105 
+106     \textcolor{comment}{// exit condition 3: if the position letter is not a wildcard,}
+107     \textcolor{comment}{// we don't have to use a tile from our tray, and we instead just continue on}
+108     \textcolor{comment}{// after we check that we have that child.}
+109     \textcolor{keywordflow}{if}( mc->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() == false )
+110     \{
+111         \hyperlink{class_trie_node}{TrieNode} * foundchild = Node->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(*mc->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}());
+112         \textcolor{keywordflow}{if}( foundchild )
+113             \hyperlink{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{\_assist\_ai\_search}(foundchild,tiles,positions,playbuilder,playlist);
+114     \}
+115     \textcolor{keywordflow}{else}
+116     \{
+117         \textcolor{comment}{// We must now attempt this system for any character that is valid here.}
+118         \textcolor{comment}{// It's luckily not 26, it's only as many tiles as we have available!}
+119         \textcolor{comment}{// Still, in the WORST situation...}
+120         \textcolor{comment}{// This means 7*6*5*4*3*2*1, or 7! total calls of recursion. That's 5040.}
+121         \textcolor{comment}{// Also, we need to make sure it does get \_taken\_ by a letter.}
+122 
+123         \textcolor{keywordflow}{for}(tilepos = 0; tilepos < tiles->size(); tilepos++)
+124         \{
+125             \hyperlink{class_letter}{Letter} * t = tiles->takeAt(tilepos);
+126 
+127             \textcolor{comment}{// Take this letter and let's see if it can go somewhere.}
+128             \textcolor{comment}{// Generate the current move.}
+129 
+130             \hyperlink{class_move}{Move} * mv = \textcolor{keyword}{new} \hyperlink{class_move}{Move}(\textcolor{keyword}{this}, t, \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->getPos(t), mc->
+      \hyperlink{class_space_a65828dd5c8d2799dadab676c1d52bdfa}{getX}(), mc->\hyperlink{class_space_ac12e951586a96323b1db8cf1e5a827a9}{getY}());
+131             playbuilder->push\_front(mv);
+132 
+133             \hyperlink{class_trie_node}{TrieNode} * foundchild = Node->\hyperlink{class_trie_node_a1b5c7d87ce28b9aa7d0bcbfe33868bbc}{findChild}(*(t->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()));
+134             \textcolor{keywordflow}{if}( foundchild )
+135             \{
+136                 \hyperlink{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{\_assist\_ai\_search}(foundchild,tiles,positions,playbuilder,playlist);
+137             \}
+138 
+139             \textcolor{comment}{// And take it out of the playbuilder.}
+140             playbuilder->pop\_front();
+141             tiles->insert(tilepos,t);
+142         \}
+143     \}
+144 \}
+\end{DoxyCode}
+\hypertarget{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{\index{A\-I\-Player@{A\-I\-Player}!\-\_\-touches\-\_\-2@{\-\_\-touches\-\_\-2}}
+\index{\-\_\-touches\-\_\-2@{\-\_\-touches\-\_\-2}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{\-\_\-touches\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-I\-Player\-::\-\_\-touches\-\_\-2 (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}
+
+
+\hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{A\-I\-Player\-::\-\_\-touches\-\_\-2} Returns whether or not there are spaces that contain Tiles around this location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The location around which we want to look, in the {\itshape first} direction. \\
+\hline
+{\em y} & The location around which we want to look, in the {\itshape second} direction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true or false. 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file aiplayer.\-cpp.
+
+
+
+References Board\-::get\-Board(), Space\-::is\-Blank(), and Board\-::spaces.
+
+
+
+Referenced by \-\_\-touches\-\_\-4(), and play().
+
+
+\begin{DoxyCode}
+28                                       \{
+29     \hyperlink{class_board}{Board} * myboard = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}();
+30     \textcolor{keywordflow}{if}( x+1 < 15) \{
+31         \textcolor{keywordflow}{if}( !myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[x+1][y]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() )
+32             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+33     \}
+34     \textcolor{keywordflow}{if}( x-1 > 0) \{
+35         \textcolor{keywordflow}{if}( !myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[x-1][y]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() )
+36             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+37     \}
+38     \textcolor{comment}{// Fall-through logic. If it reaches here, then all of the previous items would have 'returned false'.}
+39     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+40 \}
+\end{DoxyCode}
+\hypertarget{class_a_i_player_a3bcac2df2a8f171dfedfa594855294af}{\index{A\-I\-Player@{A\-I\-Player}!\-\_\-touches\-\_\-4@{\-\_\-touches\-\_\-4}}
+\index{\-\_\-touches\-\_\-4@{\-\_\-touches\-\_\-4}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{\-\_\-touches\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-I\-Player\-::\-\_\-touches\-\_\-4 (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_a_i_player_a3bcac2df2a8f171dfedfa594855294af}
+
+
+\hyperlink{class_a_i_player_a3bcac2df2a8f171dfedfa594855294af}{A\-I\-Player\-::\-\_\-touches\-\_\-4} Returns whether or not there are spaces that contain Tiles around this location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The location around which we want to look, in the x direction. \\
+\hline
+{\em y} & The location around which we want to look, in the y direction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true or false. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file aiplayer.\-cpp.
+
+
+
+References \-\_\-touches\-\_\-2(), and Board\-::get\-Board().
+
+
+
+Referenced by \-\_\-assist\-\_\-ai\-\_\-search().
+
+
+\begin{DoxyCode}
+11                                       \{
+12     \textcolor{keywordflow}{if}(!\hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->startCovered())
+13         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+14     \textcolor{keywordflow}{if}(\hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{\_touches\_2}(x,y))
+15         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+16     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{\_touches\_2}(y,x))
+17         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+18     \textcolor{comment}{// Fall-through logic. If it reaches here, then all of the previous items would have 'returned false'.}
+19     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+20 \}
+\end{DoxyCode}
+\hypertarget{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{\index{A\-I\-Player@{A\-I\-Player}!ai\-\_\-search@{ai\-\_\-search}}
+\index{ai\-\_\-search@{ai\-\_\-search}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{ai\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t A\-I\-Player\-::ai\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Letter} $\ast$ $>$ $\ast$}]{tiles, }
+\item[{Q\-List$<$ {\bf Space} $\ast$ $>$ $\ast$}]{positions, }
+\item[{list$<$ {\bf Play} $\ast$ $>$ $\ast$}]{playlist, }
+\item[{{\bf Dictionary} $\ast$}]{dict}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}
+
+
+\hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{A\-I\-Player\-::ai\-\_\-search} High level assistant function that creates a new position list we can tamper with. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiles} & The tiles we have available to us. Because this is a pointer, this function can not be parallelized at this time. Guaranteed to restore the tiles to their correct state when finished. \\
+\hline
+{\em positions} & The original positions we want to search through. \\
+\hline
+{\em playlist} & The current list of plays we can do. Constructive. \\
+\hline
+{\em dict} & The dictionary we will be grabbed the node out of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quantity if plays available to the A\-I after this function finishes. 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file aiplayer.\-cpp.
+
+
+
+References \-\_\-assist\-\_\-ai\-\_\-search(), Trie\-::root, and Dictionary\-::words.
+
+
+
+Referenced by play().
+
+
+\begin{DoxyCode}
+157 \{
+158     QList<Space*> * pos\_copy = \textcolor{keyword}{new} QList<Space*>();
+159 
+160     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < positions->size(); i++) \{
+161         pos\_copy->insert(i,positions->at(i));
+162     \}
+163 
+164     \textcolor{keywordflow}{if}(dict->\hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root})
+165         \hyperlink{class_a_i_player_afdf893cf47209d106740f56c1d37c334}{\_assist\_ai\_search}(dict->\hyperlink{class_dictionary_ac6c08127a37d8131fb8fb1e738406e85}{words}->\hyperlink{class_trie_a052cecab75ca88758778d340ed002d66}{root}, tiles, pos\_copy, \textcolor{keyword}{new} QList<Move*>(),
+       playlist);
+166     \textcolor{keywordflow}{return} playlist->size();
+167 \}
+\end{DoxyCode}
+\hypertarget{class_a_i_player_a2a71a31297386f4d69f12a43187954a6}{\index{A\-I\-Player@{A\-I\-Player}!is\-A\-I\-Player@{is\-A\-I\-Player}}
+\index{is\-A\-I\-Player@{is\-A\-I\-Player}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{is\-A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-I\-Player\-::is\-A\-I\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_a_i_player_a2a71a31297386f4d69f12a43187954a6}
+
+
+\hyperlink{class_a_i_player_a2a71a31297386f4d69f12a43187954a6}{A\-I\-Player\-::is\-A\-I\-Player}. 
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \begin{DoxyReturn}{Returns}
+True if player is A\-I 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_player_afcd43a9498dc70a71ba17484699446bb}{Player}.
+
+
+
+Definition at line 370 of file aiplayer.\-cpp.
+
+
+\begin{DoxyCode}
+370                          \{
+371     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+372 \}
+\end{DoxyCode}
+\hypertarget{class_a_i_player_a6641fec98f51924a76ba00b4b3253325}{\index{A\-I\-Player@{A\-I\-Player}!play@{play}}
+\index{play@{play}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void A\-I\-Player\-::play (
+\begin{DoxyParamCaption}
+\item[{{\bf Dictionary} \&}]{dict, }
+\item[{{\bf Play} $\ast$$\ast$}]{play}
+\end{DoxyParamCaption}
+)}}\label{class_a_i_player_a6641fec98f51924a76ba00b4b3253325}
+
+
+\hyperlink{class_a_i_player_a6641fec98f51924a76ba00b4b3253325}{A\-I\-Player\-::play} Fills the Currentplay of the board with a valid A\-I play. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dict} & The dictionary we want to use as a reference to form a valid play. \\
+\hline
+{\em play} & The play we will be editing. Pointer to 'currentplay' on the board. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file aiplayer.\-cpp.
+
+
+
+References \-\_\-pred\-\_\-value\-\_\-sort(), \-\_\-touches\-\_\-2(), ai\-\_\-search(), boardcopy, Space\-::clear(), Play\-::clear\-Letter(), Board\-::get\-Board(), Move\-::get\-Letter(), Rack\-::get\-Rack(), Move\-::get\-Rack\-Position(), Move\-::get\-X(), Move\-::get\-Y(), Rack\-::inactivate\-By\-Letter(), Space\-::is\-Blank(), Player\-::letters, Board\-::move\-Letter\-To\-Board(), Play\-::moves, Space\-::set\-New(), Board\-::spaces, Board\-::start\-Covered(), and Board\-::validate().
+
+
+\begin{DoxyCode}
+174                                                 \{
+175     \textcolor{keywordtype}{int} searches = 0;
+176 
+177     \hyperlink{class_board}{Board} * myboard = this->\hyperlink{class_a_i_player_a4262c0ef313e6ac9f3e5be3f2c4d6ade}{boardcopy} = \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}();
+178     list<Play*> * possible\_plays = \textcolor{keyword}{new} list<Play*>();
+179 
+180     assert(this->\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters}.size());
+181     \textcolor{comment}{/* Putting the letters into a prefered format */}
+182     QVector<Letter*> myletterv = QVector<Letter*>::fromStdVector(this->\hyperlink{class_player_abd40dc8f6d524bd1331a8133e9bb8902}{letters});
+183     QList<Letter*> myletters\_ll = QList<Letter*>::fromVector(myletterv);
+184     QList<Letter*> * myletters = &myletters\_ll;
+185 
+186     \textcolor{comment}{/* Prepare the anchor characters. */}
+187     QList<Space *> * rightanchors[15];
+188     QList<Space *> * downanchors[15];
+189 
+190     \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i = 0; i<15; i++)
+191     \{
+192         rightanchors[i] = \textcolor{keyword}{new} QList<Space *>();
+193         downanchors[i] = \textcolor{keyword}{new} QList<Space *>();
+194     \}
+195 
+196     \textcolor{comment}{// First, we find out if this is the initial play. As in, we can play 'anything'.}
+197     \textcolor{comment}{// Thus, this is the only anchor we need, and we set it as such.}
+198     \textcolor{keywordflow}{if} ( \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_a4a04a6fc41d20c9836b23826dc7f6026}{startCovered}() == false )
+199     \{
+200         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 15; i++)
+201             rightanchors[0]->push\_back(myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][7]);
+202     \}
+203     \textcolor{comment}{// Otherwise, we need to go through the entire board and collect anchoring lines.}
+204     \textcolor{comment}{// We need an array of each horizontal, and an array of each vertical line.}
+205     \textcolor{comment}{// Any line that has no elements in it, gets cleared. This way, we save processor power.}
+206     \textcolor{comment}{// Thanks to this system being 2d and a perfect square, we can stick these two into the same}
+207     \textcolor{comment}{// double loop.}
+208     \textcolor{keywordflow}{else} \{
+209         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i<15; i++)
+210         \{
+211             \textcolor{keywordtype}{bool} isempty\_r = \textcolor{keyword}{true};
+212             \textcolor{keywordtype}{bool} isempty\_d = \textcolor{keyword}{true};
+213 
+214             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j<15; j++) \{
+215                 \textcolor{keywordflow}{if}(myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() == \textcolor{keyword}{false} || 
+      \hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{\_touches\_2}(i,j) )
+216                     isempty\_r = \textcolor{keyword}{false};
+217                 \textcolor{keywordflow}{if}(myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[j][i]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() == \textcolor{keyword}{false} || 
+      \hyperlink{class_a_i_player_a158fb1339fc845f8b057d71b6e2f6381}{\_touches\_2}(j,i) )
+218                     isempty\_d = \textcolor{keyword}{false};
+219 
+220                 rightanchors[i]->insert(j,myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]);
+221                 downanchors[i]->insert(j,myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[j][i]);
+222             \}
+223 
+224             \textcolor{keywordflow}{if}(isempty\_r)
+225                 rightanchors[i]->clear();
+226             \textcolor{keywordflow}{if}(isempty\_d)
+227                 downanchors[i]->clear();
+228         \}
+229     \}
+230 
+231     \textcolor{comment}{/*}
+232 \textcolor{comment}{     * Based on the anchors, we'll need to do this multiple times, downwards and rightwards}
+233 \textcolor{comment}{     * But we can ignore things that are 'part' of a word. It's already a word, and we can't}
+234 \textcolor{comment}{     * continue any better from it, than when we were at the start of that word.}
+235 \textcolor{comment}{     */}
+236     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 15; i++)
+237     \{
+238         \textcolor{keywordtype}{bool} anchoring\_r = \textcolor{keyword}{false};
+239         \textcolor{keywordtype}{bool} anchoring\_d = \textcolor{keyword}{false};
+240 
+241         \textcolor{comment}{// We can't create a word if a line is empty!}
+242         \textcolor{keywordflow}{if}(!rightanchors[i]->isEmpty()) \{
+243             \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j = 0; j < 15; j++) \{
+244                 \textcolor{comment}{// Going Right}
+245                 \textcolor{keywordflow}{if}( myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[i][j]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() ) \{
+246                     anchoring\_r = \textcolor{keyword}{false};
+247                     \hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{ai\_search}(myletters, rightanchors[i],possible\_plays,&dict);
+248                     searches++;
+249                 \}
+250                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( !anchoring\_r ) \{
+251                     anchoring\_r = \textcolor{keyword}{true};
+252                     \hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{ai\_search}(myletters, rightanchors[i],possible\_plays,&dict);
+253                     searches++;
+254                 \}
+255                 \textcolor{comment}{// Otherwise, we are looking at a word, and we just pop.}
+256                 \textcolor{comment}{// No need to do a search, because our last search was already good for this.}
+257                 \textcolor{keywordflow}{if}(!rightanchors[i]->isEmpty()) \textcolor{comment}{// Safety for some reason.}
+258                     rightanchors[i]->pop\_front();
+259             \}
+260         \}
+261 
+262         \textcolor{comment}{// We can't create a word if a line is empty!}
+263         \textcolor{keywordflow}{if}(!downanchors[i]->isEmpty())
+264         \{
+265             \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} j = 0; j < 15; j++) \{
+266                 \textcolor{comment}{// Going Down}
+267                 \textcolor{keywordflow}{if}( myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[j][i]->\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{isBlank}() ) \{
+268                     anchoring\_d = \textcolor{keyword}{false};
+269                     \hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{ai\_search}(myletters, downanchors[i],possible\_plays,&dict);
+270                     searches++;
+271                 \}
+272                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( !anchoring\_d ) \{
+273                     anchoring\_d = \textcolor{keyword}{true};
+274                     \hyperlink{class_a_i_player_af50ad9f1d7a27e87ec67fe9ddb49ef93}{ai\_search}(myletters, downanchors[i],possible\_plays,&dict);
+275                     searches++;
+276                 \}
+277 
+278                 \textcolor{comment}{// Otherwise, we are looking at a word, and we just pop.}
+279                 \textcolor{comment}{// No need to do a search, because our last search was already good for this.}
+280                 \textcolor{keywordflow}{if}(!downanchors[i]->isEmpty()) \textcolor{comment}{// Safety for some reason.}
+281                     downanchors[i]->pop\_front();
+282             \}
+283         \}
+284     \}
+285 
+286     \textcolor{comment}{/* make decision logic based on the values of these possible plays}
+287 \textcolor{comment}{     * preferably by sorting the players in the possible plays.}
+288 \textcolor{comment}{     */}
+289     cout << \textcolor{stringliteral}{"We have generated "} << possible\_plays->size() << \textcolor{stringliteral}{" Qplays after "}
+290          << searches << \textcolor{stringliteral}{" searches."} << endl;
+291 
+292 
+293     possible\_plays->sort(\hyperlink{aiplayer_8cpp_a5ec041e0f53c78a5b4267c3df32ee188}{\_pred\_value\_sort});
+294 
+295 
+296     \textcolor{comment}{/*}
+297 \textcolor{comment}{     *  Purely debug output going on here.}
+298 \textcolor{comment}{     */}
+299     \textcolor{comment}{/*}
+300 \textcolor{comment}{    int i = 0;}
+301 \textcolor{comment}{    for(list<Play*>::const\_iterator it = possible\_plays->cbegin(); it != possible\_plays->cend(); it++)}
+302 \textcolor{comment}{    \{}
+303 \textcolor{comment}{        Play * c = *it;}
+304 \textcolor{comment}{        cout << "Play Number " << i << ":";}
+305 \textcolor{comment}{        string word = "";}
+306 \textcolor{comment}{        // for( int j = 0; j < newlist.at(i)->size(); j++)}
+307 \textcolor{comment}{}
+308 \textcolor{comment}{        for(QList<Move*>::ConstIterator moveit = c->moves->cbegin(); moveit != c->moves->cend(); moveit++)}
+309 \textcolor{comment}{        \{}
+310 \textcolor{comment}{            Move * cur = *moveit;}
+311 \textcolor{comment}{            cout << cur->getLetter()->asQCharPtr()->toLatin1();}
+312 \textcolor{comment}{            cout << "@[" << cur->getX() << "][" << cur->getY() << "] ";}
+313 \textcolor{comment}{            // word += *cur->getLetter()->asQCharPtr();}
+314 \textcolor{comment}{            word += cur->getLetter()->asQCharPtr()->toLatin1();}
+315 \textcolor{comment}{            cout << "@RP" << cur->getRackPosition() << "   ";}
+316 \textcolor{comment}{        \}}
+317 \textcolor{comment}{}
+318 \textcolor{comment}{        cout << " ::: " << word << " == " << c->getCharArray().toStdString();}
+319 \textcolor{comment}{        cout << " with value: " << c->getValue();}
+320 \textcolor{comment}{        cout << endl;}
+321 \textcolor{comment}{}
+322 \textcolor{comment}{}
+323 \textcolor{comment}{        i++;}
+324 \textcolor{comment}{    \}}
+325 \textcolor{comment}{    */}
+326 
+327     \textcolor{keywordflow}{if}(possible\_plays->empty() == \textcolor{keyword}{false})
+328     \{
+329         \hyperlink{class_play}{Play} * curplay = possible\_plays->front();
+330         \textcolor{keywordtype}{bool} hasvalidplay = \textcolor{keyword}{false};
+331 
+332         \textcolor{keywordflow}{for}( QList<Move*>::Iterator moveit = curplay->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->begin(); moveit != curplay->
+      \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->end(); moveit++)
+333         \{
+334             \hyperlink{class_move}{Move} * curmove = *moveit;
+335             myboard->\hyperlink{class_board_a8ed329bcdb775a910a575161ee5221ac}{moveLetterToBoard}(curmove->\hyperlink{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}{getRackPosition}(),curmove->
+      \hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}(),curmove->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}());
+336         \}
+337 
+338         \textcolor{keywordflow}{for}( list<Play*>::const\_iterator it = possible\_plays->begin(); it != possible\_plays->end() && !(
+      hasvalidplay = myboard->\hyperlink{class_board_a6f71df81a77438867e79f956afedb141}{validate}()); it++)
+339         \{
+340             \textcolor{comment}{// Our last play was invalid. So pick them back off of the board and clear the CurrentPlay.}
+341             ((\hyperlink{class_play}{Play}*)*play)->clearMoves();
+342             \textcolor{keywordflow}{for}( QList<Move*>::ConstIterator moveit = curplay->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->cbegin(); moveit != curplay->
+      \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->cend(); moveit++)
+343             \{
+344                 \hyperlink{class_move}{Move} * curmove = *moveit;
+345                 myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[curmove->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}()][curmove->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}()]->
+      \hyperlink{class_space_a3afac453f54e569a94164c41a9721643}{setNew}();
+346                 curplay->\hyperlink{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{clearLetter}(curmove->\hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{getLetter}());
+347                 \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_afdf845eb458b07ed6029d29672ab120f}{inactivateByLetter}(curmove->
+      \hyperlink{class_move_a0c29654c98269d65c6af694eb441d382}{getLetter}());
+348                 myboard->\hyperlink{class_board_a73b12248ddb6ee3adc24f4458d8661c2}{spaces}[curmove->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}()][curmove->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}()]->
+      \hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+349             \}
+350 
+351             curplay = *it;
+352             \textcolor{comment}{// cout << ">>" << curplay->getCharArray().toStdString() << "<<" << endl;}
+353 
+354             \textcolor{keywordflow}{for}( QList<Move*>::ConstIterator moveit = curplay->\hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->cbegin(); moveit != curplay->
+      \hyperlink{class_play_ade35ae53bff24e1755a935899ee018ed}{moves}->cend(); moveit++)
+355             \{
+356                 \hyperlink{class_move}{Move} * curmove = *moveit;
+357                 myboard->\hyperlink{class_board_a8ed329bcdb775a910a575161ee5221ac}{moveLetterToBoard}(curmove->
+      \hyperlink{class_move_ad78bb76d9b590cdb98aa4d4a3088e69d}{getRackPosition}(),curmove->\hyperlink{class_move_a7e3169f48fcca1aa1de4a5cbe67a284d}{getX}(),curmove->\hyperlink{class_move_af388d15d91f61a1f909998f50988ac1a}{getY}());
+358             \}
+359 
+360             \textcolor{comment}{//cout << *Board::getBoard() << endl;}
+361         \}
+362     \}
+363 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_i_player_a4262c0ef313e6ac9f3e5be3f2c4d6ade}{\index{A\-I\-Player@{A\-I\-Player}!boardcopy@{boardcopy}}
+\index{boardcopy@{boardcopy}!AIPlayer@{A\-I\-Player}}
+\subsubsection[{boardcopy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board}$\ast$ A\-I\-Player\-::boardcopy\hspace{0.3cm}{\ttfamily [private]}}}\label{class_a_i_player_a4262c0ef313e6ac9f3e5be3f2c4d6ade}
+
+
+Definition at line 28 of file aiplayer.\-h.
+
+
+
+Referenced by play().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{aiplayer_8h}{aiplayer.\-h}\item 
+Scrabble/\hyperlink{aiplayer_8cpp}{aiplayer.\-cpp}\end{DoxyCompactItemize}

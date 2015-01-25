@@ -1,0 +1,164 @@
+cpoints10 = chebyshev_points(-1, 1, 10);
+cpoints20 = chebyshev_points(-1, 1, 20);
+diary off
+cypoints10 = exp(cpoints10)
+
+cypoints10 =
+
+    2.6850    2.4376    2.0281    1.5746    1.1693    0.8552    0.6351    0.4931    0.4102    0.3724
+
+cpoints10
+
+cpoints10 =
+
+    0.9877    0.8910    0.7071    0.4540    0.1564   -0.1564   -0.4540   -0.7071   -0.8910   -0.9877
+
+cypoints10 = exp(abs(cpoints10))
+
+cypoints10 =
+
+    2.6850    2.4376    2.0281    1.5746    1.1693    1.1693    1.5746    2.0281    2.4376    2.6850
+
+cypoints20 = exp(abs(cpoints20));
+points10 = -1:.2:1
+
+points10 =
+
+   -1.0000   -0.8000   -0.6000   -0.4000   -0.2000         0    0.2000    0.4000    0.6000    0.8000    1.0000
+
+points10 = -1:2/9:1
+
+points10 =
+
+   -1.0000   -0.7778   -0.5556   -0.3333   -0.1111    0.1111    0.3333    0.5556    0.7778    1.0000
+
+ypoints10 = exp(abs(points10))
+
+ypoints10 =
+
+    2.7183    2.1766    1.7429    1.3956    1.1175    1.1175    1.3956    1.7429    2.1766    2.7183
+
+points20 = -1:2/19:1
+
+points20 =
+
+  Columns 1 through 12
+
+   -1.0000   -0.8947   -0.7895   -0.6842   -0.5789   -0.4737   -0.3684   -0.2632   -0.1579   -0.0526    0.0526    0.1579
+
+  Columns 13 through 20
+
+    0.2632    0.3684    0.4737    0.5789    0.6842    0.7895    0.8947    1.0000
+
+ypoints20 = exp(abs(points20))
+
+ypoints20 =
+
+  Columns 1 through 12
+
+    2.7183    2.4467    2.2022    1.9822    1.7842    1.6059    1.4455    1.3010    1.1710    1.0540    1.0540    1.1710
+
+  Columns 13 through 20
+
+    1.3010    1.4455    1.6059    1.7842    1.9822    2.2022    2.4467    2.7183
+
+actual = -1:.01:1
+
+actual =
+
+  Columns 1 through 12
+
+   -1.0000   -0.9900   -0.9800   -0.9700   -0.9600   -0.9500   -0.9400   -0.9300   -0.9200   -0.9100   -0.9000   -0.8900
+
+  Columns 13 through 24
+
+   -0.8800   -0.8700   -0.8600   -0.8500   -0.8400   -0.8300   -0.8200   -0.8100   -0.8000   -0.7900   -0.7800   -0.7700
+
+  Columns 25 through 36
+
+   -0.7600   -0.7500   -0.7400   -0.7300   -0.7200   -0.7100   -0.7000   -0.6900   -0.6800   -0.6700   -0.6600   -0.6500
+
+  Columns 37 through 48
+
+   -0.6400   -0.6300   -0.6200   -0.6100   -0.6000   -0.5900   -0.5800   -0.5700   -0.5600   -0.5500   -0.5400   -0.5300
+
+  Columns 49 through 60
+
+   -0.5200   -0.5100   -0.5000   -0.4900   -0.4800   -0.4700   -0.4600   -0.4500   -0.4400   -0.4300   -0.4200   -0.4100
+
+  Columns 61 through 72
+
+   -0.4000   -0.3900   -0.3800   -0.3700   -0.3600   -0.3500   -0.3400   -0.3300   -0.3200   -0.3100   -0.3000   -0.2900
+
+  Columns 73 through 84
+
+   -0.2800   -0.2700   -0.2600   -0.2500   -0.2400   -0.2300   -0.2200   -0.2100   -0.2000   -0.1900   -0.1800   -0.1700
+
+  Columns 85 through 96
+
+   -0.1600   -0.1500   -0.1400   -0.1300   -0.1200   -0.1100   -0.1000   -0.0900   -0.0800   -0.0700   -0.0600   -0.0500
+
+  Columns 97 through 108
+
+   -0.0400   -0.0300   -0.0200   -0.0100         0    0.0100    0.0200    0.0300    0.0400    0.0500    0.0600    0.0700
+
+  Columns 109 through 120
+
+    0.0800    0.0900    0.1000    0.1100    0.1200    0.1300    0.1400    0.1500    0.1600    0.1700    0.1800    0.1900
+
+  Columns 121 through 132
+
+    0.2000    0.2100    0.2200    0.2300    0.2400    0.2500    0.2600    0.2700    0.2800    0.2900    0.3000    0.3100
+
+  Columns 133 through 144
+
+    0.3200    0.3300    0.3400    0.3500    0.3600    0.3700    0.3800    0.3900    0.4000    0.4100    0.4200    0.4300
+
+  Columns 145 through 156
+
+    0.4400    0.4500    0.4600    0.4700    0.4800    0.4900    0.5000    0.5100    0.5200    0.5300    0.5400    0.5500
+
+  Columns 157 through 168
+
+    0.5600    0.5700    0.5800    0.5900    0.6000    0.6100    0.6200    0.6300    0.6400    0.6500    0.6600    0.6700
+
+  Columns 169 through 180
+
+    0.6800    0.6900    0.7000    0.7100    0.7200    0.7300    0.7400    0.7500    0.7600    0.7700    0.7800    0.7900
+
+  Columns 181 through 192
+
+    0.8000    0.8100    0.8200    0.8300    0.8400    0.8500    0.8600    0.8700    0.8800    0.8900    0.9000    0.9100
+
+  Columns 193 through 201
+
+    0.9200    0.9300    0.9400    0.9500    0.9600    0.9700    0.9800    0.9900    1.0000
+
+yactual = exp(abs(actual));
+c = newtdd(cpoints10, cypoints10, 10);
+respoints10 = nest(9, c, actual, points10);
+c = newtdd(cpoints20, cypoints20, 20);
+respoints20 = nest(19, c, actual, points20);
+c = newtdd(points10, ypoints10, 10);
+rescpoints10 = respoints10;
+rescpoints20 = respoints20;
+rescpoints10 = nest(9, c, actual, cpoints10);
+rescpoints20 = nest(19, c, actual, cpoints20);
+{Attempted to access c(20); index out of bounds because numel(c)=10.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('nest', '/home/wcmonty/matlab/nest.m', 3)" style="font-weight:bold">nest</a> (<a href="matlab: opentoline('/home/wcmonty/matlab/nest.m',3,0)">line 3</a>)
+	y=c(d+1);
+} 
+c = newtdd(cpoints20, cypoints20, 20);
+rescpoints20 = nest(19, c, actual, cpoints20);
+c = newtdd(points20, ypoints20, 20);
+respoints20 = nest(19, c, actual, points20);
+c = newtdd(points10, ypoints10, 10);
+respoints10 = nest(9, c, actual, points10);
+plot(actual, respoints10, actual, rescpoints10)
+plot(actual, respoints10, actual, rescpoints10, actual, respoints20, actual, rescpoints20)
+plot(actual, respoints10, 'r', actual, rescpoints10, 'g', actual, respoints20, 'b', actual, rescpoints20, 'k')
+c = newtdd(cpoints10, cypoints10, 10);
+rescpoints10 = nest(9, c, actual, cpoints10);
+plot(actual, respoints10, 'r', actual, rescpoints10, 'g', actual, respoints20, 'b', actual, rescpoints20, 'k')
+diary off

@@ -1,0 +1,37 @@
+hw8
+letter = {a, b, c, d}
+
+<EXPR> -> <TERM>\|<EXPR> | <TERM> <EXPRE>
+<EXPRE> -> \|<EXPR> | <TERM> <EXPRE> | e
+<TERM> -> *<EXPRE> | <FACTOR> <EXPRE> 
+<FACTOR> -> letter | (<EXPR>)
+
+Temp
+S -> AS*
+S* -> AS* | e
+A -> a | (AS)
+
+
+From class:
+<RE> -> <RE> '|' <CONCAT> | <CONCAT>
+<CONCAT> -> <CONCAT> <KLEENE> | <KLEENE>
+<KLEENE> -> <KLEENE> '*' | <ELEMENT>
+<ELEMENT> -> a | b | c | d | '(' <RE> ')'
+
+
+Removing left recursion
+<RE> -> <CONCAT><RE_REST>
+<RE_REST> -> '|' <CONCAT> <RE_REST> | e
+
+
+Full Language:
+<RE> -> <CONCAT><RE_REST>
+<RE_REST> -> '|' <CONCAT> <RE_REST> | e
+
+<CONCAT> -> <KLEENE> <CONCAT_REST>
+<CONCAT_REST> -> <KLEENE> <CONCAT_REST> | e 
+
+<KLEENE> -> <ELEMENT> <KLEENE_REST>
+<KLEENE_REST> -> '*' <KLEENE_REST> | e
+
+<ELEMENT> -> a | b | c | d | '(' <RE> ')'

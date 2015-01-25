@@ -1,0 +1,117 @@
+years
+
+years =
+
+  Columns 1 through 24
+
+     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24
+
+  Columns 25 through 48
+
+    25    26    27    28    29    30    31    32    33    34    35    36    37    38    39    40    41    42    43    44    45    46    47    48
+
+  Columns 49 through 50
+
+    49    50
+
+concentrations
+
+concentrations =
+
+   1.0e+02 *
+
+  Columns 1 through 7
+
+   0.415800000000000   0.420100000000000   0.432500000000000   0.432400000000000   0.431600000000000   0.450100000000000   0.460000000000000
+
+  Columns 8 through 14
+
+   0.465700000000000   0.483400000000000   0.490700000000000   0.499200000000000   0.510700000000000   0.534800000000000   0.540900000000000
+
+  Columns 15 through 21
+
+   0.549700000000000   0.558700000000000   0.577500000000000   0.590100000000000   0.604700000000000   0.624600000000000   0.639100000000000
+
+  Columns 22 through 28
+
+   0.651400000000000   0.667000000000000   0.684300000000000   0.699300000000000   0.712100000000000   0.728400000000000   0.752200000000000
+
+  Columns 29 through 35
+
+   0.766700000000000   0.781600000000000   0.803400000000000   0.806600000000000   0.812800000000000   0.826800000000000   0.847900000000000
+
+  Columns 36 through 42
+
+   0.864100000000000   0.878000000000000   0.903000000000000   0.920000000000000   0.928200000000000   0.950200000000000   0.965500000000000
+
+  Columns 43 through 49
+
+   0.993500000000000   1.016100000000000   1.032400000000000   1.059400000000000   1.074300000000000   1.094900000000000   1.111800000000000
+
+  Column 50
+
+   1.142200000000000
+
+options = optimset('TolX', eps, 'TolFun', 1e-12);
+f
+
+f = 
+
+    @(x,xdata)x(1).*exp(x(2).*xdata)
+
+x0
+
+x0 =
+
+  40.000000000000000   0.050000000000000
+
+[x, resnorm, ~, exitflag, output] = lsqcurvefit(f, x0, years, concentrations, [], [], options);
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+
+lsqcurvefit stopped because the final change in the sum of squares relative to 
+its initial value is less than the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'function_tolerance_lsq','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('snls',3.000000e+00,true,true,'lsqcurvefit',4.716141e-14,'selected',1.000000e-12,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+x
+
+x =
+
+  40.786516815268008   0.020761706916573
+
+plot(years, concentrations, '-', years, f(x, years), '+')
+error = concentrations - f(x, years);
+RMSE = sqrt(sum(error .^ 2));
+RMSE
+
+RMSE =
+
+   7.747132904855904
+
+options = optimset('TolX', eps, 'TolFun', 1e-12, 'algorithm', {'levenberg-marquardt', 1});
+[x, resnorm, ~, exitflag, output] = lsqcurvefit(f, x0, years, concentrations, [], [], options);
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_possible_lsq','CSHelpWindow');">Local minimum possible</a>.
+
+lsqcurvefit stopped because the final change in the sum of squares relative to 
+its initial value is less than the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'function_tolerance_lsq','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('levenbergMarquardt',3.000000e+00,true,true,'lsqcurvefit',4.522427e-14,'selected',1.000000e-12,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+x
+
+x =
+
+  40.786516815452103   0.020761706916431
+
+plot(years, concentrations, '-', years, f(x, years), '+')
+error = concentrations - f(x, years);
+RMSE = sqrt(sum(error .^ 2));
+RMSE
+
+RMSE =
+
+   7.747132904855905
+
+diary off

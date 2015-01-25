@@ -1,0 +1,128 @@
+hours = [1 2 3 4 5 6 7 8];
+concentrations = [8.0 12.3 15.5 16.8 17.1 15.8 15.2 14.0];
+f = @(x, xdata) x(1) .* xdata .* exp(x(2) .* xdata);
+options = optimset('LevenbergMarquardt','on', 1);
+{Error using <a href="matlab:helpUtils.errorDocCallback('optimset', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m', 194)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m',194,0)">line 194</a>)
+Arguments must occur in name-value pairs.
+} 
+options = optimset('LevenbergMarquardt', 1);
+{Error using <a href="matlab:helpUtils.errorDocCallback('optimset', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m', 215)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m',215,0)">line 215</a>)
+Unrecognized parameter name 'LevenbergMarquardt'.  Please see the optimset reference page in the documentation for a list of
+acceptable option parameters. <a href="matlab: doc optimset ">Link to reference page</a>.
+} 
+options = optimset('LevenbergMarquardt', 'on');
+{Error using <a href="matlab:helpUtils.errorDocCallback('optimset', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m', 215)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m',215,0)">line 215</a>)
+Unrecognized parameter name 'LevenbergMarquardt'.  Please see the optimset reference page in the documentation for a list of
+acceptable option parameters. <a href="matlab: doc optimset ">Link to reference page</a>.
+} 
+optimset('LevenbergMarquardt', on)
+{Undefined function or variable 'on'.
+} 
+optimset('LevenbergMarquardt', 'on')
+{Error using <a href="matlab:helpUtils.errorDocCallback('optimset', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m', 215)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m',215,0)">line 215</a>)
+Unrecognized parameter name 'LevenbergMarquardt'.  Please see the optimset reference page in the documentation for a list of
+acceptable option parameters. <a href="matlab: doc optimset ">Link to reference page</a>.
+} 
+doc optimset
+doc optimset
+optimset(algorithm, {'LevenbergMarquardt', 'on'})
+{Undefined function or variable 'algorithm'.
+} 
+optimset('algorithm', {'LevenbergMarquardt', 'on'})
+{Error using <a href="matlab:helpUtils.errorDocCallback('optimset', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m', 236)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m',236,0)">line 236</a>)
+Invalid value for OPTIONS parameter Algorithm: must be a cell-array of the form {string, positive real}, where string is
+'levenberg-marquardt'.
+} 
+optimset('algorithm', {'LevenbergMarquardt', 1})
+{Error using <a href="matlab:helpUtils.errorDocCallback('optimset', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m', 236)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/optimset.m',236,0)">line 236</a>)
+Invalid value for OPTIONS parameter Algorithm: must be a cell-array of the form {string, positive real}, where string is
+'levenberg-marquardt'.
+} 
+optimset('algorithm', {'levenberg-marquardt', 1})
+
+ans = 
+
+                   Display: []
+               MaxFunEvals: []
+                   MaxIter: []
+                    TolFun: []
+                      TolX: []
+               FunValCheck: []
+                 OutputFcn: []
+                  PlotFcns: []
+           ActiveConstrTol: []
+                 Algorithm: {'levenberg-marquardt'  [1]}
+    AlwaysHonorConstraints: []
+            BranchStrategy: []
+           DerivativeCheck: []
+               Diagnostics: []
+             DiffMaxChange: []
+             DiffMinChange: []
+            FinDiffRelStep: []
+               FinDiffType: []
+         GoalsExactAchieve: []
+                GradConstr: []
+                   GradObj: []
+                   HessFcn: []
+                   Hessian: []
+                  HessMult: []
+               HessPattern: []
+                HessUpdate: []
+           InitialHessType: []
+         InitialHessMatrix: []
+          InitBarrierParam: []
+     InitTrustRegionRadius: []
+                  Jacobian: []
+                 JacobMult: []
+              JacobPattern: []
+                LargeScale: []
+                  MaxNodes: []
+                MaxPCGIter: []
+             MaxProjCGIter: []
+                MaxRLPIter: []
+                MaxSQPIter: []
+                   MaxTime: []
+             MeritFunction: []
+                 MinAbsMax: []
+       NodeDisplayInterval: []
+        NodeSearchStrategy: []
+        NoStopIfFlatInfeas: []
+            ObjectiveLimit: []
+      PhaseOneTotalScaling: []
+            Preconditioner: []
+          PrecondBandWidth: []
+            RelLineSrchBnd: []
+    RelLineSrchBndDuration: []
+              ScaleProblem: []
+                   Simplex: []
+       SubproblemAlgorithm: []
+                    TolCon: []
+                 TolConSQP: []
+                TolGradCon: []
+                    TolPCG: []
+                 TolProjCG: []
+              TolProjCGAbs: []
+                 TolRLPFun: []
+               TolXInteger: []
+                  TypicalX: []
+               UseParallel: []
+
+options = optimset('algorithm', {'levenberg-marquardt', 1});
+x0 = [1 1];
+[x,resnorm,~,exitflag,output] = lsqcurvefit(f,x0,hours,concentrations, [], [], options);
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_lsq','CSHelpWindow');">Local minimum found</a>.
+
+Optimization completed because the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'lsq_grad_size','CSHelpWindow');">size of the gradient</a> is less than
+the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'function_tolerance_lsq','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('levenbergMarquardt',1.000000e+00,true,true,'lsqcurvefit',2.844987e-11,'default',1.000000e-10,0.000000e+00,'',0.000000e+00,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+x
+
+x =
+
+    9.7969   -0.2151
+
+plot(hours, concentrations, 'o', hours, f(x, hours),'-')
+diary off

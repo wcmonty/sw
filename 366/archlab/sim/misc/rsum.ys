@@ -1,0 +1,75 @@
+# William Montgomery
+# wmontg2
+/* $begin code-yso */
+/* $begin code-ysa */
+# Execution begins at address 0 
+		.pos 0 
+init:	irmovl Stack, %esp  	# Set up stack pointer  
+		irmovl Stack, %ebp  	# Set up base pointer   
+		call Main		# Execute main program
+		halt			# Terminate program 
+
+# Sample linked list 
+	.align 4 
+ele1:
+	.long 0x00a
+	.long ele2
+ele2:
+	.long 0xb0
+	.long ele3
+ele3:
+	.long 0xc00
+	.long 0
+
+Main:	pushl %ebp 
+		rrmovl %esp,%ebp
+		irmovl $4,%eax	
+		pushl %eax		# Push 4
+		irmovl ele1, %edx
+		pushl %edx      	# Push array
+		call rsum_ls		# Sum(array, 4)
+		rrmovl %ebp, %esp
+		popl %ebp
+		ret 
+
+rsum_ls:pushl	%ebp
+	rrmovl	%esp, %ebp
+	pushl	%edi
+	pushl	%ecx
+	pushl	%ebx
+	irmovl	$16, %ebx
+	subl	%ebx, %esp
+	mrmovl	8(%ebp), %eax	# %eax is ls
+	irmovl	$0, %ebx	
+	addl	%ebx, %eax	
+	je	car		# if ls is null
+	mrmovl	(%eax), %ecx	# %ecx is ls->val
+	mrmovl	4(%eax), %eax	# %eax is ls->next
+	irmovl	$0, %ebx	
+	addl	%ebx, %eax 	# Assuming %ebx has 0
+	jne	LBB2_3		# if ls
+	xorl	%edi, %edi	# Set %edi to 0
+	jmp	LBB2_4		# if !ls
+LBB2_3:	mrmovl	(%eax), %edi	# %edi is ls->val
+	mrmovl	4(%eax), %eax	# %eax is ls->next
+	rmmovl	%eax, (%esp)	# Move ls->next onto top
+	call	rsum_ls		# Make the recursive call
+	addl	%eax, %edi	# Add return from recursive call
+LBB2_4:	rrmovl	%edi, %eax	# 
+	addl	%ecx, %eax
+	jmp	rr
+car:	xorl	%eax, %eax
+rr:	irmovl  $16, %ebx
+	addl	%ebx, %esp
+	popl	%ebx
+	popl	%ecx
+	popl	%edi
+	popl	%ebp
+	ret
+
+# The stack starts here and grows to lower addresses
+	.pos 0x1000		
+Stack:	 
+/* $end code-ysa */
+/* $end code-yso */
+	

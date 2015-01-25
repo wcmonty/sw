@@ -1,0 +1,407 @@
+\hypertarget{class_game}{\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+}
+
+
+The \hyperlink{class_game}{Game} class Encapsulates a game.  
+
+
+
+
+{\ttfamily \#include $<$game.\-h$>$}
+
+Inheritance diagram for Game\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_game_a7c8ac8994a4a829de95544268ada916e}{player\-Changed} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_ab1f8c81ce4221a80b7a27320e92ebaed}{Game} (vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$, \hyperlink{class_dictionary}{Dictionary} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_ab1f8c81ce4221a80b7a27320e92ebaed}{Game\-::\-Game} Constructor for up to a 4-\/player game. \end{DoxyCompactList}\item 
+\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\-Game} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{Game\-::$\sim$\-Game} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_game}{Game} $\ast$ \hyperlink{class_game_a62edc885b560e752b04fa64c5a481874}{setup} ()
+\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{current\-Player} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{Game\-::current\-Player} Gets the current player. \end{DoxyCompactList}\item 
+\hyperlink{class_play}{Play} $\ast$ \hyperlink{class_game_acba299674208d186660ed4a88e58d967}{current\-Play} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_acba299674208d186660ed4a88e58d967}{Game\-::current\-Play} Gets the curret play. \end{DoxyCompactList}\item 
+bool \hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{next\-Turn} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{Game\-::next\-Turn} Finalizes the current turn. If a player is an A\-Player, play() is called. \end{DoxyCompactList}\item 
+\hyperlink{class_game}{Game} $\ast$ \hyperlink{class_game_a19604b02effa3de3b4157f955c9cea59}{get\-New\-Letters} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dictionary}{Dictionary} $\ast$ \hyperlink{class_game_ac02ac16d33949edb2c83b9c6ce48e596}{dictionary}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_game_aef6ba37517324fc3469dfa65d6f92d21}{turn}
+\item 
+\hyperlink{class_letter_pool}{Letter\-Pool} $\ast$ \hyperlink{class_game_ae3b2cb6cd3fd8cf83dc8cd8a6068487a}{pool}
+\item 
+vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}
+\item 
+vector$<$ \hyperlink{class_play}{Play} $\ast$ $>$ \hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}
+\item 
+int \hyperlink{class_game_a7c03c2f209dfde4ef01c739b050159f6}{num\-Players}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_game_a41c0344e76853337b335ed0cb6df12ec}{operator$<$$<$} (ostream \&os, const \hyperlink{class_game}{Game} \&game)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloading the $<$$<$ operator for debugging information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_game}{Game} class Encapsulates a game. 
+
+Definition at line 20 of file game.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game_ab1f8c81ce4221a80b7a27320e92ebaed}{\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Player} $\ast$ $>$}]{players, }
+\item[{{\bf Dictionary} $\ast$}]{dictionary}
+\end{DoxyParamCaption}
+)}}\label{class_game_ab1f8c81ce4221a80b7a27320e92ebaed}
+
+
+\hyperlink{class_game_ab1f8c81ce4221a80b7a27320e92ebaed}{Game\-::\-Game} Constructor for up to a 4-\/player game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & The players we are constructive this game for. \\
+\hline
+{\em dictionary} & The dictionary to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file game.\-cpp.
+
+
+
+References current\-Player(), dictionary, next\-Turn(), num\-Players, player\-Changed(), players, plays, pool, and turn.
+
+
+\begin{DoxyCode}
+10                                                          \{
+11     this->\hyperlink{class_game_aef6ba37517324fc3469dfa65d6f92d21}{turn} = 0;
+12     this->\hyperlink{class_game_ae3b2cb6cd3fd8cf83dc8cd8a6068487a}{pool} = \textcolor{keyword}{new} \hyperlink{class_letter_pool}{LetterPool};
+13     this->\hyperlink{class_game_a7c03c2f209dfde4ef01c739b050159f6}{numPlayers} = \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}.size();
+14     this->\hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players} = \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players};
+15     this->\hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}.push\_back(\textcolor{keyword}{new} \hyperlink{class_play}{Play}());
+16     this->dictionary = \hyperlink{class_game_ac02ac16d33949edb2c83b9c6ce48e596}{dictionary};
+17     \textcolor{keywordflow}{for}(std::vector<Player*>::iterator it = \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}.begin(); it != 
+      \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}.end(); ++it) \{
+18         (*it)->fillLetters(\hyperlink{class_game_ae3b2cb6cd3fd8cf83dc8cd8a6068487a}{pool});
+19         assert((*it)->getLetterCount() == 7);
+20     \}
+21 
+22     emit(\hyperlink{class_game_a7c8ac8994a4a829de95544268ada916e}{playerChanged}());
+23 
+24     \textcolor{keywordflow}{if}(\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}()->isAIPlayer())\{
+25         ((\hyperlink{class_a_i_player}{AIPlayer}*)\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}())->play(*dictionary, &
+      \hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}.back());
+26         \hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{nextTurn}();
+27     \}
+28 \}
+\end{DoxyCode}
+\hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\index{Game@{Game}!$\sim$\-Game@{$\sim$\-Game}}
+\index{$\sim$\-Game@{$\sim$\-Game}!Game@{Game}}
+\subsubsection[{$\sim$\-Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::$\sim$\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}
+
+
+\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{Game\-::$\sim$\-Game} Destructor. 
+
+
+
+Definition at line 57 of file game.\-cpp.
+
+
+
+References players.
+
+
+\begin{DoxyCode}
+57            \{
+58     \textcolor{keywordflow}{for}(std::vector<Player*>::iterator it = \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}.begin(); it != 
+      \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}.end(); ++it) \{
+59         \textcolor{keywordflow}{if} (*it != NULL)\{
+60             (*it)->clearLetters();
+61             assert((*it)->getLetterCount() == 0);
+62         \}
+63     \}
+64 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_acba299674208d186660ed4a88e58d967}{\index{Game@{Game}!current\-Play@{current\-Play}}
+\index{current\-Play@{current\-Play}!Game@{Game}}
+\subsubsection[{current\-Play}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Play} $\ast$ Game\-::current\-Play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_acba299674208d186660ed4a88e58d967}
+
+
+\hyperlink{class_game_acba299674208d186660ed4a88e58d967}{Game\-::current\-Play} Gets the curret play. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current play 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file game.\-cpp.
+
+
+
+References plays.
+
+
+
+Referenced by Board\-::move\-Letter\-To\-Board(), next\-Turn(), Board\-::on\-\_\-cancel\-Button\-\_\-clicked(), and Space\-::on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+80 \{
+81     \textcolor{keywordflow}{return} \hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}.back();
+82 \}
+\end{DoxyCode}
+\hypertarget{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{\index{Game@{Game}!current\-Player@{current\-Player}}
+\index{current\-Player@{current\-Player}!Game@{Game}}
+\subsubsection[{current\-Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} $\ast$ Game\-::current\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_a7cdf3f086fafd3234dba20409e9b98d3}
+
+
+\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{Game\-::current\-Player} Gets the current player. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current player 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file game.\-cpp.
+
+
+
+References num\-Players, players, and turn.
+
+
+
+Referenced by Game(), Board\-::move\-Letter\-To\-Board(), next\-Turn(), and Rack\-::refresh().
+
+
+\begin{DoxyCode}
+71 \{
+72     \textcolor{keywordflow}{return} \hyperlink{class_game_a8b1b6150488acf6e0d3a222dbf359842}{players}[\hyperlink{class_game_aef6ba37517324fc3469dfa65d6f92d21}{turn} % \hyperlink{class_game_a7c03c2f209dfde4ef01c739b050159f6}{numPlayers}];
+73 \}
+\end{DoxyCode}
+\hypertarget{class_game_a19604b02effa3de3b4157f955c9cea59}{\index{Game@{Game}!get\-New\-Letters@{get\-New\-Letters}}
+\index{get\-New\-Letters@{get\-New\-Letters}!Game@{Game}}
+\subsubsection[{get\-New\-Letters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Game\-::get\-New\-Letters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_a19604b02effa3de3b4157f955c9cea59}
+\hypertarget{class_game_a6ec161629afa5e24452040bb620eb4bb}{\index{Game@{Game}!next\-Turn@{next\-Turn}}
+\index{next\-Turn@{next\-Turn}!Game@{Game}}
+\subsubsection[{next\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\-::next\-Turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_a6ec161629afa5e24452040bb620eb4bb}
+
+
+\hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{Game\-::next\-Turn} Finalizes the current turn. If a player is an A\-Player, play() is called. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file game.\-cpp.
+
+
+
+References Player\-::add\-Score(), current\-Play(), current\-Player(), dictionary, Play\-::finalize\-Moves(), Board\-::get\-Board(), Player\-::get\-New\-Letters(), Rack\-::get\-Rack(), player\-Changed(), plays, pool, Rack\-::refresh(), and turn.
+
+
+
+Referenced by Game(), Board\-::on\-\_\-pass\-Button\-\_\-clicked(), and Board\-::on\-\_\-play\-Button\-\_\-clicked().
+
+
+\begin{DoxyCode}
+36 \{
+37     \hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}()->\hyperlink{class_player_aa5bead96a6eb9cc33fbc086662621caf}{addScore}(\hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->score(
+      \hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}.back()));
+38     \hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}()->\hyperlink{class_player_a78086401345079616a422c25cb780ecb}{getNewLetters}(\hyperlink{class_game_ae3b2cb6cd3fd8cf83dc8cd8a6068487a}{pool});
+39     \hyperlink{class_game_acba299674208d186660ed4a88e58d967}{currentPlay}()->\hyperlink{class_play_a02fbcafed804466c41fd78e8eef8ca16}{finalizeMoves}();
+40     \hyperlink{class_game_aef6ba37517324fc3469dfa65d6f92d21}{turn} = \hyperlink{class_game_aef6ba37517324fc3469dfa65d6f92d21}{turn} + 1;
+41     \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_ae1b5a6e15cb1ebe299356959b6a8d641}{refresh}(\textcolor{keyword}{this});
+42     emit(\hyperlink{class_game_a7c8ac8994a4a829de95544268ada916e}{playerChanged}());
+43 
+44     \hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}.push\_back(\textcolor{keyword}{new} \hyperlink{class_play}{Play}());
+45 
+46     \textcolor{keywordflow}{if}(\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}()->isAIPlayer() && \hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}()->getLetterCount() > 0)\{
+47         ((\hyperlink{class_a_i_player}{AIPlayer}*)\hyperlink{class_game_a7cdf3f086fafd3234dba20409e9b98d3}{currentPlayer}())->play(*\hyperlink{class_game_ac02ac16d33949edb2c83b9c6ce48e596}{dictionary}, &
+      \hyperlink{class_game_a358b65cc87708ae0fe5793bae968971f}{plays}.back());
+48         \hyperlink{class_game_a6ec161629afa5e24452040bb620eb4bb}{nextTurn}();
+49     \}
+50 
+51     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+52 \}
+\end{DoxyCode}
+\hypertarget{class_game_a7c8ac8994a4a829de95544268ada916e}{\index{Game@{Game}!player\-Changed@{player\-Changed}}
+\index{player\-Changed@{player\-Changed}!Game@{Game}}
+\subsubsection[{player\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::player\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_game_a7c8ac8994a4a829de95544268ada916e}
+
+
+Referenced by Game(), and next\-Turn().
+
+\hypertarget{class_game_a62edc885b560e752b04fa64c5a481874}{\index{Game@{Game}!setup@{setup}}
+\index{setup@{setup}!Game@{Game}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Game\-::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_a62edc885b560e752b04fa64c5a481874}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_game_a41c0344e76853337b335ed0cb6df12ec}{\index{Game@{Game}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Game@{Game}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Game} \&}]{game}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_game_a41c0344e76853337b335ed0cb6df12ec}
+
+
+operator $<$$<$ Overloading the $<$$<$ operator for debugging information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+{\em game} & The game object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file game.\-cpp.
+
+
+\begin{DoxyCode}
+90                                                    \{
+91     os << \textcolor{stringliteral}{"This is a "} << game.\hyperlink{class_game_a7c03c2f209dfde4ef01c739b050159f6}{numPlayers} << \textcolor{stringliteral}{" player game."} << endl;
+92     os << *(\hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}());
+93     \textcolor{keywordflow}{return} os;
+94 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_ac02ac16d33949edb2c83b9c6ce48e596}{\index{Game@{Game}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!Game@{Game}}
+\subsubsection[{dictionary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dictionary}$\ast$ Game\-::dictionary}}\label{class_game_ac02ac16d33949edb2c83b9c6ce48e596}
+The \hyperlink{class_dictionary}{Dictionary} 
+
+Definition at line 31 of file game.\-h.
+
+
+
+Referenced by Game(), next\-Turn(), Board\-::validate\-Word\-Horizontal(), and Board\-::validate\-Word\-Vertical().
+
+\hypertarget{class_game_a7c03c2f209dfde4ef01c739b050159f6}{\index{Game@{Game}!num\-Players@{num\-Players}}
+\index{num\-Players@{num\-Players}!Game@{Game}}
+\subsubsection[{num\-Players}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-::num\-Players\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_a7c03c2f209dfde4ef01c739b050159f6}
+The number of players 
+
+Definition at line 28 of file game.\-h.
+
+
+
+Referenced by current\-Player(), Game(), and operator$<$$<$().
+
+\hypertarget{class_game_a8b1b6150488acf6e0d3a222dbf359842}{\index{Game@{Game}!players@{players}}
+\index{players@{players}!Game@{Game}}
+\subsubsection[{players}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Player}$\ast$$>$ Game\-::players\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_a8b1b6150488acf6e0d3a222dbf359842}
+The container for the Players 
+
+Definition at line 26 of file game.\-h.
+
+
+
+Referenced by current\-Player(), Game(), and $\sim$\-Game().
+
+\hypertarget{class_game_a358b65cc87708ae0fe5793bae968971f}{\index{Game@{Game}!plays@{plays}}
+\index{plays@{plays}!Game@{Game}}
+\subsubsection[{plays}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Play}$\ast$$>$ Game\-::plays\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_a358b65cc87708ae0fe5793bae968971f}
+The container for the Plays 
+
+Definition at line 27 of file game.\-h.
+
+
+
+Referenced by current\-Play(), Game(), and next\-Turn().
+
+\hypertarget{class_game_ae3b2cb6cd3fd8cf83dc8cd8a6068487a}{\index{Game@{Game}!pool@{pool}}
+\index{pool@{pool}!Game@{Game}}
+\subsubsection[{pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter\-Pool}$\ast$ Game\-::pool\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_ae3b2cb6cd3fd8cf83dc8cd8a6068487a}
+The pool of letters 
+
+Definition at line 25 of file game.\-h.
+
+
+
+Referenced by Game(), and next\-Turn().
+
+\hypertarget{class_game_aef6ba37517324fc3469dfa65d6f92d21}{\index{Game@{Game}!turn@{turn}}
+\index{turn@{turn}!Game@{Game}}
+\subsubsection[{turn}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-::turn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_aef6ba37517324fc3469dfa65d6f92d21}
+The number of the turn 
+
+Definition at line 24 of file game.\-h.
+
+
+
+Referenced by current\-Player(), Game(), and next\-Turn().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{game_8h}{game.\-h}\item 
+Scrabble/\hyperlink{game_8cpp}{game.\-cpp}\end{DoxyCompactItemize}

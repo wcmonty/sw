@@ -1,0 +1,87 @@
+\hypertarget{board_8h}{\section{Scrabble/board.h File Reference}
+\label{board_8h}\index{Scrabble/board.\-h@{Scrabble/board.\-h}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$Q\-Object$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include \char`\"{}space.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rack.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}play.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_board}{Board}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_board}{Board} class Singleton that represents a playing board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{board_8h_afb909c1a2193edc88c68390c025b2fa7}{B\-O\-A\-R\-D\-S\-I\-Z\-E} = 15
+\item 
+static const Q\-String \hyperlink{board_8h_a55a5e2b160827afd2651003878573e48}{T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R} = \char`\"{}pink\char`\"{}
+\item 
+static const Q\-String \hyperlink{board_8h_a52e9b32f92467d14351e5a500f48638f}{T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R} = \char`\"{}lightblue\char`\"{}
+\item 
+static const Q\-String \hyperlink{board_8h_a10e5d0be9a98901f142735d07e5537f6}{D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R} = \char`\"{}mistyrose\char`\"{}
+\item 
+static const Q\-String \hyperlink{board_8h_ae1643176725e430fda174728d157a635}{D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R} = \char`\"{}lightskyblue\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{board_8h_afb909c1a2193edc88c68390c025b2fa7}{\index{board.\-h@{board.\-h}!B\-O\-A\-R\-D\-S\-I\-Z\-E@{B\-O\-A\-R\-D\-S\-I\-Z\-E}}
+\index{B\-O\-A\-R\-D\-S\-I\-Z\-E@{B\-O\-A\-R\-D\-S\-I\-Z\-E}!board.h@{board.\-h}}
+\subsubsection[{B\-O\-A\-R\-D\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int B\-O\-A\-R\-D\-S\-I\-Z\-E = 15\hspace{0.3cm}{\ttfamily [static]}}}\label{board_8h_afb909c1a2193edc88c68390c025b2fa7}
+The size of the board (it is 15 x 15 spaces 
+
+Definition at line 16 of file board.\-h.
+
+
+
+Referenced by Board\-::are\-Valid\-Words(), Board\-::\-Board(), Board\-::has\-New(), Board\-::inactivate\-Other\-Spaces(), Board\-::is\-Touching\-On\-Board(), Board\-::must\-Touch\-Column(), Board\-::must\-Touch\-Row(), Board\-::no\-Column\-Blanks(), Board\-::no\-Row\-Blanks(), Board\-::on\-\_\-cancel\-Button\-\_\-clicked(), operator$<$$<$(), Board\-::reset(), Board\-::same\-Row\-Or\-Column(), Board\-::score\-Horizontal(), Board\-::score\-Horizontal\-Word(), Board\-::score\-Vertical(), Board\-::score\-Vertical\-Word(), Board\-::set\-Space(), Board\-::setup\-Plain\-Spaces(), Board\-::validate\-Word\-Horizontal(), Board\-::validate\-Word\-Vertical(), and Board\-::$\sim$\-Board().
+
+\hypertarget{board_8h_ae1643176725e430fda174728d157a635}{\index{board.\-h@{board.\-h}!D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R@{D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R}}
+\index{D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R@{D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R}!board.h@{board.\-h}}
+\subsubsection[{D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String D\-O\-U\-B\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R = \char`\"{}lightskyblue\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{board_8h_ae1643176725e430fda174728d157a635}
+The color for double letter spaces 
+
+Definition at line 21 of file board.\-h.
+
+
+
+Referenced by Board\-::setup2\-L().
+
+\hypertarget{board_8h_a10e5d0be9a98901f142735d07e5537f6}{\index{board.\-h@{board.\-h}!D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R@{D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R}}
+\index{D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R@{D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R}!board.h@{board.\-h}}
+\subsubsection[{D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String D\-O\-U\-B\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R = \char`\"{}mistyrose\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{board_8h_a10e5d0be9a98901f142735d07e5537f6}
+The color for double word spaces 
+
+Definition at line 20 of file board.\-h.
+
+
+
+Referenced by Board\-::setup2\-W(), and Board\-::setup\-Start().
+
+\hypertarget{board_8h_a52e9b32f92467d14351e5a500f48638f}{\index{board.\-h@{board.\-h}!T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R@{T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R}}
+\index{T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R@{T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R}!board.h@{board.\-h}}
+\subsubsection[{T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String T\-R\-I\-P\-L\-E\-L\-E\-T\-T\-E\-R\-C\-O\-L\-O\-R = \char`\"{}lightblue\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{board_8h_a52e9b32f92467d14351e5a500f48638f}
+The color for triple letter spaces 
+
+Definition at line 19 of file board.\-h.
+
+
+
+Referenced by Board\-::setup3\-L().
+
+\hypertarget{board_8h_a55a5e2b160827afd2651003878573e48}{\index{board.\-h@{board.\-h}!T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R@{T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R}}
+\index{T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R@{T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R}!board.h@{board.\-h}}
+\subsubsection[{T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String T\-R\-I\-P\-L\-E\-W\-O\-R\-D\-C\-O\-L\-O\-R = \char`\"{}pink\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{board_8h_a55a5e2b160827afd2651003878573e48}
+The color for triple word spaces 
+
+Definition at line 18 of file board.\-h.
+
+
+
+Referenced by Board\-::setup3\-W().
+

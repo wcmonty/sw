@@ -1,0 +1,3194 @@
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class <code>hw1_1000000LOC21Test</code> contains tests for the class <code>{@link hw1_1000000LOC21}</code>.
+ *
+ * @generatedBy CodePro at 3/28/14 10:55 PM
+ * @author wcmonty
+ * @version $Revision: 1.0 $
+ */
+public class hw1_1000000LOC21Test {
+	/**
+	 * Run the byte hw1_1000000LOC21method0(int,float,short) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method0_1()
+		throws Exception {
+		int var0 = 1;
+		float var1 = 1.0f;
+		short var2 = (short) 1;
+
+		byte result = hw1_1000000LOC21.hw1_1000000LOC21method0(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method0(int,float,short) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method0_2()
+		throws Exception {
+		int var0 = 1;
+		float var1 = 1.0f;
+		short var2 = (short) 1;
+
+		byte result = hw1_1000000LOC21.hw1_1000000LOC21method0(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method1(char,int,double,hw1_1000000LOC11) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method1_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		char var0 = '';
+		int var1 = 1;
+		double var2 = 1.0;
+		hw1_1000000LOC11 var3 = new hw1_1000000LOC11();
+
+		String result = fixture.hw1_1000000LOC21method1(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method1(char,int,double,hw1_1000000LOC11) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method1_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		char var0 = '';
+		int var1 = 1;
+		double var2 = 1.0;
+		hw1_1000000LOC11 var3 = new hw1_1000000LOC11();
+
+		String result = fixture.hw1_1000000LOC21method1(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the char hw1_1000000LOC21method10(hw1_1000000LOC23,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method10_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC23 var0 = new hw1_1000000LOC23();
+		long var1 = 1L;
+		String var2 = "";
+
+		char result = fixture.hw1_1000000LOC21method10(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(' ', result);
+	}
+
+	/**
+	 * Run the char hw1_1000000LOC21method10(hw1_1000000LOC23,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method10_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC23 var0 = new hw1_1000000LOC23();
+		long var1 = 1L;
+		String var2 = "";
+
+		char result = fixture.hw1_1000000LOC21method10(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(' ', result);
+	}
+
+	/**
+	 * Run the Object hw1_1000000LOC21method11(String,double,long,double,byte,short,hw1_1000000LOC11,int,long) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method11_1()
+		throws Exception {
+		String var0 = "";
+		double var1 = 1.0;
+		long var2 = 1L;
+		double var3 = 1.0;
+		byte var4 = (byte) 1;
+		short var5 = (short) 1;
+		hw1_1000000LOC11 var6 = new hw1_1000000LOC11();
+		int var7 = 1;
+		long var8 = 1L;
+
+		Object result = hw1_1000000LOC21.hw1_1000000LOC21method11(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the Object hw1_1000000LOC21method11(String,double,long,double,byte,short,hw1_1000000LOC11,int,long) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method11_2()
+		throws Exception {
+		String var0 = "";
+		double var1 = 1.0;
+		long var2 = 1L;
+		double var3 = 1.0;
+		byte var4 = (byte) 1;
+		short var5 = (short) 1;
+		hw1_1000000LOC11 var6 = new hw1_1000000LOC11();
+		int var7 = 1;
+		long var8 = 1L;
+
+		Object result = hw1_1000000LOC21.hw1_1000000LOC21method11(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method12(float,double,short,short,hw1_1000000LOC13,hw1_1000000LOC16,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method12_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		double var1 = 1.0;
+		short var2 = (short) 1;
+		short var3 = (short) 1;
+		hw1_1000000LOC13 var4 = new hw1_1000000LOC13();
+		hw1_1000000LOC16 var5 = new hw1_1000000LOC16();
+		int var6 = 1;
+
+		byte result = fixture.hw1_1000000LOC21method12(var0, var1, var2, var3, var4, var5, var6);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method12(float,double,short,short,hw1_1000000LOC13,hw1_1000000LOC16,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method12_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		double var1 = 1.0;
+		short var2 = (short) 1;
+		short var3 = (short) 1;
+		hw1_1000000LOC13 var4 = new hw1_1000000LOC13();
+		hw1_1000000LOC16 var5 = new hw1_1000000LOC16();
+		int var6 = 1;
+
+		byte result = fixture.hw1_1000000LOC21method12(var0, var1, var2, var3, var4, var5, var6);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the Object hw1_1000000LOC21method13(long,String,String,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method13_1()
+		throws Exception {
+		long var0 = 1L;
+		String var1 = "";
+		String var2 = "";
+		int var3 = 1;
+
+		Object result = hw1_1000000LOC21.hw1_1000000LOC21method13(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the Object hw1_1000000LOC21method13(long,String,String,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method13_2()
+		throws Exception {
+		long var0 = 1L;
+		String var1 = "";
+		String var2 = "";
+		int var3 = 1;
+
+		Object result = hw1_1000000LOC21.hw1_1000000LOC21method13(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the Object hw1_1000000LOC21method13(long,String,String,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method13_3()
+		throws Exception {
+		long var0 = 1L;
+		String var1 = "";
+		String var2 = "";
+		int var3 = 1;
+
+		Object result = hw1_1000000LOC21.hw1_1000000LOC21method13(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_3()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_4()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_5()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_6()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_7()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method14(int,short,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method14_8()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		int var0 = 1;
+		short var1 = (short) 1;
+		String var2 = "";
+
+		byte result = fixture.hw1_1000000LOC21method14(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method15(hw1_1000000LOC7,char,hw1_1000000LOC3) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method15_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC7 var0 = new hw1_1000000LOC7();
+		char var1 = '';
+		hw1_1000000LOC3 var2 = new hw1_1000000LOC3();
+
+		byte result = fixture.hw1_1000000LOC21method15(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method15(hw1_1000000LOC7,char,hw1_1000000LOC3) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method15_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC7 var0 = new hw1_1000000LOC7();
+		char var1 = '';
+		hw1_1000000LOC3 var2 = new hw1_1000000LOC3();
+
+		byte result = fixture.hw1_1000000LOC21method15(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method15(hw1_1000000LOC7,char,hw1_1000000LOC3) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method15_3()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC7 var0 = new hw1_1000000LOC7();
+		char var1 = '';
+		hw1_1000000LOC3 var2 = new hw1_1000000LOC3();
+
+		byte result = fixture.hw1_1000000LOC21method15(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method15(hw1_1000000LOC7,char,hw1_1000000LOC3) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method15_4()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC7 var0 = new hw1_1000000LOC7();
+		char var1 = '';
+		hw1_1000000LOC3 var2 = new hw1_1000000LOC3();
+
+		byte result = fixture.hw1_1000000LOC21method15(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method15(hw1_1000000LOC7,char,hw1_1000000LOC3) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method15_5()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		hw1_1000000LOC7 var0 = new hw1_1000000LOC7();
+		char var1 = '';
+		hw1_1000000LOC3 var2 = new hw1_1000000LOC3();
+
+		byte result = fixture.hw1_1000000LOC21method15(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method16(byte,hw1_1000000LOC19,char,String,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method16_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		hw1_1000000LOC19 var1 = new hw1_1000000LOC19();
+		char var2 = '';
+		String var3 = "";
+		char var4 = '';
+
+		byte result = fixture.hw1_1000000LOC21method16(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method16(byte,hw1_1000000LOC19,char,String,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method16_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		hw1_1000000LOC19 var1 = new hw1_1000000LOC19();
+		char var2 = '';
+		String var3 = "";
+		char var4 = '';
+
+		byte result = fixture.hw1_1000000LOC21method16(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method16(byte,hw1_1000000LOC19,char,String,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method16_3()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		hw1_1000000LOC19 var1 = new hw1_1000000LOC19();
+		char var2 = '';
+		String var3 = "";
+		char var4 = '';
+
+		byte result = fixture.hw1_1000000LOC21method16(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method16(byte,hw1_1000000LOC19,char,String,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method16_4()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		hw1_1000000LOC19 var1 = new hw1_1000000LOC19();
+		char var2 = '';
+		String var3 = "";
+		char var4 = '';
+
+		byte result = fixture.hw1_1000000LOC21method16(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method16(byte,hw1_1000000LOC19,char,String,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method16_5()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		hw1_1000000LOC19 var1 = new hw1_1000000LOC19();
+		char var2 = '';
+		String var3 = "";
+		char var4 = '';
+
+		byte result = fixture.hw1_1000000LOC21method16(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method16(byte,hw1_1000000LOC19,char,String,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method16_6()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		hw1_1000000LOC19 var1 = new hw1_1000000LOC19();
+		char var2 = '';
+		String var3 = "";
+		char var4 = '';
+
+		byte result = fixture.hw1_1000000LOC21method16(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the int hw1_1000000LOC21method17(char,byte,char,double,char,int,char,short) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method17_1()
+		throws Exception {
+		char var0 = '';
+		byte var1 = (byte) 1;
+		char var2 = '';
+		double var3 = 1.0;
+		char var4 = '';
+		int var5 = 1;
+		char var6 = '';
+		short var7 = (short) 1;
+
+		int result = hw1_1000000LOC21.hw1_1000000LOC21method17(var0, var1, var2, var3, var4, var5, var6, var7);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0, result);
+	}
+
+	/**
+	 * Run the int hw1_1000000LOC21method17(char,byte,char,double,char,int,char,short) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method17_2()
+		throws Exception {
+		char var0 = '';
+		byte var1 = (byte) 1;
+		char var2 = '';
+		double var3 = 1.0;
+		char var4 = '';
+		int var5 = 1;
+		char var6 = '';
+		short var7 = (short) 1;
+
+		int result = hw1_1000000LOC21.hw1_1000000LOC21method17(var0, var1, var2, var3, var4, var5, var6, var7);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0, result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_1()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_2()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_3()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_4()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_5()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_6()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_7()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method18(hw1_1000000LOC10,byte,hw1_1000000LOC7,byte,byte,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method18_8()
+		throws Exception {
+		hw1_1000000LOC10 var0 = new hw1_1000000LOC10();
+		byte var1 = (byte) 1;
+		hw1_1000000LOC7 var2 = new hw1_1000000LOC7();
+		byte var3 = (byte) 1;
+		byte var4 = (byte) 1;
+		int var5 = 1;
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method18(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method19(hw1_1000000LOC21,short,int,short,char,hw1_1000000LOC0) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method19_1()
+		throws Exception {
+		hw1_1000000LOC21 var0 = new hw1_1000000LOC21();
+		short var1 = (short) 1;
+		int var2 = 1;
+		short var3 = (short) 1;
+		char var4 = '';
+		hw1_1000000LOC0 var5 = new hw1_1000000LOC0();
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method19(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method19(hw1_1000000LOC21,short,int,short,char,hw1_1000000LOC0) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method19_2()
+		throws Exception {
+		hw1_1000000LOC21 var0 = new hw1_1000000LOC21();
+		short var1 = (short) 1;
+		int var2 = 1;
+		short var3 = (short) 1;
+		char var4 = '';
+		hw1_1000000LOC0 var5 = new hw1_1000000LOC0();
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method19(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the float hw1_1000000LOC21method2(int,float,char,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method2_1()
+		throws Exception {
+		int var0 = 1;
+		float var1 = 1.0f;
+		char var2 = '';
+		String var3 = "";
+
+		float result = hw1_1000000LOC21.hw1_1000000LOC21method2(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0.0f, result, 0.1f);
+	}
+
+	/**
+	 * Run the float hw1_1000000LOC21method2(int,float,char,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method2_2()
+		throws Exception {
+		int var0 = 1;
+		float var1 = 1.0f;
+		char var2 = '';
+		String var3 = "";
+
+		float result = hw1_1000000LOC21.hw1_1000000LOC21method2(var0, var1, var2, var3);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0.0f, result, 0.1f);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method20(hw1_1000000LOC5,String,byte,char,int,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method20_1()
+		throws Exception {
+		hw1_1000000LOC5 var0 = new hw1_1000000LOC5();
+		String var1 = "";
+		byte var2 = (byte) 1;
+		char var3 = '';
+		int var4 = 1;
+		char var5 = '';
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method20(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method20(hw1_1000000LOC5,String,byte,char,int,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method20_2()
+		throws Exception {
+		hw1_1000000LOC5 var0 = new hw1_1000000LOC5();
+		String var1 = "";
+		byte var2 = (byte) 1;
+		char var3 = '';
+		int var4 = 1;
+		char var5 = '';
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method20(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method20(hw1_1000000LOC5,String,byte,char,int,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method20_3()
+		throws Exception {
+		hw1_1000000LOC5 var0 = new hw1_1000000LOC5();
+		String var1 = "";
+		byte var2 = (byte) 1;
+		char var3 = '';
+		int var4 = 1;
+		char var5 = '';
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method20(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method20(hw1_1000000LOC5,String,byte,char,int,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method20_4()
+		throws Exception {
+		hw1_1000000LOC5 var0 = new hw1_1000000LOC5();
+		String var1 = "";
+		byte var2 = (byte) 1;
+		char var3 = '';
+		int var4 = 1;
+		char var5 = '';
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method20(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method20(hw1_1000000LOC5,String,byte,char,int,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method20_5()
+		throws Exception {
+		hw1_1000000LOC5 var0 = new hw1_1000000LOC5();
+		String var1 = "";
+		byte var2 = (byte) 1;
+		char var3 = '';
+		int var4 = 1;
+		char var5 = '';
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method20(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_3()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_4()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_5()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_6()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the byte hw1_1000000LOC21method21(float,short,double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method21_7()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		float var0 = 1.0f;
+		short var1 = (short) 1;
+		double var2 = 1.0;
+
+		byte result = fixture.hw1_1000000LOC21method21(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((byte) 0, result);
+	}
+
+	/**
+	 * Run the long hw1_1000000LOC21method22(long,String,hw1_1000000LOC10) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method22_1()
+		throws Exception {
+		long var0 = 1L;
+		String var1 = "";
+		hw1_1000000LOC10 var2 = new hw1_1000000LOC10();
+
+		long result = hw1_1000000LOC21.hw1_1000000LOC21method22(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0L, result);
+	}
+
+	/**
+	 * Run the long hw1_1000000LOC21method22(long,String,hw1_1000000LOC10) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method22_2()
+		throws Exception {
+		long var0 = 1L;
+		String var1 = "";
+		hw1_1000000LOC10 var2 = new hw1_1000000LOC10();
+
+		long result = hw1_1000000LOC21.hw1_1000000LOC21method22(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0L, result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_1()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_2()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_3()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_4()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_5()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_6()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method3(String,int,byte,long,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method3_7()
+		throws Exception {
+		String var0 = "";
+		int var1 = 1;
+		byte var2 = (byte) 1;
+		long var3 = 1L;
+		String var4 = "";
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method3(var0, var1, var2, var3, var4);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method4(double,byte,char,hw1_1000000LOC24,hw1_1000000LOC7,hw1_1000000LOC11,double,long,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method4_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		double var0 = 1.0;
+		byte var1 = (byte) 1;
+		char var2 = '';
+		hw1_1000000LOC24 var3 = new hw1_1000000LOC24();
+		hw1_1000000LOC7 var4 = new hw1_1000000LOC7();
+		hw1_1000000LOC11 var5 = new hw1_1000000LOC11();
+		double var6 = 1.0;
+		long var7 = 1L;
+		char var8 = '';
+
+		String result = fixture.hw1_1000000LOC21method4(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method4(double,byte,char,hw1_1000000LOC24,hw1_1000000LOC7,hw1_1000000LOC11,double,long,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method4_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		double var0 = 1.0;
+		byte var1 = (byte) 1;
+		char var2 = '';
+		hw1_1000000LOC24 var3 = new hw1_1000000LOC24();
+		hw1_1000000LOC7 var4 = new hw1_1000000LOC7();
+		hw1_1000000LOC11 var5 = new hw1_1000000LOC11();
+		double var6 = 1.0;
+		long var7 = 1L;
+		char var8 = '';
+
+		String result = fixture.hw1_1000000LOC21method4(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the int hw1_1000000LOC21method5(String,long,float,byte,long,double,int,long) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method5_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		String var0 = "";
+		long var1 = 1L;
+		float var2 = 1.0f;
+		byte var3 = (byte) 1;
+		long var4 = 1L;
+		double var5 = 1.0;
+		int var6 = 1;
+		long var7 = 1L;
+
+		int result = fixture.hw1_1000000LOC21method5(var0, var1, var2, var3, var4, var5, var6, var7);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0, result);
+	}
+
+	/**
+	 * Run the int hw1_1000000LOC21method5(String,long,float,byte,long,double,int,long) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method5_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		String var0 = "";
+		long var1 = 1L;
+		float var2 = 1.0f;
+		byte var3 = (byte) 1;
+		long var4 = 1L;
+		double var5 = 1.0;
+		int var6 = 1;
+		long var7 = 1L;
+
+		int result = fixture.hw1_1000000LOC21method5(var0, var1, var2, var3, var4, var5, var6, var7);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0, result);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method6(long,double,int,byte,long,String,short,hw1_1000000LOC25,byte) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method6_1()
+		throws Exception {
+		long var0 = 1L;
+		double var1 = 1.0;
+		int var2 = 1;
+		byte var3 = (byte) 1;
+		long var4 = 1L;
+		String var5 = "";
+		short var6 = (short) 1;
+		hw1_1000000LOC25 var7 = new hw1_1000000LOC25();
+		byte var8 = (byte) 1;
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method6(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the short hw1_1000000LOC21method6(long,double,int,byte,long,String,short,hw1_1000000LOC25,byte) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method6_2()
+		throws Exception {
+		long var0 = 1L;
+		double var1 = 1.0;
+		int var2 = 1;
+		byte var3 = (byte) 1;
+		long var4 = 1L;
+		String var5 = "";
+		short var6 = (short) 1;
+		hw1_1000000LOC25 var7 = new hw1_1000000LOC25();
+		byte var8 = (byte) 1;
+
+		short result = hw1_1000000LOC21.hw1_1000000LOC21method6(var0, var1, var2, var3, var4, var5, var6, var7, var8);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals((short) 0, result);
+	}
+
+	/**
+	 * Run the long hw1_1000000LOC21method7(hw1_1000000LOC6,byte,long,byte,hw1_1000000LOC2,short) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method7_1()
+		throws Exception {
+		hw1_1000000LOC6 var0 = new hw1_1000000LOC6();
+		byte var1 = (byte) 1;
+		long var2 = 1L;
+		byte var3 = (byte) 1;
+		hw1_1000000LOC2 var4 = new hw1_1000000LOC2();
+		short var5 = (short) 1;
+
+		long result = hw1_1000000LOC21.hw1_1000000LOC21method7(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0L, result);
+	}
+
+	/**
+	 * Run the long hw1_1000000LOC21method7(hw1_1000000LOC6,byte,long,byte,hw1_1000000LOC2,short) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method7_2()
+		throws Exception {
+		hw1_1000000LOC6 var0 = new hw1_1000000LOC6();
+		byte var1 = (byte) 1;
+		long var2 = 1L;
+		byte var3 = (byte) 1;
+		hw1_1000000LOC2 var4 = new hw1_1000000LOC2();
+		short var5 = (short) 1;
+
+		long result = hw1_1000000LOC21.hw1_1000000LOC21method7(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0L, result);
+	}
+
+	/**
+	 * Run the float hw1_1000000LOC21method8(byte,byte,byte) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method8_1()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		byte var1 = (byte) 1;
+		byte var2 = (byte) 1;
+
+		float result = fixture.hw1_1000000LOC21method8(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0.0f, result, 0.1f);
+	}
+
+	/**
+	 * Run the float hw1_1000000LOC21method8(byte,byte,byte) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method8_2()
+		throws Exception {
+		hw1_1000000LOC21 fixture = new hw1_1000000LOC21();
+		fixture.f1 = 1;
+		fixture.f0 = 1.0;
+		byte var0 = (byte) 1;
+		byte var1 = (byte) 1;
+		byte var2 = (byte) 1;
+
+		float result = fixture.hw1_1000000LOC21method8(var0, var1, var2);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertEquals(0.0f, result, 0.1f);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method9(long,double,hw1_1000000LOC0,float,short,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method9_1()
+		throws Exception {
+		long var0 = 1L;
+		double var1 = 1.0;
+		hw1_1000000LOC0 var2 = new hw1_1000000LOC0();
+		float var3 = 1.0f;
+		short var4 = (short) 1;
+		char var5 = '';
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method9(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method9(long,double,hw1_1000000LOC0,float,short,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method9_2()
+		throws Exception {
+		long var0 = 1L;
+		double var1 = 1.0;
+		hw1_1000000LOC0 var2 = new hw1_1000000LOC0();
+		float var3 = 1.0f;
+		short var4 = (short) 1;
+		char var5 = '';
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method9(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String hw1_1000000LOC21method9(long,double,hw1_1000000LOC0,float,short,char) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testHw1_1000000LOC21method9_3()
+		throws Exception {
+		long var0 = 1L;
+		double var1 = 1.0;
+		hw1_1000000LOC0 var2 = new hw1_1000000LOC0();
+		float var3 = 1.0f;
+		short var4 = (short) 1;
+		char var5 = '';
+
+		String result = hw1_1000000LOC21.hw1_1000000LOC21method9(var0, var1, var2, var3, var4, var5);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the void main(String[]) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testMain_1()
+		throws Exception {
+		String[] args = new String[] {};
+
+		hw1_1000000LOC21.main(args);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+	}
+
+	/**
+	 * Run the void singleEntry(int,int,int,int,int,int,int,int,int,int) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Test
+	public void testSingleEntry_1()
+		throws Exception {
+		int i0 = 1;
+		int i1 = 1;
+		int i2 = 1;
+		int i3 = 1;
+		int i4 = 1;
+		int i5 = 1;
+		int i6 = 1;
+		int i7 = 1;
+		int i8 = 1;
+		int i9 = 1;
+
+		hw1_1000000LOC21.singleEntry(i0, i1, i2, i3, i4, i5, i6, i7, i8, i9);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ClassNotFoundException: hw1_1000000LOC21
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+		//       at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+		//       at java.security.AccessController.doPrivileged(Native Method)
+		//       at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.UserDefinedClassLoader.loadClass(UserDefinedClassLoader.java:62)
+		//       at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionContextImpl.getClass(ExecutionContextImpl.java:99)
+		//       at com.instantiations.eclipse.analysis.expression.model.SimpleTypeExpression.execute(SimpleTypeExpression.java:205)
+		//       at com.instantiations.eclipse.analysis.expression.model.MethodInvocationExpression.execute(MethodInvocationExpression.java:544)
+		//       at com.instantiations.assist.eclipse.junit.execution.core.ExecutionRequest.execute(ExecutionRequest.java:286)
+		//       at com.instantiations.assist.eclipse.junit.execution.communication.LocalExecutionClient$1.run(LocalExecutionClient.java:158)
+		//       at java.lang.Thread.run(Thread.java:744)
+	}
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+	}
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+	}
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 3/28/14 10:55 PM
+	 */
+	public static void main(String[] args) {
+		new org.junit.runner.JUnitCore().run(hw1_1000000LOC21Test.class);
+	}
+}

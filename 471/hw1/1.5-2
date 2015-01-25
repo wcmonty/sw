@@ -1,0 +1,625 @@
+f = x^3 - 2x -2
+ f = x^3 - 2x -2
+            |
+{Error: Unexpected MATLAB expression.
+} 
+f = x^3 - 2*x -2
+ 
+f =
+ 
+x^3 - 2*x - 2
+ 
+falseposition(f, .5, 1.5, .00001)
+
+c =
+
+   0.883845126835781
+
+
+c =
+
+   1.222154665892238
+
+
+c =
+
+   1.465637145956179
+
+
+c =
+
+   1.613087423278150
+
+
+c =
+
+   1.692481141698026
+
+
+c =
+
+   1.732416076950469
+
+
+c =
+
+   1.751799002940592
+
+
+c =
+
+   1.761041740479618
+
+
+c =
+
+   1.765411712796408
+
+
+c =
+
+   1.767469483739927
+
+
+c =
+
+   1.768436613530056
+
+
+c =
+
+   1.768890745076561
+
+
+c =
+
+   1.769103899803927
+
+
+c =
+
+   1.769203927913880
+
+
+c =
+
+   1.769250864197430
+
+
+c =
+
+   1.769272887190887
+
+
+c =
+
+   1.769283220397006
+
+
+c =
+
+   1.769288068698908
+
+
+c =
+
+   1.769290343493866
+
+
+c =
+
+   1.769291410812124
+
+
+ans =
+
+   1.769291410812124
+
+falseposition(f, 1.5, 2.5, .00001)
+
+c =
+
+   1.726255119875122
+
+
+c =
+
+   1.752961814034165
+
+
+c =
+
+   1.763153017008390
+
+
+c =
+
+   1.766992459937159
+
+
+c =
+
+   1.768431921561915
+
+
+c =
+
+   1.768970610905703
+
+
+c =
+
+   1.769172066526357
+
+
+c =
+
+   1.769247386328724
+
+
+c =
+
+   1.769275544040917
+
+
+c =
+
+   1.769286070201975
+
+
+c =
+
+   1.769290005130456
+
+
+c =
+
+   1.769291476092623
+
+
+ans =
+
+   1.769291476092623
+
+falseposition(f, 2.0, 2.5, .00001)
+
+c =
+
+   1.798304237956976
+
+
+c =
+
+   1.780029573759447
+
+
+c =
+
+   1.773291280979676
+
+
+c =
+
+   1.770785169816985
+
+
+c =
+
+   1.769850111512070
+
+
+c =
+
+   1.769500815230959
+
+
+c =
+
+   1.769370275655439
+
+
+c =
+
+   1.769321482092997
+
+
+c =
+
+   1.769303242724209
+
+
+c =
+
+   1.769296424564748
+
+
+c =
+
+   1.769293875808703
+
+
+c =
+
+   1.769292923032742
+
+
+ans =
+
+   1.769292923032742
+
+falseposition(f, 2.0, 2.5, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('mupadmex')" style="font-weight:bold">mupadmex</a>
+Error in MuPAD command: Index exceeds matrix dimensions.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym/subsref', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 1580)" style="font-weight:bold">sym/subsref</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',1580,0)">line 1580</a>)
+        B = mupadmex('symobj::subsref',A.s,inds{:});
+
+Error in <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 2)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',2,0)">line 2</a>)
+	if sign(f(a)) * sign(f(b)) >= 0
+} 
+falseposition(f, 2.0, 2.5, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('mupadmex')" style="font-weight:bold">mupadmex</a>
+Error in MuPAD command: Index exceeds matrix dimensions.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym/subsref', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 1580)" style="font-weight:bold">sym/subsref</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',1580,0)">line 1580</a>)
+        B = mupadmex('symobj::subsref',A.s,inds{:});
+
+Error in <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 2)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',2,0)">line 2</a>)
+	if sign(f(a)) * sign(f(b)) >= 0
+} 
+falseposition(f, 2.0, 2.5, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+falseposition(f, 2.0, 3.00, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+falseposition(f, 1, 2, .00001)
+
+c =
+
+   1.742268041237113
+
+
+c =
+
+   1.765259152996944
+
+
+c =
+
+   1.768696766124261
+
+
+c =
+
+   1.769204541530486
+
+
+c =
+
+   1.769279410264611
+
+
+c =
+
+   1.769290446306198
+
+
+c =
+
+   1.769292073012189
+
+
+ans =
+
+   1.769292073012189
+
+falseposition(f, 2, 100, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+factor (f)
+ 
+ans =
+ 
+x^3 - 2*x - 2
+ 
+diff(f)
+ 
+ans =
+ 
+3*x^2 - 2
+ 
+z = falsepositive(f, 1, 2, .00001)
+{Undefined function 'falsepositive' for input arguments of type 'sym'.
+} 
+ezplot (f)
+z = falsepositive(f, -2, 1, .00001)
+{Undefined function 'falsepositive' for input arguments of type 'sym'.
+} 
+f = x^3 - 2*x -2
+ 
+f =
+ 
+x^3 - 2*x - 2
+ 
+z = falsepositive(f, -2, 1, .00001)
+{Undefined function 'falsepositive' for input arguments of type 'sym'.
+} 
+z = falseposition(f, -2, 1, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+z = falseposition(f, -2, 0, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+z = falseposition(f, -2, -1, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+z = falseposition(f, -200, 1, .00001)
+{Error using <a href="matlab:helpUtils.errorDocCallback('falseposition', '/home/wcmonty/Projects/471/falseposition.m', 4)" style="font-weight:bold">falseposition</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/falseposition.m',4,0)">line 4</a>)
+f(a)f(b) < 0 not satisfied!
+} 
+ezplot(f)
+ezplot(f, [-2, 2])
+f(1.5)
+{Error using <a href="matlab:helpUtils.errorDocCallback('sym>checkindex', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 2429)" style="font-weight:bold">sym>checkindex</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',2429,0)">line 2429</a>)
+Index must be a positive integer or logical.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym>privformatscalar', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 2376)" style="font-weight:bold">sym>privformatscalar</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',2376,0)">line 2376</a>)
+    checkindex(x);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym>privformat', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 2360)" style="font-weight:bold">sym>privformat</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',2360,0)">line 2360</a>)
+    s = privformatscalar(x);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('sym/subsref', '/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m', 1578)" style="font-weight:bold">sym/subsref</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/symbolic/symbolic/@sym/sym.m',1578,0)">line 1578</a>)
+            [inds{k},refs{k}] = privformat(inds{k});
+} 
+inline(f)
+
+ans =
+
+     Inline function:
+     ans(x) = x.*-2.0+x.^3-2.0
+
+ans(1.5)
+
+ans =
+
+  -1.625000000000000
+
+fx = inline(f)
+
+fx =
+
+     Inline function:
+     fx(x) = x.*-2.0+x.^3-2.0
+
+fx(falseposition(f, 1, 2, .0001)
+ fx(falseposition(f, 1, 2, .0001)
+                                 |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+fx(falseposition(f, 1, 2, .0001))
+
+c =
+
+   1.742268041237113
+
+
+c =
+
+   1.765259152996944
+
+
+c =
+
+   1.768696766124261
+
+
+c =
+
+   1.769204541530486
+
+
+c =
+
+   1.769279410264611
+
+
+ans =
+
+    -9.567043418590160e-05
+
+df = diff(f)
+ 
+df =
+ 
+3*x^2 - 2
+ 
+dfx = inline(df)
+
+dfx =
+
+     Inline function:
+     dfx(x) = x.^2.*3.0-2.0
+
+dfx(falseposition(f, 1, 2, .0001)
+ dfx(falseposition(f, 1, 2, .0001)
+                                  |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+dfx(falseposition(f, 1, 2, .0001))
+
+c =
+
+   1.742268041237113
+
+
+c =
+
+   1.765259152996944
+
+
+c =
+
+   1.768696766124261
+
+
+c =
+
+   1.769204541530486
+
+
+c =
+
+   1.769279410264611
+
+
+ans =
+
+   7.391048894758873
+
+ezplot (f, [-10, 10])
+ezplot (f, [-4, 4])
+ezplot (f, [-2, 2])
+g = exp(x) + x - 7
+ 
+g =
+ 
+x + exp(x) - 7
+ 
+fzero(g)
+{Error using <a href="matlab:helpUtils.errorDocCallback('fzero', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/fzero.m', 118)" style="font-weight:bold">fzero</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/fzero.m',118,0)">line 118</a>)
+The input should be either a structure with valid fields or at least two arguments to FZERO.
+} 
+fzero(g, 1.5)
+{Error using <a href="matlab:helpUtils.errorDocCallback('fzero', '/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/fzero.m', 169)" style="font-weight:bold">fzero</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2013a/toolbox/matlab/optimfun/fzero.m',169,0)">line 169</a>)
+If FUN is a MATLAB object, it must have an feval method.
+} 
+g = @(x) exp(x) + x -7
+
+g = 
+
+    @(x)exp(x)+x-7
+
+fzero(g, 1.5)
+
+ans =
+
+   1.672821698628907
+
+g = x + exp(x) - 7
+ 
+g =
+ 
+x + exp(x) - 7
+ 
+falseposition(g, 1, 2, .000001)
+
+c =
+
+   1.660160099942699
+
+
+c =
+
+   1.671129573921194
+
+
+c =
+
+   1.672595766713196
+
+
+c =
+
+   1.672791535988830
+
+
+c =
+
+   1.672817671885290
+
+
+c =
+
+   1.672821161055653
+
+
+c =
+
+   1.672821626862500
+
+
+ans =
+
+   1.672821626862500
+
+h = exp(x) + sin(x) - 4
+ 
+h =
+ 
+exp(x) + sin(x) - 4
+ 
+falseposition(h, 1, 2, .000001)
+
+c =
+
+   1.119356685564410
+
+
+c =
+
+   1.126932301885785
+
+
+c =
+
+   1.129105593458955
+
+
+c =
+
+   1.129729354318393
+
+
+c =
+
+   1.129908404754942
+
+
+c =
+
+   1.129959803087158
+
+
+c =
+
+   1.129974557684762
+
+
+c =
+
+   1.129978793207924
+
+
+c =
+
+   1.129980009077915
+
+
+c =
+
+   1.129980358111589
+
+
+ans =
+
+   1.129980358111589
+
+diary off

@@ -1,0 +1,405 @@
+/**
+\mainpage Homework 3 Documentation
+
+\author William Montgomery
+\copyright None
+\par University of Illinois at Chicago
+\par  CS 385 - Operating Systems
+\par Fall 2013
+\section Information
+\par Order Finder is a toy program based upon the idea SETIi\@home used to demonstrate the use of threads.
+\par The SETIi\@home program is a massively parallel, distributed program used to analyze electromagnetic waves for the existence of extra-terrestrial life.  Our task was to build a program that simulates this on a much smaller scale.
+\section Overview
+\par It was decided early on that Order Searcher would be designed to be fairly flexible.  As such, it was decided that the program would treat each byte as an unsigned integer between 0 and 255 inclusive.  To determine the effects of virtual memory on performance it was decided that the program be able to process chunks of data of variable sizes.  Additionally, the program should be able to use different criteria to evaluate whether a block exhibits some sort of order.
+\section Evaluation Criteria
+\par Various criteria were examined for suitability, but were rejected.  These include:
+\li Range - A horizontal line with no variance would exhibit the lowest range, while many more "interesting" functions, such as a diagonal line, would exhibit a much greater range.
+\li Maximum absolute value of the change - If we are thinking that these are possible radio waves, a large spike or drop in signal might just by an anomoly in the receiving antennae instead of a real signal.
+\li Standard deviation - This criteria would tend to favor data points that lie in a horizontal manner, instead of data that might exhibit interesting behaviors.
+\li Standard deviation of the change in consecutive elements.  This criteria was initially targetted as the best initial criteria.  Essentially, this is a meaure of continuity of the data.  This was implemented in code and worked reasonably well, however it was abandoned in favor of more sophisticated techniques.
+\li Best fit to a Nth order polynomial - Eventually, this was the criteria that was decided upon.  The algorithm is not too terribly difficult, but the implementation involves lots of matrix multiplication.  It was decided that the user should be able to choose the order of polynomial to fit from the command line.  The techniques used in this implementation could certainly be used to develop any sort of least squares fit to a function, but I believe this is beyond the scope of the project. 
+\section Implementation
+\par The solution is implemented with 4 C++ classes.  These include the Runner (using the Singleton design patter), Chunker, Chunk, and Semaphore.
+\li Runner - controls the program, including the launching of threads
+\li Chunker - divides the input file into chunks of a size determined by command line options
+\li Chunk - processes the chunk and computes the error
+\li Semaphore - wrapper for semaphore related system calls 
+\par Initially, the program was implemented by reading in chunks of data into memory allocated on the heap as the threads requested it.  This was replaced with simply mapping the memory and providing a pointer to the data as well as a the size.  This implementation proved to be faster and easier to implement.
+\section Best Best Fit
+\par The best fit that was implemented was a best fit to an arbitrary order polynomial. Assume that the stream of bytes are readings taken at time t = 0, 1, 2, 3, ...n.  The byte at time is taken to be the reading, with a value of between 0 and 255.  If we try to fit it to a line of the form C1t + C2 = y, we have ths system of equations:
+~~~~
+C1 * t0 + C2 = y0
+C1 * t1 + C2 = y1
+...
+C1 * tn + C2 = yn
+~~~~
+\par We can represent these as matrices of coefficients.  Since we know t and y at each data point, we have a system in the form of A c = b, where A is a matrix of the coefficients of C1 and C2.  If we multiply both sides by A' (A-transpose), we get A'*A*c = A'*c, which we can solve using Gaussian elimination and back substitution.
+\par We can then compare how well a polynomial estimates the data by computing the root mean squared (RMS) error.  The sum of the square of the difference between the actual reading and the estimated reading is divided by the number of elements.  The square root is taken of this value, which is simply a floating point number.  The lower the error, the better the approximation of the polynomial.
+\par Unfortunately, this method is not conducive to implementing branch and bound.  The error term is the last thing to compute, and it's computation is trivial compared to the solving of the linear equations.  The best fit is compared to the current best fit, and the best is replaced by the current chunk if it is better.
+\section Directories Project Directories
+\par There are two directories included.  The docs directory has the ggenerated documentation and the orderSearcher directory has the source, makefile, and test script.
+\section Makefile 
+\par A makefile is included.  The programs can be built by entering `make` at the command line.   
+\section Sample Sample Commands
+\par To run, the program takes 4 command line arguments.
+\li inputDataFile - The name of the file to process
+\li chunkSize - The size of the chunk
+\li nThreads - The number of processor threads to launch
+\li polynomialOrder - The order of the polynomial to best fit
+\par For example, the command `orderSearcher diver.raw 4096 5 2` will process the file "diver.raw" in chunks of size 4096, with 5 processing threads (plus one thread to print the results) and will try to fit a quadratic to the data.
+\section Output
+\par The program outputs in two phases.  In the first phase, it outputs statistics for the best fit and the error.  Results are displayed only if the error is better (less than) the current best.
+\par At the end of the processing, the best fit is displayed. The entire chunk is printed out in a vertical graph (so chunksizes of arbitrary sizes can be displayed).  The first column is the value of t within the chunk, the second is the value at that time point, and the third represents the value in graphical form.  The asterisks represent the value of the data points, while the O's represent the function evaluated at that time. For example:
+~~~~
+ ################################################################################
+ Best polynomial:
+ y = 0 * x^5 + 0 * x^4 + 0 * x^3 + 0 * x^2 + 0 * x^1 + 223
+ 
+ Error: 0
+ ################################################################################
+        0 223 *******************************************************O          
+        1 223 *******************************************************O          
+        2 223 *******************************************************O          
+        3 223 *******************************************************O          
+        4 223 *******************************************************O          
+        5 223 *******************************************************O          
+        6 223 *******************************************************O          
+        7 223 *******************************************************O   
+~~~~
+ 
+\section Testing
+\par A test bash script is provided in the source directory for various combinations of the commands.
+\section Results
+\par These are the results running locally.
+\par As expected, multiple threads speed up execution time.  The results below are from the test script.  The real time is probably the most important statistic for the end user, as it determines the time it takes for the final result to be displayed.  With one processing thread and one printing thread, it takes over 17 1/2 seconds to finish the result on the test machine (which has 4 cores + hyperthreading for a total of 8 virtual processors).  The time decreases until there are 8 threads, at which point
+the time starts to rise again.  This is as expected because more threads increase the overhead.
+~~~~
+Running timing on different numbers of threads
+NumberThreads	Real	User	Sys
+            1	0:17.42	19.80	15.01
+            2	0:08.87	18.73	7.87
+            3	0:06.05	18.49	5.67
+            4	0:05.88	23.82	5.52
+            5	0:05.66	28.44	5.47
+            6	0:04.91	29.24	5.04
+            7	0:04.89	33.91	4.68
+            8	0:04.82	33.71	4.37
+            9	0:04.84	34.04	3.91
+           10	0:04.82	34.29	3.55
+           11	0:05.01	35.61	3.78
+           12	0:05.10	36.44	3.56
+           13	0:05.14	35.89	3.81
+           14	0:05.07	36.22	3.37
+           15	0:05.10	36.23	3.41
+           16	0:05.13	36.06	3.48
+~~~~
+\par Below is an image with the processor usage during the first part of this test.  When the script starts, there are only two threads (one for processing and one for printing).  This increases until all 8 virtual processors are at 100%
+\image html processes.png
+
+\par At this point in the test script, we look at the effect of different chunk sizes.  My assumption that the best size for the chunks would equal the pagesize.  This did not seem to hold.  As can be seen in the statistics below, the chunksizes of powers of two were roughly the same over the entire test.  There was some deviation, but not enough to be conclusive. 
+~~~~
+Running timing on different chunk sizes
+Chunksizes are powers of 2
+ChunkSize	Real	User	Sys
+        8	0:07.01	47.78	6.83
+       16	0:07.25	50.02	7.13
+       32	0:07.07	48.57	7.12
+       64	0:07.08	48.71	7.09
+      128	0:07.33	50.50	7.22
+      256	0:07.01	48.10	7.13
+      512	0:06.83	46.78	6.92
+     1024	0:07.01	48.38	6.90
+     2048	0:07.08	48.78	7.02
+     4096	0:07.33	50.43	6.92
+     8192	0:07.84	54.20	7.40
+    16384	0:08.13	56.29	7.95
+    32768	0:07.16	49.27	7.17
+    65536	0:07.04	48.45	7.11
+~~~~
+\par When I looked at chunk size that were not a power of 2, I saw a slowdown, although not huge.  I was expecting more of a difference.  I suspect that the test machine had copious amounts of RAM (16 GB) and the fact that I process the file sequentially are the reasons I did not exxperience a signficant slowdown.  I beieve that a non-sequential processing of the file on a machine with limited RAM would benefit more from choosing chunk sizes of powers of 2 that match the machine's page size.
+~~~~
+Chunksizes are NOT powers of 2
+ChunkSize	Real	User	Sys
+        7	0:07.25	50.06	7.07
+        9	0:07.30	50.43	7.13
+       15	0:07.48	51.40	7.43
+       17	0:07.43	50.59	7.28
+       31	0:07.99	55.07	7.79
+       33	0:07.77	53.54	7.69
+       63	0:07.40	49.70	7.29
+       65	0:07.10	48.22	6.78
+      127	0:07.51	51.03	7.20
+      129	0:07.12	48.97	7.05
+      255	0:07.80	54.08	7.44
+      257	0:07.47	51.53	7.14
+      511	0:07.84	53.87	7.57
+      513	0:07.97	55.50	7.77
+     1023	0:08.31	56.17	7.96
+     1025	0:07.73	46.37	6.67
+     2047	0:07.87	52.08	7.08
+     2049	0:06.84	46.72	6.92
+     4095	0:06.82	47.04	6.67
+     4097	0:06.87	47.06	6.92
+     8191	0:06.86	47.64	6.80
+     8193	0:06.74	46.74	6.82
+    16383	0:06.76	46.84	6.79
+    16385	0:06.68	46.17	6.80
+    32767	0:06.69	46.20	6.75
+    32769	0:06.72	46.55	6.70
+    65535	0:06.99	48.42	6.96
+    65537	0:07.23	50.39	6.99
+~~~~
+\section Best Best Fits
+\par To test the algorithm, thre program was run against various file types with a set chunk size of 32 and with a polynomial of order 20.  The results are below.  It should be noted that increasing the chunk size creates more interesting results, but the results are longer.  In the graphs below, the asterisks represent the values of the byte and the 'O's represent the best fit solution. 
+\par The results for the RAW file were not that interesting, in that there was a chunk with all values at 255.  This resulted in an equation that was essentially y = 255.
+~~~~
+################################################################################
+        0 255 ***************************************************************O  
+        1 255 ***************************************************************O  
+        2 255 ***************************************************************O  
+        3 255 ***************************************************************O  
+        4 255 ***************************************************************O  
+        5 255 ***************************************************************O  
+        6 255 ***************************************************************O  
+        7 255 ***************************************************************O  
+        8 255 ***************************************************************O  
+        9 255 ***************************************************************O  
+       10 255 ***************************************************************O  
+       11 255 ***************************************************************O  
+       12 255 ***************************************************************O  
+       13 255 ***************************************************************O  
+       14 255 ***************************************************************O  
+       15 255 ***************************************************************O  
+       16 255 ***************************************************************O  
+       17 255 ***************************************************************O  
+       18 255 ***************************************************************O  
+       19 255 ***************************************************************O  
+       20 255 ***************************************************************O  
+       21 255 ***************************************************************O  
+       22 255 ***************************************************************O  
+       23 255 ***************************************************************O  
+       24 255 ***************************************************************O  
+       25 255 ***************************************************************O  
+       26 255 ***************************************************************O  
+       27 255 ***************************************************************O  
+       28 255 ***************************************************************O  
+       29 255 ***************************************************************O  
+       30 255 ***************************************************************O  
+       31 255 ***************************************************************O  
+################################################################################
+Best polynomial:
+y = 5.72849e-47 * x^20 + 0 * x^19 + 4.90777e-44 * x^18 + -1.4311e-42 * x^17 + 0 * x^16 + 0 * x^15 + 3.48015e-38 * x^14 + -1.0001e-36 * x^13 + 0 * x^12 + 0 * x^11 + 0 * x^10 + 0 * x^9 + 0 * x^8 + 0 * x^7 + 0 * x^6 + 0 * x^5 + 0 * x^4 + 0 * x^3 + 0 * x^2 + 0 * x^1 + 255
+
+Error: 1.68188e-17
+################################################################################
+################################################################################
+Processing completed for diver.raw
+User time: 59.304342
+System time: 10.304584
+Processing used 5 processing threads and 1 printing thread.
+26 candidates were found.
+The best candidate is plotted above.
+################################################################################
+
+~~~~
+\par The analysis of the JPG file resulted in a best fit curve that was simply a straight line with the equation y = 0.  Surely this shows order, but perhaps is the least interesting. 
+~~~~
+        1   0 O                                                                 
+        2   0 O                                                                 
+        3   0 O                                                                 
+        4   0 O                                                                 
+        5   0 O                                                                 
+        6   0 O                                                                 
+        7   0 O                                                                 
+        8   0 O                                                                 
+        9   0 O                                                                 
+       10   0 O                                                                 
+       11   0 O                                                                 
+       12   0 O                                                                 
+       13   0 O                                                                 
+       14   0 O                                                                 
+       15   0 O                                                                 
+       16   0 O                                                                 
+       17   0 O                                                                 
+       18   0 O                                                                 
+       19   0 O                                                                 
+       20   0 O                                                                 
+       21   0 O                                                                 
+       22   0 O                                                                 
+       23   0 O                                                                 
+       24   0 O                                                                 
+       25   0 O                                                                 
+       26   0 O                                                                 
+       27   0 O                                                                 
+       28   0 O                                                                 
+       29   0 O                                                                 
+       30   0 O                                                                 
+       31   0 O                                                                 
+################################################################################
+Best polynomial:
+y = 0 * x^20 + 0 * x^19 + 0 * x^18 + 0 * x^17 + 0 * x^16 + 0 * x^15 + 0 * x^14 + 0 * x^13 + 0 * x^12 + 0 * x^11 + 0 * x^10 + 0 * x^9 + 0 * x^8 + 0 * x^7 + 0 * x^6 + 0 * x^5 + 0 * x^4 + 0 * x^3 + 0 * x^2 + 0 * x^1 + 0
+
+Error: 0
+################################################################################
+################################################################################
+Processing completed for diver.jpg
+User time: 5.202088
+System time: 0.854372
+Processing used 5 processing threads and 1 printing thread.
+5 candidates were found.
+The best candidate is plotted above.
+################################################################################
+~~~~
+\par The analysis of the BMP file was similar to most of the other files.  The best fit turned out to be a straight line through y = 255.
+~~~~
+################################################################################
+        0 255 ***************************************************************O  
+        1 255 ***************************************************************O  
+        2 255 ***************************************************************O  
+        3 255 ***************************************************************O  
+        4 255 ***************************************************************O  
+        5 255 ***************************************************************O  
+        6 255 ***************************************************************O  
+        7 255 ***************************************************************O  
+        8 255 ***************************************************************O  
+        9 255 ***************************************************************O  
+       10 255 ***************************************************************O  
+       11 255 ***************************************************************O  
+       12 255 ***************************************************************O  
+       13 255 ***************************************************************O  
+       14 255 ***************************************************************O  
+       15 255 ***************************************************************O  
+       16 255 ***************************************************************O  
+       17 255 ***************************************************************O  
+       18 255 ***************************************************************O  
+       19 255 ***************************************************************O  
+       20 255 ***************************************************************O  
+       21 255 ***************************************************************O  
+       22 255 ***************************************************************O  
+       23 255 ***************************************************************O  
+       24 255 ***************************************************************O  
+       25 255 ***************************************************************O  
+       26 255 ***************************************************************O  
+       27 255 ***************************************************************O  
+       28 255 ***************************************************************O  
+       29 255 ***************************************************************O  
+       30 255 ***************************************************************O  
+       31 255 ***************************************************************O  
+################################################################################
+Best polynomial:
+y = 5.72849e-47 * x^20 + 0 * x^19 + 4.90777e-44 * x^18 + -1.4311e-42 * x^17 + 0 * x^16 + 0 * x^15 + 3.48015e-38 * x^14 + -1.0001e-36 * x^13 + 0 * x^12 + 0 * x^11 + 0 * x^10 + 0 * x^9 + 0 * x^8 + 0 * x^7 + 0 * x^6 + 0 * x^5 + 0 * x^4 + 0 * x^3 + 0 * x^2 + 0 * x^1 + 255
+
+Error: 1.68188e-17
+################################################################################
+################################################################################
+Processing completed for diver.bmp
+User time: 56.471479
+System time: 9.679683
+Processing used 5 processing threads and 1 printing thread.
+27 candidates were found.
+The best candidate is plotted above.
+################################################################################
+~~~~
+\par For the GIF analysis, the results were more interesting than most filetypes.  It an clearly be seen that the best fit tries to mimic the curve of the data.  
+~~~~
+################################################################################
+        0 136 **********************************        O                       
+        1 120 ******************************             O                      
+        2 136 **********************************         O                      
+        3 152 **************************************     O                      
+        4 136 **********************************         O                      
+        5 152 **************************************     O                      
+        6 168 ****************************************** O                      
+        7 152 **************************************     O                      
+        8 168 ****************************************** O                      
+        9 184 *******************************************O**                    
+       10 168 ****************************************** O                      
+       11 184 *******************************************O**                    
+       12 200 *******************************************O******                
+       13 184 *******************************************O**                    
+       14 200 *******************************************O******                
+       15 216 *******************************************O**********            
+       16 200 *******************************************O******                
+       17 216 *******************************************O**********            
+       18 232 *******************************************O**************        
+       19 107 **************************                 O                      
+       20 155 **************************************     O                      
+       21 199 *******************************************O*****                 
+       22 127 *******************************            O                      
+       23 183 *******************************************O*                     
+       24 233 *******************************************O**************        
+       25 120 ******************************             O                      
+       26 172 *******************************************O                      
+       27 214 ******************************************O**********             
+       28 142 ***********************************       O                       
+       29 181 *****************************************O***                     
+       30 215 ****************************************O************             
+       31 136 **********************************     O                          
+################################################################################
+Best polynomial:
+y = -1.03197e-30 * x^20 + -3.20879e-29 * x^19 + -9.94446e-28 * x^18 + -3.06981e-26 * x^17 + -9.43158e-25 * x^16 + -2.8812e-23 * x^15 + -8.74135e-22 * x^14 + -2.63083e-20 * x^13 + -7.8486e-19 * x^12 + -2.32282e-17 * x^11 + -6.85326e-16 * x^10 + -2.04487e-14 * x^9 + -6.36941e-13 * x^8 + -2.18076e-11 * x^7 + -8.60011e-10 * x^6 + -3.87974e-08 * x^5 + -1.85855e-06 * x^4 + -8.27721e-05 * x^3 + -0.00220804 * x^2 + 0.268049 * x^1 + 171.5
+
+Error: 34.0906
+################################################################################
+################################################################################
+Processing completed for diver.gif
+User time: 9.587693
+System time: 1.649882
+Processing used 5 processing threads and 1 printing thread.
+4 candidates were found.
+The best candidate is plotted above.
+################################################################################
+~~~~
+\par For the diver.nz file, the best fit was essentially a straight line.
+~~~~
+################################################################################
+        0 255 ***************************************************************O  
+        1 255 ***************************************************************O  
+        2 255 ***************************************************************O  
+        3 255 ***************************************************************O  
+        4 255 ***************************************************************O  
+        5 255 ***************************************************************O  
+        6 255 ***************************************************************O  
+        7 255 ***************************************************************O  
+        8 255 ***************************************************************O  
+        9 255 ***************************************************************O  
+       10 255 ***************************************************************O  
+       11 255 ***************************************************************O  
+       12 255 ***************************************************************O  
+       13 255 ***************************************************************O  
+       14 255 ***************************************************************O  
+       15 255 ***************************************************************O  
+       16 255 ***************************************************************O  
+       17 255 ***************************************************************O  
+       18 255 ***************************************************************O  
+       19 255 ***************************************************************O  
+       20 255 ***************************************************************O  
+       21 255 ***************************************************************O  
+       22 255 ***************************************************************O  
+       23 255 ***************************************************************O  
+       24 255 ***************************************************************O  
+       25 255 ***************************************************************O  
+       26 255 ***************************************************************O  
+       27 255 ***************************************************************O  
+       28 255 ***************************************************************O  
+       29 255 ***************************************************************O  
+       30 255 ***************************************************************O  
+       31 255 ***************************************************************O  
+################################################################################
+Best polynomial:
+y = 5.72849e-47 * x^20 + 0 * x^19 + 4.90777e-44 * x^18 + -1.4311e-42 * x^17 + 0 * x^16 + 0 * x^15 + 3.48015e-38 * x^14 + -1.0001e-36 * x^13 + 0 * x^12 + 0 * x^11 + 0 * x^10 + 0 * x^9 + 0 * x^8 + 0 * x^7 + 0 * x^6 + 0 * x^5 + 0 * x^4 + 0 * x^3 + 0 * x^2 + 0 * x^1 + 255
+
+Error: 1.68188e-17
+################################################################################
+################################################################################
+Processing completed for diver.nz
+User time: 61.419652
+System time: 10.421154
+Processing used 5 processing threads and 1 printing thread.
+25 candidates were found.
+The best candidate is plotted above.
+################################################################################
+~~~~
+\section Conclusion
+\par This was an interesting project, and I believe that I created a program that works as intended. I was able to successfully find order in files of different types.  I believe that with a stream of readings from a receiver, I could use some of these techniques to design a program to search out the order.
+*/

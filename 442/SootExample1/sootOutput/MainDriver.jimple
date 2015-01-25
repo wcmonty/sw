@@ -1,0 +1,42 @@
+public class MainDriver extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        MainDriver r0;
+
+        r0 := @this: MainDriver;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        soot.Pack r1;
+        InvokeStaticInstrumenter $r2;
+        int $i0;
+        java.io.PrintStream $r3;
+        soot.PackManager $r4;
+        soot.Transform $r5;
+
+        r0 := @parameter0: java.lang.String[];
+        $i0 = lengthof r0;
+        if $i0 != 0 goto label0;
+
+        $r3 = <java.lang.System: java.io.PrintStream err>;
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("Usage: java MainDriver [options] classname");
+        staticinvoke <java.lang.System: void exit(int)>(0);
+
+     label0:
+        $r4 = staticinvoke <soot.PackManager: soot.PackManager v()>();
+        r1 = virtualinvoke $r4.<soot.PackManager: soot.Pack getPack(java.lang.String)>("jtp");
+        $r5 = new soot.Transform;
+        $r2 = new InvokeStaticInstrumenter;
+        specialinvoke $r2.<InvokeStaticInstrumenter: void <init>()>();
+        specialinvoke $r5.<soot.Transform: void <init>(java.lang.String,soot.Transformer)>("jtp.instrumenter", $r2);
+        virtualinvoke r1.<soot.Pack: void add(soot.Transform)>($r5);
+        staticinvoke <soot.Main: void main(java.lang.String[])>(r0);
+        return;
+    }
+}

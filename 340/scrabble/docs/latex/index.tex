@@ -1,0 +1,28 @@
+\hypertarget{index_About}{}\section{About}\label{index_About}
+\begin{DoxyParagraph}{C\-S 340 Software Design}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Fall 2013}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{University of Illinois at Chicago}
+
+\end{DoxyParagraph}
+\hypertarget{index_Background}{}\section{Background}\label{index_Background}
+\begin{DoxyParagraph}{Scrabble is a classic board game for 2 -\/ 4 players. The board is composed of a square grid of spaces that players place tiles containing letters on. Initially, there is a pool of 100 letters including two blank tiles that serve as wildcards. Each tile has a value associated with it, from 0 for wildcards to 10 for the letters 'z' and 'q'. On each play, a player can play one word horizontally or vertically. If the word creates additional sequences of letters, every generated sequence must also be a word.}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{To score a play, the player multiplies the value of any letter multipliers with values on the tiles. All of these are summed and then the word is multiplied by any word multipliers. This is repeated for all new words formed and the results are summed up. It should be noted that multipliers are only allowed on the turn when a tile is placed on it. For subsequent moves, the tiles are ignored.}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Play starts with a player placing a word made up of at least 2 letters on the board, covering the middle space. After the play is over, the player tallies his or her score and refills used letters in his or her rack. Then play is transferred to the next player. At any time, the player may elect (or be forced to due to no valid plays on the board) to pass the turn to the next player. In this case, the player gets a score of 0 for the turn. Play progresses until there are no more valid moves, a player runs out of tiles, or a player concedes a game. In the first two cases, the remaining letters are deducted at face value from the players' scores and a winner is declared.}
+
+\end{DoxyParagraph}
+\hypertarget{index_Implementation}{}\section{Implementation}\label{index_Implementation}
+\begin{DoxyParagraph}{We implemented a subset of this game using Q\-T within the Q\-T\-Creator development environment. We first developed U\-M\-L diagrams to assist in creating stubs for all of the desired classes. Once the classes were stubbed out, we proceeded to implement the game in a bottom up approach. Once we had the basic framework of the game in place, we laid the U\-I on top of the base classes. As we had very little experience with U\-I development, our initial results were poor. We spent some time learning about Q\-T and were soon able to put together a prototype for the game. If we were to implement this now, we would probably start from the U\-I and build our classed from there, but obviously this was a learning process. While the U\-I and models were being developed, we also implemented a Trie data structure that we used to implement a dictionary. With this in place we developed a simple, but effective A\-I. Tieing together the U\-I and the A\-I was trying. Looking back, we should have abstracted some of the interfaces a bit more, because we ended up with higher coupling than we would have liked.}
+
+\end{DoxyParagraph}
+\hypertarget{index_Results}{}\section{Results}\label{index_Results}
+\begin{DoxyParagraph}{We are still actively developing, but we have a definitely playable game with a tough, but beatable A\-I.}
+
+\end{DoxyParagraph}

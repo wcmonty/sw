@@ -1,0 +1,50 @@
+f = @(t) (exp(3 - 3 .^ t))
+
+f = 
+
+    @(t)(exp(3-3.^t))
+
+f(t)
+
+ans =
+
+    7.3891    6.5790    5.7792    5.0009    4.2553    3.5536    2.9061    2.3218    1.8072    1.3663    1.0000
+
+diary off
+f = @(t) (exp(3 - (3 .* t)))
+
+f = 
+
+    @(t)(exp(3-(3.*t)))
+
+[t9, w9] = fun72C2b([0 1], [exp(3) 1], 9)
+
+t9 =
+
+         0    0.1000    0.2000    0.3000    0.4000    0.5000    0.6000    0.7000    0.8000    0.9000    1.0000
+
+
+w9 =
+
+   20.0855   15.8582   12.4865    9.7927    7.6353    5.9014    4.5013    3.3632    2.4295    1.6542    1.0000
+
+y9 = f(t);
+err9 = y9 - w9;
+plot(t9, w9, '*', t9, y9, '-')
+[t19, w19] = fun72C2b([0 1], [exp(3) 1], 19);
+y19 = f(t19);
+plot(t19, w19, '*', t19, y19, '-')
+[t29, w29] = fun72C2b([0 1], [exp(3) 1], 29);
+y29 = f(t29);
+plot(t29, w29, '*', t29, y29, '-')
+semilogx(t9, err9, 'x', t19, err19, 'o', t29, err29, '*');
+{Undefined function or variable 'err19'.
+} 
+err19 = y19 - w19;
+err29 = y29 - w19;
+{Error using <a href="matlab:helpUtils.errorDocCallback('minus')" style="font-weight:bold"> - </a>
+Matrix dimensions must agree.
+} 
+err29 = y29 - w29;
+semilogx(t9, err9, 'x', t19, err19, 'o', t29, err29, '*');
+diary off

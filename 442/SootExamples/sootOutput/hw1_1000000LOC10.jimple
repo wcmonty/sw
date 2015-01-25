@@ -1,0 +1,2574 @@
+public class hw1_1000000LOC10 extends hw1_1000000LOC23 implements hw1_1000000LOCInterface7
+{
+    static float[] f0;
+    static char[] f1;
+
+    static void <clinit>()
+    {
+        float[] temp$0;
+        char[] temp$1;
+
+        temp$0 = newarray (float)[21];
+        <hw1_1000000LOC10: float[] f0> = temp$0;
+        temp$1 = newarray (char)[10];
+        <hw1_1000000LOC10: char[] f1> = temp$1;
+        return;
+    }
+
+    public char hw1_1000000LOCInterface7Method0(long, double, byte)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        long var0, temp$1, temp$2, temp$3, temp$4;
+        double var1;
+        byte var2, temp$9;
+        int temp$5, temp$6, temp$7, temp$8;
+        char temp$10;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: long;
+        var1 := @parameter1: double;
+        var2 := @parameter2: byte;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var0 * 92L;
+        temp$2 = var0 / 52L;
+        temp$3 = var0 - 60L;
+        temp$4 = temp$2 - temp$3;
+        temp$5 = temp$1 cmp temp$4;
+        if temp$5 != 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$6 = (int) var2;
+        temp$7 = temp$6 % 90;
+        temp$8 = temp$7 % 29;
+        temp$9 = (byte) temp$8;
+        var2 = temp$9;
+        goto label2;
+
+     label1:
+        nop;
+
+     label2:
+        nop;
+        temp$10 = 108;
+        return temp$10;
+    }
+
+    public double hw1_1000000LOCInterface7Method1(java.lang.String, double, long, double, java.lang.String, hw1_1000000LOC31, byte, double)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        java.lang.String var0, var4, temp$16, temp$19, temp$23, temp$25, temp$26, temp$28, temp$29, temp$30, temp$31;
+        double var1, var3, var7;
+        long var2;
+        hw1_1000000LOC31 var5;
+        byte var6;
+        int temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13;
+        java.lang.StringBuffer temp$14, temp$15, temp$17, temp$18, temp$20, temp$21, temp$22, temp$24, temp$27;
+        java.io.PrintStream temp$32;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: double;
+        var2 := @parameter2: long;
+        var3 := @parameter3: double;
+        var4 := @parameter4: java.lang.String;
+        var5 := @parameter5: hw1_1000000LOC31;
+        var6 := @parameter6: byte;
+        var7 := @parameter7: double;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var6;
+        temp$2 = temp$1 * 30;
+        temp$3 = (int) var6;
+        temp$4 = temp$3 + 28;
+        temp$5 = temp$2 * temp$4;
+        temp$6 = (int) var6;
+        temp$7 = (int) var6;
+        temp$8 = temp$7 * 20;
+        temp$9 = temp$6 + -3;
+        temp$10 = temp$9 * temp$8;
+        temp$11 = temp$5 * temp$10;
+        temp$12 = (int) var6;
+        temp$13 = temp$12 - -62;
+        if temp$11 >= temp$13 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$14 = new java.lang.StringBuffer;
+        specialinvoke temp$14.<java.lang.StringBuffer: void <init>()>();
+        temp$15 = new java.lang.StringBuffer;
+        specialinvoke temp$15.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var4);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        temp$16 = virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$16);
+        temp$17 = new java.lang.StringBuffer;
+        specialinvoke temp$17.<java.lang.StringBuffer: void <init>()>();
+        temp$18 = new java.lang.StringBuffer;
+        specialinvoke temp$18.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var4);
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("estbxvjjqssdbpfktflukwqlbnlpadnqhpgvzydgfdgbiyyujpsjoookyuvvqconrtyvmkgej");
+        temp$19 = virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$17.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$19);
+        temp$20 = new java.lang.StringBuffer;
+        specialinvoke temp$20.<java.lang.StringBuffer: void <init>()>();
+        temp$21 = new java.lang.StringBuffer;
+        specialinvoke temp$21.<java.lang.StringBuffer: void <init>()>();
+        temp$22 = new java.lang.StringBuffer;
+        specialinvoke temp$22.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$22.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$22.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("ubohaujlacugjaisapdppzyajxztyzpdnntggolxkkiupdhsvxayngudkvdqoyozucisnmvuizgmbwgmcxow");
+        temp$23 = virtualinvoke temp$22.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$21.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$23);
+        temp$24 = new java.lang.StringBuffer;
+        specialinvoke temp$24.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var4);
+        temp$25 = virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$21.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$25);
+        temp$26 = virtualinvoke temp$21.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$20.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$26);
+        temp$27 = new java.lang.StringBuffer;
+        specialinvoke temp$27.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$27.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$27.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("uouykkxpyrxnjmfzrzgtakdirpupcjmjbphyqbzcfwbyoeeouqchwsspbuitunndwrfbiqkfzavgxlbzuqgwiwf");
+        temp$28 = virtualinvoke temp$27.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$20.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$28);
+        temp$29 = virtualinvoke temp$20.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$17.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$29);
+        temp$30 = virtualinvoke temp$17.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$30);
+        temp$31 = virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.String toString()>();
+        var4 = temp$31;
+        goto label2;
+
+     label1:
+        nop;
+        temp$32 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$32.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOCInterface7Method1- LineInMethod: 6");
+
+     label2:
+        nop;
+        return var3;
+    }
+
+    public java.lang.Object hw1_1000000LOCInterface7Method2(java.lang.String, hw1_1000000LOC32, float)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        java.lang.String var0, temp$2, temp$4, temp$7, temp$9, temp$10;
+        hw1_1000000LOC32 var1;
+        float var2;
+        java.lang.StringBuffer temp$1, temp$3, temp$5, temp$6, temp$8;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: java.lang.String;
+        var1 := @parameter1: hw1_1000000LOC32;
+        var2 := @parameter2: float;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = new java.lang.StringBuffer;
+        specialinvoke temp$1.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("wfvqijsntjfadcffutdwenudigtauzyjtluarrgubihttaghaexrqfnebdmpdswzacuamrnkxvgfcxletijybtofiwgpg");
+        temp$2 = virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.String toString()>();
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("ocgabwppdiqzqvllkcjnmxdtumw");
+        temp$4 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        if temp$2 != temp$4 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$5 = new java.lang.StringBuffer;
+        specialinvoke temp$5.<java.lang.StringBuffer: void <init>()>();
+        temp$6 = new java.lang.StringBuffer;
+        specialinvoke temp$6.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("hyldbhwdlthygw");
+        temp$7 = virtualinvoke temp$6.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$7);
+        temp$8 = new java.lang.StringBuffer;
+        specialinvoke temp$8.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$8.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var0);
+        virtualinvoke temp$8.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("twbjxbubcxktfnqvjorrdgtwrjgsosodtfcwutycqduqosgevknxrkdtokxsoqgyppvxyucgzocfauqdjfzrffggsznsvviuwcyes");
+        temp$9 = virtualinvoke temp$8.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$9);
+        temp$10 = virtualinvoke temp$5.<java.lang.StringBuffer: java.lang.String toString()>();
+        var0 = temp$10;
+
+     label1:
+        nop;
+        return var1;
+    }
+
+    public static long hw1_1000000LOC23method8(double, long, long)
+    {
+        double var0, temp$1, temp$2, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9;
+        long var1, var2, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$3, temp$10;
+
+        var0 := @parameter0: double;
+        var1 := @parameter1: long;
+        var2 := @parameter2: long;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var0 - 0.890082781572765;
+        temp$2 = var0 * 0.6486131726189351;
+        temp$3 = temp$1 cmpg temp$2;
+        if temp$3 >= 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$4 = var0 * 0.46620824124186755;
+        temp$5 = var0 % 0.17590587541093594;
+        temp$6 = temp$4 - temp$5;
+        temp$7 = var0 - 0.47175174737631365;
+        temp$8 = var0 / 0.7603447227933379;
+        temp$9 = temp$7 - temp$8;
+        temp$10 = temp$6 cmpg temp$9;
+        if temp$10 >= 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+        goto label3;
+
+     label2:
+        nop;
+        temp$11 = var2 % 4L;
+        temp$12 = var2;
+        temp$13 = temp$12 + var1;
+        temp$14 = temp$13 / 67L;
+        temp$15 = var1 * 23L;
+        temp$16 = temp$14 - temp$15;
+        temp$17 = var1 * var2;
+        temp$18 = temp$16 - temp$17;
+        temp$19 = var2 / 21L;
+        temp$20 = temp$18 - temp$19;
+        temp$21 = temp$11 * temp$20;
+        var2 = temp$21;
+
+     label3:
+        nop;
+        return var1;
+    }
+
+    public byte hw1_1000000LOC10method1(byte, int, hw1_1000000LOC31)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        byte var0;
+        int var1, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6;
+        hw1_1000000LOC31 var2;
+        hw1_1000000LOC21 temp$7;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: byte;
+        var1 := @parameter1: int;
+        var2 := @parameter2: hw1_1000000LOC31;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var1 * 96;
+        temp$2 = var1 * 94;
+        temp$3 = temp$2;
+        temp$4 = var1 - 60;
+        temp$5 = temp$3 + temp$4;
+        temp$6 = temp$5 % 66;
+        if temp$1 != temp$6 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$7 = new hw1_1000000LOC21;
+        specialinvoke temp$7.<hw1_1000000LOC21: void <init>()>();
+        var2 = temp$7;
+
+     label1:
+        nop;
+        return var0;
+    }
+
+    public static java.lang.String hw1_1000000LOC10method2(int, int, byte, hw1_1000000LOC9, char, java.lang.String, double)
+    {
+        int var0, var1, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15;
+        byte var2;
+        hw1_1000000LOC9 var3, temp$16;
+        char var4;
+        java.lang.String var5;
+        double var6;
+        hw1_1000000LOC10 classObj, temp$0;
+
+        var0 := @parameter0: int;
+        var1 := @parameter1: int;
+        var2 := @parameter2: byte;
+        var3 := @parameter3: hw1_1000000LOC9;
+        var4 := @parameter4: char;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: double;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var0 - 37;
+        temp$2 = var0 - 32;
+        temp$3 = temp$2;
+        temp$4 = var0 / 42;
+        temp$5 = temp$3 + temp$4;
+        if temp$1 > temp$5 goto label0;
+
+        goto label3;
+
+     label0:
+        nop;
+        temp$6 = var1 - 76;
+        temp$7 = var0 - 31;
+        temp$8 = temp$7;
+        temp$9 = var0;
+        temp$10 = var1 / 15;
+        temp$11 = temp$9 + 79;
+        temp$12 = temp$11 - temp$10;
+        temp$13 = temp$8 + temp$12;
+        temp$14 = temp$6 - temp$13;
+        temp$15 = var1 % 84;
+        if temp$14 <= temp$15 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$16 = new hw1_1000000LOC9;
+        specialinvoke temp$16.<hw1_1000000LOC9: void <init>()>();
+        var3 = temp$16;
+
+     label2:
+        nop;
+
+     label3:
+        nop;
+        return var5;
+    }
+
+    public char hw1_1000000LOC10method3(hw1_1000000LOC19, char, short)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        hw1_1000000LOC19 var0;
+        char var1;
+        short var2;
+        int temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18;
+        float temp$19;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: hw1_1000000LOC19;
+        var1 := @parameter1: char;
+        var2 := @parameter2: short;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var2;
+        temp$2 = temp$1 * 29483;
+        temp$3 = (int) var2;
+        temp$4 = temp$3 * 6614;
+        temp$5 = temp$2 * temp$4;
+        temp$6 = (int) var2;
+        temp$7 = temp$6 / 5137;
+        if temp$5 >= temp$7 goto label0;
+
+        goto label4;
+
+     label0:
+        nop;
+        temp$8 = (int) var2;
+        temp$9 = temp$8 * 31248;
+        temp$10 = (int) var2;
+        temp$11 = temp$10 % 792;
+        temp$12 = (int) var2;
+        temp$13 = temp$12 + 15477;
+        temp$14 = temp$11 * temp$13;
+        if temp$9 != temp$14 goto label1;
+
+        goto label4;
+
+     label1:
+        nop;
+        temp$15 = (int) var1;
+        temp$16 = temp$15 - 107;
+        temp$17 = (int) var1;
+        temp$18 = temp$17 % 110;
+        if temp$16 <= temp$18 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        temp$19 = staticinvoke <hw1_1000000LOC19: float hw1_1000000LOC19method2(hw1_1000000LOC0,byte,int,char,byte)>(null, 38, 25, var1, 29);
+
+     label3:
+        nop;
+
+     label4:
+        nop;
+        return var1;
+    }
+
+    public java.lang.String hw1_1000000LOC32method21(byte, double, double, float, byte, short, int)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        byte var0, var4;
+        double var1, var2;
+        float var3;
+        short var5;
+        int var6, i, temp$2, temp$3;
+        java.io.PrintStream temp$1;
+        java.lang.String temp$4;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: byte;
+        var1 := @parameter1: double;
+        var2 := @parameter2: double;
+        var3 := @parameter3: float;
+        var4 := @parameter4: byte;
+        var5 := @parameter5: short;
+        var6 := @parameter6: int;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 4 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC32method21- LineInMethod: 3");
+        nop;
+        temp$2 = i;
+        temp$3 = temp$2 + 1;
+        i = temp$3;
+        goto label0;
+
+     label2:
+        nop;
+        temp$4 = "jufwfynfjopniyjsofzhdiapbicwrzxmonunahyvslwpqugtxjtzjcuajouqmhdjggmypdxrfuefypqijmphxyl";
+        return temp$4;
+    }
+
+    public float hw1_1000000LOC10method5(char, float, int, java.lang.String, long, java.lang.String, double)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        char var0;
+        float var1;
+        int var2, i, temp$4, temp$6, temp$7;
+        java.lang.String var3, var5;
+        long var4, temp$1, temp$2, temp$3;
+        double var6;
+        java.io.PrintStream temp$5;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: char;
+        var1 := @parameter1: float;
+        var2 := @parameter2: int;
+        var3 := @parameter3: java.lang.String;
+        var4 := @parameter4: long;
+        var5 := @parameter5: java.lang.String;
+        var6 := @parameter6: double;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 2 goto label1;
+
+        goto label4;
+
+     label1:
+        nop;
+        temp$1 = var4;
+        temp$2 = var4 * 48L;
+        temp$3 = temp$1 + 99L;
+        temp$4 = temp$3 cmp temp$2;
+        if temp$4 != 0 goto label3;
+
+        goto label2;
+
+     label2:
+        nop;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method5- LineInMethod: 5");
+
+     label3:
+        nop;
+        nop;
+        temp$6 = i;
+        temp$7 = temp$6 + 1;
+        i = temp$7;
+        goto label0;
+
+     label4:
+        nop;
+        return var1;
+    }
+
+    public char hw1_1000000LOC23method25(float, long, char)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        float var0;
+        long var1;
+        char var2;
+        int i, temp$2, temp$3;
+        java.io.PrintStream temp$1;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: float;
+        var1 := @parameter1: long;
+        var2 := @parameter2: char;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 6 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC23method25- LineInMethod: 3");
+        nop;
+        temp$2 = i;
+        temp$3 = temp$2 + 1;
+        i = temp$3;
+        goto label0;
+
+     label2:
+        nop;
+        return var2;
+    }
+
+    public static short hw1_1000000LOC32method2(hw1_1000000LOC1, hw1_1000000LOC19, float, int, int, double, char)
+    {
+        hw1_1000000LOC1 var0;
+        hw1_1000000LOC19 var1;
+        float var2, temp$120, temp$121, temp$122, temp$123, temp$124;
+        int var3, var4, i, temp$1, temp$2, temp$4, temp$6, temp$8, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27, temp$28, temp$29, temp$30, temp$31, temp$32, temp$33, temp$34, temp$35, temp$36, temp$37, temp$38, temp$39, temp$40, temp$41, temp$42, temp$43, temp$44, temp$45, temp$47, temp$50, temp$52, temp$53, temp$54, temp$56, temp$59, temp$61, temp$62, temp$63, temp$64, temp$65, temp$66, temp$67, temp$68, temp$69, temp$70, temp$71, temp$72, temp$73, temp$74, temp$75, temp$76, temp$77, temp$78, temp$79, temp$80, temp$81, temp$82, temp$83, temp$84, temp$85, temp$86, temp$87, temp$88, temp$89, temp$90, temp$91, temp$92, temp$93, temp$94, temp$95, temp$96, temp$97, temp$98, temp$99, temp$100, temp$101, temp$102, temp$103, temp$104, temp$105, temp$106, temp$107, temp$108, temp$109, temp$110, temp$111, temp$112, temp$113, temp$114, temp$115, temp$117, temp$119, temp$125, temp$126, temp$127, temp$128, temp$129, temp$130, temp$131, temp$132, temp$133, temp$134, temp$136, temp$137;
+        double var5;
+        char var6, temp$5, temp$9, temp$48, temp$51, temp$57, temp$60;
+        hw1_1000000LOC10 classObj, temp$0;
+        char[] temp$3, temp$7, temp$46, temp$49, temp$55, temp$58;
+        float[] temp$116, temp$118;
+        java.io.PrintStream temp$135;
+        short temp$138;
+
+        var0 := @parameter0: hw1_1000000LOC1;
+        var1 := @parameter1: hw1_1000000LOC19;
+        var2 := @parameter2: float;
+        var3 := @parameter3: int;
+        var4 := @parameter4: int;
+        var5 := @parameter5: double;
+        var6 := @parameter6: char;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 4 goto label1;
+
+        goto label21;
+
+     label1:
+        nop;
+        temp$1 = (int) var6;
+        temp$2 = temp$1 * 112;
+        temp$3 = <hw1_1000000LOC10: char[] f1>;
+        temp$4 = 4;
+        temp$5 = temp$3[temp$4];
+        temp$6 = (int) temp$5;
+        temp$7 = <hw1_1000000LOC10: char[] f1>;
+        temp$8 = 7;
+        temp$9 = temp$7[temp$8];
+        temp$10 = (int) temp$9;
+        temp$11 = temp$6 + temp$10;
+        if temp$2 > temp$11 goto label2;
+
+        goto label20;
+
+     label2:
+        nop;
+        temp$12 = (int) var6;
+        temp$13 = temp$12 / 111;
+        temp$14 = (int) var6;
+        temp$15 = temp$14 * 113;
+        if temp$13 < temp$15 goto label3;
+
+        goto label19;
+
+     label3:
+        nop;
+        temp$16 = (int) var6;
+        temp$17 = temp$16 % 112;
+        temp$18 = (int) var6;
+        temp$19 = temp$18 - 103;
+        temp$20 = temp$19;
+        temp$21 = (int) var6;
+        temp$22 = temp$21 - 106;
+        temp$23 = temp$22;
+        temp$24 = (int) var6;
+        temp$25 = temp$24 / 122;
+        temp$26 = (int) var6;
+        temp$27 = temp$26 % 115;
+        temp$28 = temp$23 + temp$25;
+        temp$29 = temp$28 * temp$27;
+        temp$30 = temp$20 + temp$29;
+        if temp$17 == temp$30 goto label5;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$31 = (int) var6;
+        temp$32 = temp$31 - 102;
+        temp$33 = (int) var6;
+        temp$34 = temp$33 / 117;
+        temp$35 = temp$32 - temp$34;
+        temp$36 = temp$35 / 120;
+        temp$37 = (int) var6;
+        temp$38 = temp$37 + 114;
+        temp$39 = temp$36 - temp$38;
+        temp$40 = (int) var6;
+        temp$41 = temp$40 * 106;
+        if temp$39 >= temp$41 goto label5;
+
+        goto label6;
+
+     label5:
+        nop;
+        temp$42 = (int) var6;
+        temp$43 = temp$42 % 105;
+        temp$44 = (int) var6;
+        temp$45 = temp$44 - 114;
+        if temp$43 < temp$45 goto label9;
+
+        goto label6;
+
+     label6:
+        nop;
+        temp$46 = <hw1_1000000LOC10: char[] f1>;
+        temp$47 = 0;
+        temp$48 = temp$46[temp$47];
+        temp$49 = <hw1_1000000LOC10: char[] f1>;
+        temp$50 = 6;
+        temp$51 = temp$49[temp$50];
+        temp$52 = (int) temp$48;
+        temp$53 = (int) temp$51;
+        temp$54 = temp$52 * temp$53;
+        temp$55 = <hw1_1000000LOC10: char[] f1>;
+        temp$56 = 3;
+        temp$57 = temp$55[temp$56];
+        temp$58 = <hw1_1000000LOC10: char[] f1>;
+        temp$59 = 3;
+        temp$60 = temp$58[temp$59];
+        temp$61 = (int) temp$57;
+        temp$62 = (int) temp$60;
+        temp$63 = temp$61 * temp$62;
+        if temp$54 <= temp$63 goto label9;
+
+        goto label7;
+
+     label7:
+        nop;
+        temp$64 = (int) var6;
+        temp$65 = temp$64 - 117;
+        temp$66 = temp$65 % 111;
+        temp$67 = (int) var6;
+        temp$68 = temp$67 % 122;
+        temp$69 = (int) var6;
+        temp$70 = (int) var6;
+        temp$71 = temp$69 + 110;
+        temp$72 = temp$70 + 117;
+        temp$73 = temp$71 * temp$72;
+        temp$74 = temp$68 - temp$73;
+        if temp$66 >= temp$74 goto label8;
+
+        goto label19;
+
+     label8:
+        nop;
+        temp$75 = (int) var6;
+        temp$76 = temp$75 * 121;
+        temp$77 = (int) var6;
+        temp$78 = temp$77 + 116;
+        temp$79 = temp$78 % 121;
+        if temp$76 < temp$79 goto label9;
+
+        goto label19;
+
+     label9:
+        nop;
+        temp$80 = (int) var6;
+        temp$81 = temp$80 - 121;
+        temp$82 = (int) var6;
+        temp$83 = temp$82 - 106;
+        temp$84 = temp$81 - temp$83;
+        temp$85 = temp$84;
+        temp$86 = (int) var6;
+        temp$87 = temp$86 * 99;
+        temp$88 = (int) var6;
+        temp$89 = temp$88 % 112;
+        temp$90 = (int) var6;
+        temp$91 = (int) var6;
+        temp$92 = temp$91 - 103;
+        temp$93 = temp$90 + 98;
+        temp$94 = temp$93 - temp$92;
+        temp$95 = (int) var6;
+        temp$96 = temp$95 * 120;
+        temp$97 = temp$96;
+        temp$98 = (int) var6;
+        temp$99 = (int) var6;
+        temp$100 = temp$99 - 106;
+        temp$101 = temp$98 + 110;
+        temp$102 = temp$101 * temp$100;
+        temp$103 = temp$97 + temp$102;
+        temp$104 = temp$94 * temp$103;
+        temp$105 = temp$89 - temp$104;
+        temp$106 = temp$85 + temp$87;
+        temp$107 = temp$106 - temp$105;
+        temp$108 = temp$107 % 113;
+        temp$109 = (int) var6;
+        temp$110 = temp$109 * 111;
+        if temp$108 < temp$110 goto label10;
+
+        goto label18;
+
+     label10:
+        nop;
+        temp$111 = (int) var6;
+        temp$112 = temp$111 * 100;
+        temp$113 = temp$112 % 109;
+        temp$114 = (int) var6;
+        temp$115 = temp$114 - 111;
+        if temp$113 < temp$115 goto label11;
+
+        goto label18;
+
+     label11:
+        nop;
+        temp$116 = <hw1_1000000LOC10: float[] f0>;
+        temp$117 = 16;
+        temp$118 = <hw1_1000000LOC10: float[] f0>;
+        temp$119 = 17;
+        temp$120 = temp$116[temp$117];
+        temp$121 = temp$118[temp$119];
+        temp$122 = temp$120 - temp$121;
+        temp$123 = var2;
+        temp$124 = temp$123 + 0.033059835F;
+        temp$125 = temp$122 cmpl temp$124;
+        if temp$125 <= 0 goto label17;
+
+        goto label12;
+
+     label12:
+        nop;
+        temp$126 = var3 - 50;
+        temp$127 = var3;
+        temp$128 = temp$127 + var4;
+        if temp$126 != temp$128 goto label13;
+
+        goto label16;
+
+     label13:
+        nop;
+        temp$129 = var3 - var4;
+        temp$130 = var4 - 89;
+        if temp$129 > temp$130 goto label14;
+
+        goto label16;
+
+     label14:
+        nop;
+        temp$131 = var3 % 5;
+        temp$132 = var3 / 80;
+        temp$133 = var3 * 33;
+        temp$134 = temp$132 * temp$133;
+        if temp$131 >= temp$134 goto label15;
+
+        goto label16;
+
+     label15:
+        nop;
+        temp$135 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$135.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC32method2- LineInMethod: 13");
+
+     label16:
+        nop;
+
+     label17:
+        nop;
+
+     label18:
+        nop;
+
+     label19:
+        nop;
+
+     label20:
+        nop;
+        nop;
+        temp$136 = i;
+        temp$137 = temp$136 + 1;
+        i = temp$137;
+        goto label0;
+
+     label21:
+        nop;
+        temp$138 = 16152;
+        return temp$138;
+    }
+
+    public static short hw1_1000000LOC10method8(double, hw1_1000000LOC16, hw1_1000000LOC34)
+    {
+        double var0, temp$1, temp$2, temp$3;
+        hw1_1000000LOC16 var1;
+        hw1_1000000LOC34 var2;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$4;
+        hw1_1000000LOC4 temp$5;
+        java.io.PrintStream temp$6;
+        short temp$7;
+
+        var0 := @parameter0: double;
+        var1 := @parameter1: hw1_1000000LOC16;
+        var2 := @parameter2: hw1_1000000LOC34;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var0;
+        temp$2 = var0 / 0.24512858464229115;
+        temp$3 = temp$1 + 0.7432566347201618;
+        temp$4 = temp$3 cmpg temp$2;
+        if temp$4 >= 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$5 = new hw1_1000000LOC4;
+        specialinvoke temp$5.<hw1_1000000LOC4: void <init>()>();
+        var2 = temp$5;
+        goto label2;
+
+     label1:
+        nop;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method8- LineInMethod: 6");
+
+     label2:
+        nop;
+        temp$7 = 14133;
+        return temp$7;
+    }
+
+    public static float hw1_1000000LOC10method9(char, char, float)
+    {
+        char var0, var1, temp$24, temp$27;
+        float var2, temp$52, temp$55, temp$58, temp$59, temp$60, temp$61, temp$62, temp$63, temp$64, temp$65, temp$66, temp$67, temp$68, temp$69, temp$70, temp$71, temp$72, temp$73, temp$74, temp$75, temp$76, temp$77, temp$78, temp$79, temp$80, temp$81;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21, temp$23, temp$26, temp$28, temp$29, temp$30, temp$31, temp$32, temp$33, temp$34, temp$35, temp$36, temp$37, temp$38, temp$39, temp$40, temp$41, temp$42, temp$43, temp$44, temp$45, temp$46, temp$47, temp$48, temp$49, temp$51, temp$54, temp$57;
+        char[] temp$22, temp$25;
+        float[] temp$50, temp$53, temp$56;
+
+        var0 := @parameter0: char;
+        var1 := @parameter1: char;
+        var2 := @parameter2: float;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var1;
+        temp$2 = (int) var0;
+        temp$3 = temp$1 + temp$2;
+        temp$4 = (int) var1;
+        temp$5 = temp$4 / 110;
+        temp$6 = (int) var0;
+        temp$7 = temp$6 % 100;
+        temp$8 = temp$3 + temp$5;
+        if temp$8 == temp$7 goto label0;
+
+        goto label5;
+
+     label0:
+        nop;
+        temp$9 = (int) var1;
+        temp$10 = (int) var0;
+        temp$11 = (int) var1;
+        temp$12 = (int) var0;
+        temp$13 = (int) var0;
+        temp$14 = (int) var1;
+        temp$15 = (int) var1;
+        temp$16 = temp$15 * 98;
+        temp$17 = temp$13 + temp$14;
+        temp$18 = temp$17 - temp$16;
+        temp$19 = temp$11 + temp$12;
+        temp$20 = temp$19 - temp$18;
+        temp$21 = temp$9 + temp$10;
+        if temp$21 == temp$20 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$22 = <hw1_1000000LOC10: char[] f1>;
+        temp$23 = 8;
+        temp$24 = temp$22[temp$23];
+        temp$25 = <hw1_1000000LOC10: char[] f1>;
+        temp$26 = 6;
+        temp$27 = temp$25[temp$26];
+        temp$28 = (int) temp$24;
+        temp$29 = (int) temp$27;
+        temp$30 = temp$28 - temp$29;
+        temp$31 = temp$30 / 114;
+        temp$32 = (int) var1;
+        temp$33 = (int) var0;
+        temp$34 = temp$32 + temp$33;
+        temp$35 = temp$34 / 111;
+        if temp$31 < temp$35 goto label2;
+
+        goto label5;
+
+     label2:
+        nop;
+        temp$36 = (int) var1;
+        temp$37 = (int) var0;
+        temp$38 = temp$36 * temp$37;
+        temp$39 = (int) var0;
+        temp$40 = (int) var1;
+        temp$41 = temp$39 - temp$40;
+        temp$42 = (int) var0;
+        temp$43 = temp$42 / 114;
+        temp$44 = temp$41 - temp$43;
+        if temp$38 >= temp$44 goto label4;
+
+        goto label3;
+
+     label3:
+        nop;
+        temp$45 = (int) var0;
+        temp$46 = temp$45 * 113;
+        temp$47 = (int) var0;
+        temp$48 = (int) var1;
+        temp$49 = temp$47 + temp$48;
+        if temp$46 != temp$49 goto label4;
+
+        goto label5;
+
+     label4:
+        nop;
+        temp$50 = <hw1_1000000LOC10: float[] f0>;
+        temp$51 = 17;
+        temp$52 = temp$50[temp$51];
+        temp$53 = <hw1_1000000LOC10: float[] f0>;
+        temp$54 = 3;
+        temp$55 = temp$53[temp$54];
+        temp$56 = <hw1_1000000LOC10: float[] f0>;
+        temp$57 = 8;
+        temp$58 = temp$56[temp$57];
+        temp$59 = temp$58 / 0.4750855F;
+        temp$60 = temp$52 + temp$55;
+        temp$61 = temp$60 - temp$59;
+        temp$62 = temp$61;
+        temp$63 = var2;
+        temp$64 = var2 * 0.4317854F;
+        temp$65 = temp$64;
+        temp$66 = var2 * 0.85099995F;
+        temp$67 = var2 % 0.55589837F;
+        temp$68 = temp$66 * temp$67;
+        temp$69 = temp$68;
+        temp$70 = var2 % 0.68364805F;
+        temp$71 = temp$69 + temp$70;
+        temp$72 = temp$71 % 0.7841414F;
+        temp$73 = var2 * 0.32003152F;
+        temp$74 = temp$72 * temp$73;
+        temp$75 = var2;
+        temp$76 = temp$75 + 0.041649997F;
+        temp$77 = temp$74 * temp$76;
+        temp$78 = temp$63 + 0.96022254F;
+        temp$79 = temp$65 + temp$77;
+        temp$80 = temp$78 - temp$79;
+        temp$81 = temp$62 + temp$80;
+        var2 = temp$81;
+
+     label5:
+        nop;
+        return var2;
+    }
+
+    public static char hw1_1000000LOC10method10(byte, char, long)
+    {
+        byte var0;
+        char var1, temp$11;
+        long var2, temp$5, temp$6, temp$7, temp$8, temp$9;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$1, temp$2, temp$3, temp$4, temp$10;
+
+        var0 := @parameter0: byte;
+        var1 := @parameter1: char;
+        var2 := @parameter2: long;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var0;
+        temp$2 = temp$1 - -83;
+        temp$3 = (int) var0;
+        temp$4 = temp$3 - 42;
+        if temp$2 > temp$4 goto label0;
+
+        goto label3;
+
+     label0:
+        nop;
+        temp$5 = var2 * 90L;
+        temp$6 = temp$5;
+        temp$7 = var2 / 56L;
+        temp$8 = var2 / 22L;
+        temp$9 = temp$6 + temp$7;
+        temp$10 = temp$9 cmp temp$8;
+        if temp$10 != 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$11 = 120;
+        var1 = temp$11;
+
+     label2:
+        nop;
+
+     label3:
+        nop;
+        return var1;
+    }
+
+    public static double hw1_1000000LOC10method11(byte, hw1_1000000LOC23, float)
+    {
+        byte var0;
+        hw1_1000000LOC23 var1;
+        float var2, temp$1, temp$2, temp$3, temp$8, temp$9, temp$10, temp$13, temp$14, temp$15, temp$16, temp$19, temp$20, temp$21, temp$24;
+        hw1_1000000LOC10 classObj, temp$0;
+        float[] temp$4, temp$6, temp$11, temp$17;
+        int temp$5, temp$7, temp$12, temp$18, temp$22;
+        java.io.PrintStream temp$23;
+        double temp$25;
+
+        var0 := @parameter0: byte;
+        var1 := @parameter1: hw1_1000000LOC23;
+        var2 := @parameter2: float;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var2;
+        temp$2 = temp$1 + 0.24882674F;
+        temp$3 = temp$2 % 0.47210777F;
+        temp$4 = <hw1_1000000LOC10: float[] f0>;
+        temp$5 = 6;
+        temp$6 = <hw1_1000000LOC10: float[] f0>;
+        temp$7 = 4;
+        temp$8 = temp$4[temp$5];
+        temp$9 = temp$6[temp$7];
+        temp$10 = temp$8 - temp$9;
+        temp$11 = <hw1_1000000LOC10: float[] f0>;
+        temp$12 = 19;
+        temp$13 = temp$11[temp$12];
+        temp$14 = temp$13 % 0.5493425F;
+        temp$15 = temp$10 * temp$14;
+        temp$16 = temp$15;
+        temp$17 = <hw1_1000000LOC10: float[] f0>;
+        temp$18 = 3;
+        temp$19 = temp$17[temp$18];
+        temp$20 = temp$19 / 0.12530929F;
+        temp$21 = temp$16 + temp$20;
+        temp$22 = temp$3 cmpl temp$21;
+        if temp$22 < 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$23 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$23.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method11- LineInMethod: 5");
+        goto label2;
+
+     label1:
+        nop;
+        temp$24 = staticinvoke <hw1_1000000LOC23: float hw1_1000000LOC23method2(byte,short,short,char,short,float,char,byte,char)>(var0, 22144, 18479, 108, 4013, var2, 99, var0, 118);
+        var2 = temp$24;
+
+     label2:
+        nop;
+        temp$25 = 0.8484333503058209;
+        return temp$25;
+    }
+
+    public char hw1_1000000LOC10method12(short, char, char)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        short var0;
+        char var1, var2, temp$28;
+        int temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: short;
+        var1 := @parameter1: char;
+        var2 := @parameter2: char;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var2;
+        temp$2 = (int) var1;
+        temp$3 = temp$1 * temp$2;
+        temp$4 = temp$3;
+        temp$5 = (int) var2;
+        temp$6 = temp$5 + 107;
+        temp$7 = (int) var2;
+        temp$8 = temp$7 / 108;
+        temp$9 = temp$4 + temp$6;
+        if temp$9 > temp$8 goto label0;
+
+        goto label2;
+
+     label0:
+        nop;
+        temp$10 = (int) var2;
+        temp$11 = (int) var1;
+        temp$12 = temp$10 * temp$11;
+        temp$13 = (int) var1;
+        temp$14 = temp$13 * 121;
+        temp$15 = temp$12 * temp$14;
+        temp$16 = temp$15 / 107;
+        temp$17 = (int) var1;
+        temp$18 = temp$17 - 101;
+        if temp$16 >= temp$18 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$19 = (int) var1;
+        temp$20 = temp$19 - 113;
+        temp$21 = (int) var1;
+        temp$22 = (int) var2;
+        temp$23 = temp$21 - temp$22;
+        temp$24 = temp$20 * temp$23;
+        temp$25 = (int) var1;
+        temp$26 = temp$25 / 119;
+        temp$27 = temp$24 * temp$26;
+        temp$28 = (char) temp$27;
+        var2 = temp$28;
+        goto label3;
+
+     label2:
+        nop;
+
+     label3:
+        nop;
+        return var2;
+    }
+
+    public long hw1_1000000LOC10method13(double, int, hw1_1000000LOC8, hw1_1000000LOC30, hw1_1000000LOC2, long)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        double var0, temp$1, temp$2, temp$3;
+        int var1, temp$4, temp$6;
+        hw1_1000000LOC8 var2, temp$5;
+        hw1_1000000LOC30 var3;
+        hw1_1000000LOC2 var4;
+        long var5;
+        char temp$7;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: double;
+        var1 := @parameter1: int;
+        var2 := @parameter2: hw1_1000000LOC8;
+        var3 := @parameter3: hw1_1000000LOC30;
+        var4 := @parameter4: hw1_1000000LOC2;
+        var5 := @parameter5: long;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var0 * 0.6891329178403417;
+        temp$2 = var0;
+        temp$3 = temp$2 + 0.6727372060219586;
+        temp$4 = temp$1 cmpg temp$3;
+        if temp$4 != 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$5 = new hw1_1000000LOC8;
+        specialinvoke temp$5.<hw1_1000000LOC8: void <init>()>();
+        var2 = temp$5;
+        temp$6 = virtualinvoke var2.<hw1_1000000LOC8: int hw1_1000000LOC4method27(hw1_1000000LOC9,short,long,float,char,java.lang.String)>(null, 28819, var5, 0.7093784F, 108, "emjxswgbquanzywnmeczhcnfuxivkbkvlrpfarufzibuyatzboaxhvzxdi");
+        var1 = temp$6;
+        goto label2;
+
+     label1:
+        nop;
+        temp$7 = staticinvoke <hw1_1000000LOC2: char hw1_1000000LOC2method0(byte,byte,char,short,char,java.lang.String,char,float)>(-25, -82, 113, 10466, 107, "ljnlrpjhyqspsxkj", 100, 0.9225018F);
+
+     label2:
+        nop;
+        return var5;
+    }
+
+    public double hw1_1000000LOC10method14(char, int, int, float, double, char, long, float, hw1_1000000LOC8)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        char var0, var5;
+        int var1, var2, i, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27, temp$28, temp$29, temp$30, temp$31, temp$32, temp$33, temp$34, temp$35, temp$36, temp$37, temp$38, temp$39, temp$40, temp$41, temp$42, temp$43, temp$44, temp$45, temp$46, temp$47, temp$50, temp$55, temp$57, temp$58;
+        float var3, var7, temp$48, temp$49, temp$51, temp$52, temp$53, temp$54;
+        double var4;
+        long var6;
+        hw1_1000000LOC8 var8;
+        java.io.PrintStream temp$56;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: char;
+        var1 := @parameter1: int;
+        var2 := @parameter2: int;
+        var3 := @parameter3: float;
+        var4 := @parameter4: double;
+        var5 := @parameter5: char;
+        var6 := @parameter6: long;
+        var7 := @parameter7: float;
+        var8 := @parameter8: hw1_1000000LOC8;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 4 goto label1;
+
+        goto label17;
+
+     label1:
+        nop;
+        temp$1 = var1 % 63;
+        temp$2 = var1 / 51;
+        if temp$1 == temp$2 goto label2;
+
+        goto label16;
+
+     label2:
+        nop;
+        temp$3 = var1;
+        temp$4 = var1 - 67;
+        temp$5 = temp$3 + var2;
+        if temp$5 >= temp$4 goto label3;
+
+        goto label15;
+
+     label3:
+        nop;
+        temp$6 = (int) var5;
+        temp$7 = (int) var0;
+        temp$8 = (int) var5;
+        temp$9 = (int) var0;
+        temp$10 = temp$8 - temp$9;
+        temp$11 = temp$10;
+        temp$12 = (int) var0;
+        temp$13 = temp$12 + 110;
+        temp$14 = (int) var5;
+        temp$15 = temp$14 % 118;
+        temp$16 = temp$11 + temp$13;
+        temp$17 = temp$16 - temp$15;
+        temp$18 = temp$6 + temp$7;
+        if temp$18 == temp$17 goto label6;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$19 = (int) var0;
+        temp$20 = temp$19 * 100;
+        temp$21 = (int) var0;
+        temp$22 = temp$21 - 103;
+        if temp$20 != temp$22 goto label5;
+
+        goto label14;
+
+     label5:
+        nop;
+        temp$23 = (int) var0;
+        temp$24 = temp$23 / 108;
+        temp$25 = (int) var0;
+        temp$26 = temp$25 - 120;
+        if temp$24 == temp$26 goto label6;
+
+        goto label14;
+
+     label6:
+        nop;
+        temp$27 = (int) var5;
+        temp$28 = temp$27 / 102;
+        temp$29 = (int) var5;
+        temp$30 = temp$29 % 99;
+        if temp$28 > temp$30 goto label7;
+
+        goto label14;
+
+     label7:
+        nop;
+        temp$31 = (int) var0;
+        temp$32 = (int) var5;
+        temp$33 = temp$31 - temp$32;
+        temp$34 = (int) var0;
+        temp$35 = temp$34 + 118;
+        if temp$33 < temp$35 goto label8;
+
+        goto label13;
+
+     label8:
+        nop;
+        temp$36 = (int) var5;
+        temp$37 = (int) var5;
+        temp$38 = temp$37 / 106;
+        temp$39 = temp$38;
+        temp$40 = (int) var0;
+        temp$41 = temp$40 - 110;
+        temp$42 = (int) var0;
+        temp$43 = (int) var5;
+        temp$44 = temp$42 * temp$43;
+        temp$45 = temp$41 - temp$44;
+        temp$46 = temp$36 + 118;
+        temp$47 = temp$39 + temp$45;
+        if temp$46 < temp$47 goto label9;
+
+        goto label13;
+
+     label9:
+        nop;
+        temp$48 = var7 / 0.16927761F;
+        temp$49 = var3 % 0.7832376F;
+        temp$50 = temp$48 cmpg temp$49;
+        if temp$50 != 0 goto label12;
+
+        goto label10;
+
+     label10:
+        nop;
+        temp$51 = var3 % 0.53282374F;
+        temp$52 = var7 * 0.8519627F;
+        temp$53 = temp$51 - temp$52;
+        temp$54 = var3 * var7;
+        temp$55 = temp$53 cmpg temp$54;
+        if temp$55 != 0 goto label12;
+
+        goto label11;
+
+     label11:
+        nop;
+        temp$56 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$56.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method14- LineInMethod: 13");
+
+     label12:
+        nop;
+
+     label13:
+        nop;
+
+     label14:
+        nop;
+
+     label15:
+        nop;
+
+     label16:
+        nop;
+        nop;
+        temp$57 = i;
+        temp$58 = temp$57 + 1;
+        i = temp$58;
+        goto label0;
+
+     label17:
+        nop;
+        return var4;
+    }
+
+    public char hw1_1000000LOC10method15(long, short, long)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        long var0, var2, temp$1, temp$2, temp$4, temp$5, temp$6;
+        short var1, temp$13;
+        int i, temp$3, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$14, temp$15;
+        char temp$16;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: long;
+        var1 := @parameter1: short;
+        var2 := @parameter2: long;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 5 goto label1;
+
+        goto label6;
+
+     label1:
+        nop;
+        temp$1 = var2 * 44L;
+        temp$2 = var2 - var0;
+        temp$3 = temp$1 cmp temp$2;
+        if temp$3 < 0 goto label5;
+
+        goto label2;
+
+     label2:
+        nop;
+        temp$4 = var2;
+        temp$5 = var0 * var2;
+        temp$6 = temp$4 + 52L;
+        temp$7 = temp$6 cmp temp$5;
+        if temp$7 < 0 goto label4;
+
+        goto label3;
+
+     label3:
+        nop;
+        temp$8 = (int) var1;
+        temp$9 = (int) var1;
+        temp$10 = temp$8 + 8552;
+        temp$11 = temp$9 + 3422;
+        temp$12 = temp$10 - temp$11;
+        temp$13 = (short) temp$12;
+        var1 = temp$13;
+
+     label4:
+        nop;
+
+     label5:
+        nop;
+        nop;
+        temp$14 = i;
+        temp$15 = temp$14 + 1;
+        i = temp$15;
+        goto label0;
+
+     label6:
+        nop;
+        temp$16 = 110;
+        return temp$16;
+    }
+
+    public static java.lang.Object hw1_1000000LOC10method16(hw1_1000000LOC9, float, double)
+    {
+        hw1_1000000LOC9 var0;
+        float var1;
+        double var2, temp$1, temp$2, temp$3, temp$4, temp$6;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$5;
+
+        var0 := @parameter0: hw1_1000000LOC9;
+        var1 := @parameter1: float;
+        var2 := @parameter2: double;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var2 - 0.7972657378174639;
+        temp$2 = var2 * 0.5733728165824771;
+        temp$3 = var2 - 0.8773845093295075;
+        temp$4 = temp$2 - temp$3;
+        temp$5 = temp$1 cmpl temp$4;
+        if temp$5 <= 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$6 = var2 * 0.06382761140826754;
+        var2 = temp$6;
+
+     label1:
+        nop;
+        return var0;
+    }
+
+    public short hw1_1000000LOC23method22(char, int, float)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        char var0, temp$20;
+        int var1, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19;
+        float var2;
+        java.io.PrintStream temp$21;
+        short temp$22;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: char;
+        var1 := @parameter1: int;
+        var2 := @parameter2: float;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var0;
+        temp$2 = temp$1 - 101;
+        temp$3 = (int) var0;
+        temp$4 = temp$3 % 104;
+        if temp$2 == temp$4 goto label0;
+
+        goto label2;
+
+     label0:
+        nop;
+        temp$5 = (int) var0;
+        temp$6 = temp$5 % 106;
+        temp$7 = (int) var0;
+        temp$8 = temp$7 * 108;
+        temp$9 = temp$8;
+        temp$10 = (int) var0;
+        temp$11 = temp$10 + 103;
+        temp$12 = temp$9 + temp$11;
+        if temp$6 <= temp$12 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$13 = (int) var0;
+        temp$14 = temp$13 - 109;
+        temp$15 = (int) var0;
+        temp$16 = temp$15 % 116;
+        temp$17 = temp$16 / 119;
+        temp$18 = temp$17 % 108;
+        temp$19 = temp$14 * temp$18;
+        temp$20 = (char) temp$19;
+        var0 = temp$20;
+        goto label3;
+
+     label2:
+        nop;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC23method22- LineInMethod: 6");
+
+     label3:
+        nop;
+        temp$22 = 29089;
+        return temp$22;
+    }
+
+    public static short hw1_1000000LOC10method18(hw1_1000000LOC4, short, long)
+    {
+        hw1_1000000LOC4 var0;
+        short var1;
+        long var2, temp$1, temp$2, temp$3;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$4;
+        hw1_1000000LOC8 temp$5;
+
+        var0 := @parameter0: hw1_1000000LOC4;
+        var1 := @parameter1: short;
+        var2 := @parameter2: long;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var2 - 87L;
+        temp$2 = var2 * 31L;
+        temp$3 = temp$2 / 1L;
+        temp$4 = temp$1 cmp temp$3;
+        if temp$4 < 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$5 = new hw1_1000000LOC8;
+        specialinvoke temp$5.<hw1_1000000LOC8: void <init>()>();
+        var0 = temp$5;
+
+     label1:
+        nop;
+        return var1;
+    }
+
+    public java.lang.String hw1_1000000LOC23method10(int, hw1_1000000LOC21, byte)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        int var0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11;
+        hw1_1000000LOC21 var1;
+        byte var2;
+        java.io.PrintStream temp$12;
+        java.lang.String temp$13;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: int;
+        var1 := @parameter1: hw1_1000000LOC21;
+        var2 := @parameter2: byte;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var2;
+        temp$2 = temp$1 + 95;
+        temp$3 = temp$2 % 9;
+        temp$4 = (int) var2;
+        temp$5 = temp$4 - 20;
+        if temp$3 >= temp$5 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$6 = (int) var2;
+        temp$7 = temp$6 / 25;
+        temp$8 = (int) var2;
+        temp$9 = temp$8 - -120;
+        if temp$7 <= temp$9 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$10 = var0 / 38;
+        temp$11 = temp$10 / 96;
+        var0 = temp$11;
+        goto label3;
+
+     label2:
+        nop;
+        temp$12 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$12.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC23method10- LineInMethod: 6");
+
+     label3:
+        nop;
+        temp$13 = "ijtqbujopvnojccbtudqubwclegwbflgkkbqzijmrjtjgwlevtfhdgwjhypwbtille";
+        return temp$13;
+    }
+
+    public long hw1_1000000LOC10method20(float, hw1_1000000LOC23, double, char, double, hw1_1000000LOC24, hw1_1000000LOC18)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        float var0;
+        hw1_1000000LOC23 var1;
+        double var2, var4;
+        char var3;
+        hw1_1000000LOC24 var5;
+        hw1_1000000LOC18 var6;
+        int i, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27, temp$28, temp$29, temp$30, temp$31, temp$33, temp$34;
+        java.io.PrintStream temp$32;
+        long temp$35;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: float;
+        var1 := @parameter1: hw1_1000000LOC23;
+        var2 := @parameter2: double;
+        var3 := @parameter3: char;
+        var4 := @parameter4: double;
+        var5 := @parameter5: hw1_1000000LOC24;
+        var6 := @parameter6: hw1_1000000LOC18;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        i = 0;
+
+     label0:
+        nop;
+        if i < 4 goto label1;
+
+        goto label9;
+
+     label1:
+        nop;
+        temp$1 = (int) var3;
+        temp$2 = temp$1 % 114;
+        temp$3 = (int) var3;
+        temp$4 = temp$3 - 106;
+        if temp$2 != temp$4 goto label2;
+
+        goto label8;
+
+     label2:
+        nop;
+        temp$5 = (int) var3;
+        temp$6 = temp$5 - 101;
+        temp$7 = temp$6;
+        temp$8 = (int) var3;
+        temp$9 = temp$8 + 120;
+        temp$10 = (int) var3;
+        temp$11 = temp$10 * 105;
+        temp$12 = temp$7 + temp$9;
+        if temp$12 < temp$11 goto label3;
+
+        goto label8;
+
+     label3:
+        nop;
+        temp$13 = (int) var3;
+        temp$14 = temp$13 - 120;
+        temp$15 = (int) var3;
+        temp$16 = temp$15 + 112;
+        if temp$14 >= temp$16 goto label4;
+
+        goto label8;
+
+     label4:
+        nop;
+        temp$17 = (int) var3;
+        temp$18 = temp$17 - 103;
+        temp$19 = (int) var3;
+        temp$20 = temp$19 % 115;
+        if temp$18 != temp$20 goto label5;
+
+        goto label8;
+
+     label5:
+        nop;
+        temp$21 = (int) var3;
+        temp$22 = temp$21 + 97;
+        temp$23 = (int) var3;
+        temp$24 = temp$23 / 118;
+        temp$25 = temp$24;
+        temp$26 = (int) var3;
+        temp$27 = temp$26 - 113;
+        temp$28 = temp$25 + temp$27;
+        temp$29 = (int) var3;
+        temp$30 = temp$29 % 117;
+        temp$31 = temp$22 + temp$28;
+        if temp$31 == temp$30 goto label6;
+
+        goto label7;
+
+     label6:
+        nop;
+        temp$32 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$32.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method20- LineInMethod: 7");
+
+     label7:
+        nop;
+
+     label8:
+        nop;
+        nop;
+        temp$33 = i;
+        temp$34 = temp$33 + 1;
+        i = temp$34;
+        goto label0;
+
+     label9:
+        nop;
+        temp$35 = 25L;
+        return temp$35;
+    }
+
+    public static float hw1_1000000LOC23method2(byte, short, short, char, short, float, char, byte, char)
+    {
+        byte var0, var7, temp$10;
+        short var1, var2, var4;
+        char var3, var6, var8;
+        float var5;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9;
+
+        var0 := @parameter0: byte;
+        var1 := @parameter1: short;
+        var2 := @parameter2: short;
+        var3 := @parameter3: char;
+        var4 := @parameter4: short;
+        var5 := @parameter5: float;
+        var6 := @parameter6: char;
+        var7 := @parameter7: byte;
+        var8 := @parameter8: char;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = (int) var8;
+        temp$2 = (int) var6;
+        temp$3 = temp$1 * temp$2;
+        temp$4 = (int) var6;
+        temp$5 = (int) var3;
+        temp$6 = temp$4 + temp$5;
+        if temp$3 == temp$6 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        goto label2;
+
+     label1:
+        nop;
+        temp$7 = (int) var7;
+        temp$8 = temp$7 * -9;
+        temp$9 = temp$8 % -30;
+        temp$10 = (byte) temp$9;
+        var7 = temp$10;
+
+     label2:
+        nop;
+        return var5;
+    }
+
+    public float hw1_1000000LOC10method22(char, byte, double, byte, int, double)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        char var0, temp$9;
+        byte var1, var3;
+        double var2, var5;
+        int var4, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$11, temp$12;
+        java.io.PrintStream temp$1, temp$2, temp$10;
+        float temp$13;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: char;
+        var1 := @parameter1: byte;
+        var2 := @parameter2: double;
+        var3 := @parameter3: byte;
+        var4 := @parameter4: int;
+        var5 := @parameter5: double;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        goto label5;
+
+     label0:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method22- LineInMethod: 3");
+        goto label6;
+
+     label1:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method22- LineInMethod: 7");
+        goto label6;
+
+     label2:
+        nop;
+        temp$3 = 79;
+        var4 = temp$3;
+        goto label6;
+
+     label3:
+        nop;
+        temp$4 = (int) var0;
+        temp$5 = (int) var0;
+        temp$6 = temp$5 * 108;
+        temp$7 = temp$4 + 107;
+        temp$8 = temp$7 * temp$6;
+        temp$9 = (char) temp$8;
+        var0 = temp$9;
+        goto label6;
+
+     label4:
+        nop;
+        temp$10 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$10.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC10method22- LineInMethod: 17");
+        goto label6;
+
+     label5:
+        nop;
+        temp$11 = var4;
+        temp$12 = temp$11 + 56;
+        nop;
+        tableswitch(temp$12)
+        {
+            case 0: goto label0;
+            case 1: goto label1;
+            case 2: goto label2;
+            case 3: goto label3;
+            default: goto label4;
+        };
+
+     label6:
+        nop;
+        temp$13 = 0.14476722F;
+        return temp$13;
+    }
+
+    public static char hw1_1000000LOC10method23(short, float, char, byte, double, hw1_1000000LOC29, long)
+    {
+        short var0;
+        float var1;
+        char var2;
+        byte var3, temp$5;
+        double var4, temp$1, temp$2, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11;
+        hw1_1000000LOC29 var5, temp$4;
+        long var6;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$3;
+
+        var0 := @parameter0: short;
+        var1 := @parameter1: float;
+        var2 := @parameter2: char;
+        var3 := @parameter3: byte;
+        var4 := @parameter4: double;
+        var5 := @parameter5: hw1_1000000LOC29;
+        var6 := @parameter6: long;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var4 * 0.47430370883833983;
+        temp$2 = var4 - 0.09677925568122747;
+        temp$3 = temp$1 cmpl temp$2;
+        if temp$3 <= 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$4 = new hw1_1000000LOC29;
+        specialinvoke temp$4.<hw1_1000000LOC29: void <init>()>();
+        var5 = temp$4;
+        temp$5 = virtualinvoke var5.<hw1_1000000LOC29: byte hw1_1000000LOC29method2(java.lang.String,byte,byte)>("stdopzrsxiqjehow", var3, var3);
+        var3 = temp$5;
+        goto label2;
+
+     label1:
+        nop;
+        temp$6 = var4 * 0.2681255062976794;
+        temp$7 = temp$6;
+        temp$8 = var4 % 0.7187576020721619;
+        temp$9 = var4 - 0.80179501651831;
+        temp$10 = temp$7 + temp$8;
+        temp$11 = temp$10 * temp$9;
+        var4 = temp$11;
+
+     label2:
+        nop;
+        return var2;
+    }
+
+    public float hw1_1000000LOC10method24(long, float, java.lang.String)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        long var0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$9, temp$10, temp$11, temp$12, temp$13, temp$15, temp$16, temp$18, temp$19, temp$20, temp$21, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27, temp$29, temp$30, temp$31, temp$32, temp$33, temp$34, temp$35, temp$36, temp$37, temp$38, temp$39, temp$40, temp$41, temp$42, temp$44, temp$45, temp$46, temp$47;
+        float var1;
+        java.lang.String var2, temp$49, temp$52, temp$54, temp$55;
+        int temp$8, temp$14, temp$17, temp$28, temp$43, temp$48;
+        java.lang.StringBuffer temp$50, temp$51, temp$53;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: long;
+        var1 := @parameter1: float;
+        var2 := @parameter2: java.lang.String;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var0;
+        temp$2 = temp$1 + 58L;
+        temp$3 = temp$2 / 86L;
+        temp$4 = var0 * 24L;
+        temp$5 = var0;
+        temp$6 = temp$5 + 6L;
+        temp$7 = temp$4 * temp$6;
+        temp$8 = temp$3 cmp temp$7;
+        if temp$8 < 0 goto label6;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$9 = var0 - 80L;
+        temp$10 = var0 - 90L;
+        temp$11 = temp$9 * temp$10;
+        temp$12 = var0 - 69L;
+        temp$13 = temp$12 % 11L;
+        temp$14 = temp$11 cmp temp$13;
+        if temp$14 != 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$15 = var0 - 49L;
+        temp$16 = var0 - 78L;
+        temp$17 = temp$15 cmp temp$16;
+        if temp$17 >= 0 goto label6;
+
+        goto label2;
+
+     label2:
+        nop;
+        temp$18 = var0 % 31L;
+        temp$19 = var0 - 47L;
+        temp$20 = temp$18 - temp$19;
+        temp$21 = var0 - 36L;
+        temp$22 = var0 / 57L;
+        temp$23 = temp$21 * temp$22;
+        temp$24 = temp$23 % 5L;
+        temp$25 = temp$20 - temp$24;
+        temp$26 = var0;
+        temp$27 = temp$26 + 61L;
+        temp$28 = temp$25 cmp temp$27;
+        if temp$28 >= 0 goto label6;
+
+        goto label3;
+
+     label3:
+        nop;
+        temp$29 = var0 / 31L;
+        temp$30 = var0 % 19L;
+        temp$31 = var0 - 83L;
+        temp$32 = var0;
+        temp$33 = temp$32 + 57L;
+        temp$34 = temp$31 * temp$33;
+        temp$35 = temp$30 * temp$34;
+        temp$36 = temp$29 - temp$35;
+        temp$37 = var0 - 87L;
+        temp$38 = temp$36 - temp$37;
+        temp$39 = var0 / 12L;
+        temp$40 = temp$39 / 6L;
+        temp$41 = var0 / 42L;
+        temp$42 = temp$40 * temp$41;
+        temp$43 = temp$38 cmp temp$42;
+        if temp$43 >= 0 goto label6;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$44 = var0;
+        temp$45 = temp$44 + 44L;
+        temp$46 = temp$45 / 79L;
+        temp$47 = var0 / 71L;
+        temp$48 = temp$46 cmp temp$47;
+        if temp$48 <= 0 goto label6;
+
+        goto label5;
+
+     label5:
+        nop;
+        temp$49 = "smpmxkqspinbegtfdsmovioyzkiaiqb";
+        var2 = temp$49;
+        goto label7;
+
+     label6:
+        nop;
+        temp$50 = new java.lang.StringBuffer;
+        specialinvoke temp$50.<java.lang.StringBuffer: void <init>()>();
+        temp$51 = new java.lang.StringBuffer;
+        specialinvoke temp$51.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$51.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var2);
+        virtualinvoke temp$51.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("dpsttjdmqemzkvvzrykerrhjkhdqgqzpzvxmcqhfdmblnbdxrhmozadrberpmvgkmshdcts");
+        temp$52 = virtualinvoke temp$51.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$50.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$52);
+        temp$53 = new java.lang.StringBuffer;
+        specialinvoke temp$53.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$53.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var2);
+        virtualinvoke temp$53.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("tukfrqjygkhroiftatlzcnwspvwtrxjbwpocjowywxyybuqpkjspadyyxegdnqu");
+        temp$54 = virtualinvoke temp$53.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$50.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$54);
+        temp$55 = virtualinvoke temp$50.<java.lang.StringBuffer: java.lang.String toString()>();
+        var2 = temp$55;
+
+     label7:
+        nop;
+        return var1;
+    }
+
+    public static int hw1_1000000LOC10method25(long, byte, char, float, char, double, short)
+    {
+        long var0;
+        byte var1;
+        char var2, var4, temp$10;
+        float var3, temp$1, temp$2;
+        double var5, temp$11;
+        short var6;
+        hw1_1000000LOC10 classObj, temp$0;
+        int temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$12;
+
+        var0 := @parameter0: long;
+        var1 := @parameter1: byte;
+        var2 := @parameter2: char;
+        var3 := @parameter3: float;
+        var4 := @parameter4: char;
+        var5 := @parameter5: double;
+        var6 := @parameter6: short;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var3 * 0.25031054F;
+        temp$2 = var3 * 0.3909775F;
+        temp$3 = temp$1 cmpg temp$2;
+        if temp$3 != 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$4 = (int) var4;
+        temp$5 = (int) var2;
+        temp$6 = temp$4 * temp$5;
+        temp$7 = (int) var4;
+        temp$8 = temp$7 % 103;
+        temp$9 = temp$6 * temp$8;
+        temp$10 = (char) temp$9;
+        var4 = temp$10;
+        goto label2;
+
+     label1:
+        nop;
+        temp$11 = 0.4354670562525932;
+        var5 = temp$11;
+
+     label2:
+        nop;
+        temp$12 = 91;
+        return temp$12;
+    }
+
+    public double hw1_1000000LOC23method24(hw1_1000000LOC6, long, char, hw1_1000000LOC9, int, int, hw1_1000000LOC11, long, double)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        hw1_1000000LOC6 var0;
+        long var1, var7, temp$1, temp$2, temp$3;
+        char var2;
+        hw1_1000000LOC9 var3;
+        int var4, var5, temp$4;
+        hw1_1000000LOC11 var6;
+        double var8;
+        java.io.PrintStream temp$5, temp$6;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: hw1_1000000LOC6;
+        var1 := @parameter1: long;
+        var2 := @parameter2: char;
+        var3 := @parameter3: hw1_1000000LOC9;
+        var4 := @parameter4: int;
+        var5 := @parameter5: int;
+        var6 := @parameter6: hw1_1000000LOC11;
+        var7 := @parameter7: long;
+        var8 := @parameter8: double;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var7;
+        temp$2 = var7 * var1;
+        temp$3 = temp$1 + 84L;
+        temp$4 = temp$3 cmp temp$2;
+        if temp$4 < 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC23method24- LineInMethod: 5");
+        goto label2;
+
+     label1:
+        nop;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("hw1_1000000LOC10 - hw1_1000000LOC23method24- LineInMethod: 8");
+
+     label2:
+        nop;
+        return var8;
+    }
+
+    public long hw1_1000000LOC10method27(char, hw1_1000000LOC27, short, java.lang.String, hw1_1000000LOC30, double, short)
+    {
+        hw1_1000000LOC10 this, classObj, temp$0;
+        char var0;
+        hw1_1000000LOC27 var1;
+        short var2, var6;
+        java.lang.String var3, temp$20, temp$23, temp$27, temp$29, temp$30, temp$32, temp$33, temp$34, temp$35;
+        hw1_1000000LOC30 var4;
+        double var5, temp$1, temp$2, temp$4, temp$5, temp$6;
+        int temp$3, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17;
+        java.lang.StringBuffer temp$18, temp$19, temp$21, temp$22, temp$24, temp$25, temp$26, temp$28, temp$31;
+        long temp$36;
+
+        this := @this: hw1_1000000LOC10;
+        var0 := @parameter0: char;
+        var1 := @parameter1: hw1_1000000LOC27;
+        var2 := @parameter2: short;
+        var3 := @parameter3: java.lang.String;
+        var4 := @parameter4: hw1_1000000LOC30;
+        var5 := @parameter5: double;
+        var6 := @parameter6: short;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        classObj = temp$0;
+        temp$1 = var5 * 0.6752185455747887;
+        temp$2 = var5 - 0.9464044153656884;
+        temp$3 = temp$1 cmpg temp$2;
+        if temp$3 == 0 goto label4;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$4 = var5 - 0.5760408869396443;
+        temp$5 = var5 * 0.12498017143596618;
+        temp$6 = temp$5 % 0.06543717115428171;
+        temp$7 = temp$4 cmpg temp$6;
+        if temp$7 != 0 goto label4;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$8 = (int) var2;
+        temp$9 = (int) var6;
+        temp$10 = temp$8 * temp$9;
+        temp$11 = temp$10;
+        temp$12 = (int) var2;
+        temp$13 = temp$12 / 453;
+        temp$14 = (int) var6;
+        temp$15 = (int) var2;
+        temp$16 = temp$11 + temp$13;
+        temp$17 = temp$14 + temp$15;
+        if temp$16 < temp$17 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        temp$18 = new java.lang.StringBuffer;
+        specialinvoke temp$18.<java.lang.StringBuffer: void <init>()>();
+        temp$19 = new java.lang.StringBuffer;
+        specialinvoke temp$19.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$19.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var3);
+        virtualinvoke temp$19.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("wtnaodzxbbqgophxxynzuzdqwzlrvmrpekhbhaemqvthahrigpijwlwsuabmexljptnwfnlpibqgewgwcdvpmzq");
+        temp$20 = virtualinvoke temp$19.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$20);
+        temp$21 = new java.lang.StringBuffer;
+        specialinvoke temp$21.<java.lang.StringBuffer: void <init>()>();
+        temp$22 = new java.lang.StringBuffer;
+        specialinvoke temp$22.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$22.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var3);
+        virtualinvoke temp$22.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("xagkivou");
+        temp$23 = virtualinvoke temp$22.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$21.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$23);
+        temp$24 = new java.lang.StringBuffer;
+        specialinvoke temp$24.<java.lang.StringBuffer: void <init>()>();
+        temp$25 = new java.lang.StringBuffer;
+        specialinvoke temp$25.<java.lang.StringBuffer: void <init>()>();
+        temp$26 = new java.lang.StringBuffer;
+        specialinvoke temp$26.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var3);
+        virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("aglidmauycuuvdnrmlyaztuqltlssmygmfhsiqllgdtzbuujwfhxqdnelhvrrbxtkmztyszeooannhnjmazyprhtldyclgpce");
+        temp$27 = virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$27);
+        temp$28 = new java.lang.StringBuffer;
+        specialinvoke temp$28.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var3);
+        virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("jzegyzcrudisnovxquedkezvnxovfebucbffhkiwedlpxwgmd");
+        temp$29 = virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$29);
+        temp$30 = virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$30);
+        temp$31 = new java.lang.StringBuffer;
+        specialinvoke temp$31.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$31.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(var3);
+        virtualinvoke temp$31.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("jxxgtywsfwjhdexryxdztdvexhcdrzdlkfwplujuewadclhaapnuowhrvazoqfablhnutllkvoklvibiowr");
+        temp$32 = virtualinvoke temp$31.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$32);
+        temp$33 = virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$21.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$33);
+        temp$34 = virtualinvoke temp$21.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$34);
+        temp$35 = virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.String toString()>();
+        var3 = temp$35;
+
+     label3:
+        nop;
+
+     label4:
+        nop;
+        temp$36 = 54L;
+        return temp$36;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        hw1_1000000LOC10 obj, temp$0;
+        char temp$1, temp$12, temp$15, temp$23, temp$26, temp$33, temp$48;
+        hw1_1000000LOC31 temp$2, temp$7;
+        double temp$3, temp$25, temp$32, temp$54;
+        hw1_1000000LOC32 temp$4;
+        java.lang.Object temp$5, temp$35;
+        long temp$6, temp$30, temp$44, temp$57;
+        byte temp$8;
+        hw1_1000000LOC9 temp$9, temp$34, temp$52;
+        java.lang.String temp$10, temp$13, temp$40;
+        hw1_1000000LOC19 temp$11, temp$17;
+        float temp$14, temp$22, temp$45, temp$46, temp$49;
+        hw1_1000000LOC1 temp$16;
+        short temp$18, temp$21, temp$36, temp$38;
+        hw1_1000000LOC16 temp$19;
+        hw1_1000000LOC34 temp$20;
+        hw1_1000000LOC23 temp$24, temp$41;
+        hw1_1000000LOC8 temp$27, temp$31;
+        hw1_1000000LOC30 temp$28, temp$56;
+        hw1_1000000LOC2 temp$29;
+        hw1_1000000LOC4 temp$37;
+        hw1_1000000LOC21 temp$39;
+        hw1_1000000LOC24 temp$42;
+        hw1_1000000LOC18 temp$43;
+        hw1_1000000LOC29 temp$47;
+        int temp$50;
+        hw1_1000000LOC6 temp$51;
+        hw1_1000000LOC11 temp$53;
+        hw1_1000000LOC27 temp$55;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        obj = temp$0;
+        temp$1 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOCInterface7Method0(long,double,byte)>(17L, 0.07947401542425547, 57);
+        temp$2 = new hw1_1000000LOC31;
+        specialinvoke temp$2.<hw1_1000000LOC31: void <init>()>();
+        temp$3 = virtualinvoke obj.<hw1_1000000LOC10: double hw1_1000000LOCInterface7Method1(java.lang.String,double,long,double,java.lang.String,hw1_1000000LOC31,byte,double)>("zgapsmebsaivxjdqippyphgtypnuptbfmaatwhxbdgcmzhtcpayayjtepbbpjdjshstsvdqbunliedebqguebeptqvmuci", 0.9762442679371774, 43L, 0.31254269806292845, "laydxedwenxnpqupfyrtsqpvkdgoqkjlihlzrqimexxqselmeqtjfmnabbefaapefwuwnugzh", temp$2, -32, 0.43175490825847995);
+        temp$4 = new hw1_1000000LOC32;
+        specialinvoke temp$4.<hw1_1000000LOC32: void <init>()>();
+        temp$5 = virtualinvoke obj.<hw1_1000000LOC10: java.lang.Object hw1_1000000LOCInterface7Method2(java.lang.String,hw1_1000000LOC32,float)>("blkwgnvpnxtoitnamzjxudxksfsblrpkclycu", temp$4, 0.33087087F);
+        temp$6 = staticinvoke <hw1_1000000LOC10: long hw1_1000000LOC23method8(double,long,long)>(0.8784027117608402, 52L, 2L);
+        temp$7 = new hw1_1000000LOC31;
+        specialinvoke temp$7.<hw1_1000000LOC31: void <init>()>();
+        temp$8 = virtualinvoke obj.<hw1_1000000LOC10: byte hw1_1000000LOC10method1(byte,int,hw1_1000000LOC31)>(106, 13, temp$7);
+        temp$9 = new hw1_1000000LOC9;
+        specialinvoke temp$9.<hw1_1000000LOC9: void <init>()>();
+        temp$10 = staticinvoke <hw1_1000000LOC10: java.lang.String hw1_1000000LOC10method2(int,int,byte,hw1_1000000LOC9,char,java.lang.String,double)>(41, 27, 35, temp$9, 103, "aykxjjsrqdsjpnxsosftluvuummpqxwugqwsbbujqujvpwwmbvwvklxwghifkyfesvjwrytdedpbmqzchmflkthskwr", 0.09797634808118594);
+        temp$11 = new hw1_1000000LOC19;
+        specialinvoke temp$11.<hw1_1000000LOC19: void <init>()>();
+        temp$12 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC10method3(hw1_1000000LOC19,char,short)>(temp$11, 119, 29450);
+        temp$13 = virtualinvoke obj.<hw1_1000000LOC10: java.lang.String hw1_1000000LOC32method21(byte,double,double,float,byte,short,int)>(-73, 0.7052857154776644, 0.15134858644273363, 0.6897795F, 87, 30845, 56);
+        temp$14 = virtualinvoke obj.<hw1_1000000LOC10: float hw1_1000000LOC10method5(char,float,int,java.lang.String,long,java.lang.String,double)>(114, 0.17252779F, 46, "fubbmscyhtzbqeobkfvluidrknfujpqledamihsaksojswzkiblpvtj", 8L, "gngphtivruwsqqmwekzqhltlqyxabuzttokcxnuolsgxvxtibzpcabuehnpsmblwstsnbnjkojblkyvyulkoapaefagctqdkqm", 0.5791053495723579);
+        temp$15 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC23method25(float,long,char)>(0.8816986F, 19L, 98);
+        temp$16 = new hw1_1000000LOC1;
+        specialinvoke temp$16.<hw1_1000000LOC1: void <init>()>();
+        temp$17 = new hw1_1000000LOC19;
+        specialinvoke temp$17.<hw1_1000000LOC19: void <init>()>();
+        temp$18 = staticinvoke <hw1_1000000LOC10: short hw1_1000000LOC32method2(hw1_1000000LOC1,hw1_1000000LOC19,float,int,int,double,char)>(temp$16, temp$17, 0.96962726F, 76, 0, 0.2016009541138618, 116);
+        temp$19 = new hw1_1000000LOC16;
+        specialinvoke temp$19.<hw1_1000000LOC16: void <init>()>();
+        temp$20 = new hw1_1000000LOC34;
+        specialinvoke temp$20.<hw1_1000000LOC34: void <init>()>();
+        temp$21 = staticinvoke <hw1_1000000LOC10: short hw1_1000000LOC10method8(double,hw1_1000000LOC16,hw1_1000000LOC34)>(0.09977395949596768, temp$19, temp$20);
+        temp$22 = staticinvoke <hw1_1000000LOC10: float hw1_1000000LOC10method9(char,char,float)>(119, 116, 0.08011663F);
+        temp$23 = staticinvoke <hw1_1000000LOC10: char hw1_1000000LOC10method10(byte,char,long)>(89, 100, 39L);
+        temp$24 = new hw1_1000000LOC23;
+        specialinvoke temp$24.<hw1_1000000LOC23: void <init>()>();
+        temp$25 = staticinvoke <hw1_1000000LOC10: double hw1_1000000LOC10method11(byte,hw1_1000000LOC23,float)>(-35, temp$24, 0.9060218F);
+        temp$26 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC10method12(short,char,char)>(2076, 104, 113);
+        temp$27 = new hw1_1000000LOC8;
+        specialinvoke temp$27.<hw1_1000000LOC8: void <init>()>();
+        temp$28 = new hw1_1000000LOC30;
+        specialinvoke temp$28.<hw1_1000000LOC30: void <init>()>();
+        temp$29 = new hw1_1000000LOC2;
+        specialinvoke temp$29.<hw1_1000000LOC2: void <init>()>();
+        temp$30 = virtualinvoke obj.<hw1_1000000LOC10: long hw1_1000000LOC10method13(double,int,hw1_1000000LOC8,hw1_1000000LOC30,hw1_1000000LOC2,long)>(0.3285010435343263, 45, temp$27, temp$28, temp$29, 84L);
+        temp$31 = new hw1_1000000LOC8;
+        specialinvoke temp$31.<hw1_1000000LOC8: void <init>()>();
+        temp$32 = virtualinvoke obj.<hw1_1000000LOC10: double hw1_1000000LOC10method14(char,int,int,float,double,char,long,float,hw1_1000000LOC8)>(98, 71, 83, 0.8425185F, 0.21756212898276484, 98, 68L, 0.8910185F, temp$31);
+        temp$33 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC10method15(long,short,long)>(7L, 5400, 42L);
+        temp$34 = new hw1_1000000LOC9;
+        specialinvoke temp$34.<hw1_1000000LOC9: void <init>()>();
+        temp$35 = staticinvoke <hw1_1000000LOC10: java.lang.Object hw1_1000000LOC10method16(hw1_1000000LOC9,float,double)>(temp$34, 0.34433097F, 0.7153165552808405);
+        temp$36 = virtualinvoke obj.<hw1_1000000LOC10: short hw1_1000000LOC23method22(char,int,float)>(103, 83, 0.8739143F);
+        temp$37 = new hw1_1000000LOC4;
+        specialinvoke temp$37.<hw1_1000000LOC4: void <init>()>();
+        temp$38 = staticinvoke <hw1_1000000LOC10: short hw1_1000000LOC10method18(hw1_1000000LOC4,short,long)>(temp$37, 24689, 85L);
+        temp$39 = new hw1_1000000LOC21;
+        specialinvoke temp$39.<hw1_1000000LOC21: void <init>()>();
+        temp$40 = virtualinvoke obj.<hw1_1000000LOC10: java.lang.String hw1_1000000LOC23method10(int,hw1_1000000LOC21,byte)>(35, temp$39, -94);
+        temp$41 = new hw1_1000000LOC23;
+        specialinvoke temp$41.<hw1_1000000LOC23: void <init>()>();
+        temp$42 = new hw1_1000000LOC24;
+        specialinvoke temp$42.<hw1_1000000LOC24: void <init>()>();
+        temp$43 = new hw1_1000000LOC18;
+        specialinvoke temp$43.<hw1_1000000LOC18: void <init>()>();
+        temp$44 = virtualinvoke obj.<hw1_1000000LOC10: long hw1_1000000LOC10method20(float,hw1_1000000LOC23,double,char,double,hw1_1000000LOC24,hw1_1000000LOC18)>(0.56441164F, temp$41, 0.1376645105528882, 109, 0.985872868327837, temp$42, temp$43);
+        temp$45 = staticinvoke <hw1_1000000LOC10: float hw1_1000000LOC23method2(byte,short,short,char,short,float,char,byte,char)>(-88, 14468, 10994, 99, 1418, 0.1622231F, 122, -82, 118);
+        temp$46 = virtualinvoke obj.<hw1_1000000LOC10: float hw1_1000000LOC10method22(char,byte,double,byte,int,double)>(101, 56, 0.5521986826104721, 23, 77, 0.8674216444230531);
+        temp$47 = new hw1_1000000LOC29;
+        specialinvoke temp$47.<hw1_1000000LOC29: void <init>()>();
+        temp$48 = staticinvoke <hw1_1000000LOC10: char hw1_1000000LOC10method23(short,float,char,byte,double,hw1_1000000LOC29,long)>(9338, 0.8871753F, 104, 14, 0.7525293149974787, temp$47, 73L);
+        temp$49 = virtualinvoke obj.<hw1_1000000LOC10: float hw1_1000000LOC10method24(long,float,java.lang.String)>(54L, 0.13915735F, "klgmqjhonidwsulvzcismx");
+        temp$50 = staticinvoke <hw1_1000000LOC10: int hw1_1000000LOC10method25(long,byte,char,float,char,double,short)>(5L, 39, 104, 0.9638209F, 110, 0.38317963137475197, 23443);
+        temp$51 = new hw1_1000000LOC6;
+        specialinvoke temp$51.<hw1_1000000LOC6: void <init>()>();
+        temp$52 = new hw1_1000000LOC9;
+        specialinvoke temp$52.<hw1_1000000LOC9: void <init>()>();
+        temp$53 = new hw1_1000000LOC11;
+        specialinvoke temp$53.<hw1_1000000LOC11: void <init>()>();
+        temp$54 = virtualinvoke obj.<hw1_1000000LOC10: double hw1_1000000LOC23method24(hw1_1000000LOC6,long,char,hw1_1000000LOC9,int,int,hw1_1000000LOC11,long,double)>(temp$51, 48L, 106, temp$52, 20, 13, temp$53, 52L, 0.008529500411003865);
+        temp$55 = new hw1_1000000LOC27;
+        specialinvoke temp$55.<hw1_1000000LOC27: void <init>()>();
+        temp$56 = new hw1_1000000LOC30;
+        specialinvoke temp$56.<hw1_1000000LOC30: void <init>()>();
+        temp$57 = virtualinvoke obj.<hw1_1000000LOC10: long hw1_1000000LOC10method27(char,hw1_1000000LOC27,short,java.lang.String,hw1_1000000LOC30,double,short)>(107, temp$55, 7075, "tphxvytjsgjlfgdlrtusfgifaowqlicrwpcfvjpytolzjhapkzkpiipxvdkwullrwvvgadhpeibuunmwdagoccfym", temp$56, 0.5352650266466801, 31773);
+        return;
+    }
+
+    public static void singleEntry(int, int, int, int, int, int, int, int, int, int)
+    {
+        int i0, i1, i2, i3, i4, i5, i6, i7, i8, i9, temp$50;
+        hw1_1000000LOC10 obj, temp$0;
+        char temp$1, temp$12, temp$15, temp$23, temp$26, temp$33, temp$48;
+        hw1_1000000LOC31 temp$2, temp$7;
+        double temp$3, temp$25, temp$32, temp$54;
+        hw1_1000000LOC32 temp$4;
+        java.lang.Object temp$5, temp$35;
+        long temp$6, temp$30, temp$44, temp$57;
+        byte temp$8;
+        hw1_1000000LOC9 temp$9, temp$34, temp$52;
+        java.lang.String temp$10, temp$13, temp$40;
+        hw1_1000000LOC19 temp$11, temp$17;
+        float temp$14, temp$22, temp$45, temp$46, temp$49;
+        hw1_1000000LOC1 temp$16;
+        short temp$18, temp$21, temp$36, temp$38;
+        hw1_1000000LOC16 temp$19;
+        hw1_1000000LOC34 temp$20;
+        hw1_1000000LOC23 temp$24, temp$41;
+        hw1_1000000LOC8 temp$27, temp$31;
+        hw1_1000000LOC30 temp$28, temp$56;
+        hw1_1000000LOC2 temp$29;
+        hw1_1000000LOC4 temp$37;
+        hw1_1000000LOC21 temp$39;
+        hw1_1000000LOC24 temp$42;
+        hw1_1000000LOC18 temp$43;
+        hw1_1000000LOC29 temp$47;
+        hw1_1000000LOC6 temp$51;
+        hw1_1000000LOC11 temp$53;
+        hw1_1000000LOC27 temp$55;
+
+        i0 := @parameter0: int;
+        i1 := @parameter1: int;
+        i2 := @parameter2: int;
+        i3 := @parameter3: int;
+        i4 := @parameter4: int;
+        i5 := @parameter5: int;
+        i6 := @parameter6: int;
+        i7 := @parameter7: int;
+        i8 := @parameter8: int;
+        i9 := @parameter9: int;
+        temp$0 = new hw1_1000000LOC10;
+        specialinvoke temp$0.<hw1_1000000LOC10: void <init>()>();
+        obj = temp$0;
+        temp$1 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOCInterface7Method0(long,double,byte)>(46L, 0.37583644628697954, 37);
+        temp$2 = new hw1_1000000LOC31;
+        specialinvoke temp$2.<hw1_1000000LOC31: void <init>()>();
+        temp$3 = virtualinvoke obj.<hw1_1000000LOC10: double hw1_1000000LOCInterface7Method1(java.lang.String,double,long,double,java.lang.String,hw1_1000000LOC31,byte,double)>("lhfvbxezcqreyljo", 0.6295637756513977, 57L, 0.09371546567068934, "oazfulipffpinpaupzboxycxbrzloawstusaanqazkypmovxlaybirfcapwrnehqugvdohurhn", temp$2, -102, 0.4564905075077468);
+        temp$4 = new hw1_1000000LOC32;
+        specialinvoke temp$4.<hw1_1000000LOC32: void <init>()>();
+        temp$5 = virtualinvoke obj.<hw1_1000000LOC10: java.lang.Object hw1_1000000LOCInterface7Method2(java.lang.String,hw1_1000000LOC32,float)>("hralqftfbylqmthkxtgxqeslahfbcysacegizzpistjpeoslwaifcniwywpqvffdeyrlcquuzdozkbh", temp$4, 0.47118992F);
+        temp$6 = staticinvoke <hw1_1000000LOC10: long hw1_1000000LOC23method8(double,long,long)>(0.16393258604396832, 95L, 73L);
+        temp$7 = new hw1_1000000LOC31;
+        specialinvoke temp$7.<hw1_1000000LOC31: void <init>()>();
+        temp$8 = virtualinvoke obj.<hw1_1000000LOC10: byte hw1_1000000LOC10method1(byte,int,hw1_1000000LOC31)>(22, i7, temp$7);
+        temp$9 = new hw1_1000000LOC9;
+        specialinvoke temp$9.<hw1_1000000LOC9: void <init>()>();
+        temp$10 = staticinvoke <hw1_1000000LOC10: java.lang.String hw1_1000000LOC10method2(int,int,byte,hw1_1000000LOC9,char,java.lang.String,double)>(i4, i7, -116, temp$9, 115, "oltjamfuh", 0.4151943140178094);
+        temp$11 = new hw1_1000000LOC19;
+        specialinvoke temp$11.<hw1_1000000LOC19: void <init>()>();
+        temp$12 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC10method3(hw1_1000000LOC19,char,short)>(temp$11, 120, 26658);
+        temp$13 = virtualinvoke obj.<hw1_1000000LOC10: java.lang.String hw1_1000000LOC32method21(byte,double,double,float,byte,short,int)>(-27, 0.30949820833219954, 0.41414323338322356, 0.7539163F, -10, 12131, i2);
+        temp$14 = virtualinvoke obj.<hw1_1000000LOC10: float hw1_1000000LOC10method5(char,float,int,java.lang.String,long,java.lang.String,double)>(108, 0.67536956F, i3, "xhf", 33L, "gmoxrkrwhesmythscbignmpteyfv", 0.44832809101256244);
+        temp$15 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC23method25(float,long,char)>(0.841435F, 41L, 102);
+        temp$16 = new hw1_1000000LOC1;
+        specialinvoke temp$16.<hw1_1000000LOC1: void <init>()>();
+        temp$17 = new hw1_1000000LOC19;
+        specialinvoke temp$17.<hw1_1000000LOC19: void <init>()>();
+        temp$18 = staticinvoke <hw1_1000000LOC10: short hw1_1000000LOC32method2(hw1_1000000LOC1,hw1_1000000LOC19,float,int,int,double,char)>(temp$16, temp$17, 0.15515572F, i0, i1, 0.20000334465247982, 111);
+        temp$19 = new hw1_1000000LOC16;
+        specialinvoke temp$19.<hw1_1000000LOC16: void <init>()>();
+        temp$20 = new hw1_1000000LOC34;
+        specialinvoke temp$20.<hw1_1000000LOC34: void <init>()>();
+        temp$21 = staticinvoke <hw1_1000000LOC10: short hw1_1000000LOC10method8(double,hw1_1000000LOC16,hw1_1000000LOC34)>(0.323444239924516, temp$19, temp$20);
+        temp$22 = staticinvoke <hw1_1000000LOC10: float hw1_1000000LOC10method9(char,char,float)>(122, 99, 0.65659934F);
+        temp$23 = staticinvoke <hw1_1000000LOC10: char hw1_1000000LOC10method10(byte,char,long)>(-70, 98, 24L);
+        temp$24 = new hw1_1000000LOC23;
+        specialinvoke temp$24.<hw1_1000000LOC23: void <init>()>();
+        temp$25 = staticinvoke <hw1_1000000LOC10: double hw1_1000000LOC10method11(byte,hw1_1000000LOC23,float)>(34, temp$24, 0.77295965F);
+        temp$26 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC10method12(short,char,char)>(106, 114, 113);
+        temp$27 = new hw1_1000000LOC8;
+        specialinvoke temp$27.<hw1_1000000LOC8: void <init>()>();
+        temp$28 = new hw1_1000000LOC30;
+        specialinvoke temp$28.<hw1_1000000LOC30: void <init>()>();
+        temp$29 = new hw1_1000000LOC2;
+        specialinvoke temp$29.<hw1_1000000LOC2: void <init>()>();
+        temp$30 = virtualinvoke obj.<hw1_1000000LOC10: long hw1_1000000LOC10method13(double,int,hw1_1000000LOC8,hw1_1000000LOC30,hw1_1000000LOC2,long)>(0.15857105437008945, i0, temp$27, temp$28, temp$29, 73L);
+        temp$31 = new hw1_1000000LOC8;
+        specialinvoke temp$31.<hw1_1000000LOC8: void <init>()>();
+        temp$32 = virtualinvoke obj.<hw1_1000000LOC10: double hw1_1000000LOC10method14(char,int,int,float,double,char,long,float,hw1_1000000LOC8)>(104, i9, i0, 0.18004465F, 0.17769500966947316, 113, 53L, 0.58645684F, temp$31);
+        temp$33 = virtualinvoke obj.<hw1_1000000LOC10: char hw1_1000000LOC10method15(long,short,long)>(10L, 30540, 22L);
+        temp$34 = new hw1_1000000LOC9;
+        specialinvoke temp$34.<hw1_1000000LOC9: void <init>()>();
+        temp$35 = staticinvoke <hw1_1000000LOC10: java.lang.Object hw1_1000000LOC10method16(hw1_1000000LOC9,float,double)>(temp$34, 0.6503214F, 0.16148569723520367);
+        temp$36 = virtualinvoke obj.<hw1_1000000LOC10: short hw1_1000000LOC23method22(char,int,float)>(122, i8, 0.27398026F);
+        temp$37 = new hw1_1000000LOC4;
+        specialinvoke temp$37.<hw1_1000000LOC4: void <init>()>();
+        temp$38 = staticinvoke <hw1_1000000LOC10: short hw1_1000000LOC10method18(hw1_1000000LOC4,short,long)>(temp$37, 22512, 86L);
+        temp$39 = new hw1_1000000LOC21;
+        specialinvoke temp$39.<hw1_1000000LOC21: void <init>()>();
+        temp$40 = virtualinvoke obj.<hw1_1000000LOC10: java.lang.String hw1_1000000LOC23method10(int,hw1_1000000LOC21,byte)>(i0, temp$39, 101);
+        temp$41 = new hw1_1000000LOC23;
+        specialinvoke temp$41.<hw1_1000000LOC23: void <init>()>();
+        temp$42 = new hw1_1000000LOC24;
+        specialinvoke temp$42.<hw1_1000000LOC24: void <init>()>();
+        temp$43 = new hw1_1000000LOC18;
+        specialinvoke temp$43.<hw1_1000000LOC18: void <init>()>();
+        temp$44 = virtualinvoke obj.<hw1_1000000LOC10: long hw1_1000000LOC10method20(float,hw1_1000000LOC23,double,char,double,hw1_1000000LOC24,hw1_1000000LOC18)>(0.102642834F, temp$41, 0.9393234683105749, 114, 0.9665413934793252, temp$42, temp$43);
+        temp$45 = staticinvoke <hw1_1000000LOC10: float hw1_1000000LOC23method2(byte,short,short,char,short,float,char,byte,char)>(59, 17038, 17085, 105, 11708, 0.7733842F, 119, -15, 108);
+        temp$46 = virtualinvoke obj.<hw1_1000000LOC10: float hw1_1000000LOC10method22(char,byte,double,byte,int,double)>(119, 101, 0.20548429148099645, 64, i5, 0.5324530894276164);
+        temp$47 = new hw1_1000000LOC29;
+        specialinvoke temp$47.<hw1_1000000LOC29: void <init>()>();
+        temp$48 = staticinvoke <hw1_1000000LOC10: char hw1_1000000LOC10method23(short,float,char,byte,double,hw1_1000000LOC29,long)>(4030, 0.39781922F, 101, 7, 0.32759740229621503, temp$47, 69L);
+        temp$49 = virtualinvoke obj.<hw1_1000000LOC10: float hw1_1000000LOC10method24(long,float,java.lang.String)>(46L, 0.0049390793F, "mveaolftkkgsyetmnrlbdleblnwhtmhktydvtulsktvpkzfctwopwxlxtkxbtbulaqeoczmyiqvfqbpjvjyipejhhfqjkyieypmfd");
+        temp$50 = staticinvoke <hw1_1000000LOC10: int hw1_1000000LOC10method25(long,byte,char,float,char,double,short)>(16L, -66, 100, 0.30192626F, 104, 0.17951552148139194, 14998);
+        temp$51 = new hw1_1000000LOC6;
+        specialinvoke temp$51.<hw1_1000000LOC6: void <init>()>();
+        temp$52 = new hw1_1000000LOC9;
+        specialinvoke temp$52.<hw1_1000000LOC9: void <init>()>();
+        temp$53 = new hw1_1000000LOC11;
+        specialinvoke temp$53.<hw1_1000000LOC11: void <init>()>();
+        temp$54 = virtualinvoke obj.<hw1_1000000LOC10: double hw1_1000000LOC23method24(hw1_1000000LOC6,long,char,hw1_1000000LOC9,int,int,hw1_1000000LOC11,long,double)>(temp$51, 88L, 101, temp$52, i0, i7, temp$53, 2L, 0.3374712689529056);
+        temp$55 = new hw1_1000000LOC27;
+        specialinvoke temp$55.<hw1_1000000LOC27: void <init>()>();
+        temp$56 = new hw1_1000000LOC30;
+        specialinvoke temp$56.<hw1_1000000LOC30: void <init>()>();
+        temp$57 = virtualinvoke obj.<hw1_1000000LOC10: long hw1_1000000LOC10method27(char,hw1_1000000LOC27,short,java.lang.String,hw1_1000000LOC30,double,short)>(106, temp$55, 2866, "slcbxqyxgohxxpepiosaabdzwmgvnjviypmltjxcfxidphqjqltjzbozmyiisfxncnyxsxxkewtetbvejrcu", temp$56, 0.9035793252053271, 8963);
+        return;
+    }
+
+    public void <init>()
+    {
+        hw1_1000000LOC10 this;
+
+        this := @this: hw1_1000000LOC10;
+        specialinvoke this.<hw1_1000000LOC23: void <init>()>();
+        return;
+    }
+}

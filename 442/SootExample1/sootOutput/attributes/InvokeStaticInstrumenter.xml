@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="37" eline="37" spos="3" epos="60"/>
+<jmpPos sline="14" eline="14" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = staticinvoke &amp;lt;soot.Scene: soot.Scene v()&amp;gt;()" jmpLink="13" srcLink="37" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="37" eline="37" spos="3" epos="14"/>
+<jmpPos sline="15" eline="15" spos="0" epos="0"/>
+<link label="temp$1 has reaching def: temp$1 = virtualinvoke temp$0.&amp;lt;soot.Scene: soot.SootClass loadClassAndSupport(java.lang.String)&amp;gt;(&quot;MyCounter&quot;)" jmpLink="14" srcLink="37" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="38" eline="38" spos="3" epos="65"/>
+<jmpPos sline="17" eline="17" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = &amp;lt;InvokeStaticInstrumenter: soot.SootClass counterClass&amp;gt;" jmpLink="16" srcLink="38" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="38" eline="38" spos="3" epos="17"/>
+<jmpPos sline="18" eline="18" spos="0" epos="0"/>
+<link label="temp$3 has reaching def: temp$3 = virtualinvoke temp$2.&amp;lt;soot.SootClass: soot.SootMethod getMethod(java.lang.String)&amp;gt;(&quot;void increase(int)&quot;)" jmpLink="17" srcLink="38" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="39" eline="39" spos="3" epos="58"/>
+<jmpPos sline="20" eline="20" spos="0" epos="0"/>
+<link label="temp$4 has reaching def: temp$4 = &amp;lt;InvokeStaticInstrumenter: soot.SootClass counterClass&amp;gt;" jmpLink="19" srcLink="39" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="39" eline="39" spos="3" epos="15"/>
+<jmpPos sline="21" eline="21" spos="0" epos="0"/>
+<link label="temp$5 has reaching def: temp$5 = virtualinvoke temp$4.&amp;lt;soot.SootClass: soot.SootMethod getMethod(java.lang.String)&amp;gt;(&quot;void report()&quot;)" jmpLink="20" srcLink="39" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="25" eline="25" spos="0" epos="0"/>
+<text info="[body, phase, options]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="48" eline="48" spos="3" epos="39"/>
+<jmpPos sline="52" eline="52" spos="0" epos="0"/>
+<link label="body has reaching def: body := @parameter0: soot.Body" jmpLink="49" srcLink="46" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="48" eline="48" spos="3" epos="39"/>
+<jmpPos sline="53" eline="53" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = virtualinvoke body.&amp;lt;soot.Body: soot.SootMethod getMethod()&amp;gt;()" jmpLink="52" srcLink="48" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="22" epos="70"/>
+<jmpPos sline="56" eline="56" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = new java.lang.StringBuffer" jmpLink="55" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="22" epos="70"/>
+<jmpPos sline="57" eline="57" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = new java.lang.StringBuffer" jmpLink="55" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="22" epos="70"/>
+<jmpPos sline="58" eline="58" spos="0" epos="0"/>
+<link label="method has reaching def: method = temp$0" jmpLink="53" srcLink="48" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="22" epos="70"/>
+<jmpPos sline="59" eline="59" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = new java.lang.StringBuffer" jmpLink="55" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="temp$3 has reaching def: temp$3 = virtualinvoke method.&amp;lt;soot.SootMethod: java.lang.String getSignature()&amp;gt;()" jmpLink="58" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="22" epos="70"/>
+<jmpPos sline="60" eline="60" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = new java.lang.StringBuffer" jmpLink="55" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="51" eline="51" spos="22" epos="70"/>
+<jmpPos sline="61" eline="61" spos="0" epos="0"/>
+<link label="temp$1 has reaching def: temp$1 = &amp;lt;java.lang.System: java.io.PrintStream out&amp;gt;" jmpLink="54" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="temp$4 has reaching def: temp$4 = virtualinvoke temp$2.&amp;lt;java.lang.StringBuffer: java.lang.String toString()&amp;gt;()" jmpLink="60" srcLink="51" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="54" eline="54" spos="3" epos="32"/>
+<jmpPos sline="62" eline="62" spos="0" epos="0"/>
+<link label="body has reaching def: body := @parameter0: soot.Body" jmpLink="49" srcLink="46" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="54" eline="54" spos="3" epos="32"/>
+<jmpPos sline="63" eline="63" spos="0" epos="0"/>
+<link label="temp$5 has reaching def: temp$5 = virtualinvoke body.&amp;lt;soot.Body: soot.PatchingChain getUnits()&amp;gt;()" jmpLink="62" srcLink="54" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="59" eline="59" spos="3" epos="45"/>
+<jmpPos sline="64" eline="64" spos="0" epos="0"/>
+<link label="units has reaching def: units = temp$5" jmpLink="63" srcLink="54" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="59" eline="59" spos="3" epos="45"/>
+<jmpPos sline="65" eline="65" spos="0" epos="0"/>
+<link label="temp$6 has reaching def: temp$6 = interfaceinvoke units.&amp;lt;soot.util.Chain: java.util.Iterator snapshotIterator()&amp;gt;()" jmpLink="64" srcLink="59" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="62" eline="62" spos="17" epos="25"/>
+<jmpPos sline="69" eline="69" spos="0" epos="0"/>
+<link label="stmtIt has reaching def: stmtIt = temp$6" jmpLink="65" srcLink="59" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="62" eline="62" spos="17" epos="25"/>
+<jmpPos sline="70" eline="70" spos="0" epos="0"/>
+<link label="temp$7 has reaching def: temp$7 = interfaceinvoke stmtIt.&amp;lt;java.util.Iterator: boolean hasNext()&amp;gt;()" jmpLink="69" srcLink="62" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="65" eline="65" spos="4" epos="36"/>
+<jmpPos sline="76" eline="76" spos="0" epos="0"/>
+<link label="stmtIt has reaching def: stmtIt = temp$6" jmpLink="65" srcLink="59" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="65" eline="65" spos="4" epos="36"/>
+<jmpPos sline="77" eline="77" spos="0" epos="0"/>
+<link label="temp$8 has reaching def: temp$8 = interfaceinvoke stmtIt.&amp;lt;java.util.Iterator: java.lang.Object next()&amp;gt;()" jmpLink="76" srcLink="65" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="71" eline="71" spos="14" epos="33"/>
+<jmpPos sline="78" eline="78" spos="0" epos="0"/>
+<link label="stmt has reaching def: stmt = (soot.jimple.Stmt) temp$8" jmpLink="77" srcLink="65" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="71" eline="71" spos="14" epos="33"/>
+<jmpPos sline="79" eline="79" spos="0" epos="0"/>
+<link label="temp$9 has reaching def: temp$9 = interfaceinvoke stmt.&amp;lt;soot.jimple.Stmt: boolean containsInvokeExpr()&amp;gt;()" jmpLink="78" srcLink="71" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="76" eline="76" spos="4" epos="55"/>
+<jmpPos sline="89" eline="89" spos="0" epos="0"/>
+<link label="stmt has reaching def: stmt = (soot.jimple.Stmt) temp$8" jmpLink="77" srcLink="65" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="76" eline="76" spos="4" epos="55"/>
+<jmpPos sline="90" eline="90" spos="0" epos="0"/>
+<link label="temp$10 has reaching def: temp$10 = interfaceinvoke stmt.&amp;lt;soot.jimple.Stmt: soot.jimple.InvokeExpr getInvokeExpr()&amp;gt;()" jmpLink="89" srcLink="76" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="79" eline="79" spos="10" epos="41"/>
+<jmpPos sline="91" eline="91" spos="0" epos="0"/>
+<link label="expr has reaching def: expr = temp$10" jmpLink="90" srcLink="76" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="79" eline="79" spos="10" epos="41"/>
+<jmpPos sline="92" eline="92" spos="0" epos="0"/>
+<link label="temp$11 has reaching def: temp$11 = expr instanceof soot.jimple.StaticInvokeExpr" jmpLink="91" srcLink="79" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="87" eline="88" spos="4" epos="50"/>
+<jmpPos sline="104" eline="104" spos="0" epos="0"/>
+<link label="temp$13 has reaching def: temp$13 = &amp;lt;InvokeStaticInstrumenter: soot.SootMethod increaseCounter&amp;gt;" jmpLink="103" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="87" eline="87" spos="0" epos="0"/>
+<jmpPos sline="107" eline="107" spos="0" epos="0"/>
+<link label="temp$15 has reaching def: temp$15 = newarray (soot.Value)[1]" jmpLink="105" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="temp$16 has reaching def: temp$16 = staticinvoke &amp;lt;soot.jimple.IntConstant: soot.jimple.IntConstant v(int)&amp;gt;(1)" jmpLink="106" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="87" eline="87" spos="0" epos="0"/>
+<jmpPos sline="108" eline="108" spos="0" epos="0"/>
+<link label="temp$12 has reaching def: temp$12 = staticinvoke &amp;lt;soot.jimple.Jimple: soot.jimple.Jimple v()&amp;gt;()" jmpLink="102" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="temp$14 has reaching def: temp$14 = virtualinvoke temp$13.&amp;lt;soot.SootMethod: soot.SootMethodRef makeRef()&amp;gt;()" jmpLink="104" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="temp$15 has reaching def: temp$15 = newarray (soot.Value)[1]" jmpLink="105" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="87" eline="87" spos="0" epos="0"/>
+<jmpPos sline="109" eline="109" spos="0" epos="0"/>
+<link label="temp$17 has reaching def: temp$17 = virtualinvoke temp$12.&amp;lt;soot.jimple.Jimple: soot.jimple.StaticInvokeExpr newStaticInvokeExpr(soot.SootMethodRef,soot.Value[])&amp;gt;(temp$14, temp$15)" jmpLink="108" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="90" eline="90" spos="4" epos="52"/>
+<jmpPos sline="111" eline="111" spos="0" epos="0"/>
+<link label="temp$18 has reaching def: temp$18 = staticinvoke &amp;lt;soot.jimple.Jimple: soot.jimple.Jimple v()&amp;gt;()" jmpLink="110" srcLink="90" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="incExpr has reaching def: incExpr = temp$17" jmpLink="109" srcLink="87" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="90" eline="90" spos="4" epos="52"/>
+<jmpPos sline="112" eline="112" spos="0" epos="0"/>
+<link label="temp$19 has reaching def: temp$19 = virtualinvoke temp$18.&amp;lt;soot.jimple.Jimple: soot.jimple.InvokeStmt newInvokeStmt(soot.Value)&amp;gt;(incExpr)" jmpLink="111" srcLink="90" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="94" eline="94" spos="4" epos="37"/>
+<jmpPos sline="113" eline="113" spos="0" epos="0"/>
+<link label="units has reaching def: units = temp$5" jmpLink="63" srcLink="54" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="incStmt has reaching def: incStmt = temp$19" jmpLink="112" srcLink="90" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="stmt has reaching def: stmt = (soot.jimple.Stmt) temp$8" jmpLink="77" srcLink="65" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="101" eline="101" spos="3" epos="46"/>
+<jmpPos sline="118" eline="118" spos="0" epos="0"/>
+<link label="method has reaching def: method = temp$0" jmpLink="53" srcLink="48" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="101" eline="101" spos="3" epos="46"/>
+<jmpPos sline="119" eline="119" spos="0" epos="0"/>
+<link label="temp$20 has reaching def: temp$20 = virtualinvoke method.&amp;lt;soot.SootMethod: java.lang.String getSubSignature()&amp;gt;()" jmpLink="118" srcLink="101" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="102" eline="102" spos="3" epos="69"/>
+<jmpPos sline="120" eline="120" spos="0" epos="0"/>
+<link label="signature has reaching def: signature = temp$20" jmpLink="119" srcLink="101" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="102" eline="102" spos="3" epos="69"/>
+<jmpPos sline="121" eline="121" spos="0" epos="0"/>
+<link label="temp$21 has reaching def: temp$21 = virtualinvoke signature.&amp;lt;java.lang.String: boolean equals(java.lang.Object)&amp;gt;(&quot;void main(java.lang.String[])&quot;)" jmpLink="120" srcLink="102" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="105" eline="105" spos="7" epos="12"/>
+<jmpPos sline="122" eline="122" spos="0" epos="0"/>
+<link label="isMain has reaching def: isMain = temp$21" jmpLink="121" srcLink="102" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="106" eline="106" spos="4" epos="37"/>
+<jmpPos sline="128" eline="128" spos="0" epos="0"/>
+<link label="units has reaching def: units = temp$5" jmpLink="63" srcLink="54" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="106" eline="106" spos="4" epos="9"/>
+<jmpPos sline="129" eline="129" spos="0" epos="0"/>
+<link label="temp$22 has reaching def: temp$22 = interfaceinvoke units.&amp;lt;soot.util.Chain: java.util.Iterator snapshotIterator()&amp;gt;()" jmpLink="128" srcLink="106" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="108" eline="108" spos="18" epos="26"/>
+<jmpPos sline="133" eline="133" spos="0" epos="0"/>
+<link label="stmtIt has reaching def: stmtIt = temp$22" jmpLink="129" srcLink="106" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="108" eline="108" spos="18" epos="26"/>
+<jmpPos sline="134" eline="134" spos="0" epos="0"/>
+<link label="temp$23 has reaching def: temp$23 = interfaceinvoke stmtIt.&amp;lt;java.util.Iterator: boolean hasNext()&amp;gt;()" jmpLink="133" srcLink="108" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="109" eline="109" spos="5" epos="37"/>
+<jmpPos sline="140" eline="140" spos="0" epos="0"/>
+<link label="stmtIt has reaching def: stmtIt = temp$22" jmpLink="129" srcLink="106" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="109" eline="109" spos="5" epos="37"/>
+<jmpPos sline="141" eline="141" spos="0" epos="0"/>
+<link label="temp$24 has reaching def: temp$24 = interfaceinvoke stmtIt.&amp;lt;java.util.Iterator: java.lang.Object next()&amp;gt;()" jmpLink="140" srcLink="109" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="112" eline="112" spos="10" epos="35"/>
+<jmpPos sline="142" eline="142" spos="0" epos="0"/>
+<link label="stmt has reaching def: stmt = (soot.jimple.Stmt) temp$24" jmpLink="141" srcLink="109" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="112" eline="112" spos="10" epos="35"/>
+<jmpPos sline="143" eline="143" spos="0" epos="0"/>
+<link label="temp$25 has reaching def: temp$25 = stmt instanceof soot.jimple.ReturnStmt" jmpLink="142" srcLink="112" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="113" eline="113" spos="11" epos="40"/>
+<jmpPos sline="149" eline="149" spos="0" epos="0"/>
+<link label="stmt has reaching def: stmt = (soot.jimple.Stmt) temp$24" jmpLink="141" srcLink="109" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="113" eline="113" spos="11" epos="40"/>
+<jmpPos sline="150" eline="150" spos="0" epos="0"/>
+<link label="temp$26 has reaching def: temp$26 = stmt instanceof soot.jimple.ReturnVoidStmt" jmpLink="149" srcLink="113" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="115" eline="116" spos="6" epos="32"/>
+<jmpPos sline="160" eline="160" spos="0" epos="0"/>
+<link label="temp$28 has reaching def: temp$28 = &amp;lt;InvokeStaticInstrumenter: soot.SootMethod reportCounter&amp;gt;" jmpLink="159" srcLink="115" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="115" eline="116" spos="6" epos="32"/>
+<jmpPos sline="161" eline="161" spos="0" epos="0"/>
+<link label="temp$27 has reaching def: temp$27 = staticinvoke &amp;lt;soot.jimple.Jimple: soot.jimple.Jimple v()&amp;gt;()" jmpLink="158" srcLink="115" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="temp$29 has reaching def: temp$29 = virtualinvoke temp$28.&amp;lt;soot.SootMethod: soot.SootMethodRef makeRef()&amp;gt;()" jmpLink="160" srcLink="115" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="115" eline="116" spos="6" epos="32"/>
+<jmpPos sline="162" eline="162" spos="0" epos="0"/>
+<link label="temp$30 has reaching def: temp$30 = virtualinvoke temp$27.&amp;lt;soot.jimple.Jimple: soot.jimple.StaticInvokeExpr newStaticInvokeExpr(soot.SootMethodRef)&amp;gt;(temp$29)" jmpLink="161" srcLink="115" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="119" eline="119" spos="6" epos="60"/>
+<jmpPos sline="164" eline="164" spos="0" epos="0"/>
+<link label="temp$31 has reaching def: temp$31 = staticinvoke &amp;lt;soot.jimple.Jimple: soot.jimple.Jimple v()&amp;gt;()" jmpLink="163" srcLink="119" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="reportExpr has reaching def: reportExpr = temp$30" jmpLink="162" srcLink="115" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="119" eline="119" spos="6" epos="60"/>
+<jmpPos sline="165" eline="165" spos="0" epos="0"/>
+<link label="temp$32 has reaching def: temp$32 = virtualinvoke temp$31.&amp;lt;soot.jimple.Jimple: soot.jimple.InvokeStmt newInvokeStmt(soot.Value)&amp;gt;(reportExpr)" jmpLink="164" srcLink="119" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="123" eline="123" spos="6" epos="42"/>
+<jmpPos sline="166" eline="166" spos="0" epos="0"/>
+<link label="units has reaching def: units = temp$5" jmpLink="63" srcLink="54" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="reportStmt has reaching def: reportStmt = temp$32" jmpLink="165" srcLink="119" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+<link label="stmt has reaching def: stmt = (soot.jimple.Stmt) temp$24" jmpLink="141" srcLink="109" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="180" eline="180" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="30" eline="30" spos="0" epos="0"/>
+<jmpPos sline="185" eline="185" spos="0" epos="0"/>
+<link label="this has reaching def: this := @this: InvokeStaticInstrumenter" jmpLink="184" srcLink="30" clssNm="InvokeStaticInstrumenter" aType="Reaching Defs"/>
+</attribute>
+</attributes>

@@ -1,0 +1,457 @@
+#######################################################################
+# Test for copying block of size 63;
+#######################################################################
+	.pos 0
+main:	irmovl Stack, %esp  	# Set up stack pointer
+	irmovl Stack, %ebp  	# Set up base pointer
+
+	# Set up arguments for copy function and then invoke it
+	irmovl $63, %eax		# src and dst have 63 elements
+	pushl %eax
+	irmovl dest, %eax	# dst array
+	pushl %eax
+	irmovl src, %eax	# src array
+	pushl %eax
+	call ncopy		 
+	halt			# should halt with num nonzeros in %eax
+StartFun:
+#/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len ints to dst.
+# Return the number of positive ints (>0) contained in src.
+#
+# This function uses loop unrolling to combine operations and 
+# decrease the number of stalls.  To free up an additional register,
+# only the length is kept in %edx.  A limit is not used.
+# 
+# First it uses an unrolled loop to calculate 
+# the the number of 16 elements and copy those 16 elements to 
+# the correct destinations.  This is repeated until the count is
+# a negative number.  It then goes through stages where performs
+# the operations on 15 to 0 elements, depending on how many are left.
+# This is done using a blocks of size 8, 4, 2, 1.  Before each
+# block a check is done to see if there are enough elements left to
+# execute that block.
+#
+# For instance, suppose the array has 35 elements.  It will first
+# subtract 16 from the length, leaving 19.  Since 19 is greater 
+# than 0, it will execute the loop of 16.  Once it completes this
+# it will subtract 16 from 19, so the length is now 3.  This is 
+# greater than 0, so the loop executes again.  Again it subtracts
+# 16 from the length leaving -13.  Since this is less than zero
+# it exits the loop.
+# It then adds 8 to the length to obtain -5, to see if it should 
+# execute the block of 8.  The number is less than zero, so it 
+# jumps to the next block of length 4.  It adds 4 to the length
+# to obtain -1. So it jumps to the block of 2.  It then adds two to
+# the length to obtain 1.  It then executes the block, copying over
+# the elements and incrementing the count, if necessary. It then 
+# decrements the length by 2, to obtain a length of -1.  Control
+# then passes to the block of 1.  This adds 2 to the length, which
+# is now 1.  Since it is greater than zero, the final block of 1 
+# executes. 
+#
+# This function has an average CPE of 9.02
+#
+##################################################################
+# Do not modify this portion
+# Function prologue.
+ncopy:	pushl %ebp		# Save old frame pointer
+	rrmovl %esp,%ebp	# Set up new frame pointer
+	pushl %esi		# Save callee-save regs
+	pushl %ebx
+	pushl %edi
+	mrmovl 8(%ebp),%ebx	# src
+	mrmovl 16(%ebp),%edx	# len
+	mrmovl 12(%ebp),%ecx	# dst
+
+##################################################################
+# You can modify this portion
+	# Loop header
+		xorl %eax, %eax		# count = 0;
+		iaddl $-16, %edx		# len <= 0?
+		jl Done16		# if so, goto Done:
+
+############## Loop 16
+Loop16:	mrmovl (%ebx), %esi	# read val from src...
+		mrmovl 4(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, (%ecx)	# ...and store it to dst 
+		rmmovl %edi, 4(%ecx)	# ...and store it to dst
+		jle Npos161		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos161:andl %edi, %edi         # val <= 0?
+		jle Npos162               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos162:mrmovl 8(%ebx), %esi	# read val from src...
+		mrmovl 12(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 8(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 12(%ecx)	# ...and store it to dst
+		jle Npos163		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos163:andl %edi, %edi         # val <= 0?
+		jle Npos164               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+		
+Npos164:	mrmovl 16(%ebx), %esi	# read val from src...
+		mrmovl 20(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 16(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 20(%ecx)	# ...and store it to dst
+		jle Npos165		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos165:	andl %edi, %edi         # val <= 0?
+		jle Npos166               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos166:	mrmovl 24(%ebx), %esi	# read val from src...
+		mrmovl 28(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 24(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 28(%ecx)	# ...and store it to dst
+		jle Npos167		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos167:	andl %edi, %edi         # val <= 0?
+		jle Npos168               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+		
+Npos168:	mrmovl 32(%ebx), %esi	# read val from src...
+		mrmovl 36(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 32(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 36(%ecx)	# ...and store it to dst
+		jle Npos169		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos169:	andl %edi, %edi         # val <= 0?
+		jle Npos170               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos170:	mrmovl 40(%ebx), %esi	# read val from src...
+		mrmovl 44(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 40(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 44(%ecx)	# ...and store it to dst
+		jle Npos171		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos171:	andl %edi, %edi         # val <= 0?
+		jle Npos172               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+		
+Npos172:	mrmovl 48(%ebx), %esi	# read val from src...
+		mrmovl 52(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 48(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 52(%ecx)	# ...and store it to dst
+		jle Npos173		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos173:	andl %edi, %edi         # val <= 0?
+		jle Npos174               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos174:	mrmovl 56(%ebx), %esi	# read val from src...
+		mrmovl 60(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 56(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 60(%ecx)	# ...and store it to dst
+		jle Npos175		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos175:	andl %edi, %edi         # val <= 0?
+		jle Npos176               # if so, goto Npos2:
+		iaddl $1, %eax          # count++	
+
+Npos176:	iaddl $64, %ecx		# dst += 2
+		iaddl $64, %ebx		# src += 2
+		iaddl $-16, %edx		# len -= 2
+		jge Loop16			# if so, goto Loop:
+	
+Done16:	iaddl $8, %edx		# len <= 0?
+		jl Done8		# if so, goto Done:
+
+############## Loop 8
+Loop8:	mrmovl (%ebx), %esi	# read val from src...
+		mrmovl 4(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, (%ecx)	# ...and store it to dst 
+		rmmovl %edi, 4(%ecx)	# ...and store it to dst
+		jle Npos81		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos81:	andl %edi, %edi         # val <= 0?
+		jle Npos82               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos82:	mrmovl 8(%ebx), %esi	# read val from src...
+		mrmovl 12(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 8(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 12(%ecx)	# ...and store it to dst
+		jle Npos83		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos83:	andl %edi, %edi         # val <= 0?
+		jle Npos84               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+		
+Npos84:	mrmovl 16(%ebx), %esi	# read val from src...
+		mrmovl 20(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 16(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 20(%ecx)	# ...and store it to dst
+		jle Npos85		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos85:	andl %edi, %edi         # val <= 0?
+		jle Npos86               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos86:	mrmovl 24(%ebx), %esi	# read val from src...
+		mrmovl 28(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 24(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 28(%ecx)	# ...and store it to dst
+		jle Npos87		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos87:	andl %edi, %edi         # val <= 0?
+		jle Npos88               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos88:	iaddl $32, %ecx		# dst += 2
+		iaddl $32, %ebx		# src += 2
+		iaddl $-8, %edx		# len -= 2
+		#jg Loop8			# if so, goto Loop:
+
+Done8:	iaddl $4, %edx		
+		jl Done4
+		
+############## Loop 4
+Loop4:	mrmovl (%ebx), %esi	# read val from src...
+		mrmovl 4(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, (%ecx)	# ...and store it to dst 
+		rmmovl %edi, 4(%ecx)	# ...and store it to dst
+		jle Npos41		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos41:	andl %edi, %edi         # val <= 0?
+		jle Npos42               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos42:	mrmovl 8(%ebx), %esi	# read val from src...
+		mrmovl 12(%ebx), %edi	# read val from src...
+		andl %esi, %esi		# val <= 0?
+		rmmovl %esi, 8(%ecx)	# ...and store it to dst 
+		rmmovl %edi, 12(%ecx)	# ...and store it to dst
+		jle Npos43		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos43:	andl %edi, %edi         # val <= 0?
+		jle Npos44               # if so, goto Npos2:
+		iaddl $1, %eax          # count++
+
+Npos44:	iaddl $16, %ecx		# dst += 2
+		iaddl $16, %ebx		# src += 2
+		iaddl $-4, %edx		# len -= 2
+		#jg Loop4			# if so, goto Loop:
+		
+Done4:	iaddl $2, %edx		
+		jl Done2
+
+############## Loop 2
+Loop2:	mrmovl (%ebx), %esi	# read val from src...
+		mrmovl 4(%ebx), %edi    # read val from src...
+		andl %esi, %esi		# val <= 0?
+		jle Npos1		# if so, goto Npos:
+		iaddl $1, %eax		# count++
+Npos1:	andl %edi, %edi         # val <= 0?
+        rmmovl %esi, (%ecx)	# ...and store it to dst 
+		rmmovl %edi, 4(%ecx)    # ...and store it to dst
+		jle Npos2               # if so, goto Npos2:
+        iaddl $1, %eax          # count++
+Npos2:	iaddl $8, %ecx		# dst += 2
+		iaddl $8, %ebx		# src += 2
+		iaddl $-2, %edx
+
+Done2:	iaddl $2, %edx
+				
+############## Last
+Last:	mrmovl (%ebx), %esi
+		jle Done
+		andl %esi, %esi
+		rmmovl %esi, (%ecx)
+		jle Done
+		iaddl $1, %eax
+
+
+##################################################################
+# Do not modify the following section of code
+# Function epilogue.
+Done:
+	popl %edi               # Restore callee-save registers
+	popl %ebx
+	popl %esi
+	rrmovl %ebp, %esp
+	popl %ebp
+	ret
+##################################################################
+# Keep the following label at the end of your function
+End:
+#/* $end ncopy-ys */
+EndFun:
+
+###############################
+# Source and destination blocks 
+###############################
+	.align 4
+src:
+	.long -1
+	.long -2
+	.long -3
+	.long 4
+	.long -5
+	.long -6
+	.long -7
+	.long -8
+	.long 9
+	.long -10
+	.long 11
+	.long 12
+	.long 13
+	.long 14
+	.long 15
+	.long 16
+	.long -17
+	.long -18
+	.long -19
+	.long -20
+	.long -21
+	.long 22
+	.long 23
+	.long 24
+	.long 25
+	.long -26
+	.long -27
+	.long -28
+	.long -29
+	.long -30
+	.long -31
+	.long 32
+	.long 33
+	.long 34
+	.long 35
+	.long -36
+	.long 37
+	.long 38
+	.long -39
+	.long -40
+	.long -41
+	.long 42
+	.long 43
+	.long -44
+	.long -45
+	.long -46
+	.long -47
+	.long -48
+	.long -49
+	.long -50
+	.long -51
+	.long 52
+	.long -53
+	.long 54
+	.long 55
+	.long 56
+	.long 57
+	.long 58
+	.long 59
+	.long 60
+	.long 61
+	.long 62
+	.long 63
+	.long 0xbcdefa # This shouldn't get moved
+
+	.align 16
+Predest:
+	.long 0xbcdefa
+dest:
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+Postdest:
+	.long 0xdefabc
+
+.align 4
+# Run time stack
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+
+Stack:

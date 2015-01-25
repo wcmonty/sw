@@ -1,0 +1,1325 @@
+\hypertarget{class_space}{\section{Space Class Reference}
+\label{class_space}\index{Space@{Space}}
+}
+
+
+The \hyperlink{class_space}{Space} class A visual representation of a space on the board that may or may not be filled with a \hyperlink{class_letter}{Letter}.  
+
+
+
+
+{\ttfamily \#include $<$space.\-h$>$}
+
+Inheritance diagram for Space\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_space}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_space_a762303973d71621706a7a8195bd0f946}{on\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a762303973d71621706a7a8195bd0f946}{Space\-::on\-\_\-clicked} Handles on\-\_\-cicked events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space} (int, int, int, int, Q\-String, Q\-String)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space\-::\-Space} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_space_a7ccd72aff73f5e5c274790009cdbaf37}{Space} (int)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space\-::\-Space} Default constructor for space object. \end{DoxyCompactList}\item 
+\hyperlink{class_space_a06d440a35bcb4b1554b69e8b18d53705}{$\sim$\-Space} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a06d440a35bcb4b1554b69e8b18d53705}{Space\-::$\sim$\-Space} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_space_adb7de4055fa9c105d8f62f83660806ce}{Space} (const \hyperlink{class_space}{Space} \&other)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space\-::\-Space} Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{set\-Letter} (\hyperlink{class_letter}{Letter} $\ast$)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{Space\-::set\-Letter} Setter for letter. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_a504f4eb0ec7193df72b161745aa8086e}{set\-Start\-Space} (bool)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a504f4eb0ec7193df72b161745aa8086e}{Space\-::set\-Start\-Space} Sets a starting space. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear} ()
+\begin{DoxyCompactList}\small\item\em Space\-::clear\-Letter Clears the letter. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_a999461c4a81ac0028c5780e5c0f2aebf}{set\-Color} (Q\-String \hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a999461c4a81ac0028c5780e5c0f2aebf}{Space\-::set\-Color} Sets the color. \end{DoxyCompactList}\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{get\-Letter} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{Space\-::get\-Letter} Getter for letter. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_space_a32d88c2b9a0f1671ed3ebbd51ec9db09}{get\-Color} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a32d88c2b9a0f1671ed3ebbd51ec9db09}{Space\-::get\-Color} Getter for color. \end{DoxyCompactList}\item 
+int \hyperlink{class_space_a9d17383ff1ff7ef3dd0be617ad69436c}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a9d17383ff1ff7ef3dd0be617ad69436c}{Space\-::get\-Value} Get the value of the space. \end{DoxyCompactList}\item 
+int \hyperlink{class_space_af35759deb33db2b7b7c77a40716c179f}{get\-Letter\-Multiplier} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_af35759deb33db2b7b7c77a40716c179f}{Space\-::get\-Letter\-Multiplier} Getter for letter multiplier. \end{DoxyCompactList}\item 
+int \hyperlink{class_space_a6a26a281a90288d56c83cc76b53cb6fb}{get\-Word\-Multiplier} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a6a26a281a90288d56c83cc76b53cb6fb}{Space\-::get\-Word\-Multiplier} Getter for word multiplier. \end{DoxyCompactList}\item 
+int \hyperlink{class_space_a65828dd5c8d2799dadab676c1d52bdfa}{get\-X} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a65828dd5c8d2799dadab676c1d52bdfa}{Space\-::get\-X} Getter for x. \end{DoxyCompactList}\item 
+int \hyperlink{class_space_ac12e951586a96323b1db8cf1e5a827a9}{get\-Y} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_ac12e951586a96323b1db8cf1e5a827a9}{Space\-::get\-Y} Getter for y. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_aaa6f84cc3a3877b7fb32e5b2363adb10}{is\-Start\-Space} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_aaa6f84cc3a3877b7fb32e5b2363adb10}{Space\-::is\-Start\-Space} Is the space the start space. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_a83819948ab0508299c66829ca8335034}{is\-Inactive} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a83819948ab0508299c66829ca8335034}{Space\-::is\-Inactive} Is the space inactive. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_a7aec01e1b32d70af2cdc25d298517d6c}{is\-Active} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a7aec01e1b32d70af2cdc25d298517d6c}{Space\-::is\-Active} Is the space active. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{is\-New} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{Space\-::is\-New} Is the space new. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_a6aa96af44b69e725c4891ad83be05dbd}{is\-Placed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a6aa96af44b69e725c4891ad83be05dbd}{Space\-::is\-Placed} Is the space placed. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{is\-Blank} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{Space\-::is\-Blank} Is the space blank. \end{DoxyCompactList}\item 
+bool \hyperlink{class_space_a5af5885e0b62f4d13ed32c86e50f3cfe}{is\-On\-Board} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a5af5885e0b62f4d13ed32c86e50f3cfe}{Space\-::is\-On\-Board} Is the space on the board. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{set\-Inactive} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{Space\-::set\-Inactive} Sets the space as inactive. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_aeca3474bbee2025962d100b1e60792d5}{set\-Active} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_aeca3474bbee2025962d100b1e60792d5}{Space\-::set\-Active} Sets the space as active. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_a3afac453f54e569a94164c41a9721643}{set\-New} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a3afac453f54e569a94164c41a9721643}{Space\-::set\-New} Sets the space as new. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_a092351d8c32b8f89a78fc475a49b3b21}{set\-Placed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a092351d8c32b8f89a78fc475a49b3b21}{Space\-::set\-Placed} Sets the space as placed. \end{DoxyCompactList}\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_ae565aeac581e7ac3ab35b1f900140e3f}{set\-On\-Board} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_ae565aeac581e7ac3ab35b1f900140e3f}{Space\-::set\-On\-Board} Sets the space as on the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_space}{Space} $\ast$ \hyperlink{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}{setup\-Defaults} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}{Space\-::setup\-Defaults} Sets up default attributes (to be called from Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_letter}{Letter} $\ast$ \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}
+\item 
+int \hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letter\-Multiplier}
+\item 
+int \hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{word\-Multiplier}
+\item 
+bool \hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{start\-Space}
+\item 
+Q\-String \hyperlink{class_space_a7e949645659466705ca605a0aef73287}{label}
+\item 
+Q\-String \hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color}
+\item 
+int \hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x}
+\item 
+int \hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y}
+\item 
+int \hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_space_a2c11a076a909acd936d897cd2a81f931}{A\-I\-Player}
+\item 
+ostream \& \hyperlink{class_space_a6b1299ccbc2e3aa35c1a3ce03f10407d}{operator$<$$<$} (ostream \&os, const \hyperlink{class_space}{Space} \&space)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ Overloads the $<$$<$ operator for debugging information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_space}{Space} class A visual representation of a space on the board that may or may not be filled with a \hyperlink{class_letter}{Letter}. 
+
+Definition at line 28 of file space.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{\index{Space@{Space}!Space@{Space}}
+\index{Space@{Space}!Space@{Space}}
+\subsubsection[{Space}]{\setlength{\rightskip}{0pt plus 5cm}Space\-::\-Space (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{letter\-Multiplier, }
+\item[{int}]{word\-Multiplier, }
+\item[{Q\-String}]{label, }
+\item[{Q\-String}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_space_a215e62ed852d6f6ba3de07d91c9ff236}
+
+
+\hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space\-::\-Space} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of this space \\
+\hline
+{\em y} & The y position of this space \\
+\hline
+{\em letter\-Multiplier} & The letter multiplier \\
+\hline
+{\em word\-Multiplier} & The word multiplier \\
+\hline
+{\em label} & The default label for this space \\
+\hline
+{\em color} & The default color for this space \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file space.\-cpp.
+
+
+
+References color, label, letter\-Multiplier, setup\-Defaults(), word\-Multiplier, x, and y.
+
+
+\begin{DoxyCode}
+32                                            : QPushButton(NULL)
+33 \{
+34     this->\hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x} = \hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x};
+35     this->\hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y} = \hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y};
+36     this->\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} = \hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier};
+37     this->\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier} = \hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier};
+38     this->\hyperlink{class_space_a7e949645659466705ca605a0aef73287}{label} = \hyperlink{class_space_a7e949645659466705ca605a0aef73287}{label};
+39     this->\hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color} = \hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color};
+40 
+41     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + \hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color} + \textcolor{stringliteral}{"; border-width: 0 px; color : black"});
+42     setText(\hyperlink{class_space_a7e949645659466705ca605a0aef73287}{label});
+43     \hyperlink{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}{setupDefaults}();
+44 \}
+\end{DoxyCode}
+\hypertarget{class_space_a7ccd72aff73f5e5c274790009cdbaf37}{\index{Space@{Space}!Space@{Space}}
+\index{Space@{Space}!Space@{Space}}
+\subsubsection[{Space}]{\setlength{\rightskip}{0pt plus 5cm}Space\-::\-Space (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_space_a7ccd72aff73f5e5c274790009cdbaf37}
+
+
+\hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space\-::\-Space} Default constructor for space object. 
+
+
+
+Definition at line 8 of file space.\-cpp.
+
+
+
+References color, letter\-Multiplier, setup\-Defaults(), start\-Space, word\-Multiplier, x, and y.
+
+
+\begin{DoxyCode}
+9 \{
+10     this->\hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x} = \hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x};
+11     this->\hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y} = -1;
+12     this->\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} = 1;
+13     this->\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier} = 1;
+14     this->\hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace} = \textcolor{keyword}{false};
+15     this->\hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color} = \textcolor{stringliteral}{"white"};
+16 
+17     setStyleSheet(\textcolor{stringliteral}{"background-color: white; border-width: 0 px"});
+18     setText(\textcolor{stringliteral}{""});
+19     \hyperlink{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}{setupDefaults}();
+20 \}
+\end{DoxyCode}
+\hypertarget{class_space_a06d440a35bcb4b1554b69e8b18d53705}{\index{Space@{Space}!$\sim$\-Space@{$\sim$\-Space}}
+\index{$\sim$\-Space@{$\sim$\-Space}!Space@{Space}}
+\subsubsection[{$\sim$\-Space}]{\setlength{\rightskip}{0pt plus 5cm}Space\-::$\sim$\-Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a06d440a35bcb4b1554b69e8b18d53705}
+
+
+\hyperlink{class_space_a06d440a35bcb4b1554b69e8b18d53705}{Space\-::$\sim$\-Space} Destructor. 
+
+
+
+Definition at line 67 of file space.\-cpp.
+
+
+
+References letter.
+
+
+\begin{DoxyCode}
+67              \{
+68     \textcolor{keywordflow}{if} (this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} != NULL)\{
+69         \textcolor{keyword}{delete} (this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter});
+70     \}
+71 \}
+\end{DoxyCode}
+\hypertarget{class_space_adb7de4055fa9c105d8f62f83660806ce}{\index{Space@{Space}!Space@{Space}}
+\index{Space@{Space}!Space@{Space}}
+\subsubsection[{Space}]{\setlength{\rightskip}{0pt plus 5cm}Space\-::\-Space (
+\begin{DoxyParamCaption}
+\item[{const {\bf Space} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_space_adb7de4055fa9c105d8f62f83660806ce}
+
+
+\hyperlink{class_space_a215e62ed852d6f6ba3de07d91c9ff236}{Space\-::\-Space} Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other space \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file space.\-cpp.
+
+
+
+References letter, letter\-Multiplier, start\-Space, and word\-Multiplier.
+
+
+\begin{DoxyCode}
+77                                : QPushButton(NULL)
+78 \{
+79     this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}=\textcolor{keyword}{new} \hyperlink{class_letter}{Letter}( *(other.\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}) );
+80     this->\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier}=other.\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier};
+81     this->\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier}=other.\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier};
+82     this->\hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace}=other.\hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace};
+83 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_space_ab18791c1da302a91c51477108be478b5}{\index{Space@{Space}!clear@{clear}}
+\index{clear@{clear}!Space@{Space}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_ab18791c1da302a91c51477108be478b5}
+
+
+Space\-::clear\-Letter Clears the letter. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the cleared letter, or N\-U\-L\-L if none was set 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file space.\-cpp.
+
+
+
+References color, I\-N\-A\-C\-T\-I\-V\-E, label, letter, set\-Color(), and state.
+
+
+
+Referenced by Rack\-::delete\-Letter(), Board\-::on\-\_\-cancel\-Button\-\_\-clicked(), on\-\_\-clicked(), A\-I\-Player\-::play(), Rack\-::refresh(), and Board\-::reset().
+
+
+\begin{DoxyCode}
+140                     \{
+141     this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} = NULL;
+142     setText(\hyperlink{class_space_a7e949645659466705ca605a0aef73287}{label});
+143     \hyperlink{class_space_a999461c4a81ac0028c5780e5c0f2aebf}{setColor}(\hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color});
+144     \hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE};
+145     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+146 \}
+\end{DoxyCode}
+\hypertarget{class_space_a32d88c2b9a0f1671ed3ebbd51ec9db09}{\index{Space@{Space}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!Space@{Space}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Space\-::get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a32d88c2b9a0f1671ed3ebbd51ec9db09}
+
+
+\hyperlink{class_space_a32d88c2b9a0f1671ed3ebbd51ec9db09}{Space\-::get\-Color} Getter for color. 
+
+\begin{DoxyReturn}{Returns}
+The Q\-String representation of the color 
+\end{DoxyReturn}
+
+
+Definition at line 180 of file space.\-cpp.
+
+
+
+References color.
+
+
+
+Referenced by Board\-::get\-Color().
+
+
+\begin{DoxyCode}
+181 \{
+182     \textcolor{keywordflow}{return} \hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color};
+183 \}
+\end{DoxyCode}
+\hypertarget{class_space_a207bc025538775ce43bdcc0d8c4c3599}{\index{Space@{Space}!get\-Letter@{get\-Letter}}
+\index{get\-Letter@{get\-Letter}!Space@{Space}}
+\subsubsection[{get\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter} $\ast$ Space\-::get\-Letter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a207bc025538775ce43bdcc0d8c4c3599}
+
+
+\hyperlink{class_space_a207bc025538775ce43bdcc0d8c4c3599}{Space\-::get\-Letter} Getter for letter. 
+
+\begin{DoxyReturn}{Returns}
+letter 
+\end{DoxyReturn}
+
+
+Definition at line 118 of file space.\-cpp.
+
+
+
+References letter.
+
+
+
+Referenced by Move\-::apply(), Board\-::score\-Horizontal\-Word(), Board\-::score\-Vertical\-Word(), Board\-::start\-Covered(), Play\-::validate\-\_\-down(), Play\-::validate\-\_\-right(), Board\-::validate\-Word\-Horizontal(), and Board\-::validate\-Word\-Vertical().
+
+
+\begin{DoxyCode}
+119 \{
+120     \textcolor{keywordflow}{return} this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter};
+121 \}
+\end{DoxyCode}
+\hypertarget{class_space_af35759deb33db2b7b7c77a40716c179f}{\index{Space@{Space}!get\-Letter\-Multiplier@{get\-Letter\-Multiplier}}
+\index{get\-Letter\-Multiplier@{get\-Letter\-Multiplier}!Space@{Space}}
+\subsubsection[{get\-Letter\-Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::get\-Letter\-Multiplier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_af35759deb33db2b7b7c77a40716c179f}
+
+
+\hyperlink{class_space_af35759deb33db2b7b7c77a40716c179f}{Space\-::get\-Letter\-Multiplier} Getter for letter multiplier. 
+
+\begin{DoxyReturn}{Returns}
+The letter multiplier 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file space.\-cpp.
+
+
+
+References letter\-Multiplier.
+
+
+
+Referenced by Board\-::score\-Horizontal\-Word(), and Board\-::score\-Vertical\-Word().
+
+
+\begin{DoxyCode}
+152                                \{
+153     \textcolor{keywordflow}{return} \hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier};
+154 \}
+\end{DoxyCode}
+\hypertarget{class_space_a9d17383ff1ff7ef3dd0be617ad69436c}{\index{Space@{Space}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!Space@{Space}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a9d17383ff1ff7ef3dd0be617ad69436c}
+
+
+\hyperlink{class_space_a9d17383ff1ff7ef3dd0be617ad69436c}{Space\-::get\-Value} Get the value of the space. 
+
+\begin{DoxyReturn}{Returns}
+The multiplier times the letter value, or -\/1 if no letter set 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file space.\-cpp.
+
+
+
+References Letter\-::get\-Value(), letter, and letter\-Multiplier.
+
+
+\begin{DoxyCode}
+127                    \{
+128     \textcolor{keywordflow}{if} (this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} != NULL)\{
+129         \textcolor{keywordflow}{return} (\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} * this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{getValue}());
+130     \}
+131     \textcolor{keywordflow}{else} \{
+132         \textcolor{keywordflow}{return} -1;
+133     \}
+134 \}
+\end{DoxyCode}
+\hypertarget{class_space_a6a26a281a90288d56c83cc76b53cb6fb}{\index{Space@{Space}!get\-Word\-Multiplier@{get\-Word\-Multiplier}}
+\index{get\-Word\-Multiplier@{get\-Word\-Multiplier}!Space@{Space}}
+\subsubsection[{get\-Word\-Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::get\-Word\-Multiplier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a6a26a281a90288d56c83cc76b53cb6fb}
+
+
+\hyperlink{class_space_a6a26a281a90288d56c83cc76b53cb6fb}{Space\-::get\-Word\-Multiplier} Getter for word multiplier. 
+
+\begin{DoxyReturn}{Returns}
+The word multiplier 
+\end{DoxyReturn}
+
+
+Definition at line 160 of file space.\-cpp.
+
+
+
+References word\-Multiplier.
+
+
+
+Referenced by Board\-::score\-Horizontal\-Word(), and Board\-::score\-Vertical\-Word().
+
+
+\begin{DoxyCode}
+161 \{
+162     \textcolor{keywordflow}{return} \hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier};
+163 \}
+\end{DoxyCode}
+\hypertarget{class_space_a65828dd5c8d2799dadab676c1d52bdfa}{\index{Space@{Space}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Space@{Space}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a65828dd5c8d2799dadab676c1d52bdfa}
+
+
+\hyperlink{class_space_a65828dd5c8d2799dadab676c1d52bdfa}{Space\-::get\-X} Getter for x. 
+
+\begin{DoxyReturn}{Returns}
+x 
+\end{DoxyReturn}
+
+
+Definition at line 355 of file space.\-cpp.
+
+
+
+References x.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search().
+
+
+\begin{DoxyCode}
+355                \{
+356     \textcolor{keywordflow}{return} this->\hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x};
+357 \}
+\end{DoxyCode}
+\hypertarget{class_space_ac12e951586a96323b1db8cf1e5a827a9}{\index{Space@{Space}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!Space@{Space}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_ac12e951586a96323b1db8cf1e5a827a9}
+
+
+\hyperlink{class_space_ac12e951586a96323b1db8cf1e5a827a9}{Space\-::get\-Y} Getter for y. 
+
+\begin{DoxyReturn}{Returns}
+y 
+\end{DoxyReturn}
+
+
+Definition at line 363 of file space.\-cpp.
+
+
+
+References y.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search().
+
+
+\begin{DoxyCode}
+363                \{
+364     \textcolor{keywordflow}{return} this->\hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y};
+365 \}
+\end{DoxyCode}
+\hypertarget{class_space_a7aec01e1b32d70af2cdc25d298517d6c}{\index{Space@{Space}!is\-Active@{is\-Active}}
+\index{is\-Active@{is\-Active}!Space@{Space}}
+\subsubsection[{is\-Active}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a7aec01e1b32d70af2cdc25d298517d6c}
+
+
+\hyperlink{class_space_a7aec01e1b32d70af2cdc25d298517d6c}{Space\-::is\-Active} Is the space active. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 262 of file space.\-cpp.
+
+
+
+References A\-C\-T\-I\-V\-E, and state.
+
+
+
+Referenced by on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+263 \{
+264     \textcolor{keywordflow}{return} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}{ACTIVE});
+265 \}
+\end{DoxyCode}
+\hypertarget{class_space_a308f0ef400183df78df69717ca50cfee}{\index{Space@{Space}!is\-Blank@{is\-Blank}}
+\index{is\-Blank@{is\-Blank}!Space@{Space}}
+\subsubsection[{is\-Blank}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-Blank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a308f0ef400183df78df69717ca50cfee}
+
+
+\hyperlink{class_space_a308f0ef400183df78df69717ca50cfee}{Space\-::is\-Blank} Is the space blank. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 298 of file space.\-cpp.
+
+
+
+References letter.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search(), A\-I\-Player\-::\-\_\-touches\-\_\-2(), A\-I\-Player\-::play(), Board\-::score\-Horizontal\-Word(), Board\-::score\-Vertical\-Word(), Play\-::validate(), Play\-::validate\-\_\-down(), and Play\-::validate\-\_\-right().
+
+
+\begin{DoxyCode}
+299 \{
+300     \textcolor{keywordflow}{return} (this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} == NULL);
+301 \}
+\end{DoxyCode}
+\hypertarget{class_space_a83819948ab0508299c66829ca8335034}{\index{Space@{Space}!is\-Inactive@{is\-Inactive}}
+\index{is\-Inactive@{is\-Inactive}!Space@{Space}}
+\subsubsection[{is\-Inactive}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-Inactive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a83819948ab0508299c66829ca8335034}
+
+
+\hyperlink{class_space_a83819948ab0508299c66829ca8335034}{Space\-::is\-Inactive} Is the space inactive. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 271 of file space.\-cpp.
+
+
+
+References I\-N\-A\-C\-T\-I\-V\-E, and state.
+
+
+
+Referenced by Move\-::apply(), and Move\-::unapply().
+
+
+\begin{DoxyCode}
+272 \{
+273     \textcolor{keywordflow}{return} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE});
+274 \}
+\end{DoxyCode}
+\hypertarget{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{\index{Space@{Space}!is\-New@{is\-New}}
+\index{is\-New@{is\-New}!Space@{Space}}
+\subsubsection[{is\-New}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_aa24aa1c8ac8b6033fc041d79345bac71}
+
+
+\hyperlink{class_space_aa24aa1c8ac8b6033fc041d79345bac71}{Space\-::is\-New} Is the space new. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 280 of file space.\-cpp.
+
+
+
+References N\-E\-W, and state.
+
+
+
+Referenced by Board\-::score\-Horizontal\-Word(), and Board\-::score\-Vertical\-Word().
+
+
+\begin{DoxyCode}
+281 \{
+282     \textcolor{keywordflow}{return} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}{NEW});
+283 \}
+\end{DoxyCode}
+\hypertarget{class_space_a5af5885e0b62f4d13ed32c86e50f3cfe}{\index{Space@{Space}!is\-On\-Board@{is\-On\-Board}}
+\index{is\-On\-Board@{is\-On\-Board}!Space@{Space}}
+\subsubsection[{is\-On\-Board}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-On\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a5af5885e0b62f4d13ed32c86e50f3cfe}
+
+
+\hyperlink{class_space_a5af5885e0b62f4d13ed32c86e50f3cfe}{Space\-::is\-On\-Board} Is the space on the board. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 289 of file space.\-cpp.
+
+
+
+References O\-N\-B\-O\-A\-R\-D, and state.
+
+
+\begin{DoxyCode}
+290 \{
+291     \textcolor{keywordflow}{return} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647abd853c15b135bc71ddd77f67b791db29}{ONBOARD});
+292 \}
+\end{DoxyCode}
+\hypertarget{class_space_a6aa96af44b69e725c4891ad83be05dbd}{\index{Space@{Space}!is\-Placed@{is\-Placed}}
+\index{is\-Placed@{is\-Placed}!Space@{Space}}
+\subsubsection[{is\-Placed}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-Placed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a6aa96af44b69e725c4891ad83be05dbd}
+
+
+\hyperlink{class_space_a6aa96af44b69e725c4891ad83be05dbd}{Space\-::is\-Placed} Is the space placed. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 253 of file space.\-cpp.
+
+
+
+References P\-L\-A\-C\-E\-D, and state.
+
+
+\begin{DoxyCode}
+254 \{
+255     \textcolor{keywordflow}{return} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647acb62afe71d71fd70c35d135c45713767}{PLACED});
+256 \}
+\end{DoxyCode}
+\hypertarget{class_space_aaa6f84cc3a3877b7fb32e5b2363adb10}{\index{Space@{Space}!is\-Start\-Space@{is\-Start\-Space}}
+\index{is\-Start\-Space@{is\-Start\-Space}!Space@{Space}}
+\subsubsection[{is\-Start\-Space}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::is\-Start\-Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_aaa6f84cc3a3877b7fb32e5b2363adb10}
+
+
+\hyperlink{class_space_aaa6f84cc3a3877b7fb32e5b2363adb10}{Space\-::is\-Start\-Space} Is the space the start space. 
+
+\begin{DoxyReturn}{Returns}
+true if yes, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 244 of file space.\-cpp.
+
+
+
+References start\-Space.
+
+
+\begin{DoxyCode}
+245 \{
+246     \textcolor{keywordflow}{return} \hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace};
+247 \}
+\end{DoxyCode}
+\hypertarget{class_space_a762303973d71621706a7a8195bd0f946}{\index{Space@{Space}!on\-\_\-clicked@{on\-\_\-clicked}}
+\index{on\-\_\-clicked@{on\-\_\-clicked}!Space@{Space}}
+\subsubsection[{on\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Space\-::on\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_space_a762303973d71621706a7a8195bd0f946}
+
+
+\hyperlink{class_space_a762303973d71621706a7a8195bd0f946}{Space\-::on\-\_\-clicked} Handles on\-\_\-cicked events. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]This method is getting long and messy -\/ we should refactor \end{DoxyRefDesc}
+
+
+Definition at line 307 of file space.\-cpp.
+
+
+
+References A\-C\-T\-I\-V\-E, Letter\-::as\-Q\-Char\-Ptr(), clear(), Play\-::clear\-Letter(), Game\-::current\-Play(), Board\-::get\-Board(), Board\-::get\-Game(), Rack\-::get\-Rack(), Rack\-::inactivate\-By\-Letter(), Rack\-::inactivate\-Other\-Spaces(), I\-N\-A\-C\-T\-I\-V\-E, is\-Active(), Letter\-::is\-A\-Match(), Letter\-::is\-Wildcard(), letter, Board\-::move\-Letter\-To\-Board(), N\-E\-W, set\-Active(), set\-Inactive(), Letter\-::set\-Letter(), set\-Letter(), state, x, and y.
+
+
+
+Referenced by setup\-Defaults().
+
+
+\begin{DoxyCode}
+308 \{
+309     \textcolor{keywordflow}{if} (\hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y} == -1) \{  \textcolor{comment}{// This is a rack space}
+310         \textcolor{keywordflow}{if} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE}) \{
+311             \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_a66591f08659676ac81eeec7f49f7e1ef}{inactivateOtherSpaces}(
+      \hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x});
+312             \hyperlink{class_space_aeca3474bbee2025962d100b1e60792d5}{setActive}();
+313         \}
+314         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}{ACTIVE})\{
+315             \hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+316         \}
+317     \}
+318     \textcolor{keywordflow}{else} \{  \textcolor{comment}{// This is a board space}
+319         \textcolor{keywordflow}{if} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE} && \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->
+      \hyperlink{class_space_a7aec01e1b32d70af2cdc25d298517d6c}{isActive}())\{
+320             \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_a8ed329bcdb775a910a575161ee5221ac}{moveLetterToBoard}(
+      \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->getActiveIndex(), \hyperlink{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{x}, \hyperlink{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{y});
+321         \}
+322         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} == \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}{NEW} && \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} != NULL) \{
+323             \textcolor{keywordflow}{if} (\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_aa0c05656947c35b032b20b7260f463ba}{isWildcard}())\{
+324                 \textcolor{keywordflow}{if} (\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_a7e6053ff071263d8bc876d31101ea235}{isAMatch}(\textcolor{charliteral}{'z'}))\{
+325                     \hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+326                     \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_a9f2f4067a9fd386366273af73fac70e5}{setLetter}(\textcolor{charliteral}{' '});
+327                     \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{getGame}()->
+      \hyperlink{class_game_acba299674208d186660ed4a88e58d967}{currentPlay}()->\hyperlink{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{clearLetter}(\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter});
+328                     \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_afdf845eb458b07ed6029d29672ab120f}{inactivateByLetter}(
+      \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter});
+329                     \hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+330                 \}
+331                 \textcolor{keywordflow}{else} \{
+332                     \textcolor{keywordflow}{if} (\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_a7e6053ff071263d8bc876d31101ea235}{isAMatch}(\textcolor{charliteral}{' '}))\{
+333                         \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_a9f2f4067a9fd386366273af73fac70e5}{setLetter}(\textcolor{charliteral}{'a'});
+334                     \}
+335                     \textcolor{keywordflow}{else} \{
+336                         \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_a9f2f4067a9fd386366273af73fac70e5}{setLetter}(\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->
+      \hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()->toLatin1() + 1);
+337                     \}
+338                     \hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{setLetter}(\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter});
+339                 \}
+340             \}
+341             \textcolor{keywordflow}{else} \{
+342                 \hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{setInactive}();
+343                 \hyperlink{class_board_ae30e802b1d83309fc95e695b5b3df338}{Board::getBoard}()->\hyperlink{class_board_af09f0761a753008aa12021986ad6bc52}{getGame}()->\hyperlink{class_game_acba299674208d186660ed4a88e58d967}{currentPlay}()->
+      \hyperlink{class_play_a034c9cc986629045cdfcdbdeaabb2ab4}{clearLetter}(\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter});
+344                 \hyperlink{class_rack_aa48de650c15bda8267451d84caf6ea3f}{Rack::getRack}()->\hyperlink{class_rack_afdf845eb458b07ed6029d29672ab120f}{inactivateByLetter}(
+      \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter});
+345                 \hyperlink{class_space_ab18791c1da302a91c51477108be478b5}{clear}();
+346             \}
+347         \}
+348     \}
+349 \}
+\end{DoxyCode}
+\hypertarget{class_space_aeca3474bbee2025962d100b1e60792d5}{\index{Space@{Space}!set\-Active@{set\-Active}}
+\index{set\-Active@{set\-Active}!Space@{Space}}
+\subsubsection[{set\-Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_aeca3474bbee2025962d100b1e60792d5}
+
+
+\hyperlink{class_space_aeca3474bbee2025962d100b1e60792d5}{Space\-::set\-Active} Sets the space as active. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file space.\-cpp.
+
+
+
+References A\-C\-T\-I\-V\-E, A\-C\-T\-I\-V\-E\-C\-O\-L\-O\-R, and state.
+
+
+
+Referenced by on\-\_\-clicked().
+
+
+\begin{DoxyCode}
+190 \{
+191     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + \hyperlink{space_8h_aa55a3024ac405580af480d91ea9f76b8}{ACTIVECOLOR} + \textcolor{stringliteral}{"; border-width: 0 px; color: black"});
+192     this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a33cf1d8ef1d06ee698a7fabf40eb3a7f}{ACTIVE};
+193     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+194 \}
+\end{DoxyCode}
+\hypertarget{class_space_a999461c4a81ac0028c5780e5c0f2aebf}{\index{Space@{Space}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!Space@{Space}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_space_a999461c4a81ac0028c5780e5c0f2aebf}
+
+
+\hyperlink{class_space_a999461c4a81ac0028c5780e5c0f2aebf}{Space\-::set\-Color} Sets the color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 170 of file space.\-cpp.
+
+
+
+Referenced by clear(), and set\-Letter().
+
+
+\begin{DoxyCode}
+171 \{
+172     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + \hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color}  + \textcolor{stringliteral}{"; border-width: 0 px; color: black"});
+173     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+174 \}
+\end{DoxyCode}
+\hypertarget{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{\index{Space@{Space}!set\-Inactive@{set\-Inactive}}
+\index{set\-Inactive@{set\-Inactive}!Space@{Space}}
+\subsubsection[{set\-Inactive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-Inactive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a8f6b89f570c1e0ca3c34f19df439a598}
+
+
+\hyperlink{class_space_a8f6b89f570c1e0ca3c34f19df439a598}{Space\-::set\-Inactive} Sets the space as inactive. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 200 of file space.\-cpp.
+
+
+
+References color, I\-N\-A\-C\-T\-I\-V\-E, and state.
+
+
+
+Referenced by Rack\-::inactivate\-By\-Letter(), Rack\-::inactivate\-Other\-Spaces(), Board\-::inactivate\-Other\-Spaces(), Rack\-::on\-\_\-cancel\-Button\-\_\-clicked(), on\-\_\-clicked(), Rack\-::on\-\_\-invalid\-Move(), and Move\-::unapply().
+
+
+\begin{DoxyCode}
+201 \{
+202     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + this->\hyperlink{class_space_aa26e0bcc52344b863a274af75651e454}{color} + \textcolor{stringliteral}{"; border-width: 0 px; color: black"});
+203     this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE};
+204     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+205 \}
+\end{DoxyCode}
+\hypertarget{class_space_aab86690461768d190a009e06c753f2ce}{\index{Space@{Space}!set\-Letter@{set\-Letter}}
+\index{set\-Letter@{set\-Letter}!Space@{Space}}
+\subsubsection[{set\-Letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-Letter (
+\begin{DoxyParamCaption}
+\item[{{\bf Letter} $\ast$}]{letter}
+\end{DoxyParamCaption}
+)}}\label{class_space_aab86690461768d190a009e06c753f2ce}
+
+
+\hyperlink{class_space_aab86690461768d190a009e06c753f2ce}{Space\-::set\-Letter} Setter for letter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & The letter to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file space.\-cpp.
+
+
+
+References Letter\-::as\-Q\-Char\-Ptr(), Letter\-::get\-Value(), letter, set\-Color(), state, U\-N\-P\-L\-A\-Y\-A\-B\-L\-E, and U\-N\-P\-L\-A\-Y\-A\-B\-L\-E\-C\-O\-L\-O\-R.
+
+
+
+Referenced by Move\-::apply(), on\-\_\-clicked(), Rack\-::refresh(), Board\-::set\-Space(), and Move\-::unapply().
+
+
+\begin{DoxyCode}
+102                                       \{
+103     this->letter = \hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter};
+104     \textcolor{keywordflow}{if} (letter != NULL)\{
+105         this->setText(QString (*(letter->\hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}())).toUpper() + \textcolor{stringliteral}{"\(\backslash\)n"} + QString::number(letter
+      ->\hyperlink{class_letter_a5980d43229d58bfab9fdb20f25e88e9e}{getValue}()));
+106     \}
+107     \textcolor{keywordflow}{else} \{
+108         this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3bf2db814150c0d042a2be3c3ae8d8c9}{UNPLAYABLE};
+109         \hyperlink{class_space_a999461c4a81ac0028c5780e5c0f2aebf}{setColor}(\hyperlink{space_8h_afa5d71e6778c27c97d05a2384a559c71}{UNPLAYABLECOLOR});
+110     \}
+111     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+112 \}
+\end{DoxyCode}
+\hypertarget{class_space_a3afac453f54e569a94164c41a9721643}{\index{Space@{Space}!set\-New@{set\-New}}
+\index{set\-New@{set\-New}!Space@{Space}}
+\subsubsection[{set\-New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a3afac453f54e569a94164c41a9721643}
+
+
+\hyperlink{class_space_a3afac453f54e569a94164c41a9721643}{Space\-::set\-New} Sets the space as new. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 211 of file space.\-cpp.
+
+
+
+References N\-E\-W, N\-E\-W\-C\-O\-L\-O\-R, and state.
+
+
+
+Referenced by Move\-::apply(), and A\-I\-Player\-::play().
+
+
+\begin{DoxyCode}
+212 \{
+213     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + \hyperlink{space_8h_aa42bd2576844576800b7ba2ad14dd450}{NEWCOLOR} + \textcolor{stringliteral}{"; border-width: 0 px; color: black"});
+214     this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647aec34b0b90541576a22697631105dc847}{NEW};
+215     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+216 \}
+\end{DoxyCode}
+\hypertarget{class_space_ae565aeac581e7ac3ab35b1f900140e3f}{\index{Space@{Space}!set\-On\-Board@{set\-On\-Board}}
+\index{set\-On\-Board@{set\-On\-Board}!Space@{Space}}
+\subsubsection[{set\-On\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-On\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_ae565aeac581e7ac3ab35b1f900140e3f}
+
+
+\hyperlink{class_space_ae565aeac581e7ac3ab35b1f900140e3f}{Space\-::set\-On\-Board} Sets the space as on the board. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 233 of file space.\-cpp.
+
+
+
+References O\-N\-B\-O\-A\-R\-D, O\-N\-B\-O\-A\-R\-D\-C\-O\-L\-O\-R, and state.
+
+
+
+Referenced by Move\-::finalize().
+
+
+\begin{DoxyCode}
+234 \{
+235     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + \hyperlink{space_8h_a91ade0186625f04a11e0e94069f42949}{ONBOARDCOLOR} + \textcolor{stringliteral}{"; border-width: 0 px; color: black"});
+236     this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647abd853c15b135bc71ddd77f67b791db29}{ONBOARD};
+237     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+238 \}
+\end{DoxyCode}
+\hypertarget{class_space_a092351d8c32b8f89a78fc475a49b3b21}{\index{Space@{Space}!set\-Placed@{set\-Placed}}
+\index{set\-Placed@{set\-Placed}!Space@{Space}}
+\subsubsection[{set\-Placed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-Placed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_space_a092351d8c32b8f89a78fc475a49b3b21}
+
+
+\hyperlink{class_space_a092351d8c32b8f89a78fc475a49b3b21}{Space\-::set\-Placed} Sets the space as placed. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 222 of file space.\-cpp.
+
+
+
+References P\-L\-A\-C\-E\-D, P\-L\-A\-C\-E\-D\-C\-O\-L\-O\-R, and state.
+
+
+
+Referenced by Move\-::apply().
+
+
+\begin{DoxyCode}
+223 \{
+224     setStyleSheet(\textcolor{stringliteral}{"background-color: "} + \hyperlink{space_8h_acd3b6d476f174ddb30a7f872cd92918a}{PLACEDCOLOR} + \textcolor{stringliteral}{"; border-width: 0 px; color: black"});
+225     this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647acb62afe71d71fd70c35d135c45713767}{PLACED};
+226     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+227 \}
+\end{DoxyCode}
+\hypertarget{class_space_a504f4eb0ec7193df72b161745aa8086e}{\index{Space@{Space}!set\-Start\-Space@{set\-Start\-Space}}
+\index{set\-Start\-Space@{set\-Start\-Space}!Space@{Space}}
+\subsubsection[{set\-Start\-Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::set\-Start\-Space (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_space_a504f4eb0ec7193df72b161745aa8086e}
+
+
+\hyperlink{class_space_a504f4eb0ec7193df72b161745aa8086e}{Space\-::set\-Start\-Space} Sets a starting space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 91 of file space.\-cpp.
+
+
+
+References start\-Space.
+
+
+
+Referenced by Board\-::setup\-Start().
+
+
+\begin{DoxyCode}
+92 \{
+93     this->\hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace} = value;
+94     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+95 \}
+\end{DoxyCode}
+\hypertarget{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}{\index{Space@{Space}!setup\-Defaults@{setup\-Defaults}}
+\index{setup\-Defaults@{setup\-Defaults}!Space@{Space}}
+\subsubsection[{setup\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space} $\ast$ Space\-::setup\-Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}
+
+
+\hyperlink{class_space_a79cb95622a3e11a8ebc7e5402e6116e3}{Space\-::setup\-Defaults} Sets up default attributes (to be called from Constructor. 
+
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file space.\-cpp.
+
+
+
+References B\-U\-T\-T\-O\-N\-S\-I\-Z\-E, I\-N\-A\-C\-T\-I\-V\-E, letter, on\-\_\-clicked(), and state.
+
+
+
+Referenced by Space().
+
+
+\begin{DoxyCode}
+51 \{
+52     connect(\textcolor{keyword}{this}, SIGNAL(clicked()),
+53             \textcolor{keyword}{this}, SLOT(\hyperlink{class_space_a762303973d71621706a7a8195bd0f946}{on\_clicked}()));
+54     this->\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} = NULL;
+55     this->setMinimumHeight(\hyperlink{space_8h_a0930e9563a8ae9694238172d3c4db092}{BUTTONSIZE});
+56     this->setMinimumWidth(\hyperlink{space_8h_a0930e9563a8ae9694238172d3c4db092}{BUTTONSIZE});
+57     this->setMaximumHeight(\hyperlink{space_8h_a0930e9563a8ae9694238172d3c4db092}{BUTTONSIZE});
+58     this->setMaximumWidth(\hyperlink{space_8h_a0930e9563a8ae9694238172d3c4db092}{BUTTONSIZE});
+59     this->setContentsMargins(0,0,0,0);
+60     this->\hyperlink{class_space_a9c634262ea140c752cd0f12ca8de3d63}{state} = \hyperlink{space_8h_a275a67132f10277ada3a0ee3d616b647a3ff8ba88da6f8947ab7c22b7825c6bb6}{INACTIVE};
+61     \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+62 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_space_a2c11a076a909acd936d897cd2a81f931}{\index{Space@{Space}!A\-I\-Player@{A\-I\-Player}}
+\index{A\-I\-Player@{A\-I\-Player}!Space@{Space}}
+\subsubsection[{A\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf A\-I\-Player}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_space_a2c11a076a909acd936d897cd2a81f931}
+
+
+Definition at line 77 of file space.\-h.
+
+\hypertarget{class_space_a6b1299ccbc2e3aa35c1a3ce03f10407d}{\index{Space@{Space}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Space@{Space}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Space} \&}]{space}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_space_a6b1299ccbc2e3aa35c1a3ce03f10407d}
+
+
+operator $<$$<$ Overloads the $<$$<$ operator for debugging information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream \\
+\hline
+{\em space} & The space object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output stream 
+\end{DoxyReturn}
+
+
+Definition at line 373 of file space.\-cpp.
+
+
+\begin{DoxyCode}
+373                                                      \{
+374     os << \textcolor{stringliteral}{"["};
+375     \textcolor{keywordflow}{if} (space.\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter} == NULL)\{
+376         \textcolor{keywordflow}{if} (space.\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} != 1)\{
+377             os << space.\hyperlink{class_space_a9bae20cdb32f38dd2386024db0443b22}{letterMultiplier} << \textcolor{charliteral}{'L'};
+378         \}
+379         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (space.\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier} != 1)\{
+380             os << space.\hyperlink{class_space_a00b205e763885903d7b8a811ae0daa54}{wordMultiplier} << \textcolor{charliteral}{'W'};
+381         \}
+382         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (space.\hyperlink{class_space_aa135c863552d2a89de1f5e1410fb9450}{startSpace})\{
+383             os << \textcolor{stringliteral}{"**"};
+384         \}
+385         \textcolor{keywordflow}{else} \{
+386             os << \textcolor{stringliteral}{"  "};
+387         \}
+388     \}
+389     \textcolor{keywordflow}{else} \{
+390         os << \textcolor{stringliteral}{" "} << space.\hyperlink{class_space_ab899363fba4ab54c907df80a99e8e563}{letter}->\hyperlink{class_letter_aa7fb6547b5ceefef8d0a014ab0a80d08}{asQCharPtr}()->toLatin1();
+391     \}
+392     os << \textcolor{stringliteral}{"]"};
+393     \textcolor{keywordflow}{return} os;
+394 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_space_aa26e0bcc52344b863a274af75651e454}{\index{Space@{Space}!color@{color}}
+\index{color@{color}!Space@{Space}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Space\-::color\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_aa26e0bcc52344b863a274af75651e454}
+The default color of the \hyperlink{class_space}{Space} 
+
+Definition at line 37 of file space.\-h.
+
+
+
+Referenced by clear(), get\-Color(), set\-Inactive(), and Space().
+
+\hypertarget{class_space_a7e949645659466705ca605a0aef73287}{\index{Space@{Space}!label@{label}}
+\index{label@{label}!Space@{Space}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Space\-::label\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a7e949645659466705ca605a0aef73287}
+The label shown to the user 
+
+Definition at line 36 of file space.\-h.
+
+
+
+Referenced by clear(), and Space().
+
+\hypertarget{class_space_ab899363fba4ab54c907df80a99e8e563}{\index{Space@{Space}!letter@{letter}}
+\index{letter@{letter}!Space@{Space}}
+\subsubsection[{letter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Letter}$\ast$ Space\-::letter\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_ab899363fba4ab54c907df80a99e8e563}
+The \hyperlink{class_letter}{Letter}, if it exists 
+
+Definition at line 32 of file space.\-h.
+
+
+
+Referenced by A\-I\-Player\-::\-\_\-assist\-\_\-ai\-\_\-search(), clear(), get\-Letter(), get\-Value(), is\-Blank(), on\-\_\-clicked(), operator$<$$<$(), set\-Letter(), setup\-Defaults(), Space(), and $\sim$\-Space().
+
+\hypertarget{class_space_a9bae20cdb32f38dd2386024db0443b22}{\index{Space@{Space}!letter\-Multiplier@{letter\-Multiplier}}
+\index{letter\-Multiplier@{letter\-Multiplier}!Space@{Space}}
+\subsubsection[{letter\-Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::letter\-Multiplier\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a9bae20cdb32f38dd2386024db0443b22}
+The letter multiplier for the space 
+
+Definition at line 33 of file space.\-h.
+
+
+
+Referenced by get\-Letter\-Multiplier(), get\-Value(), operator$<$$<$(), and Space().
+
+\hypertarget{class_space_aa135c863552d2a89de1f5e1410fb9450}{\index{Space@{Space}!start\-Space@{start\-Space}}
+\index{start\-Space@{start\-Space}!Space@{Space}}
+\subsubsection[{start\-Space}]{\setlength{\rightskip}{0pt plus 5cm}bool Space\-::start\-Space\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_aa135c863552d2a89de1f5e1410fb9450}
+Flag whether this is the space in the very center of the board 
+
+Definition at line 35 of file space.\-h.
+
+
+
+Referenced by is\-Start\-Space(), operator$<$$<$(), set\-Start\-Space(), and Space().
+
+\hypertarget{class_space_a9c634262ea140c752cd0f12ca8de3d63}{\index{Space@{Space}!state@{state}}
+\index{state@{state}!Space@{Space}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::state\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a9c634262ea140c752cd0f12ca8de3d63}
+The state of the space 
+
+Definition at line 40 of file space.\-h.
+
+
+
+Referenced by clear(), is\-Active(), is\-Inactive(), is\-New(), is\-On\-Board(), is\-Placed(), on\-\_\-clicked(), set\-Active(), set\-Inactive(), set\-Letter(), set\-New(), set\-On\-Board(), set\-Placed(), and setup\-Defaults().
+
+\hypertarget{class_space_a00b205e763885903d7b8a811ae0daa54}{\index{Space@{Space}!word\-Multiplier@{word\-Multiplier}}
+\index{word\-Multiplier@{word\-Multiplier}!Space@{Space}}
+\subsubsection[{word\-Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::word\-Multiplier\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a00b205e763885903d7b8a811ae0daa54}
+The word multiplier for the space 
+
+Definition at line 34 of file space.\-h.
+
+
+
+Referenced by get\-Word\-Multiplier(), operator$<$$<$(), and Space().
+
+\hypertarget{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}{\index{Space@{Space}!x@{x}}
+\index{x@{x}!Space@{Space}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a21f4a2964d98ed619fc7a1c1bd3b1ad8}
+The x position on the board or in the rack 
+
+Definition at line 38 of file space.\-h.
+
+
+
+Referenced by get\-X(), on\-\_\-clicked(), and Space().
+
+\hypertarget{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}{\index{Space@{Space}!y@{y}}
+\index{y@{y}!Space@{Space}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int Space\-::y\hspace{0.3cm}{\ttfamily [private]}}}\label{class_space_a11c7532ed7e01f58a55ac78a0b6be6f4}
+The y position on the board (or -\/1 if in the rack 
+
+Definition at line 39 of file space.\-h.
+
+
+
+Referenced by get\-Y(), on\-\_\-clicked(), and Space().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Scrabble/\hyperlink{space_8h}{space.\-h}\item 
+Scrabble/\hyperlink{space_8cpp}{space.\-cpp}\end{DoxyCompactItemize}

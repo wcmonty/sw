@@ -1,0 +1,167 @@
+x = [1800 1850 1900 2000]
+
+x =
+
+        1800        1850        1900        2000
+
+y = [280 283 291 370]
+
+y =
+
+   280   283   291   370
+
+[xn, yn] = splineplot(x, y, 4)
+
+xn =
+
+   1.0e+03 *
+
+   1.800000000000000
+   1.812500000000000
+   1.825000000000000
+   1.837500000000000
+   1.850000000000000
+   1.862500000000000
+   1.875000000000000
+   1.887500000000000
+   1.900000000000000
+   1.925000000000000
+   1.950000000000000
+   1.975000000000000
+   2.000000000000000
+
+
+yn =
+
+   1.0e+02 *
+
+   2.800000000000000
+   2.807652853260870
+   2.815244565217391
+   2.822713994565218
+   2.830000000000000
+   2.837883831521739
+   2.850516304347826
+   2.872890625000000
+   2.910000000000000
+   3.038451086956522
+   3.226086956521739
+   3.453179347826087
+   3.700000000000000
+
+fprintf('%f %f\n',xn(11), yn(11))
+1950.000000 322.608696
+fprintf('%d %f\n',xn(11), yn(11))
+1950 322.608696
+[xn, yn] = splineplot(x, y, 4)
+{In an assignment  A(I) = B, the number of elements in B and I must be the same.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('splinecoeff', '/home/wcmonty/Projects/471/splinecoeff.m', 36)" style="font-weight:bold">splinecoeff</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/splinecoeff.m',36,0)">line 36</a>)
+A(n:n-1:n) = [1 -1];
+
+Error in <a href="matlab:helpUtils.errorDocCallback('splineplot', '/home/wcmonty/Projects/471/splineplot.m', 7)" style="font-weight:bold">splineplot</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/splineplot.m',7,0)">line 7</a>)
+coeff = splinecoeff(x, y);
+} 
+[xn, yn] = splineplot(x, y, 4)
+
+xn =
+
+   1.0e+03 *
+
+   1.800000000000000
+   1.812500000000000
+   1.825000000000000
+   1.837500000000000
+   1.850000000000000
+   1.862500000000000
+   1.875000000000000
+   1.887500000000000
+   1.900000000000000
+   1.925000000000000
+   1.950000000000000
+   1.975000000000000
+   2.000000000000000
+
+
+yn =
+
+   1.0e+02 *
+
+   2.800000000000000
+   2.806274038461539
+   2.813365384615385
+   2.821274038461539
+   2.830000000000000
+   2.840120192307692
+   2.854519230769231
+   2.876658653846154
+   2.910000000000000
+   3.019519230769231
+   3.187692307692308
+   3.414519230769231
+   3.700000000000000
+
+fprintf('%d %f\n',xn(11), yn(11))
+1950 318.769231
+[xn, yn] = splineplot(x, y, 4)
+{Undefined function 'd' for input arguments of type 'double'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('splinecoeff', '/home/wcmonty/Projects/471/splinecoeff.m', 40)" style="font-weight:bold">splinecoeff</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/splinecoeff.m',40,0)">line 40</a>)
+A(n, n-2:n) = [dx(n-1) -(dx(n-2)+d(n-1)) dx(n-2)];
+
+Error in <a href="matlab:helpUtils.errorDocCallback('splineplot', '/home/wcmonty/Projects/471/splineplot.m', 7)" style="font-weight:bold">splineplot</a> (<a href="matlab: opentoline('/home/wcmonty/Projects/471/splineplot.m',7,0)">line 7</a>)
+coeff = splinecoeff(x, y);
+} 
+[xn, yn] = splineplot(x, y, 4)
+
+xn =
+
+   1.0e+03 *
+
+   1.800000000000000
+   1.812500000000000
+   1.825000000000000
+   1.837500000000000
+   1.850000000000000
+   1.862500000000000
+   1.875000000000000
+   1.887500000000000
+   1.900000000000000
+   1.925000000000000
+   1.950000000000000
+   1.975000000000000
+   2.000000000000000
+
+
+yn =
+
+   1.0e+02 *
+
+   2.800000000000000
+   2.809375000000000
+   2.816250000000000
+   2.822500000000000
+   2.830000000000000
+   2.840625000000000
+   2.856250000000000
+   2.878750000000000
+   2.910000000000000
+   3.006250000000000
+   3.160000000000000
+   3.386250000000000
+   3.700000000000000
+
+fprintf('%d %f\n',xn(11), yn(11))
+1950 316.000000
+splinecoeffs(x, y)
+{Undefined function 'splinecoeffs' for input arguments of type 'double'.
+} 
+splinecoeff(x, y)
+
+ans =
+
+   0.090000000000000  -0.001400000000000   0.000016000000000
+   0.070000000000000   0.001000000000000   0.000016000000000
+   0.290000000000000   0.003400000000000   0.000016000000000
+
+diary off
